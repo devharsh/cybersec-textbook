@@ -16,19 +16,17 @@ study the relevant material directly.
 
 ## Course Mapping
 
-The chapters were aligned to three courses taught in the Department of Computer Science at Bowie State
-University, and to widely used certifications. Instructors can assemble other courses from the same
-self-contained chapters.
+The chapters map cleanly onto standard three-credit university courses. Instructors can
+mix and match chapters to match their exact syllabus.
 
 | Course | Recommended Chapters |
 |---|---|
-| COSC 442: Cybersecurity and Society | 1, 4, 5, 18, 19, 20, 17 |
-| COSC 489: Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 |
-| MISC 123: Ethical Hacking Lab and CTF | 8, 11, 12, 13, 15, 16, 20 |
-| Introduction to Cybersecurity | 1, 2, 3, 4, 5 |
-| Computer and Network Security | 2, 3, 5, 11, 12 |
-| Digital Forensics and Incident Response | 13, 14, 15 |
-| Applied Cryptography | 2 (in full) |
+| Introduction to IT Security | 1, 2, 3, 4, 5, 19 |
+| Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 |
+| Computer and Network Security | 2, 3, 5, 11, 12, 17 |
+| Fundamentals of Cryptography | 2, 3, 11, 17 |
+| Incident Response and Digital Forensics | 13, 14, 15, 12 |
+| Cybersecurity and Society | 1, 4, 5, 18, 19, 20, 17 |
 | Capstone or Certification Prep | All chapters |
 
 ## What Every Chapter Contains

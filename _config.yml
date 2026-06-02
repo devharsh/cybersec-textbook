@@ -35,7 +35,7 @@ bibtex_bibfiles:
   - references.bib
 
 repository:
-  url: https://github.com/dtrivedi-bsu/cybersec-textbook
+  url: https://github.com/devharsh/cybersec-textbook
   path_to_book: ""
   branch: main
 
@@ -64,6 +64,6 @@ sphinx:
   config:
     bibtex_reference_style: label
     html_theme_options:
-      repository_url: "https://github.com/dtrivedi-bsu/cybersec-textbook"
+      repository_url: "https://github.com/devharsh/cybersec-textbook"
       use_repository_button: true
       use_download_button: true
