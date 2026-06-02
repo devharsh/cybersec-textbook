@@ -1,0 +1,1072 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1. Chapter 1: Introduction to Cybersecurity &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/01_intro/chapter01';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2. Chapter 2: Cryptography" href="../02_cryptography/chapter02.html" />
+    <link rel="prev" title="Preface" href="../00_preface/preface.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/01_intro/chapter01.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 1: Introduction to Cybersecurity</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">1.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">1.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-cybersecurity-protects">1.3. What Cybersecurity Protects</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#information-assets-and-their-value">1.3.1. Information Assets and Their Value</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tangible-and-intangible-costs">1.3.1.1. Tangible and Intangible Costs</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cybersecurity-versus-adjacent-disciplines">1.3.2. Cybersecurity Versus Adjacent Disciplines</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cia-triad">1.4. The CIA Triad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confidentiality">1.4.1. Confidentiality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-classification">1.4.1.1. Data Classification</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrity">1.4.2. Integrity</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-need-for-authenticated-integrity">1.4.2.1. The Need for Authenticated Integrity</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#availability">1.4.3. Availability</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dad-triad">1.4.3.1. The DAD Triad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adversaries-and-threat-actors">1.5. Adversaries and Threat Actors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nation-state-actors">1.5.1. Nation-State Actors</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#distinguishing-espionage-from-sabotage">1.5.1.1. Distinguishing Espionage from Sabotage</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#criminal-organizations">1.5.2. Criminal Organizations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#insider-threats">1.5.3. Insider Threats</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hacktivists-and-script-kiddies">1.5.4. Hacktivists and Script Kiddies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vulnerability-threat-and-risk">1.6. Vulnerability, Threat, and Risk</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-and-finding-vulnerabilities">1.6.1. Defining and Finding Vulnerabilities</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-attack-surface">1.6.1.1. The Attack Surface</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-risk-formula">1.6.2. The Risk Formula</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-nist-cybersecurity-framework">1.7. The NIST Cybersecurity Framework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#govern">1.7.1. Govern</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identify">1.7.2. Identify</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protect">1.7.3. Protect</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detect">1.7.4. Detect</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#security-monitoring-stack">1.7.4.1. Security Monitoring Stack</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#respond">1.7.5. Respond</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recover">1.7.6. Recover</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defense-in-depth-and-security-controls">1.8. Defense in Depth and Security Controls</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-defense-in-depth-principle">1.8.1. The Defense-in-Depth Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#control-types">1.8.2. Control Types</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#defense-in-depth-example">1.8.2.1. Defense-in-Depth Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">1.9. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">1.10. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">1.11. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">1.12. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">1.13. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-1-introduction-to-cybersecurity">
+<h1><span class="section-number">1. </span>Chapter 1: Introduction to Cybersecurity<a class="headerlink" href="#chapter-1-introduction-to-cybersecurity" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“The only truly secure system is one that is powered off, cast in a block of concrete, and sealed in a
+lead-lined room with armed guards.” Gene Spafford</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">1.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Define cybersecurity and distinguish it from information security and computer security.</p></li>
+<li><p>State the CIA triad and explain each property with a real-world example.</p></li>
+<li><p>Identify the four elements of an attack: threat, vulnerability, attack surface, and exploitation.</p></li>
+<li><p>Explain the adversary model: who attacks, why, and with what capability.</p></li>
+<li><p>Describe the NIST Cybersecurity Framework five functions and map them to defensive practice.</p></li>
+<li><p>Apply the ALE formula to quantify risk in monetary terms.</p></li>
+<li><p>Explain the defense-in-depth principle and layered security.</p></li>
+<li><p>Distinguish security controls by type: preventive, detective, and corrective.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">1.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Cybersecurity</strong>: the practice of protecting systems, networks, and programs from digital attacks.</p></li>
+<li><p><strong>CIA triad</strong>: Confidentiality, Integrity, Availability; the three core security properties.</p></li>
+<li><p><strong>Threat</strong>: any circumstance or event with potential to harm an asset.</p></li>
+<li><p><strong>Vulnerability</strong>: a weakness that a threat can exploit.</p></li>
+<li><p><strong>Attack surface</strong>: the sum of all exploitable entry points in a system.</p></li>
+<li><p><strong>Exploit</strong>: code or technique that takes advantage of a vulnerability.</p></li>
+<li><p><strong>Risk</strong>: the probability that a threat will exploit a vulnerability, multiplied by impact.</p></li>
+<li><p><strong>ALE</strong>: Annualized Loss Expectancy; expected monetary loss per year.</p></li>
+<li><p><strong>SLE</strong>: Single Loss Expectancy; loss from one occurrence.</p></li>
+<li><p><strong>ARO</strong>: Annualized Rate of Occurrence; how often an event happens per year.</p></li>
+<li><p><strong>Defense in depth</strong>: the principle of using multiple, overlapping security layers.</p></li>
+<li><p><strong>NIST CSF</strong>: NIST Cybersecurity Framework; a voluntary risk management framework.</p></li>
+<li><p><strong>APT</strong>: Advanced Persistent Threat; a sophisticated, long-term attacker.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="what-cybersecurity-protects">
+<h2><span class="section-number">1.3. </span>What Cybersecurity Protects<a class="headerlink" href="#what-cybersecurity-protects" title="Link to this heading">#</a></h2>
+<p>Cybersecurity is the discipline of protecting digital assets from unauthorized access, modification,
+disruption, and destruction. It spans technical controls (firewalls, encryption), procedural controls
+(policies, training), and physical controls (locked server rooms, badge access), all operating together
+because an adversary will seek the weakest link regardless of category.</p>
+<section id="information-assets-and-their-value">
+<h3><span class="section-number">1.3.1. </span>Information Assets and Their Value<a class="headerlink" href="#information-assets-and-their-value" title="Link to this heading">#</a></h3>
+<p>Every organization holds assets whose compromise carries a cost: customer records, intellectual
+property, operational data, and system availability. The first step in any security program is an
+asset inventory that answers two questions: what do we have, and what would it cost if it were
+disclosed, altered, or made unavailable? Without this inventory, no rational prioritization is
+possible.</p>
+<section id="tangible-and-intangible-costs">
+<h4><span class="section-number">1.3.1.1. </span>Tangible and Intangible Costs<a class="headerlink" href="#tangible-and-intangible-costs" title="Link to this heading">#</a></h4>
+<p>Tangible costs include incident response fees, regulatory fines, notification costs, and lost revenue
+during downtime. Intangible costs include reputational damage, customer churn, and loss of competitive
+advantage. Major breach settlements have run into hundreds of millions of dollars, demonstrating that
+information security failures carry board-level consequences.</p>
+</section>
+</section>
+<section id="cybersecurity-versus-adjacent-disciplines">
+<h3><span class="section-number">1.3.2. </span>Cybersecurity Versus Adjacent Disciplines<a class="headerlink" href="#cybersecurity-versus-adjacent-disciplines" title="Link to this heading">#</a></h3>
+<p>Information security is the broader field covering all forms of information protection including paper
+records. Computer security focuses on hardware and software systems. Cybersecurity emphasizes the
+networked, adversarial context where attackers actively probe for weaknesses. In practice the terms
+overlap, but the networked-adversarial framing of cybersecurity shapes its methodology.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="the-cia-triad">
+<h2><span class="section-number">1.4. </span>The CIA Triad<a class="headerlink" href="#the-cia-triad" title="Link to this heading">#</a></h2>
+<p>The CIA triad is the foundational model for describing what a security control is trying to protect.
+Every security requirement maps to one or more of its three properties.</p>
+<section id="confidentiality">
+<h3><span class="section-number">1.4.1. </span>Confidentiality<a class="headerlink" href="#confidentiality" title="Link to this heading">#</a></h3>
+<p>Confidentiality ensures that information is accessible only to those authorized to access it.
+Mechanisms include encryption, access controls, classification policies, and need-to-know principles.
+A breach of confidentiality occurs when an unauthorized party reads data: a stolen database of
+customer records, an insider leaking trade secrets, or network eavesdropping on unencrypted traffic.</p>
+<section id="data-classification">
+<h4><span class="section-number">1.4.1.1. </span>Data Classification<a class="headerlink" href="#data-classification" title="Link to this heading">#</a></h4>
+<p>Most organizations classify data into tiers such as public, internal, confidential, and restricted.
+Classification drives encryption requirements, retention rules, and access control policies. HIPAA-
+covered health information and PCI DSS-covered cardholder data are examples of classifications that
+carry specific regulatory handling requirements.</p>
+</section>
+</section>
+<section id="integrity">
+<h3><span class="section-number">1.4.2. </span>Integrity<a class="headerlink" href="#integrity" title="Link to this heading">#</a></h3>
+<p>Integrity ensures that information is accurate and has not been altered by unauthorized parties.
+Mechanisms include cryptographic hashes, digital signatures, version control, and audit logs.
+A breach of integrity might be a financial record altered to redirect funds, a software package
+modified to include malware, or a database table modified to erase evidence.</p>
+<section id="the-need-for-authenticated-integrity">
+<h4><span class="section-number">1.4.2.1. </span>The Need for Authenticated Integrity<a class="headerlink" href="#the-need-for-authenticated-integrity" title="Link to this heading">#</a></h4>
+<p>A hash alone detects accidental corruption; only a digital signature or HMAC proves that an authorized
+party created the data and that it has not changed since. Log files that an attacker can edit are
+worthless as evidence; append-only, integrity-protected logs are a foundational forensic requirement.</p>
+</section>
+</section>
+<section id="availability">
+<h3><span class="section-number">1.4.3. </span>Availability<a class="headerlink" href="#availability" title="Link to this heading">#</a></h3>
+<p>Availability ensures that systems and data are accessible to authorized users when needed. Mechanisms
+include redundancy, load balancing, backup and recovery, and rate limiting. A breach of availability
+is a Distributed Denial of Service (DDoS) attack overwhelming a server, a ransomware attack encrypting
+files, or a power failure bringing down an unprotected data center.</p>
+<section id="the-dad-triad">
+<h4><span class="section-number">1.4.3.1. </span>The DAD Triad<a class="headerlink" href="#the-dad-triad" title="Link to this heading">#</a></h4>
+<p>The DAD triad (Disclosure, Alteration, Destruction) maps attacks to the three CIA properties:
+disclosure attacks break confidentiality, alteration attacks break integrity, and destruction or
+denial attacks break availability. This mapping frames the defender’s job: understand what adversaries
+are trying to do, then choose controls that prevent, detect, or limit each class.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="adversaries-and-threat-actors">
+<h2><span class="section-number">1.5. </span>Adversaries and Threat Actors<a class="headerlink" href="#adversaries-and-threat-actors" title="Link to this heading">#</a></h2>
+<p>Understanding who attacks informs how to defend. Threat actors differ by motivation, capability,
+and patience.</p>
+<section id="nation-state-actors">
+<h3><span class="section-number">1.5.1. </span>Nation-State Actors<a class="headerlink" href="#nation-state-actors" title="Link to this heading">#</a></h3>
+<p>Nation-state actors (APTs) conduct espionage, intellectual-property theft, and sabotage on behalf of
+governments. They have large budgets, access to zero-day vulnerabilities, and the patience to maintain
+persistent access for months or years before taking action. The Stuxnet operation against Iranian
+centrifuges and the SolarWinds supply-chain campaign are documented examples. APTs are sophisticated
+but not unstoppable; they still rely on initial access vectors such as spear phishing and credential theft.</p>
+<section id="distinguishing-espionage-from-sabotage">
+<h4><span class="section-number">1.5.1.1. </span>Distinguishing Espionage from Sabotage<a class="headerlink" href="#distinguishing-espionage-from-sabotage" title="Link to this heading">#</a></h4>
+<p>Espionage actors seek intelligence without revealing their presence; they avoid detection for as long
+as possible. Sabotage actors may destroy data or physical equipment. Ransomware actors are a hybrid:
+they exfiltrate before encrypting to maintain a second extortion lever. Knowing the actor type helps
+defenders anticipate the likely goal and triage accordingly.</p>
+</section>
+</section>
+<section id="criminal-organizations">
+<h3><span class="section-number">1.5.2. </span>Criminal Organizations<a class="headerlink" href="#criminal-organizations" title="Link to this heading">#</a></h3>
+<p>Criminal organizations are primarily motivated by financial gain. Their operations are run at scale:
+phishing kits rented as a service, ransomware-as-a-service platforms, and credential markets
+where stolen usernames and passwords are bought and sold. The return-on-investment focus means they
+prefer high-yield, low-effort attacks against targets with weak hygiene over sophisticated targeted
+operations.</p>
+</section>
+<section id="insider-threats">
+<h3><span class="section-number">1.5.3. </span>Insider Threats<a class="headerlink" href="#insider-threats" title="Link to this heading">#</a></h3>
+<p>Insiders are employees or contractors who abuse legitimate access. They may be malicious (deliberate
+data theft, sabotage), negligent (accidentally misconfiguring a cloud bucket, losing an unencrypted
+laptop), or coerced (blackmailed into leaking data). Insider threats are among the most damaging
+because they bypass perimeter controls entirely. Controls include least-privilege access, separation
+of duties, behavior analytics, and off-boarding procedures.</p>
+</section>
+<section id="hacktivists-and-script-kiddies">
+<h3><span class="section-number">1.5.4. </span>Hacktivists and Script Kiddies<a class="headerlink" href="#hacktivists-and-script-kiddies" title="Link to this heading">#</a></h3>
+<p>Hacktivists are politically or ideologically motivated and often focus on public-facing disruption
+(website defacements, DDoS) to generate publicity. Script kiddies use tools written by others without
+deep understanding, posing a risk to unpatched systems even if their sophistication is low. Sheer
+volume of low-sophistication attacks means basic hygiene, patching and strong passwords, blocks the
+majority.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="vulnerability-threat-and-risk">
+<h2><span class="section-number">1.6. </span>Vulnerability, Threat, and Risk<a class="headerlink" href="#vulnerability-threat-and-risk" title="Link to this heading">#</a></h2>
+<p>Security practitioners must be precise about these three terms because each demands a different
+response.</p>
+<section id="defining-and-finding-vulnerabilities">
+<h3><span class="section-number">1.6.1. </span>Defining and Finding Vulnerabilities<a class="headerlink" href="#defining-and-finding-vulnerabilities" title="Link to this heading">#</a></h3>
+<p>A vulnerability is a weakness in a system, process, or control that could be exploited to cause
+harm. Common sources include software bugs (buffer overflows, injection flaws), misconfigurations
+(open ports, default credentials), design flaws, and human error. The CVE database maintained by
+MITRE is the global registry of publicly known vulnerabilities, each assigned a CVE identifier and
+a CVSS score that quantifies severity on a 0-10 scale.</p>
+<section id="the-attack-surface">
+<h4><span class="section-number">1.6.1.1. </span>The Attack Surface<a class="headerlink" href="#the-attack-surface" title="Link to this heading">#</a></h4>
+<p>The attack surface is the total set of points at which an attacker could try to enter or extract data.
+It includes network services, user interfaces, APIs, third-party libraries, and human users. Reducing
+the attack surface (disabling unused services, removing unnecessary software, applying least-privilege)
+is the single most effective risk-reduction strategy because it eliminates entire categories of
+vulnerability before they can be exploited.</p>
+</section>
+</section>
+<section id="the-risk-formula">
+<h3><span class="section-number">1.6.2. </span>The Risk Formula<a class="headerlink" href="#the-risk-formula" title="Link to this heading">#</a></h3>
+<p>Risk is not merely the presence of a vulnerability; it is the combination of likelihood and impact.
+The quantitative formula most widely used in security economics is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>SLE = Asset Value × Exposure Factor
+ALE = SLE × Annualized Rate of Occurrence
+</pre></div>
+</div>
+<p>ROSI (Return on Security Investment) compares the reduction in ALE from a control against the cost
+of the control: if the benefit exceeds the cost, the control is economically justified.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="the-nist-cybersecurity-framework">
+<h2><span class="section-number">1.7. </span>The NIST Cybersecurity Framework<a class="headerlink" href="#the-nist-cybersecurity-framework" title="Link to this heading">#</a></h2>
+<p>The NIST CSF 2.0 <span class="bibtex-citation" id="id1">[<a class="reference internal" href="#id7" title="National Institute of Standards and Technology. The nist cybersecurity framework (csf) 2.0. Technical Report NIST CSWP 29, U.S. Department of Commerce, 2024. doi:10.6028/NIST.CSWP.29.">NationalIoSaTechnology24</a>]</span> organizes security practices into six functions that together
+describe a complete risk-management lifecycle.</p>
+<section id="govern">
+<h3><span class="section-number">1.7.1. </span>Govern<a class="headerlink" href="#govern" title="Link to this heading">#</a></h3>
+<p>The Govern function, new in CSF 2.0, establishes the organizational context: mission, risk appetite,
+policies, roles, and accountability. Governance is the prerequisite for everything else because
+resources cannot be allocated rationally without clarity on what is being protected and why.</p>
+</section>
+<section id="identify">
+<h3><span class="section-number">1.7.2. </span>Identify<a class="headerlink" href="#identify" title="Link to this heading">#</a></h3>
+<p>The Identify function builds understanding of assets, risks, and dependencies. Without an accurate
+asset inventory, no organization knows its attack surface. Identify activities include asset management,
+risk assessment, and supply-chain risk analysis.</p>
+</section>
+<section id="protect">
+<h3><span class="section-number">1.7.3. </span>Protect<a class="headerlink" href="#protect" title="Link to this heading">#</a></h3>
+<p>The Protect function implements safeguards: access controls, encryption, patching, security awareness
+training, and data protection. Protection is the largest operational investment and the area where most
+compliance frameworks focus.</p>
+</section>
+<section id="detect">
+<h3><span class="section-number">1.7.4. </span>Detect<a class="headerlink" href="#detect" title="Link to this heading">#</a></h3>
+<p>The Detect function covers continuous monitoring and anomaly detection. Attackers who penetrate
+protection controls must be detected before they achieve their objectives. Mean Time to Detect (MTTD)
+is the key metric; the longer an attacker dwells undetected, the greater the damage.</p>
+<section id="security-monitoring-stack">
+<h4><span class="section-number">1.7.4.1. </span>Security Monitoring Stack<a class="headerlink" href="#security-monitoring-stack" title="Link to this heading">#</a></h4>
+<p>A modern detect capability combines endpoint detection and response (EDR), security information and
+event management (SIEM), network traffic analysis, and threat intelligence feeds. Correlation across
+these sources surfaces patterns that no single tool catches alone.</p>
+</section>
+</section>
+<section id="respond">
+<h3><span class="section-number">1.7.5. </span>Respond<a class="headerlink" href="#respond" title="Link to this heading">#</a></h3>
+<p>The Respond function covers what happens after detection: containment, eradication, and
+communication. An undocumented, improvised response wastes time and destroys evidence. Every
+organization above a minimal size should maintain a tested incident response plan.</p>
+</section>
+<section id="recover">
+<h3><span class="section-number">1.7.6. </span>Recover<a class="headerlink" href="#recover" title="Link to this heading">#</a></h3>
+<p>The Recover function restores systems and services and incorporates lessons learned. Recovery planning
+includes backup verification, business continuity testing, and post-incident review. Recovery Time
+Objective (RTO) and Recovery Point Objective (RPO) are the service-level metrics that drive backup
+strategy.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="defense-in-depth-and-security-controls">
+<h2><span class="section-number">1.8. </span>Defense in Depth and Security Controls<a class="headerlink" href="#defense-in-depth-and-security-controls" title="Link to this heading">#</a></h2>
+<section id="the-defense-in-depth-principle">
+<h3><span class="section-number">1.8.1. </span>The Defense-in-Depth Principle<a class="headerlink" href="#the-defense-in-depth-principle" title="Link to this heading">#</a></h3>
+<p>Defense in depth places multiple independent controls along every attack path so that the failure of
+any single control does not produce a breach. The layers include perimeter (firewalls, network
+segmentation), host (endpoint protection, patching, application allowlisting), data (encryption,
+access controls), and human (training, phishing simulation). Each layer slows an attacker and creates
+detection opportunities.</p>
+</section>
+<section id="control-types">
+<h3><span class="section-number">1.8.2. </span>Control Types<a class="headerlink" href="#control-types" title="Link to this heading">#</a></h3>
+<p>Security controls are classified by what they do when activated:</p>
+<ul class="simple">
+<li><p><strong>Preventive controls</strong> stop an attack before it succeeds: firewalls, access control lists,
+encryption, locked doors.</p></li>
+<li><p><strong>Detective controls</strong> identify that an attack has occurred or is in progress: IDS, SIEM, audit
+logs, security cameras.</p></li>
+<li><p><strong>Corrective controls</strong> restore a system to a known-good state after an incident: backup restoration,
+patch deployment, account lockout.</p></li>
+<li><p><strong>Deterrent controls</strong> discourage attack by raising the perceived cost: warning banners, visible
+cameras, prosecution of violators.</p></li>
+<li><p><strong>Compensating controls</strong> provide an alternative when the primary control is impractical: an
+air-gapped network segment compensating for an unpatched industrial controller.</p></li>
+</ul>
+<section id="defense-in-depth-example">
+<h4><span class="section-number">1.8.2.1. </span>Defense-in-Depth Example<a class="headerlink" href="#defense-in-depth-example" title="Link to this heading">#</a></h4>
+<p>A phishing email reaches a user. The email filter (preventive) did not catch it. The user clicks a
+link and lands on a credential-harvesting page. The browser’s safe-browsing warning (detective) fires.
+The user proceeds and enters credentials. Multi-factor authentication (preventive) blocks the login.
+The attacker tries the credential elsewhere; a password-reuse monitor (detective) alerts. Each layer
+independently reduces the probability of full compromise.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">1.9. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>Cybersecurity is a prerequisite for every digital service society depends on: banking, healthcare,
+power grids, communication, and government services all rest on systems that can fail if security is
+neglected. Practitioners who understand the threat landscape, the CIA triad, and the risk quantification
+tools in this chapter are equipped to make defensible, economically grounded security decisions rather
+than reacting to the most recent headline.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">1.10. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>Ransomware campaigns targeting critical infrastructure have illustrated that availability failures carry
+consequences far beyond IT disruption. Documented incidents involving hospitals (patient diversions),
+fuel pipelines (supply disruptions), and water utilities (control system access) demonstrate that the
+CIA triad applies to physical-world outcomes, not just data. Each of these incidents involved known,
+preventable vulnerabilities including unpatched systems, weak credentials, and absent network
+segmentation.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 1 -- Worked Example: ALE calculation and defense-in-depth visualization</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpatches</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+
+<span class="c1"># ── ALE numerical example ─────────────────────────────────────────────────────</span>
+<span class="n">asset_value</span> <span class="o">=</span> <span class="mi">500_000</span>        <span class="c1"># customer database: $500 k</span>
+<span class="n">exposure_factor</span> <span class="o">=</span> <span class="mf">0.40</span>       <span class="c1"># 40% of asset value lost per breach on average</span>
+<span class="n">aro</span> <span class="o">=</span> <span class="mf">0.30</span>                   <span class="c1"># 30% annual probability of a breach</span>
+
+<span class="n">sle</span> <span class="o">=</span> <span class="n">asset_value</span> <span class="o">*</span> <span class="n">exposure_factor</span>
+<span class="n">ale</span> <span class="o">=</span> <span class="n">sle</span> <span class="o">*</span> <span class="n">aro</span>
+<span class="n">control_cost</span> <span class="o">=</span> <span class="mi">20_000</span>        <span class="c1"># annual cost of a monitoring + patching programme</span>
+<span class="n">ale_with_control</span> <span class="o">=</span> <span class="n">ale</span> <span class="o">*</span> <span class="mf">0.15</span>  <span class="c1"># control reduces expected loss by 85%</span>
+<span class="n">benefit</span> <span class="o">=</span> <span class="n">ale</span> <span class="o">-</span> <span class="n">ale_with_control</span>
+<span class="n">rosi</span> <span class="o">=</span> <span class="p">(</span><span class="n">benefit</span> <span class="o">-</span> <span class="n">control_cost</span><span class="p">)</span> <span class="o">/</span> <span class="n">control_cost</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== Annualized Loss Expectancy (ALE) ===&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Asset value          : $</span><span class="si">{</span><span class="n">asset_value</span><span class="si">:</span><span class="s2">&gt;12,.0f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Exposure factor      : </span><span class="si">{</span><span class="n">exposure_factor</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Single Loss (SLE)    : $</span><span class="si">{</span><span class="n">sle</span><span class="si">:</span><span class="s2">&gt;12,.0f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Annual rate (ARO)    : </span><span class="si">{</span><span class="n">aro</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  ALE (no control)     : $</span><span class="si">{</span><span class="n">ale</span><span class="si">:</span><span class="s2">&gt;12,.0f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  ALE (with control)   : $</span><span class="si">{</span><span class="n">ale_with_control</span><span class="si">:</span><span class="s2">&gt;12,.0f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Control annual cost  : $</span><span class="si">{</span><span class="n">control_cost</span><span class="si">:</span><span class="s2">&gt;12,.0f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Annual benefit       : $</span><span class="si">{</span><span class="n">benefit</span><span class="si">:</span><span class="s2">&gt;12,.0f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  ROSI                 : </span><span class="si">{</span><span class="n">rosi</span><span class="si">:</span><span class="s2">&gt;12.1f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Decision: </span><span class="si">{</span><span class="s1">&#39;JUSTIFIED&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">rosi</span><span class="o">&gt;</span><span class="mi">0</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;NOT justified&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># ── Defense-in-depth layers visualization ─────────────────────────────────────</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="n">layers</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;Perimeter Controls&quot;</span><span class="p">,</span>     <span class="s2">&quot;Firewall, IPS, Email gateway&quot;</span><span class="p">,</span>            <span class="s2">&quot;#3a7ebf&quot;</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Network Segmentation&quot;</span><span class="p">,</span>   <span class="s2">&quot;VLANs, DMZ, Zero-trust zones&quot;</span><span class="p">,</span>            <span class="s2">&quot;#5ba3cc&quot;</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Host Controls&quot;</span><span class="p">,</span>          <span class="s2">&quot;EDR, Patching, App allowlisting&quot;</span><span class="p">,</span>         <span class="s2">&quot;#80c1e0&quot;</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Data Controls&quot;</span><span class="p">,</span>          <span class="s2">&quot;Encryption, DLP, Access control&quot;</span><span class="p">,</span>         <span class="s2">&quot;#a8d8ea&quot;</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Human Controls&quot;</span><span class="p">,</span>         <span class="s2">&quot;Awareness training, Phishing simulation&quot;</span><span class="p">,</span> <span class="s2">&quot;#c9e9f5&quot;</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">),</span>
+<span class="p">]</span>
+<span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">detail</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">layers</span><span class="p">:</span>
+    <span class="n">width</span> <span class="o">=</span> <span class="mf">9.0</span> <span class="o">-</span> <span class="p">(</span><span class="mf">4.5</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.5</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span> <span class="o">-</span> <span class="n">width</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">mpatches</span><span class="o">.</span><span class="n">FancyBboxPatch</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">width</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span>
+                 <span class="n">boxstyle</span><span class="o">=</span><span class="s2">&quot;round,pad=0.05&quot;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.2</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mf">0.38</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">  —  </span><span class="si">{</span><span class="n">detail</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">8.5</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#111&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mf">5.6</span><span class="p">,</span> <span class="s2">&quot;Figure 1.1  Defense-in-Depth Layers (outermost to innermost)&quot;</span><span class="p">,</span>
+        <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mf">1.65</span><span class="p">),</span>
+            <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;&lt;-&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#c00&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">2.0</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">7.8</span><span class="p">,</span> <span class="mf">3.4</span><span class="p">,</span> <span class="s2">&quot;Attack</span><span class="se">\n</span><span class="s2">progression&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#c00&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
+
+<span class="n">_buf</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">_buf</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">_buf</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">_buf</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Figure 1.1 rendered.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Annualized Loss Expectancy (ALE) ===
+  Asset value          : $     500,000
+  Exposure factor      : 40%
+  Single Loss (SLE)    : $     200,000
+  Annual rate (ARO)    : 30%
+  ALE (no control)     : $      60,000
+  ALE (with control)   : $       9,000
+  Control annual cost  : $      20,000
+  Annual benefit       : $      51,000
+  ROSI                 :        155.0%
+  Decision: JUSTIFIED
+</pre></div>
+</div>
+<img alt="../../_images/15f4cb0d94e628e0383a222c64820368e89f6834bb5e0815daa4efd3521f83e2.png" src="../../_images/15f4cb0d94e628e0383a222c64820368e89f6834bb5e0815daa4efd3521f83e2.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Figure 1.1 rendered.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">1.11. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> Which CIA property is violated when ransomware encrypts a hospital’s patient files?
+A. Confidentiality only  B. Integrity only  C. Availability (and potentially integrity)  D. None</p>
+<p><strong>Q2.</strong> An employee accidentally emails a customer list to the wrong recipient. Which property fails?
+A. Availability  B. Confidentiality  C. Integrity  D. Authentication</p>
+<p><strong>Q3.</strong> The formula ALE = SLE x ARO produces a value measured in:
+A. Risk units  B. Dollars per year  C. Probability  D. Patch count</p>
+<p><strong>Q4.</strong> The NIST CSF 2.0 function added in the 2024 revision is:
+A. Identify  B. Detect  C. Govern  D. Protect</p>
+<p><strong>Q5.</strong> Defense in depth is best described as:
+A. Using the most expensive control available  B. Multiple overlapping controls so single failure does not cause breach  C. Patching all systems within 24 hours  D. Encrypting all data at rest</p>
+<p><strong>Q6.</strong> A camera in a data centre is primarily which type of control?
+A. Preventive  B. Corrective  C. Detective and deterrent  D. Compensating</p>
+<p><strong>Q7.</strong> A script kiddie differs from an APT actor primarily in:
+A. Motivation  B. Technical sophistication and resources  C. Use of phishing  D. Targeting of infrastructure</p>
+<p><strong>Q8.</strong> The attack surface of an application is reduced by:
+A. Buying a more expensive server  B. Disabling unused services and applying least-privilege  C. Adding more logging  D. Increasing encryption key size</p>
+<p><strong>Q9.</strong> SLE = <span class="math notranslate nohighlight">\(80,000 and ARO = 0.25. What is the ALE?
+A. \)</span>80,000  B. <span class="math notranslate nohighlight">\(320,000  C. \)</span>20,000  D. $200,000</p>
+<p><strong>Q10.</strong> Which NIST CSF function covers backup and disaster recovery?
+A. Identify  B. Protect  C. Respond  D. Recover</p>
+<p><em>Answers: Q1 C, Q2 B, Q3 B, Q4 C, Q5 B, Q6 C, Q7 B, Q8 B, Q9 C, Q10 D.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">1.12. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – Asset inventory</strong>: List 10 digital assets a small university department would hold
+(examples: student records, research data, email server). For each, assign a rough asset value,
+an exposure factor if breached, and an ARO. Compute SLE and ALE for each.</p>
+<p><strong>Part B – Threat actor mapping</strong>: For the same department, identify two likely threat actors from
+the taxonomy in this chapter. For each actor, describe their probable motivation, preferred attack
+vector, and one preventive and one detective control that would be effective against them.</p>
+<p><strong>Part C – NIST CSF gap analysis</strong>: Using the six CSF functions as headings, list at least two
+activities the department currently performs (or should perform) under each function. Mark activities
+that are missing as gaps.</p>
+<p><strong>Part D – Defense-in-depth design</strong>: Draw or describe a five-layer defense-in-depth model for the
+department’s network, naming one specific control at each layer and one detective mechanism that
+would alert if that layer were breached.</p>
+</section>
+<section id="references">
+<h2><span class="section-number">1.13. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<div class="docutils container" id="id2">
+<div role="list" class="citation-list">
+<div class="citation" id="id7" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">NationalIoSaTechnology24</a><span class="fn-bracket">]</span></span>
+<p>National Institute of Standards and Technology. The nist cybersecurity framework (csf) 2.0. Technical Report NIST CSWP 29, U.S. Department of Commerce, 2024. <a class="reference external" href="https://doi.org/10.6028/NIST.CSWP.29">doi:10.6028/NIST.CSWP.29</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/01_intro"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../00_preface/preface.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Preface</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../02_cryptography/chapter02.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Chapter 2: Cryptography</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">1.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">1.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-cybersecurity-protects">1.3. What Cybersecurity Protects</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#information-assets-and-their-value">1.3.1. Information Assets and Their Value</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tangible-and-intangible-costs">1.3.1.1. Tangible and Intangible Costs</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cybersecurity-versus-adjacent-disciplines">1.3.2. Cybersecurity Versus Adjacent Disciplines</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cia-triad">1.4. The CIA Triad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confidentiality">1.4.1. Confidentiality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-classification">1.4.1.1. Data Classification</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrity">1.4.2. Integrity</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-need-for-authenticated-integrity">1.4.2.1. The Need for Authenticated Integrity</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#availability">1.4.3. Availability</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dad-triad">1.4.3.1. The DAD Triad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adversaries-and-threat-actors">1.5. Adversaries and Threat Actors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nation-state-actors">1.5.1. Nation-State Actors</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#distinguishing-espionage-from-sabotage">1.5.1.1. Distinguishing Espionage from Sabotage</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#criminal-organizations">1.5.2. Criminal Organizations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#insider-threats">1.5.3. Insider Threats</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hacktivists-and-script-kiddies">1.5.4. Hacktivists and Script Kiddies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vulnerability-threat-and-risk">1.6. Vulnerability, Threat, and Risk</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-and-finding-vulnerabilities">1.6.1. Defining and Finding Vulnerabilities</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-attack-surface">1.6.1.1. The Attack Surface</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-risk-formula">1.6.2. The Risk Formula</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-nist-cybersecurity-framework">1.7. The NIST Cybersecurity Framework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#govern">1.7.1. Govern</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identify">1.7.2. Identify</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protect">1.7.3. Protect</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detect">1.7.4. Detect</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#security-monitoring-stack">1.7.4.1. Security Monitoring Stack</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#respond">1.7.5. Respond</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recover">1.7.6. Recover</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defense-in-depth-and-security-controls">1.8. Defense in Depth and Security Controls</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-defense-in-depth-principle">1.8.1. The Defense-in-Depth Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#control-types">1.8.2. Control Types</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#defense-in-depth-example">1.8.2.1. Defense-in-Depth Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">1.9. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">1.10. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">1.11. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">1.12. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">1.13. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

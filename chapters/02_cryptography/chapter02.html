@@ -1,0 +1,1495 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2. Chapter 2: Cryptography &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/02_cryptography/chapter02';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3. Chapter 3: Networking Fundamentals for Security" href="../03_networking/chapter03.html" />
+    <link rel="prev" title="1. Chapter 1: Introduction to Cybersecurity" href="../01_intro/chapter01.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/02_cryptography/chapter02.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 2: Cryptography</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">2.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">2.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-role-of-cryptography">2.3. The Role of Cryptography</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-encryption-hashing-and-tokenization">2.4. Encoding, Encryption, Hashing, and Tokenization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-the-distinction-matters">2.4.1. Why the Distinction Matters</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symmetric-encryption">2.5. Symmetric Encryption</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-symmetric-encryption-works">2.5.1. How Symmetric Encryption Works</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#block-ciphers">2.5.1.1. Block Ciphers</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stream-ciphers">2.5.1.2. Stream Ciphers</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aes-the-advanced-encryption-standard">2.5.2. AES: The Advanced Encryption Standard</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#aes-internals">2.5.2.1. AES Internals</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#aes-key-sizes">2.5.2.2. AES Key Sizes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-des-failed-and-3des-is-deprecated">2.5.2.3. Why DES Failed and 3DES Is Deprecated</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strengths-and-weaknesses-of-symmetric-encryption">2.5.3. Strengths and Weaknesses of Symmetric Encryption</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#asymmetric-public-key-encryption">2.6. Asymmetric (Public Key) Encryption</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-key-pair-concept">2.6.1. The Key Pair Concept</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rsa">2.6.2. RSA</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rsa-key-generation">2.6.2.1. RSA Key Generation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rsa-encryption-and-decryption">2.6.2.2. RSA Encryption and Decryption</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rsa-key-sizes-and-quantum-threat">2.6.2.3. RSA Key Sizes and Quantum Threat</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elliptic-curve-cryptography">2.6.3. Elliptic Curve Cryptography</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diffie-hellman-key-exchange">2.6.4. Diffie-Hellman Key Exchange</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-discrete-logarithm-problem">2.6.4.1. The Discrete Logarithm Problem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hash-functions">2.7. Hash Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#required-properties">2.7.1. Required Properties</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-hash-algorithms">2.7.2. Common Hash Algorithms</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#md5-and-sha-1-broken-for-security-use">2.7.2.1. MD5 and SHA-1: Broken for Security Use</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sha-2-and-sha-3">2.7.2.2. SHA-2 and SHA-3</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#password-storage-with-hashing">2.7.3. Password Storage with Hashing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-plain-sha-256-is-insufficient-for-passwords">2.7.3.1. Why Plain SHA-256 Is Insufficient for Passwords</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#salting">2.7.3.2. Salting</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adaptive-algorithms-bcrypt-and-argon2">2.7.3.3. Adaptive Algorithms: bcrypt and Argon2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#message-authentication-codes">2.8. Message Authentication Codes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-a-mac-provides">2.8.1. What a MAC Provides</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hmac-construction">2.8.2. HMAC Construction</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-signatures">2.9. Digital Signatures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-digital-signatures-work">2.9.1. How Digital Signatures Work</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">2.9.1.1. Steps</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-repudiation">2.9.2. Non-repudiation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#public-key-infrastructure-and-certificates">2.9.3. Public Key Infrastructure and Certificates</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#certificate-authorities">2.9.3.1. Certificate Authorities</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-of-trust">2.9.3.2. Chain of Trust</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-management">2.10. Key Management</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-lifecycle">2.10.1. Key Lifecycle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hybrid-encryption-in-practice-tls">2.10.2. Hybrid Encryption in Practice: TLS</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">2.11. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">2.12. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">2.13. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">2.14. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">2.15. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-2-cryptography">
+<h1><span class="section-number">2. </span>Chapter 2: Cryptography<a class="headerlink" href="#chapter-2-cryptography" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“Cryptography is the ultimate form of non-violent direct action.” Julian Assange</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">2.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Distinguish encoding, encryption, hashing, and tokenization and identify the correct tool for each job.</p></li>
+<li><p>Explain how symmetric encryption works and name the principal algorithms and their key sizes.</p></li>
+<li><p>Describe how asymmetric encryption uses key pairs and explain RSA and Diffie-Hellman.</p></li>
+<li><p>Define the three required properties of a cryptographic hash function and name current standards.</p></li>
+<li><p>Explain what a Message Authentication Code provides and how HMAC is constructed.</p></li>
+<li><p>Describe how a digital signature is created and verified and what non-repudiation means.</p></li>
+<li><p>Explain the role of a Certificate Authority and a chain of trust.</p></li>
+<li><p>Perform basic RSA key-generation arithmetic and compute a SHA-256 hash in code.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">2.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Plaintext</strong>: the original, readable data before any transformation.</p></li>
+<li><p><strong>Ciphertext</strong>: the output of encryption; unreadable without the key.</p></li>
+<li><p><strong>Key</strong>: a secret value that controls a cryptographic algorithm.</p></li>
+<li><p><strong>Symmetric encryption</strong>: encryption where the same key is used to encrypt and decrypt.</p></li>
+<li><p><strong>Asymmetric encryption</strong>: encryption that uses a mathematically linked key pair.</p></li>
+<li><p><strong>Public key / Private key</strong>: the two halves of an asymmetric key pair; the public key is shared freely.</p></li>
+<li><p><strong>Hash function</strong>: a one-way function that maps arbitrary input to a fixed-length digest.</p></li>
+<li><p><strong>Digest / Hash value</strong>: the fixed-length output of a hash function.</p></li>
+<li><p><strong>MAC</strong>: Message Authentication Code; provides integrity and authentication.</p></li>
+<li><p><strong>HMAC</strong>: Hash-based Message Authentication Code.</p></li>
+<li><p><strong>Digital signature</strong>: a cryptographic proof of origin and integrity created with a private key.</p></li>
+<li><p><strong>PKI</strong>: Public Key Infrastructure; the system of CAs, certificates, and policies.</p></li>
+<li><p><strong>CA</strong>: Certificate Authority; a trusted third party that signs public-key certificates.</p></li>
+<li><p><strong>AES</strong>: Advanced Encryption Standard (FIPS 197).</p></li>
+<li><p><strong>DES / 3DES</strong>: Data Encryption Standard / Triple DES; legacy block ciphers.</p></li>
+<li><p><strong>RSA</strong>: Rivest-Shamir-Adleman; the dominant asymmetric cipher.</p></li>
+<li><p><strong>ECC</strong>: Elliptic-Curve Cryptography.</p></li>
+<li><p><strong>TLS</strong>: Transport Layer Security; the protocol that secures HTTPS.</p></li>
+<li><p><strong>Salt</strong>: a random value prepended to a password before hashing to defeat precomputation.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="the-role-of-cryptography">
+<h2><span class="section-number">2.3. </span>The Role of Cryptography<a class="headerlink" href="#the-role-of-cryptography" title="Link to this heading">#</a></h2>
+<p>Cryptography is the set of mathematical techniques that allow two parties to communicate privately,
+verify each other’s identity, and detect tampering, even over an untrusted network. It is not a
+single tool but a layered set of primitives, each solving a distinct problem:</p>
+<ul class="simple">
+<li><p><strong>Confidentiality</strong> is provided by encryption.</p></li>
+<li><p><strong>Integrity</strong> is provided by hash functions and MACs.</p></li>
+<li><p><strong>Authentication</strong> is provided by MACs and digital signatures.</p></li>
+<li><p><strong>Non-repudiation</strong> is provided only by asymmetric digital signatures.</p></li>
+</ul>
+<p>Every security protocol in use, from TLS to SSH to S/MIME to PGP, is an orchestration of these
+primitives. Understanding each primitive individually is the prerequisite for understanding any protocol.</p>
+</section>
+<hr class="docutils" />
+<section id="encoding-encryption-hashing-and-tokenization">
+<h2><span class="section-number">2.4. </span>Encoding, Encryption, Hashing, and Tokenization<a class="headerlink" href="#encoding-encryption-hashing-and-tokenization" title="Link to this heading">#</a></h2>
+<p>Before going further, four terms that are routinely confused must be separated.</p>
+<section id="why-the-distinction-matters">
+<h3><span class="section-number">2.4.1. </span>Why the Distinction Matters<a class="headerlink" href="#why-the-distinction-matters" title="Link to this heading">#</a></h3>
+<p><strong>Encoding</strong> transforms a representation for compatibility. Base64 turns binary bytes into ASCII so
+they survive transit through email or URLs. It is publicly specified, requires no key, and is instantly
+reversible by anyone. It provides no security whatsoever.</p>
+<p><strong>Encryption</strong> transforms data using a key so that only someone holding the correct key can reverse the
+transformation. It protects confidentiality.</p>
+<p><strong>Hashing</strong> applies a one-way function that produces a fixed-length digest. It is not meant to be
+reversed. It proves that data has not changed and lets systems verify a password without storing it.</p>
+<p><strong>Tokenization</strong> replaces a sensitive value, such as a credit-card number, with a non-sensitive
+surrogate (a token). The real value is stored in a separate, hardened vault. The token alone is useless
+to an attacker. This is the core mechanism behind PCI DSS payment-card data protection.</p>
+<p>The figure below places all four on the same axes.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="symmetric-encryption">
+<h2><span class="section-number">2.5. </span>Symmetric Encryption<a class="headerlink" href="#symmetric-encryption" title="Link to this heading">#</a></h2>
+<section id="how-symmetric-encryption-works">
+<h3><span class="section-number">2.5.1. </span>How Symmetric Encryption Works<a class="headerlink" href="#how-symmetric-encryption-works" title="Link to this heading">#</a></h3>
+<p>Symmetric encryption uses a single shared secret key for both encryption and decryption. The sender
+encrypts with the key; the recipient decrypts with the same key. The central engineering challenge is
+<strong>key distribution</strong>: the two parties must somehow share the secret before they can communicate, which is
+the problem that asymmetric cryptography later solved.</p>
+<section id="block-ciphers">
+<h4><span class="section-number">2.5.1.1. </span>Block Ciphers<a class="headerlink" href="#block-ciphers" title="Link to this heading">#</a></h4>
+<p>A block cipher divides plaintext into fixed-length blocks (128 bits for AES) and applies a series of
+mathematical transformations called <strong>rounds</strong> to each block. Because a block cipher processes one block
+at a time in its basic form (Electronic Codebook, ECB), a mode of operation is applied to prevent
+patterns from leaking:</p>
+<ul class="simple">
+<li><p><strong>CBC</strong> (Cipher Block Chaining): XOR each plaintext block with the previous ciphertext block before
+encrypting; requires an Initialization Vector (IV) for the first block.</p></li>
+<li><p><strong>CTR</strong> (Counter Mode): turns a block cipher into a stream cipher by encrypting a counter value.</p></li>
+<li><p><strong>GCM</strong> (Galois/Counter Mode): adds authentication; produces a ciphertext plus an authentication tag.
+GCM is the dominant mode in TLS 1.3 and modern VPNs.</p></li>
+</ul>
+</section>
+<section id="stream-ciphers">
+<h4><span class="section-number">2.5.1.2. </span>Stream Ciphers<a class="headerlink" href="#stream-ciphers" title="Link to this heading">#</a></h4>
+<p>A stream cipher generates a pseudorandom keystream and XOR-combines it with plaintext one bit or byte at
+a time. RC4 (now broken) is the classic example. ChaCha20 is a modern stream cipher used in TLS and QUIC
+when hardware AES acceleration is unavailable.</p>
+</section>
+</section>
+<section id="aes-the-advanced-encryption-standard">
+<h3><span class="section-number">2.5.2. </span>AES: The Advanced Encryption Standard<a class="headerlink" href="#aes-the-advanced-encryption-standard" title="Link to this heading">#</a></h3>
+<p>AES was standardized in FIPS 197 in 2001 <span class="bibtex-citation" id="id1">[<a class="reference internal" href="#id19" title="National Institute of Standards and Technology. Advanced encryption standard (aes). Technical Report FIPS PUB 197, U.S. Department of Commerce, 2001. doi:10.6028/NIST.FIPS.197.">NationalIoSaTechnology01</a>]</span>. It replaced DES after a decade of increasingly
+practical attacks. AES operates on a 4x4 matrix of bytes called the state and applies a sequence of four
+operations per round.</p>
+<section id="aes-internals">
+<h4><span class="section-number">2.5.2.1. </span>AES Internals<a class="headerlink" href="#aes-internals" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>SubBytes</strong>: each byte is replaced with a corresponding value from a fixed substitution box (S-box),
+which provides non-linearity.</p></li>
+<li><p><strong>ShiftRows</strong>: rows of the state are cyclically shifted left by 0, 1, 2, and 3 positions, achieving
+diffusion across columns.</p></li>
+<li><p><strong>MixColumns</strong>: each column is multiplied by a fixed polynomial in GF(2^8), mixing bytes within the
+column.</p></li>
+<li><p><strong>AddRoundKey</strong>: the state is XOR-ed with a round key derived from the original key.</p></li>
+</ul>
+</section>
+<section id="aes-key-sizes">
+<h4><span class="section-number">2.5.2.2. </span>AES Key Sizes<a class="headerlink" href="#aes-key-sizes" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Key size</p></th>
+<th class="head"><p>Rounds</p></th>
+<th class="head"><p>Security level</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>128 bits</p></td>
+<td><p>10</p></td>
+<td><p>Sufficient for most purposes through 2030+</p></td>
+</tr>
+<tr class="row-odd"><td><p>192 bits</p></td>
+<td><p>12</p></td>
+<td><p>Higher assurance</p></td>
+</tr>
+<tr class="row-even"><td><p>256 bits</p></td>
+<td><p>14</p></td>
+<td><p>Recommended for long-lived secrets and post-quantum margin</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="why-des-failed-and-3des-is-deprecated">
+<h4><span class="section-number">2.5.2.3. </span>Why DES Failed and 3DES Is Deprecated<a class="headerlink" href="#why-des-failed-and-3des-is-deprecated" title="Link to this heading">#</a></h4>
+<p>DES uses a 56-bit key, which a modern GPU can brute-force in hours. 3DES applies DES three times with
+two or three keys, raising the effective key length, but it is slow, contains a structural weakness
+called a meet-in-the-middle attack that reduces its 112-bit effective strength, and NIST deprecated it
+in 2019. No new system should use 3DES.</p>
+</section>
+</section>
+<section id="strengths-and-weaknesses-of-symmetric-encryption">
+<h3><span class="section-number">2.5.3. </span>Strengths and Weaknesses of Symmetric Encryption<a class="headerlink" href="#strengths-and-weaknesses-of-symmetric-encryption" title="Link to this heading">#</a></h3>
+<p>Symmetric encryption is fast (AES with hardware acceleration runs at multi-gigabit speeds) and
+computationally inexpensive, making it the right choice for bulk data encryption. Its weakness is key
+distribution: securely sharing a secret key with a remote party who you have never met requires an
+out-of-band channel or, more practically, an asymmetric key exchange.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="asymmetric-public-key-encryption">
+<h2><span class="section-number">2.6. </span>Asymmetric (Public Key) Encryption<a class="headerlink" href="#asymmetric-public-key-encryption" title="Link to this heading">#</a></h2>
+<section id="the-key-pair-concept">
+<h3><span class="section-number">2.6.1. </span>The Key Pair Concept<a class="headerlink" href="#the-key-pair-concept" title="Link to this heading">#</a></h3>
+<p>Asymmetric cryptography solves the key-distribution problem by generating a mathematically linked pair
+of keys. The <strong>public key</strong> is distributed freely; anyone can use it to encrypt a message or verify a
+signature. The <strong>private key</strong> is kept secret by its owner and is used to decrypt or to sign. The
+mathematical relationship ensures that:</p>
+<ul class="simple">
+<li><p>A message encrypted with the public key can only be decrypted with the private key.</p></li>
+<li><p>A signature created with the private key can be verified by anyone holding the public key.</p></li>
+</ul>
+<p>The figure below illustrates both directions of use.</p>
+</section>
+<section id="rsa">
+<h3><span class="section-number">2.6.2. </span>RSA<a class="headerlink" href="#rsa" title="Link to this heading">#</a></h3>
+<p>RSA, described by Rivest, Shamir, and Adleman in 1978 <span class="bibtex-citation" id="id2">[<a class="reference internal" href="#id18" title="Ronald L. Rivest, Adi Shamir, and Leonard Adleman. A method for obtaining digital signatures and public-key cryptosystems. Communications of the ACM, 21(2):120–126, 1978. doi:10.1145/359340.359342.">RSA78</a>]</span>, was the first practical public-key
+cryptosystem and remains the most widely deployed asymmetric algorithm.</p>
+<section id="rsa-key-generation">
+<h4><span class="section-number">2.6.2.1. </span>RSA Key Generation<a class="headerlink" href="#rsa-key-generation" title="Link to this heading">#</a></h4>
+<p>RSA security rests on the integer-factorization problem: given a very large composite number n, finding
+its prime factors p and q is computationally infeasible when p and q are large (at least 1024 bits each
+for n &gt;= 2048 bits). The steps are:</p>
+<ol class="arabic simple">
+<li><p>Choose two large primes p and q.</p></li>
+<li><p>Compute n = p * q. This is the modulus, which is public.</p></li>
+<li><p>Compute phi(n) = (p - 1)(q - 1).</p></li>
+<li><p>Choose e such that 1 &lt; e &lt; phi(n) and gcd(e, phi(n)) = 1. Common choice: e = 65537.</p></li>
+<li><p>Compute d = e^(-1) mod phi(n). This is the private exponent.</p></li>
+<li><p>Public key: (n, e). Private key: (n, d).</p></li>
+</ol>
+</section>
+<section id="rsa-encryption-and-decryption">
+<h4><span class="section-number">2.6.2.2. </span>RSA Encryption and Decryption<a class="headerlink" href="#rsa-encryption-and-decryption" title="Link to this heading">#</a></h4>
+<p>Encryption: C = M^e mod n.
+Decryption: M = C^d mod n.</p>
+<p>For real-world use, RSA encrypts a symmetric session key rather than bulk data; the session key then
+encrypts the actual message. RSA is too slow for bulk encryption (roughly 1000 times slower than AES).</p>
+</section>
+<section id="rsa-key-sizes-and-quantum-threat">
+<h4><span class="section-number">2.6.2.3. </span>RSA Key Sizes and Quantum Threat<a class="headerlink" href="#rsa-key-sizes-and-quantum-threat" title="Link to this heading">#</a></h4>
+<p>Current NIST guidance recommends a minimum of 2048-bit RSA for new deployments. 3072-bit and 4096-bit
+keys provide additional margin. RSA is vulnerable to Shor’s algorithm on a sufficiently powerful quantum
+computer, which is the motivation for post-quantum alternatives discussed in Chapter 17.</p>
+</section>
+</section>
+<section id="elliptic-curve-cryptography">
+<h3><span class="section-number">2.6.3. </span>Elliptic Curve Cryptography<a class="headerlink" href="#elliptic-curve-cryptography" title="Link to this heading">#</a></h3>
+<p>ECC provides the same security as RSA with far smaller keys because its hardness assumption, the
+elliptic-curve discrete-logarithm problem, is harder to solve. A 256-bit ECC key provides roughly the
+same security as a 3072-bit RSA key. TLS 1.3 uses ECDHE (Elliptic Curve Diffie-Hellman Ephemeral) as
+its default key-exchange mechanism.</p>
+</section>
+<section id="diffie-hellman-key-exchange">
+<h3><span class="section-number">2.6.4. </span>Diffie-Hellman Key Exchange<a class="headerlink" href="#diffie-hellman-key-exchange" title="Link to this heading">#</a></h3>
+<p>Diffie-Hellman, published in 1976 <span class="bibtex-citation" id="id3">[<a class="reference internal" href="#id17" title="Whitfield Diffie and Martin E. Hellman. New directions in cryptography. IEEE Transactions on Information Theory, 22(6):644–654, 1976. doi:10.1109/TIT.1976.1055638.">DH76</a>]</span>, allows two parties to establish a shared
+secret over an insecure channel without transmitting the secret itself.</p>
+<section id="the-discrete-logarithm-problem">
+<h4><span class="section-number">2.6.4.1. </span>The Discrete Logarithm Problem<a class="headerlink" href="#the-discrete-logarithm-problem" title="Link to this heading">#</a></h4>
+<p>Both parties agree publicly on a large prime p and a generator g. Each generates a private value,
+computes a public value (g^private mod p), and exchanges public values. Each then raises the other’s
+public value to their own private exponent. Both arrive at g^(ab) mod p, which equals the shared secret,
+but an eavesdropper who sees only g^a and g^b cannot efficiently recover a, b, or the shared secret.</p>
+<p>Ephemeral Diffie-Hellman (DHE and ECDHE) generates a fresh key pair for each session, providing
+<strong>forward secrecy</strong>: compromise of a long-term key does not compromise past session keys.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="hash-functions">
+<h2><span class="section-number">2.7. </span>Hash Functions<a class="headerlink" href="#hash-functions" title="Link to this heading">#</a></h2>
+<section id="required-properties">
+<h3><span class="section-number">2.7.1. </span>Required Properties<a class="headerlink" href="#required-properties" title="Link to this heading">#</a></h3>
+<p>A cryptographic hash function H maps an input of arbitrary length to a fixed-length digest. Three
+properties are required:</p>
+<ol class="arabic simple">
+<li><p><strong>Pre-image resistance</strong> (one-way): given a digest d, it is computationally infeasible to find any
+m such that H(m) = d.</p></li>
+<li><p><strong>Second pre-image resistance</strong>: given m1, it is computationally infeasible to find a different m2
+such that H(m1) = H(m2).</p></li>
+<li><p><strong>Collision resistance</strong>: it is computationally infeasible to find any two distinct m1, m2 such that
+H(m1) = H(m2).</p></li>
+</ol>
+<p>The figure below shows the one-way nature of the transformation.</p>
+</section>
+<section id="common-hash-algorithms">
+<h3><span class="section-number">2.7.2. </span>Common Hash Algorithms<a class="headerlink" href="#common-hash-algorithms" title="Link to this heading">#</a></h3>
+<section id="md5-and-sha-1-broken-for-security-use">
+<h4><span class="section-number">2.7.2.1. </span>MD5 and SHA-1: Broken for Security Use<a class="headerlink" href="#md5-and-sha-1-broken-for-security-use" title="Link to this heading">#</a></h4>
+<p>MD5 produces a 128-bit digest and was broken for collision resistance in 2004; collisions can be
+generated in seconds. SHA-1 produces a 160-bit digest; practical collision attacks were demonstrated
+in 2017. Neither algorithm should be used in new security applications. Their only remaining legitimate
+use is legacy checksums and non-security contexts.</p>
+</section>
+<section id="sha-2-and-sha-3">
+<h4><span class="section-number">2.7.2.2. </span>SHA-2 and SHA-3<a class="headerlink" href="#sha-2-and-sha-3" title="Link to this heading">#</a></h4>
+<p>SHA-256 and SHA-512 belong to the SHA-2 family and remain unbroken. SHA-256 produces a 256-bit digest
+and is the dominant algorithm in TLS certificates, code signing, and blockchain applications. SHA-3
+uses a completely different internal construction (the Keccak sponge function) and serves as an
+independent design, providing resilience against any future weakness found in SHA-2.</p>
+</section>
+</section>
+<section id="password-storage-with-hashing">
+<h3><span class="section-number">2.7.3. </span>Password Storage with Hashing<a class="headerlink" href="#password-storage-with-hashing" title="Link to this heading">#</a></h3>
+<section id="why-plain-sha-256-is-insufficient-for-passwords">
+<h4><span class="section-number">2.7.3.1. </span>Why Plain SHA-256 Is Insufficient for Passwords<a class="headerlink" href="#why-plain-sha-256-is-insufficient-for-passwords" title="Link to this heading">#</a></h4>
+<p>A hash alone is deterministic: the same password always produces the same digest. Attackers precompute
+enormous tables of common passwords and their hashes (rainbow tables) and reverse the lookup in
+constant time. Two mitigations are required:</p>
+</section>
+<section id="salting">
+<h4><span class="section-number">2.7.3.2. </span>Salting<a class="headerlink" href="#salting" title="Link to this heading">#</a></h4>
+<p>A <strong>salt</strong> is a random value generated uniquely per user and prepended to the password before hashing.
+The digest stored in the database is H(salt || password). Salts are stored in the clear alongside the
+digest. Because every user has a different salt, a rainbow table precomputed without the salt is useless.</p>
+</section>
+<section id="adaptive-algorithms-bcrypt-and-argon2">
+<h4><span class="section-number">2.7.3.3. </span>Adaptive Algorithms: bcrypt and Argon2<a class="headerlink" href="#adaptive-algorithms-bcrypt-and-argon2" title="Link to this heading">#</a></h4>
+<p>bcrypt and Argon2 are purpose-built password-hashing functions that incorporate a salt automatically and
+include a <strong>cost factor</strong> that can be increased as hardware gets faster, keeping the computation slow
+enough to deter brute force. NIST SP 800-63B recommends Argon2 as the preferred algorithm for new
+systems.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="message-authentication-codes">
+<h2><span class="section-number">2.8. </span>Message Authentication Codes<a class="headerlink" href="#message-authentication-codes" title="Link to this heading">#</a></h2>
+<section id="what-a-mac-provides">
+<h3><span class="section-number">2.8.1. </span>What a MAC Provides<a class="headerlink" href="#what-a-mac-provides" title="Link to this heading">#</a></h3>
+<p>A MAC takes a message and a shared secret key and produces a short authenticator tag. Unlike a hash, a
+MAC requires the key: an attacker who can modify the message cannot forge a valid tag without the key. A
+MAC therefore provides both <strong>integrity</strong> (the message was not altered) and <strong>authentication</strong> (the sender
+held the key). It does not provide non-repudiation, because both sender and recipient share the same key
+and either could have generated the tag.</p>
+</section>
+<section id="hmac-construction">
+<h3><span class="section-number">2.8.2. </span>HMAC Construction<a class="headerlink" href="#hmac-construction" title="Link to this heading">#</a></h3>
+<p>HMAC (Hash-based MAC) wraps any hash function H:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HMAC</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span> <span class="o">=</span> <span class="n">H</span><span class="p">((</span><span class="n">K</span> <span class="n">xor</span> <span class="n">opad</span><span class="p">)</span> <span class="o">||</span> <span class="n">H</span><span class="p">((</span><span class="n">K</span> <span class="n">xor</span> <span class="n">ipad</span><span class="p">)</span> <span class="o">||</span> <span class="n">m</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>where ipad = 0x36 repeated and opad = 0x5C repeated. The nested structure protects against length-extension
+attacks that affect raw H(K || m). HMAC-SHA-256 is used in TLS for record authentication, in JSON Web
+Tokens (JWT), and in AWS Signature Version 4.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="digital-signatures">
+<h2><span class="section-number">2.9. </span>Digital Signatures<a class="headerlink" href="#digital-signatures" title="Link to this heading">#</a></h2>
+<section id="how-digital-signatures-work">
+<h3><span class="section-number">2.9.1. </span>How Digital Signatures Work<a class="headerlink" href="#how-digital-signatures-work" title="Link to this heading">#</a></h3>
+<p>A digital signature is asymmetric: the sender signs with their <strong>private key</strong> and anyone holding the
+corresponding <strong>public key</strong> can verify the signature. The signer computes a digest of the message and
+then applies the private key to produce the signature. The verifier independently computes the digest,
+applies the public key to the signature, and checks that the two match.</p>
+<section id="steps">
+<h4><span class="section-number">2.9.1.1. </span>Steps<a class="headerlink" href="#steps" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Sender computes d = H(message).</p></li>
+<li><p>Sender applies private key: sig = Sign(d, private_key).</p></li>
+<li><p>Verifier receives message and sig.</p></li>
+<li><p>Verifier computes d’ = H(message).</p></li>
+<li><p>Verifier applies public key: d’’ = Verify(sig, public_key).</p></li>
+<li><p>If d’ == d’’, the signature is valid.</p></li>
+</ol>
+</section>
+</section>
+<section id="non-repudiation">
+<h3><span class="section-number">2.9.2. </span>Non-repudiation<a class="headerlink" href="#non-repudiation" title="Link to this heading">#</a></h3>
+<p>Because only the holder of the private key could have created the signature, and the private key is
+never shared, a valid signature constitutes cryptographic evidence that the signer acted. This is
+<strong>non-repudiation</strong>: the signer cannot plausibly deny having signed. MACs do not provide non-repudiation
+because the symmetric key is shared.</p>
+</section>
+<section id="public-key-infrastructure-and-certificates">
+<h3><span class="section-number">2.9.3. </span>Public Key Infrastructure and Certificates<a class="headerlink" href="#public-key-infrastructure-and-certificates" title="Link to this heading">#</a></h3>
+<p>A public key is only useful if its owner can be trusted. Without a binding between a public key and an
+identity, an attacker could substitute their own public key (a man-in-the-middle attack).</p>
+<section id="certificate-authorities">
+<h4><span class="section-number">2.9.3.1. </span>Certificate Authorities<a class="headerlink" href="#certificate-authorities" title="Link to this heading">#</a></h4>
+<p>A <strong>Certificate Authority</strong> (CA) is a trusted third party that binds a public key to an identity by
+issuing an X.509 certificate. The certificate contains the subject’s name, their public key, validity
+dates, and the CA’s digital signature over all of it. When a browser connects to a web server, it
+validates the server’s certificate: the CA’s signature proves the key truly belongs to the stated domain.</p>
+</section>
+<section id="chain-of-trust">
+<h4><span class="section-number">2.9.3.2. </span>Chain of Trust<a class="headerlink" href="#chain-of-trust" title="Link to this heading">#</a></h4>
+<p>CAs are themselves organized hierarchically. A root CA signs intermediate CAs, which sign end-entity
+certificates. Operating systems and browsers ship with a list of trusted root CAs. A certificate is
+trusted if a chain of valid signatures leads from it back to a trusted root. Certificate Transparency
+(CT) logs provide public, auditable records of all issued certificates, allowing detection of misissued
+certificates.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="key-management">
+<h2><span class="section-number">2.10. </span>Key Management<a class="headerlink" href="#key-management" title="Link to this heading">#</a></h2>
+<p>Cryptographic keys are only as strong as the practices around them. Key management covers the full
+lifecycle:</p>
+<section id="key-lifecycle">
+<h3><span class="section-number">2.10.1. </span>Key Lifecycle<a class="headerlink" href="#key-lifecycle" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Generation</strong>: use a cryptographically secure random number generator (CSPRNG); never derive keys
+from low-entropy sources such as timestamps or predictable values.</p></li>
+<li><p><strong>Distribution</strong>: use an authenticated key-exchange protocol (TLS, SSH, ECDHE); never transmit a
+symmetric key in the clear.</p></li>
+<li><p><strong>Storage</strong>: store private keys in hardware security modules (HSMs) or encrypted key stores; never
+hard-code keys in source code.</p></li>
+<li><p><strong>Rotation</strong>: rotate keys on a schedule or after any suspected compromise; use separate keys for
+different data classifications.</p></li>
+<li><p><strong>Revocation</strong>: for certificates, publish revocation status via OCSP or CRL; key compromise without
+revocation leaves all signatures from that key untrustworthy.</p></li>
+<li><p><strong>Destruction</strong>: securely overwrite or physically destroy key material when it is no longer needed.</p></li>
+</ol>
+</section>
+<section id="hybrid-encryption-in-practice-tls">
+<h3><span class="section-number">2.10.2. </span>Hybrid Encryption in Practice: TLS<a class="headerlink" href="#hybrid-encryption-in-practice-tls" title="Link to this heading">#</a></h3>
+<p>TLS orchestrates all of the primitives covered in this chapter. A simplified TLS 1.3 handshake:</p>
+<ol class="arabic simple">
+<li><p>Client sends supported cipher suites.</p></li>
+<li><p>Server responds with its certificate and ephemeral public key (ECDHE).</p></li>
+<li><p>Client verifies the certificate chain, then computes the shared secret using the server’s ECDHE
+public key and its own ephemeral private key.</p></li>
+<li><p>Both sides derive symmetric session keys from the shared secret using HKDF (HMAC-based Key
+Derivation Function).</p></li>
+<li><p>All subsequent traffic is encrypted with AES-GCM, which provides both confidentiality and
+authentication in a single pass.</p></li>
+</ol>
+<p>Forward secrecy is guaranteed because the ECDHE key pair is discarded after the handshake: compromise
+of the server’s long-term private key does not expose past sessions.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">2.11. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>A cybersecurity practitioner who cannot distinguish symmetric from asymmetric encryption, or who does
+not know that MD5 is broken, will recommend insecure configurations and fail to diagnose real
+vulnerabilities. Cryptography is also the lens through which every other chapter in this book must be
+read: network protocols, web security, forensics, and incident response all assume knowledge of the
+primitives here.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">2.12. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>A recurring category of disclosed vulnerability involves the use of broken algorithms in production
+systems long after their deprecation. Several certificate-authority incidents involved SHA-1 certificates
+issued or left in service past the 2017 deadline. Separately, a class of TLS library vulnerabilities
+called padding-oracle attacks exploited predictable server behavior when decryption failed, allowing
+attackers to decrypt ciphertext one byte at a time without knowing the key, illustrating that even
+sound algorithms can be undermined by insecure implementations.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+<span class="c1"># Figure 2.1  Encoding, Encryption, Hashing, Tokenization</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpatches</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Figure 2.1  Four Transformations Compared&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.01</span><span class="p">)</span>
+
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;Encoding&quot;</span><span class="p">,</span>      <span class="s2">&quot;#dde7f0&quot;</span><span class="p">,</span> <span class="s2">&quot;Base64, ASCII, UTF-8&quot;</span><span class="p">,</span>
+     <span class="s2">&quot;Reversible by anyone</span><span class="se">\n</span><span class="s2">No key required</span><span class="se">\n</span><span class="s2">No confidentiality</span><span class="se">\n</span><span class="s2">Use: transport &amp; storage&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Encryption&quot;</span><span class="p">,</span>    <span class="s2">&quot;#cfe3d6&quot;</span><span class="p">,</span> <span class="s2">&quot;AES-256-GCM, RSA, ChaCha20&quot;</span><span class="p">,</span>
+     <span class="s2">&quot;Reversible with key</span><span class="se">\n</span><span class="s2">Key required</span><span class="se">\n</span><span class="s2">Protects confidentiality</span><span class="se">\n</span><span class="s2">Use: data at rest &amp; in transit&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Hashing&quot;</span><span class="p">,</span>       <span class="s2">&quot;#f5f0cf&quot;</span><span class="p">,</span> <span class="s2">&quot;SHA-256, SHA-3, bcrypt&quot;</span><span class="p">,</span>
+     <span class="s2">&quot;One-way (not reversible)</span><span class="se">\n</span><span class="s2">No key (HMAC adds one)</span><span class="se">\n</span><span class="s2">Verifies integrity</span><span class="se">\n</span><span class="s2">Use: integrity, passwords&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Tokenization&quot;</span><span class="p">,</span>  <span class="s2">&quot;#f0d4d4&quot;</span><span class="p">,</span> <span class="s2">&quot;PAN vault, payment tokens&quot;</span><span class="p">,</span>
+     <span class="s2">&quot;Reversible via vault only</span><span class="se">\n</span><span class="s2">No key (vault lookup)</span><span class="se">\n</span><span class="s2">Hides sensitive value</span><span class="se">\n</span><span class="s2">Use: PCI DSS card data&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">examples</span><span class="p">,</span> <span class="n">props</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span> <span class="n">items</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.93</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.77</span><span class="p">,</span> <span class="n">examples</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">7.5</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#555&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mf">0.70</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#999&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.62</span><span class="p">,</span> <span class="n">props</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">8.5</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">mpatches</span><span class="o">.</span><span class="n">FancyBboxPatch</span><span class="p">((</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">),</span> <span class="mf">0.98</span><span class="p">,</span> <span class="mf">0.98</span><span class="p">,</span>
+                 <span class="n">boxstyle</span><span class="o">=</span><span class="s2">&quot;round,pad=0.01&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span>
+                 <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;#33485f&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">_buf</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">_buf</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">_buf</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">_buf</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Figure 2.1 rendered.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/20d77748d7b1fb3c72cf7e1340b3c47a60c88092c9e075e0fab60271e56fd563.png" src="../../_images/20d77748d7b1fb3c72cf7e1340b3c47a60c88092c9e075e0fab60271e56fd563.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Figure 2.1 rendered.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+<span class="c1"># Figure 2.2  Symmetric encryption flow</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpatches</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">box</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">sub</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#dde7f0&quot;</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">mpatches</span><span class="o">.</span><span class="n">FancyBboxPatch</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span>
+                 <span class="n">boxstyle</span><span class="o">=</span><span class="s2">&quot;round,pad=0.02&quot;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="n">color</span><span class="p">,</span>
+                 <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;#33485f&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.3</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">w</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="n">h</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="mf">0.08</span> <span class="k">if</span> <span class="n">sub</span> <span class="k">else</span> <span class="mi">0</span><span class="p">),</span> <span class="n">label</span><span class="p">,</span>
+            <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">sub</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">w</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="n">h</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">sub</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+                <span class="n">fontsize</span><span class="o">=</span><span class="mf">7.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#555&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">arrow</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">),</span>
+                <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-|&gt;&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.4</span><span class="p">,</span>
+                                <span class="n">shrinkA</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">shrinkB</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">label</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">((</span><span class="n">x1</span><span class="o">+</span><span class="n">x2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">y1</span><span class="o">+</span><span class="n">y2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">0.12</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span>
+                <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#555&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">)</span>
+
+<span class="n">box</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;Plaintext&quot;</span><span class="p">,</span> <span class="s2">&quot;Hello, World!&quot;</span><span class="p">,</span> <span class="s2">&quot;#dde7f0&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">2.4</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;Encrypt&quot;</span><span class="p">,</span> <span class="s2">&quot;AES-256-GCM&quot;</span><span class="p">,</span> <span class="s2">&quot;#cfe3d6&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">3.7</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">,</span> <span class="s2">&quot;Shared Key&quot;</span><span class="p">,</span> <span class="s2">&quot;256-bit&quot;</span><span class="p">,</span> <span class="s2">&quot;#f5f0cf&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">4.6</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;Ciphertext&quot;</span><span class="p">,</span> <span class="s2">&quot;0xA3F7...&quot;</span><span class="p">,</span> <span class="s2">&quot;#f0d4d4&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">6.8</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;Decrypt&quot;</span><span class="p">,</span> <span class="s2">&quot;AES-256-GCM&quot;</span><span class="p">,</span> <span class="s2">&quot;#cfe3d6&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">7.6</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">,</span> <span class="s2">&quot;Shared Key&quot;</span><span class="p">,</span> <span class="s2">&quot;256-bit&quot;</span><span class="p">,</span> <span class="s2">&quot;#f5f0cf&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;Plaintext&quot;</span><span class="p">,</span> <span class="s2">&quot;Hello, World!&quot;</span><span class="p">,</span> <span class="s2">&quot;#dde7f0&quot;</span><span class="p">)</span>
+
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mf">2.4</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">4.2</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mf">4.6</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">6.4</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mf">6.8</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">8.4</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">4.2</span><span class="p">,</span> <span class="mf">2.55</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">,</span> <span class="mf">2.15</span><span class="p">)</span>   <span class="c1"># key -&gt; encrypt</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="mf">8.1</span><span class="p">,</span> <span class="mf">2.55</span><span class="p">,</span> <span class="mf">7.6</span><span class="p">,</span> <span class="mf">2.15</span><span class="p">)</span>   <span class="c1"># key -&gt; decrypt</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">5.5</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="s2">&quot;Same key used in both directions -- must be shared securely beforehand&quot;</span><span class="p">,</span>
+        <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Figure 2.2  Symmetric Encryption Flow&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">_buf</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">_buf</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">_buf</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">_buf</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Figure 2.2 rendered.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/d4eca335ccacd06ecf3c1196629caa4447faf3e8352e469effd4c208948f402c.png" src="../../_images/d4eca335ccacd06ecf3c1196629caa4447faf3e8352e469effd4c208948f402c.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Figure 2.2 rendered.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+<span class="c1"># Figure 2.3  Asymmetric encryption -- both directions of use</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpatches</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">box</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">sub</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#dde7f0&quot;</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">mpatches</span><span class="o">.</span><span class="n">FancyBboxPatch</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span>
+                 <span class="n">boxstyle</span><span class="o">=</span><span class="s2">&quot;round,pad=0.02&quot;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="n">color</span><span class="p">,</span>
+                 <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;#33485f&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.3</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">w</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="n">h</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="mf">0.08</span> <span class="k">if</span> <span class="n">sub</span> <span class="k">else</span> <span class="mi">0</span><span class="p">),</span> <span class="n">label</span><span class="p">,</span>
+            <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">8.5</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">sub</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">w</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="n">h</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="mf">0.12</span><span class="p">,</span> <span class="n">sub</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+                <span class="n">fontsize</span><span class="o">=</span><span class="mf">7.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#555&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">arrow</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">),</span>
+                <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-|&gt;&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.3</span><span class="p">,</span>
+                                <span class="n">shrinkA</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">shrinkB</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">label</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">((</span><span class="n">x1</span><span class="o">+</span><span class="n">x2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">y1</span><span class="o">+</span><span class="n">y2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="o">+</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span>
+                <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#555&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Figure 2.3  Asymmetric Encryption: Confidentiality (left) and Signing (right)&quot;</span><span class="p">,</span>
+             <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Left: Encryption direction</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">);</span> <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span> <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Confidentiality: encrypt with recipient&#39;s public key&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="s2">&quot;Plaintext&quot;</span><span class="p">,</span> <span class="s2">&quot;message&quot;</span><span class="p">,</span> <span class="s2">&quot;#dde7f0&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="s2">&quot;Encrypt&quot;</span><span class="p">,</span> <span class="s2">&quot;RSA / ECDH&quot;</span><span class="p">,</span> <span class="s2">&quot;#cfe3d6&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="s2">&quot;Public</span><span class="se">\n</span><span class="s2">Key&quot;</span><span class="p">,</span> <span class="s2">&quot;(Bob&#39;s)&quot;</span><span class="p">,</span> <span class="s2">&quot;#f5f0cf&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">4.4</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="s2">&quot;Ciphertext&quot;</span><span class="p">,</span> <span class="s2">&quot;0xA3...&quot;</span><span class="p">,</span> <span class="s2">&quot;#f0d4d4&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="s2">&quot;Decrypt&quot;</span><span class="p">,</span> <span class="s2">&quot;RSA&quot;</span><span class="p">,</span> <span class="s2">&quot;#cfe3d6&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">6.9</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="s2">&quot;Private</span><span class="se">\n</span><span class="s2">Key&quot;</span><span class="p">,</span> <span class="s2">&quot;(Bob&#39;s)&quot;</span><span class="p">,</span> <span class="s2">&quot;#e0d4f0&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="s2">&quot;Plaintext&quot;</span><span class="p">,</span> <span class="s2">&quot;message&quot;</span><span class="p">,</span> <span class="s2">&quot;#dde7f0&quot;</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">3.9</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">,</span> <span class="mf">4.4</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">7.8</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">3.1</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="mf">3.1</span><span class="p">,</span> <span class="mf">2.4</span><span class="p">)</span>   <span class="c1"># public key -&gt; encrypt</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="mf">7.3</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="mf">7.3</span><span class="p">,</span> <span class="mf">2.4</span><span class="p">)</span>   <span class="c1"># private key -&gt; decrypt</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="s2">&quot;Only Bob (private key holder) can decrypt&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+         <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">)</span>
+
+<span class="c1"># Right: Signing direction</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">);</span> <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span> <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Integrity + Non-repudiation: sign with sender&#39;s private key&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="s2">&quot;Message&quot;</span><span class="p">,</span> <span class="s2">&quot;(any length)&quot;</span><span class="p">,</span> <span class="s2">&quot;#dde7f0&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="s2">&quot;Sign&quot;</span><span class="p">,</span> <span class="s2">&quot;hash + RSA&quot;</span><span class="p">,</span> <span class="s2">&quot;#cfe3d6&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="s2">&quot;Private</span><span class="se">\n</span><span class="s2">Key&quot;</span><span class="p">,</span> <span class="s2">&quot;(Alice&#39;s)&quot;</span><span class="p">,</span> <span class="s2">&quot;#e0d4f0&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">4.4</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="s2">&quot;Signature&quot;</span><span class="p">,</span> <span class="s2">&quot;256 bytes&quot;</span><span class="p">,</span> <span class="s2">&quot;#f5f0cf&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="s2">&quot;Verify&quot;</span><span class="p">,</span> <span class="s2">&quot;hash + RSA&quot;</span><span class="p">,</span> <span class="s2">&quot;#cfe3d6&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">6.9</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="s2">&quot;Public</span><span class="se">\n</span><span class="s2">Key&quot;</span><span class="p">,</span> <span class="s2">&quot;(Alice&#39;s)&quot;</span><span class="p">,</span> <span class="s2">&quot;#f5f0cf&quot;</span><span class="p">)</span>
+<span class="n">box</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="s2">&quot;Valid /</span><span class="se">\n</span><span class="s2">Invalid&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;#cfe3d6&quot;</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">3.9</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">,</span> <span class="mf">4.4</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">7.8</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">,</span> <span class="mf">1.95</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">3.1</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="mf">3.1</span><span class="p">,</span> <span class="mf">2.4</span><span class="p">)</span>
+<span class="n">arrow</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="mf">7.3</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="mf">7.3</span><span class="p">,</span> <span class="mf">2.4</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="s2">&quot;Anyone with Alice&#39;s public key can verify; only Alice could have signed&quot;</span><span class="p">,</span>
+         <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">_buf</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">_buf</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">_buf</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">_buf</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Figure 2.3 rendered.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/aca2f0972e0e9bb5c178074d7f1084bca1eb7d46d014142f1a388dc0d706a2f4.png" src="../../_images/aca2f0972e0e9bb5c178074d7f1084bca1eb7d46d014142f1a388dc0d706a2f4.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Figure 2.3 rendered.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+<span class="c1"># Figure 2.4  Hash function: one-way, fixed-output</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">hashlib</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+
+<span class="n">inputs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="s2">&quot;Hello.&quot;</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span> <span class="o">*</span> <span class="mi">1000</span> <span class="o">+</span> <span class="s2">&quot; (1001 chars)&quot;</span><span class="p">]</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;#dde7f0&quot;</span><span class="p">,</span> <span class="s2">&quot;#cfe3d6&quot;</span><span class="p">,</span> <span class="s2">&quot;#f5f0cf&quot;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">txt</span><span class="p">,</span> <span class="n">clr</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">colors</span><span class="p">)):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mf">3.2</span> <span class="o">-</span> <span class="n">i</span> <span class="o">*</span> <span class="mf">1.1</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">txt</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()[:</span><span class="mi">32</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;...&quot;</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="mf">0.25</span><span class="p">),</span> <span class="mf">2.8</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">,</span>
+                 <span class="n">facecolor</span><span class="o">=</span><span class="n">clr</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;#33485f&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">disp</span> <span class="o">=</span> <span class="n">txt</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">22</span> <span class="k">else</span> <span class="n">txt</span><span class="p">[:</span><span class="mi">19</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;...&quot;</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mf">0.03</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;&quot;</span><span class="si">{</span><span class="n">disp</span><span class="si">}</span><span class="s1">&quot;&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">8.5</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mf">0.03</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">2.9</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mf">0.03</span><span class="p">),</span>
+                <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-|&gt;&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.3</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="mf">4.8</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="mf">0.25</span><span class="p">),</span> <span class="mf">4.8</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">,</span>
+                 <span class="n">facecolor</span><span class="o">=</span><span class="s2">&quot;#f0d4d4&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;#33485f&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">7.2</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mf">0.03</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">7.5</span><span class="p">,</span>
+            <span class="n">fontfamily</span><span class="o">=</span><span class="s2">&quot;monospace&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="mf">3.6</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">),</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span>
+             <span class="n">facecolor</span><span class="o">=</span><span class="s2">&quot;#e8e8e8&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;#33485f&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.3</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.2</span><span class="p">,</span> <span class="mf">1.85</span><span class="p">,</span> <span class="s2">&quot;SHA-256&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span>
+        <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">3.82</span><span class="p">,</span> <span class="s2">&quot;Input (any length)&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">7.2</span><span class="p">,</span> <span class="mf">3.82</span><span class="p">,</span> <span class="s2">&quot;Digest (always 256 bits)&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">0.08</span><span class="p">,</span> <span class="s2">&quot;One-way: computing the digest is fast; reversing it is computationally infeasible&quot;</span><span class="p">,</span>
+        <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Figure 2.4  Hash Function: Any Input to Fixed 256-bit Output&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">_buf</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">_buf</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">_buf</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">_buf</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Figure 2.4 rendered.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/230fdfa20c5d06fa27397c3ba4ca582827bd33988b5be16b478e8bf533041a03.png" src="../../_images/230fdfa20c5d06fa27397c3ba4ca582827bd33988b5be16b478e8bf533041a03.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Figure 2.4 rendered.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Section 2.11  Worked Numerical Examples</span>
+
+<span class="c1"># ── Example 1: RSA with toy numbers (for illustration only) ──────────────────</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">gcd</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">modinv</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+    <span class="c1"># Extended Euclidean algorithm for modular inverse</span>
+    <span class="n">g</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="n">m</span><span class="p">,</span> <span class="mi">0</span>
+    <span class="n">a0</span><span class="p">,</span> <span class="n">x0</span> <span class="o">=</span> <span class="n">a</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">a</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">q</span> <span class="o">=</span> <span class="n">g</span> <span class="o">//</span> <span class="n">a</span>
+        <span class="n">g</span><span class="p">,</span> <span class="n">a</span> <span class="o">=</span> <span class="n">a</span><span class="p">,</span> <span class="n">g</span> <span class="o">-</span> <span class="n">q</span> <span class="o">*</span> <span class="n">a</span>
+        <span class="n">x</span><span class="p">,</span> <span class="n">x0</span> <span class="o">=</span> <span class="n">x0</span><span class="p">,</span> <span class="n">x0</span> <span class="o">-</span> <span class="n">q</span> <span class="o">*</span> <span class="n">x</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">%</span> <span class="n">m</span>
+
+<span class="n">p</span><span class="p">,</span> <span class="n">q</span> <span class="o">=</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">53</span>                       <span class="c1"># small primes (real RSA uses 1024+ bit primes)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">p</span> <span class="o">*</span> <span class="n">q</span>                            <span class="c1"># 3233</span>
+<span class="n">phi_n</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">q</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>           <span class="c1"># 3120</span>
+<span class="n">e</span> <span class="o">=</span> <span class="mi">17</span>                               <span class="c1"># common public exponent, gcd(e, phi)=1</span>
+<span class="k">assert</span> <span class="n">gcd</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">phi_n</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">modinv</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">phi_n</span><span class="p">)</span>                 <span class="c1"># private exponent</span>
+
+<span class="n">M</span> <span class="o">=</span> <span class="mi">65</span>                               <span class="c1"># message as an integer</span>
+<span class="n">C</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>                     <span class="c1"># encrypt: C = M^e mod n</span>
+<span class="n">M2</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>                   <span class="c1"># decrypt: M = C^d mod n</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== RSA Toy Example (educational only) ===&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  p=</span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s2">, q=</span><span class="si">{</span><span class="n">q</span><span class="si">}</span><span class="s2">, n=p*q=</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">, phi(n)=</span><span class="si">{</span><span class="n">phi_n</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Public key  (n, e) = (</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Private key (n, d) = (</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Plaintext  M = </span><span class="si">{</span><span class="n">M</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Ciphertext C = M^e mod n = </span><span class="si">{</span><span class="n">C</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Recovered  M = C^d mod n = </span><span class="si">{</span><span class="n">M2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Round-trip correct: </span><span class="si">{</span><span class="n">M2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">M</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># ── Example 2: SHA-256 ─────────────────────────────────────────────────────────</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">hashlib</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== SHA-256 Hash Examples ===&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="s2">&quot;Hello.&quot;</span><span class="p">,</span> <span class="s2">&quot;Cybersecurity&quot;</span><span class="p">]:</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  SHA-256(</span><span class="si">{</span><span class="n">msg</span><span class="si">!r:</span><span class="s2">16</span><span class="si">}</span><span class="s2">) = </span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">  One-character change produces a completely different digest (avalanche effect).&quot;</span><span class="p">)</span>
+
+<span class="c1"># ── Example 3: HMAC-SHA-256 ────────────────────────────────────────────────────</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">hmac</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== HMAC-SHA-256 (authentication + integrity) ===&quot;</span><span class="p">)</span>
+<span class="n">key</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;shared_secret_key&quot;</span>
+<span class="n">msg</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;Transfer $1,000 to account 9876&quot;</span>
+<span class="n">tag</span> <span class="o">=</span> <span class="n">hmac</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Key    : </span><span class="si">{</span><span class="n">key</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Message: </span><span class="si">{</span><span class="n">msg</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  HMAC   : </span><span class="si">{</span><span class="n">tag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">tampered</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;Transfer $9,000 to account 9876&quot;</span>
+<span class="n">tag2</span> <span class="o">=</span> <span class="n">hmac</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">tampered</span><span class="p">,</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">  Tampered message HMAC: </span><span class="si">{</span><span class="n">tag2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Tags match: </span><span class="si">{</span><span class="n">tag</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">tag2</span><span class="si">}</span><span class="s2">  (any change to message or key invalidates the tag)&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== RSA Toy Example (educational only) ===
+  p=61, q=53, n=p*q=3233, phi(n)=3120
+  Public key  (n, e) = (3233, 17)
+  Private key (n, d) = (3233, 3119)
+  Plaintext  M = 65
+  Ciphertext C = M^e mod n = 2790
+  Recovered  M = C^d mod n = 1788
+  Round-trip correct: False
+
+=== SHA-256 Hash Examples ===
+  SHA-256(&#39;Hello&#39;         ) = 185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969
+  SHA-256(&#39;Hello.&#39;        ) = 2d8bd7d9bb5f85ba643f0110d50cb506a1fe439e769a22503193ea6046bb87f7
+  SHA-256(&#39;Cybersecurity&#39; ) = 23b2d5dae0a87cf945f37093b119d20fc9931de013bf2836d8e3a2e5699d10ac
+
+  One-character change produces a completely different digest (avalanche effect).
+
+=== HMAC-SHA-256 (authentication + integrity) ===
+  Key    : shared_secret_key
+  Message: Transfer $1,000 to account 9876
+  HMAC   : f350c69213eb64ffe93b76df2918c0bfa2a31d1963e9f69a8855b1e56bd37e21
+
+  Tampered message HMAC: 6bb9943259b2a379c62fb4babcd436518c55467ef946407eb128f4e16cd39ebe
+  Tags match: False  (any change to message or key invalidates the tag)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">2.13. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> Which property distinguishes encryption from encoding?
+A. Encryption is reversible  B. Encryption requires a key  C. Encoding is faster  D. Encoding uses math</p>
+<p><strong>Q2.</strong> AES-256-GCM is preferred over AES-256-CBC in new designs primarily because:
+A. GCM is faster in software  B. GCM also provides an authentication tag  C. CBC has shorter keys  D. GCM requires no IV</p>
+<p><strong>Q3.</strong> In RSA, the product n = p * q is public. Security rests on the difficulty of:
+A. Computing n  B. Multiplying large primes  C. Factoring n back into p and q  D. Finding e</p>
+<p><strong>Q4.</strong> A 256-bit ECC key provides approximately the same security margin as which RSA key size?
+A. 512-bit  B. 1024-bit  C. 2048-bit  D. 3072-bit</p>
+<p><strong>Q5.</strong> Which hash algorithm should be used in a new system for digital certificate signing?
+A. MD5  B. SHA-1  C. SHA-256  D. CRC-32</p>
+<p><strong>Q6.</strong> A salt protects password hashes by:
+A. Encrypting the hash  B. Defeating precomputed (rainbow table) attacks  C. Making the hash longer  D. Requiring a key</p>
+<p><strong>Q7.</strong> HMAC provides integrity and authentication. It does NOT provide:
+A. Tamper detection  B. Non-repudiation  C. Verification that the sender held the key  D. Message authentication</p>
+<p><strong>Q8.</strong> Which entity in a PKI binds a public key to an identity by issuing a signed certificate?
+A. The key holder  B. The browser  C. The Certificate Authority  D. The IETF</p>
+<p><strong>Q9.</strong> In TLS 1.3, forward secrecy is achieved by:
+A. Using RSA to encrypt all traffic  B. Generating an ephemeral ECDHE key pair per session  C. Storing the session key in hardware  D. Using a 4096-bit certificate</p>
+<p><strong>Q10.</strong> The HMAC construction uses H((K xor opad) || H((K xor ipad) || m)) to protect against:
+A. Brute force  B. Length-extension attacks  C. Timing side-channels  D. Birthday attacks</p>
+<p><em>Answers: Q1 B, Q2 B, Q3 C, Q4 D, Q5 C, Q6 B, Q7 B, Q8 C, Q9 B, Q10 B.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">2.14. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – Symmetric encryption</strong> (use Python <code class="docutils literal notranslate"><span class="pre">cryptography</span></code> library or OpenSSL in terminal):
+Generate a random 256-bit AES key, encrypt a message of your choice with AES-GCM, and verify that
+decryption with the same key recovers the original message. Record the IV, ciphertext, and authentication
+tag. Then modify one byte of the ciphertext and verify that decryption raises an authentication error.</p>
+<p><strong>Part B – Public key experiment</strong>: Using the RSA toy example above, change p and q to two different
+primes (7-digit or larger) and recompute n, phi(n), e, and d. Encrypt and decrypt three different messages.
+Observe what happens if you attempt to use a value of M greater than n.</p>
+<p><strong>Part C – Hash exploration</strong>: Compute SHA-256 of a file of your choice. Change one character in the
+file, recompute, and record how many bits of the digest changed (avalanche effect). Look up the
+SHA-256 digest of a known file online and verify your computed digest matches.</p>
+<p><strong>Part D – Certificate inspection</strong>: Use <code class="docutils literal notranslate"><span class="pre">openssl</span> <span class="pre">s_client</span> <span class="pre">-connect</span> <span class="pre">&lt;any-https-site&gt;:443</span> <span class="pre">-showcerts</span></code>
+and capture the certificate chain. Identify the Common Name, the issuing CA, the expiry date, the key
+algorithm, and the signature algorithm. Verify whether the site uses ECDHE for key exchange (look for
+ECDHE in the cipher suite line).</p>
+</section>
+<section id="references">
+<h2><span class="section-number">2.15. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<div class="docutils container" id="id4">
+<div role="list" class="citation-list">
+<div class="citation" id="id17" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">DH76</a><span class="fn-bracket">]</span></span>
+<p>Whitfield Diffie and Martin E. Hellman. New directions in cryptography. <em>IEEE Transactions on Information Theory</em>, 22(6):644–654, 1976. <a class="reference external" href="https://doi.org/10.1109/TIT.1976.1055638">doi:10.1109/TIT.1976.1055638</a>.</p>
+</div>
+<div class="citation" id="id18" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">RSA78</a><span class="fn-bracket">]</span></span>
+<p>Ronald L. Rivest, Adi Shamir, and Leonard Adleman. A method for obtaining digital signatures and public-key cryptosystems. <em>Communications of the ACM</em>, 21(2):120–126, 1978. <a class="reference external" href="https://doi.org/10.1145/359340.359342">doi:10.1145/359340.359342</a>.</p>
+</div>
+<div class="citation" id="id19" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">NationalIoSaTechnology01</a><span class="fn-bracket">]</span></span>
+<p>National Institute of Standards and Technology. Advanced encryption standard (aes). Technical Report FIPS PUB 197, U.S. Department of Commerce, 2001. <a class="reference external" href="https://doi.org/10.6028/NIST.FIPS.197">doi:10.6028/NIST.FIPS.197</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/02_cryptography"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../01_intro/chapter01.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Chapter 1: Introduction to Cybersecurity</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../03_networking/chapter03.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Chapter 3: Networking Fundamentals for Security</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">2.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">2.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-role-of-cryptography">2.3. The Role of Cryptography</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-encryption-hashing-and-tokenization">2.4. Encoding, Encryption, Hashing, and Tokenization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-the-distinction-matters">2.4.1. Why the Distinction Matters</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symmetric-encryption">2.5. Symmetric Encryption</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-symmetric-encryption-works">2.5.1. How Symmetric Encryption Works</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#block-ciphers">2.5.1.1. Block Ciphers</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stream-ciphers">2.5.1.2. Stream Ciphers</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aes-the-advanced-encryption-standard">2.5.2. AES: The Advanced Encryption Standard</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#aes-internals">2.5.2.1. AES Internals</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#aes-key-sizes">2.5.2.2. AES Key Sizes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-des-failed-and-3des-is-deprecated">2.5.2.3. Why DES Failed and 3DES Is Deprecated</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strengths-and-weaknesses-of-symmetric-encryption">2.5.3. Strengths and Weaknesses of Symmetric Encryption</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#asymmetric-public-key-encryption">2.6. Asymmetric (Public Key) Encryption</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-key-pair-concept">2.6.1. The Key Pair Concept</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rsa">2.6.2. RSA</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rsa-key-generation">2.6.2.1. RSA Key Generation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rsa-encryption-and-decryption">2.6.2.2. RSA Encryption and Decryption</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rsa-key-sizes-and-quantum-threat">2.6.2.3. RSA Key Sizes and Quantum Threat</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elliptic-curve-cryptography">2.6.3. Elliptic Curve Cryptography</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diffie-hellman-key-exchange">2.6.4. Diffie-Hellman Key Exchange</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-discrete-logarithm-problem">2.6.4.1. The Discrete Logarithm Problem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hash-functions">2.7. Hash Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#required-properties">2.7.1. Required Properties</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-hash-algorithms">2.7.2. Common Hash Algorithms</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#md5-and-sha-1-broken-for-security-use">2.7.2.1. MD5 and SHA-1: Broken for Security Use</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sha-2-and-sha-3">2.7.2.2. SHA-2 and SHA-3</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#password-storage-with-hashing">2.7.3. Password Storage with Hashing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-plain-sha-256-is-insufficient-for-passwords">2.7.3.1. Why Plain SHA-256 Is Insufficient for Passwords</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#salting">2.7.3.2. Salting</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adaptive-algorithms-bcrypt-and-argon2">2.7.3.3. Adaptive Algorithms: bcrypt and Argon2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#message-authentication-codes">2.8. Message Authentication Codes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-a-mac-provides">2.8.1. What a MAC Provides</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hmac-construction">2.8.2. HMAC Construction</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-signatures">2.9. Digital Signatures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-digital-signatures-work">2.9.1. How Digital Signatures Work</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">2.9.1.1. Steps</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-repudiation">2.9.2. Non-repudiation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#public-key-infrastructure-and-certificates">2.9.3. Public Key Infrastructure and Certificates</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#certificate-authorities">2.9.3.1. Certificate Authorities</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-of-trust">2.9.3.2. Chain of Trust</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-management">2.10. Key Management</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-lifecycle">2.10.1. Key Lifecycle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hybrid-encryption-in-practice-tls">2.10.2. Hybrid Encryption in Practice: TLS</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">2.11. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">2.12. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">2.13. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">2.14. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">2.15. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

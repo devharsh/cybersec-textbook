@@ -1,0 +1,942 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>17. Chapter 17: Emerging Threats and Future Challenges &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/17_emerging/chapter17';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="18. Chapter 18: Privacy, Law, and Information Governance" href="../18_privacy_law/chapter18.html" />
+    <link rel="prev" title="16. Chapter 16: Capture the Flag and Competitive Security" href="../16_ctf/chapter16.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/17_emerging/chapter17.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 17: Emerging Threats and Future Challenges</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">17.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">17.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-quantum-cryptography">17.3. Post-Quantum Cryptography</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-quantum-threat-to-current-cryptography">17.3.1. The Quantum Threat to Current Cryptography</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nist-pqc-standardisation">17.3.2. NIST PQC Standardisation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#harvest-now-decrypt-later">17.3.2.1. Harvest Now, Decrypt Later</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-enabled-attacks-and-defences">17.4. AI-Enabled Attacks and Defences</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#offensive-ai">17.4.1. Offensive AI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defensive-ai">17.4.2. Defensive AI</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supply-chain-attacks">17.5. Supply Chain Attacks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-supply-chain-is-a-high-value-target">17.5.1. Why Supply Chain Is a High-Value Target</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notable-supply-chain-attack-patterns">17.5.2. Notable Supply Chain Attack Patterns</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#build-pipeline-compromise">17.5.2.1. Build Pipeline Compromise</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dependency-confusion-and-typosquatting">17.5.2.2. Dependency Confusion and Typosquatting</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sbom-and-dependency-management">17.5.3. SBOM and Dependency Management</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloud-security">17.6. Cloud Security</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-shared-responsibility-model">17.6.1. The Shared Responsibility Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#common-cloud-misconfigurations">17.6.1.1. Common Cloud Misconfigurations</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cloud-native-threats">17.6.2. Cloud-Native Threats</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#internet-of-things-security">17.7. Internet of Things Security</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-iot-attack-surface">17.7.1. The IoT Attack Surface</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consequences">17.7.2. Consequences</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zero-day-markets-and-disclosure">17.8. Zero-Day Markets and Disclosure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-zero-day-economy">17.8.1. The Zero-Day Economy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#responsible-disclosure-and-bug-bounties">17.8.2. Responsible Disclosure and Bug Bounties</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">17.9. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">17.10. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">17.11. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">17.12. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">17.13. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-17-emerging-threats-and-future-challenges">
+<h1><span class="section-number">17. </span>Chapter 17: Emerging Threats and Future Challenges<a class="headerlink" href="#chapter-17-emerging-threats-and-future-challenges" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“The threat landscape does not wait for defenders to catch up.” security research community</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">17.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Explain the post-quantum cryptography threat and the status of NIST PQC standardisation.</p></li>
+<li><p>Describe AI-enabled attacks and AI-assisted defences.</p></li>
+<li><p>Explain supply chain attacks and their significance.</p></li>
+<li><p>Describe cloud-native security challenges and the shared responsibility model.</p></li>
+<li><p>Explain threats to and from the Internet of Things.</p></li>
+<li><p>Describe zero-day markets and responsible disclosure.</p></li>
+<li><p>Discuss cyber-physical systems risks and the convergence of IT and OT.</p></li>
+<li><p>Evaluate the impact of emerging technologies on the security threat landscape.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">17.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Post-quantum cryptography (PQC)</strong>: cryptographic algorithms resistant to quantum computers.</p></li>
+<li><p><strong>Shor’s algorithm</strong>: quantum algorithm that breaks RSA and ECC by factoring large numbers efficiently.</p></li>
+<li><p><strong>NIST PQC</strong>: NIST’s process for standardising post-quantum algorithms.</p></li>
+<li><p><strong>Supply chain attack</strong>: compromising a target by attacking a trusted vendor, library, or update mechanism.</p></li>
+<li><p><strong>AI/ML in security</strong>: using machine learning for both attack and defence.</p></li>
+<li><p><strong>LLM</strong>: Large Language Model; AI capable of generating text including code, emails, and scripts.</p></li>
+<li><p><strong>Deepfake</strong>: AI-generated synthetic audio, video, or image indistinguishable from real.</p></li>
+<li><p><strong>Zero-day</strong>: a vulnerability unknown to the vendor; no patch exists.</p></li>
+<li><p><strong>Exploit broker</strong>: organisations or individuals that buy and sell zero-day exploits.</p></li>
+<li><p><strong>Shared responsibility model</strong>: cloud provider secures the infrastructure; customer secures their data and applications.</p></li>
+<li><p><strong>IoT</strong>: Internet of Things; internet-connected embedded devices.</p></li>
+<li><p><strong>SBOM</strong>: Software Bill of Materials; a list of software components in an application.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="post-quantum-cryptography">
+<h2><span class="section-number">17.3. </span>Post-Quantum Cryptography<a class="headerlink" href="#post-quantum-cryptography" title="Link to this heading">#</a></h2>
+<section id="the-quantum-threat-to-current-cryptography">
+<h3><span class="section-number">17.3.1. </span>The Quantum Threat to Current Cryptography<a class="headerlink" href="#the-quantum-threat-to-current-cryptography" title="Link to this heading">#</a></h3>
+<p>Classical computers cannot efficiently solve the problems underlying RSA (integer factorisation)
+and ECC (elliptic curve discrete logarithm). Shor’s algorithm, executable on a sufficiently
+large, fault-tolerant quantum computer, solves both in polynomial time. A quantum computer of
+sufficient scale would break all RSA and ECC keys, compromising TLS certificates, SSH keys,
+VPN infrastructure, code-signing certificates, and any system using asymmetric cryptography.</p>
+</section>
+<section id="nist-pqc-standardisation">
+<h3><span class="section-number">17.3.2. </span>NIST PQC Standardisation<a class="headerlink" href="#nist-pqc-standardisation" title="Link to this heading">#</a></h3>
+<p>NIST launched a post-quantum cryptography standardisation process in 2016 and in 2024 published
+the first three PQC standards:</p>
+<ul class="simple">
+<li><p><strong>ML-KEM</strong> (CRYSTALS-Kyber): a key encapsulation mechanism based on module lattice problems.</p></li>
+<li><p><strong>ML-DSA</strong> (CRYSTALS-Dilithium): a digital signature algorithm.</p></li>
+<li><p><strong>SLH-DSA</strong> (SPHINCS+): a hash-based signature algorithm requiring no lattice assumptions.</p></li>
+</ul>
+<p>A fourth standard, <strong>FN-DSA</strong> (FALCON), is also being finalised. These algorithms are designed
+to resist both classical and quantum attacks and are intended to replace RSA and ECDSA over the
+next decade.</p>
+<section id="harvest-now-decrypt-later">
+<h4><span class="section-number">17.3.2.1. </span>Harvest Now, Decrypt Later<a class="headerlink" href="#harvest-now-decrypt-later" title="Link to this heading">#</a></h4>
+<p>Adversaries are likely already collecting encrypted traffic today that they cannot decrypt with
+current computers, planning to decrypt it once a quantum computer is available. Long-lived
+secrets (state secrets, health data, legal records) encrypted today with RSA or ECC may be
+readable in 10-15 years. This drives urgency for PQC migration even before quantum computers
+are operational at scale.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="ai-enabled-attacks-and-defences">
+<h2><span class="section-number">17.4. </span>AI-Enabled Attacks and Defences<a class="headerlink" href="#ai-enabled-attacks-and-defences" title="Link to this heading">#</a></h2>
+<section id="offensive-ai">
+<h3><span class="section-number">17.4.1. </span>Offensive AI<a class="headerlink" href="#offensive-ai" title="Link to this heading">#</a></h3>
+<p>Large Language Models (LLMs) lower the barrier for several attack categories:</p>
+<ul class="simple">
+<li><p><strong>Phishing at scale</strong>: LLMs generate personalised, grammatically perfect spear-phishing emails
+from LinkedIn data, eliminating the spelling errors that historically flagged phishing.</p></li>
+<li><p><strong>Social engineering scripts</strong>: LLMs draft convincing vishing scripts tailored to specific targets.</p></li>
+<li><p><strong>Code generation</strong>: LLMs assist in writing exploit code, fuzzing harnesses, and malware variants.</p></li>
+<li><p><strong>Deepfake fraud</strong>: AI-generated audio and video impersonate executives for BEC and vishing;
+documented cases of deepfake CEO calls authorising wire transfers have been reported.</p></li>
+</ul>
+</section>
+<section id="defensive-ai">
+<h3><span class="section-number">17.4.2. </span>Defensive AI<a class="headerlink" href="#defensive-ai" title="Link to this heading">#</a></h3>
+<p>Machine learning provides significant defensive capability:</p>
+<ul class="simple">
+<li><p><strong>Anomaly detection</strong>: ML models trained on normal behaviour detect deviations that
+signature-based tools miss.</p></li>
+<li><p><strong>Malware classification</strong>: neural networks classify malware families from PE features or
+opcode sequences with high accuracy.</p></li>
+<li><p><strong>Natural language threat intelligence</strong>: LLMs parse unstructured threat reports, extract
+IOCs, and map them to ATT&amp;CK techniques faster than human analysts.</p></li>
+<li><p><strong>Automated triage</strong>: SOAR platforms use ML to prioritise alerts and enrich them with context.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="supply-chain-attacks">
+<h2><span class="section-number">17.5. </span>Supply Chain Attacks<a class="headerlink" href="#supply-chain-attacks" title="Link to this heading">#</a></h2>
+<section id="why-supply-chain-is-a-high-value-target">
+<h3><span class="section-number">17.5.1. </span>Why Supply Chain Is a High-Value Target<a class="headerlink" href="#why-supply-chain-is-a-high-value-target" title="Link to this heading">#</a></h3>
+<p>Every organisation trusts dozens to thousands of software dependencies: open-source libraries,
+commercial tools, cloud services, and managed service providers. Compromising a widely-used
+library or update mechanism provides access to every consumer simultaneously.</p>
+</section>
+<section id="notable-supply-chain-attack-patterns">
+<h3><span class="section-number">17.5.2. </span>Notable Supply Chain Attack Patterns<a class="headerlink" href="#notable-supply-chain-attack-patterns" title="Link to this heading">#</a></h3>
+<section id="build-pipeline-compromise">
+<h4><span class="section-number">17.5.2.1. </span>Build Pipeline Compromise<a class="headerlink" href="#build-pipeline-compromise" title="Link to this heading">#</a></h4>
+<p>The SolarWinds SUNBURST attack (2020) injected malicious code into the build pipeline, producing
+a signed, legitimate-looking software update that installed a backdoor in approximately 18,000
+organisations. The attacker had access to victim environments for months before detection.</p>
+</section>
+<section id="dependency-confusion-and-typosquatting">
+<h4><span class="section-number">17.5.2.2. </span>Dependency Confusion and Typosquatting<a class="headerlink" href="#dependency-confusion-and-typosquatting" title="Link to this heading">#</a></h4>
+<p>Dependency confusion exploits the package manager resolution order: an attacker publishes a
+public package with the same name as an organisation’s internal package. The package manager
+may prefer the public version, executing the attacker’s code. Typosquatting registers packages
+with names similar to popular ones (numpy vs numpyy) hoping developers mistype the dependency.</p>
+</section>
+</section>
+<section id="sbom-and-dependency-management">
+<h3><span class="section-number">17.5.3. </span>SBOM and Dependency Management<a class="headerlink" href="#sbom-and-dependency-management" title="Link to this heading">#</a></h3>
+<p>A Software Bill of Materials (SBOM) enumerates every software component and its version in an
+application. SBOM enables rapid assessment when a new vulnerability is published: which of our
+applications include the vulnerable component? CISA and the White House Executive Order on
+Cybersecurity (2021) mandate SBOM for software sold to the US federal government.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="cloud-security">
+<h2><span class="section-number">17.6. </span>Cloud Security<a class="headerlink" href="#cloud-security" title="Link to this heading">#</a></h2>
+<section id="the-shared-responsibility-model">
+<h3><span class="section-number">17.6.1. </span>The Shared Responsibility Model<a class="headerlink" href="#the-shared-responsibility-model" title="Link to this heading">#</a></h3>
+<p>Cloud providers secure the physical infrastructure, hypervisor, and managed services up to a
+defined boundary. Customers are responsible for their data, identity and access management,
+network configuration, and application security. Misunderstanding this boundary is a leading
+cause of cloud security incidents.</p>
+<section id="common-cloud-misconfigurations">
+<h4><span class="section-number">17.6.1.1. </span>Common Cloud Misconfigurations<a class="headerlink" href="#common-cloud-misconfigurations" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>S3 buckets or Azure Blob Storage set to public read access.</p></li>
+<li><p>Overly permissive IAM roles (EC2 instances with AdministratorAccess).</p></li>
+<li><p>Security groups allowing inbound access from 0.0.0.0/0 on management ports.</p></li>
+<li><p>Secrets and API keys committed to public GitHub repositories.</p></li>
+<li><p>Logging disabled (CloudTrail, VPC Flow Logs).</p></li>
+</ul>
+</section>
+</section>
+<section id="cloud-native-threats">
+<h3><span class="section-number">17.6.2. </span>Cloud-Native Threats<a class="headerlink" href="#cloud-native-threats" title="Link to this heading">#</a></h3>
+<p>Cloud environments introduce new attack surfaces: serverless function injection, container
+escape from misconfigured Kubernetes clusters, abuse of cloud metadata services (IMDS) via
+SSRF, and lateral movement via IAM role chaining.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="internet-of-things-security">
+<h2><span class="section-number">17.7. </span>Internet of Things Security<a class="headerlink" href="#internet-of-things-security" title="Link to this heading">#</a></h2>
+<section id="the-iot-attack-surface">
+<h3><span class="section-number">17.7.1. </span>The IoT Attack Surface<a class="headerlink" href="#the-iot-attack-surface" title="Link to this heading">#</a></h3>
+<p>IoT devices (smart cameras, thermostats, medical devices, industrial sensors) present a uniquely
+difficult security challenge: they often run embedded Linux or RTOS with no patch mechanism, use
+default credentials that are rarely changed, lack display or keyboard interfaces for security
+configuration, and remain deployed for 10-20 years.</p>
+</section>
+<section id="consequences">
+<h3><span class="section-number">17.7.2. </span>Consequences<a class="headerlink" href="#consequences" title="Link to this heading">#</a></h3>
+<p>Compromised IP cameras have been used for botnet DDoS (Mirai botnet, 2016: 600 Gbps peak,
+targeting Dyn DNS and disrupting major internet services). Compromised medical devices could
+alter drug dosages or monitoring alarms. Compromised building systems could affect physical
+security or HVAC of data centres. The consequence spectrum for IoT compromise extends from
+nuisance to physical harm.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="zero-day-markets-and-disclosure">
+<h2><span class="section-number">17.8. </span>Zero-Day Markets and Disclosure<a class="headerlink" href="#zero-day-markets-and-disclosure" title="Link to this heading">#</a></h2>
+<section id="the-zero-day-economy">
+<h3><span class="section-number">17.8.1. </span>The Zero-Day Economy<a class="headerlink" href="#the-zero-day-economy" title="Link to this heading">#</a></h3>
+<p>Zero-day vulnerabilities in widely-used software are bought and sold for substantial sums.
+Government agencies and private brokers pay millions of dollars for reliable, weaponisable
+zero-days in iOS, Android, Windows, and popular browsers. This creates economic disincentive
+for responsible disclosure and means some vulnerabilities are exploited as intelligence tools
+for years before becoming public knowledge.</p>
+</section>
+<section id="responsible-disclosure-and-bug-bounties">
+<h3><span class="section-number">17.8.2. </span>Responsible Disclosure and Bug Bounties<a class="headerlink" href="#responsible-disclosure-and-bug-bounties" title="Link to this heading">#</a></h3>
+<p>Bug bounty programmes (HackerOne, Bugcrowd, and vendor-operated programmes) pay researchers
+for vulnerabilities reported responsibly. Google’s Project Zero enforces a 90-day disclosure
+deadline: if a vendor does not patch within 90 days, the vulnerability is published regardless.
+This creates patch pressure while giving vendors a reasonable remediation window.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">17.9. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>The threat landscape is not static. An organisation that correctly implements the controls from
+earlier chapters of this book is protected against the threat landscape of today. The controls
+needed for tomorrow (PQC migration, AI-resistant phishing training, SBOM management, cloud
+security posture management) must be planned now. Security programmes that monitor emerging
+threats and adapt continuously are more resilient than those that deploy controls once and
+consider the job done.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">17.10. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>NIST’s publication of the first three post-quantum cryptographic standards in 2024 began the
+largest coordinated cryptographic migration in internet history. Major TLS implementations
+and cloud providers began deploying hybrid classical/PQC key exchange (combining ECDHE with
+ML-KEM) to provide protection even before the full transition. Organisations with long-lived
+sensitive data began cataloguing their cryptographic dependencies in preparation for migration.
+This transition will take a decade and requires systematic cryptographic inventory and testing.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 17 -- Quantum threat timeline and PQC algorithm comparison</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpatches</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+
+<span class="c1"># ── PQC algorithm comparison table ───────────────────────────────────────────</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== NIST PQC Standardised Algorithms (2024) ===</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">algorithms</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;ML-KEM (Kyber)&quot;</span><span class="p">,</span>       <span class="n">use</span><span class="o">=</span><span class="s2">&quot;Key Encapsulation&quot;</span><span class="p">,</span>
+         <span class="n">basis</span><span class="o">=</span><span class="s2">&quot;Module Lattice&quot;</span><span class="p">,</span>      <span class="n">pub_size</span><span class="o">=</span><span class="s2">&quot;800-1568 B&quot;</span><span class="p">,</span> <span class="n">perf</span><span class="o">=</span><span class="s2">&quot;Fast&quot;</span><span class="p">),</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;ML-DSA (Dilithium)&quot;</span><span class="p">,</span>   <span class="n">use</span><span class="o">=</span><span class="s2">&quot;Digital Signature&quot;</span><span class="p">,</span>
+         <span class="n">basis</span><span class="o">=</span><span class="s2">&quot;Module Lattice&quot;</span><span class="p">,</span>      <span class="n">pub_size</span><span class="o">=</span><span class="s2">&quot;1312-2592 B&quot;</span><span class="p">,</span><span class="n">perf</span><span class="o">=</span><span class="s2">&quot;Fast&quot;</span><span class="p">),</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;SLH-DSA (SPHINCS+)&quot;</span><span class="p">,</span>   <span class="n">use</span><span class="o">=</span><span class="s2">&quot;Digital Signature&quot;</span><span class="p">,</span>
+         <span class="n">basis</span><span class="o">=</span><span class="s2">&quot;Hash functions&quot;</span><span class="p">,</span>      <span class="n">pub_size</span><span class="o">=</span><span class="s2">&quot;32-64 B&quot;</span><span class="p">,</span>    <span class="n">perf</span><span class="o">=</span><span class="s2">&quot;Slower&quot;</span><span class="p">),</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;FN-DSA (FALCON)&quot;</span><span class="p">,</span>      <span class="n">use</span><span class="o">=</span><span class="s2">&quot;Digital Signature&quot;</span><span class="p">,</span>
+         <span class="n">basis</span><span class="o">=</span><span class="s2">&quot;NTRU Lattice&quot;</span><span class="p">,</span>        <span class="n">pub_size</span><span class="o">=</span><span class="s2">&quot;897-1793 B&quot;</span><span class="p">,</span> <span class="n">perf</span><span class="o">=</span><span class="s2">&quot;Fast&quot;</span><span class="p">),</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;RSA-2048 (classical)&quot;</span><span class="p">,</span> <span class="n">use</span><span class="o">=</span><span class="s2">&quot;Key Exchange/Sig&quot;</span><span class="p">,</span>
+         <span class="n">basis</span><span class="o">=</span><span class="s2">&quot;Integer factoring&quot;</span><span class="p">,</span>   <span class="n">pub_size</span><span class="o">=</span><span class="s2">&quot;256 B&quot;</span><span class="p">,</span>      <span class="n">perf</span><span class="o">=</span><span class="s2">&quot;Moderate&quot;</span><span class="p">),</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;ECDSA P-256 (classical)&quot;</span><span class="p">,</span><span class="n">use</span><span class="o">=</span><span class="s2">&quot;Digital Signature&quot;</span><span class="p">,</span>
+         <span class="n">basis</span><span class="o">=</span><span class="s2">&quot;Elliptic curve DLP&quot;</span><span class="p">,</span>  <span class="n">pub_size</span><span class="o">=</span><span class="s2">&quot;64 B&quot;</span><span class="p">,</span>       <span class="n">perf</span><span class="o">=</span><span class="s2">&quot;Fast&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="s1">&#39;Algorithm&#39;</span><span class="si">:</span><span class="s2">&lt;25</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Use&#39;</span><span class="si">:</span><span class="s2">&lt;22</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Hard Problem&#39;</span><span class="si">:</span><span class="s2">&lt;22</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Pub Key&#39;</span><span class="si">:</span><span class="s2">&lt;14</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Speed&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  &quot;</span> <span class="o">+</span> <span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">95</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">algorithms</span><span class="p">:</span>
+    <span class="n">quantum</span> <span class="o">=</span> <span class="s2">&quot;QUANTUM SAFE&quot;</span> <span class="k">if</span> <span class="s2">&quot;classical&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">a</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span> <span class="k">else</span> <span class="s2">&quot;VULNERABLE TO SHOR&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">&lt;25</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;use&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">&lt;22</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;basis&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">&lt;22</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;pub_size&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">&lt;14</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;perf&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+          <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;   [</span><span class="si">{</span><span class="n">quantum</span><span class="si">}</span><span class="s2">]&quot;</span><span class="p">)</span>
+
+<span class="c1"># ── Quantum threat timeline visualisation ─────────────────────────────────────</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">2042</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)</span>
+
+<span class="n">events</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="s2">&quot;SolarWinds</span><span class="se">\n</span><span class="s2">SUNBURST&quot;</span><span class="p">,</span> <span class="s2">&quot;#e05a4e&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="s2">&quot;NIST PQC</span><span class="se">\n</span><span class="s2">Final Round&quot;</span><span class="p">,</span> <span class="s2">&quot;#3a7ebf&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2024</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="s2">&quot;First PQC</span><span class="se">\n</span><span class="s2">Standards&quot;</span><span class="p">,</span> <span class="s2">&quot;#3a7ebf&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2026</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="s2">&quot;Hybrid TLS</span><span class="se">\n</span><span class="s2">deployment&quot;</span><span class="p">,</span> <span class="s2">&quot;#5ba3cc&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2028</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="s2">&quot;Federal</span><span class="se">\n</span><span class="s2">PQC deadline&quot;</span><span class="p">,</span> <span class="s2">&quot;#80c1e0&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2030</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="s2">&quot;NIST retires</span><span class="se">\n</span><span class="s2">RSA/ECC&quot;</span><span class="p">,</span> <span class="s2">&quot;#e05a4e&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2035</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="s2">&quot;Cryptographically</span><span class="se">\n</span><span class="s2">relevant quantum</span><span class="se">\n</span><span class="s2">computer possible&quot;</span><span class="p">,</span> <span class="s2">&quot;#c00&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">xmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">xmax</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#888&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2020.5</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="s2">&quot;Timeline&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#555&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">year</span><span class="p">,</span> <span class="n">y_off</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">color</span> <span class="ow">in</span> <span class="n">events</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">([</span><span class="n">year</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">),</span>
+                <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="mf">0.8</span> <span class="o">+</span> <span class="n">y_off</span><span class="p">),</span>
+                <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">7.5</span><span class="p">,</span>
+                <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">mpatches</span><span class="o">.</span><span class="n">FancyArrowPatch</span><span class="p">((</span><span class="mi">2024</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">),</span> <span class="p">(</span><span class="mi">2035</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">),</span>
+             <span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-|&gt;&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">mutation_scale</span><span class="o">=</span><span class="mi">15</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2029.5</span><span class="p">,</span> <span class="mf">2.65</span><span class="p">,</span> <span class="s2">&quot;Harvest-now-decrypt-later window (most dangerous period)&quot;</span><span class="p">,</span>
+        <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">8.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Figure 17.1  Post-Quantum Cryptography Transition Timeline&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">2042</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+
+<span class="n">_buf</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">_buf</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">();</span> <span class="n">_buf</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">_buf</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Figure 17.1 rendered.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== NIST PQC Standardised Algorithms (2024) ===
+
+  Algorithm                 Use                    Hard Problem           Pub Key        Speed
+  -----------------------------------------------------------------------------------------------
+  ML-KEM (Kyber)            Key Encapsulation      Module Lattice         800-1568 B     Fast   [QUANTUM SAFE]
+  ML-DSA (Dilithium)        Digital Signature      Module Lattice         1312-2592 B    Fast   [QUANTUM SAFE]
+  SLH-DSA (SPHINCS+)        Digital Signature      Hash functions         32-64 B        Slower   [QUANTUM SAFE]
+  FN-DSA (FALCON)           Digital Signature      NTRU Lattice           897-1793 B     Fast   [QUANTUM SAFE]
+  RSA-2048 (classical)      Key Exchange/Sig       Integer factoring      256 B          Moderate   [VULNERABLE TO SHOR]
+  ECDSA P-256 (classical)   Digital Signature      Elliptic curve DLP     64 B           Fast   [VULNERABLE TO SHOR]
+</pre></div>
+</div>
+<img alt="../../_images/f6115a39079cf4b519755067a93d8682a5549d5a6fc4382d95e8e0fd0f308389.png" src="../../_images/f6115a39079cf4b519755067a93d8682a5549d5a6fc4382d95e8e0fd0f308389.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Figure 17.1 rendered.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">17.11. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> Shor’s algorithm threatens RSA and ECC by:
+A. Brute-forcing the key space  B. Efficiently solving integer factorisation and discrete logarithm on a quantum computer  C. Exploiting TLS implementation bugs  D. Requiring the private key to be transmitted</p>
+<p><strong>Q2.</strong> The first NIST PQC standard for key encapsulation is:
+A. FALCON  B. SPHINCS+  C. ML-KEM (Kyber)  D. ML-DSA (Dilithium)</p>
+<p><strong>Q3.</strong> “Harvest now, decrypt later” describes:
+A. Storing data until quantum computers can break current encryption  B. Collecting credentials for password spraying  C. Archiving logs for forensic use  D. Caching TLS sessions</p>
+<p><strong>Q4.</strong> The SolarWinds attack is classified as a supply chain attack because:
+A. It targeted the solar energy sector  B. Malicious code was injected into a trusted software update distributed to thousands of organisations  C. It used a zero-day in Windows  D. It targeted cloud infrastructure</p>
+<p><strong>Q5.</strong> An SBOM primarily helps an organisation:
+A. Audit IAM permissions  B. Rapidly identify which products contain a newly disclosed vulnerable component  C. Generate YARA rules  D. Perform threat modelling</p>
+<p><strong>Q6.</strong> In the cloud shared responsibility model, the customer is always responsible for:
+A. Physical server security  B. Hypervisor patches  C. Their data, identity management, and application security  D. Network hardware failures</p>
+<p><strong>Q7.</strong> The Mirai botnet primarily compromised:
+A. Windows servers  B. IoT devices with default credentials  C. Cloud VMs  D. SCADA systems</p>
+<p><strong>Q8.</strong> LLMs improve spear phishing effectiveness primarily by:
+A. Breaking TLS encryption  B. Generating personalised, grammatically correct phishing content at scale  C. Automating network scanning  D. Cracking passwords</p>
+<p><strong>Q9.</strong> Google Project Zero’s 90-day disclosure policy is designed to:
+A. Give attackers time to develop exploits  B. Allow indefinite vendor delay  C. Create patch pressure while giving vendors a reasonable remediation window  D. Prevent all public disclosure</p>
+<p><strong>Q10.</strong> Hybrid classical/PQC key exchange (e.g., ECDHE + ML-KEM) is deployed to:
+A. Improve TLS performance  B. Provide protection during migration even if one algorithm is later broken  C. Eliminate certificate authorities  D. Reduce key sizes</p>
+<p><em>Answers: Q1 B, Q2 C, Q3 A, Q4 B, Q5 B, Q6 C, Q7 B, Q8 B, Q9 C, Q10 B.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">17.12. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – Cryptographic inventory</strong>: Audit a web service you control (your own server, a lab VM, or a cloud instance). Use <code class="docutils literal notranslate"><span class="pre">nmap</span> <span class="pre">--script</span> <span class="pre">ssl-enum-ciphers</span> <span class="pre">-p</span> <span class="pre">443</span></code> to list the TLS cipher suites offered. Identify: which key exchange algorithm is used, whether it is forward-secret, and whether it uses a quantum-vulnerable algorithm.</p>
+<p><strong>Part B – PQC algorithm comparison</strong>: Using the NIST PQC documentation, compare ML-KEM-768 and ML-KEM-1024 on four dimensions: public key size, ciphertext size, security level (NIST level), and performance. Explain the trade-off between ML-KEM-768 and ML-KEM-1024 for TLS deployment.</p>
+<p><strong>Part C – Supply chain risk assessment</strong>: For a fictional organisation that uses 20 Python packages in a web application, describe the process for generating an SBOM using <code class="docutils literal notranslate"><span class="pre">pip-audit</span></code> or <code class="docutils literal notranslate"><span class="pre">cyclonedx-py</span></code>. Explain how you would use the SBOM to respond if a critical CVE were disclosed in one of those packages.</p>
+<p><strong>Part D – AI threat model</strong>: Draft a one-page threat model for AI-enabled attacks on a 500-person financial services firm. Include: which roles are most vulnerable to AI-enhanced phishing/vishing, which defences are most effective (phishing-resistant MFA, deepfake detection, voice authentication review), and one emerging AI threat the firm should monitor.</p>
+</section>
+<section id="references">
+<h2><span class="section-number">17.13. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<span class="target" id="id1"></span></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/17_emerging"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../16_ctf/chapter16.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">16. </span>Chapter 16: Capture the Flag and Competitive Security</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../18_privacy_law/chapter18.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">18. </span>Chapter 18: Privacy, Law, and Information Governance</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">17.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">17.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-quantum-cryptography">17.3. Post-Quantum Cryptography</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-quantum-threat-to-current-cryptography">17.3.1. The Quantum Threat to Current Cryptography</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nist-pqc-standardisation">17.3.2. NIST PQC Standardisation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#harvest-now-decrypt-later">17.3.2.1. Harvest Now, Decrypt Later</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-enabled-attacks-and-defences">17.4. AI-Enabled Attacks and Defences</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#offensive-ai">17.4.1. Offensive AI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defensive-ai">17.4.2. Defensive AI</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supply-chain-attacks">17.5. Supply Chain Attacks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-supply-chain-is-a-high-value-target">17.5.1. Why Supply Chain Is a High-Value Target</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notable-supply-chain-attack-patterns">17.5.2. Notable Supply Chain Attack Patterns</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#build-pipeline-compromise">17.5.2.1. Build Pipeline Compromise</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dependency-confusion-and-typosquatting">17.5.2.2. Dependency Confusion and Typosquatting</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sbom-and-dependency-management">17.5.3. SBOM and Dependency Management</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloud-security">17.6. Cloud Security</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-shared-responsibility-model">17.6.1. The Shared Responsibility Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#common-cloud-misconfigurations">17.6.1.1. Common Cloud Misconfigurations</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cloud-native-threats">17.6.2. Cloud-Native Threats</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#internet-of-things-security">17.7. Internet of Things Security</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-iot-attack-surface">17.7.1. The IoT Attack Surface</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consequences">17.7.2. Consequences</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zero-day-markets-and-disclosure">17.8. Zero-Day Markets and Disclosure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-zero-day-economy">17.8.1. The Zero-Day Economy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#responsible-disclosure-and-bug-bounties">17.8.2. Responsible Disclosure and Bug Bounties</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">17.9. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">17.10. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">17.11. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">17.12. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">17.13. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

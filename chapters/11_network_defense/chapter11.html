@@ -1,0 +1,961 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>11. Chapter 11: Network Defense and Hardening &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/11_network_defense/chapter11';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="12. Chapter 12: Intrusion Detection and Prevention Systems" href="../12_idps/chapter12.html" />
+    <link rel="prev" title="10. Chapter 10: Web Application Security" href="../10_web_security/chapter10.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/11_network_defense/chapter11.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 11: Network Defense and Hardening</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">11.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">11.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#firewalls">11.3. Firewalls</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#firewall-types-and-evolution">11.3.1. Firewall Types and Evolution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#packet-filter-firewalls">11.3.1.1. Packet-Filter Firewalls</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stateful-inspection-firewalls">11.3.1.2. Stateful Inspection Firewalls</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#next-generation-firewalls">11.3.1.3. Next-Generation Firewalls</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-firewall-rules">11.3.2. Writing Firewall Rules</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-implicit-deny-principle">11.3.2.1. The Implicit Deny Principle</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-ordering-and-specificity">11.3.2.2. Rule Ordering and Specificity</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-segmentation">11.4. Network Segmentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dmz-architecture">11.4.1. DMZ Architecture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vlan-and-micro-segmentation">11.4.2. VLAN and Micro-Segmentation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zero-trust-architecture">11.5. Zero-Trust Architecture</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-zero-trust-principle">11.5.1. The Zero-Trust Principle</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-centric-access">11.5.1.1. Identity-Centric Access</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dns-security">11.6. DNS Security</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dnssec">11.6.1. DNSSEC</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dns-over-https-and-dns-over-tls">11.6.2. DNS over HTTPS and DNS over TLS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dns-sinkholing">11.6.3. DNS Sinkholing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vpns-and-remote-access">11.7. VPNs and Remote Access</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ipsec-and-wireguard">11.7.1. IPsec and WireGuard</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#split-tunnelling-and-its-risks">11.7.2. Split Tunnelling and Its Risks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-access-control-and-802-1x">11.8. Network Access Control and 802.1X</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#x-operation">11.8.1. 802.1X Operation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ddos-and-mitigation">11.9. DDoS and Mitigation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ddos-attack-categories">11.9.1. DDoS Attack Categories</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ddos-mitigation">11.9.2. DDoS Mitigation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">11.10. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">11.11. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">11.12. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">11.13. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">11.14. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-11-network-defense-and-hardening">
+<h1><span class="section-number">11. </span>Chapter 11: Network Defense and Hardening<a class="headerlink" href="#chapter-11-network-defense-and-hardening" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“A firewall does not protect you from threats that originate inside it, threats that go around it,
+or threats that walk through its front door.” paraphrased from common security teaching</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">11.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Describe the role of firewalls, their types, and how to write effective rules.</p></li>
+<li><p>Explain network segmentation and the DMZ architecture.</p></li>
+<li><p>Describe zero-trust architecture and its practical implementation.</p></li>
+<li><p>Configure basic firewall rule sets and explain the implicit deny principle.</p></li>
+<li><p>Explain VPN types and their security properties.</p></li>
+<li><p>Describe DNS security controls including DNSSEC, DoH, and DNS sinkholing.</p></li>
+<li><p>Explain network access control (NAC) and 802.1X authentication.</p></li>
+<li><p>Describe DDoS categories and mitigation strategies.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">11.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Firewall</strong>: a device or software that enforces access control between networks.</p></li>
+<li><p><strong>Stateful inspection</strong>: tracks connection state to validate return traffic.</p></li>
+<li><p><strong>NGFW</strong>: Next-Generation Firewall; adds deep packet inspection, application awareness, and IPS.</p></li>
+<li><p><strong>DMZ</strong>: Demilitarised Zone; a network segment between the internet and the internal network.</p></li>
+<li><p><strong>Implicit deny</strong>: any traffic not explicitly permitted is blocked.</p></li>
+<li><p><strong>ACL</strong>: Access Control List; ordered list of permit/deny rules.</p></li>
+<li><p><strong>Zero trust</strong>: security model requiring verification for every request regardless of network location.</p></li>
+<li><p><strong>NAC</strong>: Network Access Control; enforces endpoint compliance before granting network access.</p></li>
+<li><p><strong>802.1X</strong>: IEEE standard for port-based network access control.</p></li>
+<li><p><strong>Sinkhole</strong>: redirecting malicious domain resolutions to a controlled IP for analysis or blocking.</p></li>
+<li><p><strong>Anycast</strong>: routing technique that sends traffic to the nearest of multiple identical endpoints.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="firewalls">
+<h2><span class="section-number">11.3. </span>Firewalls<a class="headerlink" href="#firewalls" title="Link to this heading">#</a></h2>
+<section id="firewall-types-and-evolution">
+<h3><span class="section-number">11.3.1. </span>Firewall Types and Evolution<a class="headerlink" href="#firewall-types-and-evolution" title="Link to this heading">#</a></h3>
+<section id="packet-filter-firewalls">
+<h4><span class="section-number">11.3.1.1. </span>Packet-Filter Firewalls<a class="headerlink" href="#packet-filter-firewalls" title="Link to this heading">#</a></h4>
+<p>Packet-filter firewalls evaluate each packet independently against a rule set based on header fields:
+source/destination IP, port, and protocol. They are fast and simple but cannot track connection
+state, making them vulnerable to IP spoofing and fragmentation attacks. They operate at layer 3-4.</p>
+</section>
+<section id="stateful-inspection-firewalls">
+<h4><span class="section-number">11.3.1.2. </span>Stateful Inspection Firewalls<a class="headerlink" href="#stateful-inspection-firewalls" title="Link to this heading">#</a></h4>
+<p>Stateful firewalls maintain a connection table that tracks TCP sessions and UDP pseudo-sessions.
+Return traffic is automatically permitted if it belongs to an established, allowed session. This
+prevents certain spoofing attacks and simplifies outbound rule writing. The state table itself is
+a resource that can be exhausted by SYN floods.</p>
+</section>
+<section id="next-generation-firewalls">
+<h4><span class="section-number">11.3.1.3. </span>Next-Generation Firewalls<a class="headerlink" href="#next-generation-firewalls" title="Link to this heading">#</a></h4>
+<p>NGFWs add layer-7 inspection: application identification (blocking BitTorrent regardless of port),
+user identity-based rules (allow finance team to access financial SaaS), URL filtering, TLS
+inspection (decrypt-inspect-re-encrypt), and integrated intrusion prevention. NGFWs are the
+standard for enterprise perimeter and internal segmentation today.</p>
+</section>
+</section>
+<section id="writing-firewall-rules">
+<h3><span class="section-number">11.3.2. </span>Writing Firewall Rules<a class="headerlink" href="#writing-firewall-rules" title="Link to this heading">#</a></h3>
+<section id="the-implicit-deny-principle">
+<h4><span class="section-number">11.3.2.1. </span>The Implicit Deny Principle<a class="headerlink" href="#the-implicit-deny-principle" title="Link to this heading">#</a></h4>
+<p>All enterprise firewall rule sets should end with an explicit <code class="docutils literal notranslate"><span class="pre">deny</span> <span class="pre">all</span></code> rule (or rely on an
+implicit deny that blocks everything not matched above). Traffic is permitted only by explicit
+positive rules. This default-deny posture means new services are blocked until consciously allowed,
+rather than exposed until someone notices.</p>
+</section>
+<section id="rule-ordering-and-specificity">
+<h4><span class="section-number">11.3.2.2. </span>Rule Ordering and Specificity<a class="headerlink" href="#rule-ordering-and-specificity" title="Link to this heading">#</a></h4>
+<p>Firewall rules are evaluated top to bottom; the first match wins. More specific rules must precede
+more general ones. A common misconfiguration is placing a broad permit rule before a more specific
+deny, inadvertently allowing everything that the deny was meant to block.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="network-segmentation">
+<h2><span class="section-number">11.4. </span>Network Segmentation<a class="headerlink" href="#network-segmentation" title="Link to this heading">#</a></h2>
+<section id="dmz-architecture">
+<h3><span class="section-number">11.4.1. </span>DMZ Architecture<a class="headerlink" href="#dmz-architecture" title="Link to this heading">#</a></h3>
+<p>A DMZ (Demilitarised Zone) places internet-facing servers (web, mail, DNS) in a network segment
+that is reachable from the internet but cannot initiate connections to the internal network. The
+DMZ sits between two firewalls: the outer firewall permits inbound traffic to DMZ services; the
+inner firewall permits only specific, authorised traffic from the DMZ to the internal network
+(e.g., the web server may query the internal database on port 5432 only). If the web server is
+compromised, the attacker cannot reach the internal network without breaching the inner firewall.</p>
+</section>
+<section id="vlan-and-micro-segmentation">
+<h3><span class="section-number">11.4.2. </span>VLAN and Micro-Segmentation<a class="headerlink" href="#vlan-and-micro-segmentation" title="Link to this heading">#</a></h3>
+<p>VLANs create logical network segments that limit broadcast domains and create enforcement points.
+Micro-segmentation extends this to the workload level: even hosts on the same VLAN have explicit
+rules about which port/protocol combinations can communicate. East-west traffic (between internal
+workloads) is filtered just as rigorously as north-south traffic (to/from internet). Micro-
+segmentation dramatically limits lateral movement after initial compromise.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="zero-trust-architecture">
+<h2><span class="section-number">11.5. </span>Zero-Trust Architecture<a class="headerlink" href="#zero-trust-architecture" title="Link to this heading">#</a></h2>
+<section id="the-zero-trust-principle">
+<h3><span class="section-number">11.5.1. </span>The Zero-Trust Principle<a class="headerlink" href="#the-zero-trust-principle" title="Link to this heading">#</a></h3>
+<p>Zero trust abandons the assumption that everything inside the network perimeter is safe. Every
+access request is evaluated against policy regardless of where it originates: inside the office,
+on VPN, or from a cloud workload. The three core principles are:</p>
+<ol class="arabic simple">
+<li><p>Verify explicitly: authenticate and authorise every request using all available data points
+(identity, device health, location, time, data sensitivity).</p></li>
+<li><p>Use least-privilege access: grant only the permissions needed for the specific request.</p></li>
+<li><p>Assume breach: minimise blast radius through segmentation; assume an attacker is already inside
+and design accordingly.</p></li>
+</ol>
+<section id="identity-centric-access">
+<h4><span class="section-number">11.5.1.1. </span>Identity-Centric Access<a class="headerlink" href="#identity-centric-access" title="Link to this heading">#</a></h4>
+<p>In a zero-trust model, the network is not the trust boundary; the identity is. A user with strong
+MFA and a healthy, compliant device gets access. The same user on an unmanaged device gets reduced
+access or is denied. A compromised account, even from inside the office, cannot reach sensitive
+resources without the correct device posture and MFA.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="dns-security">
+<h2><span class="section-number">11.6. </span>DNS Security<a class="headerlink" href="#dns-security" title="Link to this heading">#</a></h2>
+<section id="dnssec">
+<h3><span class="section-number">11.6.1. </span>DNSSEC<a class="headerlink" href="#dnssec" title="Link to this heading">#</a></h3>
+<p>DNSSEC adds cryptographic signatures to DNS resource records. A DNSSEC-aware resolver validates
+the chain of signatures from the root zone down to the answer, detecting tampered or forged records.
+DNSSEC prevents cache poisoning but does not encrypt DNS traffic (queries and responses remain
+visible).</p>
+</section>
+<section id="dns-over-https-and-dns-over-tls">
+<h3><span class="section-number">11.6.2. </span>DNS over HTTPS and DNS over TLS<a class="headerlink" href="#dns-over-https-and-dns-over-tls" title="Link to this heading">#</a></h3>
+<p>DoH and DoT encrypt the DNS channel, preventing eavesdropping on queries. DoH sends DNS queries
+inside HTTPS traffic on port 443, making it indistinguishable from normal web traffic. DoT uses
+a dedicated port (853) and allows enterprise filtering. Enterprise deployments often force DoT to
+a corporate resolver that applies sinkholing and filtering policies.</p>
+</section>
+<section id="dns-sinkholing">
+<h3><span class="section-number">11.6.3. </span>DNS Sinkholing<a class="headerlink" href="#dns-sinkholing" title="Link to this heading">#</a></h3>
+<p>A sinkhole redirects DNS queries for known-malicious domains to a controlled IP address rather
+than the actual C2 server. Malware that checks in with a sinkholed domain is identified (the
+connecting host is infected) and prevented from reaching its real C2. Threat intelligence feeds
+supply the domain blocklists; enterprise DNS resolvers apply them automatically.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="vpns-and-remote-access">
+<h2><span class="section-number">11.7. </span>VPNs and Remote Access<a class="headerlink" href="#vpns-and-remote-access" title="Link to this heading">#</a></h2>
+<section id="ipsec-and-wireguard">
+<h3><span class="section-number">11.7.1. </span>IPsec and WireGuard<a class="headerlink" href="#ipsec-and-wireguard" title="Link to this heading">#</a></h3>
+<p>IPsec provides network-layer encryption and authentication, operating in tunnel mode (encrypting
+the entire IP packet, including headers) for site-to-site VPNs or transport mode for host-to-host.
+WireGuard is a modern, lean VPN protocol that uses state-of-the-art cryptography (Curve25519,
+ChaCha20, Poly1305) with a minimal code base, making it faster to audit and in practice faster than
+IPsec or OpenVPN.</p>
+</section>
+<section id="split-tunnelling-and-its-risks">
+<h3><span class="section-number">11.7.2. </span>Split Tunnelling and Its Risks<a class="headerlink" href="#split-tunnelling-and-its-risks" title="Link to this heading">#</a></h3>
+<p>Split tunnelling routes only corporate-destined traffic through the VPN while internet traffic goes
+directly to the user’s ISP. This reduces latency and VPN gateway load but means the VPN provides no
+visibility or control over the user’s general internet activity. A user infected with malware while
+on split-tunnel VPN may continue to communicate with C2 without the corporate security stack seeing
+it.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="network-access-control-and-802-1x">
+<h2><span class="section-number">11.8. </span>Network Access Control and 802.1X<a class="headerlink" href="#network-access-control-and-802-1x" title="Link to this heading">#</a></h2>
+<p>NAC enforces endpoint health before granting network access. Before a device is permitted onto the
+network it must present valid credentials (802.1X) and pass a health check (antivirus current,
+OS patches applied, disk encryption enabled). Non-compliant devices are quarantined to a remediation
+VLAN with access only to update servers.</p>
+<section id="x-operation">
+<h3><span class="section-number">11.8.1. </span>802.1X Operation<a class="headerlink" href="#x-operation" title="Link to this heading">#</a></h3>
+<p>In 802.1X, three components interact: the supplicant (client device), the authenticator (switch or
+wireless access point), and the authentication server (RADIUS). The switch blocks all traffic from
+a newly connected device except EAP (Extensible Authentication Protocol) frames until the
+authentication server validates the device’s credentials. Only then does the switch permit normal
+traffic.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="ddos-and-mitigation">
+<h2><span class="section-number">11.9. </span>DDoS and Mitigation<a class="headerlink" href="#ddos-and-mitigation" title="Link to this heading">#</a></h2>
+<section id="ddos-attack-categories">
+<h3><span class="section-number">11.9.1. </span>DDoS Attack Categories<a class="headerlink" href="#ddos-attack-categories" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Category</p></th>
+<th class="head"><p>Mechanism</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Volumetric</p></td>
+<td><p>Saturate bandwidth</p></td>
+<td><p>DNS amplification, UDP flood</p></td>
+</tr>
+<tr class="row-odd"><td><p>Protocol</p></td>
+<td><p>Exhaust state tables</p></td>
+<td><p>SYN flood, fragmentation</p></td>
+</tr>
+<tr class="row-even"><td><p>Application-layer</p></td>
+<td><p>Exhaust server resources</p></td>
+<td><p>HTTP flood, Slowloris</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="ddos-mitigation">
+<h3><span class="section-number">11.9.2. </span>DDoS Mitigation<a class="headerlink" href="#ddos-mitigation" title="Link to this heading">#</a></h3>
+<p>Cloud-based scrubbing services (Cloudflare, Akamai, AWS Shield) absorb attack traffic using
+anycast routing, which distributes the attack across a global network. Rate limiting at the
+network edge drops traffic from sources exceeding defined thresholds. BGP blackholing redirects
+attack traffic to null routes. Application-layer DDoS mitigation requires distinguishing legitimate
+from bot traffic using CAPTCHA, JavaScript challenges, and browser fingerprinting.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">11.10. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>Network defense is the layer that contains damage once a host is compromised. A firewall that limits
+outbound traffic prevents data exfiltration. A DMZ limits blast radius when a web server is
+compromised. A NAC-enforced network prevents an unpatched guest device from spreading malware to
+corporate assets. Zero-trust architecture means a compromised credential does not automatically
+grant access to every resource. These controls work together to shorten the attacker’s kill chain.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">11.11. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>Several nation-state intrusion campaigns achieved network-wide compromise specifically because
+east-west traffic was unfiltered: once the attacker gained a foothold in one workload, they could
+reach any other workload on the same flat network using standard protocols (SMB, RDP, WMI). The
+entire subsequent kill chain depended on the absence of micro-segmentation. Post-incident
+recommendations universally included implementing east-west filtering and zero-trust principles
+for workload communication.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 11 -- Firewall rule evaluator and network segment model</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dataclasses</span><span class="w"> </span><span class="kn">import</span> <span class="n">dataclass</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span>
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">FirewallRule</span><span class="p">:</span>
+    <span class="n">action</span><span class="p">:</span> <span class="nb">str</span>           <span class="c1"># PERMIT or DENY</span>
+    <span class="n">src_ip</span><span class="p">:</span> <span class="nb">str</span>           <span class="c1"># CIDR or &quot;any&quot;</span>
+    <span class="n">dst_ip</span><span class="p">:</span> <span class="nb">str</span>           <span class="c1"># CIDR or &quot;any&quot;</span>
+    <span class="n">protocol</span><span class="p">:</span> <span class="nb">str</span>         <span class="c1"># tcp, udp, icmp, any</span>
+    <span class="n">dst_port</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>  <span class="c1"># None for &quot;any&quot;</span>
+    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">ip_in_cidr</span><span class="p">(</span><span class="n">ip</span><span class="p">,</span> <span class="n">cidr</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">cidr</span> <span class="o">==</span> <span class="s2">&quot;any&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">if</span> <span class="s2">&quot;/&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">cidr</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">ip</span> <span class="o">==</span> <span class="n">cidr</span>
+    <span class="n">base</span><span class="p">,</span> <span class="n">prefix</span> <span class="o">=</span> <span class="n">cidr</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+    <span class="n">prefix</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">prefix</span><span class="p">)</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">to_int</span><span class="p">(</span><span class="n">addr</span><span class="p">):</span>
+        <span class="n">parts</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">addr</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)))</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="mi">24</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="mi">16</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="mi">8</span><span class="p">)</span><span class="o">|</span><span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+    <span class="n">mask</span> <span class="o">=</span> <span class="p">(</span><span class="mh">0xFFFFFFFF</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="mi">32</span><span class="o">-</span><span class="n">prefix</span><span class="p">))</span> <span class="o">&amp;</span> <span class="mh">0xFFFFFFFF</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">to_int</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">mask</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="n">to_int</span><span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">mask</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">evaluate</span><span class="p">(</span><span class="n">rules</span><span class="p">,</span> <span class="n">pkt</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">rules</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">ip_in_cidr</span><span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="s2">&quot;src&quot;</span><span class="p">],</span> <span class="n">r</span><span class="o">.</span><span class="n">src_ip</span><span class="p">):</span>
+            <span class="k">continue</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">ip_in_cidr</span><span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="s2">&quot;dst&quot;</span><span class="p">],</span> <span class="n">r</span><span class="o">.</span><span class="n">dst_ip</span><span class="p">):</span>
+            <span class="k">continue</span>
+        <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">protocol</span> <span class="o">!=</span> <span class="s2">&quot;any&quot;</span> <span class="ow">and</span> <span class="n">r</span><span class="o">.</span><span class="n">protocol</span> <span class="o">!=</span> <span class="n">pkt</span><span class="p">[</span><span class="s2">&quot;proto&quot;</span><span class="p">]:</span>
+            <span class="k">continue</span>
+        <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">dst_port</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">r</span><span class="o">.</span><span class="n">dst_port</span> <span class="o">!=</span> <span class="n">pkt</span><span class="p">[</span><span class="s2">&quot;port&quot;</span><span class="p">]:</span>
+            <span class="k">continue</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">action</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">description</span>
+    <span class="k">return</span> <span class="s2">&quot;DENY&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Implicit deny (no rule matched)&quot;</span>
+
+<span class="c1"># DMZ firewall rule set</span>
+<span class="n">rules</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">FirewallRule</span><span class="p">(</span><span class="s2">&quot;PERMIT&quot;</span><span class="p">,</span><span class="s2">&quot;0.0.0.0/0&quot;</span><span class="p">,</span><span class="s2">&quot;203.0.113.10&quot;</span><span class="p">,</span><span class="s2">&quot;tcp&quot;</span><span class="p">,</span><span class="mi">443</span><span class="p">,</span><span class="s2">&quot;Allow HTTPS to web server&quot;</span><span class="p">),</span>
+    <span class="n">FirewallRule</span><span class="p">(</span><span class="s2">&quot;PERMIT&quot;</span><span class="p">,</span><span class="s2">&quot;0.0.0.0/0&quot;</span><span class="p">,</span><span class="s2">&quot;203.0.113.10&quot;</span><span class="p">,</span><span class="s2">&quot;tcp&quot;</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span> <span class="s2">&quot;Allow HTTP to web server&quot;</span><span class="p">),</span>
+    <span class="n">FirewallRule</span><span class="p">(</span><span class="s2">&quot;PERMIT&quot;</span><span class="p">,</span><span class="s2">&quot;203.0.113.10&quot;</span><span class="p">,</span><span class="s2">&quot;10.0.0.50&quot;</span><span class="p">,</span><span class="s2">&quot;tcp&quot;</span><span class="p">,</span><span class="mi">5432</span><span class="p">,</span><span class="s2">&quot;Web -&gt; DB on port 5432 only&quot;</span><span class="p">),</span>
+    <span class="n">FirewallRule</span><span class="p">(</span><span class="s2">&quot;DENY&quot;</span><span class="p">,</span>  <span class="s2">&quot;203.0.113.10&quot;</span><span class="p">,</span><span class="s2">&quot;10.0.0.0/8&quot;</span><span class="p">,</span><span class="s2">&quot;any&quot;</span><span class="p">,</span><span class="kc">None</span><span class="p">,</span><span class="s2">&quot;Block DMZ to internal except DB&quot;</span><span class="p">),</span>
+    <span class="n">FirewallRule</span><span class="p">(</span><span class="s2">&quot;PERMIT&quot;</span><span class="p">,</span><span class="s2">&quot;10.0.0.0/8&quot;</span><span class="p">,</span><span class="s2">&quot;any&quot;</span><span class="p">,</span><span class="s2">&quot;any&quot;</span><span class="p">,</span><span class="kc">None</span><span class="p">,</span><span class="s2">&quot;Allow internal outbound&quot;</span><span class="p">),</span>
+    <span class="n">FirewallRule</span><span class="p">(</span><span class="s2">&quot;DENY&quot;</span><span class="p">,</span>  <span class="s2">&quot;any&quot;</span><span class="p">,</span><span class="s2">&quot;any&quot;</span><span class="p">,</span><span class="s2">&quot;any&quot;</span><span class="p">,</span><span class="kc">None</span><span class="p">,</span><span class="s2">&quot;Explicit deny all&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="n">packets</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s2">&quot;1.2.3.4&quot;</span><span class="p">,</span>      <span class="n">dst</span><span class="o">=</span><span class="s2">&quot;203.0.113.10&quot;</span><span class="p">,</span> <span class="n">proto</span><span class="o">=</span><span class="s2">&quot;tcp&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">443</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Internet -&gt; Web HTTPS&quot;</span><span class="p">),</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s2">&quot;203.0.113.10&quot;</span><span class="p">,</span> <span class="n">dst</span><span class="o">=</span><span class="s2">&quot;10.0.0.50&quot;</span><span class="p">,</span>    <span class="n">proto</span><span class="o">=</span><span class="s2">&quot;tcp&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5432</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Web -&gt; DB query&quot;</span><span class="p">),</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s2">&quot;203.0.113.10&quot;</span><span class="p">,</span> <span class="n">dst</span><span class="o">=</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span>     <span class="n">proto</span><span class="o">=</span><span class="s2">&quot;tcp&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">22</span><span class="p">,</span>  <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Web -&gt; Internal SSH (lateral)&quot;</span><span class="p">),</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s2">&quot;10.0.0.5&quot;</span><span class="p">,</span>     <span class="n">dst</span><span class="o">=</span><span class="s2">&quot;8.8.8.8&quot;</span><span class="p">,</span>      <span class="n">proto</span><span class="o">=</span><span class="s2">&quot;udp&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">53</span><span class="p">,</span>  <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Internal -&gt; Internet DNS&quot;</span><span class="p">),</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s2">&quot;5.5.5.5&quot;</span><span class="p">,</span>      <span class="n">dst</span><span class="o">=</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span>     <span class="n">proto</span><span class="o">=</span><span class="s2">&quot;tcp&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">3389</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Internet -&gt; Internal RDP (attack)&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;Packet&#39;</span><span class="si">:</span><span class="s2">&lt;40</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Action&#39;</span><span class="si">:</span><span class="s2">&lt;8</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Rule#&#39;</span><span class="si">:</span><span class="s2">&lt;7</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Note&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">90</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">packets</span><span class="p">:</span>
+    <span class="n">action</span><span class="p">,</span> <span class="n">rnum</span><span class="p">,</span> <span class="n">desc</span> <span class="o">=</span> <span class="n">evaluate</span><span class="p">(</span><span class="n">rules</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">&lt;40</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">action</span><span class="si">:</span><span class="s2">&lt;8</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">rnum</span><span class="si">:</span><span class="s2">&lt;7</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">desc</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Packet                                   Action   Rule#   Note
+------------------------------------------------------------------------------------------
+Internet -&gt; Web HTTPS                    PERMIT   1       Allow HTTPS to web server
+Web -&gt; DB query                          PERMIT   3       Web -&gt; DB on port 5432 only
+Web -&gt; Internal SSH (lateral)            DENY     4       Block DMZ to internal except DB
+Internal -&gt; Internet DNS                 PERMIT   5       Allow internal outbound
+Internet -&gt; Internal RDP (attack)        DENY     6       Explicit deny all
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">11.12. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> The implicit deny principle means:
+A. All traffic is denied until a user logs in  B. Any traffic not explicitly permitted by a rule is blocked  C. Deny rules take precedence over permit rules  D. All outbound traffic is denied by default</p>
+<p><strong>Q2.</strong> A DMZ is placed between:
+A. Two internal switches  B. The internet-facing and internal-facing firewalls  C. The VPN and the corporate network  D. The RADIUS server and the switch</p>
+<p><strong>Q3.</strong> In zero-trust architecture, the primary trust boundary is:
+A. The firewall  B. The corporate office network  C. Verified identity with device posture  D. The VPN</p>
+<p><strong>Q4.</strong> DNSSEC protects against:
+A. DNS query eavesdropping  B. Cache poisoning by signing resource records  C. DDoS against name servers  D. Subdomain takeover</p>
+<p><strong>Q5.</strong> A DNS sinkhole primarily helps defenders:
+A. Speed up DNS resolution  B. Identify infected hosts attempting to reach malicious C2 domains  C. Prevent DNSSEC failures  D. Enforce DoT</p>
+<p><strong>Q6.</strong> Split-tunnel VPN poses a security risk because:
+A. It is slower than full-tunnel  B. Internet traffic bypasses corporate visibility and security controls  C. It requires 802.1X  D. It uses insecure protocols</p>
+<p><strong>Q7.</strong> In 802.1X, the switch acts as the:
+A. Supplicant  B. Authentication server  C. Authenticator  D. Certificate Authority</p>
+<p><strong>Q8.</strong> A SYN flood attack targets which resource?
+A. Disk I/O  B. The server’s TCP connection-state table  C. SSL certificate validity  D. DNS cache</p>
+<p><strong>Q9.</strong> Anycast routing is used in DDoS mitigation to:
+A. Encrypt attack traffic  B. Distribute attack traffic across a global network of scrubbing nodes  C. Block UDP amplification  D. Rate-limit HTTP requests</p>
+<p><strong>Q10.</strong> Micro-segmentation primarily limits:
+A. Internet-facing attack surface  B. East-west (lateral) movement within the network  C. DDoS impact  D. DNS poisoning</p>
+<p><em>Answers: Q1 B, Q2 B, Q3 C, Q4 B, Q5 B, Q6 B, Q7 C, Q8 B, Q9 B, Q10 B.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">11.13. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – Firewall rule audit</strong>: Using the evaluator above, add three additional test packets that expose a gap or misconfiguration in the existing rule set. For each packet, explain what attack scenario it represents and what rule change would prevent it.</p>
+<p><strong>Part B – DMZ design</strong>: Draw (or describe in table form) a three-tier DMZ architecture for a company that hosts a public web application, an internal HR system, and a database server. Specify the firewall rules between each zone.</p>
+<p><strong>Part C – Zero-trust gap analysis</strong>: For an organisation that currently uses a traditional VPN model, identify five specific changes needed to implement zero-trust principles. For each, specify the technology or process change and the risk it addresses.</p>
+<p><strong>Part D – DNS security audit</strong>: Run <code class="docutils literal notranslate"><span class="pre">dig</span> <span class="pre">+dnssec</span> <span class="pre">example.com</span></code> and <code class="docutils literal notranslate"><span class="pre">dig</span> <span class="pre">+dnssec</span> <span class="pre">google.com</span></code>. Check whether DNSSEC is enabled (look for RRSIG records). Then check whether your local resolver enforces DNSSEC validation. Document your findings and any differences between sites.</p>
+</section>
+<section id="references">
+<h2><span class="section-number">11.14. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<span class="target" id="id1"></span></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/11_network_defense"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../10_web_security/chapter10.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Chapter 10: Web Application Security</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../12_idps/chapter12.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">12. </span>Chapter 12: Intrusion Detection and Prevention Systems</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">11.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">11.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#firewalls">11.3. Firewalls</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#firewall-types-and-evolution">11.3.1. Firewall Types and Evolution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#packet-filter-firewalls">11.3.1.1. Packet-Filter Firewalls</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stateful-inspection-firewalls">11.3.1.2. Stateful Inspection Firewalls</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#next-generation-firewalls">11.3.1.3. Next-Generation Firewalls</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-firewall-rules">11.3.2. Writing Firewall Rules</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-implicit-deny-principle">11.3.2.1. The Implicit Deny Principle</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-ordering-and-specificity">11.3.2.2. Rule Ordering and Specificity</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-segmentation">11.4. Network Segmentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dmz-architecture">11.4.1. DMZ Architecture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vlan-and-micro-segmentation">11.4.2. VLAN and Micro-Segmentation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zero-trust-architecture">11.5. Zero-Trust Architecture</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-zero-trust-principle">11.5.1. The Zero-Trust Principle</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-centric-access">11.5.1.1. Identity-Centric Access</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dns-security">11.6. DNS Security</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dnssec">11.6.1. DNSSEC</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dns-over-https-and-dns-over-tls">11.6.2. DNS over HTTPS and DNS over TLS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dns-sinkholing">11.6.3. DNS Sinkholing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vpns-and-remote-access">11.7. VPNs and Remote Access</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ipsec-and-wireguard">11.7.1. IPsec and WireGuard</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#split-tunnelling-and-its-risks">11.7.2. Split Tunnelling and Its Risks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-access-control-and-802-1x">11.8. Network Access Control and 802.1X</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#x-operation">11.8.1. 802.1X Operation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ddos-and-mitigation">11.9. DDoS and Mitigation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ddos-attack-categories">11.9.1. DDoS Attack Categories</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ddos-mitigation">11.9.2. DDoS Mitigation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">11.10. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">11.11. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">11.12. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">11.13. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">11.14. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,916 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>12. Chapter 12: Intrusion Detection and Prevention Systems &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/12_idps/chapter12';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="13. Chapter 13: Digital Forensics" href="../13_forensics/chapter13.html" />
+    <link rel="prev" title="11. Chapter 11: Network Defense and Hardening" href="../11_network_defense/chapter11.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/12_idps/chapter12.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 12: Intrusion Detection and Prevention Systems</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">12.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">12.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detection-system-types">12.3. Detection System Types</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#network-based-ids-and-ips">12.3.1. Network-Based IDS and IPS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#placement-considerations">12.3.1.1. Placement Considerations</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#host-based-ids">12.3.2. Host-Based IDS</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detection-methods">12.4. Detection Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signature-based-detection">12.4.1. Signature-Based Detection</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#snort-rule-anatomy">12.4.1.1. Snort Rule Anatomy</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anomaly-based-detection">12.4.2. Anomaly-Based Detection</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-precision-recall-trade-off">12.4.2.1. The Precision/Recall Trade-Off</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stateful-protocol-analysis">12.4.3. Stateful Protocol Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#siem-and-log-aggregation">12.5. SIEM and Log Aggregation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#siem-architecture">12.5.1. SIEM Architecture</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#detection-use-cases">12.5.1.1. Detection Use Cases</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#siem-challenges">12.5.2. SIEM Challenges</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ueba-and-threat-hunting">12.6. UEBA and Threat Hunting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#user-and-entity-behaviour-analytics">12.6.1. User and Entity Behaviour Analytics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#threat-hunting">12.6.2. Threat Hunting</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hunt-methodology">12.6.2.1. Hunt Methodology</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">12.7. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">12.8. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">12.9. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">12.10. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">12.11. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-12-intrusion-detection-and-prevention-systems">
+<h1><span class="section-number">12. </span>Chapter 12: Intrusion Detection and Prevention Systems<a class="headerlink" href="#chapter-12-intrusion-detection-and-prevention-systems" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“An alarm that goes off every time the wind blows is not a security system.” security aphorism</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">12.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Distinguish intrusion detection from intrusion prevention and network-based from host-based.</p></li>
+<li><p>Explain signature-based, anomaly-based, and stateful-protocol analysis detection methods.</p></li>
+<li><p>Describe false positives, false negatives, and the precision/recall trade-off.</p></li>
+<li><p>Explain how Snort rules are structured and write a basic rule.</p></li>
+<li><p>Describe Security Information and Event Management (SIEM) and its role.</p></li>
+<li><p>Explain User and Entity Behaviour Analytics (UEBA) and how it detects insider threats.</p></li>
+<li><p>Describe threat hunting and how it differs from reactive alerting.</p></li>
+<li><p>Interpret a detection alert and begin a triage workflow.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">12.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>IDS</strong>: Intrusion Detection System; monitors and alerts on suspicious activity.</p></li>
+<li><p><strong>IPS</strong>: Intrusion Prevention System; actively blocks suspicious traffic in line.</p></li>
+<li><p><strong>NIDS</strong>: Network-based IDS; monitors network traffic.</p></li>
+<li><p><strong>HIDS</strong>: Host-based IDS; monitors a single host’s activity.</p></li>
+<li><p><strong>Signature</strong>: a pattern matched against known attack traffic or behaviour.</p></li>
+<li><p><strong>Anomaly detection</strong>: flagging deviations from a baseline of normal behaviour.</p></li>
+<li><p><strong>False positive (FP)</strong>: an alert fired on benign activity.</p></li>
+<li><p><strong>False negative (FN)</strong>: a real attack that does not trigger an alert.</p></li>
+<li><p><strong>Precision</strong>: TP / (TP + FP); fraction of alerts that are real attacks.</p></li>
+<li><p><strong>Recall</strong>: TP / (TP + FN); fraction of real attacks that trigger an alert.</p></li>
+<li><p><strong>SIEM</strong>: Security Information and Event Management; aggregates and correlates log data.</p></li>
+<li><p><strong>SOAR</strong>: Security Orchestration, Automation, and Response.</p></li>
+<li><p><strong>UEBA</strong>: User and Entity Behaviour Analytics.</p></li>
+<li><p><strong>Threat hunting</strong>: proactive search for adversary activity not caught by automated alerting.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="detection-system-types">
+<h2><span class="section-number">12.3. </span>Detection System Types<a class="headerlink" href="#detection-system-types" title="Link to this heading">#</a></h2>
+<section id="network-based-ids-and-ips">
+<h3><span class="section-number">12.3.1. </span>Network-Based IDS and IPS<a class="headerlink" href="#network-based-ids-and-ips" title="Link to this heading">#</a></h3>
+<p>NIDS sensors are placed at strategic network points: the internet perimeter, between zones, and
+at internal aggregation points. They receive a copy of network traffic (via a SPAN port or network
+tap) and inspect it against rules. An IPS is placed inline and can drop or reset traffic that
+matches rules, at the cost of adding latency and creating a potential failure point. Many
+organisations deploy IDS out-of-band and use the firewall or NGFW for actual blocking.</p>
+<section id="placement-considerations">
+<h4><span class="section-number">12.3.1.1. </span>Placement Considerations<a class="headerlink" href="#placement-considerations" title="Link to this heading">#</a></h4>
+<p>NIDS inside the firewall sees decrypted traffic on the internal network but misses encrypted
+external traffic. NIDS outside the firewall sees all inbound traffic but cannot inspect encrypted
+payloads. TLS inspection at the firewall or proxy allows the IDS to see decrypted traffic without
+sitting outside the firewall, at the cost of certificate management complexity.</p>
+</section>
+</section>
+<section id="host-based-ids">
+<h3><span class="section-number">12.3.2. </span>Host-Based IDS<a class="headerlink" href="#host-based-ids" title="Link to this heading">#</a></h3>
+<p>HIDS monitors local system activity: file system changes (integrity monitoring), process creation,
+registry modifications, login events, and system calls. Examples include OSSEC, Wazuh, and
+commercial endpoint detection and response (EDR) tools. HIDS is not affected by network-level
+encryption because it observes behaviour on the host after decryption.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="detection-methods">
+<h2><span class="section-number">12.4. </span>Detection Methods<a class="headerlink" href="#detection-methods" title="Link to this heading">#</a></h2>
+<section id="signature-based-detection">
+<h3><span class="section-number">12.4.1. </span>Signature-Based Detection<a class="headerlink" href="#signature-based-detection" title="Link to this heading">#</a></h3>
+<p>Signature detection matches traffic or behaviour against a database of known attack patterns.
+Snort, Suricata, and Zeek support signature-based detection. Advantages: low false-positive rate
+for known attacks, deterministic, and auditable. Limitations: zero-day attacks have no signature;
+attackers can modify payloads to evade known signatures; high maintenance burden as signatures must
+be continuously updated.</p>
+<section id="snort-rule-anatomy">
+<h4><span class="section-number">12.4.1.1. </span>Snort Rule Anatomy<a class="headerlink" href="#snort-rule-anatomy" title="Link to this heading">#</a></h4>
+<p>A Snort rule has two parts: the rule header and the rule body.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alert</span> <span class="n">tcp</span> <span class="nb">any</span> <span class="nb">any</span> <span class="o">-&gt;</span> <span class="mf">192.168.1.0</span><span class="o">/</span><span class="mi">24</span> <span class="mi">80</span> <span class="p">(</span><span class="n">msg</span><span class="p">:</span><span class="s2">&quot;GET /etc/passwd&quot;</span><span class="p">;</span> <span class="n">content</span><span class="p">:</span><span class="s2">&quot;/etc/passwd&quot;</span><span class="p">;</span> <span class="n">sid</span><span class="p">:</span><span class="mi">1000001</span><span class="p">;</span> <span class="n">rev</span><span class="p">:</span><span class="mi">1</span><span class="p">;)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">alert</span></code>: action (alert, log, drop, reject).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tcp</span></code>: protocol.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">any</span> <span class="pre">any</span></code>: source IP and port.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-&gt;</span></code>: direction.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">192.168.1.0/24</span> <span class="pre">80</span></code>: destination network and port.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">msg</span></code>: human-readable alert message.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">content</span></code>: byte pattern to match in payload.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sid</span></code>: unique rule identifier.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rev</span></code>: revision number.</p></li>
+</ul>
+</section>
+</section>
+<section id="anomaly-based-detection">
+<h3><span class="section-number">12.4.2. </span>Anomaly-Based Detection<a class="headerlink" href="#anomaly-based-detection" title="Link to this heading">#</a></h3>
+<p>Anomaly detection establishes a baseline of normal behaviour and alerts on deviations. A user
+who logs in from a new country, accesses 10x their normal volume of files, or connects at
+3 AM when they never have before triggers an anomaly alert. Machine learning models (isolation
+forest, autoencoders) are used for complex baseline modelling.</p>
+<section id="the-precision-recall-trade-off">
+<h4><span class="section-number">12.4.2.1. </span>The Precision/Recall Trade-Off<a class="headerlink" href="#the-precision-recall-trade-off" title="Link to this heading">#</a></h4>
+<p>Anomaly detection suffers from high false-positive rates because legitimate behaviour is variable.
+Tightening the anomaly threshold reduces false positives but increases false negatives. A low-
+sensitivity model misses real attacks (high FN rate); a high-sensitivity model alerts on benign
+activity constantly (high FP rate). Effective tuning requires labelled historical data and business
+context about what is truly abnormal.</p>
+</section>
+</section>
+<section id="stateful-protocol-analysis">
+<h3><span class="section-number">12.4.3. </span>Stateful Protocol Analysis<a class="headerlink" href="#stateful-protocol-analysis" title="Link to this heading">#</a></h3>
+<p>Stateful protocol analysis enforces expected protocol behaviour at the state-machine level. An HTTP
+parser flags requests that deviate from RFC 7230, such as oversized headers or unusual method
+verbs, even if no signature matches. This catches protocol exploitation and evasion techniques
+that modify known payloads to avoid content matching.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="siem-and-log-aggregation">
+<h2><span class="section-number">12.5. </span>SIEM and Log Aggregation<a class="headerlink" href="#siem-and-log-aggregation" title="Link to this heading">#</a></h2>
+<section id="siem-architecture">
+<h3><span class="section-number">12.5.1. </span>SIEM Architecture<a class="headerlink" href="#siem-architecture" title="Link to this heading">#</a></h3>
+<p>A SIEM collects logs from every source in the environment: firewalls, endpoints, servers,
+applications, cloud APIs, network devices, and authentication systems. It normalises them into
+a common schema, stores them long-term, and correlates events across sources to detect complex
+attack chains that no single source could identify.</p>
+<section id="detection-use-cases">
+<h4><span class="section-number">12.5.1.1. </span>Detection Use Cases<a class="headerlink" href="#detection-use-cases" title="Link to this heading">#</a></h4>
+<p>A SIEM correlation rule firing on: failed login to account A, successful login to account A 5
+minutes later from a different IP, followed by file access to a sensitive share, followed by
+data transfer to an external IP captures the Mitre ATT&amp;CK pattern for credential stuffing,
+initial access, and exfiltration. No individual event is alarming; the sequence is.</p>
+</section>
+</section>
+<section id="siem-challenges">
+<h3><span class="section-number">12.5.2. </span>SIEM Challenges<a class="headerlink" href="#siem-challenges" title="Link to this heading">#</a></h3>
+<p>A SIEM that receives 100,000 events per second and generates 10,000 alerts per day has an
+alert-fatigue problem. Analysts who cannot process the alert volume begin to ignore alerts.
+Effective SIEM operation requires: tuned correlation rules that reduce noise, prioritisation by
+asset criticality, automated enrichment (IP reputation, known-bad hashes), and analyst workflows
+that handle the highest-priority alerts first.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="ueba-and-threat-hunting">
+<h2><span class="section-number">12.6. </span>UEBA and Threat Hunting<a class="headerlink" href="#ueba-and-threat-hunting" title="Link to this heading">#</a></h2>
+<section id="user-and-entity-behaviour-analytics">
+<h3><span class="section-number">12.6.1. </span>User and Entity Behaviour Analytics<a class="headerlink" href="#user-and-entity-behaviour-analytics" title="Link to this heading">#</a></h3>
+<p>UEBA applies statistical models to user, host, and network entity behaviour over time. It detects:
+accounts exhibiting credential-stuffing patterns, service accounts behaving like user accounts,
+hosts communicating with unusual peers, and data access volumes that deviate from historical
+baselines. UEBA is particularly effective against insider threats and compromised accounts whose
+credentials are valid but whose behaviour is abnormal.</p>
+</section>
+<section id="threat-hunting">
+<h3><span class="section-number">12.6.2. </span>Threat Hunting<a class="headerlink" href="#threat-hunting" title="Link to this heading">#</a></h3>
+<p>Threat hunting is the proactive, hypothesis-driven search for adversary activity that has not
+triggered automated alerts. A hunt starts with a hypothesis (e.g., “assume an attacker has
+compromised a service account and is using it for lateral movement”) and searches for evidence
+that confirms or disproves it. Hunters use raw log data, threat intelligence, and knowledge of
+adversary TTPs rather than relying on pre-written correlation rules.</p>
+<section id="hunt-methodology">
+<h4><span class="section-number">12.6.2.1. </span>Hunt Methodology<a class="headerlink" href="#hunt-methodology" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Develop a hypothesis based on threat intelligence, recent incident data, or MITRE ATT&amp;CK.</p></li>
+<li><p>Define the data sources that would contain evidence if the hypothesis is true.</p></li>
+<li><p>Query those data sources for the expected indicators.</p></li>
+<li><p>Analyse results, adjusting the query iteratively.</p></li>
+<li><p>Document the hunt, its findings, and any detection gaps identified.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">12.7. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>An IDS is only as good as its alerting, and alerting is only as good as the analyst who responds.
+The most sophisticated SIEM is worthless if alerts go unread. Effective detection requires tuned
+rules, prioritised alerts, trained analysts, and well-practised response workflows. The measure
+of a detection capability is not the number of rules deployed but the mean time to detect a real
+intrusion. World-class programmes achieve MTTD measured in hours or days; many organisations
+discover breaches weeks or months after initial compromise.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">12.8. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>Post-incident analysis of major breaches has repeatedly shown that the intrusion was detectable
+much earlier than it was discovered. Indicators including unusual authentication patterns, anomalous
+data transfers, and new scheduled tasks were present in logs that the organisation collected but
+did not analyse in real time. These findings drive investment in SIEM tuning and SOC staffing:
+collecting logs is the floor, not the ceiling, of a detection capability.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 12 -- Detection metrics: precision, recall, ROC and Snort rule simulator</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+
+<span class="c1"># ── Precision / Recall metrics ────────────────────────────────────────────────</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">metrics</span><span class="p">(</span><span class="n">tp</span><span class="p">,</span> <span class="n">fp</span><span class="p">,</span> <span class="n">fn</span><span class="p">):</span>
+    <span class="n">precision</span> <span class="o">=</span> <span class="n">tp</span> <span class="o">/</span> <span class="p">(</span><span class="n">tp</span> <span class="o">+</span> <span class="n">fp</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">tp</span> <span class="o">+</span> <span class="n">fp</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+    <span class="n">recall</span>    <span class="o">=</span> <span class="n">tp</span> <span class="o">/</span> <span class="p">(</span><span class="n">tp</span> <span class="o">+</span> <span class="n">fn</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">tp</span> <span class="o">+</span> <span class="n">fn</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+    <span class="n">f1</span>        <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">precision</span> <span class="o">*</span> <span class="n">recall</span> <span class="o">/</span> <span class="p">(</span><span class="n">precision</span> <span class="o">+</span> <span class="n">recall</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">precision</span> <span class="o">+</span> <span class="n">recall</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+    <span class="n">fpr</span>       <span class="o">=</span> <span class="n">fp</span> <span class="o">/</span> <span class="p">(</span><span class="n">fp</span> <span class="o">+</span> <span class="p">(</span><span class="mi">100</span> <span class="o">-</span> <span class="n">tp</span> <span class="o">-</span> <span class="n">fn</span><span class="p">))</span> <span class="k">if</span> <span class="p">(</span><span class="n">fp</span> <span class="o">+</span> <span class="p">(</span><span class="mi">100</span> <span class="o">-</span> <span class="n">tp</span> <span class="o">-</span> <span class="n">fn</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="n">precision</span><span class="p">,</span> <span class="n">recall</span><span class="p">,</span> <span class="n">f1</span><span class="p">,</span> <span class="n">fpr</span>
+
+<span class="n">configs</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;Signature-only (tight)&quot;</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span>  <span class="mi">60</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Anomaly (loose)&quot;</span><span class="p">,</span>        <span class="mi">75</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">25</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Tuned SIEM&quot;</span><span class="p">,</span>             <span class="mi">68</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">32</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;ML UEBA&quot;</span><span class="p">,</span>                <span class="mi">80</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;Configuration&#39;</span><span class="si">:</span><span class="s2">&lt;30</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Precision&#39;</span><span class="si">:</span><span class="s2">&gt;10</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Recall&#39;</span><span class="si">:</span><span class="s2">&gt;10</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;F1&#39;</span><span class="si">:</span><span class="s2">&gt;8</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">62</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">tp</span><span class="p">,</span> <span class="n">fp</span><span class="p">,</span> <span class="n">fn</span> <span class="ow">in</span> <span class="n">configs</span><span class="p">:</span>
+    <span class="n">p</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">f1</span><span class="p">,</span> <span class="n">fpr</span> <span class="o">=</span> <span class="n">metrics</span><span class="p">(</span><span class="n">tp</span><span class="p">,</span> <span class="n">fp</span><span class="p">,</span> <span class="n">fn</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="si">:</span><span class="s2">&lt;30</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">p</span><span class="si">:</span><span class="s2">&gt;10.2%</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">&gt;10.2%</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">f1</span><span class="si">:</span><span class="s2">&gt;8.2%</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># ── Precision-Recall trade-off visualisation ──────────────────────────────────</span>
+<span class="n">thresholds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">precision_curve</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="o">+</span> <span class="mf">0.65</span> <span class="o">*</span> <span class="n">thresholds</span>
+<span class="n">recall_curve</span>    <span class="o">=</span> <span class="mf">0.95</span> <span class="o">-</span> <span class="mf">0.85</span> <span class="o">*</span> <span class="n">thresholds</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">thresholds</span><span class="p">,</span> <span class="n">precision_curve</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Precision&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#3a7ebf&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">thresholds</span><span class="p">,</span> <span class="n">recall_curve</span><span class="p">,</span>   <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Recall&quot;</span><span class="p">,</span>    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#e05a4e&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mf">0.55</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#888&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.57</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">,</span> <span class="s2">&quot;Balanced</span><span class="se">\n</span><span class="s2">operating point&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#555&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Detection threshold&quot;</span><span class="p">);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Score&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Figure 12.1a  Precision vs Recall Trade-Off&quot;</span><span class="p">);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">recall_curve</span><span class="p">,</span> <span class="n">precision_curve</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#5ba3cc&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">recall_curve</span><span class="p">,</span> <span class="n">precision_curve</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#5ba3cc&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">([</span><span class="mf">0.75</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.76</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#e05a4e&quot;</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.55</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="s2">&quot;Area under</span><span class="se">\n</span><span class="s2">curve = quality</span><span class="se">\n</span><span class="s2">of classifier&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Recall&quot;</span><span class="p">);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Precision&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Figure 12.1b  Precision-Recall Curve&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">_buf</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">_buf</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">();</span> <span class="n">_buf</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">_buf</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
+
+<span class="c1"># ── Simple Snort rule simulator ───────────────────────────────────────────────</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== Snort Rule Simulator ===&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">snort_match</span><span class="p">(</span><span class="n">rule_content</span><span class="p">,</span> <span class="n">payload</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">rule_content</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">payload</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+<span class="n">rules</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">sid</span><span class="o">=</span><span class="mi">1001</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s2">&quot;Possible /etc/passwd access via HTTP&quot;</span><span class="p">,</span> <span class="n">content</span><span class="o">=</span><span class="s2">&quot;/etc/passwd&quot;</span><span class="p">),</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">sid</span><span class="o">=</span><span class="mi">1002</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s2">&quot;SQL injection OR 1=1 pattern&quot;</span><span class="p">,</span>        <span class="n">content</span><span class="o">=</span><span class="s2">&quot;OR 1=1&quot;</span><span class="p">),</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">sid</span><span class="o">=</span><span class="mi">1003</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s2">&quot;XSS script tag&quot;</span><span class="p">,</span>                     <span class="n">content</span><span class="o">=</span><span class="s2">&quot;&lt;script&gt;&quot;</span><span class="p">),</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">sid</span><span class="o">=</span><span class="mi">1004</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s2">&quot;Nmap default scan UA&quot;</span><span class="p">,</span>               <span class="n">content</span><span class="o">=</span><span class="s2">&quot;Nmap Scripting Engine&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="n">payloads</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;GET /index.html HTTP/1.1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GET /../../etc/passwd HTTP/1.1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;POST /login username=admin&#39;%20OR%201=1%20-- HTTP/1.1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GET /search?q=&lt;script&gt;alert(1)&lt;/script&gt; HTTP/1.1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GET /page HTTP/1.1</span><span class="se">\r\n</span><span class="s2">User-Agent: Nmap Scripting Engine&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="k">for</span> <span class="n">payload</span> <span class="ow">in</span> <span class="n">payloads</span><span class="p">:</span>
+    <span class="n">matched</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">rules</span> <span class="k">if</span> <span class="n">snort_match</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="s2">&quot;content&quot;</span><span class="p">],</span> <span class="n">payload</span><span class="p">)]</span>
+    <span class="n">status</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;ALERT: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;msg&#39;</span><span class="p">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">matched</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">if</span> <span class="n">matched</span> <span class="k">else</span> <span class="s2">&quot;NO MATCH&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">payload</span><span class="p">[:</span><span class="mi">55</span><span class="p">]</span><span class="si">!r:</span><span class="s2">&lt;57</span><span class="si">}</span><span class="s2"> -&gt; </span><span class="si">{</span><span class="n">status</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Configuration                   Precision     Recall       F1
+--------------------------------------------------------------
+Signature-only (tight)             88.89%     40.00%   55.17%
+Anomaly (loose)                    65.22%     75.00%   69.77%
+Tuned SIEM                         85.00%     68.00%   75.56%
+ML UEBA                            80.00%     80.00%   80.00%
+</pre></div>
+</div>
+<img alt="../../_images/2e9547066baef0de31f35c684614be3a8db9b15b840c1271e95336a783c2579a.png" src="../../_images/2e9547066baef0de31f35c684614be3a8db9b15b840c1271e95336a783c2579a.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Snort Rule Simulator ===
+  &#39;GET /index.html HTTP/1.1&#39;                                -&gt; NO MATCH
+  &#39;GET /../../etc/passwd HTTP/1.1&#39;                          -&gt; ALERT: Possible /etc/passwd access via HTTP
+  &quot;POST /login username=admin&#39;%20OR%201=1%20-- HTTP/1.1&quot;    -&gt; NO MATCH
+  &#39;GET /search?q=&lt;script&gt;alert(1)&lt;/script&gt; HTTP/1.1&#39;        -&gt; ALERT: XSS script tag
+  &#39;GET /page HTTP/1.1\r\nUser-Agent: Nmap Scripting Engine&#39; -&gt; ALERT: Nmap default scan UA
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">12.9. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> The difference between IDS and IPS is primarily that IPS:
+A. Uses only signature detection  B. Is placed inline and can actively block traffic  C. Only monitors host activity  D. Requires a SIEM</p>
+<p><strong>Q2.</strong> A false negative in intrusion detection means:
+A. An alert fired on benign traffic  B. A real attack that did not trigger an alert  C. An alert with low confidence  D. An outdated signature</p>
+<p><strong>Q3.</strong> Signature detection is limited by:
+A. Being too slow  B. Inability to detect zero-day attacks without a matching signature  C. High false-positive rate  D. Not working on encrypted traffic</p>
+<p><strong>Q4.</strong> In a Snort rule, the <code class="docutils literal notranslate"><span class="pre">content</span></code> keyword matches:
+A. A regex pattern  B. A byte sequence in the packet payload  C. The source IP address  D. The destination port</p>
+<p><strong>Q5.</strong> Anomaly detection requires:
+A. A pre-defined signature database  B. An established baseline of normal behaviour  C. Inline traffic inspection  D. A RADIUS server</p>
+<p><strong>Q6.</strong> Which metric measures the fraction of real attacks that triggered an alert?
+A. Precision  B. Specificity  C. Recall  D. False positive rate</p>
+<p><strong>Q7.</strong> A SIEM detects complex attacks by:
+A. Running antivirus on endpoints  B. Correlating events across multiple log sources  C. Blocking traffic at the firewall  D. Performing vulnerability scanning</p>
+<p><strong>Q8.</strong> UEBA is most effective against:
+A. Known malware families  B. Zero-day exploits  C. Insider threats and compromised accounts whose credentials are valid  D. DDoS attacks</p>
+<p><strong>Q9.</strong> Threat hunting differs from traditional alerting in that it:
+A. Uses automated rules  B. Is reactive to alerts  C. Is proactive and hypothesis-driven  D. Requires no analyst expertise</p>
+<p><strong>Q10.</strong> Alert fatigue is caused by:
+A. Too few analysts  B. Too many untuned, noisy alerts overwhelming analysts  C. Encrypted traffic  D. Missing network taps</p>
+<p><em>Answers: Q1 B, Q2 B, Q3 B, Q4 B, Q5 B, Q6 C, Q7 B, Q8 C, Q9 C, Q10 B.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">12.10. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – Snort rule writing</strong>: Write five Snort rules targeting: a Telnet banner grab, a password spray attempt (5 failed logins in 10 seconds), a request for <code class="docutils literal notranslate"><span class="pre">/.git/config</span></code>, an SQL injection <code class="docutils literal notranslate"><span class="pre">UNION</span> <span class="pre">SELECT</span></code> pattern, and a directory traversal <code class="docutils literal notranslate"><span class="pre">../</span></code> sequence. Test each rule against a simulated payload using the simulator above.</p>
+<p><strong>Part B – Precision/recall analysis</strong>: Given TP=85, FP=30, FN=15 for a detection configuration, compute precision, recall, and F1. Then adjust the threshold to achieve F1 &gt; 0.85. What trade-off does this require?</p>
+<p><strong>Part C – SIEM correlation rule</strong>: Write a multi-step SIEM correlation rule (in pseudocode or any rule language) that detects the following pattern: failed login to an account, followed within 10 minutes by a successful login from a different IP, followed within 30 minutes by access to a sensitive file share. Explain what adversary behaviour this targets.</p>
+<p><strong>Part D – Threat hunt</strong>: Design a threat hunt hypothesis for “an attacker has deployed a scheduled task for persistence after compromising a service account.” Specify: the data sources, the specific queries, the key indicators, and what a positive finding looks like.</p>
+</section>
+<section id="references">
+<h2><span class="section-number">12.11. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<span class="target" id="id1"></span></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/12_idps"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../11_network_defense/chapter11.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>Chapter 11: Network Defense and Hardening</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../13_forensics/chapter13.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">13. </span>Chapter 13: Digital Forensics</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">12.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">12.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detection-system-types">12.3. Detection System Types</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#network-based-ids-and-ips">12.3.1. Network-Based IDS and IPS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#placement-considerations">12.3.1.1. Placement Considerations</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#host-based-ids">12.3.2. Host-Based IDS</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detection-methods">12.4. Detection Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signature-based-detection">12.4.1. Signature-Based Detection</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#snort-rule-anatomy">12.4.1.1. Snort Rule Anatomy</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anomaly-based-detection">12.4.2. Anomaly-Based Detection</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-precision-recall-trade-off">12.4.2.1. The Precision/Recall Trade-Off</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stateful-protocol-analysis">12.4.3. Stateful Protocol Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#siem-and-log-aggregation">12.5. SIEM and Log Aggregation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#siem-architecture">12.5.1. SIEM Architecture</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#detection-use-cases">12.5.1.1. Detection Use Cases</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#siem-challenges">12.5.2. SIEM Challenges</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ueba-and-threat-hunting">12.6. UEBA and Threat Hunting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#user-and-entity-behaviour-analytics">12.6.1. User and Entity Behaviour Analytics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#threat-hunting">12.6.2. Threat Hunting</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hunt-methodology">12.6.2.1. Hunt Methodology</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">12.7. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">12.8. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">12.9. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">12.10. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">12.11. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

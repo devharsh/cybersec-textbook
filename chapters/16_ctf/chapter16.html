@@ -1,0 +1,980 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>16. Chapter 16: Capture the Flag and Competitive Security &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/16_ctf/chapter16';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="17. Chapter 17: Emerging Threats and Future Challenges" href="../17_emerging/chapter17.html" />
+    <link rel="prev" title="15. Chapter 15: Malware Analysis" href="../15_malware/chapter15.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/16_ctf/chapter16.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 16: Capture the Flag and Competitive Security</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">16.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">16.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-ctf">16.3. What Is a CTF?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jeopardy-format">16.3.1. Jeopardy Format</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#category-deep-dives">16.4. Category Deep Dives</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#web-challenges">16.4.1. Web Challenges</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#common-web-ctf-patterns">16.4.1.1. Common Web CTF Patterns</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">16.4.1.2. Methodology</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forensics-challenges">16.4.2. Forensics Challenges</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#common-forensics-techniques">16.4.2.1. Common Forensics Techniques</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cryptography-challenges">16.4.3. Cryptography Challenges</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#classic-cipher-analysis">16.4.3.1. Classic Cipher Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#modern-crypto-weaknesses-in-ctf">16.4.3.2. Modern Crypto Weaknesses in CTF</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binary-exploitation-pwn">16.4.4. Binary Exploitation (Pwn)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#beginner-pwn-methodology">16.4.4.1. Beginner Pwn Methodology</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reverse-engineering">16.4.5. Reverse Engineering</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#core-reversing-tools">16.4.5.1. Core Reversing Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ctf-platforms-for-learning">16.5. CTF Platforms for Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ctf-skills-and-professional-mapping">16.6. CTF Skills and Professional Mapping</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">16.7. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">16.8. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">16.9. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">16.10. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">16.11. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-16-capture-the-flag-and-competitive-security">
+<h1><span class="section-number">16. </span>Chapter 16: Capture the Flag and Competitive Security<a class="headerlink" href="#chapter-16-capture-the-flag-and-competitive-security" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“CTF challenges compress years of real-world experience into hours of focused problem-solving.”</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">16.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Explain what a Capture the Flag competition is and how flags work.</p></li>
+<li><p>Distinguish the main CTF categories: web, forensics, cryptography, pwn, and reversing.</p></li>
+<li><p>Describe the tools and methodology for approaching each category.</p></li>
+<li><p>Solve basic CTF challenges in encoding, web injection, and forensics.</p></li>
+<li><p>Use CTF platforms for skill development and certification preparation.</p></li>
+<li><p>Apply the CTF methodology to practice penetration testing skills in a legal environment.</p></li>
+<li><p>Describe how CTF performance maps to professional security competencies.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">16.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Flag</strong>: a unique string (format: <code class="docutils literal notranslate"><span class="pre">FLAG{...}</span></code>) that proves a challenge was solved.</p></li>
+<li><p><strong>Jeopardy CTF</strong>: each team solves independent challenges from multiple categories.</p></li>
+<li><p><strong>Attack-Defence CTF</strong>: teams maintain their own services while attacking opponents.</p></li>
+<li><p><strong>Pwn / Binary exploitation</strong>: exploiting a binary programme to gain control.</p></li>
+<li><p><strong>Reversing</strong>: reverse engineering compiled code to understand its behaviour.</p></li>
+<li><p><strong>Steganography</strong>: hiding data within an image, audio, or other carrier file.</p></li>
+<li><p><strong>ROT13 / Caesar cipher</strong>: basic substitution cipher; common beginner CTF challenge.</p></li>
+<li><p><strong>Base64</strong>: encoding scheme that converts binary to printable ASCII.</p></li>
+<li><p><strong>GDB</strong>: GNU Debugger; used for binary analysis and exploitation.</p></li>
+<li><p><strong>pwntools</strong>: Python library for binary exploitation in CTF challenges.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="what-is-a-ctf">
+<h2><span class="section-number">16.3. </span>What Is a CTF?<a class="headerlink" href="#what-is-a-ctf" title="Link to this heading">#</a></h2>
+<p>A Capture the Flag competition presents security challenges that require participants to find a
+hidden string (the flag) by applying security skills. CTFs are the primary competitive format
+in the cybersecurity community and serve as both a learning tool and a talent identification
+mechanism for employers.</p>
+<section id="jeopardy-format">
+<h3><span class="section-number">16.3.1. </span>Jeopardy Format<a class="headerlink" href="#jeopardy-format" title="Link to this heading">#</a></h3>
+<p>In a jeopardy CTF, each challenge is worth a point value proportional to its difficulty.
+Challenges are solved independently by any team member. Categories typically include:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Category</p></th>
+<th class="head"><p>Skills tested</p></th>
+<th class="head"><p>Typical beginner challenge</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Web</p></td>
+<td><p>SQLi, XSS, SSRF, JWT flaws</p></td>
+<td><p>Login bypass with SQLi</p></td>
+</tr>
+<tr class="row-odd"><td><p>Forensics</p></td>
+<td><p>File analysis, steganography, PCAP</p></td>
+<td><p>Extract hidden message from image</p></td>
+</tr>
+<tr class="row-even"><td><p>Cryptography</p></td>
+<td><p>Cipher analysis, hash cracking, RSA attacks</p></td>
+<td><p>Decode a Caesar cipher or ROT13</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pwn (Binary exploitation)</p></td>
+<td><p>Buffer overflows, ROP, format strings</p></td>
+<td><p>Overflow a buffer to call win()</p></td>
+</tr>
+<tr class="row-even"><td><p>Reversing</p></td>
+<td><p>Disassembly, decompilation, patch analysis</p></td>
+<td><p>Find a hardcoded password in a binary</p></td>
+</tr>
+<tr class="row-odd"><td><p>OSINT</p></td>
+<td><p>Public-source research</p></td>
+<td><p>Find a person’s location from metadata</p></td>
+</tr>
+<tr class="row-even"><td><p>Miscellaneous</p></td>
+<td><p>Scripting, trivia, creative</p></td>
+<td><p>Decode a QR code in an unusual format</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="category-deep-dives">
+<h2><span class="section-number">16.4. </span>Category Deep Dives<a class="headerlink" href="#category-deep-dives" title="Link to this heading">#</a></h2>
+<section id="web-challenges">
+<h3><span class="section-number">16.4.1. </span>Web Challenges<a class="headerlink" href="#web-challenges" title="Link to this heading">#</a></h3>
+<p>Web CTF challenges present a web application with an intentional vulnerability. The participant
+must identify and exploit it to retrieve the flag.</p>
+<section id="common-web-ctf-patterns">
+<h4><span class="section-number">16.4.1.1. </span>Common Web CTF Patterns<a class="headerlink" href="#common-web-ctf-patterns" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>SQL injection</strong>: the flag is in a database table; retrieve it via union or blind SQLi.</p></li>
+<li><p><strong>Authentication bypass</strong>: a login page vulnerable to <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">OR</span> <span class="pre">1=1</span> <span class="pre">--</span></code>.</p></li>
+<li><p><strong>Directory traversal</strong>: the flag is stored in <code class="docutils literal notranslate"><span class="pre">/etc/flag.txt</span></code>; retrieve via <code class="docutils literal notranslate"><span class="pre">../../../../etc/flag.txt</span></code>.</p></li>
+<li><p><strong>JWT manipulation</strong>: a JSON Web Token signed with a weak key or <code class="docutils literal notranslate"><span class="pre">alg:none</span></code> trick.</p></li>
+<li><p><strong>SSTI</strong>: Server-Side Template Injection; the flag is readable by the template engine.</p></li>
+</ul>
+</section>
+<section id="methodology">
+<h4><span class="section-number">16.4.1.2. </span>Methodology<a class="headerlink" href="#methodology" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Enumerate visible functionality and parameters.</p></li>
+<li><p>Review page source and JavaScript for hints or hidden parameters.</p></li>
+<li><p>Test every input field for injection.</p></li>
+<li><p>Check HTTP headers, cookies, and robots.txt.</p></li>
+<li><p>Try common paths (<code class="docutils literal notranslate"><span class="pre">/admin</span></code>, <code class="docutils literal notranslate"><span class="pre">/flag</span></code>, <code class="docutils literal notranslate"><span class="pre">/debug</span></code>).</p></li>
+</ol>
+</section>
+</section>
+<section id="forensics-challenges">
+<h3><span class="section-number">16.4.2. </span>Forensics Challenges<a class="headerlink" href="#forensics-challenges" title="Link to this heading">#</a></h3>
+<p>Forensic CTF challenges provide a file (image, PCAP, disk image, memory dump) that contains
+a hidden flag. The participant must locate and extract it.</p>
+<section id="common-forensics-techniques">
+<h4><span class="section-number">16.4.2.1. </span>Common Forensics Techniques<a class="headerlink" href="#common-forensics-techniques" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>File metadata</strong>: <code class="docutils literal notranslate"><span class="pre">exiftool</span></code> extracts EXIF data from images, which may contain the flag
+or a geographic coordinate that leads to it.</p></li>
+<li><p><strong>Steganography</strong>: <code class="docutils literal notranslate"><span class="pre">steghide</span></code>, <code class="docutils literal notranslate"><span class="pre">zsteg</span></code>, <code class="docutils literal notranslate"><span class="pre">stegsolve</span></code>, and <code class="docutils literal notranslate"><span class="pre">binwalk</span></code> extract hidden data from
+images. A flag may be in the least-significant bits of pixel values or appended after the
+image EOF marker.</p></li>
+<li><p><strong>Strings extraction</strong>: <code class="docutils literal notranslate"><span class="pre">strings</span> <span class="pre">-a</span> <span class="pre">file</span></code> finds printable character sequences. Flags in
+otherwise binary files often appear as plain strings.</p></li>
+<li><p><strong>File carving</strong>: <code class="docutils literal notranslate"><span class="pre">binwalk</span> <span class="pre">-e</span></code> extracts embedded files. A JPEG file may contain an embedded
+ZIP archive containing the flag.</p></li>
+<li><p><strong>PCAP analysis</strong>: Wireshark filters isolate the relevant traffic. A flag may be transmitted
+in an HTTP body, a DNS TXT record, or encoded in ICMP payload.</p></li>
+</ul>
+</section>
+</section>
+<section id="cryptography-challenges">
+<h3><span class="section-number">16.4.3. </span>Cryptography Challenges<a class="headerlink" href="#cryptography-challenges" title="Link to this heading">#</a></h3>
+<p>Crypto CTF challenges present ciphertext and require the participant to recover the plaintext
+flag.</p>
+<section id="classic-cipher-analysis">
+<h4><span class="section-number">16.4.3.1. </span>Classic Cipher Analysis<a class="headerlink" href="#classic-cipher-analysis" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Caesar/ROT ciphers</strong>: try all 25 shifts; the one producing English text is correct.</p></li>
+<li><p><strong>Vigenere cipher</strong>: index of coincidence analysis determines key length; frequency analysis
+recovers each key byte.</p></li>
+<li><p><strong>XOR cipher</strong>: if plaintext structure is known (FLAG{…}), XOR with the ciphertext to
+recover key material (known-plaintext attack).</p></li>
+</ul>
+</section>
+<section id="modern-crypto-weaknesses-in-ctf">
+<h4><span class="section-number">16.4.3.2. </span>Modern Crypto Weaknesses in CTF<a class="headerlink" href="#modern-crypto-weaknesses-in-ctf" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Weak RSA</strong>: small public exponent with unpadded messages; broadcast attack with the same
+message encrypted under multiple public keys.</p></li>
+<li><p><strong>ECB mode</strong>: identical plaintext blocks produce identical ciphertext blocks; block
+rearrangement or oracle attacks work against ECB.</p></li>
+<li><p><strong>Padding oracle</strong>: iterative byte manipulation recovers plaintext from CBC-encrypted data.</p></li>
+</ul>
+</section>
+</section>
+<section id="binary-exploitation-pwn">
+<h3><span class="section-number">16.4.4. </span>Binary Exploitation (Pwn)<a class="headerlink" href="#binary-exploitation-pwn" title="Link to this heading">#</a></h3>
+<p>Pwn challenges present a compiled binary running on a remote server. The participant must
+exploit a memory corruption vulnerability to control execution and read the flag file.</p>
+<section id="beginner-pwn-methodology">
+<h4><span class="section-number">16.4.4.1. </span>Beginner Pwn Methodology<a class="headerlink" href="#beginner-pwn-methodology" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">file</span> <span class="pre">./chall</span></code> to identify architecture.</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">checksec</span> <span class="pre">./chall</span></code> to identify mitigations (NX, ASLR, stack canary, PIE).</p></li>
+<li><p>Look for obvious vulnerabilities: <code class="docutils literal notranslate"><span class="pre">gets()</span></code>, <code class="docutils literal notranslate"><span class="pre">scanf(&quot;%s&quot;)</span></code>, <code class="docutils literal notranslate"><span class="pre">strcpy()</span></code>.</p></li>
+<li><p>In a debugger (GDB with pwndbg/peda extension), send a cyclic pattern and find the
+offset to the return address.</p></li>
+<li><p>Craft the payload: padding + return address override pointing to <code class="docutils literal notranslate"><span class="pre">win()</span></code> or a shell.</p></li>
+</ol>
+</section>
+</section>
+<section id="reverse-engineering">
+<h3><span class="section-number">16.4.5. </span>Reverse Engineering<a class="headerlink" href="#reverse-engineering" title="Link to this heading">#</a></h3>
+<p>Reversing challenges provide a compiled binary; the participant must understand its logic to
+retrieve the flag without source code.</p>
+<section id="core-reversing-tools">
+<h4><span class="section-number">16.4.5.1. </span>Core Reversing Tools<a class="headerlink" href="#core-reversing-tools" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Ghidra</strong> (free, NSA): full-featured decompiler and disassembler.</p></li>
+<li><p><strong>IDA Free</strong>: industry-standard disassembler.</p></li>
+<li><p><strong>Binary Ninja</strong>: commercial, with a free web version.</p></li>
+<li><p><strong>radare2 / rizin</strong>: open-source framework, powerful scripting.</p></li>
+<li><p><strong>strings</strong>: quick scan for embedded flags or hints.</p></li>
+<li><p><strong>ltrace / strace</strong>: trace library calls and system calls at runtime.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="ctf-platforms-for-learning">
+<h2><span class="section-number">16.5. </span>CTF Platforms for Learning<a class="headerlink" href="#ctf-platforms-for-learning" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Platform</p></th>
+<th class="head"><p>Focus</p></th>
+<th class="head"><p>Cost</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>PicoCTF (<a class="reference external" href="http://picoctf.org">picoctf.org</a>)</p></td>
+<td><p>Beginner-friendly, curriculum-aligned</p></td>
+<td><p>Free</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hack The Box (HTB)</p></td>
+<td><p>Machines and challenges, intermediate-advanced</p></td>
+<td><p>Freemium</p></td>
+</tr>
+<tr class="row-even"><td><p>TryHackMe</p></td>
+<td><p>Guided learning paths, beginner-friendly</p></td>
+<td><p>Freemium</p></td>
+</tr>
+<tr class="row-odd"><td><p>pwn.college</p></td>
+<td><p>Binary exploitation deep dive</p></td>
+<td><p>Free</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="http://CTFtime.org">CTFtime.org</a></p></td>
+<td><p>CTF calendar and scoreboard aggregator</p></td>
+<td><p>Free</p></td>
+</tr>
+<tr class="row-odd"><td><p>OverTheWire (<a class="reference external" href="http://OverTheWire.org">OverTheWire.org</a>)</p></td>
+<td><p>Wargames (Bandit, Natas, Narnia)</p></td>
+<td><p>Free</p></td>
+</tr>
+<tr class="row-even"><td><p>CyberDefenders</p></td>
+<td><p>Blue team and forensics focus</p></td>
+<td><p>Freemium</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="ctf-skills-and-professional-mapping">
+<h2><span class="section-number">16.6. </span>CTF Skills and Professional Mapping<a class="headerlink" href="#ctf-skills-and-professional-mapping" title="Link to this heading">#</a></h2>
+<p>CTF performance directly maps to professional security roles:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>CTF Category</p></th>
+<th class="head"><p>Professional Role</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Web</p></td>
+<td><p>Web application penetration tester, bug bounty hunter</p></td>
+</tr>
+<tr class="row-odd"><td><p>Forensics</p></td>
+<td><p>Digital forensic examiner, incident responder</p></td>
+</tr>
+<tr class="row-even"><td><p>Cryptography</p></td>
+<td><p>Cryptographic engineer, protocol security reviewer</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pwn</p></td>
+<td><p>Vulnerability researcher, exploit developer</p></td>
+</tr>
+<tr class="row-even"><td><p>Reversing</p></td>
+<td><p>Malware analyst, reverse engineer</p></td>
+</tr>
+<tr class="row-odd"><td><p>OSINT</p></td>
+<td><p>Threat intelligence analyst, social engineering tester</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Many employers use CTF scores and challenge write-ups as screening criteria. A Hack The Box
+Pro Hacker or TryHackMe Top 1% ranking is a meaningful differentiator on a security resume.</p>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">16.7. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>CTF competitions provide a legal, structured environment to develop offensive and defensive
+skills that cannot be legally practised on real systems without authorisation. They compress
+years of trial-and-error into targeted challenges with immediate feedback. The habit of
+systematic enumeration, hypothesis testing, and persistence in the face of uncertainty that
+CTF players develop directly transfers to professional penetration testing and incident response.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">16.8. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>Several national cybersecurity agencies (CISA in the US, NCSC in the UK) have sponsored CTF
+competitions as part of workforce development pipelines. University programmes that incorporate
+CTF-aligned curricula produce graduates with demonstrable practical skills rather than only
+theoretical knowledge. Employer surveys in the security sector consistently rank practical
+problem-solving ability, which CTF history evidences, above certification alone.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 16 -- CTF mini-challenges: encoding, basic cipher, steganography simulation</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">base64</span><span class="o">,</span><span class="w"> </span><span class="nn">hashlib</span><span class="o">,</span><span class="w"> </span><span class="nn">string</span>
+
+<span class="c1"># ── Challenge 1: Multi-layer encoding ─────────────────────────────────────────</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== CTF Challenge 1: Decode the flag ===&quot;</span><span class="p">)</span>
+<span class="n">original_flag</span> <span class="o">=</span> <span class="s2">&quot;FLAG</span><span class="si">{congratulations_you_decoded_it}</span><span class="s2">&quot;</span>
+<span class="n">hex_encoded</span>   <span class="o">=</span> <span class="n">original_flag</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span><span class="p">()</span>
+<span class="n">b64_encoded</span>   <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="nb">bytes</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="n">hex_encoded</span><span class="p">))</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Encoded (hex then base64): </span><span class="si">{</span><span class="n">b64_encoded</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">decoded_hex</span>   <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">b64_encoded</span><span class="p">)</span>
+<span class="n">decoded_flag</span>  <span class="o">=</span> <span class="nb">bytes</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="n">decoded_hex</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Decoded: </span><span class="si">{</span><span class="n">decoded_flag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># ── Challenge 2: Caesar cipher brute force ────────────────────────────────────</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== CTF Challenge 2: Caesar cipher brute force ===&quot;</span><span class="p">)</span>
+<span class="n">ciphertext</span> <span class="o">=</span> <span class="s2">&quot;IODJ</span><span class="si">{euxwh_irufh_fdvhdu}</span><span class="s2">&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Ciphertext: </span><span class="si">{</span><span class="n">ciphertext</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">caesar</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">shift</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ch</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">ch</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span> <span class="k">else</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">ch</span><span class="p">)</span> <span class="o">-</span> <span class="n">base</span> <span class="o">+</span> <span class="n">shift</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="n">base</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ch</span><span class="p">)</span>
+    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">shift</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">26</span><span class="p">):</span>
+    <span class="n">candidate</span> <span class="o">=</span> <span class="n">caesar</span><span class="p">(</span><span class="n">ciphertext</span><span class="p">,</span> <span class="n">shift</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">candidate</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;FLAG{&quot;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Shift </span><span class="si">{</span><span class="n">shift</span><span class="si">:</span><span class="s2">2d</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">candidate</span><span class="si">}</span><span class="s2">  &lt;-- FLAG FOUND&quot;</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Shift </span><span class="si">{</span><span class="n">shift</span><span class="si">:</span><span class="s2">2d</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">candidate</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># ── Challenge 3: XOR known-plaintext ─────────────────────────────────────────</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== CTF Challenge 3: XOR known-plaintext key recovery ===&quot;</span><span class="p">)</span>
+<span class="n">key_byte</span> <span class="o">=</span> <span class="mh">0x42</span>
+<span class="n">plaintext</span>  <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;FLAG</span><span class="si">{xor_is_fun_and_reversible}</span><span class="s2">&quot;</span>
+<span class="n">ciphertext_xor</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">b</span> <span class="o">^</span> <span class="n">key_byte</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">plaintext</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Ciphertext (hex): </span><span class="si">{</span><span class="n">ciphertext_xor</span><span class="o">.</span><span class="n">hex</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Recover key: XOR known prefix FLAG{ with ciphertext</span>
+<span class="n">known_prefix</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;FLAG{&quot;</span>
+<span class="n">recovered_key</span> <span class="o">=</span> <span class="n">ciphertext_xor</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">^</span> <span class="n">known_prefix</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">recovered</span>     <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">b</span> <span class="o">^</span> <span class="n">recovered_key</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">ciphertext_xor</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Recovered key byte: 0x</span><span class="si">{</span><span class="n">recovered_key</span><span class="si">:</span><span class="s2">02x</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Recovered flag    : </span><span class="si">{</span><span class="n">recovered</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># ── Challenge 4: Hash cracking (demo with small space) ───────────────────────</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== CTF Challenge 4: Hash cracking (3-digit PIN) ===&quot;</span><span class="p">)</span>
+<span class="n">secret_pin</span>  <span class="o">=</span> <span class="s2">&quot;237&quot;</span>
+<span class="n">target_hash</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">md5</span><span class="p">(</span><span class="n">secret_pin</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Target MD5: </span><span class="si">{</span><span class="n">target_hash</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>
+    <span class="n">attempt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="s2">03d</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">if</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">md5</span><span class="p">(</span><span class="n">attempt</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span> <span class="o">==</span> <span class="n">target_hash</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Cracked PIN: </span><span class="si">{</span><span class="n">attempt</span><span class="si">}</span><span class="s2">  (tried </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> values)&quot;</span><span class="p">)</span>
+        <span class="k">break</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== CTF Methodology Checklist ===&quot;</span><span class="p">)</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;1. Read the challenge description carefully -- hints are embedded&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;2. Identify the category (web, forensics, crypto, pwn, reversing)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;3. Use &#39;file&#39; and &#39;strings&#39; on every provided file&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;4. Check metadata (exiftool) and entropy (binwalk) on binary files&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;5. For web: view source, check robots.txt, test all inputs&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;6. For crypto: identify the algorithm, look for weaknesses&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;7. For forensics: try binwalk -e, steghide, and Wireshark&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;8. Google the challenge title -- previous write-ups may help&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;9. Collaborate -- another set of eyes solves most blocks&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;10. Document your solution for a write-up after the CTF ends&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="k">for</span> <span class="n">step</span> <span class="ow">in</span> <span class="n">steps</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">step</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">16.9. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> In a jeopardy CTF, a flag is usually formatted as:
+A. A username and password  B. A unique string in the format FLAG{…}  C. A hash value  D. An IP address</p>
+<p><strong>Q2.</strong> The <code class="docutils literal notranslate"><span class="pre">checksec</span></code> tool in binary exploitation is used to:
+A. Check for vulnerabilities in web apps  B. Identify which exploit mitigations are enabled on a binary  C. Decrypt ciphertext  D. Extract strings from a file</p>
+<p><strong>Q3.</strong> <code class="docutils literal notranslate"><span class="pre">binwalk</span> <span class="pre">-e</span></code> is used in forensics CTF challenges to:
+A. Analyse network captures  B. Extract embedded files from a binary or image  C. Crack passwords  D. Enumerate web paths</p>
+<p><strong>Q4.</strong> A Caesar cipher with shift 3 maps the letter ‘A’ to:
+A. ‘D’  B. ‘C’  C. ‘Z’  D. ‘B’</p>
+<p><strong>Q5.</strong> In a known-plaintext XOR attack, the key is recovered by:
+A. Brute-forcing all possible keys  B. XORing a known plaintext with the corresponding ciphertext  C. Factoring a large prime  D. Inverting the hash</p>
+<p><strong>Q6.</strong> <code class="docutils literal notranslate"><span class="pre">steghide</span></code> is a tool for:
+A. Network scanning  B. Extracting hidden data from image and audio files  C. Binary disassembly  D. Hash cracking</p>
+<p><strong>Q7.</strong> Which platform focuses specifically on binary exploitation education?
+A. TryHackMe  B. CyberDefenders  C. pwn.college  D. CTFtime</p>
+<p><strong>Q8.</strong> An ECB mode weakness in CTF crypto means:
+A. The key can be recovered from the ciphertext directly  B. Identical plaintext blocks produce identical ciphertext blocks, enabling block rearrangement  C. The IV is reused  D. RSA is used insecurely</p>
+<p><strong>Q9.</strong> A CTF write-up is:
+A. A legal document for the CTF organisers  B. A post-competition technical explanation of how a challenge was solved  C. A certificate of completion  D. An attack report</p>
+<p><strong>Q10.</strong> CTF performance maps most directly to which hiring criterion?
+A. Years of experience  B. Certification count  C. Demonstrated practical problem-solving ability  D. Academic GPA</p>
+<p><em>Answers: Q1 B, Q2 B, Q3 B, Q4 A, Q5 B, Q6 B, Q7 C, Q8 B, Q9 B, Q10 C.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">16.10. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – PicoCTF</strong>: Complete at least five beginner-level challenges on PicoCTF (<a class="reference external" href="http://picoctf.org">picoctf.org</a>). For each challenge, document: the category, the technique used, the tool(s) used, and a two-sentence explanation of how the flag was found.</p>
+<p><strong>Part B – Caesar cipher automation</strong>: Write a Python script that takes an arbitrary ciphertext and tests all 25 Caesar shifts, scoring each candidate by frequency of common English words. Return the most likely shift and the decrypted text.</p>
+<p><strong>Part C – Steganography</strong>: Using <code class="docutils literal notranslate"><span class="pre">steghide</span> <span class="pre">embed</span> <span class="pre">-cf</span> <span class="pre">cover.jpg</span> <span class="pre">-sf</span> <span class="pre">flag.txt</span></code>, hide a flag string in an image you own. Then use <code class="docutils literal notranslate"><span class="pre">steghide</span> <span class="pre">extract</span></code> to recover it. Document the commands, the passphrase, and the extracted content.</p>
+<p><strong>Part D – Binary exploitation intro</strong>: On a deliberately vulnerable binary (from pwn.college or pwnablekr), use GDB with pwndbg to: identify the vulnerable function, send a cyclic pattern to find the EIP/RIP offset, and craft a payload that overwrites the return address with the address of the <code class="docutils literal notranslate"><span class="pre">win()</span></code> function. Document each step with screenshots.</p>
+</section>
+<section id="references">
+<h2><span class="section-number">16.11. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<span class="target" id="id1"></span></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/16_ctf"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../15_malware/chapter15.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">15. </span>Chapter 15: Malware Analysis</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../17_emerging/chapter17.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">17. </span>Chapter 17: Emerging Threats and Future Challenges</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">16.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">16.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-ctf">16.3. What Is a CTF?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jeopardy-format">16.3.1. Jeopardy Format</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#category-deep-dives">16.4. Category Deep Dives</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#web-challenges">16.4.1. Web Challenges</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#common-web-ctf-patterns">16.4.1.1. Common Web CTF Patterns</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">16.4.1.2. Methodology</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forensics-challenges">16.4.2. Forensics Challenges</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#common-forensics-techniques">16.4.2.1. Common Forensics Techniques</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cryptography-challenges">16.4.3. Cryptography Challenges</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#classic-cipher-analysis">16.4.3.1. Classic Cipher Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#modern-crypto-weaknesses-in-ctf">16.4.3.2. Modern Crypto Weaknesses in CTF</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binary-exploitation-pwn">16.4.4. Binary Exploitation (Pwn)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#beginner-pwn-methodology">16.4.4.1. Beginner Pwn Methodology</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reverse-engineering">16.4.5. Reverse Engineering</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#core-reversing-tools">16.4.5.1. Core Reversing Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ctf-platforms-for-learning">16.5. CTF Platforms for Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ctf-skills-and-professional-mapping">16.6. CTF Skills and Professional Mapping</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">16.7. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">16.8. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">16.9. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">16.10. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">16.11. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,957 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>8. Chapter 8: Scanning and Enumeration &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/08_scanning/chapter08';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="9. Chapter 9: Exploitation and Post-Exploitation" href="../09_exploitation/chapter09.html" />
+    <link rel="prev" title="7. Chapter 7: Reconnaissance and OSINT" href="../07_recon/chapter07.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/08_scanning/chapter08.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 8: Scanning and Enumeration</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">8.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">8.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#port-scanning-fundamentals">8.3. Port Scanning Fundamentals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-port-scanning-is-fundamental">8.3.1. Why Port Scanning Is Fundamental</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tcp-port-states">8.3.2. TCP Port States</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-syn-scan">8.3.3. The SYN Scan</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-scan">8.3.3.1. Connect Scan</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#udp-scanning">8.3.4. UDP Scanning</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nmap-in-depth">8.4. Nmap in Depth</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-scan-options">8.4.1. Common Scan Options</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#service-version-detection">8.4.2. Service Version Detection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#os-fingerprinting">8.4.3. OS Fingerprinting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nmap-scripting-engine">8.4.4. Nmap Scripting Engine</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#service-specific-enumeration">8.5. Service-Specific Enumeration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#smb-enumeration">8.5.1. SMB Enumeration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#snmp-enumeration">8.5.2. SNMP Enumeration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#web-directory-brute-forcing">8.5.3. Web Directory Brute-Forcing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detection-and-evasion">8.6. Detection and Evasion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-ids-detects-scanning">8.6.1. How IDS Detects Scanning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#timing-and-fragmentation">8.6.2. Timing and Fragmentation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">8.7. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">8.8. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">8.9. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">8.10. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">8.11. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-8-scanning-and-enumeration">
+<h1><span class="section-number">8. </span>Chapter 8: Scanning and Enumeration<a class="headerlink" href="#chapter-8-scanning-and-enumeration" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“You can’t protect what you can’t see, and you can’t attack what you haven’t found.” anonymous</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">8.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Explain how TCP and UDP port scanning works at the packet level.</p></li>
+<li><p>Describe Nmap scan types and select the appropriate type for a given scenario.</p></li>
+<li><p>Interpret Nmap output including port states, service versions, and OS fingerprints.</p></li>
+<li><p>Use Nmap NSE scripts for targeted enumeration.</p></li>
+<li><p>Enumerate SMB shares, user accounts, and Windows information.</p></li>
+<li><p>Enumerate web application structure using directory brute-forcing.</p></li>
+<li><p>Explain how to reduce scan detectability and the detection mechanisms that counter this.</p></li>
+<li><p>Document scan results as part of a formal penetration test.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">8.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Port scan</strong>: probing a host to determine which ports are open, closed, or filtered.</p></li>
+<li><p><strong>SYN scan (half-open)</strong>: sends SYN, reads response, sends RST without completing handshake.</p></li>
+<li><p><strong>Service version detection</strong>: querying an open port to identify the running application and version.</p></li>
+<li><p><strong>OS fingerprinting</strong>: deducing the operating system from network stack behaviour.</p></li>
+<li><p><strong>NSE</strong>: Nmap Scripting Engine; Lua scripts that extend Nmap’s enumeration capability.</p></li>
+<li><p><strong>Banner grabbing</strong>: capturing the service identification string sent by an open port.</p></li>
+<li><p><strong>Filtered port</strong>: a port where all probes are dropped by a firewall (no response).</p></li>
+<li><p><strong>SMB</strong>: Server Message Block; Windows file and printer sharing protocol.</p></li>
+<li><p><strong>SNMP</strong>: Simple Network Management Protocol; device management, often misconfigured.</p></li>
+<li><p><strong>Directory brute-forcing</strong>: testing URL paths against a wordlist to find hidden content.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="port-scanning-fundamentals">
+<h2><span class="section-number">8.3. </span>Port Scanning Fundamentals<a class="headerlink" href="#port-scanning-fundamentals" title="Link to this heading">#</a></h2>
+<section id="why-port-scanning-is-fundamental">
+<h3><span class="section-number">8.3.1. </span>Why Port Scanning Is Fundamental<a class="headerlink" href="#why-port-scanning-is-fundamental" title="Link to this heading">#</a></h3>
+<p>Every network service listens on a port. Knowing which ports are open reveals which services are
+running, which reveals potential attack surface. A web server on port 443 is expected; an RDP
+service (3389) exposed to the internet or a Telnet service (23) anywhere are findings.</p>
+</section>
+<section id="tcp-port-states">
+<h3><span class="section-number">8.3.2. </span>TCP Port States<a class="headerlink" href="#tcp-port-states" title="Link to this heading">#</a></h3>
+<p>Nmap classifies ports into six states:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>State</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Open</p></td>
+<td><p>A service is actively accepting connections</p></td>
+</tr>
+<tr class="row-odd"><td><p>Closed</p></td>
+<td><p>No service listening; host responded with RST</p></td>
+</tr>
+<tr class="row-even"><td><p>Filtered</p></td>
+<td><p>No response; firewall is dropping packets</p></td>
+</tr>
+<tr class="row-odd"><td><p>Unfiltered</p></td>
+<td><p>Port accessible but state cannot be determined</p></td>
+</tr>
+<tr class="row-even"><td><p>Open/Filtered</p></td>
+<td><p>Nmap cannot distinguish open from filtered (UDP)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Closed/Filtered</p></td>
+<td><p>Nmap cannot distinguish closed from filtered</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="the-syn-scan">
+<h3><span class="section-number">8.3.3. </span>The SYN Scan<a class="headerlink" href="#the-syn-scan" title="Link to this heading">#</a></h3>
+<p>A TCP SYN scan (nmap -sS) sends a SYN packet and evaluates the response:</p>
+<ul class="simple">
+<li><p>SYN-ACK received: port is open (service is listening); Nmap sends RST to avoid completing the handshake.</p></li>
+<li><p>RST received: port is closed.</p></li>
+<li><p>No response or ICMP port-unreachable: port is filtered.</p></li>
+</ul>
+<p>The SYN scan does not complete the TCP handshake, so it often does not appear in application logs
+(which log at the application layer after accept()). It does appear in network-level logs and IDS.</p>
+<section id="connect-scan">
+<h4><span class="section-number">8.3.3.1. </span>Connect Scan<a class="headerlink" href="#connect-scan" title="Link to this heading">#</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">nmap</span> <span class="pre">-sT</span></code> completes the full three-way handshake. It is noisier but can be run without root
+privileges and is the fallback when raw socket access is unavailable (e.g., from an unprivileged
+user on Windows).</p>
+</section>
+</section>
+<section id="udp-scanning">
+<h3><span class="section-number">8.3.4. </span>UDP Scanning<a class="headerlink" href="#udp-scanning" title="Link to this heading">#</a></h3>
+<p>UDP services (DNS port 53, DHCP port 67/68, SNMP port 161, TFTP port 69) do not respond to SYN
+packets. Nmap’s UDP scan (<code class="docutils literal notranslate"><span class="pre">-sU</span></code>) sends an empty UDP datagram (or a protocol-specific probe) and
+interprets:</p>
+<ul class="simple">
+<li><p>UDP response: port is open.</p></li>
+<li><p>ICMP port-unreachable: port is closed.</p></li>
+<li><p>No response: port is open or filtered.</p></li>
+</ul>
+<p>UDP scanning is slow and unreliable; rate-limit rules on most operating systems cause many responses
+to be delayed or dropped, producing false open/filtered results.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="nmap-in-depth">
+<h2><span class="section-number">8.4. </span>Nmap in Depth<a class="headerlink" href="#nmap-in-depth" title="Link to this heading">#</a></h2>
+<section id="common-scan-options">
+<h3><span class="section-number">8.4.1. </span>Common Scan Options<a class="headerlink" href="#common-scan-options" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Option</p></th>
+<th class="head"><p>Purpose</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">-sS</span></code></p></td>
+<td><p>SYN scan (default with root)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-sV</span></code></p></td>
+<td><p>Service version detection</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">-O</span></code></p></td>
+<td><p>OS fingerprinting</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-A</span></code></p></td>
+<td><p>Aggressive: -sV -O -sC –traceroute</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">-p</span> <span class="pre">1-65535</span></code></p></td>
+<td><p>Scan all ports (default: top 1000)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-T0</span></code> to <code class="docutils literal notranslate"><span class="pre">-T5</span></code></p></td>
+<td><p>Timing: 0=paranoid/slow, 5=insane/fast</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">-oN/-oX/-oG</span></code></p></td>
+<td><p>Output: normal/XML/greppable</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--open</span></code></p></td>
+<td><p>Only show open ports</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">-Pn</span></code></p></td>
+<td><p>Skip host discovery; treat host as up</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="service-version-detection">
+<h3><span class="section-number">8.4.2. </span>Service Version Detection<a class="headerlink" href="#service-version-detection" title="Link to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">-sV</span></code> sends application-specific probes to open ports and matches responses against Nmap’s service
+fingerprint database (nmap-service-probes). The output includes the service name, version number,
+and any extra information (product, extrainfo). Example output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">443</span><span class="o">/</span><span class="n">tcp</span> <span class="nb">open</span>  <span class="n">ssl</span><span class="o">/</span><span class="n">http</span>  <span class="n">Apache</span> <span class="n">httpd</span> <span class="mf">2.4.52</span> <span class="p">(</span><span class="n">Ubuntu</span><span class="p">)</span>
+<span class="mi">22</span><span class="o">/</span><span class="n">tcp</span>  <span class="nb">open</span>  <span class="n">ssh</span>       <span class="n">OpenSSH</span> <span class="mf">8.2</span><span class="n">p1</span> <span class="n">Ubuntu</span> <span class="mi">4</span><span class="n">ubuntu0</span><span class="mf">.4</span>
+<span class="mi">3306</span><span class="o">/</span><span class="n">tcp</span> <span class="nb">open</span>  <span class="n">mysql</span>    <span class="n">MySQL</span> <span class="mf">8.0.28</span><span class="o">-</span><span class="mi">0</span><span class="n">ubuntu0</span><span class="mf">.20.04.3</span>
+</pre></div>
+</div>
+<p>Each version string can be cross-referenced with the NVD or Exploit-DB for known CVEs.</p>
+</section>
+<section id="os-fingerprinting">
+<h3><span class="section-number">8.4.3. </span>OS Fingerprinting<a class="headerlink" href="#os-fingerprinting" title="Link to this heading">#</a></h3>
+<p>Nmap’s OS detection (<code class="docutils literal notranslate"><span class="pre">-O</span></code>) sends a series of probes and compares responses against a database of
+TCP/IP stack implementations. It identifies the OS and version (Windows Server 2019, Linux 5.15,
+FreeBSD 13.0) with a confidence percentage. Accuracy decreases behind NAT, load balancers, or
+normalising firewalls that modify packet fields.</p>
+</section>
+<section id="nmap-scripting-engine">
+<h3><span class="section-number">8.4.4. </span>Nmap Scripting Engine<a class="headerlink" href="#nmap-scripting-engine" title="Link to this heading">#</a></h3>
+<p>NSE extends Nmap with ~600 scripts organised into categories: auth, broadcast, brute, default,
+discovery, dos (avoid in tests), exploit, external, fuzzer, intrusive, malware, safe, version, vuln.</p>
+<p>Important scripts for enumeration:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Script</p></th>
+<th class="head"><p>Purpose</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">http-title</span></code></p></td>
+<td><p>Retrieve page title of web services</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">http-robots.txt</span></code></p></td>
+<td><p>Retrieve robots.txt</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ssl-cert</span></code></p></td>
+<td><p>Extract TLS certificate details</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">smb-enum-shares</span></code></p></td>
+<td><p>List SMB shares</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">smb-enum-users</span></code></p></td>
+<td><p>Enumerate Windows users via SMB</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">dns-zone-transfer</span></code></p></td>
+<td><p>Attempt zone transfer</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">snmp-brute</span></code></p></td>
+<td><p>Brute-force SNMP community strings</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">mysql-empty-password</span></code></p></td>
+<td><p>Test for blank MySQL root password</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="service-specific-enumeration">
+<h2><span class="section-number">8.5. </span>Service-Specific Enumeration<a class="headerlink" href="#service-specific-enumeration" title="Link to this heading">#</a></h2>
+<section id="smb-enumeration">
+<h3><span class="section-number">8.5.1. </span>SMB Enumeration<a class="headerlink" href="#smb-enumeration" title="Link to this heading">#</a></h3>
+<p>Windows networks expose a rich enumeration surface via SMB (port 445). Tools:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">smbclient</span> <span class="pre">-L</span> <span class="pre">//target</span></code>: list shares.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">enum4linux</span></code>: comprehensive Windows/Samba enumeration including users, groups, password policy.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crackmapexec</span> <span class="pre">smb</span> <span class="pre">target</span></code>: fast bulk SMB enumeration across a subnet.</p></li>
+</ul>
+<p>Particularly valuable findings: <code class="docutils literal notranslate"><span class="pre">ADMIN$</span></code> and <code class="docutils literal notranslate"><span class="pre">C$</span></code> shares accessible without authentication (null
+session), password policy that allows short or simple passwords, and a list of valid usernames for
+password spray attacks.</p>
+</section>
+<section id="snmp-enumeration">
+<h3><span class="section-number">8.5.2. </span>SNMP Enumeration<a class="headerlink" href="#snmp-enumeration" title="Link to this heading">#</a></h3>
+<p>SNMP uses community strings as authentication. The default <code class="docutils literal notranslate"><span class="pre">public</span></code> (read) and <code class="docutils literal notranslate"><span class="pre">private</span></code>
+(read-write) strings are set on countless devices. <code class="docutils literal notranslate"><span class="pre">onesixtyone</span></code> rapidly tests community strings
+across a subnet. <code class="docutils literal notranslate"><span class="pre">snmpwalk</span> <span class="pre">-v2c</span> <span class="pre">-c</span> <span class="pre">public</span> <span class="pre">target</span></code> walks the entire MIB, revealing: system
+description (OS and version), interfaces, routing table, running processes, installed software,
+user accounts on some implementations, and ARP cache (revealing other hosts on the network).</p>
+</section>
+<section id="web-directory-brute-forcing">
+<h3><span class="section-number">8.5.3. </span>Web Directory Brute-Forcing<a class="headerlink" href="#web-directory-brute-forcing" title="Link to this heading">#</a></h3>
+<p>Tools like <code class="docutils literal notranslate"><span class="pre">gobuster</span> <span class="pre">dir</span></code>, <code class="docutils literal notranslate"><span class="pre">ffuf</span></code>, and <code class="docutils literal notranslate"><span class="pre">dirb</span></code> enumerate URL paths by trying each word from a
+wordlist. A well-chosen wordlist (SecLists <code class="docutils literal notranslate"><span class="pre">Discovery/Web-Content/</span></code>) finds: admin panels, backup
+files (<code class="docutils literal notranslate"><span class="pre">backup.zip</span></code>, <code class="docutils literal notranslate"><span class="pre">db.sql</span></code>), configuration files (<code class="docutils literal notranslate"><span class="pre">.env</span></code>, <code class="docutils literal notranslate"><span class="pre">config.php</span></code>), version control
+artefacts (<code class="docutils literal notranslate"><span class="pre">.git/</span></code>, <code class="docutils literal notranslate"><span class="pre">.svn/</span></code>), and API endpoints not linked from the front end.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="detection-and-evasion">
+<h2><span class="section-number">8.6. </span>Detection and Evasion<a class="headerlink" href="#detection-and-evasion" title="Link to this heading">#</a></h2>
+<section id="how-ids-detects-scanning">
+<h3><span class="section-number">8.6.1. </span>How IDS Detects Scanning<a class="headerlink" href="#how-ids-detects-scanning" title="Link to this heading">#</a></h3>
+<p>Signature-based IDS (Snort, Suricata) matches packet patterns: SYN to multiple ports in sequence is
+a classic scan signature. Anomaly-based detection flags high connection rates. Host-based firewalls
+log connection attempts. A realistic tester must assume detection is possible and document the scan
+rather than trying to hide it in a legitimate engagement.</p>
+</section>
+<section id="timing-and-fragmentation">
+<h3><span class="section-number">8.6.2. </span>Timing and Fragmentation<a class="headerlink" href="#timing-and-fragmentation" title="Link to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">-T0</span></code> and <code class="docutils literal notranslate"><span class="pre">-T1</span></code> insert long delays between probes, reducing the rate of detected scan events.
+Decoy scan (<code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">RND:10</span></code>) sends probes from multiple spoofed source addresses alongside the real
+source, making attribution harder. Packet fragmentation (<code class="docutils literal notranslate"><span class="pre">-f</span></code>) splits packets below the IDS
+reassembly threshold. These techniques are relevant for red team exercises; standard penetration
+tests operate within defined time windows and do not require evasion.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">8.7. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>A misconfigured service that allows enumeration (SNMP with default community, SMB null session,
+an exposed admin panel) is often the first foothold in a network compromise. Scanning reveals
+the technology landscape, version numbers, and misconfigurations; enumeration extracts user names,
+shares, and policy details that feed every subsequent attack phase. Defenders who run their own
+scanning on their networks on a regular schedule find these exposures before attackers do.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">8.8. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>Automated internet-wide scanners including those operated by Shodan, Censys, and security researchers
+routinely find SNMP devices with default community strings exposing full device configuration, RDP
+services with no MFA exposed to the internet, and database servers (MongoDB, Elasticsearch,
+Redis) without authentication accessible from the public internet. These are enumeration findings;
+the attacker does not need to exploit a vulnerability, because the access is unauthenticated by
+design error.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 8 -- Worked Example: Nmap output parser and port risk scorer</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">parse_nmap_output</span><span class="p">(</span><span class="n">raw</span><span class="p">):</span>
+    <span class="c1"># Parse simplified nmap output lines into structured records.</span>
+    <span class="n">findings</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">raw</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">():</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">line</span> <span class="ow">or</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">):</span>
+            <span class="k">continue</span>
+        <span class="n">parts</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span> <span class="ow">and</span> <span class="s1">&#39;/&#39;</span> <span class="ow">in</span> <span class="n">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+            <span class="n">port_proto</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">state</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">service</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
+            <span class="n">port</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">port_proto</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">findings</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;port&#39;</span><span class="p">:</span> <span class="n">port</span><span class="p">,</span> <span class="s1">&#39;state&#39;</span><span class="p">:</span> <span class="n">state</span><span class="p">,</span> <span class="s1">&#39;service&#39;</span><span class="p">:</span> <span class="n">service</span><span class="p">})</span>
+    <span class="k">return</span> <span class="n">findings</span>
+
+<span class="n">HIGH_RISK_PORTS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">21</span><span class="p">:</span> <span class="s2">&quot;FTP: cleartext, often weak creds&quot;</span><span class="p">,</span>
+    <span class="mi">23</span><span class="p">:</span> <span class="s2">&quot;Telnet: cleartext protocol, deprecated&quot;</span><span class="p">,</span>
+    <span class="mi">25</span><span class="p">:</span> <span class="s2">&quot;SMTP open relay risk if misconfigured&quot;</span><span class="p">,</span>
+    <span class="mi">110</span><span class="p">:</span> <span class="s2">&quot;POP3: cleartext email retrieval&quot;</span><span class="p">,</span>
+    <span class="mi">135</span><span class="p">:</span> <span class="s2">&quot;MSRPC: Windows attack surface&quot;</span><span class="p">,</span>
+    <span class="mi">139</span><span class="p">:</span> <span class="s2">&quot;NetBIOS: Windows enumeration&quot;</span><span class="p">,</span>
+    <span class="mi">445</span><span class="p">:</span> <span class="s2">&quot;SMB: ransomware spread vector&quot;</span><span class="p">,</span>
+    <span class="mi">1433</span><span class="p">:</span> <span class="s2">&quot;MSSQL: database direct exposure&quot;</span><span class="p">,</span>
+    <span class="mi">3306</span><span class="p">:</span> <span class="s2">&quot;MySQL: database direct exposure&quot;</span><span class="p">,</span>
+    <span class="mi">3389</span><span class="p">:</span> <span class="s2">&quot;RDP: brute-force and BlueKeep target&quot;</span><span class="p">,</span>
+    <span class="mi">5900</span><span class="p">:</span> <span class="s2">&quot;VNC: often no/weak auth&quot;</span><span class="p">,</span>
+    <span class="mi">6379</span><span class="p">:</span> <span class="s2">&quot;Redis: often unauthenticated by default&quot;</span><span class="p">,</span>
+    <span class="mi">27017</span><span class="p">:</span> <span class="s2">&quot;MongoDB: often unauthenticated by default&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">simulated_output</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;80/tcp   open  http       Apache httpd 2.4.52 (Ubuntu)</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="s2">&quot;443/tcp  open  ssl/https  Apache httpd 2.4.52</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="s2">&quot;22/tcp   open  ssh        OpenSSH 8.2p1 Ubuntu</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="s2">&quot;3389/tcp open  ms-wbt-server Microsoft Terminal Services</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="s2">&quot;445/tcp  open  microsoft-ds Windows Server 2019</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="s2">&quot;3306/tcp open  mysql      MySQL 8.0.28</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="s2">&quot;6379/tcp open  redis      Redis key-value store</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="s2">&quot;21/tcp   closed ftp</span><span class="se">\n</span><span class="s2">&quot;</span>
+<span class="p">)</span>
+
+<span class="n">findings</span> <span class="o">=</span> <span class="n">parse_nmap_output</span><span class="p">(</span><span class="n">simulated_output</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;Port&#39;</span><span class="si">:</span><span class="s2">&lt;8</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;State&#39;</span><span class="si">:</span><span class="s2">&lt;9</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Service&#39;</span><span class="si">:</span><span class="s2">&lt;35</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Risk Note&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">90</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">findings</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;port&#39;</span><span class="p">]):</span>
+    <span class="n">risk</span> <span class="o">=</span> <span class="n">HIGH_RISK_PORTS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;port&#39;</span><span class="p">],</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;port&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">&lt;8</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">&lt;9</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;service&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">&lt;35</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">risk</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">high_risk</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">findings</span> <span class="k">if</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;port&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">HIGH_RISK_PORTS</span> <span class="ow">and</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;open&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">  </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">high_risk</span><span class="p">)</span><span class="si">}</span><span class="s2"> high-risk open port(s) detected -- investigate immediately.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Port     State     Service                             Risk Note
+------------------------------------------------------------------------------------------
+21       closed    ftp                                 FTP: cleartext, often weak creds
+22       open      ssh OpenSSH 8.2p1 Ubuntu            
+80       open      http Apache httpd 2.4.52 (Ubuntu)   
+443      open      ssl/https Apache httpd 2.4.52       
+445      open      microsoft-ds Windows Server 2019    SMB: ransomware spread vector
+3306     open      mysql MySQL 8.0.28                  MySQL: database direct exposure
+3389     open      ms-wbt-server Microsoft Terminal Services RDP: brute-force and BlueKeep target
+6379     open      redis Redis key-value store         Redis: often unauthenticated by default
+
+  4 high-risk open port(s) detected -- investigate immediately.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">8.9. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> An Nmap SYN scan sends a SYN and receives SYN-ACK. What does Nmap send next?
+A. ACK to complete the connection  B. RST to abort without completing the handshake  C. FIN to close  D. Nothing</p>
+<p><strong>Q2.</strong> A port returning ICMP port-unreachable in response to a UDP probe is:
+A. Open  B. Open/Filtered  C. Closed  D. Filtered</p>
+<p><strong>Q3.</strong> Service version detection (<code class="docutils literal notranslate"><span class="pre">-sV</span></code>) works by:
+A. Guessing based on port number  B. Sending application probes and matching against a fingerprint database  C. Reading the /etc/services file  D. Running a vulnerability scan</p>
+<p><strong>Q4.</strong> SNMP enumeration is most valuable when:
+A. The community string is “private”  B. Default community strings like “public” are in use  C. SNMPv3 is configured  D. The device is running Windows</p>
+<p><strong>Q5.</strong> Gobuster dir is used to:
+A. Scan network ports  B. Brute-force URL paths against a wordlist  C. Enumerate SMB shares  D. Perform password spraying</p>
+<p><strong>Q6.</strong> Which Nmap flag scans all 65535 ports?
+A. <code class="docutils literal notranslate"><span class="pre">-sA</span></code>  B. <code class="docutils literal notranslate"><span class="pre">-p-</span></code>  C. <code class="docutils literal notranslate"><span class="pre">-A</span></code>  D. <code class="docutils literal notranslate"><span class="pre">--all-ports</span></code></p>
+<p><strong>Q7.</strong> The Nmap <code class="docutils literal notranslate"><span class="pre">-T0</span></code> timing template is named:
+A. Insane  B. Aggressive  C. Paranoid  D. Sneaky</p>
+<p><strong>Q8.</strong> SMB null session enumeration works by:
+A. Exploiting a buffer overflow  B. Connecting without credentials to enumerate users and shares  C. Cracking the LM hash  D. Sending a malformed RPC request</p>
+<p><strong>Q9.</strong> An open port 6379 with no authentication is most likely running:
+A. MySQL  B. MongoDB  C. Redis  D. Elasticsearch</p>
+<p><strong>Q10.</strong> Which Nmap output format is easiest to process with automated tools?
+A. <code class="docutils literal notranslate"><span class="pre">-oN</span></code> (normal)  B. <code class="docutils literal notranslate"><span class="pre">-oX</span></code> (XML)  C. <code class="docutils literal notranslate"><span class="pre">-oG</span></code> (greppable)  D. Screen output</p>
+<p><em>Answers: Q1 B, Q2 C, Q3 B, Q4 B, Q5 B, Q6 B, Q7 C, Q8 B, Q9 C, Q10 B.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">8.10. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – Self-scan</strong>: Run <code class="docutils literal notranslate"><span class="pre">nmap</span> <span class="pre">-sV</span> <span class="pre">-O</span> <span class="pre">-p-</span> <span class="pre">localhost</span></code> on your own machine. Document: all open ports, service names and versions, and OS detection accuracy. For any service running an old version, search the NVD for known CVEs.</p>
+<p><strong>Part B – Nmap NSE</strong>: Run <code class="docutils literal notranslate"><span class="pre">nmap</span> <span class="pre">--script</span> <span class="pre">smb-enum-shares,smb-enum-users</span> <span class="pre">&lt;target_IP&gt;</span></code> against a Windows VM or lab target you are authorised to test. Document the shares found and whether any are accessible without credentials.</p>
+<p><strong>Part C – SNMP walk</strong>: If a lab switch or router supports SNMP with a known community string, run <code class="docutils literal notranslate"><span class="pre">snmpwalk</span> <span class="pre">-v2c</span> <span class="pre">-c</span> <span class="pre">public</span> <span class="pre">&lt;target&gt;</span></code>. Document: system description, interfaces, and any user or process information revealed.</p>
+<p><strong>Part D – Web enumeration</strong>: Run <code class="docutils literal notranslate"><span class="pre">gobuster</span> <span class="pre">dir</span> <span class="pre">-u</span> <span class="pre">http://localhost</span> <span class="pre">-w</span> <span class="pre">/usr/share/seclists/Discovery/Web-Content/common.txt</span></code> against a deliberately vulnerable web application (DVWA, Juice Shop). Document: all discovered paths, the HTTP status code for each, and which three are most interesting from a security perspective.</p>
+</section>
+<section id="references">
+<h2><span class="section-number">8.11. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<span class="target" id="id1"></span></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/08_scanning"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../07_recon/chapter07.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Chapter 7: Reconnaissance and OSINT</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../09_exploitation/chapter09.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Chapter 9: Exploitation and Post-Exploitation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">8.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">8.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#port-scanning-fundamentals">8.3. Port Scanning Fundamentals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-port-scanning-is-fundamental">8.3.1. Why Port Scanning Is Fundamental</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tcp-port-states">8.3.2. TCP Port States</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-syn-scan">8.3.3. The SYN Scan</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-scan">8.3.3.1. Connect Scan</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#udp-scanning">8.3.4. UDP Scanning</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nmap-in-depth">8.4. Nmap in Depth</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-scan-options">8.4.1. Common Scan Options</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#service-version-detection">8.4.2. Service Version Detection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#os-fingerprinting">8.4.3. OS Fingerprinting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nmap-scripting-engine">8.4.4. Nmap Scripting Engine</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#service-specific-enumeration">8.5. Service-Specific Enumeration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#smb-enumeration">8.5.1. SMB Enumeration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#snmp-enumeration">8.5.2. SNMP Enumeration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#web-directory-brute-forcing">8.5.3. Web Directory Brute-Forcing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detection-and-evasion">8.6. Detection and Evasion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-ids-detects-scanning">8.6.1. How IDS Detects Scanning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#timing-and-fragmentation">8.6.2. Timing and Fragmentation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">8.7. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">8.8. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">8.9. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">8.10. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">8.11. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

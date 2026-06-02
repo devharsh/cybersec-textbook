@@ -1,0 +1,972 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>14. Chapter 14: Incident Response &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/14_incident_response/chapter14';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="15. Chapter 15: Malware Analysis" href="../15_malware/chapter15.html" />
+    <link rel="prev" title="13. Chapter 13: Digital Forensics" href="../13_forensics/chapter13.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/14_incident_response/chapter14.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 14: Incident Response</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">14.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">14.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#incidents-versus-events">14.3. Incidents Versus Events</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#incident-severity-classification">14.3.1. Incident Severity Classification</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-nist-sp-800-61-lifecycle">14.4. The NIST SP 800-61 Lifecycle</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation">14.4.1. Preparation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#csirt-roles">14.4.1.1. CSIRT Roles</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detection-and-analysis">14.4.2. Detection and Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-triage-questions">14.4.2.1. Initial Triage Questions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-iocs">14.4.2.2. Using IOCs</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#containment">14.4.3. Containment</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#short-term-containment">14.4.3.1. Short-Term Containment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#long-term-containment">14.4.3.2. Long-Term Containment</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eradication">14.4.4. Eradication</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rebuild-versus-clean">14.4.4.1. Rebuild Versus Clean</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recovery">14.4.5. Recovery</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#recovery-validation">14.4.5.1. Recovery Validation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-incident-activity">14.4.6. Post-Incident Activity</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#post-incident-report-structure">14.4.6.1. Post-Incident Report Structure</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lessons-learned">14.4.6.2. Lessons Learned</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legal-and-regulatory-obligations">14.5. Legal and Regulatory Obligations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#breach-notification-laws">14.5.1. Breach Notification Laws</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#law-enforcement-and-evidence-preservation">14.5.2. Law Enforcement and Evidence Preservation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">14.6. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">14.7. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">14.8. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">14.9. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">14.10. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-14-incident-response">
+<h1><span class="section-number">14. </span>Chapter 14: Incident Response<a class="headerlink" href="#chapter-14-incident-response" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“Every breach is a failure of the system to detect and respond before significant damage occurs.”</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">14.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Define a security incident and distinguish it from a security event.</p></li>
+<li><p>Describe the six phases of the NIST SP 800-61 incident response lifecycle.</p></li>
+<li><p>Explain the roles and responsibilities of a Computer Security Incident Response Team (CSIRT).</p></li>
+<li><p>Perform initial triage and prioritise an incident based on severity and scope.</p></li>
+<li><p>Describe containment strategies and explain short-term versus long-term containment.</p></li>
+<li><p>Explain eradication, recovery, and the criteria for returning systems to production.</p></li>
+<li><p>Write a post-incident report and conduct a lessons-learned review.</p></li>
+<li><p>Describe legal and regulatory notification obligations following a breach.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">14.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Security event</strong>: any observable occurrence on a network or system.</p></li>
+<li><p><strong>Security incident</strong>: an event that actually or potentially jeopardises confidentiality, integrity, or availability.</p></li>
+<li><p><strong>CSIRT</strong>: Computer Security Incident Response Team.</p></li>
+<li><p><strong>NIST SP 800-61</strong>: NIST guide to computer security incident handling.</p></li>
+<li><p><strong>Triage</strong>: the rapid assessment of an incident to determine severity and prioritise response.</p></li>
+<li><p><strong>Containment</strong>: actions that limit the spread and impact of an active incident.</p></li>
+<li><p><strong>Eradication</strong>: removal of the threat from the environment.</p></li>
+<li><p><strong>Recovery</strong>: restoration of affected systems to normal operation.</p></li>
+<li><p><strong>MTTD</strong>: Mean Time to Detect; average time from intrusion to detection.</p></li>
+<li><p><strong>MTTR</strong>: Mean Time to Respond; average time from detection to containment.</p></li>
+<li><p><strong>IOC</strong>: Indicator of Compromise; artefact indicating a system has been compromised.</p></li>
+<li><p><strong>Playbook</strong>: a documented, step-by-step response procedure for a specific incident type.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="incidents-versus-events">
+<h2><span class="section-number">14.3. </span>Incidents Versus Events<a class="headerlink" href="#incidents-versus-events" title="Link to this heading">#</a></h2>
+<p>Every firewall log entry, every failed login, and every antivirus alert is a security event.
+The vast majority of events are benign. An incident is a subset: an event or series of events
+that represents an actual or probable breach of policy or security. The first analytical task
+in incident response is determining whether an event rises to the level of an incident.</p>
+<section id="incident-severity-classification">
+<h3><span class="section-number">14.3.1. </span>Incident Severity Classification<a class="headerlink" href="#incident-severity-classification" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Severity</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>Example</p></th>
+<th class="head"><p>Response SLA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Critical (P1)</p></td>
+<td><p>Active breach with data exfiltration or operational impact</p></td>
+<td><p>Ransomware encrypting production servers</p></td>
+<td><p>Immediate; 24/7 response</p></td>
+</tr>
+<tr class="row-odd"><td><p>High (P2)</p></td>
+<td><p>Confirmed breach contained; significant data at risk</p></td>
+<td><p>Compromised admin account; no exfiltration confirmed</p></td>
+<td><p>Same-day</p></td>
+</tr>
+<tr class="row-even"><td><p>Medium (P3)</p></td>
+<td><p>Suspected breach; investigation required</p></td>
+<td><p>Anomalous data transfer; no confirmed breach</p></td>
+<td><p>24-48 hours</p></td>
+</tr>
+<tr class="row-odd"><td><p>Low (P4)</p></td>
+<td><p>Policy violation or minor anomaly</p></td>
+<td><p>Failed login spike; malware on isolated workstation</p></td>
+<td><p>Standard business hours</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="the-nist-sp-800-61-lifecycle">
+<h2><span class="section-number">14.4. </span>The NIST SP 800-61 Lifecycle<a class="headerlink" href="#the-nist-sp-800-61-lifecycle" title="Link to this heading">#</a></h2>
+<p>The NIST incident response lifecycle <span class="bibtex-citation" id="id1">[<a class="reference internal" href="#id9" title="National Institute of Standards and Technology. Computer security incident handling guide. Technical Report NIST SP 800-61 Rev. 2, U.S. Department of Commerce, 2012. doi:10.6028/NIST.SP.800-61r2.">NationalIoSaTechnology12</a>]</span> defines four phases that overlap and iterate.</p>
+<section id="preparation">
+<h3><span class="section-number">14.4.1. </span>Preparation<a class="headerlink" href="#preparation" title="Link to this heading">#</a></h3>
+<p>Preparation is the work done before an incident occurs. It includes: establishing and staffing a
+CSIRT, developing playbooks for the most likely incident types, deploying the detection tools
+that will generate alerts, training analysts on triage and response, and establishing legal and
+communications contacts. An organisation that only begins thinking about incident response when
+an incident occurs will respond slowly and ineffectively.</p>
+<section id="csirt-roles">
+<h4><span class="section-number">14.4.1.1. </span>CSIRT Roles<a class="headerlink" href="#csirt-roles" title="Link to this heading">#</a></h4>
+<p>A mature CSIRT includes:</p>
+<ul class="simple">
+<li><p><strong>Incident commander</strong>: overall coordination and stakeholder communication.</p></li>
+<li><p><strong>Lead analyst</strong>: technical investigation and evidence collection.</p></li>
+<li><p><strong>Threat intelligence analyst</strong>: context on the adversary and their TTPs.</p></li>
+<li><p><strong>Legal counsel</strong>: breach notification obligations and law enforcement liaison.</p></li>
+<li><p><strong>Communications</strong>: internal and external messaging.</p></li>
+<li><p><strong>IT operations</strong>: containment and recovery execution.</p></li>
+</ul>
+</section>
+</section>
+<section id="detection-and-analysis">
+<h3><span class="section-number">14.4.2. </span>Detection and Analysis<a class="headerlink" href="#detection-and-analysis" title="Link to this heading">#</a></h3>
+<p>Detection identifies that an incident may have occurred. Sources include: SIEM alerts, EDR
+notifications, threat intelligence feeds, reports from users, and third-party notification
+(a vendor, law enforcement, or the public reporting a vulnerability). Analysis determines whether
+the event is a true positive and, if so, its scope and severity.</p>
+<section id="initial-triage-questions">
+<h4><span class="section-number">14.4.2.1. </span>Initial Triage Questions<a class="headerlink" href="#initial-triage-questions" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>What systems are affected and what data do they hold?</p></li>
+<li><p>Is the threat still active, or is the incident historical?</p></li>
+<li><p>What is the probable entry point?</p></li>
+<li><p>What is the blast radius (how many systems could be affected)?</p></li>
+<li><p>Are there regulatory notification obligations?</p></li>
+</ul>
+</section>
+<section id="using-iocs">
+<h4><span class="section-number">14.4.2.2. </span>Using IOCs<a class="headerlink" href="#using-iocs" title="Link to this heading">#</a></h4>
+<p>Indicators of Compromise are technical artefacts associated with a known threat: IP addresses of
+C2 servers, file hashes of malware, domain names used in campaigns, and registry keys created
+by specific malware families. IOCs allow rapid identification of additional affected systems
+(scan all endpoints for the known malware hash) and enable blocking at network and endpoint level.</p>
+</section>
+</section>
+<section id="containment">
+<h3><span class="section-number">14.4.3. </span>Containment<a class="headerlink" href="#containment" title="Link to this heading">#</a></h3>
+<p>Containment stops the bleeding: it limits spread and impact while evidence is preserved.</p>
+<section id="short-term-containment">
+<h4><span class="section-number">14.4.3.1. </span>Short-Term Containment<a class="headerlink" href="#short-term-containment" title="Link to this heading">#</a></h4>
+<p>Short-term containment is immediate and may be imperfect. Examples: isolating a compromised host
+from the network (remove from VLAN, block at switch), disabling a compromised account, applying
+an emergency firewall rule to block outbound traffic to the attacker’s C2 IP. Short-term
+containment prioritises stopping spread over preserving full system functionality.</p>
+</section>
+<section id="long-term-containment">
+<h4><span class="section-number">14.4.3.2. </span>Long-Term Containment<a class="headerlink" href="#long-term-containment" title="Link to this heading">#</a></h4>
+<p>Long-term containment replaces short-term measures with more sustainable ones: patching
+the vulnerability that enabled the breach, replacing compromised credentials, deploying network
+segmentation that prevents the threat from spreading. Long-term containment may run in parallel
+with eradication and recovery.</p>
+</section>
+</section>
+<section id="eradication">
+<h3><span class="section-number">14.4.4. </span>Eradication<a class="headerlink" href="#eradication" title="Link to this heading">#</a></h3>
+<p>Eradication removes the threat from every affected system: deleting malware, removing attacker-
+created accounts, revoking stolen credentials (and rotating all credentials that may have been
+observed), removing persistence mechanisms (scheduled tasks, registry run keys, cron jobs,
+WMI subscriptions), and rebuilding systems where the threat cannot be fully removed.</p>
+<section id="rebuild-versus-clean">
+<h4><span class="section-number">14.4.4.1. </span>Rebuild Versus Clean<a class="headerlink" href="#rebuild-versus-clean" title="Link to this heading">#</a></h4>
+<p>Rebuilding a compromised system from a known-good image is the gold standard: it eliminates
+the possibility of persistent backdoors that evaded detection. Cleaning (removing the known
+malware and persistence mechanisms from a live system) is faster but relies on the accuracy
+of the investigation. For critical systems that may have been compromised at a deep level
+(kernel rootkit, firmware), rebuild is the only defensible approach.</p>
+</section>
+</section>
+<section id="recovery">
+<h3><span class="section-number">14.4.5. </span>Recovery<a class="headerlink" href="#recovery" title="Link to this heading">#</a></h3>
+<p>Recovery returns affected systems to normal operation. It includes: restoring from clean backups,
+verifying system integrity, enhanced monitoring to confirm the threat is gone, and gradual
+service restoration with monitoring at each step.</p>
+<section id="recovery-validation">
+<h4><span class="section-number">14.4.5.1. </span>Recovery Validation<a class="headerlink" href="#recovery-validation" title="Link to this heading">#</a></h4>
+<p>Before declaring recovery complete, the response team must verify that: all known malware
+and persistence mechanisms are removed, the initial access vector is closed (patched or
+mitigated), monitoring is in place to detect recurrence, and affected data has been audited
+for integrity. Many incidents have recurred because recovery was declared prematurely.</p>
+</section>
+</section>
+<section id="post-incident-activity">
+<h3><span class="section-number">14.4.6. </span>Post-Incident Activity<a class="headerlink" href="#post-incident-activity" title="Link to this heading">#</a></h3>
+<p>The post-incident phase produces two outputs: a final incident report and a lessons-learned
+review.</p>
+<section id="post-incident-report-structure">
+<h4><span class="section-number">14.4.6.1. </span>Post-Incident Report Structure<a class="headerlink" href="#post-incident-report-structure" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Executive summary (business impact, timeline, actions taken).</p></li>
+<li><p>Incident timeline (hour-by-hour narrative from first indicator to closure).</p></li>
+<li><p>Root cause analysis.</p></li>
+<li><p>Affected systems and data.</p></li>
+<li><p>Actions taken (containment, eradication, recovery steps).</p></li>
+<li><p>Recommendations (changes to prevent recurrence).</p></li>
+<li><p>Regulatory and legal actions taken.</p></li>
+</ol>
+</section>
+<section id="lessons-learned">
+<h4><span class="section-number">14.4.6.2. </span>Lessons Learned<a class="headerlink" href="#lessons-learned" title="Link to this heading">#</a></h4>
+<p>The lessons-learned review asks: What went well? What went poorly? What would we do differently?
+It is blameless: the goal is process improvement, not attribution of fault. Findings feed back
+into the Preparation phase: updated playbooks, additional detection rules, staff training gaps.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="legal-and-regulatory-obligations">
+<h2><span class="section-number">14.5. </span>Legal and Regulatory Obligations<a class="headerlink" href="#legal-and-regulatory-obligations" title="Link to this heading">#</a></h2>
+<section id="breach-notification-laws">
+<h3><span class="section-number">14.5.1. </span>Breach Notification Laws<a class="headerlink" href="#breach-notification-laws" title="Link to this heading">#</a></h3>
+<p>Most jurisdictions require notification of affected individuals and regulators within defined
+windows. GDPR (EU) requires notification to the supervisory authority within 72 hours of awareness
+of a personal data breach if there is risk to individuals. US state laws (all 50 states have
+breach notification laws) and sector regulations (HIPAA for healthcare, PCI DSS for payment card)
+impose additional obligations.</p>
+</section>
+<section id="law-enforcement-and-evidence-preservation">
+<h3><span class="section-number">14.5.2. </span>Law Enforcement and Evidence Preservation<a class="headerlink" href="#law-enforcement-and-evidence-preservation" title="Link to this heading">#</a></h3>
+<p>If criminal prosecution is anticipated, evidence must be preserved in a forensically sound manner
+from the earliest moment of the response. Law enforcement engagement (FBI Cyber Division in the US,
+NCSC in the UK) is appropriate for nation-state intrusions, ransomware by sanctioned actors, and
+attacks on critical infrastructure. Engaging law enforcement before evidence is collected ensures
+that evidence is handled in a manner admissible in court.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">14.6. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>The median dwell time (time from initial breach to detection) globally has declined from hundreds
+of days a decade ago to a few weeks, but that still means weeks of unrestricted attacker access
+before response begins. Every day of undetected intrusion increases the scope of data exposed,
+the number of systems compromised, and the cost of remediation. Organisations with tested,
+practised incident response plans recover faster and with lower cost than those without them.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">14.7. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>Post-breach analysis of major ransomware incidents has repeatedly found that the attackers were
+active inside the network for days to weeks before deploying the ransomware payload. During that
+dwell time, they explored the network, exfiltrated data, and deployed backup access mechanisms.
+Organisations that detected the intrusion during this phase and responded quickly prevented
+the ransomware deployment. Those that detected only when the ransomware deployed faced a far
+more difficult recovery. This finding drives the investment in MTTD reduction and proactive
+threat hunting that modern security programmes prioritise.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 14 -- Incident response: severity scorer and timeline builder</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dataclasses</span><span class="w"> </span><span class="kn">import</span> <span class="n">dataclass</span><span class="p">,</span> <span class="n">field</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">IncidentEvent</span><span class="p">:</span>
+    <span class="n">timestamp</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">phase</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">actor</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">action</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">ioc</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Incident</span><span class="p">:</span>
+    <span class="nb">id</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">events</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">IncidentEvent</span><span class="p">]</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="nb">list</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ts</span><span class="p">,</span> <span class="n">phase</span><span class="p">,</span> <span class="n">actor</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">ioc</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">IncidentEvent</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span> <span class="n">phase</span><span class="p">,</span> <span class="n">actor</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">ioc</span><span class="p">))</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">severity_score</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">events</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s2">&quot;ransomware&quot;</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">action</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>   <span class="n">score</span> <span class="o">+=</span> <span class="mi">40</span>
+            <span class="k">if</span> <span class="s2">&quot;exfiltrat&quot;</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">action</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>    <span class="n">score</span> <span class="o">+=</span> <span class="mi">30</span>
+            <span class="k">if</span> <span class="s2">&quot;domain admin&quot;</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">action</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span> <span class="n">score</span> <span class="o">+=</span> <span class="mi">25</span>
+            <span class="k">if</span> <span class="s2">&quot;lateral&quot;</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">action</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>      <span class="n">score</span> <span class="o">+=</span> <span class="mi">15</span>
+            <span class="k">if</span> <span class="s2">&quot;credential&quot;</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">action</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>   <span class="n">score</span> <span class="o">+=</span> <span class="mi">10</span>
+        <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">print_timeline</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">  Incident: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s2"> -- </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="s1">&#39;Timestamp&#39;</span><span class="si">:</span><span class="s2">&lt;22</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Phase&#39;</span><span class="si">:</span><span class="s2">&lt;15</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Actor&#39;</span><span class="si">:</span><span class="s2">&lt;18</span><span class="si">}</span><span class="s2"> Action&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  &quot;</span> <span class="o">+</span> <span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">85</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">events</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">e</span><span class="o">.</span><span class="n">timestamp</span><span class="si">:</span><span class="s2">&lt;22</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">e</span><span class="o">.</span><span class="n">phase</span><span class="si">:</span><span class="s2">&lt;15</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">e</span><span class="o">.</span><span class="n">actor</span><span class="si">:</span><span class="s2">&lt;18</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">e</span><span class="o">.</span><span class="n">action</span><span class="si">}</span><span class="s2">&quot;</span>
+                  <span class="o">+</span> <span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  [IOC: </span><span class="si">{</span><span class="n">e</span><span class="o">.</span><span class="n">ioc</span><span class="si">}</span><span class="s2">]&quot;</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">ioc</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span><span class="p">))</span>
+        <span class="n">score</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">severity_score</span><span class="p">()</span>
+        <span class="n">severity</span> <span class="o">=</span> <span class="s2">&quot;CRITICAL&quot;</span> <span class="k">if</span> <span class="n">score</span><span class="o">&gt;=</span><span class="mi">80</span> <span class="k">else</span> <span class="s2">&quot;HIGH&quot;</span> <span class="k">if</span> <span class="n">score</span><span class="o">&gt;=</span><span class="mi">50</span> <span class="k">else</span> <span class="s2">&quot;MEDIUM&quot;</span> <span class="k">if</span> <span class="n">score</span><span class="o">&gt;=</span><span class="mi">25</span> <span class="k">else</span> <span class="s2">&quot;LOW&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">  Severity score: </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2">/100 (</span><span class="si">{</span><span class="n">severity</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+
+<span class="c1"># Simulate a ransomware incident timeline</span>
+<span class="n">inc</span> <span class="o">=</span> <span class="n">Incident</span><span class="p">(</span><span class="s2">&quot;IR-2026-042&quot;</span><span class="p">,</span> <span class="s2">&quot;Ransomware: MegaCorp manufacturing network&quot;</span><span class="p">)</span>
+<span class="n">inc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;2026-05-20 02:14&quot;</span><span class="p">,</span> <span class="s2">&quot;Detection&quot;</span><span class="p">,</span>   <span class="s2">&quot;SIEM&quot;</span><span class="p">,</span>          <span class="s2">&quot;Alert: anomalous RDP auth from 198.51.100.5&quot;</span><span class="p">,</span>    <span class="s2">&quot;198.51.100.5&quot;</span><span class="p">)</span>
+<span class="n">inc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;2026-05-20 07:30&quot;</span><span class="p">,</span> <span class="s2">&quot;Analysis&quot;</span><span class="p">,</span>    <span class="s2">&quot;SOC Analyst&quot;</span><span class="p">,</span>   <span class="s2">&quot;Triage confirms: admin account compromised&quot;</span><span class="p">)</span>
+<span class="n">inc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;2026-05-20 08:15&quot;</span><span class="p">,</span> <span class="s2">&quot;Containment&quot;</span><span class="p">,</span> <span class="s2">&quot;Incident Cmd&quot;</span><span class="p">,</span>  <span class="s2">&quot;Compromised account disabled; RDP blocked at FW&quot;</span><span class="p">)</span>
+<span class="n">inc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;2026-05-20 09:00&quot;</span><span class="p">,</span> <span class="s2">&quot;Analysis&quot;</span><span class="p">,</span>    <span class="s2">&quot;Forensics&quot;</span><span class="p">,</span>     <span class="s2">&quot;Memory dump: Cobalt Strike beacon found&quot;</span><span class="p">,</span>        <span class="s2">&quot;beacon_x64.dll&quot;</span><span class="p">)</span>
+<span class="n">inc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;2026-05-20 09:45&quot;</span><span class="p">,</span> <span class="s2">&quot;Analysis&quot;</span><span class="p">,</span>    <span class="s2">&quot;Forensics&quot;</span><span class="p">,</span>     <span class="s2">&quot;Lateral movement confirmed: 14 hosts affected&quot;</span><span class="p">)</span>
+<span class="n">inc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;2026-05-20 11:00&quot;</span><span class="p">,</span> <span class="s2">&quot;Eradication&quot;</span><span class="p">,</span> <span class="s2">&quot;IT Ops&quot;</span><span class="p">,</span>        <span class="s2">&quot;14 hosts isolated; credential reset initiated&quot;</span><span class="p">)</span>
+<span class="n">inc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;2026-05-20 14:00&quot;</span><span class="p">,</span> <span class="s2">&quot;Eradication&quot;</span><span class="p">,</span> <span class="s2">&quot;IT Ops&quot;</span><span class="p">,</span>        <span class="s2">&quot;Malware removed; persistence mechanisms cleared&quot;</span><span class="p">)</span>
+<span class="n">inc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;2026-05-21 08:00&quot;</span><span class="p">,</span> <span class="s2">&quot;Recovery&quot;</span><span class="p">,</span>    <span class="s2">&quot;IT Ops&quot;</span><span class="p">,</span>        <span class="s2">&quot;Systems rebuilt from clean gold images&quot;</span><span class="p">)</span>
+<span class="n">inc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;2026-05-21 16:00&quot;</span><span class="p">,</span> <span class="s2">&quot;Recovery&quot;</span><span class="p">,</span>    <span class="s2">&quot;IT Ops&quot;</span><span class="p">,</span>        <span class="s2">&quot;Services restored; enhanced monitoring active&quot;</span><span class="p">)</span>
+<span class="n">inc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;2026-05-23 10:00&quot;</span><span class="p">,</span> <span class="s2">&quot;Post-Incident&quot;</span><span class="p">,</span><span class="s2">&quot;Incident Cmd&quot;</span><span class="p">,</span> <span class="s2">&quot;Lessons-learned review completed; playbook updated&quot;</span><span class="p">)</span>
+
+<span class="n">inc</span><span class="o">.</span><span class="n">print_timeline</span><span class="p">()</span>
+
+<span class="c1"># MTTD / MTTR calculation</span>
+<span class="c1"># Breach at ~2026-05-18 (estimated from forensics); detected 2026-05-20 02:14</span>
+<span class="n">breach</span>    <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2026</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">detected</span>  <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2026</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+<span class="n">contained</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2026</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span>  <span class="mi">0</span><span class="p">)</span>
+<span class="n">recovered</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2026</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span>  <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">mttd</span> <span class="o">=</span> <span class="p">(</span><span class="n">detected</span>  <span class="o">-</span> <span class="n">breach</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span> <span class="o">/</span> <span class="mi">3600</span>
+<span class="n">mttr</span> <span class="o">=</span> <span class="p">(</span><span class="n">contained</span> <span class="o">-</span> <span class="n">detected</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span> <span class="o">/</span> <span class="mi">3600</span>
+<span class="n">mtti</span> <span class="o">=</span> <span class="p">(</span><span class="n">recovered</span> <span class="o">-</span> <span class="n">detected</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span> <span class="o">/</span> <span class="mi">3600</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">  MTTD (breach -&gt; detect)  : </span><span class="si">{</span><span class="n">mttd</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> hours&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  MTTR (detect -&gt; contain) : </span><span class="si">{</span><span class="n">mttr</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> hours&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Total recovery time      : </span><span class="si">{</span><span class="n">mtti</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> hours&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Incident: IR-2026-042 -- Ransomware: MegaCorp manufacturing network
+  Timestamp              Phase           Actor              Action
+  -------------------------------------------------------------------------------------
+  2026-05-20 02:14       Detection       SIEM               Alert: anomalous RDP auth from 198.51.100.5  [IOC: 198.51.100.5]
+  2026-05-20 07:30       Analysis        SOC Analyst        Triage confirms: admin account compromised
+  2026-05-20 08:15       Containment     Incident Cmd       Compromised account disabled; RDP blocked at FW
+  2026-05-20 09:00       Analysis        Forensics          Memory dump: Cobalt Strike beacon found  [IOC: beacon_x64.dll]
+  2026-05-20 09:45       Analysis        Forensics          Lateral movement confirmed: 14 hosts affected
+  2026-05-20 11:00       Eradication     IT Ops             14 hosts isolated; credential reset initiated
+  2026-05-20 14:00       Eradication     IT Ops             Malware removed; persistence mechanisms cleared
+  2026-05-21 08:00       Recovery        IT Ops             Systems rebuilt from clean gold images
+  2026-05-21 16:00       Recovery        IT Ops             Services restored; enhanced monitoring active
+  2026-05-23 10:00       Post-Incident   Incident Cmd       Lessons-learned review completed; playbook updated
+
+  Severity score: 25/100 (MEDIUM)
+
+  MTTD (breach -&gt; detect)  : 36.2 hours
+  MTTR (detect -&gt; contain) : 8.8 hours
+  Total recovery time      : 37.8 hours
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">14.8. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> The difference between a security event and a security incident is:
+A. Events are internal, incidents are external  B. An incident is an event that actually or potentially jeopardises CIA  C. Events are logged, incidents are not  D. Incidents require law enforcement involvement</p>
+<p><strong>Q2.</strong> NIST SP 800-61 defines incident response phases. Which phase occurs BEFORE an incident?
+A. Detection  B. Containment  C. Preparation  D. Recovery</p>
+<p><strong>Q3.</strong> Short-term containment prioritises:
+A. Full forensic preservation over all else  B. Stopping spread immediately, possibly at cost of full functionality  C. Completing eradication before isolating systems  D. Notifying regulators</p>
+<p><strong>Q4.</strong> The gold standard for eradication of a deeply compromised system is:
+A. Running a full antivirus scan  B. Deleting the malware files  C. Rebuilding from a known-good image  D. Rebooting the system</p>
+<p><strong>Q5.</strong> MTTD measures:
+A. Time from detection to containment  B. Time from breach to detection  C. Time from containment to recovery  D. Time to notify regulators</p>
+<p><strong>Q6.</strong> GDPR breach notification to the supervisory authority is required within:
+A. 24 hours  B. 72 hours  C. 7 days  D. 30 days</p>
+<p><strong>Q7.</strong> The lessons-learned review is designed to be:
+A. A blame assignment exercise  B. Blameless and process-improvement focused  C. Conducted only after criminal incidents  D. Optional for P2 and lower incidents</p>
+<p><strong>Q8.</strong> An Indicator of Compromise (IOC) is used during response to:
+A. Write new firewall rules  B. Identify additional affected systems and enable blocking  C. Prove the attacker’s identity  D. Calculate ROSI</p>
+<p><strong>Q9.</strong> Recovery validation requires confirming that:
+A. All employees have been retrained  B. The initial access vector is closed and monitoring is in place  C. Law enforcement has closed the case  D. The SIEM has been upgraded</p>
+<p><strong>Q10.</strong> Which regulatory framework requires healthcare organisations to notify HHS of breaches?
+A. GDPR  B. PCI DSS  C. HIPAA  D. SOX</p>
+<p><em>Answers: Q1 B, Q2 C, Q3 B, Q4 C, Q5 B, Q6 B, Q7 B, Q8 B, Q9 B, Q10 C.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">14.9. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – Playbook</strong>: Write a step-by-step incident response playbook for a ransomware incident. Cover each NIST phase with at least three specific actions per phase. Include who is responsible for each action and what tools are used.</p>
+<p><strong>Part B – Triage exercise</strong>: Given the following alert: “SIEM: 847 failed SSH logins from 203.0.113.50 to jump-host-01 in 10 minutes, followed by 1 successful login at 03:47 local time.” Rate the severity, identify the likely attack type, list three immediate containment actions, and name three forensic artefacts to collect.</p>
+<p><strong>Part C – Incident timeline</strong>: Simulate an incident timeline (minimum 8 events) for a business email compromise attack where the finance director’s email was compromised, used to authorise a fraudulent wire transfer, and discovered by the bank three days later. Include timestamps, phases, actors, and actions.</p>
+<p><strong>Part D – Notification letter</strong>: Draft a breach notification letter to affected customers following a fictitious database breach exposing name and email address (not financial data). Meet GDPR requirements: what happened, when, what data, what action taken, what rights the subject has.</p>
+</section>
+<section id="references">
+<h2><span class="section-number">14.10. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<div class="docutils container" id="id2">
+<div role="list" class="citation-list">
+<div class="citation" id="id9" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">NationalIoSaTechnology12</a><span class="fn-bracket">]</span></span>
+<p>National Institute of Standards and Technology. Computer security incident handling guide. Technical Report NIST SP 800-61 Rev. 2, U.S. Department of Commerce, 2012. <a class="reference external" href="https://doi.org/10.6028/NIST.SP.800-61r2">doi:10.6028/NIST.SP.800-61r2</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/14_incident_response"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../13_forensics/chapter13.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">13. </span>Chapter 13: Digital Forensics</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../15_malware/chapter15.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">15. </span>Chapter 15: Malware Analysis</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">14.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">14.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#incidents-versus-events">14.3. Incidents Versus Events</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#incident-severity-classification">14.3.1. Incident Severity Classification</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-nist-sp-800-61-lifecycle">14.4. The NIST SP 800-61 Lifecycle</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation">14.4.1. Preparation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#csirt-roles">14.4.1.1. CSIRT Roles</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detection-and-analysis">14.4.2. Detection and Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-triage-questions">14.4.2.1. Initial Triage Questions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-iocs">14.4.2.2. Using IOCs</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#containment">14.4.3. Containment</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#short-term-containment">14.4.3.1. Short-Term Containment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#long-term-containment">14.4.3.2. Long-Term Containment</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eradication">14.4.4. Eradication</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rebuild-versus-clean">14.4.4.1. Rebuild Versus Clean</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recovery">14.4.5. Recovery</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#recovery-validation">14.4.5.1. Recovery Validation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-incident-activity">14.4.6. Post-Incident Activity</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#post-incident-report-structure">14.4.6.1. Post-Incident Report Structure</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lessons-learned">14.4.6.2. Lessons Learned</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legal-and-regulatory-obligations">14.5. Legal and Regulatory Obligations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#breach-notification-laws">14.5.1. Breach Notification Laws</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#law-enforcement-and-evidence-preservation">14.5.2. Law Enforcement and Evidence Preservation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">14.6. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">14.7. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">14.8. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">14.9. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">14.10. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

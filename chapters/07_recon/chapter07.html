@@ -1,0 +1,954 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>7. Chapter 7: Reconnaissance and OSINT &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/07_recon/chapter07';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8. Chapter 8: Scanning and Enumeration" href="../08_scanning/chapter08.html" />
+    <link rel="prev" title="6. Chapter 6: Penetration Testing Methodology" href="../06_pentest_methodology/chapter06.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/07_recon/chapter07.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 7: Reconnaissance and OSINT</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">7.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">7.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-intelligence-value-of-reconnaissance">7.3. The Intelligence Value of Reconnaissance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-passive-recon-comes-first">7.3.1. Why Passive Recon Comes First</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cost-of-skipping-recon">7.3.1.1. The Cost of Skipping Recon</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passive-reconnaissance-techniques">7.4. Passive Reconnaissance Techniques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dns-enumeration">7.4.1. DNS Enumeration</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zone-transfer-axfr">7.4.1.1. Zone Transfer (AXFR)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#whois-and-asn-lookup">7.4.2. WHOIS and ASN Lookup</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pivoting-via-asn">7.4.2.1. Pivoting via ASN</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#certificate-transparency-logs">7.4.3. Certificate Transparency Logs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shodan-and-attack-surface-search-engines">7.4.4. Shodan and Attack-Surface Search Engines</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#other-search-engines">7.4.4.1. Other Search Engines</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#google-dorking">7.4.5. Google Dorking</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#osint-on-personnel">7.5. OSINT on Personnel</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linkedin-and-social-media">7.5.1. LinkedIn and Social Media</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#email-naming-convention">7.5.1.1. Email Naming Convention</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#job-postings">7.5.2. Job Postings</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subdomain-enumeration">7.6. Subdomain Enumeration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionary-based-brute-force">7.6.1. Dictionary-Based Brute Force</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#passive-sources">7.6.2. Passive Sources</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">7.7. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">7.8. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">7.9. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">7.10. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">7.11. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-7-reconnaissance-and-osint">
+<h1><span class="section-number">7. </span>Chapter 7: Reconnaissance and OSINT<a class="headerlink" href="#chapter-7-reconnaissance-and-osint" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“Give me six hours to chop down a tree and I will spend the first four sharpening the axe.”
+Abraham Lincoln (adapted as a recon maxim)</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">7.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Distinguish passive from active reconnaissance and explain when each is appropriate.</p></li>
+<li><p>Use public sources to enumerate an organisation’s external attack surface.</p></li>
+<li><p>Gather DNS records, WHOIS data, and certificate transparency logs for a target domain.</p></li>
+<li><p>Use Shodan and similar search engines to identify exposed services.</p></li>
+<li><p>Perform OSINT on a target organisation using LinkedIn, job postings, and social media.</p></li>
+<li><p>Enumerate subdomains using multiple techniques.</p></li>
+<li><p>Assess the external attack surface and identify high-value recon findings.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">7.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Passive recon</strong>: gathering intelligence without touching target systems.</p></li>
+<li><p><strong>Active recon</strong>: interacting with target systems; leaves traces in logs.</p></li>
+<li><p><strong>OSINT</strong>: Open-Source Intelligence; intelligence from publicly available sources.</p></li>
+<li><p><strong>WHOIS</strong>: protocol/database for registrant information about domains and IP blocks.</p></li>
+<li><p><strong>ASN</strong>: Autonomous System Number; identifies an organisation’s IP routing block.</p></li>
+<li><p><strong>Certificate Transparency (CT)</strong>: public logs of all TLS certificates issued.</p></li>
+<li><p><strong>Shodan</strong>: search engine that indexes internet-connected devices and services.</p></li>
+<li><p><strong>Subdomain enumeration</strong>: discovering subdomains of a target domain.</p></li>
+<li><p><strong>Google dorking</strong>: using advanced search operators to find sensitive information.</p></li>
+<li><p><strong>Wayback Machine</strong>: Internet Archive service that caches historical web pages.</p></li>
+<li><p><strong>theHarvester</strong>: tool for gathering emails, subdomains, and hosts from public sources.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="the-intelligence-value-of-reconnaissance">
+<h2><span class="section-number">7.3. </span>The Intelligence Value of Reconnaissance<a class="headerlink" href="#the-intelligence-value-of-reconnaissance" title="Link to this heading">#</a></h2>
+<p>Reconnaissance is the phase that determines the quality of everything that follows. An attacker or
+tester who spends two hours on reconnaissance before touching a target will outperform one who scans
+immediately, because they understand the organisation’s technology stack, naming conventions,
+personnel, and third-party relationships before triggering any alerts.</p>
+<section id="why-passive-recon-comes-first">
+<h3><span class="section-number">7.3.1. </span>Why Passive Recon Comes First<a class="headerlink" href="#why-passive-recon-comes-first" title="Link to this heading">#</a></h3>
+<p>Passive recon leaves no traces in the target’s logs because it uses public sources rather than
+interacting with target systems directly. It reveals: external IP ranges, domain names and
+subdomains, email naming conventions, employee names and roles, technology choices (inferred from
+job postings), third-party dependencies (inferred from DNS and certificate records), and sometimes
+exposed credentials (from breach databases).</p>
+<section id="the-cost-of-skipping-recon">
+<h4><span class="section-number">7.3.1.1. </span>The Cost of Skipping Recon<a class="headerlink" href="#the-cost-of-skipping-recon" title="Link to this heading">#</a></h4>
+<p>Scanners generate noise. An attacker who scans without first understanding the target may trigger
+alerts, exhaust IP addresses, or miss the actual entry point (a forgotten subdomain, a staging
+environment, a vendor’s VPN gateway). Intelligence gathered in passive recon focuses subsequent
+active techniques precisely.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="passive-reconnaissance-techniques">
+<h2><span class="section-number">7.4. </span>Passive Reconnaissance Techniques<a class="headerlink" href="#passive-reconnaissance-techniques" title="Link to this heading">#</a></h2>
+<section id="dns-enumeration">
+<h3><span class="section-number">7.4.1. </span>DNS Enumeration<a class="headerlink" href="#dns-enumeration" title="Link to this heading">#</a></h3>
+<p>DNS is a gold mine of passive intelligence. The standard record types and what they reveal:</p>
+<ul class="simple">
+<li><p><strong>A / AAAA</strong>: maps hostnames to IPv4/IPv6 addresses; reveals every publicly named host.</p></li>
+<li><p><strong>MX</strong>: mail exchangers; identifies the mail provider (Google Workspace, Microsoft 365,
+self-hosted) and often reveals the organisation’s internal mail domain name.</p></li>
+<li><p><strong>TXT</strong>: SPF, DKIM, and DMARC records; DMARC policy reveals email security maturity.
+Also used for domain verification strings that reveal cloud services in use (Google Search
+Console, Atlassian, Salesforce, etc.).</p></li>
+<li><p><strong>NS</strong>: authoritative name servers; identifies the DNS provider or registrar.</p></li>
+<li><p><strong>CNAME</strong>: aliases; reveal the actual hosting provider behind a friendly name
+(<a class="reference external" href="http://target.s3.amazonaws.com">target.s3.amazonaws.com</a>, <a class="reference external" href="http://target.azurewebsites.net">target.azurewebsites.net</a>).</p></li>
+</ul>
+<section id="zone-transfer-axfr">
+<h4><span class="section-number">7.4.1.1. </span>Zone Transfer (AXFR)<a class="headerlink" href="#zone-transfer-axfr" title="Link to this heading">#</a></h4>
+<p>A DNS zone transfer copies all records from a primary to a secondary name server. Misconfigured
+name servers that allow zone transfers from any source hand the entire DNS zone to any requester.
+<code class="docutils literal notranslate"><span class="pre">dig</span> <span class="pre">AXFR</span> <span class="pre">&#64;ns1.target.com</span> <span class="pre">target.com</span></code> tests for this. Zone transfer misconfiguration is rare on
+modern public DNS but common on internal name servers.</p>
+</section>
+</section>
+<section id="whois-and-asn-lookup">
+<h3><span class="section-number">7.4.2. </span>WHOIS and ASN Lookup<a class="headerlink" href="#whois-and-asn-lookup" title="Link to this heading">#</a></h3>
+<p>WHOIS databases contain registration information for domains and IP blocks. For newer domains under
+GDPR, the registrant contact is often redacted, but the registrar, registration date, name servers,
+and expiry date remain. IP WHOIS (via ARIN, RIPE, APNIC) reveals the ASN, the organisation name,
+the physical address of the address block, and the abuse contact.</p>
+<section id="pivoting-via-asn">
+<h4><span class="section-number">7.4.2.1. </span>Pivoting via ASN<a class="headerlink" href="#pivoting-via-asn" title="Link to this heading">#</a></h4>
+<p>Once an ASN is identified, it reveals all IP prefixes announced by that organisation. An attacker
+who knows the ASN can enumerate the entire public IP footprint without querying the target directly.
+Tools like <code class="docutils literal notranslate"><span class="pre">bgp.he.net</span></code> and <code class="docutils literal notranslate"><span class="pre">ipinfo.io</span></code> provide this lookup.</p>
+</section>
+</section>
+<section id="certificate-transparency-logs">
+<h3><span class="section-number">7.4.3. </span>Certificate Transparency Logs<a class="headerlink" href="#certificate-transparency-logs" title="Link to this heading">#</a></h3>
+<p>Every publicly trusted TLS certificate is logged to Certificate Transparency (CT) logs by the
+issuing CA. CT logs are public and searchable. <code class="docutils literal notranslate"><span class="pre">crt.sh</span></code> queries all major CT logs by domain name
+and returns every certificate ever issued, including:</p>
+<ul class="simple">
+<li><p>Subdomains listed as Subject Alternative Names (SANs).</p></li>
+<li><p>Historical subdomains for decommissioned systems that may still be accessible.</p></li>
+<li><p>Third-party services (e.g., <a class="reference external" href="http://mail.target.com">mail.target.com</a> issued by SendGrid reveals the email provider).</p></li>
+</ul>
+<p>CT log enumeration is entirely passive and reveals subdomains that DNS enumeration misses because
+they are not publicly resolvable but do have valid certificates.</p>
+</section>
+<section id="shodan-and-attack-surface-search-engines">
+<h3><span class="section-number">7.4.4. </span>Shodan and Attack-Surface Search Engines<a class="headerlink" href="#shodan-and-attack-surface-search-engines" title="Link to this heading">#</a></h3>
+<p>Shodan continuously scans the internet and indexes banners, service versions, and certificate data
+for every reachable host. A Shodan query for an organisation’s IP ranges reveals:</p>
+<ul class="simple">
+<li><p>Exposed RDP (3389), SSH (22), Telnet (23), FTP (21) services.</p></li>
+<li><p>Industrial control systems and IoT devices.</p></li>
+<li><p>Misconfigurations (default credentials in banners, exposed admin panels).</p></li>
+<li><p>Software versions that can be cross-referenced with CVE databases.</p></li>
+</ul>
+<section id="other-search-engines">
+<h4><span class="section-number">7.4.4.1. </span>Other Search Engines<a class="headerlink" href="#other-search-engines" title="Link to this heading">#</a></h4>
+<p>Censys and FOFA offer similar capabilities with different indexing. Shodan facets allow filtering
+by ASN, country, port, and product. <code class="docutils literal notranslate"><span class="pre">shodan</span> <span class="pre">domain</span> <span class="pre">target.com</span></code> reveals all hosts Shodan has indexed
+under a domain, often revealing subdomains not found via DNS.</p>
+</section>
+</section>
+<section id="google-dorking">
+<h3><span class="section-number">7.4.5. </span>Google Dorking<a class="headerlink" href="#google-dorking" title="Link to this heading">#</a></h3>
+<p>Advanced Google search operators surface sensitive files and misconfigured pages:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Dork</p></th>
+<th class="head"><p>Finds</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">site:target.com</span> <span class="pre">filetype:pdf</span></code></p></td>
+<td><p>PDF documents hosted on the target</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">site:target.com</span> <span class="pre">inurl:admin</span></code></p></td>
+<td><p>Admin panels</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">site:target.com</span> <span class="pre">&quot;index</span> <span class="pre">of&quot;</span></code></p></td>
+<td><p>Open directory listings</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">site:target.com</span> <span class="pre">ext:env</span> <span class="pre">OR</span> <span class="pre">ext:sql</span> <span class="pre">OR</span> <span class="pre">ext:log</span></code></p></td>
+<td><p>Exposed config or log files</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&quot;&#64;target.com&quot;</span> <span class="pre">filetype:xlsx</span></code></p></td>
+<td><p>Spreadsheets mentioning target email addresses</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="osint-on-personnel">
+<h2><span class="section-number">7.5. </span>OSINT on Personnel<a class="headerlink" href="#osint-on-personnel" title="Link to this heading">#</a></h2>
+<section id="linkedin-and-social-media">
+<h3><span class="section-number">7.5.1. </span>LinkedIn and Social Media<a class="headerlink" href="#linkedin-and-social-media" title="Link to this heading">#</a></h3>
+<p>LinkedIn reveals: employee names, titles, departments, tenure, and sometimes direct-report
+relationships. Technology choices inferred from job descriptions (if they hire for Kubernetes and
+Terraform, their infrastructure is cloud-native). Alumni networks reveal former employees who may
+have residual access or institutional knowledge that can be elicited.</p>
+<section id="email-naming-convention">
+<h4><span class="section-number">7.5.1.1. </span>Email Naming Convention<a class="headerlink" href="#email-naming-convention" title="Link to this heading">#</a></h4>
+<p>Five or six email addresses from a breach database or CT log establish the naming convention
+(<code class="docutils literal notranslate"><span class="pre">first.last&#64;</span></code>, <code class="docutils literal notranslate"><span class="pre">flast&#64;</span></code>, <code class="docutils literal notranslate"><span class="pre">f.last&#64;</span></code>). This enables construction of a valid email list for the
+entire organisation, which is the precursor to spear phishing and password-spray attacks.</p>
+</section>
+</section>
+<section id="job-postings">
+<h3><span class="section-number">7.5.2. </span>Job Postings<a class="headerlink" href="#job-postings" title="Link to this heading">#</a></h3>
+<p>Job postings are inadvertent technical disclosure. “3+ years of experience with Palo Alto Networks
+and Fortinet” reveals the network equipment. “Proficiency in Azure Active Directory and Okta” reveals
+the identity stack. “Experience with Nessus and Splunk” reveals the security tooling. An attacker
+reads job postings to understand the target’s technology landscape without touching any system.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="subdomain-enumeration">
+<h2><span class="section-number">7.6. </span>Subdomain Enumeration<a class="headerlink" href="#subdomain-enumeration" title="Link to this heading">#</a></h2>
+<section id="dictionary-based-brute-force">
+<h3><span class="section-number">7.6.1. </span>Dictionary-Based Brute Force<a class="headerlink" href="#dictionary-based-brute-force" title="Link to this heading">#</a></h3>
+<p>Tools like <code class="docutils literal notranslate"><span class="pre">gobuster</span> <span class="pre">dns</span></code>, <code class="docutils literal notranslate"><span class="pre">ffuf</span></code>, and <code class="docutils literal notranslate"><span class="pre">amass</span></code> send DNS queries for combinations of a wordlist
+with the target domain. A good wordlist (SecLists, JHaddix’s <code class="docutils literal notranslate"><span class="pre">all.txt</span></code>) covers common subdomains
+(api, dev, staging, admin, vpn, mail, internal, test). Slow, spread-out queries blend with normal
+recursive DNS traffic.</p>
+</section>
+<section id="passive-sources">
+<h3><span class="section-number">7.6.2. </span>Passive Sources<a class="headerlink" href="#passive-sources" title="Link to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">amass</span> <span class="pre">enum</span> <span class="pre">-passive</span> <span class="pre">-d</span> <span class="pre">target.com</span></code> queries CT logs, DNS databases, and threat intelligence feeds
+without sending a single packet to the target. <code class="docutils literal notranslate"><span class="pre">theHarvester</span> <span class="pre">-d</span> <span class="pre">target.com</span> <span class="pre">-b</span> <span class="pre">all</span></code> aggregates
+results from search engines, LinkedIn, PGP key servers, and threat feeds. Passive subdomain
+enumeration routinely finds dozens of hosts that active scanning would miss.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">7.7. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>Recon is the phase where attackers find entry points that defenders have forgotten exist. A staging
+environment with default credentials, a developer’s exposed S3 bucket, an old VPN gateway running
+unpatched software, a subdomain pointing to an unclaimed cloud service all of these are found
+during recon, not during scanning. Defenders who run their own recon programme, continuously
+monitoring their external attack surface, catch these exposures before attackers do.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">7.8. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>A recurring pattern in breach post-mortems is that initial access was through a forgotten or
+shadow-IT asset, a VPN instance not in the asset inventory, a marketing microsite on a subdomain
+maintained by an agency, or a test environment inadvertently exposed to the internet. These are
+passive-recon findings; the attacker used CT logs or Shodan to find them, never triggering a
+network-based detection. External attack surface management (EASM) tools automate continuous
+monitoring of these exposures.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 7 -- Worked Example: passive recon simulation</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">hashlib</span><span class="o">,</span><span class="w"> </span><span class="nn">json</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">dns_mock</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+    <span class="c1"># Simulates DNS record lookup results for a fictional target.</span>
+    <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;A&quot;</span><span class="p">:</span>    <span class="p">[</span><span class="s2">&quot;203.0.113.10&quot;</span><span class="p">,</span> <span class="s2">&quot;203.0.113.11&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;MX&quot;</span><span class="p">:</span>   <span class="p">[</span><span class="s2">&quot;10 mail.example-corp.com&quot;</span><span class="p">,</span> <span class="s2">&quot;20 mail2.example-corp.com&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;TXT&quot;</span><span class="p">:</span>  <span class="p">[</span><span class="s2">&quot;v=spf1 include:_spf.google.com ~all&quot;</span><span class="p">,</span>
+                 <span class="s2">&quot;google-site-verification=abc123&quot;</span><span class="p">,</span>
+                 <span class="s2">&quot;MS=ms12345678&quot;</span><span class="p">,</span>
+                 <span class="s2">&quot;v=DMARC1; p=quarantine; rua=mailto:dmarc@example-corp.com&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;NS&quot;</span><span class="p">:</span>   <span class="p">[</span><span class="s2">&quot;ns1.cloudflare.com&quot;</span><span class="p">,</span> <span class="s2">&quot;ns2.cloudflare.com&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;CNAME&quot;</span><span class="p">:[</span><span class="s2">&quot;www -&gt; example-corp.github.io&quot;</span><span class="p">,</span>
+                 <span class="s2">&quot;mail -&gt; aspmx.l.google.com&quot;</span><span class="p">],</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">records</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">analyse_txt_records</span><span class="p">(</span><span class="n">txts</span><span class="p">):</span>
+    <span class="n">inferences</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">txt</span> <span class="ow">in</span> <span class="n">txts</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s2">&quot;google.com&quot;</span> <span class="ow">in</span> <span class="n">txt</span> <span class="ow">and</span> <span class="s2">&quot;spf1&quot;</span> <span class="ow">in</span> <span class="n">txt</span><span class="p">:</span>
+            <span class="n">inferences</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Email hosted: Google Workspace (SPF includes Google)&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s2">&quot;google-site-verification&quot;</span> <span class="ow">in</span> <span class="n">txt</span><span class="p">:</span>
+            <span class="n">inferences</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Google Search Console verified (web presence)&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s2">&quot;MS=&quot;</span> <span class="ow">in</span> <span class="n">txt</span><span class="p">:</span>
+            <span class="n">inferences</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Microsoft 365 domain verification present&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s2">&quot;DMARC1&quot;</span> <span class="ow">in</span> <span class="n">txt</span><span class="p">:</span>
+            <span class="n">policy</span> <span class="o">=</span> <span class="n">txt</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;p=&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="s2">&quot;p=&quot;</span> <span class="ow">in</span> <span class="n">txt</span> <span class="k">else</span> <span class="s2">&quot;none&quot;</span>
+            <span class="n">inferences</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;DMARC policy: </span><span class="si">{</span><span class="n">policy</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">inferences</span>
+
+<span class="n">domain</span> <span class="o">=</span> <span class="s2">&quot;example-corp.com&quot;</span>
+<span class="n">records</span> <span class="o">=</span> <span class="n">dns_mock</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;=== DNS Recon: </span><span class="si">{</span><span class="n">domain</span><span class="si">}</span><span class="s2"> ===</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">rtype</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">records</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">rtype</span><span class="si">:</span><span class="s2">6</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">values</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== Intelligence Inferred from TXT Records ===&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">inf</span> <span class="ow">in</span> <span class="n">analyse_txt_records</span><span class="p">(</span><span class="n">records</span><span class="p">[</span><span class="s2">&quot;TXT&quot;</span><span class="p">]):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  [+] </span><span class="si">{</span><span class="n">inf</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== Simulated CT Log Subdomains (crt.sh) ===&quot;</span><span class="p">)</span>
+<span class="n">ct_subdomains</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;www.example-corp.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mail.example-corp.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;vpn.example-corp.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;staging.example-corp.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;api.example-corp.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;legacy-crm.example-corp.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;hr.example-corp.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;admin.example-corp.com&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="n">high_value</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;vpn&quot;</span><span class="p">,</span><span class="s2">&quot;staging&quot;</span><span class="p">,</span><span class="s2">&quot;legacy&quot;</span><span class="p">,</span><span class="s2">&quot;admin&quot;</span><span class="p">,</span><span class="s2">&quot;hr&quot;</span><span class="p">,</span><span class="s2">&quot;api&quot;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">sub</span> <span class="ow">in</span> <span class="n">ct_subdomains</span><span class="p">:</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="n">sub</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">flag</span> <span class="o">=</span> <span class="s2">&quot; &lt;-- HIGH VALUE&quot;</span> <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">h</span> <span class="ow">in</span> <span class="n">label</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">high_value</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">sub</span><span class="si">}{</span><span class="n">flag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== Attack Surface Summary ===&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Unique subdomains found : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">ct_subdomains</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Email provider         : Google Workspace&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  DNS provider           : Cloudflare&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Static hosting hint    : GitHub Pages (CNAME)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Microsoft 365 tenant   : Yes (verify domain record)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  DMARC policy           : quarantine (phishing harder but not impossible)&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== DNS Recon: example-corp.com ===
+
+  A     : [&#39;203.0.113.10&#39;, &#39;203.0.113.11&#39;]
+  MX    : [&#39;10 mail.example-corp.com&#39;, &#39;20 mail2.example-corp.com&#39;]
+  TXT   : [&#39;v=spf1 include:_spf.google.com ~all&#39;, &#39;google-site-verification=abc123&#39;, &#39;MS=ms12345678&#39;, &#39;v=DMARC1; p=quarantine; rua=mailto:dmarc@example-corp.com&#39;]
+  NS    : [&#39;ns1.cloudflare.com&#39;, &#39;ns2.cloudflare.com&#39;]
+  CNAME : [&#39;www -&gt; example-corp.github.io&#39;, &#39;mail -&gt; aspmx.l.google.com&#39;]
+
+=== Intelligence Inferred from TXT Records ===
+  [+] Email hosted: Google Workspace (SPF includes Google)
+  [+] Google Search Console verified (web presence)
+  [+] Microsoft 365 domain verification present
+  [+] DMARC policy: quarantine
+
+=== Simulated CT Log Subdomains (crt.sh) ===
+  www.example-corp.com
+  mail.example-corp.com
+  vpn.example-corp.com &lt;-- HIGH VALUE
+  staging.example-corp.com &lt;-- HIGH VALUE
+  api.example-corp.com &lt;-- HIGH VALUE
+  legacy-crm.example-corp.com &lt;-- HIGH VALUE
+  hr.example-corp.com &lt;-- HIGH VALUE
+  admin.example-corp.com &lt;-- HIGH VALUE
+
+=== Attack Surface Summary ===
+  Unique subdomains found : 8
+  Email provider         : Google Workspace
+  DNS provider           : Cloudflare
+  Static hosting hint    : GitHub Pages (CNAME)
+  Microsoft 365 tenant   : Yes (verify domain record)
+  DMARC policy           : quarantine (phishing harder but not impossible)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">7.9. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> Passive reconnaissance differs from active reconnaissance in that passive recon:
+A. Is faster  B. Does not interact with target systems and leaves no logs on them  C. Uses only commercial tools  D. Only covers publicly listed domains</p>
+<p><strong>Q2.</strong> Certificate Transparency logs are useful for:
+A. Breaking TLS encryption  B. Discovering subdomains listed as SANs in historical certificates  C. Brute-forcing passwords  D. Identifying open ports</p>
+<p><strong>Q3.</strong> An MX record pointing to <code class="docutils literal notranslate"><span class="pre">aspmx.l.google.com</span></code> reveals:
+A. The target uses self-hosted email  B. The target’s email is hosted on Google Workspace  C. The target’s web server is Google-hosted  D. The target uses DMARC</p>
+<p><strong>Q4.</strong> A job posting requiring “experience with Palo Alto Networks and Okta” reveals:
+A. Nothing useful for an attacker  B. The network firewall and identity provider in use  C. The salary budget  D. The number of employees</p>
+<p><strong>Q5.</strong> The <code class="docutils literal notranslate"><span class="pre">site:target.com</span> <span class="pre">filetype:pdf</span></code> dork finds:
+A. Open directory listings  B. PDF documents hosted on the target  C. Exposed admin panels  D. Email addresses</p>
+<p><strong>Q6.</strong> Shodan is best described as:
+A. A vulnerability scanner  B. A search engine indexing internet-connected devices and their banners  C. A password cracker  D. A phishing framework</p>
+<p><strong>Q7.</strong> Which DNS record type reveals the organisation’s email security policy (p=reject/quarantine/none)?
+A. MX  B. SPF TXT  C. DMARC TXT  D. NS</p>
+<p><strong>Q8.</strong> A DNS zone transfer (AXFR) that succeeds means:
+A. The target has strong DNS security  B. The name server reveals its entire zone to any requester  C. DNSSEC is enabled  D. The domain has expired</p>
+<p><strong>Q9.</strong> Email naming convention is most easily determined from:
+A. Scanning the mail server  B. Breach database samples or CT log certificate subjects  C. Social engineering the receptionist  D. Running Nmap</p>
+<p><strong>Q10.</strong> External Attack Surface Management (EASM) tools are used by defenders to:
+A. Block Shodan’s scanner  B. Continuously monitor their own public exposure as an attacker would  C. Replace penetration testing entirely  D. Encrypt DNS traffic</p>
+<p><em>Answers: Q1 B, Q2 B, Q3 B, Q4 B, Q5 B, Q6 B, Q7 C, Q8 B, Q9 B, Q10 B.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">7.10. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – DNS recon</strong>: For a domain you own or are authorised to test, run <code class="docutils literal notranslate"><span class="pre">dig</span> <span class="pre">A</span></code>, <code class="docutils literal notranslate"><span class="pre">dig</span> <span class="pre">MX</span></code>,
+<code class="docutils literal notranslate"><span class="pre">dig</span> <span class="pre">TXT</span></code>, <code class="docutils literal notranslate"><span class="pre">dig</span> <span class="pre">NS</span></code>, and <code class="docutils literal notranslate"><span class="pre">dig</span> <span class="pre">AXFR</span></code> (zone transfer attempt). For each result, document what
+intelligence it provides about the organisation’s technology stack.</p>
+<p><strong>Part B – CT log search</strong>: Search <code class="docutils literal notranslate"><span class="pre">crt.sh</span></code> for a public organisation’s domain (use a large company
+with many subdomains for educational value). List 10 subdomains found. For three of them, explain
+what the subdomain name implies about the service and why it might be a high-value recon finding.</p>
+<p><strong>Part C – OSINT dossier</strong>: Build a passive OSINT dossier on a public organisation (a large company
+you are not targeting). Include: IP ranges (from ASN lookup), email provider (from MX), identity
+provider (from TXT), cloud provider hints (from CNAME), and three inferences from job postings about
+their technology stack. Do not interact with any of their systems.</p>
+<p><strong>Part D – Threat model</strong>: Based on the dossier from Part C, identify the three highest-value
+attack paths an external attacker would prioritise and explain why, referencing the recon data.</p>
+</section>
+<section id="references">
+<h2><span class="section-number">7.11. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<span class="target" id="id1"></span></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/07_recon"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../06_pentest_methodology/chapter06.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Chapter 6: Penetration Testing Methodology</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../08_scanning/chapter08.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Chapter 8: Scanning and Enumeration</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">7.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">7.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-intelligence-value-of-reconnaissance">7.3. The Intelligence Value of Reconnaissance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-passive-recon-comes-first">7.3.1. Why Passive Recon Comes First</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cost-of-skipping-recon">7.3.1.1. The Cost of Skipping Recon</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passive-reconnaissance-techniques">7.4. Passive Reconnaissance Techniques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dns-enumeration">7.4.1. DNS Enumeration</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zone-transfer-axfr">7.4.1.1. Zone Transfer (AXFR)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#whois-and-asn-lookup">7.4.2. WHOIS and ASN Lookup</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pivoting-via-asn">7.4.2.1. Pivoting via ASN</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#certificate-transparency-logs">7.4.3. Certificate Transparency Logs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shodan-and-attack-surface-search-engines">7.4.4. Shodan and Attack-Surface Search Engines</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#other-search-engines">7.4.4.1. Other Search Engines</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#google-dorking">7.4.5. Google Dorking</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#osint-on-personnel">7.5. OSINT on Personnel</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linkedin-and-social-media">7.5.1. LinkedIn and Social Media</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#email-naming-convention">7.5.1.1. Email Naming Convention</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#job-postings">7.5.2. Job Postings</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subdomain-enumeration">7.6. Subdomain Enumeration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionary-based-brute-force">7.6.1. Dictionary-Based Brute Force</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#passive-sources">7.6.2. Passive Sources</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">7.7. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">7.8. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">7.9. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">7.10. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">7.11. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

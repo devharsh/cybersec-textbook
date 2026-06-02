@@ -1,0 +1,1044 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>19. Chapter 19: Security Governance, Policy, and Culture &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/19_governance_culture/chapter19';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="20. Chapter 20: Industrial Control Systems and OT Security" href="../20_ics_ot/chapter20.html" />
+    <link rel="prev" title="18. Chapter 18: Privacy, Law, and Information Governance" href="../18_privacy_law/chapter18.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/19_governance_culture/chapter19.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 19: Security Governance, Policy, and Culture</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">19.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">19.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-security-governance-is">19.3. What Security Governance Is</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-governance-matters">19.3.1. Why Governance Matters</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ciso-role">19.4. The CISO Role</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strategic-responsibilities">19.4.1. Strategic Responsibilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#organisational-models">19.4.2. Organisational Models</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#centralised-security-function">19.4.2.1. Centralised Security Function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#federated-security-model">19.4.2.2. Federated Security Model</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reporting-lines-and-independence">19.4.3. Reporting Lines and Independence</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-policy-hierarchy">19.5. The Policy Hierarchy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy">19.5.1. Policy</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-characteristics">19.5.1.1. Policy Characteristics</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard">19.5.2. Standard</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedure">19.5.3. Procedure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guideline">19.5.4. Guideline</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#board-level-security-reporting">19.6. Board-Level Security Reporting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#communicating-risk-in-business-language">19.6.1. Communicating Risk in Business Language</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-metrics-for-board-reporting">19.6.2. Key Metrics for Board Reporting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-risk-indicators">19.6.3. Key Risk Indicators</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-culture">19.7. Security Culture</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-culture-is-and-why-it-matters">19.7.1. What Culture Is and Why It Matters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tone-at-the-top">19.7.2. Tone at the Top</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-positive-security-culture">19.7.3. Building a Positive Security Culture</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#from-compliance-to-commitment">19.7.3.1. From Compliance to Commitment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#just-culture-and-incident-reporting">19.7.3.2. Just Culture and Incident Reporting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-compliance-frameworks">19.8. Common Compliance Frameworks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">19.9. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">19.10. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">19.11. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">19.12. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">19.13. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-19-security-governance-policy-and-culture">
+<h1><span class="section-number">19. </span>Chapter 19: Security Governance, Policy, and Culture<a class="headerlink" href="#chapter-19-security-governance-policy-and-culture" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“Culture eats strategy for breakfast.” Peter Drucker (applied to security: a security programme
+without a supportive culture will be circumvented, not adopted.)</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">19.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Explain what security governance is and how it differs from security management.</p></li>
+<li><p>Describe the role of the CISO and the security organisation structure.</p></li>
+<li><p>Explain the policy hierarchy: policy, standard, procedure, and guideline.</p></li>
+<li><p>Write a policy document that is enforceable and auditable.</p></li>
+<li><p>Describe board-level reporting of cybersecurity risk and metrics.</p></li>
+<li><p>Design a security awareness programme that changes behaviour, not just knowledge.</p></li>
+<li><p>Explain how to build and sustain a positive security culture.</p></li>
+<li><p>Describe common certification and compliance frameworks and their governance implications.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">19.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Governance</strong>: the framework of policies, roles, and processes by which an organisation is directed and controlled.</p></li>
+<li><p><strong>CISO</strong>: Chief Information Security Officer; executive responsible for the security programme.</p></li>
+<li><p><strong>Policy</strong>: a high-level statement of intent, direction, and principle.</p></li>
+<li><p><strong>Standard</strong>: mandatory requirements derived from policy; technology-specific and measurable.</p></li>
+<li><p><strong>Procedure</strong>: step-by-step instructions for implementing a standard.</p></li>
+<li><p><strong>Guideline</strong>: recommended but non-mandatory advice.</p></li>
+<li><p><strong>KRI</strong>: Key Risk Indicator; a metric that signals changing risk levels.</p></li>
+<li><p><strong>KPI</strong>: Key Performance Indicator; a metric measuring programme effectiveness.</p></li>
+<li><p><strong>Security culture</strong>: the collective values, beliefs, and behaviours relating to security within an organisation.</p></li>
+<li><p><strong>Security awareness</strong>: programmes designed to change employee knowledge and behaviour.</p></li>
+<li><p><strong>Tone at the top</strong>: the demonstration by senior leadership that security is a genuine priority.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="what-security-governance-is">
+<h2><span class="section-number">19.3. </span>What Security Governance Is<a class="headerlink" href="#what-security-governance-is" title="Link to this heading">#</a></h2>
+<p>Security governance is the set of responsibilities and practices exercised by the board and
+executive management with the goal of providing strategic direction, ensuring objectives are
+achieved, and verifying that risk is managed appropriately. It is distinct from security
+management (day-to-day operational decisions) and security operations (implementing controls).</p>
+<section id="why-governance-matters">
+<h3><span class="section-number">19.3.1. </span>Why Governance Matters<a class="headerlink" href="#why-governance-matters" title="Link to this heading">#</a></h3>
+<p>Without governance, security is a collection of ad hoc technical activities rather than a
+disciplined programme aligned with organisational objectives. Governance answers: What are
+we protecting, and why? What level of risk is acceptable? Who is accountable when things go
+wrong? How do we know our controls are working?</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="the-ciso-role">
+<h2><span class="section-number">19.4. </span>The CISO Role<a class="headerlink" href="#the-ciso-role" title="Link to this heading">#</a></h2>
+<section id="strategic-responsibilities">
+<h3><span class="section-number">19.4.1. </span>Strategic Responsibilities<a class="headerlink" href="#strategic-responsibilities" title="Link to this heading">#</a></h3>
+<p>The CISO is the executive accountable for the security programme. Strategic responsibilities include:
+defining the security strategy and roadmap, obtaining and allocating budget, reporting risk to the
+board and executive leadership, ensuring regulatory compliance, overseeing vendor and third-party
+risk, and building the security organisation.</p>
+</section>
+<section id="organisational-models">
+<h3><span class="section-number">19.4.2. </span>Organisational Models<a class="headerlink" href="#organisational-models" title="Link to this heading">#</a></h3>
+<section id="centralised-security-function">
+<h4><span class="section-number">19.4.2.1. </span>Centralised Security Function<a class="headerlink" href="#centralised-security-function" title="Link to this heading">#</a></h4>
+<p>A centralised security function reports to the CIO, CFO, or CEO and has direct authority over
+security policy and standards across the organisation. This model provides consistent policy
+enforcement but can create friction with business units that feel security slows them down.</p>
+</section>
+<section id="federated-security-model">
+<h4><span class="section-number">19.4.2.2. </span>Federated Security Model<a class="headerlink" href="#federated-security-model" title="Link to this heading">#</a></h4>
+<p>In a federated model, a central security function sets policy and standards, but embedded security
+personnel in each business unit implement and enforce them locally. This model balances central
+consistency with business-unit agility.</p>
+</section>
+</section>
+<section id="reporting-lines-and-independence">
+<h3><span class="section-number">19.4.3. </span>Reporting Lines and Independence<a class="headerlink" href="#reporting-lines-and-independence" title="Link to this heading">#</a></h3>
+<p>Security governance best practice recommends that the CISO not report to the CIO, because security
+and IT delivery have inherent conflicts of interest (security may slow releases or block systems
+that IT needs to keep online). The CISO ideally reports to the CEO or the board audit committee.
+In practice, the CISO reporting line varies widely by organisation size and maturity.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="the-policy-hierarchy">
+<h2><span class="section-number">19.5. </span>The Policy Hierarchy<a class="headerlink" href="#the-policy-hierarchy" title="Link to this heading">#</a></h2>
+<section id="policy">
+<h3><span class="section-number">19.5.1. </span>Policy<a class="headerlink" href="#policy" title="Link to this heading">#</a></h3>
+<p>A policy is a high-level statement of management’s intent. It answers: what must be done and why,
+without specifying how. Policies are technology-neutral and long-lived. An information security
+policy states that the organisation is committed to protecting the confidentiality, integrity, and
+availability of information assets; it does not specify which encryption algorithm to use.</p>
+<section id="policy-characteristics">
+<h4><span class="section-number">19.5.1.1. </span>Policy Characteristics<a class="headerlink" href="#policy-characteristics" title="Link to this heading">#</a></h4>
+<p>An enforceable policy must be: written and approved by the appropriate authority, communicated
+to all affected parties, specific enough to be auditable (not vague platitudes), reviewed
+periodically (typically annually), and have a clear violation consequence.</p>
+</section>
+</section>
+<section id="standard">
+<h3><span class="section-number">19.5.2. </span>Standard<a class="headerlink" href="#standard" title="Link to this heading">#</a></h3>
+<p>A standard derives specific, measurable, mandatory requirements from the policy. The encryption
+policy says data at rest must be protected; the encryption standard says that data classified
+Confidential or above must be encrypted using AES-256-GCM. Standards are technology-specific and
+updated more frequently than policies as technology evolves.</p>
+</section>
+<section id="procedure">
+<h3><span class="section-number">19.5.3. </span>Procedure<a class="headerlink" href="#procedure" title="Link to this heading">#</a></h3>
+<p>A procedure is a step-by-step instruction set for implementing a standard. The encryption
+standard says to use AES-256-GCM; the encryption procedure specifies exactly which tool to use,
+which configuration flags to set, how to store the key, and how to verify the encryption is
+working. Procedures are the operational instructions that technical staff follow.</p>
+</section>
+<section id="guideline">
+<h3><span class="section-number">19.5.4. </span>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h3>
+<p>A guideline is recommended, non-mandatory advice that helps users follow policy in situations
+not covered by standards and procedures. Guidelines use the word “should” rather than “shall”
+or “must.” A password guideline might recommend using a password manager, without mandating
+a specific product.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="board-level-security-reporting">
+<h2><span class="section-number">19.6. </span>Board-Level Security Reporting<a class="headerlink" href="#board-level-security-reporting" title="Link to this heading">#</a></h2>
+<section id="communicating-risk-in-business-language">
+<h3><span class="section-number">19.6.1. </span>Communicating Risk in Business Language<a class="headerlink" href="#communicating-risk-in-business-language" title="Link to this heading">#</a></h3>
+<p>Boards are not technical audiences. Effective board reporting translates technical risk into
+business impact: potential financial exposure (ALE), regulatory liability, reputational risk,
+and operational disruption. A chart showing “number of vulnerabilities patched this month”
+means nothing to a board; a statement that “our mean time to patch critical vulnerabilities
+has improved from 21 to 7 days, reducing our exposure window by 66%” communicates progress
+against a business outcome.</p>
+</section>
+<section id="key-metrics-for-board-reporting">
+<h3><span class="section-number">19.6.2. </span>Key Metrics for Board Reporting<a class="headerlink" href="#key-metrics-for-board-reporting" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Metric</p></th>
+<th class="head"><p>What it measures</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mean time to detect (MTTD)</p></td>
+<td><p>Detection capability; lower is better</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mean time to respond (MTTR)</p></td>
+<td><p>Response effectiveness</p></td>
+</tr>
+<tr class="row-even"><td><p>Patch compliance rate</p></td>
+<td><p>Vulnerability management hygiene</p></td>
+</tr>
+<tr class="row-odd"><td><p>Phishing simulation click rate</p></td>
+<td><p>Human layer risk</p></td>
+</tr>
+<tr class="row-even"><td><p>Critical/high open findings</p></td>
+<td><p>Remediation backlog</p></td>
+</tr>
+<tr class="row-odd"><td><p>Third-party risk assessment coverage</p></td>
+<td><p>Supply chain risk management</p></td>
+</tr>
+<tr class="row-even"><td><p>Audit findings closure rate</p></td>
+<td><p>Compliance posture</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="key-risk-indicators">
+<h3><span class="section-number">19.6.3. </span>Key Risk Indicators<a class="headerlink" href="#key-risk-indicators" title="Link to this heading">#</a></h3>
+<p>KRIs are leading indicators that signal changing risk levels before an incident occurs.
+Examples: a spike in failed login attempts (credential stuffing campaign beginning), an increase
+in employees clicking phishing simulations (awareness declining), a large number of unpatched
+critical vulnerabilities past SLA (remediation programme breaking down).</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="security-culture">
+<h2><span class="section-number">19.7. </span>Security Culture<a class="headerlink" href="#security-culture" title="Link to this heading">#</a></h2>
+<section id="what-culture-is-and-why-it-matters">
+<h3><span class="section-number">19.7.1. </span>What Culture Is and Why It Matters<a class="headerlink" href="#what-culture-is-and-why-it-matters" title="Link to this heading">#</a></h3>
+<p>Security culture is the sum of employee attitudes, beliefs, and behaviours toward security.
+A positive security culture produces employees who: report suspicious activity without fear of
+punishment, follow security policies not because they are forced to but because they understand
+the reason, and treat security as a shared responsibility rather than a blocker.</p>
+<p>A negative or absent security culture produces employees who: find workarounds for security
+controls they find inconvenient, do not report incidents out of fear of blame, and view the
+security team as adversaries rather than allies.</p>
+</section>
+<section id="tone-at-the-top">
+<h3><span class="section-number">19.7.2. </span>Tone at the Top<a class="headerlink" href="#tone-at-the-top" title="Link to this heading">#</a></h3>
+<p>Culture change cannot be mandated from the middle of the organisation. Leadership behaviour
+signals what the organisation truly values. If the CEO publicly skips MFA enrollment because it
+is inconvenient, no amount of policy enforcement will produce employee MFA adoption. Conversely,
+when the CEO publicly champions security, completes the same training as all staff, and backs
+the CISO’s budget requests, security becomes a genuine organisational priority.</p>
+</section>
+<section id="building-a-positive-security-culture">
+<h3><span class="section-number">19.7.3. </span>Building a Positive Security Culture<a class="headerlink" href="#building-a-positive-security-culture" title="Link to this heading">#</a></h3>
+<section id="from-compliance-to-commitment">
+<h4><span class="section-number">19.7.3.1. </span>From Compliance to Commitment<a class="headerlink" href="#from-compliance-to-commitment" title="Link to this heading">#</a></h4>
+<p>Compliance-based approaches create minimum-viable security behaviour: employees do exactly what
+is required to pass the audit and no more. Commitment-based approaches create employees who
+genuinely care about security outcomes. The difference is explanation: when employees understand
+why a control exists and what harm it prevents, they are more likely to follow it and to extend
+the principle to novel situations.</p>
+</section>
+<section id="just-culture-and-incident-reporting">
+<h4><span class="section-number">19.7.3.2. </span>Just Culture and Incident Reporting<a class="headerlink" href="#just-culture-and-incident-reporting" title="Link to this heading">#</a></h4>
+<p>A just culture distinguishes between human error, at-risk behaviour, and reckless behaviour,
+and responds proportionately. Punishing every security mistake drives incidents underground.
+A just culture encourages reporting: near-misses are learning opportunities; punitive responses
+to honest mistakes prevent the organisation from learning from them.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="common-compliance-frameworks">
+<h2><span class="section-number">19.8. </span>Common Compliance Frameworks<a class="headerlink" href="#common-compliance-frameworks" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Framework</p></th>
+<th class="head"><p>Sector</p></th>
+<th class="head"><p>Mandate</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ISO/IEC 27001</p></td>
+<td><p>All sectors</p></td>
+<td><p>Voluntary; certification by accredited auditor</p></td>
+</tr>
+<tr class="row-odd"><td><p>NIST CSF</p></td>
+<td><p>All sectors; US federal</p></td>
+<td><p>Voluntary for most; referenced in regulations</p></td>
+</tr>
+<tr class="row-even"><td><p>SOC 2 Type II</p></td>
+<td><p>Technology/SaaS</p></td>
+<td><p>Voluntary; required by many enterprise customers</p></td>
+</tr>
+<tr class="row-odd"><td><p>HIPAA</p></td>
+<td><p>US healthcare</p></td>
+<td><p>Mandatory for covered entities</p></td>
+</tr>
+<tr class="row-even"><td><p>PCI DSS</p></td>
+<td><p>Payment card processing</p></td>
+<td><p>Mandatory for card handling organisations</p></td>
+</tr>
+<tr class="row-odd"><td><p>GDPR</p></td>
+<td><p>EU personal data</p></td>
+<td><p>Mandatory for organisations in scope</p></td>
+</tr>
+<tr class="row-even"><td><p>CMMC</p></td>
+<td><p>US defence contractors</p></td>
+<td><p>Mandatory for DoD supply chain</p></td>
+</tr>
+<tr class="row-odd"><td><p>FedRAMP</p></td>
+<td><p>US federal cloud</p></td>
+<td><p>Mandatory for cloud services to US federal government</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">19.9. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>Security governance determines whether a security programme is sustainable and effective or
+depends on the heroics of individual practitioners. Governance provides the authority to enforce
+policy, the budget to implement controls, the executive backing to prioritise security over
+short-term convenience, and the accountability structure that ensures security decisions are
+owned at the right level. Without governance, security is reactive, underfunded, and fragile.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">19.10. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>SEC enforcement actions against public company CISOs and boards following breaches have established
+that cybersecurity is a material business risk requiring accurate disclosure. Companies that
+misrepresented their security posture to investors, or where boards failed to provide adequate
+governance oversight, have faced civil enforcement. This regulatory development is driving boards
+to demand substantive security briefings and CISOs to produce board-quality risk reporting rather
+than technical metrics.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 19 -- Security governance: policy validator and metrics dashboard</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dataclasses</span><span class="w"> </span><span class="kn">import</span> <span class="n">dataclass</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
+
+<span class="c1"># ── Policy quality checker ─────────────────────────────────────────────────────</span>
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">SecurityPolicy</span><span class="p">:</span>
+    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">version</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">owner</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">approved_by</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">review_date</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">applies_to</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">body</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">has_violation_consequence</span><span class="p">:</span> <span class="nb">bool</span>
+    <span class="n">has_exception_process</span><span class="p">:</span> <span class="nb">bool</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">quality_check</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="n">issues</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">owner</span><span class="p">:</span>              <span class="n">issues</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Missing policy owner&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">approved_by</span><span class="p">:</span>        <span class="n">issues</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;No approval authority listed&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">review_date</span><span class="p">:</span>        <span class="n">issues</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;No review date specified&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">has_violation_consequence</span><span class="p">:</span>
+            <span class="n">issues</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;No violation consequence defined -- not enforceable&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">has_exception_process</span><span class="p">:</span>
+            <span class="n">issues</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;No exception process defined&quot;</span><span class="p">)</span>
+        <span class="n">vague</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;should&quot;</span><span class="p">,</span> <span class="s2">&quot;may wish to&quot;</span><span class="p">,</span> <span class="s2">&quot;as appropriate&quot;</span><span class="p">,</span> <span class="s2">&quot;reasonable&quot;</span><span class="p">]</span>
+        <span class="n">found_vague</span> <span class="o">=</span> <span class="p">[</span><span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">vague</span> <span class="k">if</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span>
+        <span class="k">if</span> <span class="n">found_vague</span><span class="p">:</span>
+            <span class="n">issues</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Vague language found: </span><span class="si">{</span><span class="n">found_vague</span><span class="si">}</span><span class="s2"> -- replace with &#39;must&#39; or &#39;shall&#39;&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="n">issues</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Policy body too short -- likely missing requirements&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">issues</span>
+
+<span class="n">policies</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">SecurityPolicy</span><span class="p">(</span>
+        <span class="s2">&quot;Acceptable Use Policy&quot;</span><span class="p">,</span> <span class="s2">&quot;2.1&quot;</span><span class="p">,</span> <span class="s2">&quot;CISO&quot;</span><span class="p">,</span> <span class="s2">&quot;CEO&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;2027-01-01&quot;</span><span class="p">,</span> <span class="s2">&quot;All employees and contractors&quot;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s2">&quot;All users must use company-issued devices for company data. &quot;</span>
+         <span class="s2">&quot;Users must not install unauthorised software. &quot;</span>
+         <span class="s2">&quot;Internet access is logged and subject to monitoring. &quot;</span>
+         <span class="s2">&quot;Violations may result in disciplinary action up to and including termination. &quot;</span>
+         <span class="s2">&quot;Exceptions require written approval from the CISO. &quot;</span> <span class="o">*</span> <span class="mi">8</span><span class="p">),</span>
+        <span class="n">has_violation_consequence</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">has_exception_process</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">SecurityPolicy</span><span class="p">(</span>
+        <span class="s2">&quot;Password Policy&quot;</span><span class="p">,</span> <span class="s2">&quot;1.0&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;IT Manager&quot;</span><span class="p">,</span>
+        <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;IT systems&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Passwords should be complex and should not be shared. Users may wish to use a password manager.&quot;</span><span class="p">,</span>
+        <span class="n">has_violation_consequence</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">has_exception_process</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== Policy Quality Audit ===</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">policies</span><span class="p">:</span>
+    <span class="n">issues</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">quality_check</span><span class="p">()</span>
+    <span class="n">grade</span> <span class="o">=</span> <span class="s2">&quot;PASS&quot;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">issues</span> <span class="k">else</span> <span class="s2">&quot;FAIL&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  [</span><span class="si">{</span><span class="n">grade</span><span class="si">}</span><span class="s2">] </span><span class="si">{</span><span class="n">p</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> v</span><span class="si">{</span><span class="n">p</span><span class="o">.</span><span class="n">version</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">issues</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">iss</span> <span class="ow">in</span> <span class="n">issues</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;         [!] </span><span class="si">{</span><span class="n">iss</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;         All quality checks passed&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># ── Board-level security metrics dashboard ────────────────────────────────────</span>
+<span class="n">months</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Jan&#39;</span><span class="p">,</span> <span class="s1">&#39;Feb&#39;</span><span class="p">,</span> <span class="s1">&#39;Mar&#39;</span><span class="p">,</span> <span class="s1">&#39;Apr&#39;</span><span class="p">,</span> <span class="s1">&#39;May&#39;</span><span class="p">,</span> <span class="s1">&#39;Jun&#39;</span><span class="p">]</span>
+<span class="n">mttd</span>   <span class="o">=</span> <span class="p">[</span><span class="mi">18</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>        <span class="c1"># hours; lower is better</span>
+<span class="n">mttr</span>   <span class="o">=</span> <span class="p">[</span><span class="mi">48</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">18</span><span class="p">]</span>       <span class="c1"># hours; lower is better</span>
+<span class="n">patch</span>  <span class="o">=</span> <span class="p">[</span><span class="mi">72</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">94</span><span class="p">]</span>       <span class="c1"># % compliance; higher is better</span>
+<span class="n">phish</span>  <span class="o">=</span> <span class="p">[</span><span class="mi">22</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span>  <span class="mi">7</span><span class="p">]</span>        <span class="c1"># % click rate; lower is better</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Figure 19.1  Board Security Metrics Dashboard&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">good_direction</span> <span class="ow">in</span> <span class="p">[</span>
+    <span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">mttd</span><span class="p">,</span>  <span class="s2">&quot;MTTD (hours)&quot;</span><span class="p">,</span>          <span class="mi">8</span><span class="p">,</span>  <span class="s2">&quot;lower&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">mttr</span><span class="p">,</span>  <span class="s2">&quot;MTTR (hours)&quot;</span><span class="p">,</span>          <span class="mi">24</span><span class="p">,</span>  <span class="s2">&quot;lower&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">patch</span><span class="p">,</span> <span class="s2">&quot;Patch compliance (%)&quot;</span><span class="p">,</span>  <span class="mi">95</span><span class="p">,</span>  <span class="s2">&quot;higher&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">phish</span><span class="p">,</span> <span class="s2">&quot;Phishing click rate (%)&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;lower&quot;</span><span class="p">),</span>
+<span class="p">]:</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#3a7ebf&quot;</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">months</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">months</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#e05a4e&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.2</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">months</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">target</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot; Target: </span><span class="si">{</span><span class="n">target</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#e05a4e&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.2</span><span class="p">)</span>
+    <span class="n">trend</span> <span class="o">=</span> <span class="s2">&quot;Improving&quot;</span> <span class="k">if</span> <span class="p">(</span><span class="n">good_direction</span><span class="o">==</span><span class="s2">&quot;lower&quot;</span> <span class="ow">and</span> <span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="ow">or</span> \
+                           <span class="p">(</span><span class="n">good_direction</span><span class="o">==</span><span class="s2">&quot;higher&quot;</span> <span class="ow">and</span> <span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">else</span> <span class="s2">&quot;Degrading&quot;</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Trend: </span><span class="si">{</span><span class="n">trend</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">_buf</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">_buf</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">();</span> <span class="n">_buf</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">_buf</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Figure 19.1 rendered.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Policy Quality Audit ===
+
+  [PASS] Acceptable Use Policy v2.1
+         All quality checks passed
+
+  [FAIL] Password Policy v1.0
+         [!] Missing policy owner
+         [!] No review date specified
+         [!] No violation consequence defined -- not enforceable
+         [!] No exception process defined
+         [!] Vague language found: [&#39;should&#39;, &#39;may wish to&#39;] -- replace with &#39;must&#39; or &#39;shall&#39;
+         [!] Policy body too short -- likely missing requirements
+</pre></div>
+</div>
+<img alt="../../_images/b3f4f5c34f59d895c4327a9379c78ac4a188766beee3aa22d65dd5ba99882865.png" src="../../_images/b3f4f5c34f59d895c4327a9379c78ac4a188766beee3aa22d65dd5ba99882865.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Figure 19.1 rendered.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">19.11. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> Security governance differs from security management in that governance:
+A. Handles day-to-day technical operations  B. Provides strategic direction and accountability at the executive and board level  C. Writes security policies  D. Manages firewall rules</p>
+<p><strong>Q2.</strong> A security standard differs from a policy in that a standard:
+A. Is written by the CISO  B. Is technology-specific, measurable, and mandatory  C. Is non-mandatory  D. Is reviewed only once every five years</p>
+<p><strong>Q3.</strong> The word that belongs in a mandatory policy statement is:
+A. “should”  B. “may”  C. “could”  D. “must” or “shall”</p>
+<p><strong>Q4.</strong> Effective board-level security reporting should use:
+A. Technical CVE identifiers and CVSS scores  B. Business-language risk framing with financial exposure  C. Log excerpts from the SIEM  D. Nmap output</p>
+<p><strong>Q5.</strong> A Key Risk Indicator (KRI) is best described as:
+A. A metric measuring past performance  B. A leading indicator signalling changing risk levels before an incident  C. A compliance audit result  D. A count of firewall rules</p>
+<p><strong>Q6.</strong> Tone at the top is most effective when:
+A. Senior leaders publicly champion security and model the required behaviours  B. The CISO sends all-staff emails  C. Policies are posted on the intranet  D. Annual training is mandatory</p>
+<p><strong>Q7.</strong> A just culture improves security by:
+A. Punishing all security mistakes equally  B. Encouraging incident reporting by responding to errors proportionately, not punitively  C. Removing all security policies  D. Automating all responses</p>
+<p><strong>Q8.</strong> SOC 2 Type II is primarily demanded by:
+A. US healthcare regulators  B. Payment card brands  C. Enterprise customers of technology/SaaS companies  D. EU supervisory authorities</p>
+<p><strong>Q9.</strong> An exception process in a security policy is important because:
+A. It allows any user to bypass any control  B. It provides a documented, risk-accepted mechanism for legitimate deviations  C. It reduces the number of controls required  D. It eliminates audit findings</p>
+<p><strong>Q10.</strong> The CISO ideally reports to the CEO or board audit committee rather than the CIO because:
+A. The CISO earns more than the CIO  B. Security and IT delivery have inherent conflicts of interest  C. The CIO lacks authority to approve budgets  D. GDPR requires it</p>
+<p><em>Answers: Q1 B, Q2 B, Q3 D, Q4 B, Q5 B, Q6 A, Q7 B, Q8 C, Q9 B, Q10 B.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">19.12. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – Policy writing</strong>: Write a complete Acceptable Use Policy for a fictional 300-person company. Include: purpose, scope, policy statements (at least 8 “must” requirements), violation consequences, exception process, review date, and approval authority. Run it through the policy quality checker above.</p>
+<p><strong>Part B – Board metrics report</strong>: Using the metrics dashboard above as a template, add two additional metrics of your choice (e.g., third-party risk assessments completed, security incidents by severity). Write a two-paragraph executive narrative for the board explaining the trend in MTTD and phishing click rate in business language.</p>
+<p><strong>Part C – Policy hierarchy</strong>: For a fictional cloud-first company, create the full hierarchy for data encryption: one policy statement, three derived standards (for data at rest, data in transit, and key management), and one procedure for encrypting an S3 bucket in AWS. Show how each level derives from the level above.</p>
+<p><strong>Part D – Culture assessment</strong>: Design a 10-question survey to measure security culture in a 500-person organisation. For each question, specify: the construct being measured (awareness, attitude, or behaviour), the response scale, and what a low score indicates should be addressed in the awareness programme.</p>
+</section>
+<section id="references">
+<h2><span class="section-number">19.13. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<span class="target" id="id1"></span></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/19_governance_culture"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../18_privacy_law/chapter18.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">18. </span>Chapter 18: Privacy, Law, and Information Governance</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../20_ics_ot/chapter20.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">20. </span>Chapter 20: Industrial Control Systems and OT Security</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">19.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">19.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-security-governance-is">19.3. What Security Governance Is</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-governance-matters">19.3.1. Why Governance Matters</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ciso-role">19.4. The CISO Role</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strategic-responsibilities">19.4.1. Strategic Responsibilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#organisational-models">19.4.2. Organisational Models</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#centralised-security-function">19.4.2.1. Centralised Security Function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#federated-security-model">19.4.2.2. Federated Security Model</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reporting-lines-and-independence">19.4.3. Reporting Lines and Independence</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-policy-hierarchy">19.5. The Policy Hierarchy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy">19.5.1. Policy</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-characteristics">19.5.1.1. Policy Characteristics</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard">19.5.2. Standard</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedure">19.5.3. Procedure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guideline">19.5.4. Guideline</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#board-level-security-reporting">19.6. Board-Level Security Reporting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#communicating-risk-in-business-language">19.6.1. Communicating Risk in Business Language</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-metrics-for-board-reporting">19.6.2. Key Metrics for Board Reporting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-risk-indicators">19.6.3. Key Risk Indicators</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-culture">19.7. Security Culture</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-culture-is-and-why-it-matters">19.7.1. What Culture Is and Why It Matters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tone-at-the-top">19.7.2. Tone at the Top</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-positive-security-culture">19.7.3. Building a Positive Security Culture</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#from-compliance-to-commitment">19.7.3.1. From Compliance to Commitment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#just-culture-and-incident-reporting">19.7.3.2. Just Culture and Incident Reporting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-compliance-frameworks">19.8. Common Compliance Frameworks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">19.9. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">19.10. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">19.11. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">19.12. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">19.13. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

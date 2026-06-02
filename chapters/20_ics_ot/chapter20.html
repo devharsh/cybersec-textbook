@@ -1,0 +1,983 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>20. Chapter 20: Industrial Control Systems and OT Security &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/20_ics_ot/chapter20';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Appendix A: Security Command Reference" href="../appendix_a/appendix_a.html" />
+    <link rel="prev" title="19. Chapter 19: Security Governance, Policy, and Culture" href="../19_governance_culture/chapter19.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_networking/chapter03.html">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/20_ics_ot/chapter20.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 20: Industrial Control Systems and OT Security</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">20.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">20.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#it-versus-ot-a-fundamental-difference-in-priorities">20.3. IT Versus OT: A Fundamental Difference in Priorities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#safety-as-the-overriding-priority">20.3.1. Safety as the Overriding Priority</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ics-components">20.4. ICS Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#programmable-logic-controllers">20.4.1. Programmable Logic Controllers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scada-systems">20.4.2. SCADA Systems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#human-machine-interfaces">20.4.3. Human-Machine Interfaces</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-purdue-model-and-network-segmentation">20.5. The Purdue Model and Network Segmentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-industrial-dmz">20.5.1. The Industrial DMZ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#air-gaps-and-their-limitations">20.5.2. Air Gaps and Their Limitations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ot-specific-security-challenges">20.6. OT-Specific Security Challenges</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legacy-equipment-and-long-lifecycles">20.6.1. Legacy Equipment and Long Lifecycles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#availability-requirements">20.6.2. Availability Requirements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protocol-insecurity">20.6.3. Protocol Insecurity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ics-malware-case-studies">20.7. ICS Malware Case Studies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stuxnet-2010">20.7.1. Stuxnet (2010)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#industroyer-crashoverride-2016">20.7.2. Industroyer/CRASHOVERRIDE (2016)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#triton-trisis-2017">20.7.3. TRITON/TRISIS (2017)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iec-62443-and-nist-sp-800-82">20.8. IEC 62443 and NIST SP 800-82</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iec-62443">20.8.1. IEC 62443</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nist-sp-800-82">20.8.2. NIST SP 800-82</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ot-defence-in-depth">20.9. OT Defence-in-Depth</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">20.10. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">20.11. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">20.12. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">20.13. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">20.14. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-20-industrial-control-systems-and-ot-security">
+<h1><span class="section-number">20. </span>Chapter 20: Industrial Control Systems and OT Security<a class="headerlink" href="#chapter-20-industrial-control-systems-and-ot-security" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“In IT, a security incident costs money. In OT, a security incident can cost lives.”</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">20.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Distinguish operational technology (OT) from information technology (IT) and explain the convergence challenge.</p></li>
+<li><p>Describe the components of an industrial control system: PLCs, RTUs, HMIs, SCADAs, and DCS.</p></li>
+<li><p>Explain the Purdue Model and the ICS security zones it defines.</p></li>
+<li><p>Describe the unique security challenges of OT environments: availability priority, legacy equipment, long lifecycles.</p></li>
+<li><p>Apply IEC 62443 principles to OT security assessment.</p></li>
+<li><p>Describe known ICS-targeted malware and their operational impact.</p></li>
+<li><p>Explain NIST SP 800-82 guidance for industrial control system security.</p></li>
+<li><p>Design a defence-in-depth architecture appropriate for an OT environment.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">20.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>OT</strong>: Operational Technology; hardware and software that monitors or controls physical processes.</p></li>
+<li><p><strong>ICS</strong>: Industrial Control System; the collective term for OT control systems.</p></li>
+<li><p><strong>SCADA</strong>: Supervisory Control and Data Acquisition; monitors and controls geographically distributed processes.</p></li>
+<li><p><strong>DCS</strong>: Distributed Control System; controls industrial processes within a single facility.</p></li>
+<li><p><strong>PLC</strong>: Programmable Logic Controller; a ruggedised computer controlling physical actuators.</p></li>
+<li><p><strong>RTU</strong>: Remote Terminal Unit; a field device collecting data from sensors and sending to SCADA.</p></li>
+<li><p><strong>HMI</strong>: Human-Machine Interface; the operator console for viewing and controlling the process.</p></li>
+<li><p><strong>Engineering Workstation (EWS)</strong>: laptop or PC used to programme PLCs and update firmware.</p></li>
+<li><p><strong>Purdue Model</strong>: hierarchical reference model for ICS network architecture.</p></li>
+<li><p><strong>Air gap</strong>: physical separation between networks with no network connection.</p></li>
+<li><p><strong>IEC 62443</strong>: international standard for industrial automation and control system security.</p></li>
+<li><p><strong>Stuxnet</strong>: the first publicly documented cyberweapon targeting physical infrastructure.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="it-versus-ot-a-fundamental-difference-in-priorities">
+<h2><span class="section-number">20.3. </span>IT Versus OT: A Fundamental Difference in Priorities<a class="headerlink" href="#it-versus-ot-a-fundamental-difference-in-priorities" title="Link to this heading">#</a></h2>
+<p>In IT, the CIA triad prioritises Confidentiality first. In OT, the priority is inverted:
+Availability and Integrity come first; Confidentiality is often secondary. A power plant
+control system that goes offline to apply a patch causes a real-world outage. An unpatched
+PLC that continues controlling a turbine is acceptable from the operations perspective; an
+unavailable PLC is not. This fundamental difference means that IT security practices cannot
+be directly transplanted to OT environments without adaptation.</p>
+<section id="safety-as-the-overriding-priority">
+<h3><span class="section-number">20.3.1. </span>Safety as the Overriding Priority<a class="headerlink" href="#safety-as-the-overriding-priority" title="Link to this heading">#</a></h3>
+<p>OT security must consider physical safety consequences. A chemical plant process controller
+that is manipulated by a threat actor could set temperatures or pressures outside safe
+operating ranges, causing equipment damage or endangering workers. Safety instrumented
+systems (SIS) provide independent protection layers designed to bring the process to a safe
+state if dangerous conditions are detected.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="ics-components">
+<h2><span class="section-number">20.4. </span>ICS Components<a class="headerlink" href="#ics-components" title="Link to this heading">#</a></h2>
+<section id="programmable-logic-controllers">
+<h3><span class="section-number">20.4.1. </span>Programmable Logic Controllers<a class="headerlink" href="#programmable-logic-controllers" title="Link to this heading">#</a></h3>
+<p>PLCs are the workhorses of industrial automation. They execute deterministic control logic
+(scan-read inputs, execute ladder logic, write outputs) at cycle times measured in milliseconds.
+PLCs are designed for 24/7 operation, harsh environments, and 20-30 year lifecycles. They were
+designed for availability and functionality, not security: many PLCs have no authentication,
+communicate over unauthenticated protocols (Modbus, DNP3, Profibus), and cannot be easily
+patched without a maintenance window.</p>
+</section>
+<section id="scada-systems">
+<h3><span class="section-number">20.4.2. </span>SCADA Systems<a class="headerlink" href="#scada-systems" title="Link to this heading">#</a></h3>
+<p>SCADA systems collect data from widely distributed RTUs (substations, pumping stations, remote
+sensors) over wide-area networks and provide centralised monitoring and control. The wide-area
+connectivity that makes SCADA useful also creates an attack surface: SCADA communications may
+traverse public networks, telecommunications infrastructure, or satellite links, each of which
+represents a potential entry point.</p>
+</section>
+<section id="human-machine-interfaces">
+<h3><span class="section-number">20.4.3. </span>Human-Machine Interfaces<a class="headerlink" href="#human-machine-interfaces" title="Link to this heading">#</a></h3>
+<p>The HMI is the operator’s view into the process. Operators issue commands and receive alarms
+through the HMI. A compromised HMI can deceive operators by showing false process values while
+the underlying process deviates from safe parameters – exactly the technique used by Stuxnet,
+which displayed normal centrifuge speed readings while commanding the centrifuges to spin at
+damaging speeds.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="the-purdue-model-and-network-segmentation">
+<h2><span class="section-number">20.5. </span>The Purdue Model and Network Segmentation<a class="headerlink" href="#the-purdue-model-and-network-segmentation" title="Link to this heading">#</a></h2>
+<p>The Purdue Model (also called the Purdue Enterprise Reference Architecture, PERA) organises
+ICS networks into hierarchical levels:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Level</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Components</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>Field Level</p></td>
+<td><p>Physical sensors, actuators, motors, valves</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>Control Level</p></td>
+<td><p>PLCs, RTUs, safety systems</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Supervisory Level</p></td>
+<td><p>SCADA servers, DCS, HMIs</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>Manufacturing Operations</p></td>
+<td><p>Historian servers, MES, engineering workstations</p></td>
+</tr>
+<tr class="row-even"><td><p>3.5</p></td>
+<td><p>Industrial DMZ</p></td>
+<td><p>Data diodes, jump servers, protocol converters</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Business Logistics</p></td>
+<td><p>Enterprise IT: ERP, email, internet</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="the-industrial-dmz">
+<h3><span class="section-number">20.5.1. </span>The Industrial DMZ<a class="headerlink" href="#the-industrial-dmz" title="Link to this heading">#</a></h3>
+<p>The industrial DMZ (Level 3.5) is a critical security control: it mediates all communication
+between the OT network (Levels 0-3) and the IT network (Level 4). Traffic should flow through
+protocol-aware firewalls or data diodes (hardware devices allowing data flow in one direction
+only). No direct connectivity should exist between the enterprise network and the control
+network.</p>
+</section>
+<section id="air-gaps-and-their-limitations">
+<h3><span class="section-number">20.5.2. </span>Air Gaps and Their Limitations<a class="headerlink" href="#air-gaps-and-their-limitations" title="Link to this heading">#</a></h3>
+<p>An air gap (complete physical separation with no network connection) is the most secure
+boundary between IT and OT. However, true air gaps are increasingly rare because business
+requirements demand data from the plant floor (historian data for analysis, remote
+diagnostics). Even an air-gapped network is vulnerable to removable media (Stuxnet spread
+via USB), engineering workstations that connect to both networks, and vendor remote access.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="ot-specific-security-challenges">
+<h2><span class="section-number">20.6. </span>OT-Specific Security Challenges<a class="headerlink" href="#ot-specific-security-challenges" title="Link to this heading">#</a></h2>
+<section id="legacy-equipment-and-long-lifecycles">
+<h3><span class="section-number">20.6.1. </span>Legacy Equipment and Long Lifecycles<a class="headerlink" href="#legacy-equipment-and-long-lifecycles" title="Link to this heading">#</a></h3>
+<p>OT equipment has lifecycles of 20-30 years. A PLC installed in 2000 may be running firmware
+from that era, with no vendor support, no patches available, and no ability to install an agent.
+The security controls applicable to a modern Windows endpoint (patching, AV, EDR) cannot be
+applied to a legacy PLC. Compensating controls (network segmentation, monitoring at the protocol
+level, application whitelisting on the engineering workstation) are required.</p>
+</section>
+<section id="availability-requirements">
+<h3><span class="section-number">20.6.2. </span>Availability Requirements<a class="headerlink" href="#availability-requirements" title="Link to this heading">#</a></h3>
+<p>Many OT processes cannot be interrupted: a nuclear power plant, a chemical reactor, or a water
+treatment system cannot be rebooted to apply a patch. Maintenance windows are infrequent and
+tightly controlled. Vulnerability management in OT requires coordination with operations,
+risk acceptance for vulnerabilities that cannot be patched, and compensating controls.</p>
+</section>
+<section id="protocol-insecurity">
+<h3><span class="section-number">20.6.3. </span>Protocol Insecurity<a class="headerlink" href="#protocol-insecurity" title="Link to this heading">#</a></h3>
+<p>Industrial protocols were designed for reliability and determinism, not security. Modbus has
+no authentication: any device that can send a valid Modbus command can control a PLC. DNP3
+added authentication in DNP3 Secure Authentication v5, but deployment is limited. PROFINET
+and EtherNet/IP are Ethernet-based and susceptible to standard network attacks. Protocol-aware
+monitoring tools (Claroty, Dragos, Nozomi) can detect anomalous commands even without agent
+deployment.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="ics-malware-case-studies">
+<h2><span class="section-number">20.7. </span>ICS Malware Case Studies<a class="headerlink" href="#ics-malware-case-studies" title="Link to this heading">#</a></h2>
+<section id="stuxnet-2010">
+<h3><span class="section-number">20.7.1. </span>Stuxnet (2010)<a class="headerlink" href="#stuxnet-2010" title="Link to this heading">#</a></h3>
+<p>Stuxnet is widely considered the first publicly documented cyberweapon designed to cause physical
+damage. It targeted Siemens S7-315 PLCs controlling Iranian uranium enrichment centrifuges,
+commanding them to spin at damaging speeds while reporting normal operation to the SCADA system.
+Stuxnet demonstrated that sophisticated OT attacks can achieve physical effects equivalent to
+sabotage and that even air-gapped networks are not fully protected against insider or supply-chain
+delivery of malicious code.</p>
+</section>
+<section id="industroyer-crashoverride-2016">
+<h3><span class="section-number">20.7.2. </span>Industroyer/CRASHOVERRIDE (2016)<a class="headerlink" href="#industroyer-crashoverride-2016" title="Link to this heading">#</a></h3>
+<p>Industroyer (also called CRASHOVERRIDE) targeted Ukraine’s power grid, causing a blackout
+affecting approximately 230,000 customers. It implemented native ICS protocol handlers for
+IEC 60870-5-101, IEC 60870-5-104, IEC 61850, and OPC DA, allowing it to interact directly
+with power grid components without requiring PLC-specific code.</p>
+</section>
+<section id="triton-trisis-2017">
+<h3><span class="section-number">20.7.3. </span>TRITON/TRISIS (2017)<a class="headerlink" href="#triton-trisis-2017" title="Link to this heading">#</a></h3>
+<p>TRITON targeted Schneider Electric Safety Instrumented System (SIS) controllers in a Middle
+Eastern petrochemical facility. It attempted to disable safety systems, which would have allowed
+dangerous process conditions to develop without triggering protective shutdowns. This attack
+was the first publicly documented attempt to deliberately disable safety systems, with potential
+consequences including explosion or toxic release.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="iec-62443-and-nist-sp-800-82">
+<h2><span class="section-number">20.8. </span>IEC 62443 and NIST SP 800-82<a class="headerlink" href="#iec-62443-and-nist-sp-800-82" title="Link to this heading">#</a></h2>
+<section id="iec-62443">
+<h3><span class="section-number">20.8.1. </span>IEC 62443<a class="headerlink" href="#iec-62443" title="Link to this heading">#</a></h3>
+<p>IEC 62443 <span class="bibtex-citation" id="id1">[<a class="reference internal" href="#id25" title="International Electrotechnical Commission. IEC 62443: Security for Industrial Automation and Control Systems. IEC Standard Series, 2018.">InternationalECommission18</a>]</span> is the international standard for industrial automation and control
+system security. It defines: Security Levels (SL 0-4, from no requirements to protection against
+state-level adversaries), zones and conduits (grouping components by security requirements and
+managing communication between zones), and requirements for operators, integrators, and component
+manufacturers.</p>
+</section>
+<section id="nist-sp-800-82">
+<h3><span class="section-number">20.8.2. </span>NIST SP 800-82<a class="headerlink" href="#nist-sp-800-82" title="Link to this heading">#</a></h3>
+<p>NIST SP 800-82 <span class="bibtex-citation" id="id2">[<a class="reference internal" href="#id24" title="Keith Stouffer and others. SP 800-82 Rev. 3: Guide to Operational Technology (OT) Security. Technical Report SP 800-82r3, National Institute of Standards and Technology, 2023.">S+23</a>]</span> provides guidance specific to industrial control system
+security, adapted from NIST 800-53 for the OT context. It acknowledges the unique OT constraints
+(availability priority, legacy equipment, infrequent patching) and provides tailored control
+baselines for ICS environments.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="ot-defence-in-depth">
+<h2><span class="section-number">20.9. </span>OT Defence-in-Depth<a class="headerlink" href="#ot-defence-in-depth" title="Link to this heading">#</a></h2>
+<p>A layered OT security architecture applies the defence-in-depth principle across the Purdue levels:</p>
+<ul class="simple">
+<li><p><strong>Level 0-1</strong>: physical security (locked cabinets, tamper-evident seals), network-level
+access control (only authorised engineering workstations can send configuration commands to PLCs).</p></li>
+<li><p><strong>Level 2-3</strong>: protocol-aware firewalls (Modbus, DNP3, PROFINET inspection), OT-specific
+intrusion detection (anomalous commands, unusual data volumes), HMI hardening (application
+whitelisting, no internet access).</p></li>
+<li><p><strong>Level 3.5 (Industrial DMZ)</strong>: data diodes for historian replication (one-way), jump servers
+with MFA for engineer access, protocol conversion (translate OT protocols to IT-safe formats).</p></li>
+<li><p><strong>Level 4</strong>: standard IT controls on all enterprise systems; no direct connectivity to OT levels.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">20.10. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>The convergence of IT and OT – driven by business demand for data and remote access –
+has connected previously isolated control networks to the internet. This connectivity
+brings significant business benefits and significant security risk. Attacks on industrial
+infrastructure have caused real physical damage, power outages, and unsafe conditions.
+Unlike IT breaches, OT attacks can kill people. The security practitioner who understands
+both environments is positioned to design and operate the compensating controls that allow
+connectivity while maintaining safety.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">20.11. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>Several publicly documented attacks on water treatment facilities have involved threat actors
+gaining access to SCADA systems and attempting to adjust chemical dosing parameters. In a
+documented US incident, a threat actor gained access via a remote access tool and attempted
+to increase sodium hydroxide concentration to dangerous levels. An operator detected the
+anomalous cursor movement on the HMI and reversed the change before any harm occurred.
+The detection was human, not automated – underscoring that OT monitoring and operator
+training are both essential layers of defence.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 20 -- Purdue model zone validator and OT risk scorer</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpatches</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dataclasses</span><span class="w"> </span><span class="kn">import</span> <span class="n">dataclass</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
+
+<span class="c1"># ── Purdue Model visualisation ─────────────────────────────────────────────────</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">)</span>
+
+<span class="n">levels</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;Level 0  Field&quot;</span><span class="p">,</span>               <span class="s2">&quot;Sensors, actuators, motors, valves&quot;</span><span class="p">,</span>          <span class="s2">&quot;#dde7f0&quot;</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Level 1  Control&quot;</span><span class="p">,</span>             <span class="s2">&quot;PLCs, RTUs, Safety Instrumented Systems&quot;</span><span class="p">,</span>      <span class="s2">&quot;#c9e1f0&quot;</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Level 2  Supervisory&quot;</span><span class="p">,</span>         <span class="s2">&quot;SCADA servers, DCS, HMIs&quot;</span><span class="p">,</span>                    <span class="s2">&quot;#b5d8ef&quot;</span><span class="p">,</span> <span class="mf">2.1</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Level 3  Manufacturing Ops&quot;</span><span class="p">,</span>   <span class="s2">&quot;Historian, MES, Engineering Workstations&quot;</span><span class="p">,</span>     <span class="s2">&quot;#9ecde8&quot;</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Level 3.5  Industrial DMZ&quot;</span><span class="p">,</span>    <span class="s2">&quot;Data diodes, jump servers, protocol proxies&quot;</span><span class="p">,</span>  <span class="s2">&quot;#f5f0cf&quot;</span><span class="p">,</span> <span class="mf">3.9</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Level 4  Business/Enterprise&quot;</span><span class="p">,</span> <span class="s2">&quot;ERP, email, Active Directory, Internet&quot;</span><span class="p">,</span>       <span class="s2">&quot;#f0d4d4&quot;</span><span class="p">,</span> <span class="mf">4.8</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">components</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">levels</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">mpatches</span><span class="o">.</span><span class="n">FancyBboxPatch</span><span class="p">((</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="mf">9.6</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span>
+                 <span class="n">boxstyle</span><span class="o">=</span><span class="s2">&quot;round,pad=0.05&quot;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.2</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">5.0</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="mf">0.38</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">  --  </span><span class="si">{</span><span class="n">components</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">8.5</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+
+<span class="c1"># Boundary lines</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mf">3.85</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#e05a4e&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">9.9</span><span class="p">,</span> <span class="mf">3.87</span><span class="p">,</span> <span class="s2">&quot;IT/OT boundary&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#e05a4e&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#3a7ebf&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">9.9</span><span class="p">,</span> <span class="mf">0.97</span><span class="p">,</span> <span class="s2">&quot;Safety boundary&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#3a7ebf&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Figure 20.1  Purdue Model -- ICS Network Zones&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+
+<span class="n">_buf</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">_buf</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">();</span> <span class="n">_buf</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">_buf</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Figure 20.1 rendered.&quot;</span><span class="p">)</span>
+
+<span class="c1"># ── OT zone policy checker ─────────────────────────────────────────────────────</span>
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Connection</span><span class="p">:</span>
+    <span class="n">src_zone</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">dst_zone</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">protocol</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">direction</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">note</span><span class="p">:</span> <span class="nb">str</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">ot_policy_check</span><span class="p">(</span><span class="n">conn</span><span class="p">:</span> <span class="n">Connection</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="n">violations</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># No direct connection between Level 4 and Level 0-2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">conn</span><span class="o">.</span><span class="n">src_zone</span> <span class="o">&gt;=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">conn</span><span class="o">.</span><span class="n">dst_zone</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">)</span> <span class="ow">or</span> \
+       <span class="p">(</span><span class="n">conn</span><span class="o">.</span><span class="n">dst_zone</span> <span class="o">&gt;=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">conn</span><span class="o">.</span><span class="n">src_zone</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">violations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;CRITICAL: Direct IT-to-control-level connection bypasses industrial DMZ&quot;</span><span class="p">)</span>
+    <span class="c1"># Only one-way flows from OT to IT are acceptable for historian data</span>
+    <span class="k">if</span> <span class="n">conn</span><span class="o">.</span><span class="n">src_zone</span> <span class="o">&lt;=</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">conn</span><span class="o">.</span><span class="n">dst_zone</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">and</span> <span class="s2">&quot;historian&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">conn</span><span class="o">.</span><span class="n">note</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="n">violations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;WARNING: OT-&gt;IT flow should use data diode unless historian replication&quot;</span><span class="p">)</span>
+    <span class="c1"># No internet-routable protocols in Level 0-3</span>
+    <span class="k">if</span> <span class="n">conn</span><span class="o">.</span><span class="n">dst_zone</span> <span class="o">&lt;=</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">conn</span><span class="o">.</span><span class="n">protocol</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;HTTP&quot;</span><span class="p">,</span> <span class="s2">&quot;SMTP&quot;</span><span class="p">,</span> <span class="s2">&quot;FTP&quot;</span><span class="p">]:</span>
+        <span class="n">violations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;WARNING: IT protocol in OT zone -- verify necessity and implement controls&quot;</span><span class="p">)</span>
+    <span class="c1"># Level 3.5 must mediate all cross-boundary traffic</span>
+    <span class="k">if</span> <span class="n">conn</span><span class="o">.</span><span class="n">src_zone</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">conn</span><span class="o">.</span><span class="n">dst_zone</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">and</span> <span class="s2">&quot;dmz&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">conn</span><span class="o">.</span><span class="n">note</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="n">violations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;VIOLATION: Level 4 connecting to Level 3 without traversing DMZ (3.5)&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="s2">&quot;; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">violations</span><span class="p">)</span> <span class="k">if</span> <span class="n">violations</span> <span class="k">else</span> <span class="s2">&quot;COMPLIANT&quot;</span>
+
+<span class="n">connections</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">Connection</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;RDP&quot;</span><span class="p">,</span>     <span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;Engineer remote access -- should go via jump server in DMZ&quot;</span><span class="p">),</span>
+    <span class="n">Connection</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;Modbus&quot;</span><span class="p">,</span>  <span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;Historian replication of process data&quot;</span><span class="p">),</span>
+    <span class="n">Connection</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;ping&quot;</span><span class="p">,</span>    <span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;IT admin checking PLC availability directly&quot;</span><span class="p">),</span>
+    <span class="n">Connection</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;OPC-DA&quot;</span><span class="p">,</span>  <span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;Historian data via data diode in DMZ&quot;</span><span class="p">),</span>
+    <span class="n">Connection</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;HTTP&quot;</span><span class="p">,</span>    <span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;HMI software update from internet&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== OT Network Connection Policy Audit ===</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="s1">&#39;L.Src-&gt;L.Dst&#39;</span><span class="si">:</span><span class="s2">&lt;14</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Protocol&#39;</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Status&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  &quot;</span> <span class="o">+</span> <span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">75</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">connections</span><span class="p">:</span>
+    <span class="n">status</span> <span class="o">=</span> <span class="n">ot_policy_check</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  L</span><span class="si">{</span><span class="n">c</span><span class="o">.</span><span class="n">src_zone</span><span class="si">}</span><span class="s2">-&gt;L</span><span class="si">{</span><span class="n">c</span><span class="o">.</span><span class="n">dst_zone</span><span class="si">}</span><span class="s2">         </span><span class="si">{</span><span class="n">c</span><span class="o">.</span><span class="n">protocol</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">status</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/bdace6653005991047788cff2203b18d174e74fe421c591397ca975fc6ac3227.png" src="../../_images/bdace6653005991047788cff2203b18d174e74fe421c591397ca975fc6ac3227.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Figure 20.1 rendered.
+
+=== OT Network Connection Policy Audit ===
+
+  L.Src-&gt;L.Dst   Protocol   Status
+  ---------------------------------------------------------------------------
+  L4-&gt;L3         RDP        COMPLIANT
+  L3-&gt;L4         Modbus     COMPLIANT
+  L4-&gt;L1         ping       CRITICAL: Direct IT-to-control-level connection bypasses industrial DMZ
+  L3-&gt;L4         OPC-DA     COMPLIANT
+  L2-&gt;L4         HTTP       CRITICAL: Direct IT-to-control-level connection bypasses industrial DMZ; WARNING: OT-&gt;IT flow should use data diode unless historian replication
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">20.12. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> In OT environments, the priority ordering of the CIA triad differs from IT in that:
+A. Confidentiality takes priority over Availability  B. Availability and Integrity are prioritised over Confidentiality  C. Integrity is irrelevant in OT  D. All three are equally weighted</p>
+<p><strong>Q2.</strong> A PLC (Programmable Logic Controller) is best described as:
+A. A network firewall for industrial networks  B. A ruggedised computer executing deterministic control logic for physical actuators  C. A SCADA server  D. A human-machine interface</p>
+<p><strong>Q3.</strong> The Purdue Model Level 3.5 (Industrial DMZ) is designed to:
+A. House all PLCs  B. Mediate all traffic between the OT network and the enterprise IT network  C. Replace the air gap entirely  D. Provide internet access to operators</p>
+<p><strong>Q4.</strong> Stuxnet was significant because it:
+A. Was the first computer virus  B. Targeted Windows desktop PCs  C. Was the first publicly documented cyberweapon causing physical damage to industrial equipment  D. Attacked internet infrastructure</p>
+<p><strong>Q5.</strong> TRITON/TRISIS was most alarming because it:
+A. Encrypted historian data  B. Targeted Safety Instrumented Systems, the last protection layer before physical harm  C. Caused a power blackout  D. Spread via USB drives</p>
+<p><strong>Q6.</strong> Modbus lacks which fundamental security property?
+A. Reliability  B. Determinism  C. Authentication  D. Speed</p>
+<p><strong>Q7.</strong> A data diode is used in OT security to:
+A. Convert OT protocols to IT protocols  B. Allow network traffic to flow in one direction only  C. Authenticate PLC commands  D. Replace the firewall</p>
+<p><strong>Q8.</strong> IEC 62443 Security Level 4 is designed to protect against:
+A. Accidental misconfiguration  B. Script kiddies  C. Nation-state adversaries with sophisticated capabilities  D. Physical theft</p>
+<p><strong>Q9.</strong> The engineering workstation (EWS) is a high-value OT target because:
+A. It runs Windows XP  B. It is used to programme PLCs and may have connectivity to both IT and OT networks  C. It stores historian data  D. It provides internet access to operators</p>
+<p><strong>Q10.</strong> The most effective compensating control when an OT device cannot be patched is:
+A. Ignoring the vulnerability until a maintenance window is available  B. Network segmentation and protocol-aware monitoring to limit exposure and detect exploitation  C. Installing endpoint antivirus  D. Changing the default password</p>
+<p><em>Answers: Q1 B, Q2 B, Q3 B, Q4 C, Q5 B, Q6 C, Q7 B, Q8 C, Q9 B, Q10 B.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">20.13. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – Purdue zone mapping</strong>: For a fictional water treatment plant (control room PCs, 12 PLCs, 3 RTUs at remote pump stations, a SCADA server, a historian, and an enterprise ERP system), map every component to its Purdue level. Identify all data flows between levels and flag any that violate the industrial DMZ principle.</p>
+<p><strong>Part B – OT risk assessment</strong>: Using the OT connection checker above, add five connections of your own design. For each connection you flag as a violation, propose a compensating control or architecture change that would make it compliant.</p>
+<p><strong>Part C – Stuxnet case study</strong>: Research the publicly documented technical details of Stuxnet. Write a two-page technical summary covering: initial infection vector, propagation mechanism, PLC targeting logic, the operator-deception technique used to hide the attack, and the three controls that, if in place, might have detected or prevented the attack.</p>
+<p><strong>Part D – IEC 62443 zone design</strong>: For a chemical plant with three process areas (reaction, separation, storage) and a central control room, design an IEC 62443-compliant zone and conduit model. Specify the security level for each zone, the conduit controls between zones, and justify your security-level assignments.</p>
+</section>
+<section id="references">
+<h2><span class="section-number">20.14. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<div class="docutils container" id="id3">
+<div role="list" class="citation-list">
+<div class="citation" id="id24" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">S+23</a><span class="fn-bracket">]</span></span>
+<p>Keith Stouffer and others. SP 800-82 Rev. 3: Guide to Operational Technology (OT) Security. Technical Report SP 800-82r3, National Institute of Standards and Technology, 2023.</p>
+</div>
+<div class="citation" id="id25" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">InternationalECommission18</a><span class="fn-bracket">]</span></span>
+<p>International Electrotechnical Commission. IEC 62443: Security for Industrial Automation and Control Systems. IEC Standard Series, 2018.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/20_ics_ot"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../19_governance_culture/chapter19.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">19. </span>Chapter 19: Security Governance, Policy, and Culture</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../appendix_a/appendix_a.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Appendix A: Security Command Reference</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">20.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">20.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#it-versus-ot-a-fundamental-difference-in-priorities">20.3. IT Versus OT: A Fundamental Difference in Priorities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#safety-as-the-overriding-priority">20.3.1. Safety as the Overriding Priority</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ics-components">20.4. ICS Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#programmable-logic-controllers">20.4.1. Programmable Logic Controllers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scada-systems">20.4.2. SCADA Systems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#human-machine-interfaces">20.4.3. Human-Machine Interfaces</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-purdue-model-and-network-segmentation">20.5. The Purdue Model and Network Segmentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-industrial-dmz">20.5.1. The Industrial DMZ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#air-gaps-and-their-limitations">20.5.2. Air Gaps and Their Limitations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ot-specific-security-challenges">20.6. OT-Specific Security Challenges</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legacy-equipment-and-long-lifecycles">20.6.1. Legacy Equipment and Long Lifecycles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#availability-requirements">20.6.2. Availability Requirements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protocol-insecurity">20.6.3. Protocol Insecurity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ics-malware-case-studies">20.7. ICS Malware Case Studies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stuxnet-2010">20.7.1. Stuxnet (2010)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#industroyer-crashoverride-2016">20.7.2. Industroyer/CRASHOVERRIDE (2016)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#triton-trisis-2017">20.7.3. TRITON/TRISIS (2017)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iec-62443-and-nist-sp-800-82">20.8. IEC 62443 and NIST SP 800-82</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iec-62443">20.8.1. IEC 62443</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nist-sp-800-82">20.8.2. NIST SP 800-82</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ot-defence-in-depth">20.9. OT Defence-in-Depth</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">20.10. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">20.11. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">20.12. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">20.13. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">20.14. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

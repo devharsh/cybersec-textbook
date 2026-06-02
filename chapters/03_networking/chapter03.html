@@ -1,0 +1,949 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3. Chapter 3: Networking Fundamentals for Security &#8212; Cybersecurity: Theory, Practice, and Ethics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/03_networking/chapter03';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4. Chapter 4: Social Engineering and the Human Element" href="../04_social_engineering/chapter04.html" />
+    <link rel="prev" title="2. Chapter 2: Cryptography" href="../02_cryptography/chapter02.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Cybersecurity: Theory, Practice, and Ethics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Front Matter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00_preface/preface.html">Preface</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I: Foundations of Cybersecurity</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_intro/chapter01.html">1. Chapter 1: Introduction to Cybersecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_cryptography/chapter02.html">2. Chapter 2: Cryptography</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Chapter 3: Networking Fundamentals for Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II: Threats and the Human Element</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_social_engineering/chapter04.html">4. Chapter 4: Social Engineering and the Human Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_risk/chapter05.html">5. Chapter 5: Risk Management and Governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part III: Offensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_pentest_methodology/chapter06.html">6. Chapter 6: Penetration Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_recon/chapter07.html">7. Chapter 7: Reconnaissance and OSINT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_scanning/chapter08.html">8. Chapter 8: Scanning and Enumeration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_exploitation/chapter09.html">9. Chapter 9: Exploitation and Post-Exploitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_web_security/chapter10.html">10. Chapter 10: Web Application Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part IV: Defensive Security</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11_network_defense/chapter11.html">11. Chapter 11: Network Defense and Hardening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_idps/chapter12.html">12. Chapter 12: Intrusion Detection and Prevention Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_forensics/chapter13.html">13. Chapter 13: Digital Forensics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_incident_response/chapter14.html">14. Chapter 14: Incident Response</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part V: Advanced and Emerging Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../15_malware/chapter15.html">15. Chapter 15: Malware Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_ctf/chapter16.html">16. Chapter 16: Capture the Flag and Competitive Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_emerging/chapter17.html">17. Chapter 17: Emerging Threats and Future Challenges</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part VI: Cybersecurity, Society, and Critical Infrastructure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../18_privacy_law/chapter18.html">18. Chapter 18: Privacy, Law, and Information Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19_governance_culture/chapter19.html">19. Chapter 19: Security Governance, Policy, and Culture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20_ics_ot/chapter20.html">20. Chapter 20: Industrial Control Systems and OT Security</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../appendix_a/appendix_a.html">Appendix A: Acronyms and Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_b/appendix_b.html">Appendix B: Common Ports and Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix_c/appendix_c.html">Appendix C: Certification Mapping</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/devharsh/cybersec-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/03_networking/chapter03.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 3: Networking Fundamentals for Security</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">3.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">3.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-osi-model">3.3. The OSI Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#layer-1-physical">3.3.1. Layer 1: Physical</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#layer-2-data-link">3.3.2. Layer 2: Data Link</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#arp-and-its-vulnerabilities">3.3.2.1. ARP and Its Vulnerabilities</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vlan-segmentation">3.3.2.2. VLAN Segmentation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#layer-3-network">3.3.3. Layer 3: Network</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ip-addressing-and-cidr">3.3.3.1. IP Addressing and CIDR</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#routing-and-bgp-hijacking">3.3.3.2. Routing and BGP Hijacking</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#layers-4-through-7">3.3.4. Layers 4 Through 7</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tcp-ip-in-depth">3.4. TCP/IP in Depth</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-tcp-three-way-handshake">3.4.1. The TCP Three-Way Handshake</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#syn-flood-attack">3.4.1.1. SYN Flood Attack</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tcp-versus-udp">3.4.2. TCP Versus UDP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-application-protocols-and-their-security-properties">3.4.3. Key Application Protocols and Their Security Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dns">3.4.3.1. DNS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#http-and-https">3.4.3.2. HTTP and HTTPS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#smtp-and-email-security">3.4.3.3. SMTP and Email Security</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ssh-versus-telnet">3.4.3.4. SSH Versus Telnet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-address-translation-and-segmentation">3.5. Network Address Translation and Segmentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nat-and-its-security-properties">3.5.1. NAT and Its Security Properties</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vpns-and-tunnelling">3.5.2. VPNs and Tunnelling</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">3.6. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">3.7. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">3.8. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">3.9. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">3.10. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-3-networking-fundamentals-for-security">
+<h1><span class="section-number">3. </span>Chapter 3: Networking Fundamentals for Security<a class="headerlink" href="#chapter-3-networking-fundamentals-for-security" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>“The Internet is a network of networks, which means it is also a collection of all their
+misconfigured routers and unpatched switches.” anonymous</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="learning-objectives">
+<h2><span class="section-number">3.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this chapter, you will be able to:</p>
+<ol class="arabic simple">
+<li><p>Describe the OSI model’s seven layers and map each to common security mechanisms.</p></li>
+<li><p>Explain the TCP/IP stack and the three-way handshake.</p></li>
+<li><p>Identify the purpose and security implications of key protocols: DNS, HTTP/S, SMTP, FTP, SSH.</p></li>
+<li><p>Compute subnets and CIDR notation and explain why segmentation improves security.</p></li>
+<li><p>Describe how ARP, DHCP, and routing work and how they are abused.</p></li>
+<li><p>Explain the difference between TCP and UDP and identify when each is used.</p></li>
+<li><p>Describe the role of NAT, VPNs, and proxies in network security.</p></li>
+<li><p>Analyse a basic Wireshark capture to identify protocols and extract artefacts.</p></li>
+</ol>
+</section>
+<section id="key-terms">
+<h2><span class="section-number">3.2. </span>Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>OSI model</strong>: Open Systems Interconnection model; seven-layer reference model.</p></li>
+<li><p><strong>TCP/IP</strong>: Transmission Control Protocol / Internet Protocol; the foundation of the internet.</p></li>
+<li><p><strong>Three-way handshake</strong>: SYN, SYN-ACK, ACK sequence that establishes a TCP connection.</p></li>
+<li><p><strong>Port</strong>: a 16-bit number that identifies an application-level endpoint.</p></li>
+<li><p><strong>DNS</strong>: Domain Name System; resolves domain names to IP addresses.</p></li>
+<li><p><strong>ARP</strong>: Address Resolution Protocol; maps IP addresses to MAC addresses on a LAN.</p></li>
+<li><p><strong>DHCP</strong>: Dynamic Host Configuration Protocol; assigns IP configuration automatically.</p></li>
+<li><p><strong>NAT</strong>: Network Address Translation; maps private addresses to public addresses.</p></li>
+<li><p><strong>VLAN</strong>: Virtual LAN; logical segmentation of a network at layer 2.</p></li>
+<li><p><strong>BGP</strong>: Border Gateway Protocol; routes traffic between autonomous systems on the internet.</p></li>
+<li><p><strong>TLS</strong>: Transport Layer Security; encrypts application-layer traffic.</p></li>
+<li><p><strong>PCAP</strong>: packet capture file format used by Wireshark and tcpdump.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="the-osi-model">
+<h2><span class="section-number">3.3. </span>The OSI Model<a class="headerlink" href="#the-osi-model" title="Link to this heading">#</a></h2>
+<p>The OSI model divides network communication into seven abstraction layers, each providing services
+to the layer above and using services from the layer below. Its value for security practitioners
+is that it identifies precisely where a given attack or control operates.</p>
+<section id="layer-1-physical">
+<h3><span class="section-number">3.3.1. </span>Layer 1: Physical<a class="headerlink" href="#layer-1-physical" title="Link to this heading">#</a></h3>
+<p>The physical layer transmits raw bits over a medium: copper, fibre optic, or radio frequency. Physical
+security (locked wiring closets, tamper-evident connectors) and physical attacks (cable tapping,
+rogue access points) operate here. A rogue Ethernet tap can capture all traffic on a segment before
+any higher-layer control has an opportunity to act.</p>
+</section>
+<section id="layer-2-data-link">
+<h3><span class="section-number">3.3.2. </span>Layer 2: Data Link<a class="headerlink" href="#layer-2-data-link" title="Link to this heading">#</a></h3>
+<p>The data link layer provides node-to-node delivery within a single network segment using MAC (Media
+Access Control) addresses. Protocols include Ethernet, Wi-Fi (802.11), and PPP. Security controls
+at layer 2 include:</p>
+<section id="arp-and-its-vulnerabilities">
+<h4><span class="section-number">3.3.2.1. </span>ARP and Its Vulnerabilities<a class="headerlink" href="#arp-and-its-vulnerabilities" title="Link to this heading">#</a></h4>
+<p>ARP is stateless and unauthenticated: any host can claim to own any IP address. ARP poisoning (or
+ARP spoofing) exploits this by broadcasting false ARP replies, redirecting traffic through an attacker’s
+machine for man-in-the-middle interception. Dynamic ARP Inspection (DAI) on managed switches validates
+ARP replies against a trusted binding table.</p>
+</section>
+<section id="vlan-segmentation">
+<h4><span class="section-number">3.3.2.2. </span>VLAN Segmentation<a class="headerlink" href="#vlan-segmentation" title="Link to this heading">#</a></h4>
+<p>VLANs are logical network segments configured on a switch. A host on VLAN 10 cannot directly reach
+VLAN 20 without passing through a router or layer-3 switch where access control lists can be applied.
+VLAN hopping attacks exploit trunk port misconfiguration to escape a VLAN; proper trunk port
+configuration and disabling the default VLAN on trunks mitigate this.</p>
+</section>
+</section>
+<section id="layer-3-network">
+<h3><span class="section-number">3.3.3. </span>Layer 3: Network<a class="headerlink" href="#layer-3-network" title="Link to this heading">#</a></h3>
+<p>The network layer routes packets across multiple network segments using IP addresses. IPv4 uses 32-bit
+addresses; IPv6 uses 128-bit addresses.</p>
+<section id="ip-addressing-and-cidr">
+<h4><span class="section-number">3.3.3.1. </span>IP Addressing and CIDR<a class="headerlink" href="#ip-addressing-and-cidr" title="Link to this heading">#</a></h4>
+<p>CIDR notation expresses an address and its prefix length together: 192.168.1.0/24 denotes addresses
+192.168.1.0 through 192.168.1.255 (256 hosts, 254 usable). The prefix length determines the subnet
+mask. Segmenting a network into smaller subnets limits broadcast domains and creates enforcement points
+for firewalls and ACLs.</p>
+</section>
+<section id="routing-and-bgp-hijacking">
+<h4><span class="section-number">3.3.3.2. </span>Routing and BGP Hijacking<a class="headerlink" href="#routing-and-bgp-hijacking" title="Link to this heading">#</a></h4>
+<p>BGP is the protocol that determines how traffic flows between autonomous systems (AS) on the internet.
+BGP trusts route announcements without cryptographic verification by default; a misconfigured or
+malicious AS can announce a more-specific prefix for IP space it does not own, redirecting traffic
+(BGP hijacking). RPKI (Resource Public Key Infrastructure) adds cryptographic origin validation to
+BGP and is being progressively deployed.</p>
+</section>
+</section>
+<section id="layers-4-through-7">
+<h3><span class="section-number">3.3.4. </span>Layers 4 Through 7<a class="headerlink" href="#layers-4-through-7" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Layer</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Key Protocols</p></th>
+<th class="head"><p>Key Security Mechanisms</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>4 Transport</p></td>
+<td><p>TCP, UDP</p></td>
+<td><p>Stateful firewalls, rate limiting, TLS</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>5 Session</p></td>
+<td><p>NetBIOS, RPC</p></td>
+<td><p>Session tokens, authentication</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>6 Presentation</p></td>
+<td><p>TLS, SSL, encoding</p></td>
+<td><p>Certificate validation, encryption</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>7 Application</p></td>
+<td><p>HTTP/S, DNS, SMTP</p></td>
+<td><p>WAF, DKIM/SPF/DMARC, input validation</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="tcp-ip-in-depth">
+<h2><span class="section-number">3.4. </span>TCP/IP in Depth<a class="headerlink" href="#tcp-ip-in-depth" title="Link to this heading">#</a></h2>
+<section id="the-tcp-three-way-handshake">
+<h3><span class="section-number">3.4.1. </span>The TCP Three-Way Handshake<a class="headerlink" href="#the-tcp-three-way-handshake" title="Link to this heading">#</a></h3>
+<p>TCP establishes a reliable, connection-oriented session with a three-way handshake. The initiator
+sends a SYN with a random Initial Sequence Number (ISN). The responder acknowledges with SYN-ACK,
+selecting its own ISN. The initiator sends ACK to complete the connection.</p>
+<section id="syn-flood-attack">
+<h4><span class="section-number">3.4.1.1. </span>SYN Flood Attack<a class="headerlink" href="#syn-flood-attack" title="Link to this heading">#</a></h4>
+<p>A SYN flood overwhelms a server by sending SYN packets with spoofed source addresses and never
+completing the handshake. The server allocates state for each half-open connection until its table
+is exhausted and it cannot accept legitimate connections. SYN cookies mitigate this by encoding
+connection state in the ISN so no per-connection memory is allocated until the handshake completes.</p>
+</section>
+</section>
+<section id="tcp-versus-udp">
+<h3><span class="section-number">3.4.2. </span>TCP Versus UDP<a class="headerlink" href="#tcp-versus-udp" title="Link to this heading">#</a></h3>
+<p>TCP provides reliable, ordered, error-checked delivery with connection state. UDP provides fast,
+connectionless, best-effort delivery with no guarantee of order or arrival. Security implications:
+TCP state can be exhausted (connection-table attacks); UDP is used for amplification DDoS (DNS, NTP,
+SSDP reflection) because a small query produces a large response sent to a spoofed victim address.</p>
+</section>
+<section id="key-application-protocols-and-their-security-properties">
+<h3><span class="section-number">3.4.3. </span>Key Application Protocols and Their Security Properties<a class="headerlink" href="#key-application-protocols-and-their-security-properties" title="Link to this heading">#</a></h3>
+<section id="dns">
+<h4><span class="section-number">3.4.3.1. </span>DNS<a class="headerlink" href="#dns" title="Link to this heading">#</a></h4>
+<p>DNS resolves human-readable names to IP addresses using a hierarchical, distributed database.
+Plain DNS (port 53 UDP/TCP) sends queries and responses in the clear, enabling eavesdropping and
+DNS spoofing (cache poisoning). DNSSEC adds cryptographic signatures to resource records. DNS over
+HTTPS (DoH) and DNS over TLS (DoT) encrypt the channel.</p>
+</section>
+<section id="http-and-https">
+<h4><span class="section-number">3.4.3.2. </span>HTTP and HTTPS<a class="headerlink" href="#http-and-https" title="Link to this heading">#</a></h4>
+<p>HTTP (port 80) transmits content in the clear. HTTPS (port 443) wraps HTTP in TLS, providing
+confidentiality, integrity, and server authentication. HSTS (HTTP Strict Transport Security) instructs
+browsers to only use HTTPS for a domain, preventing protocol-downgrade attacks.</p>
+</section>
+<section id="smtp-and-email-security">
+<h4><span class="section-number">3.4.3.3. </span>SMTP and Email Security<a class="headerlink" href="#smtp-and-email-security" title="Link to this heading">#</a></h4>
+<p>SMTP (port 25/587) transfers email. SPF (Sender Policy Framework) lists authorized sending servers.
+DKIM (DomainKeys Identified Mail) adds a cryptographic signature to messages. DMARC ties SPF and
+DKIM together and specifies what receivers should do with failing messages. Together these three
+controls block most domain impersonation used in phishing.</p>
+</section>
+<section id="ssh-versus-telnet">
+<h4><span class="section-number">3.4.3.4. </span>SSH Versus Telnet<a class="headerlink" href="#ssh-versus-telnet" title="Link to this heading">#</a></h4>
+<p>Telnet (port 23) transmits everything in the clear including credentials. SSH (port 22) encrypts
+the session, authenticates the server with a host key, and supports key-based client authentication
+that eliminates password exposure entirely. Telnet has no legitimate use in any modern network.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="network-address-translation-and-segmentation">
+<h2><span class="section-number">3.5. </span>Network Address Translation and Segmentation<a class="headerlink" href="#network-address-translation-and-segmentation" title="Link to this heading">#</a></h2>
+<section id="nat-and-its-security-properties">
+<h3><span class="section-number">3.5.1. </span>NAT and Its Security Properties<a class="headerlink" href="#nat-and-its-security-properties" title="Link to this heading">#</a></h3>
+<p>NAT maps many private addresses (RFC 1918: 10.x.x.x, 172.16-31.x.x, 192.168.x.x) to a smaller
+pool of public addresses. NAT provides a modest privacy benefit by hiding internal topology from
+external observers, but it is not a firewall: many NAT implementations allow all outbound connections
+and track return traffic, so an attacker who gets code running inside the network can freely exfiltrate.</p>
+</section>
+<section id="vpns-and-tunnelling">
+<h3><span class="section-number">3.5.2. </span>VPNs and Tunnelling<a class="headerlink" href="#vpns-and-tunnelling" title="Link to this heading">#</a></h3>
+<p>A VPN creates an encrypted tunnel between endpoints, allowing remote users to access private network
+resources as if locally connected. IPsec and WireGuard are protocol options. Zero-trust network access
+(ZTNA) is progressively replacing traditional VPNs by evaluating each request rather than granting
+broad network access once a VPN session is established.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="why-this-matters">
+<h2><span class="section-number">3.6. </span>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">#</a></h2>
+<p>Every offensive technique in the later chapters of this book, and every defensive control, operates at
+a specific layer of the network stack. Misidentifying the layer leads to deploying the wrong control.
+A practitioner who cannot read a packet capture, explain a three-way handshake, or compute a subnet
+is missing the vocabulary needed to diagnose nearly any security event.</p>
+</section>
+<hr class="docutils" />
+<section id="news-in-focus">
+<h2><span class="section-number">3.7. </span>News in Focus<a class="headerlink" href="#news-in-focus" title="Link to this heading">#</a></h2>
+<p>BGP hijacking incidents have repeatedly redirected substantial portions of internet traffic through
+unexpected autonomous systems, sometimes for minutes, sometimes for hours. In documented cases,
+traffic for major financial institutions and internet infrastructure was rerouted through foreign ASes.
+These incidents underscore that the internet’s core routing protocol was designed for a cooperative
+environment and requires cryptographic augmentation (RPKI) to be resilient against misbehaving nodes.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 3 -- Worked Example: Subnet calculator and protocol port reference</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+
+<span class="c1"># ── Subnet calculator ─────────────────────────────────────────────────────────</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">subnet_info</span><span class="p">(</span><span class="n">cidr</span><span class="p">):</span>
+    <span class="n">addr</span><span class="p">,</span> <span class="n">prefix</span> <span class="o">=</span> <span class="n">cidr</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+    <span class="n">prefix</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">prefix</span><span class="p">)</span>
+    <span class="n">octets</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">addr</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)))</span>
+    <span class="n">mask_int</span> <span class="o">=</span> <span class="p">(</span><span class="mh">0xFFFFFFFF</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="mi">32</span> <span class="o">-</span> <span class="n">prefix</span><span class="p">))</span> <span class="o">&amp;</span> <span class="mh">0xFFFFFFFF</span>
+    <span class="n">addr_int</span> <span class="o">=</span> <span class="p">(</span><span class="n">octets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="mi">24</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">octets</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="mi">16</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">octets</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="mi">8</span><span class="p">)</span><span class="o">|</span><span class="n">octets</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+    <span class="n">net_int</span> <span class="o">=</span> <span class="n">addr_int</span> <span class="o">&amp;</span> <span class="n">mask_int</span>
+    <span class="n">bcast_int</span> <span class="o">=</span> <span class="n">net_int</span> <span class="o">|</span> <span class="p">(</span><span class="o">~</span><span class="n">mask_int</span> <span class="o">&amp;</span> <span class="mh">0xFFFFFFFF</span><span class="p">)</span>
+    <span class="n">hosts</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">bcast_int</span> <span class="o">-</span> <span class="n">net_int</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">i2s</span><span class="p">(</span><span class="n">i</span><span class="p">):</span> <span class="k">return</span> <span class="s1">&#39;.&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">((</span><span class="n">i</span><span class="o">&gt;&gt;</span><span class="n">s</span><span class="p">)</span><span class="o">&amp;</span><span class="mh">0xFF</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">24</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;Network&#39;</span><span class="p">:</span>    <span class="n">i2s</span><span class="p">(</span><span class="n">net_int</span><span class="p">),</span>
+        <span class="s1">&#39;Broadcast&#39;</span><span class="p">:</span>  <span class="n">i2s</span><span class="p">(</span><span class="n">bcast_int</span><span class="p">),</span>
+        <span class="s1">&#39;First host&#39;</span><span class="p">:</span> <span class="n">i2s</span><span class="p">(</span><span class="n">net_int</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">hosts</span><span class="o">&gt;</span><span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;N/A&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Last host&#39;</span><span class="p">:</span>  <span class="n">i2s</span><span class="p">(</span><span class="n">bcast_int</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">hosts</span><span class="o">&gt;</span><span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;N/A&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Usable hosts&#39;</span><span class="p">:</span> <span class="n">hosts</span><span class="p">,</span>
+        <span class="s1">&#39;Subnet mask&#39;</span><span class="p">:</span>  <span class="n">i2s</span><span class="p">(</span><span class="n">mask_int</span><span class="p">),</span>
+    <span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== Subnet Calculator ===&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">cidr</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;10.0.0.0/8&#39;</span><span class="p">,</span><span class="s1">&#39;192.168.1.0/24&#39;</span><span class="p">,</span><span class="s1">&#39;172.16.0.0/20&#39;</span><span class="p">,</span><span class="s1">&#39;10.10.5.64/26&#39;</span><span class="p">]:</span>
+    <span class="n">info</span> <span class="o">=</span> <span class="n">subnet_info</span><span class="p">(</span><span class="n">cidr</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">  </span><span class="si">{</span><span class="n">cidr</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">info</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;    </span><span class="si">{</span><span class="n">k</span><span class="si">:</span><span class="s2">15</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># ── OSI layer vs attack visual ────────────────────────────────────────────────</span>
+<span class="n">layers</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;7 Application&quot;</span><span class="p">,</span> <span class="s2">&quot;SQL injection, XSS, credential stuffing&quot;</span><span class="p">,</span>       <span class="s2">&quot;#f0d4d4&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;6 Presentation&quot;</span><span class="p">,</span> <span class="s2">&quot;TLS downgrade, certificate spoofing&quot;</span><span class="p">,</span>          <span class="s2">&quot;#f5e6d0&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;5 Session&quot;</span><span class="p">,</span>     <span class="s2">&quot;Session hijacking, replay attacks&quot;</span><span class="p">,</span>             <span class="s2">&quot;#f5f0cf&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;4 Transport&quot;</span><span class="p">,</span>   <span class="s2">&quot;SYN flood, port scan, UDP amplification&quot;</span><span class="p">,</span>       <span class="s2">&quot;#e8f5cf&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;3 Network&quot;</span><span class="p">,</span>     <span class="s2">&quot;IP spoofing, BGP hijacking, ICMP attacks&quot;</span><span class="p">,</span>      <span class="s2">&quot;#cfe3d6&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;2 Data Link&quot;</span><span class="p">,</span>   <span class="s2">&quot;ARP poisoning, VLAN hopping, MAC flooding&quot;</span><span class="p">,</span>     <span class="s2">&quot;#c5e0e8&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;1 Physical&quot;</span><span class="p">,</span>    <span class="s2">&quot;Wiretapping, jamming, rogue access point&quot;</span><span class="p">,</span>      <span class="s2">&quot;#dde7f0&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">layers</span><span class="p">)</span><span class="o">*</span><span class="mf">0.72</span><span class="o">+</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">attacks</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">layers</span><span class="p">)):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mf">0.72</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="mf">0.1</span><span class="p">,</span><span class="n">y</span><span class="p">),</span> <span class="mf">3.2</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="mf">3.5</span><span class="p">,</span><span class="n">y</span><span class="p">),</span> <span class="mf">6.3</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;#333&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.7</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="mf">0.32</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">6.6</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="mf">0.32</span><span class="p">,</span> <span class="n">attacks</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.7</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">layers</span><span class="p">)</span><span class="o">*</span><span class="mf">0.72</span><span class="o">+</span><span class="mf">0.1</span><span class="p">,</span> <span class="s2">&quot;OSI Layer&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">6.6</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">layers</span><span class="p">)</span><span class="o">*</span><span class="mf">0.72</span><span class="o">+</span><span class="mf">0.1</span><span class="p">,</span> <span class="s2">&quot;Common Attacks at This Layer&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Figure 3.1  OSI Layers and Associated Attack Vectors&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+
+<span class="n">_buf</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">_buf</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">();</span> <span class="n">_buf</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">_buf</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Figure 3.1 rendered.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Subnet Calculator ===
+
+  10.0.0.0/8
+    Network        : 10.0.0.0
+    Broadcast      : 10.255.255.255
+    First host     : 10.0.0.1
+    Last host      : 10.255.255.254
+    Usable hosts   : 16777214
+    Subnet mask    : 255.0.0.0
+
+  192.168.1.0/24
+    Network        : 192.168.1.0
+    Broadcast      : 192.168.1.255
+    First host     : 192.168.1.1
+    Last host      : 192.168.1.254
+    Usable hosts   : 254
+    Subnet mask    : 255.255.255.0
+
+  172.16.0.0/20
+    Network        : 172.16.0.0
+    Broadcast      : 172.16.15.255
+    First host     : 172.16.0.1
+    Last host      : 172.16.15.254
+    Usable hosts   : 4094
+    Subnet mask    : 255.255.240.0
+
+  10.10.5.64/26
+    Network        : 10.10.5.64
+    Broadcast      : 10.10.5.127
+    First host     : 10.10.5.65
+    Last host      : 10.10.5.126
+    Usable hosts   : 62
+    Subnet mask    : 255.255.255.192
+</pre></div>
+</div>
+<img alt="../../_images/039b3db4799e494f431a013376dc8be9402cc4b97fa7f1f618cd44a2e45f938f.png" src="../../_images/039b3db4799e494f431a013376dc8be9402cc4b97fa7f1f618cd44a2e45f938f.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Figure 3.1 rendered.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="review-questions-mcq">
+<h2><span class="section-number">3.8. </span>Review Questions (MCQ)<a class="headerlink" href="#review-questions-mcq" title="Link to this heading">#</a></h2>
+<p><strong>Q1.</strong> ARP spoofing is primarily an attack at which OSI layer?
+A. Layer 3  B. Layer 2  C. Layer 4  D. Layer 7</p>
+<p><strong>Q2.</strong> A SYN flood exploits which TCP mechanism?
+A. Three-way handshake half-open state  B. Sequence number prediction  C. Port exhaustion  D. TTL expiry</p>
+<p><strong>Q3.</strong> DNS over HTTPS (DoH) protects against which threat?
+A. Cache poisoning via DNS spoofing  B. DDoS via DNS amplification  C. DNS query eavesdropping  D. All of the above</p>
+<p><strong>Q4.</strong> Which RFC 1918 range provides the most host addresses?
+A. 192.168.0.0/16  B. 172.16.0.0/12  C. 10.0.0.0/8  D. 100.64.0.0/10</p>
+<p><strong>Q5.</strong> A /26 subnet provides how many usable host addresses?
+A. 62  B. 64  C. 30  D. 126</p>
+<p><strong>Q6.</strong> Which email security standard adds a cryptographic signature to message headers?
+A. SPF  B. DMARC  C. DKIM  D. TLS</p>
+<p><strong>Q7.</strong> SSH differs from Telnet primarily in that SSH:
+A. Uses port 22 vs port 23  B. Encrypts the session and authenticates the server  C. Requires a password  D. Works only on Unix</p>
+<p><strong>Q8.</strong> VLAN hopping attacks typically exploit misconfigured:
+A. Router ACLs  B. Trunk ports  C. DHCP scopes  D. SNMP communities</p>
+<p><strong>Q9.</strong> BGP hijacking allows an attacker to:
+A. Flood a network with packets  B. Redirect internet traffic by announcing illegitimate routes  C. Eavesdrop on TLS sessions  D. Crack Wi-Fi passwords</p>
+<p><strong>Q10.</strong> The RPKI standard is designed to mitigate:
+A. ARP poisoning  B. DNS cache poisoning  C. BGP route hijacking  D. TCP SYN floods</p>
+<p><em>Answers: Q1 B, Q2 A, Q3 C, Q4 C, Q5 A, Q6 C, Q7 B, Q8 B, Q9 B, Q10 C.</em></p>
+</section>
+<section id="lab-assignment">
+<h2><span class="section-number">3.9. </span>Lab Assignment<a class="headerlink" href="#lab-assignment" title="Link to this heading">#</a></h2>
+<p><strong>Part A – Subnet design</strong>: A company has the address block 10.10.0.0/16. Design subnets for five
+departments (Finance 50 hosts, HR 30, Engineering 200, DMZ 10, Management 10). Document the network
+address, broadcast, usable range, and mask for each subnet.</p>
+<p><strong>Part B – Packet analysis</strong>: Capture 60 seconds of traffic on your local interface using Wireshark
+or tcpdump (on a system you own or are authorised to analyse). Identify: the three most common
+protocols by packet count, any cleartext protocols (HTTP, Telnet, FTP), and any DNS queries and their
+responses. Document your methodology.</p>
+<p><strong>Part C – Protocol security matrix</strong>: For each of DNS, HTTP, SMTP, FTP, and SSH, complete a table
+with: port number, transport protocol (TCP/UDP), whether the protocol is encrypted by default, the
+recommended secure alternative or configuration, and one attack that targets the protocol.</p>
+<p><strong>Part D – ARP investigation</strong>: On a lab Linux VM, use <code class="docutils literal notranslate"><span class="pre">arp</span> <span class="pre">-a</span></code> to display the ARP cache. Use
+<code class="docutils literal notranslate"><span class="pre">arping</span></code> or a similar tool to resolve a specific IP. Explain how an attacker running <code class="docutils literal notranslate"><span class="pre">arpspoof</span></code> would
+modify this cache and what a defender would observe in the switch’s MAC address table.</p>
+</section>
+<section id="references">
+<h2><span class="section-number">3.10. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<span class="target" id="id1"></span></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/03_networking"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../02_cryptography/chapter02.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Chapter 2: Cryptography</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../04_social_engineering/chapter04.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Chapter 4: Social Engineering and the Human Element</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">3.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">3.2. Key Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-osi-model">3.3. The OSI Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#layer-1-physical">3.3.1. Layer 1: Physical</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#layer-2-data-link">3.3.2. Layer 2: Data Link</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#arp-and-its-vulnerabilities">3.3.2.1. ARP and Its Vulnerabilities</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vlan-segmentation">3.3.2.2. VLAN Segmentation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#layer-3-network">3.3.3. Layer 3: Network</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ip-addressing-and-cidr">3.3.3.1. IP Addressing and CIDR</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#routing-and-bgp-hijacking">3.3.3.2. Routing and BGP Hijacking</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#layers-4-through-7">3.3.4. Layers 4 Through 7</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tcp-ip-in-depth">3.4. TCP/IP in Depth</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-tcp-three-way-handshake">3.4.1. The TCP Three-Way Handshake</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#syn-flood-attack">3.4.1.1. SYN Flood Attack</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tcp-versus-udp">3.4.2. TCP Versus UDP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-application-protocols-and-their-security-properties">3.4.3. Key Application Protocols and Their Security Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dns">3.4.3.1. DNS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#http-and-https">3.4.3.2. HTTP and HTTPS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#smtp-and-email-security">3.4.3.3. SMTP and Email Security</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ssh-versus-telnet">3.4.3.4. SSH Versus Telnet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-address-translation-and-segmentation">3.5. Network Address Translation and Segmentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nat-and-its-security-properties">3.5.1. NAT and Its Security Properties</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vpns-and-tunnelling">3.5.2. VPNs and Tunnelling</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-matters">3.6. Why This Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#news-in-focus">3.7. News in Focus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-questions-mcq">3.8. Review Questions (MCQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-assignment">3.9. Lab Assignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">3.10. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Devharsh Trivedi, Ph.D., CISSP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
