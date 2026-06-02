@@ -1,0 +1,62 @@
+format: jb-book
+root: intro
+
+parts:
+  - caption: "Front Matter"
+    numbered: false
+    chapters:
+      - file: chapters/00_preface/preface
+
+  - caption: "Part I: Foundations of Cybersecurity"
+    numbered: true
+    chapters:
+      - file: chapters/01_intro/chapter01
+      - file: chapters/02_cryptography/chapter02
+      - file: chapters/03_networking/chapter03
+
+  - caption: "Part II: Threats and the Human Element"
+    numbered: true
+    chapters:
+      - file: chapters/04_social_engineering/chapter04
+      - file: chapters/05_risk/chapter05
+
+  - caption: "Part III: Offensive Security"
+    numbered: true
+    chapters:
+      - file: chapters/06_pentest_methodology/chapter06
+      - file: chapters/07_recon/chapter07
+      - file: chapters/08_scanning/chapter08
+      - file: chapters/09_exploitation/chapter09
+      - file: chapters/10_web_security/chapter10
+
+  - caption: "Part IV: Defensive Security"
+    numbered: true
+    chapters:
+      - file: chapters/11_network_defense/chapter11
+      - file: chapters/12_idps/chapter12
+      - file: chapters/13_forensics/chapter13
+      - file: chapters/14_incident_response/chapter14
+
+  - caption: "Part V: Advanced and Emerging Topics"
+    numbered: true
+    chapters:
+      - file: chapters/15_malware/chapter15
+      - file: chapters/16_ctf/chapter16
+      - file: chapters/17_emerging/chapter17
+
+  - caption: "Part VI: Cybersecurity, Society, and Critical Infrastructure"
+    numbered: true
+    chapters:
+      - file: chapters/18_privacy_law/chapter18
+      - file: chapters/19_governance_culture/chapter19
+      - file: chapters/20_ics_ot/chapter20
+
+  - caption: "Appendices"
+    numbered: false
+    chapters:
+      - file: chapters/appendix_a/appendix_a
+        title: "Appendix A: Acronyms and Abbreviations"
+      - file: chapters/appendix_b/appendix_b
+        title: "Appendix B: Common Ports and Protocols"
+      - file: chapters/appendix_c/appendix_c
+        title: "Appendix C: Certification Mapping"

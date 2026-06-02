@@ -1,0 +1,69 @@
+#######################################################################################
+# Cybersecurity: Theory, Practice, and Ethics
+# A free, open-source textbook for university courses and professional certifications
+# Author: Devharsh Trivedi, Ph.D., CISSP
+#######################################################################################
+
+title: "Cybersecurity: Theory, Practice, and Ethics"
+author: "Devharsh Trivedi, Ph.D., CISSP"
+copyright: "2026"
+logo: ""
+only_build_toc_files: true
+
+execute:
+  execute_notebooks: "off"
+  timeout: 300
+  allow_errors: false
+
+html:
+  favicon: ""
+  use_edit_page_button: true
+  use_repository_button: true
+  use_issues_button: true
+  use_multitoc_numbering: true
+  home_page_in_navbar: true
+  use_fullscreen_button: true
+  announcement: >
+    This is a free, open-source textbook released under CC BY 4.0. Contributions are welcome.
+
+latex:
+  latex_documents:
+    targetname: cybersecurity_textbook.tex
+  latex_engine: pdflatex
+
+bibtex_bibfiles:
+  - references.bib
+
+repository:
+  url: https://github.com/dtrivedi-bsu/cybersec-textbook
+  path_to_book: ""
+  branch: main
+
+launch_buttons:
+  notebook_interface: "jupyterlab"
+  binderhub_url: "https://mybinder.org"
+  colab_url: "https://colab.research.google.com"
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist
+  myst_url_schemes: [mailto, http, https]
+  myst_dmath_double_inline: true
+
+sphinx:
+  config:
+    bibtex_reference_style: label
+    html_theme_options:
+      repository_url: "https://github.com/dtrivedi-bsu/cybersec-textbook"
+      use_repository_button: true
+      use_download_button: true
