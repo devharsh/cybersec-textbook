@@ -43,6 +43,44 @@ key terms with full acronym expansions, a *Why This Matters* section, a *News in
 from documented incidents, worked numerical examples, multiple-choice questions with answers,
 executable Python coding exercises, hands-on lab assignments, and references in a consistent style.
 
+## How to Cite This Book
+
+If you use this textbook in research, teaching, or writing, please cite it. A machine-readable
+`CITATION.cff` file is included in the repository (GitHub displays a "Cite this repository" button that
+generates these formats automatically). Replace the year and access date as appropriate for your edition.
+
+**APA (7th edition):**
+
+> Trivedi, D. (2026). *Cybersecurity: Theory, Practice, and Ethics.* https://book.com.puter.tips
+
+**IEEE:**
+
+> D. Trivedi, *Cybersecurity: Theory, Practice, and Ethics.* 2026. [Online]. Available: https://book.com.puter.tips
+
+**MLA (9th edition):**
+
+> Trivedi, Devharsh. *Cybersecurity: Theory, Practice, and Ethics.* 2026, book.com.puter.tips.
+
+**Chicago (author-date):**
+
+> Trivedi, Devharsh. 2026. *Cybersecurity: Theory, Practice, and Ethics.* https://book.com.puter.tips.
+
+**BibTeX:**
+
+```bibtex
+@book{trivedi2026cybersecurity,
+  author    = {Trivedi, Devharsh},
+  title     = {Cybersecurity: Theory, Practice, and Ethics},
+  year      = {2026},
+  publisher = {Self-published open educational resource},
+  url        = {https://book.com.puter.tips},
+  note      = {Free, open-source textbook, CC BY 4.0}
+}
+```
+
+To cite a specific chapter, add the chapter title and number, for example: Trivedi, D. (2026).
+Cryptography (Chapter 2). In *Cybersecurity: Theory, Practice, and Ethics.* https://book.com.puter.tips
+
 ## License
 
 This textbook is released under the Creative Commons Attribution 4.0 International (CC BY 4.0)
