@@ -5,6 +5,8 @@ parts:
   - caption: "Front Matter"
     numbered: false
     chapters:
+      - file: intro
+        title: "Introduction"
       - file: chapters/00_preface/preface
 
   - caption: "Part I: Foundations of Cybersecurity"
@@ -62,3 +64,7 @@ parts:
         title: "Appendix C: Certification Mapping"
       - file: chapters/appendix_d/appendix_d
         title: "Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping"
+      - file: chapters/appendix_e/appendix_e
+        title: "Appendix E: Selected Works by the Author"
+      - file: chapters/appendix_f/appendix_f
+        title: "Appendix F: Companion Code and Repositories"
