@@ -16,7 +16,7 @@ Page basis: ~500 words/page (markdown words only; code/figures additional).
 |----|-------|-------------|---------|--------|
 | 01 | Introduction | 7500 | 7783 | [x] DONE (+transitions) |
 | 02 | Cryptography | 12500 | 11976 md +1219 code | [x] DONE |
-| 03 | Networking | 10000 | 1839 | [ ] |
+| 03 | Networking | 10000 | 9418 md +223 code | [x] DONE |
 | 04 | Social Engineering | 7500 | 2126 | [ ] |
 | 05 | Risk Management | 12500 | 2218 | [ ] |
 | 06 | Pentest Methodology | 10000 | 1909 | [ ] |
@@ -60,3 +60,9 @@ Page basis: ~500 words/page (markdown words only; code/figures additional).
 - PPTX coverage mapped (.build/pptx_coverage.md): all crypto topics already in Ch02; networking/DoS/SYN-flood/IDS/Snort/tools queued for Ch03, Ch08, Ch12, Ch06 builds.
 - Added MD5 (Wang/Yu 2004-2005) collision specifics to Ch02 per deck.
 - Preface fixed: removed "peer-reviewed" claim.
+
+## Session 4 log (2026-06-02)
+- Extracted all 20 COSC 489 decks -> .build/course_decks.txt; mapped in .build/deck_chapter_map.md.
+- Ch03 Networking DONE: ~9,418 md words + 3 figures + 2 mermaid. OSI/TCP-IP, addressing, ports/protocols, TCP handshake/headers, ARP/DHCP/DNS, sniffing, spoofing/MITM/session hijacking, DoS/DDoS (verified Cloudflare 2025 news), secure protocols, wireless, NAC. Folded decks 4 + 13 + 101 DoS content. Knowledge checks + in-class exercise + current news included.
+- Global fixes: disabled JB auto-numbering (_toc numbered:false) so manual section numbers render cleanly; Appendix C numbering -> CISSP D1-D8, Security+ 1.0-5.0, CEH D1-D9, CISA D1-D5, CGRC P1-P7; 'Camp Note' -> plain Note.
+- NEXT: Ch04 Social Engineering (deck 18) 7,500w.

@@ -17,7 +17,7 @@ Use MyST admonitions to signal level, e.g.:
   :class: tip
   ...advanced content...
   ```
-  ```{admonition} Camp Note (beginner intuition)
+  ```{note}
   :class: note
   ...analogy...
   ```
@@ -67,3 +67,19 @@ oblivious computation (ORAM/OT/MPC). Placement recorded in source_books.md.
 ## Accuracy correction (user)
 - The book is NOT peer-reviewed. Never describe it as peer-reviewed or refereed. Use "free,
   open-source" / "open educational resource" instead.
+
+## Course-deck integration + added requirements (user, session 4)
+Source: 20 COSC 489 decks in .build/course_decks.txt, mapped in .build/deck_chapter_map.md. Fold the
+mapped deck content into each chapter as it is built. Per chapter, additionally include:
+- FULL FORMS + DEFINITIONS: expand every acronym on first use and define key terms inline (the decks
+  list many; carry them over). Keep the Key Terms block AND define inline.
+- KNOWLEDGE CHECK: short "Knowledge Check" callout(s) mid-chapter (2-4 quick Q+A) in addition to the
+  end-of-chapter MCQ bank.
+- IN-CLASS EXERCISE: at least one "In-Class Exercise" callout (hands-on, doable in a class session),
+  separate from the longer end-of-chapter Labs.
+- CURRENT NEWS: a dated, real, verified recent incident/development (use WebSearch to verify; cite
+  source; hedge as "per reporting"). NEVER fabricate incidents, CVEs, dates, or attributions.
+- IMAGES/ARCHITECTURE DIAGRAMS: matplotlib figures for data + Mermaid for architecture/flow (OSI stack,
+  TCP handshake, kill chain, network topology, etc.).
+- FULL SENTENCES + transitions throughout (no telegraphic slide-style fragments).
+- VERIFY all facts; do not hallucinate.
