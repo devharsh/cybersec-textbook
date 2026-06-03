@@ -4,3 +4,4 @@ nbformat>=5.7
 pybtex
 numpy>=1.24
 sphinxcontrib-mermaid>=0.9
+pyyaml>=6.0

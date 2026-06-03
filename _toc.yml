@@ -5,7 +5,7 @@ parts:
   - caption: "Front Matter"
     numbered: false
     chapters:
-      - file: intro
+      - file: chapters/00_intro/introduction
         title: "Introduction"
       - file: chapters/00_preface/preface
 
@@ -68,3 +68,5 @@ parts:
         title: "Appendix E: Selected Works by the Author"
       - file: chapters/appendix_f/appendix_f
         title: "Appendix F: Companion Code and Repositories"
+      - file: chapters/appendix_g/appendix_g
+        title: "Appendix G: Book Statistics and Word Counts"

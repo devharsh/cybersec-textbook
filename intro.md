@@ -15,73 +15,27 @@ dtrivedi@bowiestate.edu
 
 ---
 
-Welcome to an open educational resource that bridges the gap between rigorous theory and hands-on
-practice in cybersecurity. This book is designed so that instructors can assemble a course from
-self-contained chapters, and so that learners preparing for certifications such as CompTIA Security+,
-Certified Ethical Hacker (CEH), and Certified Information Systems Security Professional (CISSP) can
-study the relevant material directly.
+This open educational resource bridges rigorous theory and hands-on practice across cybersecurity,
+cryptography, networking, offensive and defensive security, digital forensics, incident response,
+governance, privacy and law, and emerging topics. It is layered to serve readers from high school through
+postdoctoral level and is mapped to the CISSP, Security+, CEH, CISA, and CGRC certifications.
 
-## Course Mapping
+## Start Here
 
-The chapters map cleanly onto standard three-credit university courses. Instructors can
-mix and match chapters to match their exact syllabus.
+- {doc}`Introduction <chapters/00_intro/introduction>` -- course mapping, what every chapter contains, how
+  to cite this book, and the license.
+- {doc}`Preface <chapters/00_preface/preface>` -- about this book and how to use it.
+- Begin the material with **Part I: Foundations** (Chapter 1: Introduction to Cybersecurity).
 
-| Course | Recommended Chapters |
-|---|---|
-| Introduction to IT Security | 1, 2, 3, 4, 5, 19 |
-| Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 |
-| Computer and Network Security | 2, 3, 5, 11, 12, 17 |
-| Fundamentals of Cryptography | 2, 3, 11, 17 |
-| Incident Response and Digital Forensics | 12, 13, 14, 15 |
-| Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 |
-| Capstone or Certification Prep | All chapters |
+Use the sidebar to navigate the twenty chapters and the appendices (command reference, glossary,
+certification mapping, ABET and Bloom's mapping, and companion publications and code).
 
-## What Every Chapter Contains
+This textbook is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 
-Each chapter is structured around a consistent set of pedagogical features: learning objectives,
-key terms with full acronym expansions, a *Why This Matters* section, a *News in Focus* box drawn
-from documented incidents, worked numerical examples, multiple-choice questions with answers,
-executable Python coding exercises, hands-on lab assignments, and references in a consistent style.
+---
 
-## How to Cite This Book
+**Readers around the world**
 
-If you use this textbook in research, teaching, or writing, please cite it. A machine-readable
-`CITATION.cff` file is included in the repository (GitHub displays a "Cite this repository" button that
-generates these formats automatically). Replace the year and access date as appropriate for your edition.
-
-**APA (7th edition):**
-
-> Trivedi, D. (2026). *Cybersecurity: Theory, Practice, and Ethics.* https://book.com.puter.tips
-
-**IEEE:**
-
-> D. Trivedi, *Cybersecurity: Theory, Practice, and Ethics.* 2026. [Online]. Available: https://book.com.puter.tips
-
-**MLA (9th edition):**
-
-> Trivedi, Devharsh. *Cybersecurity: Theory, Practice, and Ethics.* 2026, book.com.puter.tips.
-
-**Chicago (author-date):**
-
-> Trivedi, Devharsh. 2026. *Cybersecurity: Theory, Practice, and Ethics.* https://book.com.puter.tips.
-
-**BibTeX:**
-
-```bibtex
-@book{trivedi2026cybersecurity,
-  author    = {Trivedi, Devharsh},
-  title     = {Cybersecurity: Theory, Practice, and Ethics},
-  year      = {2026},
-  publisher = {Self-published open educational resource},
-  url        = {https://book.com.puter.tips},
-  note      = {Free, open-source textbook, CC BY 4.0}
-}
+```{raw} html
+<a href="https://info.flagcounter.com/9iiX"><img src="https://s01.flagcounter.com/count2/9iiX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_21/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
 ```
-
-To cite a specific chapter, add the chapter title and number, for example: Trivedi, D. (2026).
-Cryptography (Chapter 2). In *Cybersecurity: Theory, Practice, and Ethics.* https://book.com.puter.tips
-
-## License
-
-This textbook is released under the Creative Commons Attribution 4.0 International (CC BY 4.0)
-license. You are free to share and adapt the material with appropriate credit.
