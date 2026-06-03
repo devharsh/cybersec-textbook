@@ -14,7 +14,7 @@ Page basis: ~500 words/page (markdown words only; code/figures additional).
 
 | Ch | Title | Target words | Current | Status |
 |----|-------|-------------|---------|--------|
-| 01 | Introduction | 7500 | 2539 | [ ] |
+| 01 | Introduction | 7500 | 7399 | [x] DONE |
 | 02 | Cryptography | 12500 | 3512 | [ ] |
 | 03 | Networking | 10000 | 1839 | [ ] |
 | 04 | Social Engineering | 7500 | 2126 | [ ] |
@@ -34,8 +34,15 @@ Page basis: ~500 words/page (markdown words only; code/figures additional).
 | 18 | Privacy & Law | 10000 | 2085 | [ ] |
 | 19 | Governance & Compliance | 12500 | 2164 | [ ] |
 | 20 | ICS/OT Security | 7500 | 2210 | [ ] |
-| C  | Appendix C: Cert Mapping | n/a | 592 | [ ] |
+| C  | Appendix C: Cert Mapping | n/a | 1323 | [x] DONE |
 
 ## Resume notes
 - Notebooks built via .build/nbbuild.py helper (append/replace cells).
 - After each chapter: run word count, update this table, git add+commit.
+
+## Session 1 log (2026-06-02)
+- Infra, Mermaid, research (cert_domains.md, source_books.md), STYLE_GUIDE.md done.
+- Appendix C complete with full coverage matrix.
+- Ch01 fully expanded to 7,399 md words + 2 figures + 2 mermaid + worked example + 12 MCQ + 4 labs.
+- LAYERED pedagogy now required (high-school to postdoc): see STYLE_GUIDE.md. Apply to ch02-20 and retrofit ch01 'Going Deeper' box next pass.
+- NEXT: Ch02 Cryptography (12,500w) using attached notebooks + Nakov + Boneh-Shoup.

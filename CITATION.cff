@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this textbook, please cite it as below."
+type: book
+title: "Cybersecurity: Theory, Practice, and Ethics"
+abstract: >-
+  A free, open-source cybersecurity textbook for university courses and professional
+  certification preparation, covering foundations, cryptography, networking, offensive
+  and defensive security, digital forensics, incident response, governance, privacy
+  and law, and emerging topics. Layered for learners from high school through
+  postdoctoral level and mapped to the CISSP, CompTIA Security+, CEH, CISA, and CGRC
+  certification domains.
+authors:
+  - family-names: Trivedi
+    given-names: Devharsh
+    email: devharsh.1592@gmail.com
+    affiliation: "Department of Computer Science, Bowie State University"
+    city: "Washington"
+    region: "D.C."
+    post-code: "20003"
+    country: US
+license: CC-BY-4.0
+repository-code: "https://github.com/devharsh/cybersec-textbook"
+url: "https://book.com.puter.tips/intro.html"
+keywords:
+  - cybersecurity
+  - information security
+  - cryptography
+  - penetration testing
+  - digital forensics
+  - incident response
+  - security governance
+  - open educational resource
+version: "1.1.0"
+date-released: "2026-06-02"

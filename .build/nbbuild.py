@@ -4,13 +4,13 @@ Usage from a chapter build script:
     cells = [md(\"\"\"# Chapter ...\"\"\"), code(\"...\"), ...]
     write_nb("chapters/01_intro/chapter01.ipynb", cells)
 """
-import json, os, sys
+import json, os, sys, uuid
 
 def md(text):
-    return {"cell_type":"markdown","metadata":{},"source":text.splitlines(keepends=True)}
+    return {"cell_type":"markdown","id":uuid.uuid4().hex[:12],"metadata":{},"source":text.splitlines(keepends=True)}
 
 def code(text):
-    return {"cell_type":"code","metadata":{},"execution_count":None,"outputs":[],
+    return {"cell_type":"code","id":uuid.uuid4().hex[:12],"metadata":{},"execution_count":None,"outputs":[],
             "source":text.splitlines(keepends=True)}
 
 def write_nb(path, cells):
