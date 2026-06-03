@@ -60,3 +60,5 @@ parts:
         title: "Appendix B: Glossary"
       - file: chapters/appendix_c/appendix_c
         title: "Appendix C: Certification Mapping"
+      - file: chapters/appendix_d/appendix_d
+        title: "Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping"

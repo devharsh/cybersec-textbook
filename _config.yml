@@ -10,6 +10,13 @@ copyright: "2026"
 logo: ""
 only_build_toc_files: true
 
+# Internal working files and non-content files must never be built into the public book.
+exclude_patterns:
+  - .build/**
+  - .build
+  - README.md
+  - "**/.ipynb_checkpoints/**"
+
 execute:
   execute_notebooks: "off"
   timeout: 300
@@ -66,6 +73,8 @@ sphinx:
   config:
     bibtex_reference_style: label
     mermaid_version: "10.9.1"
+    html_extra_path:
+      - "404.html"
     html_theme_options:
       repository_url: "https://github.com/devharsh/cybersec-textbook"
       use_repository_button: true

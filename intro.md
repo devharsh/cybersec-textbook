@@ -9,8 +9,8 @@
 
 **A free, open-source textbook for university courses and professional certifications**
 
-*Devharsh Trivedi, Ph.D., CISSP*
-Department of Computer Science, Bowie State University
+*Devharsh Trivedi, Ph.D., CISSP*\
+Department of Computer Science, Bowie State University\
 dtrivedi@bowiestate.edu
 
 ---

@@ -3,3 +3,6 @@ _build/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# Internal working files (must not be published)
+.build/
