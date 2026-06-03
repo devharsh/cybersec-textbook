@@ -32,8 +32,8 @@ mix and match chapters to match their exact syllabus.
 | Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 |
 | Computer and Network Security | 2, 3, 5, 11, 12, 17 |
 | Fundamentals of Cryptography | 2, 3, 11, 17 |
-| Incident Response and Digital Forensics | 13, 14, 15, 12 |
-| Cybersecurity and Society | 1, 4, 5, 18, 19, 20, 17 |
+| Incident Response and Digital Forensics | 12, 13, 14, 15 |
+| Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 |
 | Capstone or Certification Prep | All chapters |
 
 ## What Every Chapter Contains
