@@ -17,7 +17,7 @@ Page basis: ~500 words/page (markdown words only; code/figures additional).
 | 01 | Introduction | 7500 | 7783 | [x] DONE (+transitions) |
 | 02 | Cryptography | 12500 | 11976 md +1219 code | [x] DONE |
 | 03 | Networking | 10000 | 9418 md +223 code | [x] DONE |
-| 04 | Social Engineering | 7500 | 2126 | [ ] |
+| 04 | Social Engineering | 7500 | 7297 md +203 code | [x] DONE |
 | 05 | Risk Management | 12500 | 2218 | [ ] |
 | 06 | Pentest Methodology | 10000 | 1909 | [ ] |
 | 07 | Reconnaissance | 7500 | 1922 | [ ] |
@@ -66,3 +66,7 @@ Page basis: ~500 words/page (markdown words only; code/figures additional).
 - Ch03 Networking DONE: ~9,418 md words + 3 figures + 2 mermaid. OSI/TCP-IP, addressing, ports/protocols, TCP handshake/headers, ARP/DHCP/DNS, sniffing, spoofing/MITM/session hijacking, DoS/DDoS (verified Cloudflare 2025 news), secure protocols, wireless, NAC. Folded decks 4 + 13 + 101 DoS content. Knowledge checks + in-class exercise + current news included.
 - Global fixes: disabled JB auto-numbering (_toc numbered:false) so manual section numbers render cleanly; Appendix C numbering -> CISSP D1-D8, Security+ 1.0-5.0, CEH D1-D9, CISA D1-D5, CGRC P1-P7; 'Camp Note' -> plain Note.
 - NEXT: Ch04 Social Engineering (deck 18) 7,500w.
+
+## Session 5 log (2026-06-02)
+- Ch04 Social Engineering DONE (~7,297 md). Folded deck 18. Psychology (Cialdini+biases), lifecycle, full attack taxonomy (phishing family + pretexting/baiting/tailgating/etc + watering hole/BEC/scareware), vectors+OSINT, identifying phishing (+code checker), physical security (locks/bypass/facility/mantrap/environmental/MTBF-MTTR-SLA), auth factors (FAR/FRR/CER), defenses (awareness/policies/help-desk/SPF-DKIM-DMARC/FIDO2), AI-enabled SE. Current news: Scattered Spider 2025 + Arup deepfake (verified). News in Focus: Twitter 2020. Knowledge checks + in-class exercise included.
+- NEXT: Ch05 Risk Management (12,500w).
