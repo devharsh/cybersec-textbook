@@ -1,5 +1,12 @@
 # Cybersecurity: Theory, Practice, and Ethics
 
+```{image} assets/hacker-logo.jpg
+:alt: A hooded figure at a laptop against a circuit-board background, the cover art for this textbook
+:width: 420px
+:align: center
+:class: shadow
+```
+
 **A free, open-source textbook for university courses and professional certifications**
 
 *Devharsh Trivedi, Ph.D., CISSP*

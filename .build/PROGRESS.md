@@ -14,8 +14,8 @@ Page basis: ~500 words/page (markdown words only; code/figures additional).
 
 | Ch | Title | Target words | Current | Status |
 |----|-------|-------------|---------|--------|
-| 01 | Introduction | 7500 | 7399 | [x] DONE |
-| 02 | Cryptography | 12500 | 3512 | [ ] |
+| 01 | Introduction | 7500 | 7783 | [x] DONE (+transitions) |
+| 02 | Cryptography | 12500 | 11976 md +1219 code | [x] DONE |
 | 03 | Networking | 10000 | 1839 | [ ] |
 | 04 | Social Engineering | 7500 | 2126 | [ ] |
 | 05 | Risk Management | 12500 | 2218 | [ ] |
@@ -46,3 +46,17 @@ Page basis: ~500 words/page (markdown words only; code/figures additional).
 - Ch01 fully expanded to 7,399 md words + 2 figures + 2 mermaid + worked example + 12 MCQ + 4 labs.
 - LAYERED pedagogy now required (high-school to postdoc): see STYLE_GUIDE.md. Apply to ch02-20 and retrofit ch01 'Going Deeper' box next pass.
 - NEXT: Ch02 Cryptography (12,500w) using attached notebooks + Nakov + Boneh-Shoup.
+
+## Session 2 log (2026-06-02)
+- CITATION.cff added (v1.1.0).
+- Ch02 Cryptography complete: 11,976 md words + 1,219 code (~25 pg). Covers classical/modern crypto, randomness, AES/modes, hashing, MAC/AEAD, KDF/passwords, RSA/DH/ECC, signatures/PKI, TLS, key management, attack taxonomy, applied systems, practical guidance, advanced (HE/FE/MPC/ORAM/ZKP/stego/PQC). Reused attached lab notebooks' concepts.
+- Transitions added to Ch01 (incl. 1.6->1.7 fix) and Ch02 per user request; rule added to STYLE_GUIDE.
+- Appendix C: added SY0-701 weights, numbering 1-5.
+- Appendix titles fixed in _toc.yml: A=Security Command Reference, B=Glossary (match notebook content).
+- NEXT: Ch03 Networking (10,000w).
+
+## Session 3 log (2026-06-02)
+- Logo: assets/hacker-logo.jpg (from user) embedded centered at top of intro.md (landing = intro.html).
+- PPTX coverage mapped (.build/pptx_coverage.md): all crypto topics already in Ch02; networking/DoS/SYN-flood/IDS/Snort/tools queued for Ch03, Ch08, Ch12, Ch06 builds.
+- Added MD5 (Wang/Yu 2004-2005) collision specifics to Ch02 per deck.
+- Preface fixed: removed "peer-reviewed" claim.

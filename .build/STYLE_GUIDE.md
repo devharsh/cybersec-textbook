@@ -55,3 +55,15 @@ oblivious computation (ORAM/OT/MPC). Placement recorded in source_books.md.
 - After each chapter: run `python3 .build/wc.py` and update PROGRESS.md table.
 - git commit may fail (sandbox lock on .git); files persist on disk regardless. Retry commit by
   removing stale locks; if it fails, disk save is the source of truth.
+
+## Transitions (REQUIRED, user request)
+- Every section and subsection must OPEN with a one to three sentence bridge that explains why we move
+  here from the previous topic. No abrupt topic jumps (e.g., do not jump from 1.6 Rings to 1.7 NIST CSF
+  without a connecting sentence).
+- Each chapter ENDS with a forward-looking sentence/paragraph pointing to the next chapter, and the next
+  chapter OPENS by referencing where we just were.
+- Bridges should be motivational ("having established X, we now need Y because...") not mechanical.
+
+## Accuracy correction (user)
+- The book is NOT peer-reviewed. Never describe it as peer-reviewed or refereed. Use "free,
+  open-source" / "open educational resource" instead.

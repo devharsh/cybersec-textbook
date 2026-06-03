@@ -55,8 +55,8 @@ parts:
     numbered: false
     chapters:
       - file: chapters/appendix_a/appendix_a
-        title: "Appendix A: Acronyms and Abbreviations"
+        title: "Appendix A: Security Command Reference"
       - file: chapters/appendix_b/appendix_b
-        title: "Appendix B: Common Ports and Protocols"
+        title: "Appendix B: Glossary"
       - file: chapters/appendix_c/appendix_c
         title: "Appendix C: Certification Mapping"
