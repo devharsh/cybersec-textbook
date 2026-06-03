@@ -61,8 +61,11 @@ parse:
   myst_dmath_double_inline: true
 
 sphinx:
+  extra_extensions:
+    - sphinxcontrib.mermaid
   config:
     bibtex_reference_style: label
+    mermaid_version: "10.9.1"
     html_theme_options:
       repository_url: "https://github.com/devharsh/cybersec-textbook"
       use_repository_button: true
