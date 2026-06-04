@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-06-03.
+Last generated: 2026-06-04.
 
 ## Summary by Chapter
 
@@ -11,12 +11,12 @@ Last generated: 2026-06-03.
 | Introduction | 506 | 0 | 1.0 |
 | Preface | 391 | 0 | 0.8 |
 | Chapter 1: Introduction to Cybersecurity | 8,338 | 361 | 16.7 |
-| Chapter 2: Cryptography | 14,410 | 1,777 | 28.8 |
+| Chapter 2: Cryptography | 15,287 | 1,777 | 30.6 |
 | Chapter 3: Networking and Network Attacks | 10,219 | 374 | 20.4 |
 | Chapter 4: Social Engineering and the Human Element | 7,218 | 203 | 14.4 |
 | Chapter 5: Risk Management | 11,833 | 469 | 23.7 |
 | Chapter 6: Penetration Testing Methodology | 9,639 | 265 | 19.3 |
-| Chapter 7: Reconnaissance and OSINT | 1,834 | 246 | 3.7 |
+| Chapter 7: Reconnaissance and Open-Source Intelligence | 6,606 | 253 | 13.2 |
 | Chapter 8: Scanning and Enumeration | 1,726 | 243 | 3.5 |
 | Chapter 9: Exploitation and Post-Exploitation | 1,862 | 316 | 3.7 |
 | Chapter 10: Web Application Security | 1,937 | 202 | 3.9 |
@@ -26,7 +26,7 @@ Last generated: 2026-06-03.
 | Chapter 14: Incident Response | 1,922 | 373 | 3.8 |
 | Chapter 15: Malware Analysis | 2,090 | 339 | 4.2 |
 | Chapter 16: Capture the Flag and Competitive Security | 2,481 | 366 | 5.0 |
-| Chapter 17: Emerging Threats and Future Challenges | 1,819 | 278 | 3.6 |
+| Chapter 17: Emerging Threats and Future Challenges | 4,126 | 598 | 8.3 |
 | Chapter 18: Privacy, Law, and Information Governance | 3,728 | 387 | 7.5 |
 | Chapter 19: Security Governance, Policy, and Culture | 2,051 | 482 | 4.1 |
 | Chapter 20: Industrial Control Systems and OT Security | 2,086 | 442 | 4.2 |
@@ -36,7 +36,7 @@ Last generated: 2026-06-03.
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,437 | 0 | 2.9 |
 | Appendix F: Companion Code and Repositories | 793 | 0 | 1.6 |
-| **TOTAL** | **98,452** | **8,058** | **197** |
+| **TOTAL** | **106,408** | **8,385** | **213** |
 
 ## Detailed Word Count by Section
 
@@ -96,7 +96,7 @@ Last generated: 2026-06-03.
 
 ### Chapter 2: Cryptography
 
-*14,410 markdown words (28.8 pages); 1,777 code words.*
+*15,287 markdown words (30.6 pages); 1,777 code words.*
 
 | Section | Words |
 |---|---:|
@@ -123,6 +123,8 @@ Last generated: 2026-06-03.
 | 2.14 Putting It Together: The TLS Handshake | 354 |
 | 2.15 Advanced and Emerging Cryptography | 824 |
 |     Computing Paradigms: Mainframes, Classical, DNA, and Quantum | 395 |
+|     Searchable, Deniable, and Functional Encryption | 341 |
+|     The Algebra Beneath Cryptography: Finite Fields, Abelian and Non-Abelian Groups | 470 |
 | 2.16 Key Management | 529 |
 | 2.17 A Taxonomy of Cryptographic Attacks | 348 |
 | 2.18 Applied Cryptographic Systems | 392 |
@@ -132,7 +134,7 @@ Last generated: 2026-06-03.
 | Review Questions | 433 |
 |     Answer Key | 106 |
 | Hands-on Labs | 375 |
-| References | 318 |
+| References | 384 |
 
 ### Chapter 3: Networking and Network Attacks
 
@@ -277,33 +279,33 @@ Last generated: 2026-06-03.
 | Hands-on Labs | 218 |
 | References | 151 |
 
-### Chapter 7: Reconnaissance and OSINT
+### Chapter 7: Reconnaissance and Open-Source Intelligence
 
-*1,834 markdown words (3.7 pages); 246 code words.*
+*6,606 markdown words (13.2 pages); 253 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 88 |
-| Key Terms | 116 |
-| The Intelligence Value of Reconnaissance | 49 |
-|     Why Passive Recon Comes First | 109 |
-| Passive Reconnaissance Techniques | 0 |
-|     DNS Enumeration | 167 |
-|     WHOIS and ASN Lookup | 99 |
-|     Certificate Transparency Logs | 93 |
-|     Shodan and Attack-Surface Search Engines | 105 |
-|     Google Dorking | 68 |
-| OSINT on Personnel | 0 |
-|     LinkedIn and Social Media | 90 |
-|     Job Postings | 56 |
-| Subdomain Enumeration | 0 |
-|     Dictionary-Based Brute Force | 45 |
-|     Passive Sources | 53 |
-| Why This Matters | 70 |
-| News in Focus | 76 |
-| Review Questions (MCQ) | 335 |
-| Lab Assignment | 180 |
-| References | 6 |
+| Learning Objectives | 93 |
+| Key Terms | 153 |
+| 7.1 Why Reconnaissance Comes First | 501 |
+| 7.2 Footprinting: Passive and Active | 338 |
+| 7.3 Open-Source Intelligence (OSINT) | 606 |
+| 7.4 Search-Engine Reconnaissance ("Google Dorking") | 416 |
+| 7.5 WHOIS and the Regional Internet Registries | 455 |
+| 7.6 DNS Reconnaissance | 436 |
+| 7.7 Email Harvesting, Metadata, and Social-Media Profiling | 211 |
+| 7.8 Reconnaissance of Cloud and Modern Infrastructure | 345 |
+| 7.9 The Intelligence Cycle and Organizing Findings | 377 |
+| 7.10 Reconnaissance Tools | 383 |
+| 7.11 Passive Fingerprinting | 265 |
+| 7.12 Defending Against Reconnaissance | 485 |
+| News in Focus: Mass Scraping of Public Profiles (2021) | 388 |
+| Why This Matters | 132 |
+| Chapter Summary | 206 |
+| Review Questions | 372 |
+|     Answer Key | 30 |
+| Hands-on Labs | 185 |
+| References | 109 |
 
 ### Chapter 8: Scanning and Enumeration
 
@@ -554,11 +556,6 @@ Last generated: 2026-06-03.
 
 | Section | Words |
 |---|---:|
-| The National Cyber League (NCL) | 81 |
-|     Structure of a Season | 146 |
-|     Challenge Categories | 78 |
-|     Scoring and the NICE Framework | 175 |
-|     How to Prepare and Compete Well | 190 |
 | Learning Objectives | 89 |
 | Key Terms | 112 |
 | What Is a CTF? | 46 |
@@ -569,6 +566,11 @@ Last generated: 2026-06-03.
 |     Cryptography Challenges | 122 |
 |     Binary Exploitation (Pwn) | 93 |
 |     Reverse Engineering | 75 |
+| The National Cyber League (NCL) | 81 |
+|     Structure of a Season | 146 |
+|     Challenge Categories | 78 |
+|     Scoring and the NICE Framework | 175 |
+|     How to Prepare and Compete Well | 176 |
 | CTF Platforms for Learning | 84 |
 | CTF Skills and Professional Mapping | 102 |
 | Why This Matters | 62 |
@@ -579,36 +581,45 @@ Last generated: 2026-06-03.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*1,819 markdown words (3.6 pages); 278 code words.*
+*4,126 markdown words (8.3 pages); 598 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 88 |
 | Key Terms | 149 |
-| Post-Quantum Cryptography | 0 |
+| 17.1 Post-Quantum Cryptography | 0 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardisation | 145 |
-| AI-Enabled Attacks and Defences | 0 |
+| 17.2 AI-Enabled Attacks and Defences | 0 |
 |     Offensive AI | 85 |
 |     Defensive AI | 76 |
-| Supply Chain Attacks | 0 |
+| 17.3 Pattern Matching, Machine Learning, and Deep Learning in Security | 63 |
+|     Pattern Matching: Rules and Signatures | 123 |
+|     Machine Learning: Learning Patterns from Data | 189 |
+|     Deep Learning: Neural Networks at Scale | 229 |
+|     Adversarial Machine Learning | 398 |
+| 17.8 Privacy-Preserving and Collaborative Machine Learning | 337 |
+| 17.9 Anomaly Detection Across Domains | 271 |
+| 17.10 Modeling, Simulation, and Control for Security | 275 |
+| 17.11 Probability Distributions in Security | 319 |
+| 17.4 Supply Chain Attacks | 0 |
 |     Why Supply Chain Is a High-Value Target | 32 |
 |     Notable Supply Chain Attack Patterns | 98 |
 |     SBOM and Dependency Management | 55 |
-| Cloud Security | 0 |
+| 17.5 Cloud Security | 0 |
 |     The Shared Responsibility Model | 94 |
 |     Cloud-Native Threats | 31 |
-| Internet of Things Security | 0 |
+| 17.6 Internet of Things Security | 0 |
 |     The IoT Attack Surface | 47 |
 |     Consequences | 58 |
-| Zero-Day Markets and Disclosure | 0 |
+| 17.7 Zero-Day Markets and Disclosure | 0 |
 |     The Zero-Day Economy | 54 |
 |     Responsible Disclosure and Bug Bounties | 48 |
 | Why This Matters | 71 |
 | News in Focus | 72 |
 | Review Questions (MCQ) | 342 |
 | Lab Assignment | 192 |
-| References | 6 |
+| References | 109 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 

@@ -31,6 +31,9 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Populate general index from key terms
+        run: python scripts/gen_index.py
+
       - name: Regenerate word-count statistics (Appendix G)
         run: python scripts/gen_wordcounts.py
 

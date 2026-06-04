@@ -13,6 +13,8 @@
 Department of Computer Science, Bowie State University\
 dtrivedi@bowiestate.edu
 
+*Last updated on 06/04/2026 at 17:57:11 UTC*
+
 ---
 
 This open educational resource bridges rigorous theory and hands-on practice across cybersecurity,

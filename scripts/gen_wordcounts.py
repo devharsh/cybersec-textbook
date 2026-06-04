@@ -22,7 +22,7 @@ def analyze(path):
     else:
         p=path+".ipynb"
         nb=json.load(open(p))
-        cells=[(c["cell_type"],"".join(c["source"])) for c in nb["cells"]]
+        cells=[(c["cell_type"],"".join(c["source"])) for c in nb["cells"] if not c.get("metadata",{}).get("autoindex")]
     h1=None; sections=[]; cur=["(front matter)",2,0]; total_md=0; total_code=0
     started=False
     for ctype,src in cells:
@@ -74,3 +74,17 @@ out += detail
 os.makedirs("chapters/appendix_g", exist_ok=True)
 open("chapters/appendix_g/appendix_g.md","w").write("\n".join(out)+"\n")
 print(f"Wrote appendix_g.md  | grand md={grand_md:,}  code={grand_code:,}  pages~{grand_md/500:.0f}")
+
+# --- stamp "Last updated" into intro.md ---
+import datetime as _dt, re as _re
+_ts = _dt.datetime.now(_dt.timezone.utc).strftime("%m/%d/%Y at %H:%M:%S UTC")
+try:
+    _intro = open("intro.md").read()
+    _new = _re.sub(r"\*Last updated[^*]*\*", f"*Last updated on {_ts}*", _intro, count=1)
+    if _new != _intro:
+        open("intro.md","w").write(_new)
+        print("stamped intro.md last-updated:", _ts)
+    else:
+        print("WARNING: last-updated marker not found in intro.md")
+except FileNotFoundError:
+    print("intro.md not found; skip stamp")
