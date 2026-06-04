@@ -77,7 +77,12 @@ print(f"Wrote appendix_g.md  | grand md={grand_md:,}  code={grand_code:,}  pages
 
 # --- stamp "Last updated" into intro.md ---
 import datetime as _dt, re as _re
-_ts = _dt.datetime.now(_dt.timezone.utc).strftime("%m/%d/%Y at %H:%M:%S UTC")
+try:
+    from zoneinfo import ZoneInfo as _ZI
+    _tz = _ZI("America/New_York")
+except Exception:
+    _tz = _dt.timezone(_dt.timedelta(hours=-5), "EST")
+_ts = _dt.datetime.now(_tz).strftime("%m/%d/%Y at %H:%M:%S %Z")
 try:
     _intro = open("intro.md").read()
     _new = _re.sub(r"\*Last updated[^*]*\*", f"*Last updated on {_ts}*", _intro, count=1)

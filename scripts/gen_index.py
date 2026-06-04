@@ -34,7 +34,8 @@ for path in sorted(glob.glob("chapters/*/*.ipynb")):
     terms=key_terms(nb["cells"])
     if not terms: 
         json.dump(nb, open(path,"w"), indent=1, ensure_ascii=True); continue
-    body="```{index}\n" + "\n".join(f"single: {t}" for t in terms) + "\n```\n"
+    terms_clean = [t.replace(",", " ").strip() for t in terms]
+    body="```{index} " + ", ".join(terms_clean) + "\n```\n"
     cell={"cell_type":"markdown","metadata":{"autoindex":True},
           "source":body.splitlines(keepends=True)}
     import uuid; cell["id"]=uuid.uuid4().hex[:12]
