@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-06-04.
+Last generated: 2026-06-05.
 
 ## Summary by Chapter
 
@@ -10,8 +10,8 @@ Last generated: 2026-06-04.
 |---|---:|---:|---:|
 | Introduction | 506 | 0 | 1.0 |
 | Preface | 391 | 0 | 0.8 |
-| Chapter 1: Introduction to Cybersecurity | 8,338 | 361 | 16.7 |
-| Chapter 2: Cryptography | 15,287 | 1,777 | 30.6 |
+| Chapter 1: Introduction to Cybersecurity | 8,669 | 361 | 17.3 |
+| Chapter 2: Cryptography | 18,190 | 1,994 | 36.4 |
 | Chapter 3: Networking and Network Attacks | 10,219 | 374 | 20.4 |
 | Chapter 4: Social Engineering and the Human Element | 7,218 | 203 | 14.4 |
 | Chapter 5: Risk Management | 11,833 | 469 | 23.7 |
@@ -26,17 +26,17 @@ Last generated: 2026-06-04.
 | Chapter 14: Incident Response | 1,922 | 373 | 3.8 |
 | Chapter 15: Malware Analysis | 2,090 | 339 | 4.2 |
 | Chapter 16: Capture the Flag and Competitive Security | 2,481 | 366 | 5.0 |
-| Chapter 17: Emerging Threats and Future Challenges | 4,126 | 598 | 8.3 |
+| Chapter 17: Emerging Threats and Future Challenges | 5,459 | 598 | 10.9 |
 | Chapter 18: Privacy, Law, and Information Governance | 3,728 | 387 | 7.5 |
-| Chapter 19: Security Governance, Policy, and Culture | 2,051 | 482 | 4.1 |
+| Chapter 19: Security Governance, Policy, and Culture | 3,177 | 482 | 6.4 |
 | Chapter 20: Industrial Control Systems and OT Security | 2,086 | 442 | 4.2 |
 | Appendix A: Security Command Reference | 1,653 | 0 | 3.3 |
 | Appendix B: Glossary | 855 | 0 | 1.7 |
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
-| Appendix E: Selected Works by the Author | 1,437 | 0 | 2.9 |
+| Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 793 | 0 | 1.6 |
-| **TOTAL** | **106,408** | **8,385** | **213** |
+| **TOTAL** | **112,170** | **8,602** | **224** |
 
 ## Detailed Word Count by Section
 
@@ -67,14 +67,15 @@ Last generated: 2026-06-04.
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*8,338 markdown words (16.7 pages); 361 code words.*
+*8,669 markdown words (17.3 pages); 361 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 179 |
 | Key Terms | 232 |
 | 1.1 What Is Cybersecurity? | 636 |
-| 1.2 The CIA Triad and Its Extensions | 572 |
+| 1.2 The CIA Triad and Its Extensions | 649 |
+|     The DIE Model: A Modern Complement to CIA | 254 |
 | 1.3 The Anatomy of an Attack | 593 |
 | 1.4 Threat Actors and the Adversary Model | 529 |
 | 1.5 Defense in Depth and Security Controls | 488 |
@@ -96,7 +97,7 @@ Last generated: 2026-06-04.
 
 ### Chapter 2: Cryptography
 
-*15,287 markdown words (30.6 pages); 1,777 code words.*
+*18,190 markdown words (36.4 pages); 1,994 code words.*
 
 | Section | Words |
 |---|---:|
@@ -114,6 +115,8 @@ Last generated: 2026-06-04.
 | 2.7 Cryptographic Hash Functions | 625 |
 | 2.8 Message Authentication Codes and Authenticated Encryption | 585 |
 |     Hash, MAC, and Digital Signature Compared | 490 |
+|     Wrong-Key Behavior: Garbage Output versus Null Rejection | 526 |
+|     The Three-Behavior Hierarchy of Incorrect Decryption | 2,297 |
 | 2.9 Key Derivation and Password Storage | 510 |
 | 2.10 Public-Key Cryptography and RSA | 686 |
 | 2.11 Diffie-Hellman Key Exchange | 519 |
@@ -134,7 +137,7 @@ Last generated: 2026-06-04.
 | Review Questions | 433 |
 |     Answer Key | 106 |
 | Hands-on Labs | 375 |
-| References | 384 |
+| References | 464 |
 
 ### Chapter 3: Networking and Network Attacks
 
@@ -581,7 +584,7 @@ Last generated: 2026-06-04.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*4,126 markdown words (8.3 pages); 598 code words.*
+*5,459 markdown words (10.9 pages); 598 code words.*
 
 | Section | Words |
 |---|---:|
@@ -598,7 +601,8 @@ Last generated: 2026-06-04.
 |     Machine Learning: Learning Patterns from Data | 189 |
 |     Deep Learning: Neural Networks at Scale | 229 |
 |     Adversarial Machine Learning | 398 |
-| 17.8 Privacy-Preserving and Collaborative Machine Learning | 337 |
+| 17.8 Privacy-Preserving and Collaborative Machine Learning | 338 |
+|     Case Study: A Privacy-Preserving ML Research Program (SigML, SplitML, Fairis) | 1,267 |
 | 17.9 Anomaly Detection Across Domains | 271 |
 | 17.10 Modeling, Simulation, and Control for Security | 275 |
 | 17.11 Probability Distributions in Security | 319 |
@@ -619,7 +623,7 @@ Last generated: 2026-06-04.
 | News in Focus | 72 |
 | Review Questions (MCQ) | 342 |
 | Lab Assignment | 192 |
-| References | 109 |
+| References | 174 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
@@ -661,7 +665,7 @@ Last generated: 2026-06-04.
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*2,051 markdown words (4.1 pages); 482 code words.*
+*3,177 markdown words (6.4 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
@@ -686,12 +690,16 @@ Last generated: 2026-06-04.
 |     What Culture Is and Why It Matters | 89 |
 |     Tone at the Top | 66 |
 |     Building a Positive Security Culture | 115 |
-| Common Compliance Frameworks | 120 |
+| Common Compliance Frameworks | 121 |
+| NIST Cybersecurity Framework 2.0 and the Govern Function | 268 |
+| Cybersecurity Governance at the Municipal Level | 135 |
+|     Benchmarking Readiness with Automated Policy Analytics | 305 |
+|     Governance and Supply-Chain Gaps | 349 |
 | Why This Matters | 63 |
 | News in Focus | 67 |
 | Review Questions (MCQ) | 368 |
 | Lab Assignment | 190 |
-| References | 6 |
+| References | 74 |
 
 ### Chapter 20: Industrial Control Systems and OT Security
 
@@ -796,16 +804,16 @@ Last generated: 2026-06-04.
 
 ### Appendix E: Selected Works by the Author
 
-*1,437 markdown words (2.9 pages); 0 code words.*
+*1,506 markdown words (3.0 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
 | Cryptography and Privacy-Preserving Computation | 231 |
-| Privacy-Preserving Machine Learning and Emerging Topics | 116 |
+| Privacy-Preserving Machine Learning and Emerging Topics | 146 |
 | Security Analytics, Monitoring, and Detection | 68 |
 | Networking, Wireless, and Packet Analysis | 121 |
 | Offensive Security, Social Engineering, and Capture the Flag | 135 |
-| Software, Systems, Data, and Governance | 274 |
+| Software, Systems, Data, and Governance | 313 |
 | Additional Notes, Talks, and Early Works (by topic) | 405 |
 
 ### Appendix F: Companion Code and Repositories

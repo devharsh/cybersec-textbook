@@ -10,6 +10,8 @@ def chapter_files():
     files=[]
     for part in toc.get("parts",[]):
         for ch in part.get("chapters",[]):
+            if "file" not in ch:
+                continue  # skip external url entries (e.g., General Index link)
             files.append((part.get("caption",""), ch["file"], ch.get("title")))
     return toc["root"], files
 

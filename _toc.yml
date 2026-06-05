@@ -70,3 +70,5 @@ parts:
         title: "Appendix F: Companion Code and Repositories"
       - file: chapters/appendix_g/appendix_g
         title: "Appendix G: Book Statistics and Word Counts"
+      - url: https://book.com.puter.tips/genindex.html
+        title: "General Index"
