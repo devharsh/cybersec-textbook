@@ -11,7 +11,7 @@ Last generated: 2026-06-05.
 | Introduction | 506 | 0 | 1.0 |
 | Preface | 391 | 0 | 0.8 |
 | Chapter 1: Introduction to Cybersecurity | 8,669 | 361 | 17.3 |
-| Chapter 2: Cryptography | 18,190 | 1,994 | 36.4 |
+| Chapter 2: Cryptography | 21,806 | 1,994 | 43.6 |
 | Chapter 3: Networking and Network Attacks | 10,219 | 374 | 20.4 |
 | Chapter 4: Social Engineering and the Human Element | 7,218 | 203 | 14.4 |
 | Chapter 5: Risk Management | 11,833 | 469 | 23.7 |
@@ -36,7 +36,7 @@ Last generated: 2026-06-05.
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 793 | 0 | 1.6 |
-| **TOTAL** | **112,170** | **8,602** | **224** |
+| **TOTAL** | **115,786** | **8,602** | **232** |
 
 ## Detailed Word Count by Section
 
@@ -97,18 +97,22 @@ Last generated: 2026-06-05.
 
 ### Chapter 2: Cryptography
 
-*18,190 markdown words (36.4 pages); 1,994 code words.*
+*21,806 markdown words (43.6 pages); 1,994 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 170 |
-| Key Terms | 220 |
+| Key Terms | 373 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
 |     Encoding versus Encryption versus Hashing | 316 |
 | 2.2 Classical Ciphers and Why They Fall | 604 |
 |     Classical versus Modern Ciphers | 295 |
 |     A Classification of Ciphers | 225 |
-| 2.3 Perfect Secrecy and the One-Time Pad | 632 |
+| 2.3 Perfect Secrecy and the One-Time Pad | 633 |
+|     XOR, the One-Time Pad, and Perfect Secrecy, Formally | 698 |
+|     From Information-Theoretic to Computational Security | 311 |
+|     Game-Based (Provable) Security and Ciphertext Indistinguishability | 1,147 |
+|     Real-World Case: The ANC's One-Time Pad and Operation Vula | 441 |
 | 2.4 Randomness: True, Pseudo, and Cryptographically Secure | 516 |
 | 2.5 Symmetric Encryption: Stream and Block Ciphers | 849 |
 | 2.6 Block Cipher Modes of Operation | 539 |
@@ -121,7 +125,8 @@ Last generated: 2026-06-05.
 | 2.10 Public-Key Cryptography and RSA | 686 |
 | 2.11 Diffie-Hellman Key Exchange | 519 |
 |     ElGamal Encryption | 276 |
-| 2.12 Elliptic-Curve Cryptography | 494 |
+| 2.12 Elliptic-Curve Cryptography | 495 |
+|     Elliptic Curves Up Close: Group Law, the ECDLP, and the Curve Zoo | 776 |
 | 2.13 Digital Signatures, Certificates, and PKI | 618 |
 | 2.14 Putting It Together: The TLS Handshake | 354 |
 | 2.15 Advanced and Emerging Cryptography | 824 |
@@ -137,7 +142,7 @@ Last generated: 2026-06-05.
 | Review Questions | 433 |
 |     Answer Key | 106 |
 | Hands-on Labs | 375 |
-| References | 464 |
+| References | 552 |
 
 ### Chapter 3: Networking and Network Attacks
 
