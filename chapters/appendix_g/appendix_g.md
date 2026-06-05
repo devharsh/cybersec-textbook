@@ -17,12 +17,12 @@ Last generated: 2026-06-05.
 | Chapter 5: Risk Management | 11,833 | 469 | 23.7 |
 | Chapter 6: Penetration Testing Methodology | 9,639 | 265 | 19.3 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 6,606 | 253 | 13.2 |
-| Chapter 8: Scanning and Enumeration | 1,726 | 243 | 3.5 |
+| Chapter 8: Scanning and Enumeration | 6,849 | 816 | 13.7 |
 | Chapter 9: Exploitation and Post-Exploitation | 1,862 | 316 | 3.7 |
 | Chapter 10: Web Application Security | 1,937 | 202 | 3.9 |
 | Chapter 11: Network Defense and Hardening | 1,875 | 258 | 3.8 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 1,751 | 377 | 3.5 |
-| Chapter 13: Digital Forensics | 1,946 | 300 | 3.9 |
+| Chapter 13: Digital Forensics | 1,944 | 300 | 3.9 |
 | Chapter 14: Incident Response | 1,922 | 373 | 3.8 |
 | Chapter 15: Malware Analysis | 2,090 | 339 | 4.2 |
 | Chapter 16: Capture the Flag and Competitive Security | 2,481 | 366 | 5.0 |
@@ -36,7 +36,7 @@ Last generated: 2026-06-05.
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 793 | 0 | 1.6 |
-| **TOTAL** | **117,343** | **8,602** | **235** |
+| **TOTAL** | **122,464** | **9,175** | **245** |
 
 ## Detailed Word Count by Section
 
@@ -317,34 +317,41 @@ Last generated: 2026-06-05.
 
 ### Chapter 8: Scanning and Enumeration
 
-*1,726 markdown words (3.5 pages); 243 code words.*
+*6,849 markdown words (13.7 pages); 816 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 98 |
-| Key Terms | 129 |
-| Port Scanning Fundamentals | 0 |
-|     Why Port Scanning Is Fundamental | 46 |
-|     TCP Port States | 75 |
-|     The SYN Scan | 117 |
-|     UDP Scanning | 80 |
-| Nmap in Depth | 0 |
-|     Common Scan Options | 82 |
-|     Service Version Detection | 67 |
-|     OS Fingerprinting | 49 |
-|     Nmap Scripting Engine | 102 |
-| Service-Specific Enumeration | 0 |
-|     SMB Enumeration | 69 |
-|     SNMP Enumeration | 63 |
-|     Web Directory Brute-Forcing | 48 |
-| Detection and Evasion | 0 |
-|     How IDS Detects Scanning | 51 |
-|     Timing and Fragmentation | 65 |
-| Why This Matters | 69 |
-| News in Focus | 68 |
-| Review Questions (MCQ) | 276 |
-| Lab Assignment | 148 |
-| References | 6 |
+| Learning Objectives | 152 |
+| Key Terms | 161 |
+| 8.1 From Reconnaissance to Active Probing | 301 |
+| 8.2 The Scanning Taxonomy and the Tyranny of Time | 168 |
+|     Why Scanning Time Dominates Planning | 304 |
+| 8.3 A TCP/IP Refresher for Scanners | 214 |
+|     The Six Nmap Port States | 280 |
+| 8.4 Host Discovery and Network Sweeps | 164 |
+|     What Nmap Probes by Default | 130 |
+| 8.5 Network Mapping: Traceroute, Firewalking, and Nmap | 209 |
+|     Firewalking, LFT, and Nmap's Smarter Traceroute | 219 |
+| 8.6 Port Scanning with Nmap | 132 |
+|     TCP Scan Types | 288 |
+|     UDP Scanning, Timing, and Output | 355 |
+| 8.7 hping3: Crafting Packets by Hand | 289 |
+| 8.8 Always Sniff the Wire | 176 |
+| 8.9 Operating-System Fingerprinting | 202 |
+| 8.10 Service and Version Scanning, and Enumeration | 216 |
+| 8.11 Vulnerability Scanning | 314 |
+| 8.12 The Nmap Scripting Engine (NSE) | 160 |
+| 8.13 Detection and Evasion | 309 |
+| 8.14 Scanning Safely, Legally, and Within Scope | 195 |
+|     Automated Discovery and Mapping Tools | 142 |
+|     Scanning IPv6 | 143 |
+|     The Pentester's Toolkit: Kali and BackTrack | 262 |
+| Why This Matters | 125 |
+| News in Focus: Internet-Scale Scanning as an Early-Warning Signal (2025-2026) | 253 |
+| Review Questions (MCQ) | 310 |
+|     Answer Key | 82 |
+| Hands-on Labs | 315 |
+| References | 163 |
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
@@ -468,7 +475,7 @@ Last generated: 2026-06-05.
 
 ### Chapter 13: Digital Forensics
 
-*1,946 markdown words (3.9 pages); 300 code words.*
+*1,944 markdown words (3.9 pages); 300 code words.*
 
 | Section | Words |
 |---|---:|
@@ -490,7 +497,8 @@ Last generated: 2026-06-05.
 |     Analysing Memory with Volatility | 91 |
 | Network Forensics | 0 |
 |     PCAP Analysis | 95 |
-| Anti-Forensics | 141 |
+| Anti-Forensics | 85 |
+|     Countermeasures | 54 |
 | Why This Matters | 76 |
 | News in Focus | 70 |
 | Review Questions (MCQ) | 298 |
