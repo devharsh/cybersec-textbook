@@ -6,3 +6,7 @@ __pycache__/
 
 # Internal working files (must not be published)
 .build/
+
+# macOS junk
+.DS_Store
+**/.DS_Store
