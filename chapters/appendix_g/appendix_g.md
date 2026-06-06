@@ -12,7 +12,7 @@ Last generated: 2026-06-06.
 | Preface | 391 | 0 | 0.8 |
 | Chapter 1: Introduction to Cybersecurity | 8,669 | 361 | 17.3 |
 | Chapter 2: Cryptography | 25,981 | 1,994 | 52.0 |
-| Chapter 3: Networking and Network Attacks | 11,050 | 374 | 22.1 |
+| Chapter 3: Networking and Network Attacks | 11,896 | 374 | 23.8 |
 | Chapter 4: Social Engineering and the Human Element | 7,218 | 203 | 14.4 |
 | Chapter 5: Risk Management | 11,833 | 469 | 23.7 |
 | Chapter 6: Penetration Testing Methodology | 9,639 | 265 | 19.3 |
@@ -36,7 +36,7 @@ Last generated: 2026-06-06.
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 793 | 0 | 1.6 |
-| **TOTAL** | **131,211** | **9,175** | **262** |
+| **TOTAL** | **132,057** | **9,175** | **264** |
 
 ## Detailed Word Count by Section
 
@@ -156,16 +156,17 @@ Last generated: 2026-06-06.
 
 ### Chapter 3: Networking and Network Attacks
 
-*11,050 markdown words (22.1 pages); 374 code words.*
+*11,896 markdown words (23.8 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 152 |
-| Key Terms | 257 |
+| Key Terms | 312 |
 | 3.1 Why Networking Is the Battleground | 359 |
 | 3.2 The OSI Model | 549 |
 | 3.3 The TCP/IP Model and Encapsulation | 293 |
-|     Network Devices and Segments | 193 |
+|     Network Devices and Segments | 194 |
+|     Routing and the Route Table | 250 |
 | 3.4 IP Addressing: IPv4 and IPv6 | 508 |
 |     Subnetting, CIDR, and Network versus Host Addresses | 332 |
 |     Network Scopes and Hardware: NIC, LAN, WLAN, and WAN | 409 |
@@ -180,7 +181,8 @@ Last generated: 2026-06-06.
 |     Traffic Analysis and Network Monitoring | 158 |
 |     Syslog and Centralized Logging | 354 |
 | 3.9 Spoofing, Man-in-the-Middle, and Session Hijacking | 612 |
-| 3.10 Denial-of-Service and Distributed Denial-of-Service Attacks | 1,067 |
+| 3.10 Denial-of-Service and Distributed Denial-of-Service Attacks | 1,068 |
+|     Access Control Lists, NACLs, and Security Groups | 515 |
 | 3.11 Securing the Network: A Preview | 173 |
 |     Secure Network Protocols | 203 |
 |     Going Deeper: Routing Security and BGP Hijacking | 180 |
@@ -191,7 +193,7 @@ Last generated: 2026-06-06.
 | Review Questions | 384 |
 |     Answer Key | 30 |
 | Hands-on Labs | 393 |
-| References | 173 |
+| References | 197 |
 
 ### Chapter 4: Social Engineering and the Human Element
 
