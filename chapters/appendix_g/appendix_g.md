@@ -25,11 +25,11 @@ Last generated: 2026-06-06.
 | Chapter 13: Digital Forensics | 3,803 | 300 | 7.6 |
 | Chapter 14: Incident Response | 3,556 | 373 | 7.1 |
 | Chapter 15: Malware Analysis | 3,727 | 339 | 7.5 |
-| Chapter 16: Capture the Flag and Competitive Security | 3,305 | 366 | 6.6 |
+| Chapter 16: Capture the Flag and Competitive Security | 3,600 | 366 | 7.2 |
 | Chapter 17: Emerging Threats and Future Challenges | 9,993 | 598 | 20.0 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,597 | 387 | 9.2 |
 | Chapter 19: Security Governance, Policy, and Culture | 4,395 | 482 | 8.8 |
-| Chapter 20: Industrial Control Systems and OT Security | 2,920 | 442 | 5.8 |
+| Chapter 20: Industrial Control Systems and OT Security | 3,478 | 442 | 7.0 |
 | Appendix A: Security Command Reference | 1,653 | 0 | 3.3 |
 | Appendix B: Glossary | 2,319 | 0 | 4.6 |
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
@@ -37,7 +37,7 @@ Last generated: 2026-06-06.
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix H: Capstone and Group Project Ideas | 1,064 | 0 | 2.1 |
-| **TOTAL** | **160,427** | **9,175** | **321** |
+| **TOTAL** | **161,280** | **9,175** | **323** |
 
 ## Detailed Word Count by Section
 
@@ -659,7 +659,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*3,305 markdown words (6.6 pages); 366 code words.*
+*3,600 markdown words (7.2 pages); 366 code words.*
 
 | Section | Words |
 |---|---:|
@@ -682,7 +682,8 @@ Last generated: 2026-06-06.
 | CTF Skills and Professional Mapping | 103 |
 | Formats: Jeopardy, Attack-Defense, and King-of-the-Hill | 120 |
 | Category Deep Dives and Tooling | 355 |
-| Why CTFs Build Real Skill | 279 |
+| Why CTFs Build Real Skill | 280 |
+| Hosting a CTF and Competition Etiquette | 294 |
 | Why This Matters | 62 |
 | News in Focus | 58 |
 | Review Questions (MCQ) | 312 |
@@ -831,7 +832,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 20: Industrial Control Systems and OT Security
 
-*2,920 markdown words (5.8 pages); 442 code words.*
+*3,478 markdown words (7.0 pages); 442 code words.*
 
 | Section | Words |
 |---|---:|
@@ -860,7 +861,8 @@ Last generated: 2026-06-06.
 | OT Defence-in-Depth | 176 |
 | ICS Components and Protocols in Depth | 163 |
 | ICS Malware Case Studies | 192 |
-| The Purdue Model, IEC 62443, and OT Defense in Depth | 372 |
+| The Purdue Model, IEC 62443, and OT Defense in Depth | 373 |
+| OT Incident Response, Safety, and Resilience | 557 |
 | Why This Matters | 81 |
 | News in Focus | 88 |
 | Review Questions (MCQ) | 372 |
