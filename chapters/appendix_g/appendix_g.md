@@ -24,9 +24,9 @@ Last generated: 2026-06-06.
 | Chapter 12: Intrusion Detection and Prevention Systems | 3,620 | 377 | 7.2 |
 | Chapter 13: Digital Forensics | 3,803 | 300 | 7.6 |
 | Chapter 14: Incident Response | 3,556 | 373 | 7.1 |
-| Chapter 15: Malware Analysis | 2,843 | 339 | 5.7 |
-| Chapter 16: Capture the Flag and Competitive Security | 2,481 | 366 | 5.0 |
-| Chapter 17: Emerging Threats and Future Challenges | 9,808 | 598 | 19.6 |
+| Chapter 15: Malware Analysis | 3,727 | 339 | 7.5 |
+| Chapter 16: Capture the Flag and Competitive Security | 3,305 | 366 | 6.6 |
+| Chapter 17: Emerging Threats and Future Challenges | 9,993 | 598 | 20.0 |
 | Chapter 18: Privacy, Law, and Information Governance | 3,728 | 387 | 7.5 |
 | Chapter 19: Security Governance, Policy, and Culture | 3,519 | 482 | 7.0 |
 | Chapter 20: Industrial Control Systems and OT Security | 2,086 | 442 | 4.2 |
@@ -37,7 +37,7 @@ Last generated: 2026-06-06.
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix H: Capstone and Group Project Ideas | 833 | 0 | 1.7 |
-| **TOTAL** | **155,432** | **9,175** | **311** |
+| **TOTAL** | **157,325** | **9,175** | **315** |
 
 ## Detailed Word Count by Section
 
@@ -618,7 +618,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 15: Malware Analysis
 
-*2,843 markdown words (5.7 pages); 339 code words.*
+*3,727 markdown words (7.5 pages); 339 code words.*
 
 | Section | Words |
 |---|---:|
@@ -644,18 +644,21 @@ Last generated: 2026-06-06.
 |     VM and Sandbox Detection | 64 |
 |     Packers and Obfuscators | 55 |
 |     Fileless Malware | 42 |
-| Malware Analysis Report Structure | 73 |
+| Malware Analysis Report Structure | 130 |
 | Antivirus and Antimalware Defenses | 387 |
-|     The Anti-* Family: Beyond Antivirus | 325 |
+|     The Anti-* Family: Beyond Antivirus | 326 |
+| A Field Guide to Malware Types | 262 |
+| The Malware Lifecycle and a Ransomware Deep Dive | 250 |
+| News in Focus: WannaCry and the Worm That Used a Leaked Exploit (2017) | 286 |
 | Why This Matters | 61 |
 | News in Focus | 68 |
 | Review Questions (MCQ) | 335 |
 | Lab Assignment | 176 |
-| References | 46 |
+| References | 74 |
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*2,481 markdown words (5.0 pages); 366 code words.*
+*3,305 markdown words (6.6 pages); 366 code words.*
 
 | Section | Words |
 |---|---:|
@@ -668,23 +671,26 @@ Last generated: 2026-06-06.
 |     Forensics Challenges | 147 |
 |     Cryptography Challenges | 122 |
 |     Binary Exploitation (Pwn) | 93 |
-|     Reverse Engineering | 75 |
+|     Reverse Engineering | 130 |
 | The National Cyber League (NCL) | 81 |
 |     Structure of a Season | 146 |
 |     Challenge Categories | 78 |
 |     Scoring and the NICE Framework | 175 |
 |     How to Prepare and Compete Well | 176 |
 | CTF Platforms for Learning | 84 |
-| CTF Skills and Professional Mapping | 102 |
+| CTF Skills and Professional Mapping | 103 |
+| Formats: Jeopardy, Attack-Defense, and King-of-the-Hill | 120 |
+| Category Deep Dives and Tooling | 355 |
+| Why CTFs Build Real Skill | 279 |
 | Why This Matters | 62 |
 | News in Focus | 58 |
 | Review Questions (MCQ) | 312 |
 | Lab Assignment | 164 |
-| References | 63 |
+| References | 77 |
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*9,808 markdown words (19.6 pages); 598 code words.*
+*9,993 markdown words (20.0 pages); 598 code words.*
 
 | Section | Words |
 |---|---:|
@@ -692,7 +698,8 @@ Last generated: 2026-06-06.
 | Key Terms | 149 |
 | 17.1 Post-Quantum Cryptography | 0 |
 |     The Quantum Threat to Current Cryptography | 60 |
-|     NIST PQC Standardisation | 145 |
+|     NIST PQC Standardisation | 162 |
+|     Quantum Key Distribution and the Quantum Horizon | 168 |
 | 17.2 AI-Enabled Attacks and Defences | 0 |
 |     Offensive AI | 85 |
 |     Defensive AI | 77 |
