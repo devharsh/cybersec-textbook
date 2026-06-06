@@ -20,9 +20,9 @@ Last generated: 2026-06-06.
 | Chapter 8: Scanning and Enumeration | 6,849 | 816 | 13.7 |
 | Chapter 9: Exploitation and Post-Exploitation | 5,225 | 316 | 10.4 |
 | Chapter 10: Web Application Security | 4,376 | 202 | 8.8 |
-| Chapter 11: Network Defense and Hardening | 3,965 | 258 | 7.9 |
+| Chapter 11: Network Defense and Hardening | 5,075 | 258 | 10.2 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 2,690 | 377 | 5.4 |
-| Chapter 13: Digital Forensics | 1,944 | 300 | 3.9 |
+| Chapter 13: Digital Forensics | 2,923 | 300 | 5.8 |
 | Chapter 14: Incident Response | 2,744 | 373 | 5.5 |
 | Chapter 15: Malware Analysis | 2,843 | 339 | 5.7 |
 | Chapter 16: Capture the Flag and Competitive Security | 2,481 | 366 | 5.0 |
@@ -36,7 +36,8 @@ Last generated: 2026-06-06.
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
-| **TOTAL** | **149,888** | **9,175** | **300** |
+| Appendix H: Capstone and Group Project Ideas | 968 | 0 | 1.9 |
+| **TOTAL** | **152,945** | **9,175** | **306** |
 
 ## Detailed Word Count by Section
 
@@ -468,7 +469,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 11: Network Defense and Hardening
 
-*3,965 markdown words (7.9 pages); 258 code words.*
+*5,075 markdown words (10.2 pages); 258 code words.*
 
 | Section | Words |
 |---|---:|
@@ -476,7 +477,7 @@ Last generated: 2026-06-06.
 | Key Terms | 202 |
 | Firewalls | 0 |
 |     Firewall Types and Evolution | 144 |
-|     Writing Firewall Rules | 105 |
+|     Writing Firewall Rules | 154 |
 | Firewall Types and Topologies | 399 |
 |     Physical and Virtual Firewalls | 174 |
 |     Stateless and Stateful Packet Filtering | 362 |
@@ -499,12 +500,17 @@ Last generated: 2026-06-06.
 |     DDoS Attack Categories | 41 |
 |     DDoS Mitigation | 60 |
 | Authentication, Identity, and Access | 351 |
-|     Biometrics and the Reality of False Positives and Negatives | 391 |
+|     Biometrics and the Reality of False Positives and Negatives | 392 |
+| Network Monitoring and Visibility | 201 |
+| Deception: Honeypots, Honeynets, and Honeytokens | 175 |
+| Network Forensics in Defense | 154 |
+| CVE Case Study: When the Firewall Is the Door (CVE-2024-3400) | 242 |
+| Capstone and Group Project Ideas (Network Defense) | 265 |
 | Why This Matters | 72 |
 | News in Focus | 64 |
 | Review Questions (MCQ) | 299 |
 | Lab Assignment | 159 |
-| References | 62 |
+| References | 85 |
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
@@ -538,12 +544,12 @@ Last generated: 2026-06-06.
 
 ### Chapter 13: Digital Forensics
 
-*1,944 markdown words (3.9 pages); 300 code words.*
+*2,923 markdown words (5.8 pages); 300 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 99 |
-| Key Terms | 146 |
+| Key Terms | 192 |
 | Forensic Principles | 0 |
 |     The Locard Exchange Principle | 69 |
 |     Forensic Soundness | 124 |
@@ -561,12 +567,15 @@ Last generated: 2026-06-06.
 | Network Forensics | 0 |
 |     PCAP Analysis | 95 |
 | Anti-Forensics | 85 |
-|     Countermeasures | 54 |
+|     Countermeasures | 55 |
+| Artificial Intelligence in Digital Evidence Triage | 224 |
+| IoT Forensics and Explainable AI | 244 |
+| AI-Driven Cybercrime Analytics and Attribution | 368 |
 | Why This Matters | 76 |
 | News in Focus | 70 |
 | Review Questions (MCQ) | 298 |
 | Lab Assignment | 172 |
-| References | 6 |
+| References | 102 |
 
 ### Chapter 14: Incident Response
 
@@ -922,3 +931,18 @@ Last generated: 2026-06-06.
 | Author Repositories (github.com/devharsh) | 191 |
 | Computer Tips Organization (github.com/com-puter-tips) | 182 |
 | Companion Blog Tutorials (com.puter.tips) | 347 |
+
+### Appendix H: Capstone and Group Project Ideas
+
+*968 markdown words (1.9 pages); 0 code words.*
+
+| Section | Words |
+|---|---:|
+| H.1 Deliverables and Scholarly Lifecycle | 85 |
+| H.2 Track 1: Advanced Research, Innovation, and Privacy-Preserving Systems | 166 |
+| H.3 Track 2: Autonomous Threats, AI Security, and Offensive Security | 57 |
+| H.4 Track 3: Specialized Technical Tools and Ethical Hacking | 144 |
+| H.5 COSC 435 Computer and Network Security: Eight Group Projects | 172 |
+| H.6 COSC 489 Ethical Hacking: Ten Project Topics | 96 |
+| H.7 GitHub Submission Standards | 70 |
+| H.8 Approved Preprint Servers for DOI Generation | 34 |
