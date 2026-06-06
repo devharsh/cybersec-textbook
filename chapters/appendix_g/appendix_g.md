@@ -62,7 +62,7 @@ Last generated: 2026-06-06.
 |---|---:|
 | About This Textbook | 38 |
 | Who This Book Is For | 49 |
-| How This Book Is Organised | 127 |
+| How This Book Is Organized | 127 |
 | Ethical Commitment | 65 |
 | Using This Book in a Course | 57 |
 | A Note on Currency | 55 |
@@ -301,7 +301,7 @@ Last generated: 2026-06-06.
 | 6.1 Why Methodology Matters | 409 |
 | 6.2 What Penetration Testing Is, and Is Not | 584 |
 | 6.3 Hats and Team Colors | 273 |
-| 6.4 Knowledge Levels: Black, Grey, and Crystal Box | 284 |
+| 6.4 Knowledge Levels: Black, Gray, and Crystal Box | 284 |
 | 6.5 The Phases of a Penetration Test | 561 |
 | 6.6 Types of Penetration Tests | 411 |
 | 6.6 Pre-Engagement: Scope and the Rules of Engagement | 520 |
@@ -532,7 +532,7 @@ Last generated: 2026-06-06.
 |     SIEM Architecture | 110 |
 |     SIEM Challenges | 59 |
 | UEBA and Threat Hunting | 0 |
-|     User and Entity Behaviour Analytics | 58 |
+|     User and Entity Behavior Analytics | 58 |
 |     Threat Hunting | 186 |
 | Intrusion Detection Systems: What They Watch | 211 |
 | Intrusion Prevention Systems: From Alert to Action | 238 |
@@ -567,7 +567,7 @@ Last generated: 2026-06-06.
 | Memory Forensics | 0 |
 |     Why Memory Matters | 54 |
 |     Acquiring Memory | 53 |
-|     Analysing Memory with Volatility | 91 |
+|     Analyzing Memory with Volatility | 91 |
 | Network Forensics | 0 |
 |     PCAP Analysis | 95 |
 | Anti-Forensics | 85 |
@@ -639,8 +639,8 @@ Last generated: 2026-06-06.
 |     PE Analysis | 93 |
 |     YARA Rules | 77 |
 | Dynamic Analysis | 0 |
-|     Behavioural Monitoring Tools | 75 |
-|     Common Malware Behaviours to Watch | 92 |
+|     Behavioral Monitoring Tools | 75 |
+|     Common Malware Behaviors to Watch | 92 |
 | Anti-Analysis and Evasion Techniques | 0 |
 |     VM and Sandbox Detection | 64 |
 |     Packers and Obfuscators | 55 |
@@ -700,9 +700,9 @@ Last generated: 2026-06-06.
 | Key Terms | 149 |
 | 17.1 Post-Quantum Cryptography | 0 |
 |     The Quantum Threat to Current Cryptography | 60 |
-|     NIST PQC Standardisation | 162 |
+|     NIST PQC Standardization | 162 |
 |     Quantum Key Distribution and the Quantum Horizon | 168 |
-| 17.2 AI-Enabled Attacks and Defences | 0 |
+| 17.2 AI-Enabled Attacks and Defenses | 0 |
 |     Offensive AI | 85 |
 |     Defensive AI | 77 |
 |     Privacy in LLM Chat and AI Agents | 367 |
@@ -858,7 +858,7 @@ Last generated: 2026-06-06.
 | IEC 62443 and NIST SP 800-82 | 0 |
 |     IEC 62443 | 49 |
 |     NIST SP 800-82 | 41 |
-| OT Defence-in-Depth | 176 |
+| OT Defense-in-Depth | 176 |
 | ICS Components and Protocols in Depth | 163 |
 | ICS Malware Case Studies | 192 |
 | The Purdue Model, IEC 62443, and OT Defense in Depth | 373 |

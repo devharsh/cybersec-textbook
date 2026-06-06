@@ -31,7 +31,7 @@ command reference, a glossary, and pointers to companion publications and code (
 
 ## What Every Chapter Contains
 
-Each chapter is structured around a consistent set of pedagogical features: learning objectives,
+Most chapters are structured around a consistent set of pedagogical features: learning objectives,
 key terms with full acronym expansions, detailed prose with figures and architecture diagrams, a
 *Why This Matters* section, a *News in Focus* box drawn from documented incidents, worked numerical
 examples, knowledge-check questions, multiple-choice questions with answers, executable Python coding

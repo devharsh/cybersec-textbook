@@ -6,7 +6,7 @@ An open, executable textbook for university-level cybersecurity education.
 
 ## Contents
 
-20 chapters covering foundations, ethical hacking, network defence, digital
+20 chapters covering foundations, ethical hacking, network defense, digital
 forensics, incident response, malware analysis, privacy law, governance, and
 industrial control system security. Each chapter includes learning objectives,
 worked code examples, 10 review questions, and a lab assignment.
