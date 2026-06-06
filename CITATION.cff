@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this textbook, please cite it as below."
-type: book
+type: dataset
 title: "Cybersecurity: Theory, Practice, and Ethics"
 abstract: >-
   A free, open-source cybersecurity textbook for university courses and professional
@@ -14,10 +14,7 @@ authors:
     given-names: Devharsh
     email: devharsh.1592@gmail.com
     affiliation: "Department of Computer Science, Bowie State University"
-    city: "Washington"
-    region: "D.C."
-    post-code: "20003"
-    country: US
+    orcid: "https://orcid.org/0000-0001-6374-7249"
 license: CC-BY-4.0
 repository-code: "https://github.com/devharsh/cybersec-textbook"
 url: "https://book.com.puter.tips/intro.html"

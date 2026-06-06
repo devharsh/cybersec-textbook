@@ -8,6 +8,8 @@ study the relevant material directly. It is written to be read on several levels
 motivated high-school or summer-camp student, rigorous enough for undergraduate and graduate courses, and
 deep enough, through its "Going Deeper" sections, to interest doctoral and postdoctoral readers.
 
+A live, continuously updated web version of this book is available at https://book.com.puter.tips/
+
 ## Course Mapping
 
 The chapters map cleanly onto standard three-credit university courses. Instructors can

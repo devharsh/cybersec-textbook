@@ -29,4 +29,4 @@ jupyter-book build .
 
 ## Author
 
-Devharsh Trivedi, Ph.D., CISSP — Washington D.C.
+Devharsh Trivedi, Ph.D., CISSP

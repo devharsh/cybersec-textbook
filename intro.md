@@ -11,7 +11,8 @@
 
 *Devharsh Trivedi, Ph.D., CISSP*\
 Department of Computer Science, Bowie State University\
-dtrivedi@bowiestate.edu
+dtrivedi@bowiestate.edu\
+ORCID: https://orcid.org/0000-0001-6374-7249
 
 *Last updated on 06/06/2026 at 17:21:41 EDT*
 
@@ -31,6 +32,8 @@ postdoctoral level and is mapped to the CISSP, Security+, CEH, CISA, and CGRC ce
 
 Use the sidebar to navigate the twenty chapters and the appendices (command reference, glossary,
 certification mapping, ABET and Bloom's mapping, and companion publications and code).
+
+A live, continuously updated web version of this book is available at https://book.com.puter.tips/
 
 This textbook is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 
