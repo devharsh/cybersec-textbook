@@ -15,4 +15,4 @@ __pycache__/
 ZENODO_AND_SCHOLAR.md
 
 # PDF-only rendered diagram intermediates
-assets/figures/mermaid/
+assets/mermaid/
