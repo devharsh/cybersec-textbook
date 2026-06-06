@@ -21,9 +21,9 @@ Last generated: 2026-06-06.
 | Chapter 9: Exploitation and Post-Exploitation | 5,225 | 316 | 10.4 |
 | Chapter 10: Web Application Security | 4,376 | 202 | 8.8 |
 | Chapter 11: Network Defense and Hardening | 5,075 | 258 | 10.2 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 2,690 | 377 | 5.4 |
-| Chapter 13: Digital Forensics | 2,923 | 300 | 5.8 |
-| Chapter 14: Incident Response | 2,744 | 373 | 5.5 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 3,620 | 377 | 7.2 |
+| Chapter 13: Digital Forensics | 3,803 | 300 | 7.6 |
+| Chapter 14: Incident Response | 3,556 | 373 | 7.1 |
 | Chapter 15: Malware Analysis | 2,843 | 339 | 5.7 |
 | Chapter 16: Capture the Flag and Competitive Security | 2,481 | 366 | 5.0 |
 | Chapter 17: Emerging Threats and Future Challenges | 9,808 | 598 | 19.6 |
@@ -37,7 +37,7 @@ Last generated: 2026-06-06.
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix H: Capstone and Group Project Ideas | 968 | 0 | 1.9 |
-| **TOTAL** | **152,945** | **9,175** | **306** |
+| **TOTAL** | **155,567** | **9,175** | **311** |
 
 ## Detailed Word Count by Section
 
@@ -514,7 +514,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*2,690 markdown words (5.4 pages); 377 code words.*
+*3,620 markdown words (7.2 pages); 377 code words.*
 
 | Section | Words |
 |---|---:|
@@ -532,24 +532,27 @@ Last generated: 2026-06-06.
 |     SIEM Challenges | 59 |
 | UEBA and Threat Hunting | 0 |
 |     User and Entity Behaviour Analytics | 58 |
-|     Threat Hunting | 126 |
+|     Threat Hunting | 186 |
 | Intrusion Detection Systems: What They Watch | 211 |
 | Intrusion Prevention Systems: From Alert to Action | 238 |
-| Detection Methods: Signature, Heuristic, and Anomaly | 466 |
+| Detection Methods: Signature, Heuristic, and Anomaly | 467 |
+| The Cyber Kill Chain and MITRE ATT&CK | 221 |
+| SIEM, SOAR, XDR, and EDR: The Detection Stack | 269 |
+| Detection Engineering, Threat Hunting, and Deception | 349 |
 | Why This Matters | 85 |
 | News in Focus | 69 |
 | Review Questions (MCQ) | 306 |
 | Lab Assignment | 183 |
-| References | 29 |
+| References | 59 |
 
 ### Chapter 13: Digital Forensics
 
-*2,923 markdown words (5.8 pages); 300 code words.*
+*3,803 markdown words (7.6 pages); 300 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 99 |
-| Key Terms | 192 |
+| Key Terms | 244 |
 | Forensic Principles | 0 |
 |     The Locard Exchange Principle | 69 |
 |     Forensic Soundness | 124 |
@@ -570,16 +573,19 @@ Last generated: 2026-06-06.
 |     Countermeasures | 55 |
 | Artificial Intelligence in Digital Evidence Triage | 224 |
 | IoT Forensics and Explainable AI | 244 |
-| AI-Driven Cybercrime Analytics and Attribution | 368 |
+| AI-Driven Cybercrime Analytics and Attribution | 369 |
+| The Forensic Process, Order of Volatility, and Chain of Custody | 228 |
+| Disk, Memory, and Mobile Forensics in Practice | 289 |
+| Legal Admissibility and Reporting | 285 |
 | Why This Matters | 76 |
 | News in Focus | 70 |
 | Review Questions (MCQ) | 298 |
 | Lab Assignment | 172 |
-| References | 102 |
+| References | 127 |
 
 ### Chapter 14: Incident Response
 
-*2,744 markdown words (5.5 pages); 373 code words.*
+*3,556 markdown words (7.1 pages); 373 code words.*
 
 | Section | Words |
 |---|---:|
@@ -599,12 +605,16 @@ Last generated: 2026-06-06.
 |     Law Enforcement and Evidence Preservation | 68 |
 | The Assume-Breach Mindset | 133 |
 | Before, During, and After: An Operational IR Playbook | 375 |
-| Case Study: The Locky Ransomware Incident | 280 |
+| Case Study: The Locky Ransomware Incident | 281 |
+| NIST SP 800-61 Rev. 3 and the CSF 2.0 Framing | 139 |
+| The CSIRT, Roles, and Communication | 152 |
+| Triage, Severity, Containment, and Recovery in Depth | 288 |
+| Postmortem, Metrics, and Exercises | 199 |
 | Why This Matters | 75 |
 | News in Focus | 88 |
 | Review Questions (MCQ) | 320 |
 | Lab Assignment | 176 |
-| References | 39 |
+| References | 72 |
 
 ### Chapter 15: Malware Analysis
 
