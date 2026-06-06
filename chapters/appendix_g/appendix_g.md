@@ -8,7 +8,7 @@ Last generated: 2026-06-06.
 
 | Chapter | Markdown words | Code words | Approx. pages |
 |---|---:|---:|---:|
-| Introduction | 506 | 0 | 1.0 |
+| Introduction | 816 | 0 | 1.6 |
 | Preface | 391 | 0 | 0.8 |
 | Chapter 1: Introduction to Cybersecurity | 8,669 | 361 | 17.3 |
 | Chapter 2: Cryptography | 25,981 | 1,994 | 52.0 |
@@ -31,25 +31,26 @@ Last generated: 2026-06-06.
 | Chapter 19: Security Governance, Policy, and Culture | 3,177 | 482 | 6.4 |
 | Chapter 20: Industrial Control Systems and OT Security | 2,086 | 442 | 4.2 |
 | Appendix A: Security Command Reference | 1,653 | 0 | 3.3 |
-| Appendix B: Glossary | 855 | 0 | 1.7 |
+| Appendix B: Glossary | 2,117 | 0 | 4.2 |
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 793 | 0 | 1.6 |
-| **TOTAL** | **135,920** | **9,175** | **272** |
+| **TOTAL** | **137,492** | **9,175** | **275** |
 
 ## Detailed Word Count by Section
 
 
 ### Introduction
 
-*506 markdown words (1.0 pages); 0 code words.*
+*816 markdown words (1.6 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
 | Course Mapping | 157 |
 | What Every Chapter Contains | 64 |
 | How to Cite This Book | 158 |
+| Accessibility | 310 |
 | License | 27 |
 
 ### Preface
@@ -827,10 +828,11 @@ Last generated: 2026-06-06.
 
 ### Appendix B: Glossary
 
-*855 markdown words (1.7 pages); 0 code words.*
+*2,117 markdown words (4.2 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
+| Cloud and Infrastructure Terminology | 1,262 |
 
 ### Appendix C: Certification Mapping
 

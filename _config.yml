@@ -73,6 +73,7 @@ sphinx:
   extra_extensions:
     - sphinxcontrib.mermaid
   config:
+    language: en
     bibtex_reference_style: label
     mermaid_version: "10.9.1"
     html_extra_path:

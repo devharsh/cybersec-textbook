@@ -73,6 +73,33 @@ generates these formats automatically). Replace the year and access date as appr
 To cite a specific chapter, add the chapter title and number, for example: Trivedi, D. (2026).
 Cryptography (Chapter 2). In *Cybersecurity: Theory, Practice, and Ethics.* https://book.com.puter.tips
 
+## Accessibility
+
+This book is designed to be usable by everyone, including readers who rely on assistive technology, and it is
+published as a live website so that it benefits from the accessibility features of the web. Specific measures
+include the following.
+
+- **Semantic structure.** Every page uses a single top-level title followed by a strict, non-skipping heading
+  hierarchy, so screen readers (such as NVDA on Windows or VoiceOver on macOS and iOS) can build an accurate
+  outline and let readers jump between sections. The sidebar table of contents, the search box, and the
+  General Index (linked in the navigation) provide multiple ways to find content without scrolling.
+- **Text alternatives for visuals.** Every figure carries descriptive alternative text, and each diagram is
+  accompanied by an adjacent prose explanation in the body text, so no information is conveyed by an image
+  alone. Architecture and flow diagrams are also provided as text-based diagrams that render as structured
+  markup rather than flat pictures.
+- **Readable, resizable text.** The site uses a responsive, reflowable layout with relative font sizes, so
+  readers can zoom or change the browser font size without losing content, and it ships with a built-in light
+  and dark theme. Body text is left-aligned to avoid the uneven spacing that can hinder readers with dyslexia.
+- **Language and navigation.** The document declares its language (English) so screen readers use the correct
+  pronunciation, links use descriptive text rather than "click here," and all navigation, search, and content
+  links are reachable by keyboard alone.
+- **Standards.** These choices follow the Web Content Accessibility Guidelines (WCAG), including the
+  recommended minimum 4.5:1 contrast ratio for normal text.
+
+If you encounter an accessibility barrier, please open an issue in the book's repository (linked from the
+toolbar) so it can be fixed. Because the source is openly licensed (below), readers may also generate
+alternative formats to suit their needs.
+
 ## License
 
 This textbook is released under the Creative Commons Attribution 4.0 International (CC BY 4.0)
