@@ -12,7 +12,7 @@ Last generated: 2026-06-06.
 | Preface | 391 | 0 | 0.8 |
 | Chapter 1: Introduction to Cybersecurity | 8,669 | 361 | 17.3 |
 | Chapter 2: Cryptography | 25,981 | 1,994 | 52.0 |
-| Chapter 3: Networking and Network Attacks | 10,219 | 374 | 20.4 |
+| Chapter 3: Networking and Network Attacks | 11,050 | 374 | 22.1 |
 | Chapter 4: Social Engineering and the Human Element | 7,218 | 203 | 14.4 |
 | Chapter 5: Risk Management | 11,833 | 469 | 23.7 |
 | Chapter 6: Penetration Testing Methodology | 9,639 | 265 | 19.3 |
@@ -26,7 +26,7 @@ Last generated: 2026-06-06.
 | Chapter 14: Incident Response | 2,744 | 373 | 5.5 |
 | Chapter 15: Malware Analysis | 2,504 | 339 | 5.0 |
 | Chapter 16: Capture the Flag and Competitive Security | 2,481 | 366 | 5.0 |
-| Chapter 17: Emerging Threats and Future Challenges | 6,762 | 598 | 13.5 |
+| Chapter 17: Emerging Threats and Future Challenges | 8,164 | 598 | 16.3 |
 | Chapter 18: Privacy, Law, and Information Governance | 3,728 | 387 | 7.5 |
 | Chapter 19: Security Governance, Policy, and Culture | 3,177 | 482 | 6.4 |
 | Chapter 20: Industrial Control Systems and OT Security | 2,086 | 442 | 4.2 |
@@ -36,7 +36,7 @@ Last generated: 2026-06-06.
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 793 | 0 | 1.6 |
-| **TOTAL** | **128,978** | **9,175** | **258** |
+| **TOTAL** | **131,211** | **9,175** | **262** |
 
 ## Detailed Word Count by Section
 
@@ -156,17 +156,19 @@ Last generated: 2026-06-06.
 
 ### Chapter 3: Networking and Network Attacks
 
-*10,219 markdown words (20.4 pages); 374 code words.*
+*11,050 markdown words (22.1 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 152 |
-| Key Terms | 168 |
+| Key Terms | 257 |
 | 3.1 Why Networking Is the Battleground | 359 |
 | 3.2 The OSI Model | 549 |
 | 3.3 The TCP/IP Model and Encapsulation | 293 |
 |     Network Devices and Segments | 193 |
-| 3.4 IP Addressing: IPv4 and IPv6 | 507 |
+| 3.4 IP Addressing: IPv4 and IPv6 | 508 |
+|     Subnetting, CIDR, and Network versus Host Addresses | 332 |
+|     Network Scopes and Hardware: NIC, LAN, WLAN, and WAN | 409 |
 | 3.5 Ports and Common Protocols | 434 |
 |     Application Protocols and Their Security Posture | 382 |
 | 3.6 The Core Protocols: TCP, UDP, ICMP, and Their Headers | 793 |
@@ -615,7 +617,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*6,762 markdown words (13.5 pages); 598 code words.*
+*8,164 markdown words (16.3 pages); 598 code words.*
 
 | Section | Words |
 |---|---:|
@@ -626,7 +628,8 @@ Last generated: 2026-06-06.
 |     NIST PQC Standardisation | 145 |
 | 17.2 AI-Enabled Attacks and Defences | 0 |
 |     Offensive AI | 85 |
-|     Defensive AI | 76 |
+|     Defensive AI | 77 |
+|     Privacy in LLM Chat and AI Agents | 367 |
 | 17.3 Pattern Matching, Machine Learning, and Deep Learning in Security | 63 |
 |     Pattern Matching: Rules and Signatures | 123 |
 |     Machine Learning: Learning Patterns from Data | 189 |
@@ -644,7 +647,12 @@ Last generated: 2026-06-06.
 |     SBOM and Dependency Management | 55 |
 | 17.5 Cloud Security | 0 |
 |     The Shared Responsibility Model | 94 |
-|     Cloud-Native Threats | 31 |
+|     Cloud-Native Threats | 32 |
+|     Control Plane and Data Plane | 159 |
+|     Static and Dynamic Stability | 165 |
+|     Availability and Durability Risk | 205 |
+|     Cloud Compute Audit and Security | 181 |
+|     VPC and Cloud Network Isolation | 263 |
 | 17.6 Internet of Things Security | 0 |
 |     The IoT Attack Surface | 47 |
 |     Consequences | 58 |
@@ -655,7 +663,7 @@ Last generated: 2026-06-06.
 | News in Focus | 72 |
 | Review Questions (MCQ) | 342 |
 | Lab Assignment | 192 |
-| References | 257 |
+| References | 317 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
