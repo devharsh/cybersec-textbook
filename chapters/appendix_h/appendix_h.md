@@ -6,6 +6,11 @@ the chapters that develop the underlying material, so a team can study, build, a
 cybersecurity tool or controlled exploit, and reflect on its societal, ethical, legal, and policy implications.
 Teams may pick an idea as written or use it as a starting point for an original, instructor-approved topic.
 
+```{note}
+Taken together, the tracks below provide at least one project idea mapped to every chapter of the book
+(Chapters 1 through 20), so a team can find a capstone aligned with any part of the curriculum.
+```
+
 ```{admonition} Ethical mandate (read first)
 :class: warning
 All technical work must be conducted **ethically and only within controlled, authorized environments**.
@@ -90,7 +95,27 @@ These map to Chapters 11, 12, 13, and 14.
 - **AI-assisted digital-evidence triage** prototype with explainable outputs. (Ch. 13)
 - **Honeypot or deception toolkit** that captures and characterizes attacker interactions. (Ch. 11)
 
-## H.6 GitHub Submission Standards
+## H.6 Track 5: Penetration Testing, Governance, Privacy, and Society
+
+These map to Chapters 6, 18, and 19, the methodology, legal, and governance dimensions of security.
+
+- **Full-scope penetration test with rules of engagement and a professional report**: plan and execute an
+  authorized assessment end to end (scoping, recon, scanning, exploitation, reporting), producing a
+  client-grade report with CVSS-rated findings and remediation. (Ch. 6, Ch. 8, Ch. 9, Ch. 10)
+- **Coordinated vulnerability-disclosure and computer-crime-law analysis**: design a responsible-disclosure
+  policy and analyze the legal boundaries (authorization, CFAA/DMCA) that govern security testing. (Ch. 6,
+  Ch. 18)
+- **Privacy-compliance assistant**: a tool that checks a data-handling workflow or privacy policy against GDPR
+  and CCPA/CPRA requirements (data-subject rights, breach-notification clocks) and flags gaps. (Ch. 18)
+- **Data-subject-access-request (DSAR) / breach-notification workflow tool**: automate the intake, tracking,
+  and deadline management of privacy requests and breach reporting. (Ch. 18)
+- **GRC and security-policy maturity assessment**: map an organization's controls and policies to NIST CSF 2.0
+  or ISO/IEC 27001 and produce a maturity-tier scorecard with prioritized recommendations. (Ch. 19)
+- **Societal and ethical impact analysis of a security technology**: a scholarly evaluation of a chosen
+  technology's effects on privacy, trust, equity, and policy (the cybersecurity-and-society perspective).
+  (Ch. 18, Ch. 19)
+
+## H.7 GitHub Submission Standards
 
 A professional repository should contain: a `/src` directory with modular, commented source code and proper
 error handling; a `/docs` directory with the report, user manual, and DOI link; a `/tests` directory with unit
@@ -98,7 +123,7 @@ and integration tests and sample logs; a `README` with setup instructions, usage
 considerations; a dependencies/`requirements` file; and a `.gitignore` excluding build artifacts and sensitive
 data. Use version control with meaningful commits from every team member.
 
-## H.7 Approved Preprint Servers for DOI Generation
+## H.8 Approved Preprint Servers for DOI Generation
 
 To obtain a citable DOI for the preprint deliverable, teams may use, for example: **Zenodo**
 (https://zenodo.org), **Preprints.org** (https://www.preprints.org), **ResearchGate**

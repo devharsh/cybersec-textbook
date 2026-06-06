@@ -10,8 +10,8 @@ Last generated: 2026-06-06.
 |---|---:|---:|---:|
 | Introduction | 816 | 0 | 1.6 |
 | Preface | 391 | 0 | 0.8 |
-| Chapter 1: Introduction to Cybersecurity | 9,079 | 361 | 18.2 |
-| Chapter 2: Cryptography | 29,051 | 1,994 | 58.1 |
+| Chapter 1: Introduction to Cybersecurity | 9,067 | 361 | 18.1 |
+| Chapter 2: Cryptography | 29,043 | 1,994 | 58.1 |
 | Chapter 3: Networking and Network Attacks | 14,610 | 374 | 29.2 |
 | Chapter 4: Social Engineering and the Human Element | 7,218 | 203 | 14.4 |
 | Chapter 5: Risk Management | 11,833 | 469 | 23.7 |
@@ -36,8 +36,8 @@ Last generated: 2026-06-06.
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
-| Appendix H: Capstone and Group Project Ideas | 833 | 0 | 1.7 |
-| **TOTAL** | **160,216** | **9,175** | **320** |
+| Appendix H: Capstone and Group Project Ideas | 1,064 | 0 | 2.1 |
+| **TOTAL** | **160,427** | **9,175** | **321** |
 
 ## Detailed Word Count by Section
 
@@ -69,7 +69,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*9,079 markdown words (18.2 pages); 361 code words.*
+*9,067 markdown words (18.1 pages); 361 code words.*
 
 | Section | Words |
 |---|---:|
@@ -79,7 +79,7 @@ Last generated: 2026-06-06.
 | 1.2 The CIA Triad and Its Extensions | 649 |
 |     The DIE Model: A Modern Complement to CIA | 254 |
 | 1.3 The Anatomy of an Attack | 594 |
-|     A Concept Map of the Core Terms | 142 |
+|     A Concept Map of the Core Terms | 130 |
 | 1.4 Threat Actors and the Adversary Model | 529 |
 | 1.5 Defense in Depth and Security Controls | 488 |
 | 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 561 |
@@ -101,14 +101,14 @@ Last generated: 2026-06-06.
 
 ### Chapter 2: Cryptography
 
-*29,051 markdown words (58.1 pages); 1,994 code words.*
+*29,043 markdown words (58.1 pages); 1,994 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 170 |
 | Key Terms | 648 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
-|     Encoding versus Encryption versus Hashing | 485 |
+|     Encoding versus Encryption versus Hashing | 477 |
 | 2.2 Classical Ciphers and Why They Fall | 604 |
 |     Classical versus Modern Ciphers | 295 |
 |     A Classification of Ciphers | 226 |
@@ -961,7 +961,7 @@ Last generated: 2026-06-06.
 
 ### Appendix H: Capstone and Group Project Ideas
 
-*833 markdown words (1.7 pages); 0 code words.*
+*1,064 markdown words (2.1 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -970,5 +970,6 @@ Last generated: 2026-06-06.
 | H.3 Track 2: Autonomous Threats, AI Security, and Offensive Security | 77 |
 | H.4 Track 3: Specialized Technical Tools and Ethical Hacking | 152 |
 | H.5 Track 4: Defensive Security, Detection, and Digital Forensics | 88 |
-| H.6 GitHub Submission Standards | 71 |
-| H.7 Approved Preprint Servers for DOI Generation | 34 |
+| H.6 Track 5: Penetration Testing, Governance, Privacy, and Society | 193 |
+| H.7 GitHub Submission Standards | 71 |
+| H.8 Approved Preprint Servers for DOI Generation | 34 |

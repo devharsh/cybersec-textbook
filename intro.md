@@ -1,6 +1,6 @@
 # Cybersecurity: Theory, Practice, and Ethics
 
-```{image} assets/hacker-logo.jpg
+```{image} assets/figures/hacker-logo.png
 :alt: A hooded figure at a laptop against a circuit-board background, the cover art for this textbook
 :width: 420px
 :align: center
@@ -13,7 +13,7 @@
 Department of Computer Science, Bowie State University\
 dtrivedi@bowiestate.edu
 
-*Last updated on 06/06/2026 at 16:56:27 EDT*
+*Last updated on 06/06/2026 at 17:07:02 EDT*
 
 ---
 
