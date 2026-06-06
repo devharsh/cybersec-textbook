@@ -11,7 +11,7 @@ Last generated: 2026-06-06.
 | Introduction | 506 | 0 | 1.0 |
 | Preface | 391 | 0 | 0.8 |
 | Chapter 1: Introduction to Cybersecurity | 8,669 | 361 | 17.3 |
-| Chapter 2: Cryptography | 23,118 | 1,994 | 46.2 |
+| Chapter 2: Cryptography | 25,981 | 1,994 | 52.0 |
 | Chapter 3: Networking and Network Attacks | 10,219 | 374 | 20.4 |
 | Chapter 4: Social Engineering and the Human Element | 7,218 | 203 | 14.4 |
 | Chapter 5: Risk Management | 11,833 | 469 | 23.7 |
@@ -26,7 +26,7 @@ Last generated: 2026-06-06.
 | Chapter 14: Incident Response | 2,744 | 373 | 5.5 |
 | Chapter 15: Malware Analysis | 2,504 | 339 | 5.0 |
 | Chapter 16: Capture the Flag and Competitive Security | 2,481 | 366 | 5.0 |
-| Chapter 17: Emerging Threats and Future Challenges | 5,880 | 598 | 11.8 |
+| Chapter 17: Emerging Threats and Future Challenges | 6,762 | 598 | 13.5 |
 | Chapter 18: Privacy, Law, and Information Governance | 3,728 | 387 | 7.5 |
 | Chapter 19: Security Governance, Policy, and Culture | 3,177 | 482 | 6.4 |
 | Chapter 20: Industrial Control Systems and OT Security | 2,086 | 442 | 4.2 |
@@ -36,7 +36,7 @@ Last generated: 2026-06-06.
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 793 | 0 | 1.6 |
-| **TOTAL** | **125,233** | **9,175** | **250** |
+| **TOTAL** | **128,978** | **9,175** | **258** |
 
 ## Detailed Word Count by Section
 
@@ -97,12 +97,12 @@ Last generated: 2026-06-06.
 
 ### Chapter 2: Cryptography
 
-*23,118 markdown words (46.2 pages); 1,994 code words.*
+*25,981 markdown words (52.0 pages); 1,994 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 170 |
-| Key Terms | 412 |
+| Key Terms | 535 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
 |     Encoding versus Encryption versus Hashing | 316 |
 | 2.2 Classical Ciphers and Why They Fall | 604 |
@@ -114,9 +114,11 @@ Last generated: 2026-06-06.
 |     Game-Based (Provable) Security and Ciphertext Indistinguishability | 2,292 |
 |     Real-World Case: The ANC's One-Time Pad and Operation Vula | 441 |
 | 2.4 Randomness: True, Pseudo, and Cryptographically Secure | 516 |
-| 2.5 Symmetric Encryption: Stream and Block Ciphers | 849 |
+| 2.5 Symmetric Encryption: Stream and Block Ciphers | 850 |
+|     The Feistel Network: A Blueprint for Block Ciphers | 222 |
 | 2.6 Block Cipher Modes of Operation | 539 |
-| 2.7 Cryptographic Hash Functions | 625 |
+| 2.7 Cryptographic Hash Functions | 626 |
+|     The Merkle-Damgard Construction | 214 |
 | 2.8 Message Authentication Codes and Authenticated Encryption | 585 |
 |     Hash, MAC, and Digital Signature Compared | 490 |
 |     Wrong-Key Behavior: Garbage Output versus Null Rejection | 526 |
@@ -136,13 +138,21 @@ Last generated: 2026-06-06.
 | 2.16 Key Management | 529 |
 | 2.17 A Taxonomy of Cryptographic Attacks | 348 |
 | 2.18 Applied Cryptographic Systems | 392 |
-| 2.19 Practical Guidance: Choosing and Using Cryptography | 379 |
+| 2.19 Practical Guidance: Choosing and Using Cryptography | 380 |
+| 2.20 Formal Security Analysis and Provable Security | 125 |
+|     The Anatomy of a Security Definition | 331 |
+|     Hardness Assumptions and the Random Oracle Model | 234 |
+|     The Zoo of Security Notions | 251 |
+|     Simulation-Based Security and Universal Composability | 234 |
+|     Symbolic Models: Dolev-Yao and Automated Verification | 316 |
+|     A Taxonomy of Security Properties | 326 |
+|     Writing a Security Analysis: Proof Sketches and Experimental Evaluation | 372 |
 | Why This Matters | 161 |
 | News in Focus: Heartbleed (2014) | 202 |
 | Review Questions | 433 |
 |     Answer Key | 106 |
 | Hands-on Labs | 375 |
-| References | 680 |
+| References | 792 |
 
 ### Chapter 3: Networking and Network Attacks
 
@@ -605,7 +615,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*5,880 markdown words (11.8 pages); 598 code words.*
+*6,762 markdown words (13.5 pages); 598 code words.*
 
 | Section | Words |
 |---|---:|
@@ -623,7 +633,8 @@ Last generated: 2026-06-06.
 |     Deep Learning: Neural Networks at Scale | 229 |
 |     Adversarial Machine Learning | 398 |
 | 17.8 Privacy-Preserving and Collaborative Machine Learning | 338 |
-|     Case Study: A Privacy-Preserving ML Research Program (SigML, SplitML, Fairis) | 1,644 |
+|     Case Study: A Privacy-Preserving ML Research Program (SigML, SplitML, Fairis) | 1,645 |
+|     Applied Privacy and Trust Systems | 842 |
 | 17.9 Anomaly Detection Across Domains | 271 |
 | 17.10 Modeling, Simulation, and Control for Security | 275 |
 | 17.11 Probability Distributions in Security | 319 |
@@ -644,7 +655,7 @@ Last generated: 2026-06-06.
 | News in Focus | 72 |
 | Review Questions (MCQ) | 342 |
 | Lab Assignment | 192 |
-| References | 218 |
+| References | 257 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
