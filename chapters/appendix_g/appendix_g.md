@@ -10,8 +10,8 @@ Last generated: 2026-06-06.
 |---|---:|---:|---:|
 | Introduction | 816 | 0 | 1.6 |
 | Preface | 391 | 0 | 0.8 |
-| Chapter 1: Introduction to Cybersecurity | 8,936 | 361 | 17.9 |
-| Chapter 2: Cryptography | 28,882 | 1,994 | 57.8 |
+| Chapter 1: Introduction to Cybersecurity | 9,079 | 361 | 18.2 |
+| Chapter 2: Cryptography | 29,051 | 1,994 | 58.1 |
 | Chapter 3: Networking and Network Attacks | 14,610 | 374 | 29.2 |
 | Chapter 4: Social Engineering and the Human Element | 7,218 | 203 | 14.4 |
 | Chapter 5: Risk Management | 11,833 | 469 | 23.7 |
@@ -27,9 +27,9 @@ Last generated: 2026-06-06.
 | Chapter 15: Malware Analysis | 3,727 | 339 | 7.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 3,305 | 366 | 6.6 |
 | Chapter 17: Emerging Threats and Future Challenges | 9,993 | 598 | 20.0 |
-| Chapter 18: Privacy, Law, and Information Governance | 3,728 | 387 | 7.5 |
-| Chapter 19: Security Governance, Policy, and Culture | 3,519 | 482 | 7.0 |
-| Chapter 20: Industrial Control Systems and OT Security | 2,086 | 442 | 4.2 |
+| Chapter 18: Privacy, Law, and Information Governance | 4,597 | 387 | 9.2 |
+| Chapter 19: Security Governance, Policy, and Culture | 4,395 | 482 | 8.8 |
+| Chapter 20: Industrial Control Systems and OT Security | 2,920 | 442 | 5.8 |
 | Appendix A: Security Command Reference | 1,653 | 0 | 3.3 |
 | Appendix B: Glossary | 2,319 | 0 | 4.6 |
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
@@ -37,7 +37,7 @@ Last generated: 2026-06-06.
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix H: Capstone and Group Project Ideas | 833 | 0 | 1.7 |
-| **TOTAL** | **157,325** | **9,175** | **315** |
+| **TOTAL** | **160,216** | **9,175** | **320** |
 
 ## Detailed Word Count by Section
 
@@ -69,7 +69,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*8,936 markdown words (17.9 pages); 361 code words.*
+*9,079 markdown words (18.2 pages); 361 code words.*
 
 | Section | Words |
 |---|---:|
@@ -78,7 +78,8 @@ Last generated: 2026-06-06.
 | 1.1 What Is Cybersecurity? | 636 |
 | 1.2 The CIA Triad and Its Extensions | 649 |
 |     The DIE Model: A Modern Complement to CIA | 254 |
-| 1.3 The Anatomy of an Attack | 593 |
+| 1.3 The Anatomy of an Attack | 594 |
+|     A Concept Map of the Core Terms | 142 |
 | 1.4 Threat Actors and the Adversary Model | 529 |
 | 1.5 Defense in Depth and Security Controls | 488 |
 | 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 561 |
@@ -100,14 +101,14 @@ Last generated: 2026-06-06.
 
 ### Chapter 2: Cryptography
 
-*28,882 markdown words (57.8 pages); 1,994 code words.*
+*29,051 markdown words (58.1 pages); 1,994 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 170 |
 | Key Terms | 648 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
-|     Encoding versus Encryption versus Hashing | 316 |
+|     Encoding versus Encryption versus Hashing | 485 |
 | 2.2 Classical Ciphers and Why They Fall | 604 |
 |     Classical versus Modern Ciphers | 295 |
 |     A Classification of Ciphers | 226 |
@@ -747,7 +748,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
-*3,728 markdown words (7.5 pages); 387 code words.*
+*4,597 markdown words (9.2 pages); 387 code words.*
 
 | Section | Words |
 |---|---:|
@@ -770,22 +771,25 @@ Last generated: 2026-06-06.
 |     Scoping and Cardholder Data Environment | 59 |
 | Privacy by Design | 0 |
 |     The Seven Foundational Principles | 60 |
-|     Data Protection Impact Assessments | 70 |
+|     Data Protection Impact Assessments | 124 |
 | The Fourth Amendment and the Reasonable Expectation of Privacy | 54 |
 |     The Katz Reasonable-Expectation-of-Privacy Test | 198 |
 |     The Third-Party Doctrine and Its Erosion | 147 |
 |     Current Issue: Geofence Warrants and Chatrie v. United States | 281 |
 |     What the Chatrie Oral Argument Signaled | 592 |
-| Entrapment versus Enticement in Investigations | 481 |
+| Entrapment versus Enticement in Investigations | 482 |
+| Computer-Crime Law: CFAA, DMCA, and the Ethical Hacker | 232 |
+| The Global Privacy Landscape and Breach Notification | 219 |
+| Cryptography, Lawful Access, and Privacy-Enhancing Technologies | 330 |
 | Why This Matters | 50 |
 | News in Focus | 76 |
 | Review Questions (MCQ) | 325 |
 | Lab Assignment | 203 |
-| References | 6 |
+| References | 39 |
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*3,519 markdown words (7.0 pages); 482 code words.*
+*4,395 markdown words (8.8 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
@@ -810,21 +814,24 @@ Last generated: 2026-06-06.
 |     What Culture Is and Why It Matters | 89 |
 |     Tone at the Top | 66 |
 |     Building a Positive Security Culture | 115 |
-| Common Compliance Frameworks | 121 |
+| Common Compliance Frameworks | 174 |
 | NIST Cybersecurity Framework 2.0 and the Govern Function | 268 |
 | Cybersecurity Governance at the Municipal Level | 135 |
 |     Benchmarking Readiness with Automated Policy Analytics | 305 |
 |     Governance and Supply-Chain Gaps | 350 |
-|     Compliance Reports, Certifications, and Agreements | 341 |
+|     Compliance Reports, Certifications, and Agreements | 342 |
+| Governance, Risk, and Compliance (GRC) as an Integrated Discipline | 229 |
+| Audits, Assurance, and Security Maturity | 222 |
+| Third-Party Risk and the Human Layer of Governance | 347 |
 | Why This Matters | 63 |
 | News in Focus | 67 |
 | Review Questions (MCQ) | 368 |
 | Lab Assignment | 190 |
-| References | 74 |
+| References | 98 |
 
 ### Chapter 20: Industrial Control Systems and OT Security
 
-*2,086 markdown words (4.2 pages); 442 code words.*
+*2,920 markdown words (5.8 pages); 442 code words.*
 
 | Section | Words |
 |---|---:|
@@ -850,12 +857,15 @@ Last generated: 2026-06-06.
 | IEC 62443 and NIST SP 800-82 | 0 |
 |     IEC 62443 | 49 |
 |     NIST SP 800-82 | 41 |
-| OT Defence-in-Depth | 102 |
+| OT Defence-in-Depth | 176 |
+| ICS Components and Protocols in Depth | 163 |
+| ICS Malware Case Studies | 192 |
+| The Purdue Model, IEC 62443, and OT Defense in Depth | 372 |
 | Why This Matters | 81 |
 | News in Focus | 88 |
 | Review Questions (MCQ) | 372 |
 | Lab Assignment | 193 |
-| References | 6 |
+| References | 39 |
 
 ### Appendix A: Security Command Reference
 
