@@ -10,3 +10,9 @@ __pycache__/
 # macOS junk
 .DS_Store
 **/.DS_Store
+
+# Internal deposit guide (not for publication)
+ZENODO_AND_SCHOLAR.md
+
+# PDF-only rendered diagram intermediates
+assets/figures/mermaid/
