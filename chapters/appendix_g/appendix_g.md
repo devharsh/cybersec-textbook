@@ -10,33 +10,33 @@ Last generated: 2026-06-06.
 |---|---:|---:|---:|
 | Introduction | 816 | 0 | 1.6 |
 | Preface | 391 | 0 | 0.8 |
-| Chapter 1: Introduction to Cybersecurity | 8,669 | 361 | 17.3 |
-| Chapter 2: Cryptography | 25,981 | 1,994 | 52.0 |
-| Chapter 3: Networking and Network Attacks | 13,400 | 374 | 26.8 |
+| Chapter 1: Introduction to Cybersecurity | 8,936 | 361 | 17.9 |
+| Chapter 2: Cryptography | 28,882 | 1,994 | 57.8 |
+| Chapter 3: Networking and Network Attacks | 14,610 | 374 | 29.2 |
 | Chapter 4: Social Engineering and the Human Element | 7,218 | 203 | 14.4 |
 | Chapter 5: Risk Management | 11,833 | 469 | 23.7 |
 | Chapter 6: Penetration Testing Methodology | 9,639 | 265 | 19.3 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 6,606 | 253 | 13.2 |
 | Chapter 8: Scanning and Enumeration | 6,849 | 816 | 13.7 |
-| Chapter 9: Exploitation and Post-Exploitation | 1,862 | 316 | 3.7 |
-| Chapter 10: Web Application Security | 1,937 | 202 | 3.9 |
+| Chapter 9: Exploitation and Post-Exploitation | 5,225 | 316 | 10.4 |
+| Chapter 10: Web Application Security | 4,376 | 202 | 8.8 |
 | Chapter 11: Network Defense and Hardening | 3,965 | 258 | 7.9 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 2,690 | 377 | 5.4 |
 | Chapter 13: Digital Forensics | 1,944 | 300 | 3.9 |
 | Chapter 14: Incident Response | 2,744 | 373 | 5.5 |
 | Chapter 15: Malware Analysis | 2,843 | 339 | 5.7 |
 | Chapter 16: Capture the Flag and Competitive Security | 2,481 | 366 | 5.0 |
-| Chapter 17: Emerging Threats and Future Challenges | 8,512 | 598 | 17.0 |
+| Chapter 17: Emerging Threats and Future Challenges | 9,808 | 598 | 19.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 3,728 | 387 | 7.5 |
-| Chapter 19: Security Governance, Policy, and Culture | 3,177 | 482 | 6.4 |
+| Chapter 19: Security Governance, Policy, and Culture | 3,519 | 482 | 7.0 |
 | Chapter 20: Industrial Control Systems and OT Security | 2,086 | 442 | 4.2 |
 | Appendix A: Security Command Reference | 1,653 | 0 | 3.3 |
-| Appendix B: Glossary | 2,117 | 0 | 4.2 |
+| Appendix B: Glossary | 2,319 | 0 | 4.6 |
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
-| Appendix F: Companion Code and Repositories | 793 | 0 | 1.6 |
-| **TOTAL** | **137,492** | **9,175** | **275** |
+| Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
+| **TOTAL** | **149,888** | **9,175** | **300** |
 
 ## Detailed Word Count by Section
 
@@ -68,12 +68,12 @@ Last generated: 2026-06-06.
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*8,669 markdown words (17.3 pages); 361 code words.*
+*8,936 markdown words (17.9 pages); 361 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 179 |
-| Key Terms | 232 |
+| Key Terms | 252 |
 | 1.1 What Is Cybersecurity? | 636 |
 | 1.2 The CIA Triad and Its Extensions | 649 |
 |     The DIE Model: A Modern Complement to CIA | 254 |
@@ -83,7 +83,8 @@ Last generated: 2026-06-06.
 | 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 561 |
 | 1.7 The NIST Cybersecurity Framework | 403 |
 | 1.8 Quantifying Risk in Monetary Terms | 375 |
-| 1.9 The Saltzer and Schroeder Design Principles | 640 |
+| 1.9 The Saltzer and Schroeder Design Principles | 641 |
+|     The Principle of Least Privilege (PoLP) | 246 |
 | 1.10 The Security Mindset, Ethics, and the Law | 369 |
 | 1.11 A Taxonomy of Threats and a Roadmap to This Book | 547 |
 | Chapter Summary | 240 |
@@ -98,48 +99,60 @@ Last generated: 2026-06-06.
 
 ### Chapter 2: Cryptography
 
-*25,981 markdown words (52.0 pages); 1,994 code words.*
+*28,882 markdown words (57.8 pages); 1,994 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 170 |
-| Key Terms | 535 |
+| Key Terms | 648 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
 |     Encoding versus Encryption versus Hashing | 316 |
 | 2.2 Classical Ciphers and Why They Fall | 604 |
 |     Classical versus Modern Ciphers | 295 |
-|     A Classification of Ciphers | 225 |
+|     A Classification of Ciphers | 226 |
+|     Classical Ciphers in Code | 294 |
 | 2.3 Perfect Secrecy and the One-Time Pad | 633 |
 |     XOR, the One-Time Pad, and Perfect Secrecy, Formally | 698 |
 |     From Information-Theoretic to Computational Security | 311 |
 |     Game-Based (Provable) Security and Ciphertext Indistinguishability | 2,292 |
 |     Real-World Case: The ANC's One-Time Pad and Operation Vula | 441 |
-| 2.4 Randomness: True, Pseudo, and Cryptographically Secure | 516 |
+| 2.4 Randomness: True, Pseudo, and Cryptographically Secure | 517 |
+|     Insecure versus Cryptographically Secure Randomness in Code | 168 |
 | 2.5 Symmetric Encryption: Stream and Block Ciphers | 850 |
 |     The Feistel Network: A Blueprint for Block Ciphers | 222 |
-| 2.6 Block Cipher Modes of Operation | 539 |
+| 2.6 Block Cipher Modes of Operation | 540 |
+|     AES Modes in Code: ECB versus CTR | 324 |
 | 2.7 Cryptographic Hash Functions | 626 |
-|     The Merkle-Damgard Construction | 214 |
+|     The Merkle-Damgard Construction | 215 |
+|     Hashing in Code, and Why a CRC Is Not a Hash | 213 |
+|     Error Detection versus Error Correction: CRC and Hamming Codes | 205 |
 | 2.8 Message Authentication Codes and Authenticated Encryption | 585 |
 |     Hash, MAC, and Digital Signature Compared | 490 |
 |     Wrong-Key Behavior: Garbage Output versus Null Rejection | 526 |
-|     The Three-Behavior Hierarchy of Incorrect Decryption | 2,297 |
+|     The Three-Behavior Hierarchy of Incorrect Decryption | 2,298 |
+|     Computing an HMAC in Code | 98 |
+|     Authenticated Encryption in Practice: Encrypt-then-MAC | 190 |
 | 2.9 Key Derivation and Password Storage | 510 |
 | 2.10 Public-Key Cryptography and RSA | 686 |
 | 2.11 Diffie-Hellman Key Exchange | 519 |
-|     ElGamal Encryption | 276 |
+|     ElGamal Encryption | 277 |
+|     ElGamal in Code | 266 |
 | 2.12 Elliptic-Curve Cryptography | 495 |
 |     Elliptic Curves Up Close: Group Law, the ECDLP, and the Curve Zoo | 776 |
-| 2.13 Digital Signatures, Certificates, and PKI | 618 |
+| 2.13 Digital Signatures, Certificates, and PKI | 619 |
+|     Generating a Digital Signature in Code | 145 |
 | 2.14 Putting It Together: The TLS Handshake | 354 |
 | 2.15 Advanced and Emerging Cryptography | 824 |
 |     Computing Paradigms: Mainframes, Classical, DNA, and Quantum | 395 |
 |     Searchable, Deniable, and Functional Encryption | 341 |
 |     The Algebra Beneath Cryptography: Finite Fields, Abelian and Non-Abelian Groups | 470 |
-| 2.16 Key Management | 529 |
+| 2.16 Key Management | 530 |
+|     Key Management Services and Key Escrow | 347 |
 | 2.17 A Taxonomy of Cryptographic Attacks | 348 |
 | 2.18 Applied Cryptographic Systems | 392 |
 | 2.19 Practical Guidance: Choosing and Using Cryptography | 380 |
+| 2.19a Protecting Data in All Three States | 289 |
+| 2.19b Tamper-Evident and Tamper-Proof Mechanisms | 207 |
 | 2.20 Formal Security Analysis and Provable Security | 125 |
 |     The Anatomy of a Security Definition | 331 |
 |     Hardness Assumptions and the Random Oracle Model | 234 |
@@ -153,11 +166,11 @@ Last generated: 2026-06-06.
 | Review Questions | 433 |
 |     Answer Key | 106 |
 | Hands-on Labs | 375 |
-| References | 792 |
+| References | 826 |
 
 ### Chapter 3: Networking and Network Attacks
 
-*13,400 markdown words (26.8 pages); 374 code words.*
+*14,610 markdown words (29.2 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
@@ -178,15 +191,17 @@ Last generated: 2026-06-06.
 |     Application Protocols and Their Security Posture | 383 |
 |     Secure versus Insecure Protocols | 319 |
 | 3.6 The Core Protocols: TCP, UDP, ICMP, and Their Headers | 793 |
-|     Sockets: Programming the Transport Layer | 215 |
+|     Sockets: Programming the Transport Layer | 216 |
+|     Sockets in Code: A TCP Server, Client, and a Tiny Web Server | 586 |
 | 3.7 ARP and DHCP: Convenience and Its Abuse | 472 |
-|     The Domain Name System (DNS) | 427 |
+|     The Domain Name System (DNS) | 548 |
 | 3.8 Sniffing: Listening on the Wire | 530 |
 |     Wireless Networking Fundamentals | 250 |
 |     Traffic Analysis and Network Monitoring | 158 |
 |     Syslog and Centralized Logging | 354 |
 | 3.9 Spoofing, Man-in-the-Middle, and Session Hijacking | 613 |
-|     Packet Capture, On-Path Attacks, and SSL Stripping | 314 |
+|     Packet Capture, On-Path Attacks, and SSL Stripping | 315 |
+|     Hands-On: Capturing a Plaintext Password, Then Encrypting It | 501 |
 | 3.10 Denial-of-Service and Distributed Denial-of-Service Attacks | 1,068 |
 |     Access Control Lists, NACLs, and Security Groups | 515 |
 | 3.11 Securing the Network: A Preview | 173 |
@@ -375,7 +390,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*1,862 markdown words (3.7 pages); 316 code words.*
+*5,225 markdown words (10.4 pages); 316 code words.*
 
 | Section | Words |
 |---|---:|
@@ -387,7 +402,18 @@ Last generated: 2026-06-06.
 | Common Vulnerability Classes | 0 |
 |     Injection Vulnerabilities | 121 |
 |     Memory Corruption | 161 |
-|     Authentication and Session Vulnerabilities | 32 |
+|     Authentication and Session Vulnerabilities | 33 |
+| From Source to Machine Code: The Compilation Pipeline | 247 |
+| Memory Corruption: The Stack, the Heap, and Buffer Overflows | 344 |
+|     Stack Exhaustion and Heap Problems | 249 |
+| From Stack Smashing to Return-Oriented Programming | 513 |
+| Programming Survival Skills for Exploitation | 302 |
+| Shellcode and Shellcode Strategies | 276 |
+| The Exploit-Development Workflow | 351 |
+|     Inside the Metasploit Framework | 281 |
+| Passive and Static Analysis: Reverse Engineering for Exploitation | 208 |
+|     Privilege Escalation in Depth | 193 |
+|     Post-Exploitation, Lateral Movement, and Defense Evasion | 346 |
 | Metasploit Framework | 0 |
 |     Structure | 51 |
 |     Responsible Use | 46 |
@@ -403,34 +429,42 @@ Last generated: 2026-06-06.
 | News in Focus | 78 |
 | Review Questions (MCQ) | 285 |
 | Lab Assignment | 189 |
-| References | 6 |
+| References | 58 |
 
 ### Chapter 10: Web Application Security
 
-*1,937 markdown words (3.9 pages); 202 code words.*
+*4,376 markdown words (8.8 pages); 202 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 105 |
-| Key Terms | 152 |
+| Key Terms | 153 |
+| How the Web Works: HTTP, Sessions, and the Same-Origin Policy | 234 |
 | The OWASP Top 10 | 38 |
-|     Broken Access Control | 163 |
+|     Broken Access Control | 164 |
+|     The OWASP Top 10:2025 | 256 |
 | Injection Attacks | 0 |
 |     SQL Injection in Depth | 179 |
 |     Cross-Site Scripting | 150 |
 |     Cross-Site Request Forgery | 99 |
-|     Server-Side Request Forgery | 64 |
+|     Server-Side Request Forgery | 65 |
+| SQL Injection in Depth | 434 |
+| Cross-Site Scripting (XSS) | 378 |
+| Broken Access Control, CSRF, SSRF, and Other High-Impact Flaws | 224 |
 | Authentication and Session Management | 0 |
 |     Broken Authentication | 142 |
+| Authentication, Sessions, and the Insufficient-Session-Expiration Flaw | 145 |
 | Security Misconfigurations | 41 |
 |     Security Headers | 64 |
+| The Web-Application Testing Toolkit | 279 |
+| Application Security Testing: SAST, DAST, IAST, and DevSecOps | 429 |
 | Web Application Firewalls and Their Limits | 40 |
-|     WAF Bypass Techniques | 50 |
+|     WAF Bypass Techniques | 76 |
 | Why This Matters | 79 |
 | News in Focus | 78 |
 | Review Questions (MCQ) | 314 |
 | Lab Assignment | 154 |
-| References | 6 |
+| References | 37 |
 
 ### Chapter 11: Network Defense and Hardening
 
@@ -631,7 +665,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*8,512 markdown words (17.0 pages); 598 code words.*
+*9,808 markdown words (19.6 pages); 598 code words.*
 
 | Section | Words |
 |---|---:|
@@ -667,7 +701,12 @@ Last generated: 2026-06-06.
 |     Availability and Durability Risk | 205 |
 |     Cloud Compute Audit and Security | 181 |
 |     VPC and Cloud Network Isolation | 264 |
-|     Cloud Compute Models: VMs, Containers, Serverless, and Edge | 347 |
+|     Cloud Compute Models: VMs, Containers, Serverless, and Edge | 348 |
+|     Cloud Service Scope, Resiliency, and Data Protection | 304 |
+|     Reliability Properties: Availability, Resiliency, Reliability, Scalability, Elasticity, Durability | 269 |
+|     Load Balancers, Hypervisors, and Content Delivery | 253 |
+|     Cloud Security Services and the Cost of DDoS | 230 |
+|     Event-Driven Architecture: Queues, Pub/Sub, and Event Buses | 220 |
 | 17.6 Internet of Things Security | 0 |
 |     The IoT Attack Surface | 47 |
 |     Consequences | 58 |
@@ -678,7 +717,7 @@ Last generated: 2026-06-06.
 | News in Focus | 72 |
 | Review Questions (MCQ) | 342 |
 | Lab Assignment | 192 |
-| References | 317 |
+| References | 336 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
@@ -720,7 +759,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*3,177 markdown words (6.4 pages); 482 code words.*
+*3,519 markdown words (7.0 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
@@ -749,7 +788,8 @@ Last generated: 2026-06-06.
 | NIST Cybersecurity Framework 2.0 and the Govern Function | 268 |
 | Cybersecurity Governance at the Municipal Level | 135 |
 |     Benchmarking Readiness with Automated Policy Analytics | 305 |
-|     Governance and Supply-Chain Gaps | 349 |
+|     Governance and Supply-Chain Gaps | 350 |
+|     Compliance Reports, Certifications, and Agreements | 341 |
 | Why This Matters | 63 |
 | News in Focus | 67 |
 | Review Questions (MCQ) | 368 |
@@ -828,11 +868,11 @@ Last generated: 2026-06-06.
 
 ### Appendix B: Glossary
 
-*2,117 markdown words (4.2 pages); 0 code words.*
+*2,319 markdown words (4.6 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
-| Cloud and Infrastructure Terminology | 1,262 |
+| Cloud and Infrastructure Terminology | 1,464 |
 
 ### Appendix C: Certification Mapping
 
@@ -874,10 +914,11 @@ Last generated: 2026-06-06.
 
 ### Appendix F: Companion Code and Repositories
 
-*793 markdown words (1.6 pages); 0 code words.*
+*1,169 markdown words (2.3 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
+| Worked Code Examples in This Book | 375 |
 | Author Repositories (github.com/devharsh) | 191 |
 | Computer Tips Organization (github.com/com-puter-tips) | 182 |
 | Companion Blog Tutorials (com.puter.tips) | 347 |
