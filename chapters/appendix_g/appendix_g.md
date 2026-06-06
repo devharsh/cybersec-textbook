@@ -12,7 +12,7 @@ Last generated: 2026-06-06.
 | Preface | 391 | 0 | 0.8 |
 | Chapter 1: Introduction to Cybersecurity | 8,669 | 361 | 17.3 |
 | Chapter 2: Cryptography | 25,981 | 1,994 | 52.0 |
-| Chapter 3: Networking and Network Attacks | 13,345 | 374 | 26.7 |
+| Chapter 3: Networking and Network Attacks | 13,400 | 374 | 26.8 |
 | Chapter 4: Social Engineering and the Human Element | 7,218 | 203 | 14.4 |
 | Chapter 5: Risk Management | 11,833 | 469 | 23.7 |
 | Chapter 6: Penetration Testing Methodology | 9,639 | 265 | 19.3 |
@@ -36,7 +36,7 @@ Last generated: 2026-06-06.
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 793 | 0 | 1.6 |
-| **TOTAL** | **135,865** | **9,175** | **272** |
+| **TOTAL** | **135,920** | **9,175** | **272** |
 
 ## Detailed Word Count by Section
 
@@ -156,7 +156,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 3: Networking and Network Attacks
 
-*13,345 markdown words (26.7 pages); 374 code words.*
+*13,400 markdown words (26.8 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
@@ -175,7 +175,7 @@ Last generated: 2026-06-06.
 |     IP Address Management and Internet Registries | 212 |
 | 3.5 Ports and Common Protocols | 434 |
 |     Application Protocols and Their Security Posture | 383 |
-|     Secure versus Insecure Protocols | 288 |
+|     Secure versus Insecure Protocols | 319 |
 | 3.6 The Core Protocols: TCP, UDP, ICMP, and Their Headers | 793 |
 |     Sockets: Programming the Transport Layer | 215 |
 | 3.7 ARP and DHCP: Convenience and Its Abuse | 472 |
@@ -198,7 +198,7 @@ Last generated: 2026-06-06.
 | Review Questions | 384 |
 |     Answer Key | 30 |
 | Hands-on Labs | 393 |
-| References | 230 |
+| References | 254 |
 
 ### Chapter 4: Social Engineering and the Human Element
 
