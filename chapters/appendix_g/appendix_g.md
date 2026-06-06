@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-06-05.
+Last generated: 2026-06-06.
 
 ## Summary by Chapter
 
@@ -20,13 +20,13 @@ Last generated: 2026-06-05.
 | Chapter 8: Scanning and Enumeration | 6,849 | 816 | 13.7 |
 | Chapter 9: Exploitation and Post-Exploitation | 1,862 | 316 | 3.7 |
 | Chapter 10: Web Application Security | 1,937 | 202 | 3.9 |
-| Chapter 11: Network Defense and Hardening | 1,875 | 258 | 3.8 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 1,751 | 377 | 3.5 |
+| Chapter 11: Network Defense and Hardening | 2,293 | 258 | 4.6 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 2,690 | 377 | 5.4 |
 | Chapter 13: Digital Forensics | 1,944 | 300 | 3.9 |
-| Chapter 14: Incident Response | 1,922 | 373 | 3.8 |
-| Chapter 15: Malware Analysis | 2,090 | 339 | 4.2 |
+| Chapter 14: Incident Response | 2,744 | 373 | 5.5 |
+| Chapter 15: Malware Analysis | 2,504 | 339 | 5.0 |
 | Chapter 16: Capture the Flag and Competitive Security | 2,481 | 366 | 5.0 |
-| Chapter 17: Emerging Threats and Future Challenges | 5,704 | 598 | 11.4 |
+| Chapter 17: Emerging Threats and Future Challenges | 5,880 | 598 | 11.8 |
 | Chapter 18: Privacy, Law, and Information Governance | 3,728 | 387 | 7.5 |
 | Chapter 19: Security Governance, Policy, and Culture | 3,177 | 482 | 6.4 |
 | Chapter 20: Industrial Control Systems and OT Security | 2,086 | 442 | 4.2 |
@@ -36,7 +36,7 @@ Last generated: 2026-06-05.
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 793 | 0 | 1.6 |
-| **TOTAL** | **122,464** | **9,175** | **245** |
+| **TOTAL** | **125,233** | **9,175** | **250** |
 
 ## Detailed Word Count by Section
 
@@ -414,7 +414,7 @@ Last generated: 2026-06-05.
 
 ### Chapter 11: Network Defense and Hardening
 
-*1,875 markdown words (3.8 pages); 258 code words.*
+*2,293 markdown words (4.6 pages); 258 code words.*
 
 | Section | Words |
 |---|---:|
@@ -422,7 +422,8 @@ Last generated: 2026-06-05.
 | Key Terms | 132 |
 | Firewalls | 0 |
 |     Firewall Types and Evolution | 144 |
-|     Writing Firewall Rules | 104 |
+|     Writing Firewall Rules | 105 |
+| Firewall Types and Topologies | 398 |
 | Network Segmentation | 0 |
 |     DMZ Architecture | 89 |
 |     VLAN and Micro-Segmentation | 60 |
@@ -444,11 +445,11 @@ Last generated: 2026-06-05.
 | News in Focus | 64 |
 | Review Questions (MCQ) | 299 |
 | Lab Assignment | 159 |
-| References | 6 |
+| References | 25 |
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*1,751 markdown words (3.5 pages); 377 code words.*
+*2,690 markdown words (5.4 pages); 377 code words.*
 
 | Section | Words |
 |---|---:|
@@ -466,12 +467,15 @@ Last generated: 2026-06-05.
 |     SIEM Challenges | 59 |
 | UEBA and Threat Hunting | 0 |
 |     User and Entity Behaviour Analytics | 58 |
-|     Threat Hunting | 125 |
+|     Threat Hunting | 126 |
+| Intrusion Detection Systems: What They Watch | 211 |
+| Intrusion Prevention Systems: From Alert to Action | 238 |
+| Detection Methods: Signature, Heuristic, and Anomaly | 466 |
 | Why This Matters | 85 |
 | News in Focus | 69 |
 | Review Questions (MCQ) | 306 |
 | Lab Assignment | 183 |
-| References | 6 |
+| References | 29 |
 
 ### Chapter 13: Digital Forensics
 
@@ -507,7 +511,7 @@ Last generated: 2026-06-05.
 
 ### Chapter 14: Incident Response
 
-*1,922 markdown words (3.8 pages); 373 code words.*
+*2,744 markdown words (5.5 pages); 373 code words.*
 
 | Section | Words |
 |---|---:|
@@ -524,16 +528,19 @@ Last generated: 2026-06-05.
 |     Post-Incident Activity | 110 |
 | Legal and Regulatory Obligations | 0 |
 |     Breach Notification Laws | 60 |
-|     Law Enforcement and Evidence Preservation | 67 |
+|     Law Enforcement and Evidence Preservation | 68 |
+| The Assume-Breach Mindset | 133 |
+| Before, During, and After: An Operational IR Playbook | 375 |
+| Case Study: The Locky Ransomware Incident | 280 |
 | Why This Matters | 75 |
 | News in Focus | 88 |
 | Review Questions (MCQ) | 320 |
 | Lab Assignment | 176 |
-| References | 6 |
+| References | 39 |
 
 ### Chapter 15: Malware Analysis
 
-*2,090 markdown words (4.2 pages); 339 code words.*
+*2,504 markdown words (5.0 pages); 339 code words.*
 
 | Section | Words |
 |---|---:|
@@ -559,12 +566,13 @@ Last generated: 2026-06-05.
 |     VM and Sandbox Detection | 64 |
 |     Packers and Obfuscators | 55 |
 |     Fileless Malware | 42 |
-| Malware Analysis Report Structure | 72 |
+| Malware Analysis Report Structure | 73 |
+| Antivirus and Antimalware Defenses | 386 |
 | Why This Matters | 61 |
 | News in Focus | 68 |
 | Review Questions (MCQ) | 335 |
 | Lab Assignment | 176 |
-| References | 6 |
+| References | 33 |
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
@@ -597,7 +605,7 @@ Last generated: 2026-06-05.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*5,704 markdown words (11.4 pages); 598 code words.*
+*5,880 markdown words (11.8 pages); 598 code words.*
 
 | Section | Words |
 |---|---:|
@@ -615,7 +623,7 @@ Last generated: 2026-06-05.
 |     Deep Learning: Neural Networks at Scale | 229 |
 |     Adversarial Machine Learning | 398 |
 | 17.8 Privacy-Preserving and Collaborative Machine Learning | 338 |
-|     Case Study: A Privacy-Preserving ML Research Program (SigML, SplitML, Fairis) | 1,490 |
+|     Case Study: A Privacy-Preserving ML Research Program (SigML, SplitML, Fairis) | 1,644 |
 | 17.9 Anomaly Detection Across Domains | 271 |
 | 17.10 Modeling, Simulation, and Control for Security | 275 |
 | 17.11 Probability Distributions in Security | 319 |
@@ -636,7 +644,7 @@ Last generated: 2026-06-05.
 | News in Focus | 72 |
 | Review Questions (MCQ) | 342 |
 | Lab Assignment | 192 |
-| References | 196 |
+| References | 218 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
