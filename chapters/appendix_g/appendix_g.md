@@ -12,7 +12,7 @@ Last generated: 2026-06-06.
 | Preface | 391 | 0 | 0.8 |
 | Chapter 1: Introduction to Cybersecurity | 8,669 | 361 | 17.3 |
 | Chapter 2: Cryptography | 25,981 | 1,994 | 52.0 |
-| Chapter 3: Networking and Network Attacks | 11,896 | 374 | 23.8 |
+| Chapter 3: Networking and Network Attacks | 13,345 | 374 | 26.7 |
 | Chapter 4: Social Engineering and the Human Element | 7,218 | 203 | 14.4 |
 | Chapter 5: Risk Management | 11,833 | 469 | 23.7 |
 | Chapter 6: Penetration Testing Methodology | 9,639 | 265 | 19.3 |
@@ -20,13 +20,13 @@ Last generated: 2026-06-06.
 | Chapter 8: Scanning and Enumeration | 6,849 | 816 | 13.7 |
 | Chapter 9: Exploitation and Post-Exploitation | 1,862 | 316 | 3.7 |
 | Chapter 10: Web Application Security | 1,937 | 202 | 3.9 |
-| Chapter 11: Network Defense and Hardening | 2,293 | 258 | 4.6 |
+| Chapter 11: Network Defense and Hardening | 3,965 | 258 | 7.9 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 2,690 | 377 | 5.4 |
 | Chapter 13: Digital Forensics | 1,944 | 300 | 3.9 |
 | Chapter 14: Incident Response | 2,744 | 373 | 5.5 |
-| Chapter 15: Malware Analysis | 2,504 | 339 | 5.0 |
+| Chapter 15: Malware Analysis | 2,843 | 339 | 5.7 |
 | Chapter 16: Capture the Flag and Competitive Security | 2,481 | 366 | 5.0 |
-| Chapter 17: Emerging Threats and Future Challenges | 8,164 | 598 | 16.3 |
+| Chapter 17: Emerging Threats and Future Challenges | 8,512 | 598 | 17.0 |
 | Chapter 18: Privacy, Law, and Information Governance | 3,728 | 387 | 7.5 |
 | Chapter 19: Security Governance, Policy, and Culture | 3,177 | 482 | 6.4 |
 | Chapter 20: Industrial Control Systems and OT Security | 2,086 | 442 | 4.2 |
@@ -36,7 +36,7 @@ Last generated: 2026-06-06.
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 793 | 0 | 1.6 |
-| **TOTAL** | **132,057** | **9,175** | **264** |
+| **TOTAL** | **135,865** | **9,175** | **272** |
 
 ## Detailed Word Count by Section
 
@@ -156,22 +156,26 @@ Last generated: 2026-06-06.
 
 ### Chapter 3: Networking and Network Attacks
 
-*11,896 markdown words (23.8 pages); 374 code words.*
+*13,345 markdown words (26.7 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 152 |
-| Key Terms | 312 |
+| Key Terms | 407 |
 | 3.1 Why Networking Is the Battleground | 359 |
-| 3.2 The OSI Model | 549 |
+| 3.2 The OSI Model | 550 |
+|     Mapping the OSI and TCP/IP Models | 270 |
 | 3.3 The TCP/IP Model and Encapsulation | 293 |
 |     Network Devices and Segments | 194 |
 |     Routing and the Route Table | 250 |
 | 3.4 IP Addressing: IPv4 and IPv6 | 508 |
 |     Subnetting, CIDR, and Network versus Host Addresses | 332 |
-|     Network Scopes and Hardware: NIC, LAN, WLAN, and WAN | 409 |
+|     Network Scopes and Hardware: NIC, LAN, WLAN, and WAN | 410 |
+|     Special and Reserved Addresses | 233 |
+|     IP Address Management and Internet Registries | 212 |
 | 3.5 Ports and Common Protocols | 434 |
-|     Application Protocols and Their Security Posture | 382 |
+|     Application Protocols and Their Security Posture | 383 |
+|     Secure versus Insecure Protocols | 288 |
 | 3.6 The Core Protocols: TCP, UDP, ICMP, and Their Headers | 793 |
 |     Sockets: Programming the Transport Layer | 215 |
 | 3.7 ARP and DHCP: Convenience and Its Abuse | 472 |
@@ -180,7 +184,8 @@ Last generated: 2026-06-06.
 |     Wireless Networking Fundamentals | 250 |
 |     Traffic Analysis and Network Monitoring | 158 |
 |     Syslog and Centralized Logging | 354 |
-| 3.9 Spoofing, Man-in-the-Middle, and Session Hijacking | 612 |
+| 3.9 Spoofing, Man-in-the-Middle, and Session Hijacking | 613 |
+|     Packet Capture, On-Path Attacks, and SSL Stripping | 314 |
 | 3.10 Denial-of-Service and Distributed Denial-of-Service Attacks | 1,068 |
 |     Access Control Lists, NACLs, and Security Groups | 515 |
 | 3.11 Securing the Network: A Preview | 173 |
@@ -193,7 +198,7 @@ Last generated: 2026-06-06.
 | Review Questions | 384 |
 |     Answer Key | 30 |
 | Hands-on Labs | 393 |
-| References | 197 |
+| References | 230 |
 
 ### Chapter 4: Social Engineering and the Human Element
 
@@ -428,16 +433,18 @@ Last generated: 2026-06-06.
 
 ### Chapter 11: Network Defense and Hardening
 
-*2,293 markdown words (4.6 pages); 258 code words.*
+*3,965 markdown words (7.9 pages); 258 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 86 |
-| Key Terms | 132 |
+| Key Terms | 202 |
 | Firewalls | 0 |
 |     Firewall Types and Evolution | 144 |
 |     Writing Firewall Rules | 105 |
-| Firewall Types and Topologies | 398 |
+| Firewall Types and Topologies | 399 |
+|     Physical and Virtual Firewalls | 174 |
+|     Stateless and Stateful Packet Filtering | 362 |
 | Network Segmentation | 0 |
 |     DMZ Architecture | 89 |
 |     VLAN and Micro-Segmentation | 60 |
@@ -449,17 +456,20 @@ Last generated: 2026-06-06.
 |     DNS Sinkholing | 55 |
 | VPNs and Remote Access | 0 |
 |     IPsec and WireGuard | 57 |
-|     Split Tunnelling and Its Risks | 63 |
+|     Split Tunnelling and Its Risks | 64 |
+| Proxies, VPNs, and Tor | 284 |
 | Network Access Control and 802.1X | 49 |
 |     802.1X Operation | 54 |
 | DDoS and Mitigation | 0 |
 |     DDoS Attack Categories | 41 |
-|     DDoS Mitigation | 59 |
+|     DDoS Mitigation | 60 |
+| Authentication, Identity, and Access | 351 |
+|     Biometrics and the Reality of False Positives and Negatives | 391 |
 | Why This Matters | 72 |
 | News in Focus | 64 |
 | Review Questions (MCQ) | 299 |
 | Lab Assignment | 159 |
-| References | 25 |
+| References | 62 |
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
@@ -554,7 +564,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 15: Malware Analysis
 
-*2,504 markdown words (5.0 pages); 339 code words.*
+*2,843 markdown words (5.7 pages); 339 code words.*
 
 | Section | Words |
 |---|---:|
@@ -581,12 +591,13 @@ Last generated: 2026-06-06.
 |     Packers and Obfuscators | 55 |
 |     Fileless Malware | 42 |
 | Malware Analysis Report Structure | 73 |
-| Antivirus and Antimalware Defenses | 386 |
+| Antivirus and Antimalware Defenses | 387 |
+|     The Anti-* Family: Beyond Antivirus | 325 |
 | Why This Matters | 61 |
 | News in Focus | 68 |
 | Review Questions (MCQ) | 335 |
 | Lab Assignment | 176 |
-| References | 33 |
+| References | 46 |
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
@@ -619,7 +630,7 @@ Last generated: 2026-06-06.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*8,164 markdown words (16.3 pages); 598 code words.*
+*8,512 markdown words (17.0 pages); 598 code words.*
 
 | Section | Words |
 |---|---:|
@@ -654,7 +665,8 @@ Last generated: 2026-06-06.
 |     Static and Dynamic Stability | 165 |
 |     Availability and Durability Risk | 205 |
 |     Cloud Compute Audit and Security | 181 |
-|     VPC and Cloud Network Isolation | 263 |
+|     VPC and Cloud Network Isolation | 264 |
+|     Cloud Compute Models: VMs, Containers, Serverless, and Edge | 347 |
 | 17.6 Internet of Things Security | 0 |
 |     The IoT Attack Surface | 47 |
 |     Consequences | 58 |
