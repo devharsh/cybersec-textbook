@@ -36,8 +36,8 @@ Last generated: 2026-06-06.
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
-| Appendix H: Capstone and Group Project Ideas | 968 | 0 | 1.9 |
-| **TOTAL** | **155,567** | **9,175** | **311** |
+| Appendix H: Capstone and Group Project Ideas | 833 | 0 | 1.7 |
+| **TOTAL** | **155,432** | **9,175** | **311** |
 
 ## Detailed Word Count by Section
 
@@ -944,15 +944,14 @@ Last generated: 2026-06-06.
 
 ### Appendix H: Capstone and Group Project Ideas
 
-*968 markdown words (1.9 pages); 0 code words.*
+*833 markdown words (1.7 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
 | H.1 Deliverables and Scholarly Lifecycle | 85 |
-| H.2 Track 1: Advanced Research, Innovation, and Privacy-Preserving Systems | 166 |
-| H.3 Track 2: Autonomous Threats, AI Security, and Offensive Security | 57 |
-| H.4 Track 3: Specialized Technical Tools and Ethical Hacking | 144 |
-| H.5 COSC 435 Computer and Network Security: Eight Group Projects | 172 |
-| H.6 COSC 489 Ethical Hacking: Ten Project Topics | 96 |
-| H.7 GitHub Submission Standards | 70 |
-| H.8 Approved Preprint Servers for DOI Generation | 34 |
+| H.2 Track 1: Advanced Research, Innovation, and Privacy-Preserving Systems | 170 |
+| H.3 Track 2: Autonomous Threats, AI Security, and Offensive Security | 77 |
+| H.4 Track 3: Specialized Technical Tools and Ethical Hacking | 152 |
+| H.5 Track 4: Defensive Security, Detection, and Digital Forensics | 88 |
+| H.6 GitHub Submission Standards | 71 |
+| H.7 Approved Preprint Servers for DOI Generation | 34 |
