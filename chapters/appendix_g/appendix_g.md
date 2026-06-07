@@ -9,36 +9,36 @@ Last generated: 2026-06-07.
 | Chapter | Markdown words | Code words | Approx. pages |
 |---|---:|---:|---:|
 | Introduction | 852 | 0 | 1.7 |
-| Preface | 407 | 0 | 0.8 |
-| Chapter 1: Introduction to Cybersecurity | 9,102 | 361 | 18.2 |
-| Chapter 2: Cryptography | 29,245 | 1,994 | 58.5 |
+| Preface | 433 | 0 | 0.9 |
+| Chapter 1: Introduction to Cybersecurity | 9,686 | 361 | 19.4 |
+| Chapter 2: Cryptography | 29,639 | 2,196 | 59.3 |
 | Chapter 3: Networking and Network Attacks | 14,729 | 374 | 29.5 |
 | Chapter 4: Social Engineering and the Human Element | 7,237 | 203 | 14.5 |
 | Chapter 5: Risk Management | 11,869 | 469 | 23.7 |
 | Chapter 6: Penetration Testing Methodology | 9,649 | 265 | 19.3 |
-| Chapter 7: Reconnaissance and Open-Source Intelligence | 6,608 | 253 | 13.2 |
+| Chapter 7: Reconnaissance and Open-Source Intelligence | 6,881 | 253 | 13.8 |
 | Chapter 8: Scanning and Enumeration | 6,893 | 816 | 13.8 |
-| Chapter 9: Exploitation and Post-Exploitation | 5,269 | 316 | 10.5 |
-| Chapter 10: Web Application Security | 4,616 | 202 | 9.2 |
+| Chapter 9: Exploitation and Post-Exploitation | 5,593 | 316 | 11.2 |
+| Chapter 10: Web Application Security | 4,629 | 202 | 9.3 |
 | Chapter 11: Network Defense and Hardening | 5,127 | 258 | 10.3 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 3,869 | 377 | 7.7 |
-| Chapter 13: Digital Forensics | 3,846 | 300 | 7.7 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 3,911 | 377 | 7.8 |
+| Chapter 13: Digital Forensics | 3,849 | 300 | 7.7 |
 | Chapter 14: Incident Response | 3,589 | 373 | 7.2 |
 | Chapter 15: Malware Analysis | 4,648 | 339 | 9.3 |
 | Chapter 16: Capture the Flag and Competitive Security | 3,594 | 366 | 7.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 10,494 | 598 | 21.0 |
+| Chapter 17: Emerging Threats and Future Challenges | 10,592 | 598 | 21.2 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,668 | 387 | 9.3 |
 | Chapter 19: Security Governance, Policy, and Culture | 4,449 | 482 | 8.9 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,540 | 442 | 7.1 |
-| Appendix A: Security Command Reference | 1,753 | 0 | 3.5 |
+| Appendix A: Security Command Reference | 1,755 | 0 | 3.5 |
 | Appendix B: Glossary | 2,345 | 0 | 4.7 |
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
-| Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
+| Appendix E: Selected Works by the Author | 1,508 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,259 | 0 | 2.5 |
-| **TOTAL** | **164,384** | **9,175** | **329** |
+| **TOTAL** | **166,145** | **9,377** | **332** |
 
 ## Detailed Word Count by Section
 
@@ -57,7 +57,7 @@ Last generated: 2026-06-07.
 
 ### Preface
 
-*407 markdown words (0.8 pages); 0 code words.*
+*433 markdown words (0.9 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -65,12 +65,12 @@ Last generated: 2026-06-07.
 | Who This Book Is For | 49 |
 | How This Book Is Organized | 145 |
 | Ethical Commitment | 65 |
-| Using This Book in a Course | 57 |
+| Using This Book in a Course | 83 |
 | A Note on Currency | 53 |
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*9,102 markdown words (18.2 pages); 361 code words.*
+*9,686 markdown words (19.4 pages); 361 code words.*
 
 | Section | Words |
 |---|---:|
@@ -88,6 +88,7 @@ Last generated: 2026-06-07.
 | 1.10 The Security Mindset, Ethics, and the Law | 369 |
 | 1.11 A Taxonomy of Threats and a Roadmap to This Book | 547 |
 | Chapter Summary | 240 |
+| 1.12 Classic Security Models | 584 |
 | Why This Matters | 133 |
 | News in Focus: The Colonial Pipeline Ransomware Incident (2021) | 489 |
 | News in Focus: Cyber Warfare and the US-Iran Cyber Conflict | 535 |
@@ -97,7 +98,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 2: Cryptography
 
-*29,245 markdown words (58.5 pages); 1,994 code words.*
+*29,639 markdown words (59.3 pages); 2,196 code words.*
 
 | Section | Words |
 |---|---:|
@@ -110,14 +111,14 @@ Last generated: 2026-06-07.
 | 2.5 Symmetric Encryption: Stream and Block Ciphers | 1,080 |
 | 2.6 Block Cipher Modes of Operation | 871 |
 | 2.7 Cryptographic Hash Functions | 1,282 |
-| 2.8 Message Authentication Codes and Authenticated Encryption | 4,210 |
+| 2.8 Message Authentication Codes and Authenticated Encryption | 4,221 |
 | 2.9 Key Derivation and Password Storage | 510 |
 | 2.10 Public-Key Cryptography and RSA | 686 |
 | 2.11 Diffie-Hellman Key Exchange | 1,067 |
 | 2.12 Elliptic-Curve Cryptography | 1,281 |
 | 2.13 Digital Signatures, Certificates, and PKI | 770 |
 | 2.14 Putting It Together: The TLS Handshake | 354 |
-| 2.15 Advanced and Emerging Cryptography | 2,052 |
+| 2.15 Advanced and Emerging Cryptography | 2,423 |
 | 2.16 Key Management | 883 |
 | 2.17 A Taxonomy of Cryptographic Attacks | 348 |
 | 2.18 Applied Cryptographic Systems | 392 |
@@ -128,7 +129,7 @@ Last generated: 2026-06-07.
 | Why This Matters | 161 |
 | News in Focus: Heartbleed (2014) | 202 |
 | Review Questions (MCQ) | 541 |
-| Lab Assignment | 375 |
+| Lab Assignment | 387 |
 | References | 826 |
 
 ### Chapter 3: Networking and Network Attacks
@@ -252,7 +253,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 7: Reconnaissance and Open-Source Intelligence
 
-*6,608 markdown words (13.2 pages); 253 code words.*
+*6,881 markdown words (13.8 pages); 253 code words.*
 
 | Section | Words |
 |---|---:|
@@ -270,7 +271,7 @@ Last generated: 2026-06-07.
 | 7.10 Reconnaissance Tools | 383 |
 | 7.11 Passive Fingerprinting | 265 |
 | 7.12 Defending Against Reconnaissance | 485 |
-| News in Focus: Mass Scraping of Public Profiles (2021) | 388 |
+| News in Focus: Mass Scraping of Public Profiles (2021) | 661 |
 | Why This Matters | 132 |
 | Chapter Summary | 206 |
 | Review Questions (MCQ) | 404 |
@@ -307,7 +308,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*5,269 markdown words (10.5 pages); 316 code words.*
+*5,593 markdown words (11.2 pages); 316 code words.*
 
 | Section | Words |
 |---|---:|
@@ -321,7 +322,7 @@ Last generated: 2026-06-07.
 | 9.6 Programming Survival Skills for Exploitation | 302 |
 | 9.7 Shellcode and Shellcode Strategies | 276 |
 | 9.8 The Exploit-Development Workflow | 636 |
-| 9.9 Passive and Static Analysis: Reverse Engineering for Exploitation | 757 |
+| 9.9 Passive and Static Analysis: Reverse Engineering for Exploitation | 1,081 |
 | 9.10 Metasploit Framework | 100 |
 | 9.11 Privilege Escalation | 228 |
 | 9.12 Lateral Movement | 120 |
@@ -334,7 +335,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 10: Web Application Security
 
-*4,616 markdown words (9.2 pages); 202 code words.*
+*4,629 markdown words (9.3 pages); 202 code words.*
 
 | Section | Words |
 |---|---:|
@@ -343,11 +344,11 @@ Last generated: 2026-06-07.
 | 10.1 How the Web Works: HTTP, Sessions, and the Same-Origin Policy | 234 |
 | 10.2 The OWASP Top 10 | 660 |
 | 10.3 Injection Attacks | 497 |
-| 10.4 SQL Injection in Depth | 434 |
+| 10.4 SQL Injection in Depth | 437 |
 | 10.5 Cross-Site Scripting (XSS) | 378 |
 | 10.6 Broken Access Control, CSRF, SSRF, and Other High-Impact Flaws | 224 |
 | 10.7 Authentication and Session Management | 316 |
-| 10.8 Security Misconfigurations | 107 |
+| 10.8 Security Misconfigurations | 117 |
 | 10.9 The Web-Application Testing Toolkit | 279 |
 | 10.10 Application Security Testing: SAST, DAST, IAST, and DevSecOps | 429 |
 | 10.11 Web Application Firewalls and Their Limits | 119 |
@@ -388,7 +389,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*3,869 markdown words (7.7 pages); 377 code words.*
+*3,911 markdown words (7.8 pages); 377 code words.*
 
 | Section | Words |
 |---|---:|
@@ -398,7 +399,7 @@ Last generated: 2026-06-07.
 | 12.2 Detection Methods | 776 |
 | 12.3 SIEM and Log Aggregation | 449 |
 | 12.4 UEBA and Threat Hunting | 604 |
-| 12.5 The Cyber Kill Chain and MITRE ATT&CK | 419 |
+| 12.5 The Cyber Kill Chain and MITRE ATT&CK | 461 |
 | Why This Matters | 85 |
 | News in Focus: Breaches That Were Detectable but Missed | 69 |
 | Review Questions (MCQ) | 306 |
@@ -407,7 +408,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 13: Digital Forensics
 
-*3,846 markdown words (7.7 pages); 300 code words.*
+*3,849 markdown words (7.7 pages); 300 code words.*
 
 | Section | Words |
 |---|---:|
@@ -421,7 +422,7 @@ Last generated: 2026-06-07.
 | 13.6 Anti-Forensics | 141 |
 | 13.7 Artificial Intelligence in Digital Evidence Triage | 224 |
 | 13.8 IoT Forensics and Explainable AI | 244 |
-| 13.9 AI-Driven Cybercrime Analytics and Attribution | 368 |
+| 13.9 AI-Driven Cybercrime Analytics and Attribution | 371 |
 | 13.10 Legal Admissibility and Reporting | 285 |
 | Why This Matters | 76 |
 | News in Focus: When Digital Forensic Evidence Decides a Case | 70 |
@@ -500,7 +501,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*10,494 markdown words (21.0 pages); 598 code words.*
+*10,592 markdown words (21.2 pages); 598 code words.*
 
 | Section | Words |
 |---|---:|
@@ -509,19 +510,19 @@ Last generated: 2026-06-07.
 | 17.1 Post-Quantum Cryptography | 405 |
 | 17.2 AI-Enabled Attacks and Defenses | 885 |
 | 17.3 Pattern Matching, Machine Learning, and Deep Learning in Security | 1,022 |
-| 17.4 Privacy-Preserving and Collaborative Machine Learning | 2,836 |
+| 17.4 Privacy-Preserving and Collaborative Machine Learning | 2,723 |
 | 17.5 Anomaly Detection Across Domains | 271 |
 | 17.6 Modeling, Simulation, and Control for Security | 275 |
 | 17.7 Probability Distributions in Security | 319 |
 | 17.8 Supply Chain Attacks | 199 |
-| 17.9 Cloud Security | 2,796 |
+| 17.9 Cloud Security | 3,066 |
 | 17.10 Internet of Things Security | 110 |
 | 17.11 Zero-Day Markets and Disclosure | 110 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
 | Review Questions (MCQ) | 342 |
 | Lab Assignment | 192 |
-| References | 336 |
+| References | 277 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
@@ -596,7 +597,7 @@ Last generated: 2026-06-07.
 
 ### Appendix A: Security Command Reference
 
-*1,753 markdown words (3.5 pages); 0 code words.*
+*1,755 markdown words (3.5 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -606,7 +607,7 @@ Last generated: 2026-06-07.
 | Network Analysis | 46 |
 | Cryptography | 68 |
 | Python One-Liners | 38 |
-| Security Tools Reference | 591 |
+| Security Tools Reference | 593 |
 | OWASP Tools and Projects | 342 |
 | Reverse Engineering with Ghidra | 365 |
 
@@ -644,12 +645,12 @@ Last generated: 2026-06-07.
 
 ### Appendix E: Selected Works by the Author
 
-*1,506 markdown words (3.0 pages); 0 code words.*
+*1,508 markdown words (3.0 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
 | Cryptography and Privacy-Preserving Computation | 231 |
-| Privacy-Preserving Machine Learning and Emerging Topics | 146 |
+| Privacy-Preserving Machine Learning and Emerging Topics | 148 |
 | Security Analytics, Monitoring, and Detection | 68 |
 | Networking, Wireless, and Packet Analysis | 121 |
 | Offensive Security, Social Engineering, and Capture the Flag | 135 |

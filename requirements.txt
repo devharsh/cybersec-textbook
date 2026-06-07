@@ -3,6 +3,7 @@ matplotlib>=3.7
 nbformat>=5.7
 pybtex
 numpy>=1.24
+cryptography>=42.0
 sphinxcontrib-mermaid>=0.9
 pyyaml>=6.0
 tzdata>=2024.1
