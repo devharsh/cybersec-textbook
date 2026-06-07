@@ -15,13 +15,13 @@ authors:
     email: devharsh.1592@gmail.com
     affiliation: "Department of Computer Science, Bowie State University"
     orcid: "https://orcid.org/0000-0001-6374-7249"
-doi: "10.5281/zenodo.20575786"
+doi: "10.5281/zenodo.20575785"
 license: CC-BY-4.0
 repository-code: "https://github.com/devharsh/cybersec-textbook"
 url: "https://book.com.puter.tips/intro.html"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.20575786"
+    value: "10.5281/zenodo.20575785"
     description: "Zenodo deposit of the textbook (v1.1.0)"
 keywords:
   - cybersecurity

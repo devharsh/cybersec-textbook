@@ -2,11 +2,11 @@
 
 An open, executable textbook for university-level cybersecurity education.
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20575786-blue)](https://doi.org/10.5281/zenodo.20575786)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20575785-blue)](https://doi.org/10.5281/zenodo.20575785)
 
 **Live at:** https://book.com.puter.tips
 
-**DOI:** https://doi.org/10.5281/zenodo.20575786
+**DOI:** https://doi.org/10.5281/zenodo.20575785
 
 
 ## Contents

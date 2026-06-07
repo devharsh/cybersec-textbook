@@ -1,0 +1,33 @@
+name: Deposit PDF to Zenodo
+
+# Publishes a new version of the existing Zenodo record with the current PDF
+# whenever a GitHub Release is published. Can also be run manually.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version string (e.g., 1.1.1)"
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  zenodo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Upload new version to Zenodo
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+          ZENODO_CONCEPT_RECID: ${{ vars.ZENODO_CONCEPT_RECID }}
+          VERSION: ${{ github.event.release.tag_name || github.event.inputs.version }}
+          PDF: Cybersecurity_Theory_Practice_Ethics.pdf
+        run: python scripts/zenodo_upload.py
