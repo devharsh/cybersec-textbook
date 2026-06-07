@@ -22,7 +22,7 @@ url: "https://book.com.puter.tips/intro.html"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20575785"
-    description: "Zenodo deposit of the textbook (v1.1.0)"
+    description: "Zenodo deposit of the textbook (v1.1.1)"
 keywords:
   - cybersecurity
   - information security
@@ -32,5 +32,5 @@ keywords:
   - incident response
   - security governance
   - open educational resource
-version: "1.1.0"
-date-released: "2026-06-06"
+version: "1.1.1"
+date-released: "2026-06-07"

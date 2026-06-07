@@ -10,26 +10,26 @@ Last generated: 2026-06-07.
 |---|---:|---:|---:|
 | Introduction | 852 | 0 | 1.7 |
 | Preface | 433 | 0 | 0.9 |
-| Chapter 1: Introduction to Cybersecurity | 9,686 | 361 | 19.4 |
-| Chapter 2: Cryptography | 29,639 | 2,196 | 59.3 |
-| Chapter 3: Networking and Network Attacks | 14,729 | 374 | 29.5 |
-| Chapter 4: Social Engineering and the Human Element | 7,237 | 203 | 14.5 |
-| Chapter 5: Risk Management | 11,869 | 469 | 23.7 |
-| Chapter 6: Penetration Testing Methodology | 9,649 | 265 | 19.3 |
-| Chapter 7: Reconnaissance and Open-Source Intelligence | 6,881 | 253 | 13.8 |
-| Chapter 8: Scanning and Enumeration | 6,893 | 816 | 13.8 |
-| Chapter 9: Exploitation and Post-Exploitation | 5,593 | 316 | 11.2 |
-| Chapter 10: Web Application Security | 4,629 | 202 | 9.3 |
-| Chapter 11: Network Defense and Hardening | 5,127 | 258 | 10.3 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 3,911 | 377 | 7.8 |
-| Chapter 13: Digital Forensics | 3,849 | 300 | 7.7 |
-| Chapter 14: Incident Response | 3,589 | 373 | 7.2 |
-| Chapter 15: Malware Analysis | 4,648 | 339 | 9.3 |
-| Chapter 16: Capture the Flag and Competitive Security | 3,594 | 366 | 7.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 10,592 | 598 | 21.2 |
-| Chapter 18: Privacy, Law, and Information Governance | 4,668 | 387 | 9.3 |
-| Chapter 19: Security Governance, Policy, and Culture | 4,449 | 482 | 8.9 |
-| Chapter 20: Industrial Control Systems and OT Security | 3,540 | 442 | 7.1 |
+| Chapter 1: Introduction to Cybersecurity | 9,715 | 361 | 19.4 |
+| Chapter 2: Cryptography | 29,879 | 2,196 | 59.8 |
+| Chapter 3: Networking and Network Attacks | 14,788 | 374 | 29.6 |
+| Chapter 4: Social Engineering and the Human Element | 7,256 | 203 | 14.5 |
+| Chapter 5: Risk Management | 11,887 | 469 | 23.8 |
+| Chapter 6: Penetration Testing Methodology | 9,675 | 265 | 19.4 |
+| Chapter 7: Reconnaissance and Open-Source Intelligence | 6,898 | 253 | 13.8 |
+| Chapter 8: Scanning and Enumeration | 7,036 | 816 | 14.1 |
+| Chapter 9: Exploitation and Post-Exploitation | 5,734 | 316 | 11.5 |
+| Chapter 10: Web Application Security | 4,777 | 202 | 9.6 |
+| Chapter 11: Network Defense and Hardening | 5,282 | 258 | 10.6 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 4,022 | 377 | 8.0 |
+| Chapter 13: Digital Forensics | 3,995 | 300 | 8.0 |
+| Chapter 14: Incident Response | 3,710 | 373 | 7.4 |
+| Chapter 15: Malware Analysis | 4,766 | 339 | 9.5 |
+| Chapter 16: Capture the Flag and Competitive Security | 3,701 | 366 | 7.4 |
+| Chapter 17: Emerging Threats and Future Challenges | 10,722 | 598 | 21.4 |
+| Chapter 18: Privacy, Law, and Information Governance | 4,804 | 387 | 9.6 |
+| Chapter 19: Security Governance, Policy, and Culture | 4,563 | 482 | 9.1 |
+| Chapter 20: Industrial Control Systems and OT Security | 3,651 | 442 | 7.3 |
 | Appendix A: Security Command Reference | 1,755 | 0 | 3.5 |
 | Appendix B: Glossary | 2,345 | 0 | 4.7 |
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
@@ -38,7 +38,7 @@ Last generated: 2026-06-07.
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,259 | 0 | 2.5 |
-| **TOTAL** | **166,145** | **9,377** | **332** |
+| **TOTAL** | **168,234** | **9,377** | **336** |
 
 ## Detailed Word Count by Section
 
@@ -70,7 +70,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*9,686 markdown words (19.4 pages); 361 code words.*
+*9,715 markdown words (19.4 pages); 361 code words.*
 
 | Section | Words |
 |---|---:|
@@ -87,18 +87,18 @@ Last generated: 2026-06-07.
 | 1.9 The Saltzer and Schroeder Design Principles | 893 |
 | 1.10 The Security Mindset, Ethics, and the Law | 369 |
 | 1.11 A Taxonomy of Threats and a Roadmap to This Book | 547 |
-| Chapter Summary | 240 |
 | 1.12 Classic Security Models | 584 |
+| Chapter Summary | 240 |
 | Why This Matters | 133 |
 | News in Focus: The Colonial Pipeline Ransomware Incident (2021) | 489 |
 | News in Focus: Cyber Warfare and the US-Iran Cyber Conflict | 535 |
 | Review Questions (MCQ) | 390 |
 | Lab Assignment | 248 |
-| References | 154 |
+| References | 183 |
 
 ### Chapter 2: Cryptography
 
-*29,639 markdown words (59.3 pages); 2,196 code words.*
+*29,879 markdown words (59.8 pages); 2,196 code words.*
 
 | Section | Words |
 |---|---:|
@@ -126,15 +126,16 @@ Last generated: 2026-06-07.
 | 2.19a Protecting Data in All Three States | 289 |
 | 2.19b Tamper-Evident and Tamper-Proof Mechanisms | 207 |
 | 2.20 Formal Security Analysis and Provable Security | 2,232 |
+| Chapter Summary | 149 |
 | Why This Matters | 161 |
 | News in Focus: Heartbleed (2014) | 202 |
 | Review Questions (MCQ) | 541 |
 | Lab Assignment | 387 |
-| References | 826 |
+| References | 917 |
 
 ### Chapter 3: Networking and Network Attacks
 
-*14,729 markdown words (29.5 pages); 374 code words.*
+*14,788 markdown words (29.6 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
@@ -156,11 +157,11 @@ Last generated: 2026-06-07.
 | News in Focus: The Mirai Botnet and the Dyn Attack (2016) | 186 |
 | Review Questions (MCQ) | 416 |
 | Lab Assignment | 393 |
-| References | 254 |
+| References | 313 |
 
 ### Chapter 4: Social Engineering and the Human Element
 
-*7,237 markdown words (14.5 pages); 203 code words.*
+*7,256 markdown words (14.5 pages); 203 code words.*
 
 | Section | Words |
 |---|---:|
@@ -176,16 +177,16 @@ Last generated: 2026-06-07.
 | 4.8 Authentication Factors | 386 |
 | 4.9 Defending Against Social Engineering | 903 |
 | 4.10 Social Engineering in the Age of Artificial Intelligence | 441 |
-| News in Focus: The 2020 Twitter Account Takeover | 185 |
-| Why This Matters | 169 |
 | Chapter Summary | 219 |
+| Why This Matters | 169 |
+| News in Focus: The 2020 Twitter Account Takeover | 185 |
 | Review Questions (MCQ) | 428 |
 | Lab Assignment | 243 |
-| References | 143 |
+| References | 162 |
 
 ### Chapter 5: Risk Management
 
-*11,869 markdown words (23.7 pages); 469 code words.*
+*11,887 markdown words (23.8 pages); 469 code words.*
 
 | Section | Words |
 |---|---:|
@@ -212,16 +213,16 @@ Last generated: 2026-06-07.
 | 5.19 Emerging Risks: AI, Quantum, and the Expanding Attack Surface | 293 |
 | 5.20 Bringing It Together: An End-to-End Risk Scenario | 431 |
 | 5.21 Common Pitfalls in Risk Management | 274 |
-| News in Focus: Repeat Breaches at Neiman Marcus | 467 |
-| Why This Matters | 164 |
 | Chapter Summary | 242 |
+| Why This Matters | 164 |
+| News in Focus: Repeat Breaches at Neiman Marcus | 467 |
 | Review Questions (MCQ) | 396 |
 | Lab Assignment | 210 |
-| References | 178 |
+| References | 196 |
 
 ### Chapter 6: Penetration Testing Methodology
 
-*9,649 markdown words (19.3 pages); 265 code words.*
+*9,675 markdown words (19.4 pages); 265 code words.*
 
 | Section | Words |
 |---|---:|
@@ -245,15 +246,15 @@ Last generated: 2026-06-07.
 | 6.16 Professional Certifications for Penetration Testers | 206 |
 | 6.17 An End-to-End Engagement, Start to Finish | 354 |
 | 6.18 Limitations, Pitfalls, and Misconceptions | 307 |
-| Why This Matters | 156 |
 | Chapter Summary | 221 |
+| Why This Matters | 156 |
 | Review Questions (MCQ) | 420 |
 | Lab Assignment | 218 |
-| References | 151 |
+| References | 177 |
 
 ### Chapter 7: Reconnaissance and Open-Source Intelligence
 
-*6,881 markdown words (13.8 pages); 253 code words.*
+*6,898 markdown words (13.8 pages); 253 code words.*
 
 | Section | Words |
 |---|---:|
@@ -271,16 +272,16 @@ Last generated: 2026-06-07.
 | 7.10 Reconnaissance Tools | 383 |
 | 7.11 Passive Fingerprinting | 265 |
 | 7.12 Defending Against Reconnaissance | 485 |
-| News in Focus: Mass Scraping of Public Profiles (2021) | 661 |
-| Why This Matters | 132 |
 | Chapter Summary | 206 |
+| Why This Matters | 132 |
+| News in Focus: Mass Scraping of Public Profiles (2021) | 661 |
 | Review Questions (MCQ) | 404 |
 | Lab Assignment | 185 |
-| References | 109 |
+| References | 126 |
 
 ### Chapter 8: Scanning and Enumeration
 
-*6,893 markdown words (13.8 pages); 816 code words.*
+*7,036 markdown words (14.1 pages); 816 code words.*
 
 | Section | Words |
 |---|---:|
@@ -300,15 +301,16 @@ Last generated: 2026-06-07.
 | 8.12 The Nmap Scripting Engine (NSE) | 160 |
 | 8.13 Detection and Evasion | 309 |
 | 8.14 Scanning Safely, Legally, and Within Scope | 755 |
+| Chapter Summary | 119 |
 | Why This Matters | 125 |
 | News in Focus: Internet-Scale Scanning as an Early-Warning Signal | 253 |
 | Review Questions (MCQ) | 394 |
 | Lab Assignment | 315 |
-| References | 163 |
+| References | 187 |
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*5,593 markdown words (11.2 pages); 316 code words.*
+*5,734 markdown words (11.5 pages); 316 code words.*
 
 | Section | Words |
 |---|---:|
@@ -327,15 +329,16 @@ Last generated: 2026-06-07.
 | 9.11 Privilege Escalation | 228 |
 | 9.12 Lateral Movement | 120 |
 | 9.13 Persistence | 100 |
+| Chapter Summary | 121 |
 | Why This Matters | 62 |
 | News in Focus: The Ransomware Post-Exploitation Playbook | 78 |
 | Review Questions (MCQ) | 285 |
 | Lab Assignment | 189 |
-| References | 58 |
+| References | 78 |
 
 ### Chapter 10: Web Application Security
 
-*4,629 markdown words (9.3 pages); 202 code words.*
+*4,777 markdown words (9.6 pages); 202 code words.*
 
 | Section | Words |
 |---|---:|
@@ -352,15 +355,16 @@ Last generated: 2026-06-07.
 | 10.9 The Web-Application Testing Toolkit | 279 |
 | 10.10 Application Security Testing: SAST, DAST, IAST, and DevSecOps | 429 |
 | 10.11 Web Application Firewalls and Their Limits | 119 |
+| Chapter Summary | 130 |
 | Why This Matters | 79 |
 | News in Focus: SQL Injection Breaches That Persist | 78 |
 | Review Questions (MCQ) | 314 |
 | Lab Assignment | 154 |
-| References | 37 |
+| References | 55 |
 
 ### Chapter 11: Network Defense and Hardening
 
-*5,127 markdown words (10.3 pages); 258 code words.*
+*5,282 markdown words (10.6 pages); 258 code words.*
 
 | Section | Words |
 |---|---:|
@@ -381,15 +385,16 @@ Last generated: 2026-06-07.
 | 11.13 Network Forensics in Defense | 154 |
 | 11.14 CVE Case Study: When the Firewall Is the Door (CVE-2024-3400) | 242 |
 | 11.15 Capstone and Group Project Ideas (Network Defense) | 265 |
+| Chapter Summary | 114 |
 | Why This Matters | 72 |
 | News in Focus: Flat Networks and Nation-State Lateral Movement | 64 |
 | Review Questions (MCQ) | 299 |
 | Lab Assignment | 159 |
-| References | 85 |
+| References | 126 |
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*3,911 markdown words (7.8 pages); 377 code words.*
+*4,022 markdown words (8.0 pages); 377 code words.*
 
 | Section | Words |
 |---|---:|
@@ -400,15 +405,16 @@ Last generated: 2026-06-07.
 | 12.3 SIEM and Log Aggregation | 449 |
 | 12.4 UEBA and Threat Hunting | 604 |
 | 12.5 The Cyber Kill Chain and MITRE ATT&CK | 461 |
+| Chapter Summary | 91 |
 | Why This Matters | 85 |
 | News in Focus: Breaches That Were Detectable but Missed | 69 |
 | Review Questions (MCQ) | 306 |
 | Lab Assignment | 183 |
-| References | 59 |
+| References | 79 |
 
 ### Chapter 13: Digital Forensics
 
-*3,849 markdown words (7.7 pages); 300 code words.*
+*3,995 markdown words (8.0 pages); 300 code words.*
 
 | Section | Words |
 |---|---:|
@@ -424,15 +430,16 @@ Last generated: 2026-06-07.
 | 13.8 IoT Forensics and Explainable AI | 244 |
 | 13.9 AI-Driven Cybercrime Analytics and Attribution | 371 |
 | 13.10 Legal Admissibility and Reporting | 285 |
+| Chapter Summary | 96 |
 | Why This Matters | 76 |
 | News in Focus: When Digital Forensic Evidence Decides a Case | 70 |
 | Review Questions (MCQ) | 298 |
 | Lab Assignment | 172 |
-| References | 127 |
+| References | 177 |
 
 ### Chapter 14: Incident Response
 
-*3,589 markdown words (7.2 pages); 373 code words.*
+*3,710 markdown words (7.4 pages); 373 code words.*
 
 | Section | Words |
 |---|---:|
@@ -447,15 +454,16 @@ Last generated: 2026-06-07.
 | 14.7 The CSIRT, Roles, and Communication | 152 |
 | 14.8 Triage, Severity, Containment, and Recovery in Depth | 288 |
 | 14.9 Postmortem, Metrics, and Exercises | 199 |
+| Chapter Summary | 103 |
 | Why This Matters | 75 |
 | News in Focus: Attacker Dwell Time in Major Ransomware Incidents | 88 |
 | Review Questions (MCQ) | 320 |
 | Lab Assignment | 176 |
-| References | 72 |
+| References | 90 |
 
 ### Chapter 15: Malware Analysis
 
-*4,648 markdown words (9.3 pages); 339 code words.*
+*4,766 markdown words (9.5 pages); 339 code words.*
 
 | Section | Words |
 |---|---:|
@@ -470,16 +478,17 @@ Last generated: 2026-06-07.
 | 15.7 Antivirus and Antimalware Defenses | 718 |
 | 15.8 A Field Guide to Malware Types | 262 |
 | 15.9 The Malware Lifecycle and a Ransomware Deep Dive | 619 |
-| News in Focus: WannaCry and the Worm That Used a Leaked Exploit (2017) | 286 |
+| Chapter Summary | 98 |
 | Why This Matters | 61 |
+| News in Focus: WannaCry and the Worm That Used a Leaked Exploit (2017) | 286 |
 | News in Focus: Fileless and Living-off-the-Land Attacks | 68 |
 | Review Questions (MCQ) | 335 |
 | Lab Assignment | 176 |
-| References | 135 |
+| References | 155 |
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*3,594 markdown words (7.2 pages); 366 code words.*
+*3,701 markdown words (7.4 pages); 366 code words.*
 
 | Section | Words |
 |---|---:|
@@ -493,15 +502,16 @@ Last generated: 2026-06-07.
 | 16.6 Formats: Jeopardy, Attack-Defense, and King-of-the-Hill | 263 |
 | 16.7 Why CTFs Build Real Skill | 280 |
 | 16.8 Hosting a CTF and Competition Etiquette | 294 |
+| Chapter Summary | 87 |
 | Why This Matters | 62 |
 | News in Focus: Government-Sponsored CTF Competitions | 58 |
 | Review Questions (MCQ) | 312 |
 | Lab Assignment | 164 |
-| References | 77 |
+| References | 97 |
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*10,592 markdown words (21.2 pages); 598 code words.*
+*10,722 markdown words (21.4 pages); 598 code words.*
 
 | Section | Words |
 |---|---:|
@@ -518,15 +528,16 @@ Last generated: 2026-06-07.
 | 17.9 Cloud Security | 3,066 |
 | 17.10 Internet of Things Security | 110 |
 | 17.11 Zero-Day Markets and Disclosure | 110 |
+| Chapter Summary | 106 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
 | Review Questions (MCQ) | 342 |
 | Lab Assignment | 192 |
-| References | 277 |
+| References | 301 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
-*4,668 markdown words (9.3 pages); 387 code words.*
+*4,804 markdown words (9.6 pages); 387 code words.*
 
 | Section | Words |
 |---|---:|
@@ -542,15 +553,16 @@ Last generated: 2026-06-07.
 | 18.8 Computer-Crime Law: CFAA, DMCA, and the Ethical Hacker | 232 |
 | 18.9 The Global Privacy Landscape and Breach Notification | 219 |
 | 18.10 Cryptography, Lawful Access, and Privacy-Enhancing Technologies | 330 |
+| Chapter Summary | 107 |
 | Why This Matters | 50 |
 | News in Focus: Billion-Euro GDPR Enforcement | 76 |
 | Review Questions (MCQ) | 325 |
 | Lab Assignment | 203 |
-| References | 39 |
+| References | 68 |
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*4,449 markdown words (8.9 pages); 482 code words.*
+*4,563 markdown words (9.1 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
@@ -567,15 +579,16 @@ Last generated: 2026-06-07.
 | 19.9 Governance, Risk, and Compliance (GRC) as an Integrated Discipline | 229 |
 | 19.10 Audits, Assurance, and Security Maturity | 222 |
 | 19.11 Third-Party Risk and the Human Layer of Governance | 347 |
+| Chapter Summary | 96 |
 | Why This Matters | 63 |
 | News in Focus: SEC Enforcement Against CISOs and Boards | 67 |
 | Review Questions (MCQ) | 368 |
 | Lab Assignment | 190 |
-| References | 98 |
+| References | 116 |
 
 ### Chapter 20: Industrial Control Systems and OT Security
 
-*3,540 markdown words (7.1 pages); 442 code words.*
+*3,651 markdown words (7.3 pages); 442 code words.*
 
 | Section | Words |
 |---|---:|
@@ -589,11 +602,12 @@ Last generated: 2026-06-07.
 | 20.6 IEC 62443 and NIST SP 800-82 | 95 |
 | 20.7 OT Defense-in-Depth | 176 |
 | 20.8 OT Incident Response, Safety, and Resilience | 557 |
+| Chapter Summary | 93 |
 | Why This Matters | 81 |
 | News in Focus: Attacks on Water-Treatment Facilities | 88 |
 | Review Questions (MCQ) | 372 |
 | Lab Assignment | 193 |
-| References | 39 |
+| References | 57 |
 
 ### Appendix A: Security Command Reference
 
