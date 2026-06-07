@@ -43,21 +43,24 @@ If you use this textbook in research, teaching, or writing, please cite it. A ma
 `CITATION.cff` file is included in the repository (GitHub displays a "Cite this repository" button that
 generates these formats automatically). Replace the year and access date as appropriate for your edition.
 
+The work also has a permanent Digital Object Identifier (DOI) via Zenodo:
+**10.5281/zenodo.20575786** (https://doi.org/10.5281/zenodo.20575786). Please cite the DOI where possible.
+
 **APA (7th edition):**
 
-> Trivedi, D. (2026). *Cybersecurity: Theory, Practice, and Ethics.* https://book.com.puter.tips
+> Trivedi, D. (2026). *Cybersecurity: Theory, Practice, and Ethics.* Zenodo. https://doi.org/10.5281/zenodo.20575786
 
 **IEEE:**
 
-> D. Trivedi, *Cybersecurity: Theory, Practice, and Ethics.* 2026. [Online]. Available: https://book.com.puter.tips
+> D. Trivedi, *Cybersecurity: Theory, Practice, and Ethics.* Zenodo, 2026. doi: 10.5281/zenodo.20575786.
 
 **MLA (9th edition):**
 
-> Trivedi, Devharsh. *Cybersecurity: Theory, Practice, and Ethics.* 2026, book.com.puter.tips.
+> Trivedi, Devharsh. *Cybersecurity: Theory, Practice, and Ethics.* Zenodo, 2026, doi:10.5281/zenodo.20575786.
 
 **Chicago (author-date):**
 
-> Trivedi, Devharsh. 2026. *Cybersecurity: Theory, Practice, and Ethics.* https://book.com.puter.tips.
+> Trivedi, Devharsh. 2026. *Cybersecurity: Theory, Practice, and Ethics.* Zenodo. https://doi.org/10.5281/zenodo.20575786.
 
 **BibTeX:**
 
@@ -66,8 +69,9 @@ generates these formats automatically). Replace the year and access date as appr
   author    = {Trivedi, Devharsh},
   title     = {Cybersecurity: Theory, Practice, and Ethics},
   year      = {2026},
-  publisher = {Self-published open educational resource},
-  url        = {https://book.com.puter.tips},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.20575786},
+  url       = {https://doi.org/10.5281/zenodo.20575786},
   note      = {Free, open-source textbook, CC BY 4.0}
 }
 ```
