@@ -129,3 +129,24 @@ To obtain a citable DOI for the preprint deliverable, teams may use, for example
 (https://zenodo.org), **Preprints.org** (https://www.preprints.org), **ResearchGate**
 (https://www.researchgate.net), **arXiv** (https://arxiv.org), and **TechRxiv** (https://www.techrxiv.org).
 Always confirm a server's scope and licensing before submitting.
+
+## H.9 Example Completed Student Projects (Spring 2026)
+
+The following capstone projects were completed by students and published with DOIs, and they show the level and
+form of a finished deliverable. Each maps to one of the tracks above.
+
+- Lewis, J., Johnson, R., and Trivedi, D. (2026). *Modern Phishing Simulation and Human Risk Analysis: A
+  Behavioral Cybersecurity Framework.* https://doi.org/10.5281/zenodo.20189747 (Track 2; Chapters 4 and 7)
+- Hayes, N., Komi, J., and Trivedi, D. (2026). *Agentic Artificial Intelligence for Offensive
+  Capture-the-Flag Challenges: Design, Ethical Boundaries, and Security Evaluation.*
+  https://doi.org/10.5281/zenodo.20195275 (Tracks 1 and 2; Chapters 6, 16, and 17)
+- Miller, C., Price, A., and Trivedi, D. (2026). *Network Traffic Analyzer.*
+  https://doi.org/10.13140/RG.2.2.12538.86724 (Track 3; Chapters 3 and 8)
+- Adebayo, D., Jackson, Jr., A., and Trivedi, D. (2026). *Network Protocol Analyzer and Packet Sniffer.*
+  https://doi.org/10.13140/RG.2.2.23981.45284 (Track 3; Chapters 3 and 8)
+- Montgomery, T., Teru, B., Lomax, Jr., D., and Trivedi, D. (2026). *Modern Phishing Simulation and Human
+  Risk Analysis Through Document-Based Tracking.* https://doi.org/10.13140/RG.2.2.36144.93448 (Track 2;
+  Chapter 4)
+- Despeignes, S., Lomax, D., Theodore, J., and Trivedi, D. (2026). *Design and Implementation of a
+  Python-Based Network Protocol Analyzer and Packet Sniffer in a Controlled Kali Linux Environment.*
+  https://doi.org/10.13140/RG.2.2.30574.37449 (Track 3; Chapters 3 and 8)

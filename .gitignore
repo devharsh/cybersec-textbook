@@ -16,3 +16,6 @@ ZENODO_AND_SCHOLAR.md
 
 # PDF-only rendered diagram intermediates
 assets/mermaid/
+
+# Planning-only roadmap (not for publication)
+ROADMAP_v1.2.md

@@ -8,7 +8,7 @@ Last generated: 2026-06-07.
 
 | Chapter | Markdown words | Code words | Approx. pages |
 |---|---:|---:|---:|
-| Introduction | 829 | 0 | 1.7 |
+| Introduction | 852 | 0 | 1.7 |
 | Preface | 407 | 0 | 0.8 |
 | Chapter 1: Introduction to Cybersecurity | 9,102 | 361 | 18.2 |
 | Chapter 2: Cryptography | 29,245 | 1,994 | 58.5 |
@@ -19,7 +19,7 @@ Last generated: 2026-06-07.
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 6,608 | 253 | 13.2 |
 | Chapter 8: Scanning and Enumeration | 6,893 | 816 | 13.8 |
 | Chapter 9: Exploitation and Post-Exploitation | 5,269 | 316 | 10.5 |
-| Chapter 10: Web Application Security | 4,593 | 202 | 9.2 |
+| Chapter 10: Web Application Security | 4,616 | 202 | 9.2 |
 | Chapter 11: Network Defense and Hardening | 5,127 | 258 | 10.3 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 3,869 | 377 | 7.7 |
 | Chapter 13: Digital Forensics | 3,846 | 300 | 7.7 |
@@ -31,27 +31,27 @@ Last generated: 2026-06-07.
 | Chapter 19: Security Governance, Policy, and Culture | 4,449 | 482 | 8.9 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,540 | 442 | 7.1 |
 | Appendix A: Security Command Reference | 1,753 | 0 | 3.5 |
-| Appendix B: Glossary | 2,319 | 0 | 4.6 |
+| Appendix B: Glossary | 2,345 | 0 | 4.7 |
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,506 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
-| Appendix H: Capstone and Group Project Ideas | 1,064 | 0 | 2.1 |
-| **TOTAL** | **164,117** | **9,175** | **328** |
+| Appendix H: Capstone and Group Project Ideas | 1,259 | 0 | 2.5 |
+| **TOTAL** | **164,384** | **9,175** | **329** |
 
 ## Detailed Word Count by Section
 
 
 ### Introduction
 
-*829 markdown words (1.7 pages); 0 code words.*
+*852 markdown words (1.7 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
 | Course Mapping | 157 |
 | What Every Chapter Contains | 64 |
-| How to Cite This Book | 158 |
+| How to Cite This Book | 181 |
 | Accessibility | 310 |
 | License | 27 |
 
@@ -91,8 +91,8 @@ Last generated: 2026-06-07.
 | Why This Matters | 133 |
 | News in Focus: The Colonial Pipeline Ransomware Incident (2021) | 489 |
 | News in Focus: Cyber Warfare and the US-Iran Cyber Conflict | 535 |
-| Review Questions | 390 |
-| Hands-on Labs | 248 |
+| Review Questions (MCQ) | 390 |
+| Lab Assignment | 248 |
 | References | 154 |
 
 ### Chapter 2: Cryptography
@@ -127,8 +127,8 @@ Last generated: 2026-06-07.
 | 2.20 Formal Security Analysis and Provable Security | 2,232 |
 | Why This Matters | 161 |
 | News in Focus: Heartbleed (2014) | 202 |
-| Review Questions | 541 |
-| Hands-on Labs | 375 |
+| Review Questions (MCQ) | 541 |
+| Lab Assignment | 375 |
 | References | 826 |
 
 ### Chapter 3: Networking and Network Attacks
@@ -153,8 +153,8 @@ Last generated: 2026-06-07.
 | Chapter Summary | 215 |
 | Why This Matters | 153 |
 | News in Focus: The Mirai Botnet and the Dyn Attack (2016) | 186 |
-| Review Questions | 416 |
-| Hands-on Labs | 393 |
+| Review Questions (MCQ) | 416 |
+| Lab Assignment | 393 |
 | References | 254 |
 
 ### Chapter 4: Social Engineering and the Human Element
@@ -178,8 +178,8 @@ Last generated: 2026-06-07.
 | News in Focus: The 2020 Twitter Account Takeover | 185 |
 | Why This Matters | 169 |
 | Chapter Summary | 219 |
-| Review Questions | 428 |
-| Hands-on Labs | 243 |
+| Review Questions (MCQ) | 428 |
+| Lab Assignment | 243 |
 | References | 143 |
 
 ### Chapter 5: Risk Management
@@ -214,8 +214,8 @@ Last generated: 2026-06-07.
 | News in Focus: Repeat Breaches at Neiman Marcus | 467 |
 | Why This Matters | 164 |
 | Chapter Summary | 242 |
-| Review Questions | 396 |
-| Hands-on Labs | 210 |
+| Review Questions (MCQ) | 396 |
+| Lab Assignment | 210 |
 | References | 178 |
 
 ### Chapter 6: Penetration Testing Methodology
@@ -229,7 +229,7 @@ Last generated: 2026-06-07.
 | 6.1 Why Methodology Matters | 409 |
 | 6.2 What Penetration Testing Is, and Is Not | 584 |
 | 6.3 Hats and Team Colors | 273 |
-| 6.4 Knowledge Levels: Black, Gray, and Crystal Box | 284 |
+| 6.4 Knowledge Levels: Black, Gray, and White Box | 284 |
 | 6.5 The Phases of a Penetration Test | 561 |
 | 6.6 Types of Penetration Tests | 409 |
 | 6.7 Pre-Engagement: Scope and the Rules of Engagement | 520 |
@@ -246,8 +246,8 @@ Last generated: 2026-06-07.
 | 6.18 Limitations, Pitfalls, and Misconceptions | 307 |
 | Why This Matters | 156 |
 | Chapter Summary | 221 |
-| Review Questions | 420 |
-| Hands-on Labs | 218 |
+| Review Questions (MCQ) | 420 |
+| Lab Assignment | 218 |
 | References | 151 |
 
 ### Chapter 7: Reconnaissance and Open-Source Intelligence
@@ -273,8 +273,8 @@ Last generated: 2026-06-07.
 | News in Focus: Mass Scraping of Public Profiles (2021) | 388 |
 | Why This Matters | 132 |
 | Chapter Summary | 206 |
-| Review Questions | 404 |
-| Hands-on Labs | 185 |
+| Review Questions (MCQ) | 404 |
+| Lab Assignment | 185 |
 | References | 109 |
 
 ### Chapter 8: Scanning and Enumeration
@@ -300,9 +300,9 @@ Last generated: 2026-06-07.
 | 8.13 Detection and Evasion | 309 |
 | 8.14 Scanning Safely, Legally, and Within Scope | 755 |
 | Why This Matters | 125 |
-| News in Focus: Internet-Scale Scanning as an Early-Warning Signal (2025-2026) | 253 |
+| News in Focus: Internet-Scale Scanning as an Early-Warning Signal | 253 |
 | Review Questions (MCQ) | 394 |
-| Hands-on Labs | 315 |
+| Lab Assignment | 315 |
 | References | 163 |
 
 ### Chapter 9: Exploitation and Post-Exploitation
@@ -327,14 +327,14 @@ Last generated: 2026-06-07.
 | 9.12 Lateral Movement | 120 |
 | 9.13 Persistence | 100 |
 | Why This Matters | 62 |
-| News in Focus | 78 |
+| News in Focus: The Ransomware Post-Exploitation Playbook | 78 |
 | Review Questions (MCQ) | 285 |
 | Lab Assignment | 189 |
 | References | 58 |
 
 ### Chapter 10: Web Application Security
 
-*4,593 markdown words (9.2 pages); 202 code words.*
+*4,616 markdown words (9.2 pages); 202 code words.*
 
 | Section | Words |
 |---|---:|
@@ -346,13 +346,13 @@ Last generated: 2026-06-07.
 | 10.4 SQL Injection in Depth | 434 |
 | 10.5 Cross-Site Scripting (XSS) | 378 |
 | 10.6 Broken Access Control, CSRF, SSRF, and Other High-Impact Flaws | 224 |
-| 10.7 Authentication and Session Management | 293 |
+| 10.7 Authentication and Session Management | 316 |
 | 10.8 Security Misconfigurations | 107 |
 | 10.9 The Web-Application Testing Toolkit | 279 |
 | 10.10 Application Security Testing: SAST, DAST, IAST, and DevSecOps | 429 |
 | 10.11 Web Application Firewalls and Their Limits | 119 |
 | Why This Matters | 79 |
-| News in Focus | 78 |
+| News in Focus: SQL Injection Breaches That Persist | 78 |
 | Review Questions (MCQ) | 314 |
 | Lab Assignment | 154 |
 | References | 37 |
@@ -381,7 +381,7 @@ Last generated: 2026-06-07.
 | 11.14 CVE Case Study: When the Firewall Is the Door (CVE-2024-3400) | 242 |
 | 11.15 Capstone and Group Project Ideas (Network Defense) | 265 |
 | Why This Matters | 72 |
-| News in Focus | 64 |
+| News in Focus: Flat Networks and Nation-State Lateral Movement | 64 |
 | Review Questions (MCQ) | 299 |
 | Lab Assignment | 159 |
 | References | 85 |
@@ -400,7 +400,7 @@ Last generated: 2026-06-07.
 | 12.4 UEBA and Threat Hunting | 604 |
 | 12.5 The Cyber Kill Chain and MITRE ATT&CK | 419 |
 | Why This Matters | 85 |
-| News in Focus | 69 |
+| News in Focus: Breaches That Were Detectable but Missed | 69 |
 | Review Questions (MCQ) | 306 |
 | Lab Assignment | 183 |
 | References | 59 |
@@ -424,7 +424,7 @@ Last generated: 2026-06-07.
 | 13.9 AI-Driven Cybercrime Analytics and Attribution | 368 |
 | 13.10 Legal Admissibility and Reporting | 285 |
 | Why This Matters | 76 |
-| News in Focus | 70 |
+| News in Focus: When Digital Forensic Evidence Decides a Case | 70 |
 | Review Questions (MCQ) | 298 |
 | Lab Assignment | 172 |
 | References | 127 |
@@ -447,7 +447,7 @@ Last generated: 2026-06-07.
 | 14.8 Triage, Severity, Containment, and Recovery in Depth | 288 |
 | 14.9 Postmortem, Metrics, and Exercises | 199 |
 | Why This Matters | 75 |
-| News in Focus | 88 |
+| News in Focus: Attacker Dwell Time in Major Ransomware Incidents | 88 |
 | Review Questions (MCQ) | 320 |
 | Lab Assignment | 176 |
 | References | 72 |
@@ -493,7 +493,7 @@ Last generated: 2026-06-07.
 | 16.7 Why CTFs Build Real Skill | 280 |
 | 16.8 Hosting a CTF and Competition Etiquette | 294 |
 | Why This Matters | 62 |
-| News in Focus | 58 |
+| News in Focus: Government-Sponsored CTF Competitions | 58 |
 | Review Questions (MCQ) | 312 |
 | Lab Assignment | 164 |
 | References | 77 |
@@ -518,7 +518,7 @@ Last generated: 2026-06-07.
 | 17.10 Internet of Things Security | 110 |
 | 17.11 Zero-Day Markets and Disclosure | 110 |
 | Why This Matters | 71 |
-| News in Focus | 72 |
+| News in Focus: The Post-Quantum Migration Begins | 72 |
 | Review Questions (MCQ) | 342 |
 | Lab Assignment | 192 |
 | References | 336 |
@@ -542,7 +542,7 @@ Last generated: 2026-06-07.
 | 18.9 The Global Privacy Landscape and Breach Notification | 219 |
 | 18.10 Cryptography, Lawful Access, and Privacy-Enhancing Technologies | 330 |
 | Why This Matters | 50 |
-| News in Focus | 76 |
+| News in Focus: Billion-Euro GDPR Enforcement | 76 |
 | Review Questions (MCQ) | 325 |
 | Lab Assignment | 203 |
 | References | 39 |
@@ -567,7 +567,7 @@ Last generated: 2026-06-07.
 | 19.10 Audits, Assurance, and Security Maturity | 222 |
 | 19.11 Third-Party Risk and the Human Layer of Governance | 347 |
 | Why This Matters | 63 |
-| News in Focus | 67 |
+| News in Focus: SEC Enforcement Against CISOs and Boards | 67 |
 | Review Questions (MCQ) | 368 |
 | Lab Assignment | 190 |
 | References | 98 |
@@ -589,7 +589,7 @@ Last generated: 2026-06-07.
 | 20.7 OT Defense-in-Depth | 176 |
 | 20.8 OT Incident Response, Safety, and Resilience | 557 |
 | Why This Matters | 81 |
-| News in Focus | 88 |
+| News in Focus: Attacks on Water-Treatment Facilities | 88 |
 | Review Questions (MCQ) | 372 |
 | Lab Assignment | 193 |
 | References | 39 |
@@ -612,11 +612,11 @@ Last generated: 2026-06-07.
 
 ### Appendix B: Glossary
 
-*2,319 markdown words (4.6 pages); 0 code words.*
+*2,345 markdown words (4.7 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
-| Cloud and Infrastructure Terminology | 1,464 |
+| Cloud and Infrastructure Terminology | 1,490 |
 
 ### Appendix C: Certification Mapping
 
@@ -669,7 +669,7 @@ Last generated: 2026-06-07.
 
 ### Appendix H: Capstone and Group Project Ideas
 
-*1,064 markdown words (2.1 pages); 0 code words.*
+*1,259 markdown words (2.5 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -681,3 +681,4 @@ Last generated: 2026-06-07.
 | H.6 Track 5: Penetration Testing, Governance, Privacy, and Society | 193 |
 | H.7 GitHub Submission Standards | 71 |
 | H.8 Approved Preprint Servers for DOI Generation | 34 |
+| H.9 Example Completed Student Projects (Spring 2026) | 195 |
