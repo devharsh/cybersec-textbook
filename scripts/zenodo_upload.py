@@ -53,6 +53,9 @@ print("Uploaded:", os.path.basename(PDF))
 
 # 5. update version + publication date
 md = draft["metadata"]
+# drop carried-over computed fields that the legacy API re-validates and rejects
+for k in ("dates", "relations", "_oai"):
+    md.pop(k, None)
 if VERSION:
     md["version"] = VERSION
 md["publication_date"] = datetime.date.today().isoformat()
