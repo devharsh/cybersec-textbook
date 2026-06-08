@@ -29,6 +29,15 @@ The appendices map every chapter to the CISSP, Security+, CEH, CISA, and CGRC ce
 (Appendix C) and to ABET student outcomes and Bloom's taxonomy levels (Appendix D), and they provide a
 command reference, a glossary, and pointers to companion publications and code (Appendices A, B, E, F).
 
+The book is also aligned to the major workforce and framework standards. Its structure and learning
+objectives map to the six functions of the NIST Cybersecurity Framework (CSF) 2.0, Govern, Identify,
+Protect, Detect, Respond, and Recover, which are treated directly in the governance and defense chapters.
+The skills taught correspond to the work roles of the NICE Workforce Framework for Cybersecurity (NIST SP
+800-181r1), so instructors can connect chapters to specific job functions. Finally, the learning
+objectives and review questions are written against Bloom's taxonomy, progressing from remembering and
+understanding toward applying, analyzing, and evaluating, with the full chapter-by-chapter Bloom's mapping
+given in Appendix D.
+
 ## What Every Chapter Contains
 
 Most chapters are structured around a consistent set of pedagogical features: learning objectives,

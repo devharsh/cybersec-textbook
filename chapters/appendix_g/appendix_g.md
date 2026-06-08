@@ -2,34 +2,34 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-06-07.
+Last generated: 2026-06-08.
 
 ## Summary by Chapter
 
 | Chapter | Markdown words | Code words | Approx. pages |
 |---|---:|---:|---:|
-| Introduction | 852 | 0 | 1.7 |
+| Introduction | 957 | 0 | 1.9 |
 | Preface | 433 | 0 | 0.9 |
-| Chapter 1: Introduction to Cybersecurity | 9,715 | 361 | 19.4 |
-| Chapter 2: Cryptography | 29,879 | 2,196 | 59.8 |
-| Chapter 3: Networking and Network Attacks | 14,788 | 374 | 29.6 |
-| Chapter 4: Social Engineering and the Human Element | 7,256 | 203 | 14.5 |
-| Chapter 5: Risk Management | 11,887 | 469 | 23.8 |
-| Chapter 6: Penetration Testing Methodology | 9,675 | 265 | 19.4 |
-| Chapter 7: Reconnaissance and Open-Source Intelligence | 6,898 | 253 | 13.8 |
-| Chapter 8: Scanning and Enumeration | 7,036 | 816 | 14.1 |
-| Chapter 9: Exploitation and Post-Exploitation | 5,734 | 316 | 11.5 |
-| Chapter 10: Web Application Security | 4,777 | 202 | 9.6 |
-| Chapter 11: Network Defense and Hardening | 5,282 | 258 | 10.6 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 4,022 | 377 | 8.0 |
-| Chapter 13: Digital Forensics | 3,995 | 300 | 8.0 |
-| Chapter 14: Incident Response | 3,710 | 373 | 7.4 |
+| Chapter 1: Introduction to Cybersecurity | 10,354 | 361 | 20.7 |
+| Chapter 2: Cryptography | 30,227 | 2,387 | 60.5 |
+| Chapter 3: Networking and Network Attacks | 15,011 | 374 | 30.0 |
+| Chapter 4: Social Engineering and the Human Element | 7,495 | 203 | 15.0 |
+| Chapter 5: Risk Management | 12,131 | 469 | 24.3 |
+| Chapter 6: Penetration Testing Methodology | 9,760 | 265 | 19.5 |
+| Chapter 7: Reconnaissance and Open-Source Intelligence | 7,223 | 381 | 14.4 |
+| Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
+| Chapter 9: Exploitation and Post-Exploitation | 6,160 | 316 | 12.3 |
+| Chapter 10: Web Application Security | 5,109 | 202 | 10.2 |
+| Chapter 11: Network Defense and Hardening | 5,492 | 258 | 11.0 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 4,242 | 377 | 8.5 |
+| Chapter 13: Digital Forensics | 4,218 | 300 | 8.4 |
+| Chapter 14: Incident Response | 3,939 | 373 | 7.9 |
 | Chapter 15: Malware Analysis | 4,766 | 339 | 9.5 |
-| Chapter 16: Capture the Flag and Competitive Security | 3,701 | 366 | 7.4 |
-| Chapter 17: Emerging Threats and Future Challenges | 10,722 | 598 | 21.4 |
-| Chapter 18: Privacy, Law, and Information Governance | 4,804 | 387 | 9.6 |
-| Chapter 19: Security Governance, Policy, and Culture | 4,563 | 482 | 9.1 |
-| Chapter 20: Industrial Control Systems and OT Security | 3,651 | 442 | 7.3 |
+| Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
+| Chapter 17: Emerging Threats and Future Challenges | 11,219 | 851 | 22.4 |
+| Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
+| Chapter 19: Security Governance, Policy, and Culture | 5,582 | 482 | 11.2 |
+| Chapter 20: Industrial Control Systems and OT Security | 3,724 | 442 | 7.4 |
 | Appendix A: Security Command Reference | 1,755 | 0 | 3.5 |
 | Appendix B: Glossary | 2,345 | 0 | 4.7 |
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
@@ -38,18 +38,18 @@ Last generated: 2026-06-07.
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,259 | 0 | 2.5 |
-| **TOTAL** | **168,234** | **9,377** | **336** |
+| **TOTAL** | **174,177** | **9,949** | **348** |
 
 ## Detailed Word Count by Section
 
 
 ### Introduction
 
-*852 markdown words (1.7 pages); 0 code words.*
+*957 markdown words (1.9 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
-| Course Mapping | 157 |
+| Course Mapping | 262 |
 | What Every Chapter Contains | 64 |
 | How to Cite This Book | 181 |
 | Accessibility | 310 |
@@ -70,7 +70,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*9,715 markdown words (19.4 pages); 361 code words.*
+*10,354 markdown words (20.7 pages); 361 code words.*
 
 | Section | Words |
 |---|---:|
@@ -87,7 +87,8 @@ Last generated: 2026-06-07.
 | 1.9 The Saltzer and Schroeder Design Principles | 893 |
 | 1.10 The Security Mindset, Ethics, and the Law | 369 |
 | 1.11 A Taxonomy of Threats and a Roadmap to This Book | 547 |
-| 1.12 Classic Security Models | 584 |
+| 1.12 Classic Security Models | 1,009 |
+| 1.13 Security versus Resilience | 214 |
 | Chapter Summary | 240 |
 | Why This Matters | 133 |
 | News in Focus: The Colonial Pipeline Ransomware Incident (2021) | 489 |
@@ -98,7 +99,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 2: Cryptography
 
-*29,879 markdown words (59.8 pages); 2,196 code words.*
+*30,227 markdown words (60.5 pages); 2,387 code words.*
 
 | Section | Words |
 |---|---:|
@@ -118,7 +119,7 @@ Last generated: 2026-06-07.
 | 2.12 Elliptic-Curve Cryptography | 1,281 |
 | 2.13 Digital Signatures, Certificates, and PKI | 770 |
 | 2.14 Putting It Together: The TLS Handshake | 354 |
-| 2.15 Advanced and Emerging Cryptography | 2,423 |
+| 2.15 Advanced and Emerging Cryptography | 2,424 |
 | 2.16 Key Management | 883 |
 | 2.17 A Taxonomy of Cryptographic Attacks | 348 |
 | 2.18 Applied Cryptographic Systems | 392 |
@@ -126,6 +127,7 @@ Last generated: 2026-06-07.
 | 2.19a Protecting Data in All Three States | 289 |
 | 2.19b Tamper-Evident and Tamper-Proof Mechanisms | 207 |
 | 2.20 Formal Security Analysis and Provable Security | 2,232 |
+| 2.21 Post-Quantum Standards and the Migration Timeline | 347 |
 | Chapter Summary | 149 |
 | Why This Matters | 161 |
 | News in Focus: Heartbleed (2014) | 202 |
@@ -135,7 +137,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 3: Networking and Network Attacks
 
-*14,788 markdown words (29.6 pages); 374 code words.*
+*15,011 markdown words (30.0 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
@@ -152,6 +154,7 @@ Last generated: 2026-06-07.
 | 3.9 Spoofing, Man-in-the-Middle, and Session Hijacking | 1,443 |
 | 3.10 Denial-of-Service and Distributed Denial-of-Service Attacks | 1,590 |
 | 3.11 Securing the Network: A Preview | 713 |
+| 3.12 QUIC, HTTP/3, and Encrypted Client Hello | 223 |
 | Chapter Summary | 215 |
 | Why This Matters | 153 |
 | News in Focus: The Mirai Botnet and the Dyn Attack (2016) | 186 |
@@ -161,7 +164,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 4: Social Engineering and the Human Element
 
-*7,256 markdown words (14.5 pages); 203 code words.*
+*7,495 markdown words (15.0 pages); 203 code words.*
 
 | Section | Words |
 |---|---:|
@@ -177,6 +180,7 @@ Last generated: 2026-06-07.
 | 4.8 Authentication Factors | 386 |
 | 4.9 Defending Against Social Engineering | 903 |
 | 4.10 Social Engineering in the Age of Artificial Intelligence | 441 |
+| 4.11 Deepfakes, Voice Cloning, and Synthetic Identities | 239 |
 | Chapter Summary | 219 |
 | Why This Matters | 169 |
 | News in Focus: The 2020 Twitter Account Takeover | 185 |
@@ -186,7 +190,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 5: Risk Management
 
-*11,887 markdown words (23.8 pages); 469 code words.*
+*12,131 markdown words (24.3 pages); 469 code words.*
 
 | Section | Words |
 |---|---:|
@@ -213,6 +217,7 @@ Last generated: 2026-06-07.
 | 5.19 Emerging Risks: AI, Quantum, and the Expanding Attack Surface | 293 |
 | 5.20 Bringing It Together: An End-to-End Risk Scenario | 431 |
 | 5.21 Common Pitfalls in Risk Management | 274 |
+| 5.22 Comparing FAIR, NIST RMF, and ISO/IEC 27005 | 244 |
 | Chapter Summary | 242 |
 | Why This Matters | 164 |
 | News in Focus: Repeat Breaches at Neiman Marcus | 467 |
@@ -222,7 +227,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 6: Penetration Testing Methodology
 
-*9,675 markdown words (19.4 pages); 265 code words.*
+*9,760 markdown words (19.5 pages); 265 code words.*
 
 | Section | Words |
 |---|---:|
@@ -232,7 +237,7 @@ Last generated: 2026-06-07.
 | 6.2 What Penetration Testing Is, and Is Not | 584 |
 | 6.3 Hats and Team Colors | 273 |
 | 6.4 Knowledge Levels: Black, Gray, and White Box | 284 |
-| 6.5 The Phases of a Penetration Test | 561 |
+| 6.5 The Phases of a Penetration Test | 643 |
 | 6.6 Types of Penetration Tests | 409 |
 | 6.7 Pre-Engagement: Scope and the Rules of Engagement | 520 |
 | 6.8 The Legal Framework | 500 |
@@ -246,7 +251,7 @@ Last generated: 2026-06-07.
 | 6.16 Professional Certifications for Penetration Testers | 206 |
 | 6.17 An End-to-End Engagement, Start to Finish | 354 |
 | 6.18 Limitations, Pitfalls, and Misconceptions | 307 |
-| Chapter Summary | 221 |
+| Chapter Summary | 224 |
 | Why This Matters | 156 |
 | Review Questions (MCQ) | 420 |
 | Lab Assignment | 218 |
@@ -254,7 +259,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 7: Reconnaissance and Open-Source Intelligence
 
-*6,898 markdown words (13.8 pages); 253 code words.*
+*7,223 markdown words (14.4 pages); 381 code words.*
 
 | Section | Words |
 |---|---:|
@@ -272,16 +277,17 @@ Last generated: 2026-06-07.
 | 7.10 Reconnaissance Tools | 383 |
 | 7.11 Passive Fingerprinting | 265 |
 | 7.12 Defending Against Reconnaissance | 485 |
+| 7.13 AI-Assisted Reconnaissance and Modern WHOIS | 315 |
 | Chapter Summary | 206 |
 | Why This Matters | 132 |
-| News in Focus: Mass Scraping of Public Profiles (2021) | 661 |
+| News in Focus: Mass Scraping of Public Profiles (2021) | 671 |
 | Review Questions (MCQ) | 404 |
 | Lab Assignment | 185 |
 | References | 126 |
 
 ### Chapter 8: Scanning and Enumeration
 
-*7,036 markdown words (14.1 pages); 816 code words.*
+*7,239 markdown words (14.5 pages); 816 code words.*
 
 | Section | Words |
 |---|---:|
@@ -301,6 +307,7 @@ Last generated: 2026-06-07.
 | 8.12 The Nmap Scripting Engine (NSE) | 160 |
 | 8.13 Detection and Evasion | 309 |
 | 8.14 Scanning Safely, Legally, and Within Scope | 755 |
+| 8.15 Attack Surface Management and Continuous Exposure Management | 203 |
 | Chapter Summary | 119 |
 | Why This Matters | 125 |
 | News in Focus: Internet-Scale Scanning as an Early-Warning Signal | 253 |
@@ -310,7 +317,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*5,734 markdown words (11.5 pages); 316 code words.*
+*6,160 markdown words (12.3 pages); 316 code words.*
 
 | Section | Words |
 |---|---:|
@@ -324,11 +331,12 @@ Last generated: 2026-06-07.
 | 9.6 Programming Survival Skills for Exploitation | 302 |
 | 9.7 Shellcode and Shellcode Strategies | 276 |
 | 9.8 The Exploit-Development Workflow | 636 |
-| 9.9 Passive and Static Analysis: Reverse Engineering for Exploitation | 1,081 |
+| 9.9 Passive and Static Analysis: Reverse Engineering for Exploitation | 1,204 |
 | 9.10 Metasploit Framework | 100 |
 | 9.11 Privilege Escalation | 228 |
 | 9.12 Lateral Movement | 120 |
 | 9.13 Persistence | 100 |
+| 9.14 Privilege Escalation Paths: Windows, Linux, and Active Directory | 303 |
 | Chapter Summary | 121 |
 | Why This Matters | 62 |
 | News in Focus: The Ransomware Post-Exploitation Playbook | 78 |
@@ -338,7 +346,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 10: Web Application Security
 
-*4,777 markdown words (9.6 pages); 202 code words.*
+*5,109 markdown words (10.2 pages); 202 code words.*
 
 | Section | Words |
 |---|---:|
@@ -355,6 +363,7 @@ Last generated: 2026-06-07.
 | 10.9 The Web-Application Testing Toolkit | 279 |
 | 10.10 Application Security Testing: SAST, DAST, IAST, and DevSecOps | 429 |
 | 10.11 Web Application Firewalls and Their Limits | 119 |
+| 10.12 The OWASP API Security Top 10 | 332 |
 | Chapter Summary | 130 |
 | Why This Matters | 79 |
 | News in Focus: SQL Injection Breaches That Persist | 78 |
@@ -364,7 +373,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 11: Network Defense and Hardening
 
-*5,282 markdown words (10.6 pages); 258 code words.*
+*5,492 markdown words (11.0 pages); 258 code words.*
 
 | Section | Words |
 |---|---:|
@@ -373,7 +382,7 @@ Last generated: 2026-06-07.
 | 11.1 Firewalls | 300 |
 | 11.2 Firewall Types and Topologies | 944 |
 | 11.3 Network Segmentation | 154 |
-| 11.4 Zero-Trust Architecture | 154 |
+| 11.4 Zero-Trust Architecture | 364 |
 | 11.5 DNS Security | 162 |
 | 11.6 VPNs and Remote Access | 129 |
 | 11.7 Proxies, VPNs, and Tor | 284 |
@@ -394,7 +403,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*4,022 markdown words (8.0 pages); 377 code words.*
+*4,242 markdown words (8.5 pages); 377 code words.*
 
 | Section | Words |
 |---|---:|
@@ -405,6 +414,7 @@ Last generated: 2026-06-07.
 | 12.3 SIEM and Log Aggregation | 449 |
 | 12.4 UEBA and Threat Hunting | 604 |
 | 12.5 The Cyber Kill Chain and MITRE ATT&CK | 461 |
+| 12.6 Modern SOC Operations: EDR, XDR, SOAR, and Detection Engineering | 220 |
 | Chapter Summary | 91 |
 | Why This Matters | 85 |
 | News in Focus: Breaches That Were Detectable but Missed | 69 |
@@ -414,7 +424,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 13: Digital Forensics
 
-*3,995 markdown words (8.0 pages); 300 code words.*
+*4,218 markdown words (8.4 pages); 300 code words.*
 
 | Section | Words |
 |---|---:|
@@ -430,6 +440,7 @@ Last generated: 2026-06-07.
 | 13.8 IoT Forensics and Explainable AI | 244 |
 | 13.9 AI-Driven Cybercrime Analytics and Attribution | 371 |
 | 13.10 Legal Admissibility and Reporting | 285 |
+| 13.11 Cloud Forensics | 223 |
 | Chapter Summary | 96 |
 | Why This Matters | 76 |
 | News in Focus: When Digital Forensic Evidence Decides a Case | 70 |
@@ -439,7 +450,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 14: Incident Response
 
-*3,710 markdown words (7.4 pages); 373 code words.*
+*3,939 markdown words (7.9 pages); 373 code words.*
 
 | Section | Words |
 |---|---:|
@@ -454,6 +465,7 @@ Last generated: 2026-06-07.
 | 14.7 The CSIRT, Roles, and Communication | 152 |
 | 14.8 Triage, Severity, Containment, and Recovery in Depth | 288 |
 | 14.9 Postmortem, Metrics, and Exercises | 199 |
+| 14.10 Playbooks, Ransomware Negotiation, and Executive Communication | 229 |
 | Chapter Summary | 103 |
 | Why This Matters | 75 |
 | News in Focus: Attacker Dwell Time in Major Ransomware Incidents | 88 |
@@ -488,7 +500,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*3,701 markdown words (7.4 pages); 366 code words.*
+*3,931 markdown words (7.9 pages); 366 code words.*
 
 | Section | Words |
 |---|---:|
@@ -502,6 +514,7 @@ Last generated: 2026-06-07.
 | 16.6 Formats: Jeopardy, Attack-Defense, and King-of-the-Hill | 263 |
 | 16.7 Why CTFs Build Real Skill | 280 |
 | 16.8 Hosting a CTF and Competition Etiquette | 294 |
+| 16.9 Notable Competitions: picoCTF, CyberPatriot, and CCDC | 230 |
 | Chapter Summary | 87 |
 | Why This Matters | 62 |
 | News in Focus: Government-Sponsored CTF Competitions | 58 |
@@ -511,7 +524,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*10,722 markdown words (21.4 pages); 598 code words.*
+*11,219 markdown words (22.4 pages); 851 code words.*
 
 | Section | Words |
 |---|---:|
@@ -528,6 +541,7 @@ Last generated: 2026-06-07.
 | 17.9 Cloud Security | 3,066 |
 | 17.10 Internet of Things Security | 110 |
 | 17.11 Zero-Day Markets and Disclosure | 110 |
+| 17.12 Securing AI Systems: Agentic AI, Red Teaming, and the Model Supply Chain | 497 |
 | Chapter Summary | 106 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
@@ -537,7 +551,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
-*4,804 markdown words (9.6 pages); 387 code words.*
+*4,877 markdown words (9.8 pages); 387 code words.*
 
 | Section | Words |
 |---|---:|
@@ -562,7 +576,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*4,563 markdown words (9.1 pages); 482 code words.*
+*5,582 markdown words (11.2 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
@@ -573,7 +587,7 @@ Last generated: 2026-06-07.
 | 19.3 The Policy Hierarchy | 240 |
 | 19.4 Board-Level Security Reporting | 206 |
 | 19.5 Security Culture | 284 |
-| 19.6 Common Compliance Frameworks | 174 |
+| 19.6 Common Compliance Frameworks | 1,120 |
 | 19.7 NIST Cybersecurity Framework 2.0 and the Govern Function | 268 |
 | 19.8 Cybersecurity Governance at the Municipal Level | 1,147 |
 | 19.9 Governance, Risk, and Compliance (GRC) as an Integrated Discipline | 229 |
@@ -588,7 +602,7 @@ Last generated: 2026-06-07.
 
 ### Chapter 20: Industrial Control Systems and OT Security
 
-*3,651 markdown words (7.3 pages); 442 code words.*
+*3,724 markdown words (7.4 pages); 442 code words.*
 
 | Section | Words |
 |---|---:|
