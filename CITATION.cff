@@ -1,36 +1,23 @@
 cff-version: 1.2.0
-message: "If you use this textbook, please cite it as below."
-type: dataset
+message: "If you use this textbook, please cite it using the metadata from this file."
+type: software
 title: "Cybersecurity: Theory, Practice, and Ethics"
-abstract: >-
-  A free, open-source cybersecurity textbook for university courses and professional
-  certification preparation, covering foundations, cryptography, networking, offensive
-  and defensive security, digital forensics, incident response, governance, privacy
-  and law, and emerging topics. Layered for learners from high school through
-  postdoctoral level and mapped to the CISSP, CompTIA Security+, CEH, CISA, and CGRC
-  certification domains.
+abstract: "An open, executable university-level cybersecurity textbook (20 chapters with learning objectives, worked code examples, review questions, and lab assignments)."
 authors:
-  - family-names: Trivedi
-    given-names: Devharsh
-    email: devharsh.1592@gmail.com
-    affiliation: "Department of Computer Science, Bowie State University"
-    orcid: "https://orcid.org/0000-0001-6374-7249"
+  - given-names: "Devharsh"
+    family-names: "Trivedi"
+    name-suffix: "Ph.D., CISSP"
+    email: "devharsh.1592@gmail.com"
+    city: "Washington"
+    region: "D.C."
+    post-code: "20003"
+    country: "US"
 doi: "10.5281/zenodo.20575785"
-license: CC-BY-4.0
 repository-code: "https://github.com/devharsh/cybersec-textbook"
-url: "https://book.com.puter.tips/intro.html"
-identifiers:
-  - type: doi
-    value: "10.5281/zenodo.20575785"
-    description: "Zenodo deposit of the textbook (v1.1.1)"
+url: "https://book.com.puter.tips"
 keywords:
-  - cybersecurity
-  - information security
-  - cryptography
-  - penetration testing
-  - digital forensics
-  - incident response
-  - security governance
-  - open educational resource
-version: "1.1.1"
-date-released: "2026-06-07"
+  - "cybersecurity"
+  - "textbook"
+  - "education"
+  - "ethical-hacking"
+  - "digital-forensics"
