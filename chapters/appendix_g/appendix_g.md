@@ -18,7 +18,7 @@ Last generated: 2026-06-09.
 | Chapter 6: Penetration Testing Methodology | 9,760 | 265 | 19.5 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,223 | 381 | 14.4 |
 | Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
-| Chapter 9: Exploitation and Post-Exploitation | 6,160 | 316 | 12.3 |
+| Chapter 9: Exploitation and Post-Exploitation | 6,223 | 316 | 12.4 |
 | Chapter 10: Web Application Security | 5,436 | 202 | 10.9 |
 | Chapter 11: Network Defense and Hardening | 5,492 | 258 | 11.0 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 4,242 | 377 | 8.5 |
@@ -26,7 +26,7 @@ Last generated: 2026-06-09.
 | Chapter 14: Incident Response | 3,939 | 373 | 7.9 |
 | Chapter 15: Malware Analysis | 4,766 | 339 | 9.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
-| Chapter 17: Emerging Threats and Future Challenges | 11,219 | 851 | 22.4 |
+| Chapter 17: Emerging Threats and Future Challenges | 11,376 | 851 | 22.8 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
 | Chapter 19: Security Governance, Policy, and Culture | 5,582 | 482 | 11.2 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,724 | 442 | 7.4 |
@@ -38,7 +38,7 @@ Last generated: 2026-06-09.
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
-| **TOTAL** | **175,712** | **9,949** | **351** |
+| **TOTAL** | **175,932** | **9,949** | **352** |
 
 ## Detailed Word Count by Section
 
@@ -317,7 +317,7 @@ Last generated: 2026-06-09.
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*6,160 markdown words (12.3 pages); 316 code words.*
+*6,223 markdown words (12.4 pages); 316 code words.*
 
 | Section | Words |
 |---|---:|
@@ -330,7 +330,7 @@ Last generated: 2026-06-09.
 | 9.5 From Stack Smashing to Return-Oriented Programming | 513 |
 | 9.6 Programming Survival Skills for Exploitation | 302 |
 | 9.7 Shellcode and Shellcode Strategies | 276 |
-| 9.8 The Exploit-Development Workflow | 636 |
+| 9.8 The Exploit-Development Workflow | 699 |
 | 9.9 Passive and Static Analysis: Reverse Engineering for Exploitation | 1,204 |
 | 9.10 Metasploit Framework | 100 |
 | 9.11 Privilege Escalation | 228 |
@@ -524,16 +524,16 @@ Last generated: 2026-06-09.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*11,219 markdown words (22.4 pages); 851 code words.*
+*11,376 markdown words (22.8 pages); 851 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 88 |
 | Key Terms | 149 |
 | 17.1 Post-Quantum Cryptography | 405 |
-| 17.2 AI-Enabled Attacks and Defenses | 885 |
+| 17.2 AI-Enabled Attacks and Defenses | 951 |
 | 17.3 Pattern Matching, Machine Learning, and Deep Learning in Security | 1,022 |
-| 17.4 Privacy-Preserving and Collaborative Machine Learning | 2,723 |
+| 17.4 Privacy-Preserving and Collaborative Machine Learning | 2,814 |
 | 17.5 Anomaly Detection Across Domains | 271 |
 | 17.6 Modeling, Simulation, and Control for Security | 275 |
 | 17.7 Probability Distributions in Security | 319 |
