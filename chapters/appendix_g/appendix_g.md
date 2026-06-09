@@ -20,7 +20,7 @@ Last generated: 2026-06-09.
 | Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
 | Chapter 9: Exploitation and Post-Exploitation | 6,223 | 316 | 12.4 |
 | Chapter 10: Web Application Security | 5,436 | 202 | 10.9 |
-| Chapter 11: Network Defense and Hardening | 5,492 | 258 | 11.0 |
+| Chapter 11: Network Defense and Hardening | 5,745 | 258 | 11.5 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 4,242 | 377 | 8.5 |
 | Chapter 13: Digital Forensics | 4,218 | 300 | 8.4 |
 | Chapter 14: Incident Response | 3,939 | 373 | 7.9 |
@@ -38,7 +38,7 @@ Last generated: 2026-06-09.
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
-| **TOTAL** | **175,932** | **9,949** | **352** |
+| **TOTAL** | **176,185** | **9,949** | **352** |
 
 ## Detailed Word Count by Section
 
@@ -373,7 +373,7 @@ Last generated: 2026-06-09.
 
 ### Chapter 11: Network Defense and Hardening
 
-*5,492 markdown words (11.0 pages); 258 code words.*
+*5,745 markdown words (11.5 pages); 258 code words.*
 
 | Section | Words |
 |---|---:|
@@ -383,7 +383,7 @@ Last generated: 2026-06-09.
 | 11.2 Firewall Types and Topologies | 944 |
 | 11.3 Network Segmentation | 154 |
 | 11.4 Zero-Trust Architecture | 364 |
-| 11.5 DNS Security | 162 |
+| 11.5 DNS Security | 415 |
 | 11.6 VPNs and Remote Access | 129 |
 | 11.7 Proxies, VPNs, and Tor | 284 |
 | 11.8 Network Access Control and 802.1X | 105 |
