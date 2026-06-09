@@ -10,8 +10,8 @@ Last generated: 2026-06-09.
 |---|---:|---:|---:|
 | Introduction | 957 | 0 | 1.9 |
 | Preface | 433 | 0 | 0.9 |
-| Chapter 1: Introduction to Cybersecurity | 10,354 | 361 | 20.7 |
-| Chapter 2: Cryptography | 30,227 | 2,387 | 60.5 |
+| Chapter 1: Introduction to Cybersecurity | 10,584 | 361 | 21.2 |
+| Chapter 2: Cryptography | 30,534 | 2,387 | 61.1 |
 | Chapter 3: Networking and Network Attacks | 15,011 | 374 | 30.0 |
 | Chapter 4: Social Engineering and the Human Element | 7,495 | 203 | 15.0 |
 | Chapter 5: Risk Management | 12,131 | 469 | 24.3 |
@@ -19,7 +19,7 @@ Last generated: 2026-06-09.
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,223 | 381 | 14.4 |
 | Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
 | Chapter 9: Exploitation and Post-Exploitation | 6,160 | 316 | 12.3 |
-| Chapter 10: Web Application Security | 5,109 | 202 | 10.2 |
+| Chapter 10: Web Application Security | 5,436 | 202 | 10.9 |
 | Chapter 11: Network Defense and Hardening | 5,492 | 258 | 11.0 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 4,242 | 377 | 8.5 |
 | Chapter 13: Digital Forensics | 4,218 | 300 | 8.4 |
@@ -38,7 +38,7 @@ Last generated: 2026-06-09.
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
-| **TOTAL** | **174,848** | **9,949** | **350** |
+| **TOTAL** | **175,712** | **9,949** | **351** |
 
 ## Detailed Word Count by Section
 
@@ -70,7 +70,7 @@ Last generated: 2026-06-09.
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*10,354 markdown words (20.7 pages); 361 code words.*
+*10,584 markdown words (21.2 pages); 361 code words.*
 
 | Section | Words |
 |---|---:|
@@ -87,7 +87,7 @@ Last generated: 2026-06-09.
 | 1.9 The Saltzer and Schroeder Design Principles | 893 |
 | 1.10 The Security Mindset, Ethics, and the Law | 369 |
 | 1.11 A Taxonomy of Threats and a Roadmap to This Book | 547 |
-| 1.12 Classic Security Models | 1,009 |
+| 1.12 Classic Security Models | 1,239 |
 | 1.13 Security versus Resilience | 214 |
 | Chapter Summary | 240 |
 | Why This Matters | 133 |
@@ -99,7 +99,7 @@ Last generated: 2026-06-09.
 
 ### Chapter 2: Cryptography
 
-*30,227 markdown words (60.5 pages); 2,387 code words.*
+*30,534 markdown words (61.1 pages); 2,387 code words.*
 
 | Section | Words |
 |---|---:|
@@ -119,7 +119,7 @@ Last generated: 2026-06-09.
 | 2.12 Elliptic-Curve Cryptography | 1,281 |
 | 2.13 Digital Signatures, Certificates, and PKI | 770 |
 | 2.14 Putting It Together: The TLS Handshake | 354 |
-| 2.15 Advanced and Emerging Cryptography | 2,424 |
+| 2.15 Advanced and Emerging Cryptography | 2,731 |
 | 2.16 Key Management | 883 |
 | 2.17 A Taxonomy of Cryptographic Attacks | 348 |
 | 2.18 Applied Cryptographic Systems | 392 |
@@ -346,7 +346,7 @@ Last generated: 2026-06-09.
 
 ### Chapter 10: Web Application Security
 
-*5,109 markdown words (10.2 pages); 202 code words.*
+*5,436 markdown words (10.9 pages); 202 code words.*
 
 | Section | Words |
 |---|---:|
@@ -355,7 +355,7 @@ Last generated: 2026-06-09.
 | 10.1 How the Web Works: HTTP, Sessions, and the Same-Origin Policy | 234 |
 | 10.2 The OWASP Top 10 | 660 |
 | 10.3 Injection Attacks | 497 |
-| 10.4 SQL Injection in Depth | 437 |
+| 10.4 SQL Injection in Depth | 764 |
 | 10.5 Cross-Site Scripting (XSS) | 378 |
 | 10.6 Broken Access Control, CSRF, SSRF, and Other High-Impact Flaws | 224 |
 | 10.7 Authentication and Session Management | 316 |
