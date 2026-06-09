@@ -130,7 +130,67 @@ To obtain a citable DOI for the preprint deliverable, teams may use, for example
 (https://www.researchgate.net), **arXiv** (https://arxiv.org), and **TechRxiv** (https://www.techrxiv.org).
 Always confirm a server's scope and licensing before submitting.
 
-## H.9 Example Completed Student Projects (Spring 2026)
+## H.9 Where to Publish Each Type of Research Output (Free Platforms)
+
+When you want to share your research with the world for free, the trick is matching each type of output to
+the platform built for it. Posting a dataset to a preprint server, or a manuscript to a code host, only
+makes your work harder to find and cite. The map below gives one well-established, free, public platform for
+each kind of academic content. It complements the preprint-server list in Section H.8, which focuses
+specifically on the manuscript or preprint deliverable. Nearly all of these platforms also mint a Digital
+Object Identifier (DOI) so the work stays permanently citable.
+
+```{image} ../../assets/figures/free_research_platforms.png
+:alt: Free public platforms matched to each type of academic research output
+:width: 540px
+```
+
+| Output type | Platform | What it is |
+|---|---|---|
+| Preprints (un-reviewed manuscripts) | [arXiv](https://arxiv.org) | The standard preprint server for physics, mathematics, computer science, and related fields |
+| Datasets (raw research data) | [Zenodo](https://zenodo.org) | A CERN-backed general-purpose repository that mints a DOI for any deposited file |
+| Academic papers (author PDFs) | [ResearchGate](https://www.researchgate.net) | A scholarly social network for sharing author copies of published papers |
+| Open journals (HTML and rich text) | [PubPub](https://www.pubpub.org) | An open-source platform by Knowledge Futures for community-led open-access journals |
+| Supplementary media (figures, charts) | [Figshare](https://figshare.com) | A repository for figures, posters, and other media, each assigned its own DOI |
+| Research software (code and scripts) | [GitHub](https://github.com) | The standard host for code; pair a release with Zenodo for citation |
+| Study protocols (pre-registrations) | [OSF](https://osf.io) | The Open Science Framework, for pre-registering studies and organizing project materials |
+| Lab methodologies (step-by-step) | [Protocols.io](https://www.protocols.io) | A repository for detailed, versioned, citable lab protocols |
+| Open courseware (notes, slides) | [Wikiversity](https://www.wikiversity.org) | A Wikimedia project hosting open learning materials |
+| Institutional output (theses) | [DSpace](https://dspace.org) | Open-source repository software that powers many university archives |
+
+Every platform below is free to use and makes your content publicly accessible:
+
+- **[arXiv](https://arxiv.org), Preprints:** the standard preprint server for physics, mathematics, computer
+  science, and related fields, where you post un-reviewed manuscripts before or alongside formal peer review.
+- **[Zenodo](https://zenodo.org), Datasets:** a CERN-backed, OpenAIRE-affiliated general-purpose repository
+  that issues a DOI for any file you deposit, which makes it ideal for raw research data (it is also where
+  this textbook is archived, mirrored from a GitHub release).
+- **[ResearchGate](https://www.researchgate.net), Academic papers:** a scholarly social network where you
+  can share author copies of your published papers and connect with other researchers; check each
+  publisher's self-archiving policy before posting a version.
+- **[PubPub](https://www.pubpub.org), Open journals:** an open-source platform from the nonprofit Knowledge
+  Futures for running community-led open-access journals, publishing content as living HTML and rich text
+  rather than static PDFs, and able to mint CrossRef DOIs; a free tier is always available.
+- **[Figshare](https://figshare.com), Supplementary media:** a repository for figures, charts, posters, and
+  other supplementary media, each assigned its own DOI.
+- **[GitHub](https://github.com), Research software:** the standard host for code and scripts; pairing a
+  GitHub release with Zenodo (as this book's repository does) makes your software formally citable.
+- **[OSF](https://osf.io), Study protocols:** the Open Science Framework, a free hub for pre-registering
+  studies and organizing all of a project's materials in one place.
+- **[Protocols.io](https://www.protocols.io), Lab methodologies:** a repository for detailed, versioned,
+  step-by-step lab protocols that others can follow and cite.
+- **[Wikiversity](https://www.wikiversity.org), Open courseware:** a Wikimedia project for hosting open
+  learning materials, lecture notes, and slides.
+- **[DSpace](https://dspace.org), Institutional output:** the open-source repository software, originally
+  built by MIT and HP Labs in 2002 and now maintained under Lyrasis, that powers many university libraries'
+  archives of theses and dissertations.
+
+The takeaway is to pick the home that fits the content. Manuscripts go to preprint servers and journals,
+data and media to repositories that mint DOIs, code to GitHub (mirrored to Zenodo for citation), and
+institutional work to your university's DSpace archive. Putting each piece where readers expect it maximizes
+both discoverability and proper credit. This guide is adapted from the companion tutorial at
+https://com.puter.tips/2026/06/where-to-publish-your-research-for-free.html.
+
+## H.10 Example Completed Student Projects (Spring 2026)
 
 The following capstone projects were completed by students and published with DOIs, and they show the level and
 form of a finished deliverable. Each maps to one of the tracks above.

@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-06-08.
+Last generated: 2026-06-09.
 
 ## Summary by Chapter
 
@@ -37,8 +37,8 @@ Last generated: 2026-06-08.
 | Appendix E: Selected Works by the Author | 1,508 | 0 | 3.0 |
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
-| Appendix H: Capstone and Group Project Ideas | 1,259 | 0 | 2.5 |
-| **TOTAL** | **174,177** | **9,949** | **348** |
+| Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
+| **TOTAL** | **174,848** | **9,949** | **350** |
 
 ## Detailed Word Count by Section
 
@@ -698,7 +698,7 @@ Last generated: 2026-06-08.
 
 ### Appendix H: Capstone and Group Project Ideas
 
-*1,259 markdown words (2.5 pages); 0 code words.*
+*1,930 markdown words (3.9 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -710,4 +710,5 @@ Last generated: 2026-06-08.
 | H.6 Track 5: Penetration Testing, Governance, Privacy, and Society | 193 |
 | H.7 GitHub Submission Standards | 71 |
 | H.8 Approved Preprint Servers for DOI Generation | 34 |
-| H.9 Example Completed Student Projects (Spring 2026) | 195 |
+| H.9 Where to Publish Each Type of Research Output (Free Platforms) | 671 |
+| H.10 Example Completed Student Projects (Spring 2026) | 195 |
