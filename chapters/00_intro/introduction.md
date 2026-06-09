@@ -15,15 +15,19 @@ A live, continuously updated web version of this book is available at https://bo
 The chapters map cleanly onto standard three-credit university courses. Instructors can
 mix and match chapters to match their exact syllabus.
 
-| Course | Recommended Chapters |
-|---|---|
-| Introduction to IT Security | 1, 2, 3, 4, 5, 19 |
-| Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 |
-| Computer and Network Security | 2, 3, 5, 11, 12, 17 |
-| Fundamentals of Cryptography | 2, 3, 11, 17 |
-| Incident Response and Digital Forensics | 12, 13, 14, 15 |
-| Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 |
-| Capstone or Certification Prep | All chapters |
+| Course | Recommended Chapters | Approx. Pages |
+|---|---|---|
+| Introduction to IT Security | 1, 2, 3, 4, 5, 19 | 175 |
+| Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 | 115 |
+| Computer and Network Security | 2, 3, 5, 11, 12, 17 | 175 |
+| Fundamentals of Cryptography | 2, 3, 11, 17 | 140 |
+| Incident Response and Digital Forensics | 12, 13, 14, 15 | 45 |
+| Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 | 130 |
+| Capstone or Certification Prep | All chapters | 375 (about 447 with appendices) |
+
+The page counts are approximate and based on the PDF edition, counting only the listed chapters (not the
+appendices). They are a planning aid for gauging reading load per course; the full book runs about 447 pages
+including all appendices.
 
 The appendices map every chapter to the CISSP, Security+, CEH, CISA, and CGRC certification domains
 (Appendix C) and to ABET student outcomes and Bloom's taxonomy levels (Appendix D), and they provide a
