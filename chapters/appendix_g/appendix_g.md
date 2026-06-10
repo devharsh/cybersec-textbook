@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-06-09.
+Last generated: 2026-06-10.
 
 ## Summary by Chapter
 
@@ -28,7 +28,7 @@ Last generated: 2026-06-09.
 | Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
 | Chapter 17: Emerging Threats and Future Challenges | 11,376 | 851 | 22.8 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
-| Chapter 19: Security Governance, Policy, and Culture | 5,582 | 482 | 11.2 |
+| Chapter 19: Security Governance, Policy, and Culture | 6,078 | 482 | 12.2 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,724 | 442 | 7.4 |
 | Appendix A: Security Command Reference | 1,755 | 0 | 3.5 |
 | Appendix B: Glossary | 2,345 | 0 | 4.7 |
@@ -38,7 +38,7 @@ Last generated: 2026-06-09.
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
-| **TOTAL** | **176,246** | **9,949** | **352** |
+| **TOTAL** | **176,742** | **9,949** | **353** |
 
 ## Detailed Word Count by Section
 
@@ -576,7 +576,7 @@ Last generated: 2026-06-09.
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*5,582 markdown words (11.2 pages); 482 code words.*
+*6,078 markdown words (12.2 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
@@ -588,7 +588,7 @@ Last generated: 2026-06-09.
 | 19.4 Board-Level Security Reporting | 206 |
 | 19.5 Security Culture | 284 |
 | 19.6 Common Compliance Frameworks | 1,120 |
-| 19.7 NIST Cybersecurity Framework 2.0 and the Govern Function | 268 |
+| 19.7 NIST Cybersecurity Framework 2.0 and the Govern Function | 764 |
 | 19.8 Cybersecurity Governance at the Municipal Level | 1,147 |
 | 19.9 Governance, Risk, and Compliance (GRC) as an Integrated Discipline | 229 |
 | 19.10 Audits, Assurance, and Security Maturity | 222 |
