@@ -8,7 +8,7 @@ Last generated: 2026-06-16.
 
 | Chapter | Markdown words | Code words | Approx. pages |
 |---|---:|---:|---:|
-| Introduction | 1,018 | 0 | 2.0 |
+| Introduction | 1,023 | 0 | 2.0 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 10,584 | 361 | 21.2 |
 | Chapter 2: Cryptography | 30,534 | 2,387 | 61.1 |
@@ -19,7 +19,7 @@ Last generated: 2026-06-16.
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,223 | 381 | 14.4 |
 | Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
 | Chapter 9: Exploitation and Post-Exploitation | 6,223 | 316 | 12.4 |
-| Chapter 10: Web Application Security | 5,436 | 202 | 10.9 |
+| Chapter 10: Web Application Security | 6,757 | 202 | 13.5 |
 | Chapter 11: Network Defense and Hardening | 5,745 | 258 | 11.5 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 4,242 | 377 | 8.5 |
 | Chapter 13: Digital Forensics | 4,218 | 300 | 8.4 |
@@ -39,18 +39,18 @@ Last generated: 2026-06-16.
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
-| **TOTAL** | **181,481** | **9,949** | **363** |
+| **TOTAL** | **182,807** | **9,949** | **366** |
 
 ## Detailed Word Count by Section
 
 
 ### Introduction
 
-*1,018 markdown words (2.0 pages); 0 code words.*
+*1,023 markdown words (2.0 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
-| Course Mapping | 323 |
+| Course Mapping | 328 |
 | What Every Chapter Contains | 64 |
 | How to Cite This Book | 181 |
 | Accessibility | 310 |
@@ -347,7 +347,7 @@ Last generated: 2026-06-16.
 
 ### Chapter 10: Web Application Security
 
-*5,436 markdown words (10.9 pages); 202 code words.*
+*6,757 markdown words (13.5 pages); 202 code words.*
 
 | Section | Words |
 |---|---:|
@@ -365,6 +365,7 @@ Last generated: 2026-06-16.
 | 10.10 Application Security Testing: SAST, DAST, IAST, and DevSecOps | 429 |
 | 10.11 Web Application Firewalls and Their Limits | 119 |
 | 10.12 The OWASP API Security Top 10 | 332 |
+| 10.13 Database Systems in Depth: Engines, Replication, and Security | 1,321 |
 | Chapter Summary | 130 |
 | Why This Matters | 79 |
 | News in Focus: SQL Injection Breaches That Persist | 78 |
