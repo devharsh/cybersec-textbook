@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-06-10.
+Last generated: 2026-06-16.
 
 ## Summary by Chapter
 
@@ -26,7 +26,7 @@ Last generated: 2026-06-10.
 | Chapter 14: Incident Response | 3,939 | 373 | 7.9 |
 | Chapter 15: Malware Analysis | 4,766 | 339 | 9.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
-| Chapter 17: Emerging Threats and Future Challenges | 11,376 | 851 | 22.8 |
+| Chapter 17: Emerging Threats and Future Challenges | 12,118 | 851 | 24.2 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
 | Chapter 19: Security Governance, Policy, and Culture | 6,078 | 482 | 12.2 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,724 | 442 | 7.4 |
@@ -38,7 +38,7 @@ Last generated: 2026-06-10.
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
-| **TOTAL** | **176,742** | **9,949** | **353** |
+| **TOTAL** | **177,484** | **9,949** | **355** |
 
 ## Detailed Word Count by Section
 
@@ -524,7 +524,7 @@ Last generated: 2026-06-10.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*11,376 markdown words (22.8 pages); 851 code words.*
+*12,118 markdown words (24.2 pages); 851 code words.*
 
 | Section | Words |
 |---|---:|
@@ -538,7 +538,7 @@ Last generated: 2026-06-10.
 | 17.6 Modeling, Simulation, and Control for Security | 275 |
 | 17.7 Probability Distributions in Security | 319 |
 | 17.8 Supply Chain Attacks | 199 |
-| 17.9 Cloud Security | 3,066 |
+| 17.9 Cloud Security | 3,808 |
 | 17.10 Internet of Things Security | 110 |
 | 17.11 Zero-Day Markets and Disclosure | 110 |
 | 17.12 Securing AI Systems: Agentic AI, Red Teaming, and the Model Supply Chain | 497 |
