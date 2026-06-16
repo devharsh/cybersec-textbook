@@ -19,7 +19,7 @@ Last generated: 2026-06-16.
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,223 | 381 | 14.4 |
 | Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
 | Chapter 9: Exploitation and Post-Exploitation | 6,223 | 316 | 12.4 |
-| Chapter 10: Web Application Security | 6,757 | 202 | 13.5 |
+| Chapter 10: Web Application Security | 7,322 | 202 | 14.6 |
 | Chapter 11: Network Defense and Hardening | 5,745 | 258 | 11.5 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 4,242 | 377 | 8.5 |
 | Chapter 13: Digital Forensics | 4,218 | 300 | 8.4 |
@@ -39,7 +39,7 @@ Last generated: 2026-06-16.
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
-| **TOTAL** | **182,807** | **9,949** | **366** |
+| **TOTAL** | **183,372** | **9,949** | **367** |
 
 ## Detailed Word Count by Section
 
@@ -347,7 +347,7 @@ Last generated: 2026-06-16.
 
 ### Chapter 10: Web Application Security
 
-*6,757 markdown words (13.5 pages); 202 code words.*
+*7,322 markdown words (14.6 pages); 202 code words.*
 
 | Section | Words |
 |---|---:|
@@ -365,7 +365,7 @@ Last generated: 2026-06-16.
 | 10.10 Application Security Testing: SAST, DAST, IAST, and DevSecOps | 429 |
 | 10.11 Web Application Firewalls and Their Limits | 119 |
 | 10.12 The OWASP API Security Top 10 | 332 |
-| 10.13 Database Systems in Depth: Engines, Replication, and Security | 1,321 |
+| 10.13 Database Systems in Depth: Engines, Replication, and Security | 1,886 |
 | Chapter Summary | 130 |
 | Why This Matters | 79 |
 | News in Focus: SQL Injection Breaches That Persist | 78 |
