@@ -72,5 +72,7 @@ parts:
         title: "Appendix G: Book Statistics and Word Counts"
       - file: chapters/appendix_h/appendix_h
         title: "Appendix H: Capstone and Group Project Ideas"
+      - file: chapters/appendix_i/appendix_i
+        title: "Appendix I: Protocol Security Reference"
       - url: https://book.com.puter.tips/genindex.html
         title: "General Index"

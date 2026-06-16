@@ -38,7 +38,8 @@ Last generated: 2026-06-16.
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
-| **TOTAL** | **178,251** | **9,949** | **357** |
+| Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
+| **TOTAL** | **181,481** | **9,949** | **363** |
 
 ## Detailed Word Count by Section
 
@@ -712,3 +713,23 @@ Last generated: 2026-06-16.
 | H.8 Approved Preprint Servers for DOI Generation | 34 |
 | H.9 Where to Publish Each Type of Research Output (Free Platforms) | 671 |
 | H.10 Example Completed Student Projects (Spring 2026) | 195 |
+
+### Appendix I: Protocol Security Reference
+
+*3,230 markdown words (6.5 pages); 0 code words.*
+
+| Section | Words |
+|---|---:|
+| I.1 Internet and Transport Layer | 278 |
+| I.2 Naming and Address Assignment | 270 |
+| I.3 Web, Transport Security, and Identity | 386 |
+| I.4 Email | 128 |
+| I.5 File Transfer, Remote Access, and Sharing | 336 |
+| I.6 Management, Authentication, Time, and Logging | 296 |
+| I.7 VPN and Tunneling | 240 |
+| I.8 Routing, Switching, and Redundancy | 197 |
+| I.9 Wireless | 139 |
+| I.10 Multimedia, Messaging, IoT, and Discovery | 334 |
+| I.11 Industrial Control Systems and Operational Technology | 192 |
+| I.12 Storage Interfaces | 152 |
+| I.13 How to Use This Reference | 127 |

@@ -31,7 +31,8 @@ including all appendices.
 
 The appendices map every chapter to the CISSP, Security+, CEH, CISA, and CGRC certification domains
 (Appendix C) and to ABET student outcomes and Bloom's taxonomy levels (Appendix D), and they provide a
-command reference, a glossary, and pointers to companion publications and code (Appendices A, B, E, F).
+command reference, a glossary, pointers to companion publications and code, and a protocol security reference
+(Appendices A, B, E, F, I).
 
 The book is also aligned to the major workforce and framework standards. Its structure and learning
 objectives map to the six functions of the NIST Cybersecurity Framework (CSF) 2.0, Govern, Identify,
