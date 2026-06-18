@@ -26,7 +26,7 @@ Last generated: 2026-06-18.
 | Chapter 14: Incident Response | 3,939 | 373 | 7.9 |
 | Chapter 15: Malware Analysis | 4,766 | 339 | 9.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
-| Chapter 17: Emerging Threats and Future Challenges | 12,885 | 851 | 25.8 |
+| Chapter 17: Emerging Threats and Future Challenges | 13,482 | 851 | 27.0 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
 | Chapter 19: Security Governance, Policy, and Culture | 6,421 | 482 | 12.8 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,724 | 442 | 7.4 |
@@ -34,12 +34,12 @@ Last generated: 2026-06-18.
 | Appendix B: Glossary | 2,345 | 0 | 4.7 |
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
-| Appendix E: Selected Works by the Author | 1,508 | 0 | 3.0 |
+| Appendix E: Selected Works by the Author | 1,540 | 0 | 3.1 |
 | Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
-| **TOTAL** | **184,426** | **9,949** | **369** |
+| **TOTAL** | **185,055** | **9,949** | **370** |
 
 ## Detailed Word Count by Section
 
@@ -526,7 +526,7 @@ Last generated: 2026-06-18.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*12,885 markdown words (25.8 pages); 851 code words.*
+*13,482 markdown words (27.0 pages); 851 code words.*
 
 | Section | Words |
 |---|---:|
@@ -535,7 +535,7 @@ Last generated: 2026-06-18.
 | 17.1 Post-Quantum Cryptography | 405 |
 | 17.2 AI-Enabled Attacks and Defenses | 951 |
 | 17.3 Pattern Matching, Machine Learning, and Deep Learning in Security | 1,022 |
-| 17.4 Privacy-Preserving and Collaborative Machine Learning | 2,814 |
+| 17.4 Privacy-Preserving and Collaborative Machine Learning | 3,411 |
 | 17.5 Anomaly Detection Across Domains | 271 |
 | 17.6 Modeling, Simulation, and Control for Security | 275 |
 | 17.7 Probability Distributions in Security | 319 |
@@ -675,11 +675,11 @@ Last generated: 2026-06-18.
 
 ### Appendix E: Selected Works by the Author
 
-*1,508 markdown words (3.0 pages); 0 code words.*
+*1,540 markdown words (3.1 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
-| Cryptography and Privacy-Preserving Computation | 231 |
+| Cryptography and Privacy-Preserving Computation | 263 |
 | Privacy-Preserving Machine Learning and Emerging Topics | 148 |
 | Security Analytics, Monitoring, and Detection | 68 |
 | Networking, Wireless, and Packet Analysis | 121 |
