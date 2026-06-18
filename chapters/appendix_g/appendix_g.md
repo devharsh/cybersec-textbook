@@ -26,7 +26,7 @@ Last generated: 2026-06-18.
 | Chapter 14: Incident Response | 3,939 | 373 | 7.9 |
 | Chapter 15: Malware Analysis | 4,766 | 339 | 9.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
-| Chapter 17: Emerging Threats and Future Challenges | 13,482 | 851 | 27.0 |
+| Chapter 17: Emerging Threats and Future Challenges | 13,721 | 851 | 27.4 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
 | Chapter 19: Security Governance, Policy, and Culture | 6,421 | 482 | 12.8 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,724 | 442 | 7.4 |
@@ -39,7 +39,7 @@ Last generated: 2026-06-18.
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
-| **TOTAL** | **185,055** | **9,949** | **370** |
+| **TOTAL** | **185,294** | **9,949** | **371** |
 
 ## Detailed Word Count by Section
 
@@ -526,7 +526,7 @@ Last generated: 2026-06-18.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*13,482 markdown words (27.0 pages); 851 code words.*
+*13,721 markdown words (27.4 pages); 851 code words.*
 
 | Section | Words |
 |---|---:|
@@ -541,7 +541,7 @@ Last generated: 2026-06-18.
 | 17.7 Probability Distributions in Security | 319 |
 | 17.8 Supply Chain Attacks | 199 |
 | 17.9 Cloud Security | 4,575 |
-| 17.10 Internet of Things Security | 110 |
+| 17.10 Internet of Things Security | 349 |
 | 17.11 Zero-Day Markets and Disclosure | 110 |
 | 17.12 Securing AI Systems: Agentic AI, Red Teaming, and the Model Supply Chain | 497 |
 | Chapter Summary | 106 |
