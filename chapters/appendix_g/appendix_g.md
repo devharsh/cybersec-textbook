@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-06-16.
+Last generated: 2026-06-18.
 
 ## Summary by Chapter
 
@@ -11,10 +11,10 @@ Last generated: 2026-06-16.
 | Introduction | 1,023 | 0 | 2.0 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 10,584 | 361 | 21.2 |
-| Chapter 2: Cryptography | 30,534 | 2,387 | 61.1 |
+| Chapter 2: Cryptography | 30,853 | 2,387 | 61.7 |
 | Chapter 3: Networking and Network Attacks | 15,011 | 374 | 30.0 |
 | Chapter 4: Social Engineering and the Human Element | 7,495 | 203 | 15.0 |
-| Chapter 5: Risk Management | 12,131 | 469 | 24.3 |
+| Chapter 5: Risk Management | 12,523 | 469 | 25.0 |
 | Chapter 6: Penetration Testing Methodology | 9,760 | 265 | 19.5 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,223 | 381 | 14.4 |
 | Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
@@ -28,7 +28,7 @@ Last generated: 2026-06-16.
 | Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
 | Chapter 17: Emerging Threats and Future Challenges | 12,885 | 851 | 25.8 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
-| Chapter 19: Security Governance, Policy, and Culture | 6,078 | 482 | 12.2 |
+| Chapter 19: Security Governance, Policy, and Culture | 6,421 | 482 | 12.8 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,724 | 442 | 7.4 |
 | Appendix A: Security Command Reference | 1,755 | 0 | 3.5 |
 | Appendix B: Glossary | 2,345 | 0 | 4.7 |
@@ -39,7 +39,7 @@ Last generated: 2026-06-16.
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
-| **TOTAL** | **183,372** | **9,949** | **367** |
+| **TOTAL** | **184,426** | **9,949** | **369** |
 
 ## Detailed Word Count by Section
 
@@ -100,7 +100,7 @@ Last generated: 2026-06-16.
 
 ### Chapter 2: Cryptography
 
-*30,534 markdown words (61.1 pages); 2,387 code words.*
+*30,853 markdown words (61.7 pages); 2,387 code words.*
 
 | Section | Words |
 |---|---:|
@@ -120,7 +120,7 @@ Last generated: 2026-06-16.
 | 2.12 Elliptic-Curve Cryptography | 1,281 |
 | 2.13 Digital Signatures, Certificates, and PKI | 770 |
 | 2.14 Putting It Together: The TLS Handshake | 354 |
-| 2.15 Advanced and Emerging Cryptography | 2,731 |
+| 2.15 Advanced and Emerging Cryptography | 3,050 |
 | 2.16 Key Management | 883 |
 | 2.17 A Taxonomy of Cryptographic Attacks | 348 |
 | 2.18 Applied Cryptographic Systems | 392 |
@@ -191,7 +191,7 @@ Last generated: 2026-06-16.
 
 ### Chapter 5: Risk Management
 
-*12,131 markdown words (24.3 pages); 469 code words.*
+*12,523 markdown words (25.0 pages); 469 code words.*
 
 | Section | Words |
 |---|---:|
@@ -204,11 +204,11 @@ Last generated: 2026-06-16.
 | 5.5 Qualitative Risk Assessment | 346 |
 | 5.6 Quantitative Risk Assessment | 682 |
 | 5.7 Risk Treatment | 740 |
-| 5.8 Threat Modeling | 565 |
+| 5.8 Threat Modeling | 720 |
 | 5.9 Risk Frameworks and Standards | 925 |
 | 5.10 The Security Program: Policies, Standards, and Controls | 656 |
 | 5.11 Business Continuity and Disaster Recovery | 776 |
-| 5.12 Third-Party and Supply-Chain Risk | 223 |
+| 5.12 Third-Party and Supply-Chain Risk | 460 |
 | 5.13 Assurance Evaluation | 337 |
 | 5.14 Security Roles, Responsibilities, and Accountability | 251 |
 | 5.15 Measuring Risk: Metrics, KPIs, and KRIs | 236 |
@@ -578,7 +578,7 @@ Last generated: 2026-06-16.
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*6,078 markdown words (12.2 pages); 482 code words.*
+*6,421 markdown words (12.8 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
@@ -589,7 +589,7 @@ Last generated: 2026-06-16.
 | 19.3 The Policy Hierarchy | 240 |
 | 19.4 Board-Level Security Reporting | 206 |
 | 19.5 Security Culture | 284 |
-| 19.6 Common Compliance Frameworks | 1,120 |
+| 19.6 Common Compliance Frameworks | 1,463 |
 | 19.7 NIST Cybersecurity Framework 2.0 and the Govern Function | 764 |
 | 19.8 Cybersecurity Governance at the Municipal Level | 1,147 |
 | 19.9 Governance, Risk, and Compliance (GRC) as an Integrated Discipline | 229 |
