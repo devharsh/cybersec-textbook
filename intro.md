@@ -10,10 +10,10 @@
 **A free, open-source textbook for university courses and professional certifications**
 
 *Devharsh Trivedi, Ph.D., CISSP*\
-Department of Computer Science, Bowie State University\
+City University of New York\
 ORCID: https://orcid.org/0000-0001-6374-7249
 
-*Last updated on 08/07/2026 at 09:51:29 EDT*
+*Last updated on 08/07/2026 at 09:55:45 EDT*
 
 ---
 
