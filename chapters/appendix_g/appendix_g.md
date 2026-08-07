@@ -11,10 +11,10 @@ Last generated: 2026-08-07.
 | Introduction | 1,023 | 0 | 2.0 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 10,584 | 361 | 21.2 |
-| Chapter 2: Cryptography | 30,853 | 2,387 | 61.7 |
+| Chapter 2: Cryptography | 30,934 | 2,387 | 61.9 |
 | Chapter 3: Networking and Network Attacks | 15,011 | 374 | 30.0 |
 | Chapter 4: Social Engineering and the Human Element | 7,495 | 203 | 15.0 |
-| Chapter 5: Risk Management | 12,523 | 469 | 25.0 |
+| Chapter 5: Risk Management | 12,577 | 469 | 25.2 |
 | Chapter 6: Penetration Testing Methodology | 9,760 | 265 | 19.5 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,223 | 381 | 14.4 |
 | Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
@@ -26,7 +26,7 @@ Last generated: 2026-08-07.
 | Chapter 14: Incident Response | 3,939 | 373 | 7.9 |
 | Chapter 15: Malware Analysis | 4,766 | 339 | 9.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
-| Chapter 17: Emerging Threats and Future Challenges | 13,721 | 851 | 27.4 |
+| Chapter 17: Emerging Threats and Future Challenges | 13,740 | 851 | 27.5 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
 | Chapter 19: Security Governance, Policy, and Culture | 6,421 | 482 | 12.8 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,724 | 442 | 7.4 |
@@ -40,7 +40,7 @@ Last generated: 2026-08-07.
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,707 | 0 | 7.4 |
-| **TOTAL** | **189,001** | **9,949** | **378** |
+| **TOTAL** | **189,155** | **9,949** | **378** |
 
 ## Detailed Word Count by Section
 
@@ -101,7 +101,7 @@ Last generated: 2026-08-07.
 
 ### Chapter 2: Cryptography
 
-*30,853 markdown words (61.7 pages); 2,387 code words.*
+*30,934 markdown words (61.9 pages); 2,387 code words.*
 
 | Section | Words |
 |---|---:|
@@ -128,7 +128,7 @@ Last generated: 2026-08-07.
 | 2.19 Practical Guidance: Choosing and Using Cryptography | 380 |
 | 2.19a Protecting Data in All Three States | 289 |
 | 2.19b Tamper-Evident and Tamper-Proof Mechanisms | 207 |
-| 2.20 Formal Security Analysis and Provable Security | 2,232 |
+| 2.20 Formal Security Analysis and Provable Security | 2,313 |
 | 2.21 Post-Quantum Standards and the Migration Timeline | 347 |
 | Chapter Summary | 149 |
 | Why This Matters | 161 |
@@ -192,7 +192,7 @@ Last generated: 2026-08-07.
 
 ### Chapter 5: Risk Management
 
-*12,523 markdown words (25.0 pages); 469 code words.*
+*12,577 markdown words (25.2 pages); 469 code words.*
 
 | Section | Words |
 |---|---:|
@@ -205,7 +205,7 @@ Last generated: 2026-08-07.
 | 5.5 Qualitative Risk Assessment | 346 |
 | 5.6 Quantitative Risk Assessment | 682 |
 | 5.7 Risk Treatment | 740 |
-| 5.8 Threat Modeling | 720 |
+| 5.8 Threat Modeling | 774 |
 | 5.9 Risk Frameworks and Standards | 925 |
 | 5.10 The Security Program: Policies, Standards, and Controls | 656 |
 | 5.11 Business Continuity and Disaster Recovery | 776 |
@@ -527,7 +527,7 @@ Last generated: 2026-08-07.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*13,721 markdown words (27.4 pages); 851 code words.*
+*13,740 markdown words (27.5 pages); 851 code words.*
 
 | Section | Words |
 |---|---:|
@@ -536,7 +536,7 @@ Last generated: 2026-08-07.
 | 17.1 Post-Quantum Cryptography | 405 |
 | 17.2 AI-Enabled Attacks and Defenses | 951 |
 | 17.3 Pattern Matching, Machine Learning, and Deep Learning in Security | 1,022 |
-| 17.4 Privacy-Preserving and Collaborative Machine Learning | 3,411 |
+| 17.4 Privacy-Preserving and Collaborative Machine Learning | 3,430 |
 | 17.5 Anomaly Detection Across Domains | 271 |
 | 17.6 Modeling, Simulation, and Control for Security | 275 |
 | 17.7 Probability Distributions in Security | 319 |
