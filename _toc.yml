@@ -74,5 +74,7 @@ parts:
         title: "Appendix H: Capstone and Group Project Ideas"
       - file: chapters/appendix_i/appendix_i
         title: "Appendix I: Protocol Security Reference"
+      - file: chapters/appendix_j/appendix_j
+        title: "Appendix J: Adversary Models"
       - url: https://book.com.puter.tips/genindex.html
         title: "General Index"

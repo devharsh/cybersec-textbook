@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-06-18.
+Last generated: 2026-08-07.
 
 ## Summary by Chapter
 
@@ -39,7 +39,8 @@ Last generated: 2026-06-18.
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
-| **TOTAL** | **185,294** | **9,949** | **371** |
+| Appendix J: Adversary Models | 3,707 | 0 | 7.4 |
+| **TOTAL** | **189,001** | **9,949** | **378** |
 
 ## Detailed Word Count by Section
 
@@ -734,3 +735,20 @@ Last generated: 2026-06-18.
 | I.11 Industrial Control Systems and Operational Technology | 192 |
 | I.12 Storage Interfaces | 152 |
 | I.13 How to Use This Reference | 127 |
+
+### Appendix J: Adversary Models
+
+*3,707 markdown words (7.4 pages); 0 code words.*
+
+| Section | Words |
+|---|---:|
+| J.1 The Three Layers of an Adversary Model | 160 |
+| J.2 Layer 1: Behavioral Models | 930 |
+| J.3 Layer 2: Corruption Modifiers | 189 |
+| J.4 Layer 3: Single-Key Game Models | 304 |
+| J.5 Extended Single-Key Models | 192 |
+| J.6 Adversary Models for Homomorphic Encryption | 333 |
+| J.7 Multi-Key Settings | 418 |
+| J.8 Composing a Complete Threat Model | 190 |
+| J.9 Worked Numerical Examples | 394 |
+| J.10 Exercises | 510 |
