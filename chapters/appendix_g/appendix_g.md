@@ -31,7 +31,7 @@ Last generated: 2026-08-07.
 | Chapter 19: Security Governance, Policy, and Culture | 6,421 | 482 | 12.8 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,724 | 442 | 7.4 |
 | Appendix A: Security Command Reference | 1,755 | 0 | 3.5 |
-| Appendix B: Glossary | 2,345 | 0 | 4.7 |
+| Appendix B: Glossary | 2,919 | 0 | 5.8 |
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,540 | 0 | 3.1 |
@@ -39,8 +39,8 @@ Last generated: 2026-08-07.
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
-| Appendix J: Adversary Models | 3,707 | 0 | 7.4 |
-| **TOTAL** | **189,155** | **9,949** | **378** |
+| Appendix J: Adversary Models | 3,782 | 0 | 7.6 |
+| **TOTAL** | **189,804** | **9,949** | **380** |
 
 ## Detailed Word Count by Section
 
@@ -644,11 +644,12 @@ Last generated: 2026-08-07.
 
 ### Appendix B: Glossary
 
-*2,345 markdown words (4.7 pages); 0 code words.*
+*2,919 markdown words (5.8 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
 | Cloud and Infrastructure Terminology | 1,490 |
+| Adversary and Threat-Model Terminology | 574 |
 
 ### Appendix C: Certification Mapping
 
@@ -738,12 +739,12 @@ Last generated: 2026-08-07.
 
 ### Appendix J: Adversary Models
 
-*3,707 markdown words (7.4 pages); 0 code words.*
+*3,782 markdown words (7.6 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
 | J.1 The Three Layers of an Adversary Model | 160 |
-| J.2 Layer 1: Behavioral Models | 930 |
+| J.2 Layer 1: Behavioral Models | 935 |
 | J.3 Layer 2: Corruption Modifiers | 189 |
 | J.4 Layer 3: Single-Key Game Models | 304 |
 | J.5 Extended Single-Key Models | 192 |

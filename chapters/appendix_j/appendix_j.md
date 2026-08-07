@@ -7,6 +7,9 @@ cryptography and secure computation into one reference, with the defining papers
 and exercises. It extends the formal-security material of Chapter 2 (Section 2.20), the threat-modeling
 methods of Chapter 5 (Section 5.8), and the privacy-preserving computation of Chapter 17 (Section 17.4).
 
+```{index} Adversary model, Semi-honest adversary, Honest-but-curious, Honest-but-lazy, Lazy adversary, Free-rider, Fail-stop corruption, Omission corruption, Honest-looking adversary, Semi-malicious adversary, Covert adversary, Deterrence factor, Rational adversary, Malicious adversary, Byzantine adversary, Mixed adversary, Friends-and-foes, FaF security, Static adversary, Adaptive adversary, Mobile adversary, Proactive secret sharing, Rushing adversary, IND-CPA, IND-CCA1, IND-CCA2, IND-CPA-D, Non-malleability, Related-key attack, Key-dependent message, Selective-opening security, Leakage resilience, Threshold FHE, Multi-key FHE, Smudging noise, One-sided simulation, Collusion resistance, Complexity leveraging
+```
+
 ## J.1 The Three Layers of an Adversary Model
 
 A complete adversary model answers three independent questions, and confusing them is the most common error
@@ -50,18 +53,24 @@ flowchart LR
     RA --> MA[Malicious<br/>active, Byzantine]
 ```
 
-**Fully honest.** The baseline: the party follows the protocol and protects its own view. Not an adversary,
+### Fully Honest
+
+The baseline: the party follows the protocol and protects its own view. Not an adversary,
 but the reference point for everything below.
 
-**Semi-honest (honest-but-curious, passive).** The party follows the protocol specification exactly, but the
+### Semi-Honest (Honest-but-Curious, Passive)
+
+The party follows the protocol specification exactly, but the
 adversary learns its entire internal state and tries to infer more than the output allows. Formally the
 adversary learns the party's *view*: its input, its random tape, and every message it received. Security is
 proved by exhibiting a simulator that reproduces that view from the party's input and output alone. This
 model captures confidentiality against an insider who will not risk detection, and it is the standard
 baseline in Chapter 17.
 
-**Lazy (honest-but-lazy).** Formalized in two ways. In secure multi-party computation, a lazy party behaves
-honestly but aborts partway through without colluding with corrupt parties; classical MPC lumps it in with
+### Honest-but-Lazy (Lazy)
+
+Formalized in two ways. In secure multi-party computation, a lazy party behaves
+honestly but aborts partway through without colluding with corrupt parties (an honest but lazy party); classical MPC lumps it in with
 the adversary, which is unrealistic, so Badrinarayanan, Jain, Manohar, and Sahai gave it meaningful
 guarantees in "Secure MPC: Laziness Leads to GOD" (ePrint 2018/580; ASIACRYPT 2020), introducing threshold
 multi-key FHE and obtaining round-optimal MPC with guaranteed output delivery against a threshold mixed
@@ -70,21 +79,29 @@ randomness. The applied face in collaborative learning is the **free-rider**: a 
 model updates without training, to obtain the global model without contributing (including dynamic
 free-riders that behave honestly early and switch later).
 
-**Fail-stop, fail-corrupt, and omission.** Fail-corruption lets the adversary force a party to crash
+### Fail-Stop, Fail-Corrupt, and Omission
+
+Fail-corruption lets the adversary force a party to crash
 irrevocably; omission corruption lets it selectively block messages to or from a party without reading them.
 This is enforced laziness rather than chosen laziness.
 
-**Honest-looking.** May deviate, but only in ways indistinguishable from honest execution (Canetti and
+### Honest-Looking
+
+May deviate, but only in ways indistinguishable from honest execution (Canetti and
 Ostrovsky, "Secure computation with honest-looking parties: What if nobody is truly honest?", STOC 1999,
 pp. 255-264).
 
-**Semi-malicious.** Must follow the protocol specification, but may freely choose its input and random coins
+### Semi-Malicious
+
+Must follow the protocol specification, but may freely choose its input and random coins
 in every round (Asharov, Jain, Lopez-Alt, Tromer, Vaikuntanathan, and Wichs, EUROCRYPT 2012, LNCS 7237,
 pp. 483-501). It is now the standard model for multi-party and multi-key FHE constructions, because a client
 that reports a fabricated value is exercising exactly this input-substitution power while still producing
 protocol-conformant messages.
 
-**Covert.** May deviate arbitrarily, but the protocol guarantees that cheating is detected with at least a
+### Covert
+
+May deviate arbitrarily, but the protocol guarantees that cheating is detected with at least a
 fixed probability epsilon, the **deterrence factor**, so adversaries who fear reputational or contractual
 consequences refrain from cheating (Aumann and Lindell, TCC 2007; journal version, Journal of Cryptology,
 2010). Covert security collapses to malicious security as epsilon approaches 1. The **publicly verifiable**
@@ -92,21 +109,29 @@ variant adds that a party detecting cheating receives a certificate it can publi
 without revealing its own input (Asharov and Orlandi, "Calling Out Cheaters: Covert Security with Public
 Verifiability", ASIACRYPT 2012).
 
-**Rational.** Utility-maximizing: cheats only when the expected payoff exceeds the expected penalty (Halpern
+### Rational
+
+Utility-maximizing: cheats only when the expected payoff exceeds the expected penalty (Halpern
 and Teague, "Rational secret sharing and multiparty computation", STOC 2004, pp. 623-632). The key structural
 result is that protocols with a bounded, known number of iterations fall to backward induction and cannot be
 considered rational, which is why rational protocols hide the reconstruction round. For rational and fully
 adversarial players in one model, see Lysyanskaya and Triandopoulos, "Rationality and Adversarial Behavior in
 Multi-Party Computation", CRYPTO 2006.
 
-**Malicious (active, Byzantine).** Completely controlled by the adversary and free to deviate arbitrarily:
+### Malicious (Active, Byzantine)
+
+Completely controlled by the adversary and free to deviate arbitrarily:
 fabricated inputs, malformed keys, early aborts, and any message it likes.
 
-**Mixed adversaries.** Simultaneously corrupt up to t_a parties actively, t_p passively, and t_f in a
+### Mixed Adversaries
+
+Simultaneously corrupt up to t_a parties actively, t_p passively, and t_f in a
 fail-stop manner, filling the space between the pure settings in which passive corruption tolerates t < n/2
 but active corruption only t < n/3 (Fitzi, Hirt, and Maurer, CRYPTO 1998).
 
-**Friends-and-foes (FaF).** Additionally requires that honest parties' inputs stay hidden even from other,
+### Friends-and-Foes (FaF)
+
+Additionally requires that honest parties' inputs stay hidden even from other,
 curious honest parties who might receive the adversary's leaked view. It comes in weak and strong flavors,
 and FaF security does not imply mixed-adversary security (Alon, Omri, and Paskin-Cherniavsky, "MPC with
 Friends and Foes", CRYPTO 2020, pp. 677-706).
