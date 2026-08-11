@@ -42,6 +42,25 @@ configuration, change, and patch management, security assessment, monitoring, se
 management, network-based security devices, software-defined networking, clustering, and big-data access
 control.
 
+### Adapting the Reading Load
+
+Chapters are written so that the foundational sections come first and the advanced material comes last, which
+means a chapter can be truncated rather than dropped when a term runs short. Two practical consequences:
+
+**Chapter 2 is the outlier.** At roughly 68 pages it is more than twice the length of any other chapter, so it
+dominates any course that includes it. For a certification-oriented or introductory course, Sections 2.1
+through 2.14 (through the TLS handshake) plus 2.16 through 2.19b (key management, the attack taxonomy, applied
+systems, practical guidance, and protecting data in its three states) carry the examinable material. Section
+2.15 (advanced and emerging cryptography, including homomorphic encryption and lattices) and Section 2.20
+(formal security analysis and provable security) are graduate-level and can be assigned as optional reading;
+Section 2.21 (post-quantum standards) repays a single lecture even in an introductory course, because the
+migration deadlines are now concrete. Appendix J likewise belongs to the advanced track.
+
+**Trim from the back of a chapter, not the middle.** Every chapter ends with a summary, a "Why This Matters"
+section, one or more "News in Focus" case studies, review questions, and a lab assignment. The case studies
+and labs are the most valuable material to keep when time is short, because they are what students remember;
+the encyclopedic middle sections of the longer chapters are the safer cut.
+
 The appendices map every chapter to the CISSP, Security+, CEH, CISA, and CGRC certification domains
 (Appendix C) and to ABET student outcomes and Bloom's taxonomy levels (Appendix D), and they provide a
 command reference, a glossary, pointers to companion publications and code, and a protocol security reference
