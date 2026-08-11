@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-08-07.
+Last generated: 2026-08-11.
 
 ## Summary by Chapter
 
@@ -20,13 +20,13 @@ Last generated: 2026-08-07.
 | Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
 | Chapter 9: Exploitation and Post-Exploitation | 6,223 | 316 | 12.4 |
 | Chapter 10: Web Application Security | 7,322 | 202 | 14.6 |
-| Chapter 11: Network Defense and Hardening | 5,745 | 258 | 11.5 |
+| Chapter 11: Network Defense and Hardening | 7,170 | 258 | 14.3 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 4,242 | 377 | 8.5 |
 | Chapter 13: Digital Forensics | 4,218 | 300 | 8.4 |
 | Chapter 14: Incident Response | 3,939 | 373 | 7.9 |
 | Chapter 15: Malware Analysis | 4,766 | 339 | 9.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
-| Chapter 17: Emerging Threats and Future Challenges | 13,740 | 851 | 27.5 |
+| Chapter 17: Emerging Threats and Future Challenges | 14,137 | 851 | 28.3 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
 | Chapter 19: Security Governance, Policy, and Culture | 6,421 | 482 | 12.8 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,724 | 442 | 7.4 |
@@ -40,7 +40,7 @@ Last generated: 2026-08-07.
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,782 | 0 | 7.6 |
-| **TOTAL** | **189,804** | **9,949** | **380** |
+| **TOTAL** | **191,626** | **9,949** | **383** |
 
 ## Detailed Word Count by Section
 
@@ -376,7 +376,7 @@ Last generated: 2026-08-07.
 
 ### Chapter 11: Network Defense and Hardening
 
-*5,745 markdown words (11.5 pages); 258 code words.*
+*7,170 markdown words (14.3 pages); 258 code words.*
 
 | Section | Words |
 |---|---:|
@@ -396,7 +396,11 @@ Last generated: 2026-08-07.
 | 11.12 Deception: Honeypots, Honeynets, and Honeytokens | 175 |
 | 11.13 Network Forensics in Defense | 154 |
 | 11.14 CVE Case Study: When the Firewall Is the Door (CVE-2024-3400) | 242 |
-| 11.15 Capstone and Group Project Ideas (Network Defense) | 265 |
+| 11.15 Operating System and Host Hardening | 421 |
+| 11.16 Network Device Hardening: Switches and Routers | 299 |
+| 11.17 Software-Defined Networking, Virtualization, and Clustering | 332 |
+| 11.18 Asset, Configuration, Change, and Patch Management | 373 |
+| 11.19 Capstone and Group Project Ideas (Network Defense) | 265 |
 | Chapter Summary | 114 |
 | Why This Matters | 72 |
 | News in Focus: Flat Networks and Nation-State Lateral Movement | 64 |
@@ -527,7 +531,7 @@ Last generated: 2026-08-07.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*13,740 markdown words (27.5 pages); 851 code words.*
+*14,137 markdown words (28.3 pages); 851 code words.*
 
 | Section | Words |
 |---|---:|
@@ -545,6 +549,7 @@ Last generated: 2026-08-07.
 | 17.10 Internet of Things Security | 349 |
 | 17.11 Zero-Day Markets and Disclosure | 110 |
 | 17.12 Securing AI Systems: Agentic AI, Red Teaming, and the Model Supply Chain | 497 |
+| 17.13 Big Data Security and Access Control | 397 |
 | Chapter Summary | 106 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
