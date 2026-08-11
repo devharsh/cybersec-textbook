@@ -17,17 +17,30 @@ mix and match chapters to match their exact syllabus.
 
 | Course | Recommended Chapters | Approx. Pages |
 |---|---|---|
-| Introduction to IT Security | 1, 2, 3, 4, 5, 19 | 175 |
-| Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 | 115 |
-| Computer and Network Security | 2, 3, 5, 11, 12, 17 | 175 |
-| Fundamentals of Cryptography | 2, 3, 11, 17 | 140 |
+| Introduction to IT Security | 1, 2, 3, 4, 5, 19 | 180 |
+| Computer Security (survey) | 1, 4, 5, 9, 10, 11, 12, 15, 17 | 165 |
+| Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 | 120 |
+| Computer and Network Security | 2, 3, 5, 11, 12, 17 | 180 |
+| Advanced Network Security (Security+ aligned) | 1, 2, 3, 11, 12, 15, 19 | 180 |
+| Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 120 |
+| Fundamentals of Cryptography | 2, 3, 11, 17 | 145 |
 | Incident Response and Digital Forensics | 12, 13, 14, 15 | 45 |
-| Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 | 130 |
-| Capstone or Certification Prep | All chapters | 375 (about 447 with appendices) |
+| Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 | 135 |
+| Capstone or Certification Prep | All chapters | 390 (about 485 with appendices) |
 
 The page counts are approximate and based on the PDF edition, counting only the listed chapters (not the
-appendices). They are a planning aid for gauging reading load per course; the full book runs about 447 pages
+appendices). They are a planning aid for gauging reading load per course; the full book runs about 485 pages
 including all appendices.
+
+Three of these rows correspond to a common community-college and undergraduate sequence. *Computer Security*
+is the introductory survey, covering fundamentals, authentication and access control, attacks, malicious
+software, software and application security, operating-system and host hardening, database security and SQL
+injection, risk assessment, and cloud security. *Advanced Network Security* goes deep on cryptography,
+protocols, and network defense, and is aligned to CompTIA Security+ (the full domain mapping is in
+Appendix C.2). *Advanced Systems Security* is the operations-and-architecture course, covering asset,
+configuration, change, and patch management, security assessment, monitoring, secure device and endpoint
+management, network-based security devices, software-defined networking, clustering, and big-data access
+control.
 
 The appendices map every chapter to the CISSP, Security+, CEH, CISA, and CGRC certification domains
 (Appendix C) and to ABET student outcomes and Bloom's taxonomy levels (Appendix D), and they provide a

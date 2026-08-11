@@ -8,7 +8,7 @@ Last generated: 2026-08-11.
 
 | Chapter | Markdown words | Code words | Approx. pages |
 |---|---:|---:|---:|
-| Introduction | 1,023 | 0 | 2.0 |
+| Introduction | 1,173 | 0 | 2.3 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 10,584 | 361 | 21.2 |
 | Chapter 2: Cryptography | 30,934 | 2,387 | 61.9 |
@@ -40,18 +40,18 @@ Last generated: 2026-08-11.
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,782 | 0 | 7.6 |
-| **TOTAL** | **191,626** | **9,949** | **383** |
+| **TOTAL** | **191,776** | **9,949** | **384** |
 
 ## Detailed Word Count by Section
 
 
 ### Introduction
 
-*1,023 markdown words (2.0 pages); 0 code words.*
+*1,173 markdown words (2.3 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
-| Course Mapping | 328 |
+| Course Mapping | 478 |
 | What Every Chapter Contains | 64 |
 | How to Cite This Book | 181 |
 | Accessibility | 310 |
