@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-08-11.
+Last generated: 2026-08-20.
 
 ## Summary by Chapter
 
@@ -24,7 +24,7 @@ Last generated: 2026-08-11.
 | Chapter 12: Intrusion Detection and Prevention Systems | 4,242 | 377 | 8.5 |
 | Chapter 13: Digital Forensics | 4,218 | 300 | 8.4 |
 | Chapter 14: Incident Response | 3,939 | 373 | 7.9 |
-| Chapter 15: Malware Analysis | 4,766 | 339 | 9.5 |
+| Chapter 15: Malware Analysis | 6,959 | 339 | 13.9 |
 | Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
 | Chapter 17: Emerging Threats and Future Challenges | 14,137 | 851 | 28.3 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
@@ -40,7 +40,7 @@ Last generated: 2026-08-11.
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,782 | 0 | 7.6 |
-| **TOTAL** | **192,006** | **9,949** | **384** |
+| **TOTAL** | **194,199** | **9,949** | **388** |
 
 ## Detailed Word Count by Section
 
@@ -482,7 +482,7 @@ Last generated: 2026-08-11.
 
 ### Chapter 15: Malware Analysis
 
-*4,766 markdown words (9.5 pages); 339 code words.*
+*6,959 markdown words (13.9 pages); 339 code words.*
 
 | Section | Words |
 |---|---:|
@@ -497,6 +497,7 @@ Last generated: 2026-08-11.
 | 15.7 Antivirus and Antimalware Defenses | 718 |
 | 15.8 A Field Guide to Malware Types | 262 |
 | 15.9 The Malware Lifecycle and a Ransomware Deep Dive | 619 |
+| 15.10 Software Reverse Engineering in Depth | 2,193 |
 | Chapter Summary | 98 |
 | Why This Matters | 61 |
 | News in Focus: WannaCry and the Worm That Used a Leaked Exploit (2017) | 286 |
