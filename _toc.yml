@@ -76,5 +76,7 @@ parts:
         title: "Appendix I: Protocol Security Reference"
       - file: chapters/appendix_j/appendix_j
         title: "Appendix J: Adversary Models"
+      - file: chapters/appendix_k/appendix_k
+        title: "Appendix K: Course Materials and Sample Assignments"
       - url: https://book.com.puter.tips/genindex.html
         title: "General Index"

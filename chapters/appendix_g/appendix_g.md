@@ -8,7 +8,7 @@ Last generated: 2026-08-20.
 
 | Chapter | Markdown words | Code words | Approx. pages |
 |---|---:|---:|---:|
-| Introduction | 1,492 | 0 | 3.0 |
+| Introduction | 1,563 | 0 | 3.1 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 10,584 | 361 | 21.2 |
 | Chapter 2: Cryptography | 30,934 | 2,387 | 61.9 |
@@ -18,14 +18,14 @@ Last generated: 2026-08-20.
 | Chapter 6: Penetration Testing Methodology | 9,760 | 265 | 19.5 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,223 | 381 | 14.4 |
 | Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
-| Chapter 9: Exploitation and Post-Exploitation | 15,974 | 587 | 31.9 |
+| Chapter 9: Exploitation and Post-Exploitation | 17,466 | 587 | 34.9 |
 | Chapter 10: Web Application Security | 7,322 | 202 | 14.6 |
 | Chapter 11: Network Defense and Hardening | 7,170 | 258 | 14.3 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 8,963 | 1,114 | 17.9 |
-| Chapter 13: Digital Forensics | 9,917 | 875 | 19.8 |
+| Chapter 13: Digital Forensics | 10,499 | 875 | 21.0 |
 | Chapter 14: Incident Response | 9,813 | 828 | 19.6 |
 | Chapter 15: Malware Analysis | 16,753 | 423 | 33.5 |
-| Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
+| Chapter 16: Capture the Flag and Competitive Security | 4,793 | 366 | 9.6 |
 | Chapter 17: Emerging Threats and Future Challenges | 14,735 | 851 | 29.5 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
 | Chapter 19: Security Governance, Policy, and Culture | 6,421 | 482 | 12.8 |
@@ -35,23 +35,24 @@ Last generated: 2026-08-20.
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,583 | 0 | 3.2 |
-| Appendix F: Companion Code and Repositories | 1,169 | 0 | 2.3 |
+| Appendix F: Companion Code and Repositories | 1,259 | 0 | 2.5 |
 | Appendix G: Book Statistics and Word Counts | (this page) | - | - |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,782 | 0 | 7.6 |
-| **TOTAL** | **230,768** | **12,071** | **462** |
+| Appendix K: Course Materials and Sample Assignments | 1,345 | 0 | 2.7 |
+| **TOTAL** | **235,210** | **12,071** | **470** |
 
 ## Detailed Word Count by Section
 
 
 ### Introduction
 
-*1,492 markdown words (3.0 pages); 0 code words.*
+*1,563 markdown words (3.1 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
-| Course Mapping | 797 |
+| Course Mapping | 868 |
 | What Every Chapter Contains | 64 |
 | How to Cite This Book | 181 |
 | Accessibility | 310 |
@@ -319,7 +320,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*15,974 markdown words (31.9 pages); 587 code words.*
+*17,466 markdown words (34.9 pages); 587 code words.*
 
 | Section | Words |
 |---|---:|
@@ -360,6 +361,8 @@ Last generated: 2026-08-20.
 | 9.33 Patch Diffing and N-Day Exploitation | 607 |
 | 9.34 Toward Automated Vulnerability Discovery: Symbolic Execution | 571 |
 | 9.35 A Field Guide to Bug Classes | 674 |
+| 9.36 Password Cracking and Credential Attacks | 707 |
+| 9.37 Lab: Memory-Corruption Bugs in C | 785 |
 | Chapter Summary | 121 |
 | Why This Matters | 62 |
 | News in Focus: The Ransomware Post-Exploitation Playbook | 78 |
@@ -466,7 +469,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 13: Digital Forensics
 
-*9,917 markdown words (19.8 pages); 875 code words.*
+*10,499 markdown words (21.0 pages); 875 code words.*
 
 | Section | Words |
 |---|---:|
@@ -500,6 +503,7 @@ Last generated: 2026-08-20.
 | 13.26 Lab: Parsing Artifacts at Scale | 280 |
 | 13.27 A Disk Forensics Walkthrough with The Sleuth Kit | 578 |
 | 13.28 Windows Registry Forensics in Depth | 629 |
+| 13.29 Artificial Intelligence in Digital Forensics | 582 |
 | Chapter Summary | 96 |
 | Why This Matters | 76 |
 | News in Focus: When Digital Forensic Evidence Decides a Case | 70 |
@@ -599,7 +603,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*3,931 markdown words (7.9 pages); 366 code words.*
+*4,793 markdown words (9.6 pages); 366 code words.*
 
 | Section | Words |
 |---|---:|
@@ -614,6 +618,8 @@ Last generated: 2026-08-20.
 | 16.7 Why CTFs Build Real Skill | 280 |
 | 16.8 Hosting a CTF and Competition Etiquette | 294 |
 | 16.9 Notable Competitions: picoCTF, CyberPatriot, and CCDC | 230 |
+| 16.10 A CTF Toolkit by Category | 495 |
+| 16.11 Free Platforms and Cyber Ranges for Teaching | 367 |
 | Chapter Summary | 87 |
 | Why This Matters | 62 |
 | News in Focus: Government-Sponsored CTF Competitions | 58 |
@@ -788,11 +794,11 @@ Last generated: 2026-08-20.
 
 ### Appendix F: Companion Code and Repositories
 
-*1,169 markdown words (2.3 pages); 0 code words.*
+*1,259 markdown words (2.5 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
-| Worked Code Examples in This Book | 375 |
+| Worked Code Examples in This Book | 465 |
 | Author Repositories (github.com/devharsh) | 191 |
 | Computer Tips Organization (github.com/com-puter-tips) | 182 |
 | Companion Blog Tutorials (com.puter.tips) | 347 |
@@ -850,3 +856,14 @@ Last generated: 2026-08-20.
 | J.8 Composing a Complete Threat Model | 190 |
 | J.9 Worked Numerical Examples | 394 |
 | J.10 Exercises | 510 |
+
+### Appendix K: Course Materials and Sample Assignments
+
+*1,345 markdown words (2.7 pages); 0 code words.*
+
+| Section | Words |
+|---|---:|
+| K.1 Source-Materials Coverage Map | 346 |
+| K.2 Sample Lecture Modules | 501 |
+| K.3 Sample Assignments and Group Projects | 321 |
+| K.4 Adapting These Materials | 102 |
