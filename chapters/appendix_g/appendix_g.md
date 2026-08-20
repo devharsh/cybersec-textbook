@@ -18,13 +18,13 @@ Last generated: 2026-08-20.
 | Chapter 6: Penetration Testing Methodology | 9,760 | 265 | 19.5 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,223 | 381 | 14.4 |
 | Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
-| Chapter 9: Exploitation and Post-Exploitation | 6,223 | 316 | 12.4 |
+| Chapter 9: Exploitation and Post-Exploitation | 8,046 | 419 | 16.1 |
 | Chapter 10: Web Application Security | 7,322 | 202 | 14.6 |
 | Chapter 11: Network Defense and Hardening | 7,170 | 258 | 14.3 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 4,242 | 377 | 8.5 |
-| Chapter 13: Digital Forensics | 4,218 | 300 | 8.4 |
-| Chapter 14: Incident Response | 3,939 | 373 | 7.9 |
-| Chapter 15: Malware Analysis | 6,959 | 339 | 13.9 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 5,732 | 677 | 11.5 |
+| Chapter 13: Digital Forensics | 6,329 | 433 | 12.7 |
+| Chapter 14: Incident Response | 6,181 | 545 | 12.4 |
+| Chapter 15: Malware Analysis | 8,400 | 423 | 16.8 |
 | Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
 | Chapter 17: Emerging Threats and Future Challenges | 14,735 | 851 | 29.5 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
@@ -40,7 +40,7 @@ Last generated: 2026-08-20.
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,782 | 0 | 7.6 |
-| **TOTAL** | **194,929** | **9,949** | **390** |
+| **TOTAL** | **204,036** | **10,741** | **408** |
 
 ## Detailed Word Count by Section
 
@@ -319,7 +319,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*6,223 markdown words (12.4 pages); 316 code words.*
+*8,046 markdown words (16.1 pages); 419 code words.*
 
 | Section | Words |
 |---|---:|
@@ -339,6 +339,12 @@ Last generated: 2026-08-20.
 | 9.12 Lateral Movement | 120 |
 | 9.13 Persistence | 100 |
 | 9.14 Privilege Escalation Paths: Windows, Linux, and Active Directory | 303 |
+| 9.15 A Worked Stack Buffer Overflow, Start to Finish | 386 |
+| 9.16 Format-String and Heap Vulnerabilities | 186 |
+| 9.17 Defeating Mitigations: Return-Oriented Programming | 468 |
+| 9.18 Linux Privilege Escalation in Depth | 267 |
+| 9.19 Windows Exploitation Specifics | 138 |
+| 9.20 Command-and-Control and Post-Exploitation Frameworks | 378 |
 | Chapter Summary | 121 |
 | Why This Matters | 62 |
 | News in Focus: The Ransomware Post-Exploitation Playbook | 78 |
@@ -410,7 +416,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*4,242 markdown words (8.5 pages); 377 code words.*
+*5,732 markdown words (11.5 pages); 677 code words.*
 
 | Section | Words |
 |---|---:|
@@ -422,6 +428,11 @@ Last generated: 2026-08-20.
 | 12.4 UEBA and Threat Hunting | 604 |
 | 12.5 The Cyber Kill Chain and MITRE ATT&CK | 461 |
 | 12.6 Modern SOC Operations: EDR, XDR, SOAR, and Detection Engineering | 220 |
+| 12.7 Writing Detection Rules: Snort, YARA, and Sigma | 340 |
+| 12.8 SIEM Correlation and Tuning | 416 |
+| 12.9 Network Security Monitoring | 177 |
+| 12.10 Host Telemetry and EDR Internals | 164 |
+| 12.11 Threat Hunting | 393 |
 | Chapter Summary | 91 |
 | Why This Matters | 85 |
 | News in Focus: Breaches That Were Detectable but Missed | 69 |
@@ -431,7 +442,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 13: Digital Forensics
 
-*4,218 markdown words (8.4 pages); 300 code words.*
+*6,329 markdown words (12.7 pages); 433 code words.*
 
 | Section | Words |
 |---|---:|
@@ -448,6 +459,14 @@ Last generated: 2026-08-20.
 | 13.9 AI-Driven Cybercrime Analytics and Attribution | 371 |
 | 13.10 Legal Admissibility and Reporting | 285 |
 | 13.11 Cloud Forensics | 223 |
+| 13.12 Disk Imaging and File Carving in Practice | 341 |
+| 13.13 Memory Forensics with Volatility | 285 |
+| 13.14 Timeline Analysis | 181 |
+| 13.15 Windows Forensic Artifacts | 237 |
+| 13.16 File System Internals for Investigators | 293 |
+| 13.17 Mobile Device Forensics | 201 |
+| 13.18 Email, Log, and Cloud-Account Forensics | 183 |
+| 13.19 The Forensic Report and Expert Testimony | 390 |
 | Chapter Summary | 96 |
 | Why This Matters | 76 |
 | News in Focus: When Digital Forensic Evidence Decides a Case | 70 |
@@ -457,7 +476,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 14: Incident Response
 
-*3,939 markdown words (7.9 pages); 373 code words.*
+*6,181 markdown words (12.4 pages); 545 code words.*
 
 | Section | Words |
 |---|---:|
@@ -473,6 +492,14 @@ Last generated: 2026-08-20.
 | 14.8 Triage, Severity, Containment, and Recovery in Depth | 288 |
 | 14.9 Postmortem, Metrics, and Exercises | 199 |
 | 14.10 Playbooks, Ransomware Negotiation, and Executive Communication | 229 |
+| 14.11 A Ransomware Incident, Hour by Hour | 473 |
+| 14.12 Writing and Running Playbooks | 58 |
+| 14.13 Evidence Handling and Communication Templates | 225 |
+| 14.14 Tabletop Exercises and Purple Teaming | 409 |
+| 14.15 Threat Intelligence and Attribution in Response | 205 |
+| 14.16 Cloud and SaaS Incident Response | 189 |
+| 14.17 A Second Scenario: A Data-Breach Investigation | 253 |
+| 14.18 Metrics and Continuous Improvement | 430 |
 | Chapter Summary | 103 |
 | Why This Matters | 75 |
 | News in Focus: Attacker Dwell Time in Major Ransomware Incidents | 88 |
@@ -482,7 +509,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 15: Malware Analysis
 
-*6,959 markdown words (13.9 pages); 339 code words.*
+*8,400 markdown words (16.8 pages); 423 code words.*
 
 | Section | Words |
 |---|---:|
@@ -498,6 +525,11 @@ Last generated: 2026-08-20.
 | 15.8 A Field Guide to Malware Types | 262 |
 | 15.9 The Malware Lifecycle and a Ransomware Deep Dive | 619 |
 | 15.10 Software Reverse Engineering in Depth | 2,193 |
+| 15.11 An End-to-End Analysis Walkthrough | 219 |
+| 15.12 Extracting Indicators of Compromise | 406 |
+| 15.13 Ransomware Internals and the Criminal Economy | 258 |
+| 15.14 Rootkits, Bootkits, and Firmware Malware | 182 |
+| 15.15 Mobile and Cross-Platform Malware | 376 |
 | Chapter Summary | 98 |
 | Why This Matters | 61 |
 | News in Focus: WannaCry and the Worm That Used a Leaked Exploit (2017) | 286 |
