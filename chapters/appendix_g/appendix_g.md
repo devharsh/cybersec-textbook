@@ -18,13 +18,13 @@ Last generated: 2026-08-20.
 | Chapter 6: Penetration Testing Methodology | 9,760 | 265 | 19.5 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,223 | 381 | 14.4 |
 | Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
-| Chapter 9: Exploitation and Post-Exploitation | 8,646 | 587 | 17.3 |
+| Chapter 9: Exploitation and Post-Exploitation | 9,449 | 587 | 18.9 |
 | Chapter 10: Web Application Security | 7,322 | 202 | 14.6 |
 | Chapter 11: Network Defense and Hardening | 7,170 | 258 | 14.3 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 6,557 | 810 | 13.1 |
-| Chapter 13: Digital Forensics | 7,260 | 582 | 14.5 |
-| Chapter 14: Incident Response | 6,974 | 686 | 13.9 |
-| Chapter 15: Malware Analysis | 9,170 | 423 | 18.3 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 7,250 | 939 | 14.5 |
+| Chapter 13: Digital Forensics | 8,079 | 733 | 16.2 |
+| Chapter 14: Incident Response | 7,766 | 828 | 15.5 |
+| Chapter 15: Malware Analysis | 9,857 | 423 | 19.7 |
 | Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
 | Chapter 17: Emerging Threats and Future Challenges | 14,735 | 851 | 29.5 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
@@ -40,7 +40,7 @@ Last generated: 2026-08-20.
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,782 | 0 | 7.6 |
-| **TOTAL** | **207,955** | **11,332** | **416** |
+| **TOTAL** | **211,749** | **11,754** | **423** |
 
 ## Detailed Word Count by Section
 
@@ -319,7 +319,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*8,646 markdown words (17.3 pages); 587 code words.*
+*9,449 markdown words (18.9 pages); 587 code words.*
 
 | Section | Words |
 |---|---:|
@@ -347,6 +347,8 @@ Last generated: 2026-08-20.
 | 9.20 Command-and-Control and Post-Exploitation Frameworks | 378 |
 | 9.21 Finding Vulnerabilities: Fuzzing in Depth | 174 |
 | 9.22 From Crash to Exploit: Reliability and Weaponization | 426 |
+| 9.23 Case Study: Chaining Vulnerabilities into a Full Compromise | 341 |
+| 9.24 Defending Against Exploitation | 462 |
 | Chapter Summary | 121 |
 | Why This Matters | 62 |
 | News in Focus: The Ransomware Post-Exploitation Playbook | 78 |
@@ -418,7 +420,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*6,557 markdown words (13.1 pages); 810 code words.*
+*7,250 markdown words (14.5 pages); 939 code words.*
 
 | Section | Words |
 |---|---:|
@@ -438,6 +440,8 @@ Last generated: 2026-08-20.
 | 12.12 Deception: Honeypots and Honeytokens | 190 |
 | 12.13 Log Sources, Normalization, and the SOC Workflow | 247 |
 | 12.14 Evading Detection | 388 |
+| 12.15 Case Study: Detecting an Intrusion Across the Kill Chain | 279 |
+| 12.16 Measuring and Maturing Detection | 414 |
 | Chapter Summary | 91 |
 | Why This Matters | 85 |
 | News in Focus: Breaches That Were Detectable but Missed | 69 |
@@ -447,7 +451,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 13: Digital Forensics
 
-*7,260 markdown words (14.5 pages); 582 code words.*
+*8,079 markdown words (16.2 pages); 733 code words.*
 
 | Section | Words |
 |---|---:|
@@ -475,6 +479,8 @@ Last generated: 2026-08-20.
 | 13.20 Acquisition in Practice: Live versus Dead, and Verification | 221 |
 | 13.21 Anti-Forensics in Depth | 234 |
 | 13.22 From Artifact to Narrative | 476 |
+| 13.23 Case Study: Reconstructing an Intrusion | 359 |
+| 13.24 The Forensic Toolkit | 460 |
 | Chapter Summary | 96 |
 | Why This Matters | 76 |
 | News in Focus: When Digital Forensic Evidence Decides a Case | 70 |
@@ -484,7 +490,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 14: Incident Response
 
-*6,974 markdown words (13.9 pages); 686 code words.*
+*7,766 markdown words (15.5 pages); 828 code words.*
 
 | Section | Words |
 |---|---:|
@@ -511,6 +517,8 @@ Last generated: 2026-08-20.
 | 14.19 Incident Response for Operational Technology | 181 |
 | 14.20 Insider and Account-Compromise Incidents | 196 |
 | 14.21 Building the Response Program | 416 |
+| 14.22 Case Study: Business Email Compromise and Wire Fraud | 385 |
+| 14.23 Coordinating with Law Enforcement, Insurers, and Regulators | 407 |
 | Chapter Summary | 103 |
 | Why This Matters | 75 |
 | News in Focus: Attacker Dwell Time in Major Ransomware Incidents | 88 |
@@ -520,7 +528,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 15: Malware Analysis
 
-*9,170 markdown words (18.3 pages); 423 code words.*
+*9,857 markdown words (19.7 pages); 423 code words.*
 
 | Section | Words |
 |---|---:|
@@ -544,6 +552,7 @@ Last generated: 2026-08-20.
 | 15.16 Fileless and Living-off-the-Land Malware | 177 |
 | 15.17 Worms, Botnets, and Supply-Chain Malware | 208 |
 | 15.18 Threat Intelligence and Malware Families | 385 |
+| 15.19 Case Study: Dissecting a Ransomware Sample | 687 |
 | Chapter Summary | 98 |
 | Why This Matters | 61 |
 | News in Focus: WannaCry and the Worm That Used a Leaked Exploit (2017) | 286 |
