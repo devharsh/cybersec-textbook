@@ -18,13 +18,13 @@ Last generated: 2026-08-20.
 | Chapter 6: Penetration Testing Methodology | 9,760 | 265 | 19.5 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,223 | 381 | 14.4 |
 | Chapter 8: Scanning and Enumeration | 7,239 | 816 | 14.5 |
-| Chapter 9: Exploitation and Post-Exploitation | 9,449 | 587 | 18.9 |
+| Chapter 9: Exploitation and Post-Exploitation | 15,974 | 587 | 31.9 |
 | Chapter 10: Web Application Security | 7,322 | 202 | 14.6 |
 | Chapter 11: Network Defense and Hardening | 7,170 | 258 | 14.3 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 7,250 | 939 | 14.5 |
-| Chapter 13: Digital Forensics | 8,079 | 733 | 16.2 |
-| Chapter 14: Incident Response | 7,766 | 828 | 15.5 |
-| Chapter 15: Malware Analysis | 9,857 | 423 | 19.7 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 8,963 | 1,114 | 17.9 |
+| Chapter 13: Digital Forensics | 9,917 | 875 | 19.8 |
+| Chapter 14: Incident Response | 9,813 | 828 | 19.6 |
+| Chapter 15: Malware Analysis | 16,753 | 423 | 33.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 3,931 | 366 | 7.9 |
 | Chapter 17: Emerging Threats and Future Challenges | 14,735 | 851 | 29.5 |
 | Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
@@ -40,7 +40,7 @@ Last generated: 2026-08-20.
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,782 | 0 | 7.6 |
-| **TOTAL** | **211,749** | **11,754** | **423** |
+| **TOTAL** | **230,768** | **12,071** | **462** |
 
 ## Detailed Word Count by Section
 
@@ -319,7 +319,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*9,449 markdown words (18.9 pages); 587 code words.*
+*15,974 markdown words (31.9 pages); 587 code words.*
 
 | Section | Words |
 |---|---:|
@@ -349,6 +349,17 @@ Last generated: 2026-08-20.
 | 9.22 From Crash to Exploit: Reliability and Weaponization | 426 |
 | 9.23 Case Study: Chaining Vulnerabilities into a Full Compromise | 341 |
 | 9.24 Defending Against Exploitation | 462 |
+| 9.25 Shellcode in Practice | 268 |
+| 9.26 The Metasploit Workflow, End to End | 400 |
+| 9.27 The Machine Underneath: Registers, the Stack, and Calling Conventions | 838 |
+| 9.28 A Debugger Session, Step by Step | 648 |
+| 9.29 Return-Oriented Programming, Worked | 628 |
+| 9.30 Heap Exploitation Internals | 673 |
+| 9.31 Defeating Modern Mitigations: Information Leaks and Canary Bypasses | 661 |
+| 9.32 Windows Exploitation: Structured Exception Handler Overwrites | 557 |
+| 9.33 Patch Diffing and N-Day Exploitation | 607 |
+| 9.34 Toward Automated Vulnerability Discovery: Symbolic Execution | 571 |
+| 9.35 A Field Guide to Bug Classes | 674 |
 | Chapter Summary | 121 |
 | Why This Matters | 62 |
 | News in Focus: The Ransomware Post-Exploitation Playbook | 78 |
@@ -420,7 +431,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*7,250 markdown words (14.5 pages); 939 code words.*
+*8,963 markdown words (17.9 pages); 1,114 code words.*
 
 | Section | Words |
 |---|---:|
@@ -442,6 +453,10 @@ Last generated: 2026-08-20.
 | 12.14 Evading Detection | 388 |
 | 12.15 Case Study: Detecting an Intrusion Across the Kill Chain | 279 |
 | 12.16 Measuring and Maturing Detection | 414 |
+| 12.17 A Detection Content Library | 294 |
+| 12.18 Lab: A Mini Detection Pipeline | 277 |
+| 12.19 Packet Analysis for Detection | 607 |
+| 12.20 Building and Tuning a Detection, End to End | 535 |
 | Chapter Summary | 91 |
 | Why This Matters | 85 |
 | News in Focus: Breaches That Were Detectable but Missed | 69 |
@@ -451,7 +466,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 13: Digital Forensics
 
-*8,079 markdown words (16.2 pages); 733 code words.*
+*9,917 markdown words (19.8 pages); 875 code words.*
 
 | Section | Words |
 |---|---:|
@@ -481,6 +496,10 @@ Last generated: 2026-08-20.
 | 13.22 From Artifact to Narrative | 476 |
 | 13.23 Case Study: Reconstructing an Intrusion | 359 |
 | 13.24 The Forensic Toolkit | 460 |
+| 13.25 Windows Event Log Reference for Investigators | 351 |
+| 13.26 Lab: Parsing Artifacts at Scale | 280 |
+| 13.27 A Disk Forensics Walkthrough with The Sleuth Kit | 578 |
+| 13.28 Windows Registry Forensics in Depth | 629 |
 | Chapter Summary | 96 |
 | Why This Matters | 76 |
 | News in Focus: When Digital Forensic Evidence Decides a Case | 70 |
@@ -490,7 +509,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 14: Incident Response
 
-*7,766 markdown words (15.5 pages); 828 code words.*
+*9,813 markdown words (19.6 pages); 828 code words.*
 
 | Section | Words |
 |---|---:|
@@ -519,6 +538,11 @@ Last generated: 2026-08-20.
 | 14.21 Building the Response Program | 416 |
 | 14.22 Case Study: Business Email Compromise and Wire Fraud | 385 |
 | 14.23 Coordinating with Law Enforcement, Insurers, and Regulators | 407 |
+| 14.24 Communication Templates | 240 |
+| 14.25 A Ransomware Readiness Checklist | 205 |
+| 14.26 Breach Notification Quick Reference | 444 |
+| 14.27 An Incident Report, Annotated | 617 |
+| 14.28 Containment Decisions Under Uncertainty | 541 |
 | Chapter Summary | 103 |
 | Why This Matters | 75 |
 | News in Focus: Attacker Dwell Time in Major Ransomware Incidents | 88 |
@@ -528,7 +552,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 15: Malware Analysis
 
-*9,857 markdown words (19.7 pages); 423 code words.*
+*16,753 markdown words (33.5 pages); 423 code words.*
 
 | Section | Words |
 |---|---:|
@@ -553,6 +577,18 @@ Last generated: 2026-08-20.
 | 15.17 Worms, Botnets, and Supply-Chain Malware | 208 |
 | 15.18 Threat Intelligence and Malware Families | 385 |
 | 15.19 Case Study: Dissecting a Ransomware Sample | 687 |
+| 15.20 A YARA Rule Cookbook | 292 |
+| 15.21 Building and Operating an Analysis Lab | 447 |
+| 15.22 Reading x86-64 Disassembly | 626 |
+| 15.23 Windows Internals for Malware Analysts | 663 |
+| 15.24 Obfuscation and Deobfuscation, Worked | 601 |
+| 15.25 A Dynamic Analysis Session | 560 |
+| 15.26 Analyzing Script and .NET Malware | 667 |
+| 15.27 Linux and ELF Malware Analysis | 565 |
+| 15.28 Extracting Malware Configuration at Scale | 569 |
+| 15.29 Case Study: The WannaCry Worm | 643 |
+| 15.30 A Catalog of Anti-Analysis Techniques | 706 |
+| 15.31 Writing the Malware Analysis Report | 557 |
 | Chapter Summary | 98 |
 | Why This Matters | 61 |
 | News in Focus: WannaCry and the Worm That Used a Leaked Exploit (2017) | 286 |

@@ -18,20 +18,22 @@ mix and match chapters to match their exact syllabus.
 | Course | Recommended Chapters | Approx. Pages |
 |---|---|---|
 | Introduction to IT Security | 1, 2, 3, 4, 5, 19 | 180 |
-| Computer Security (survey) | 1, 4, 5, 9, 10, 11, 12, 15, 17 | 165 |
-| Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 | 120 |
-| Software Reverse Engineering | 9, 15 (+ 3) | 32 |
-| Computer and Network Security | 2, 3, 5, 11, 12, 17 | 180 |
-| Advanced Network Security (Security+ aligned) | 1, 2, 3, 11, 12, 15, 19 | 180 |
-| Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 120 |
+| Computer Security (survey) | 1, 4, 5, 9, 10, 11, 12, 15, 17 | 220 |
+| Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 | 140 |
+| Software Reverse Engineering | 9, 15 (+ 3) | 100 |
+| Computer and Network Security | 2, 3, 5, 11, 12, 17 | 195 |
+| Advanced Network Security (Security+ aligned) | 1, 2, 3, 11, 12, 15, 19 | 215 |
+| Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 135 |
 | Fundamentals of Cryptography | 2, 3, 11, 17 | 145 |
-| Incident Response and Digital Forensics | 12, 13, 14, 15 | 45 |
+| Incident Response and Digital Forensics | 12, 13, 14, 15 | 108 |
 | Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 | 135 |
-| Capstone or Certification Prep | All chapters | 390 (about 485 with appendices) |
+| Capstone or Certification Prep | All chapters | 470 (about 570 with appendices) |
 
 The page counts are approximate and based on the PDF edition, counting only the listed chapters (not the
-appendices). They are a planning aid for gauging reading load per course; the full book runs about 485 pages
-including all appendices.
+appendices). They are a planning aid for gauging reading load per course; the full book runs about 570 pages
+including all appendices. Several courses now exceed a single term's reading if every listed chapter is covered
+in full, so the guidance under "Adapting the Reading Load" below on trimming the encyclopedic back sections of
+the longer chapters applies directly.
 
 Three of these rows correspond to a common community-college and undergraduate sequence. *Computer Security*
 is the introductory survey, covering fundamentals, authentication and access control, attacks, malicious
@@ -55,8 +57,8 @@ network component is emphasized.
 Chapters are written so that the foundational sections come first and the advanced material comes last, which
 means a chapter can be truncated rather than dropped when a term runs short. Two practical consequences:
 
-**Chapter 2 is the outlier.** At roughly 68 pages it is more than twice the length of any other chapter, so it
-dominates any course that includes it. For a certification-oriented or introductory course, Sections 2.1
+**Chapter 2 is the outlier.** At roughly 68 pages it is nearly twice the length of the next-longest chapters
+(Chapters 9, 15, and 17), so it dominates any course that includes it. For a certification-oriented or introductory course, Sections 2.1
 through 2.14 (through the TLS handshake) plus 2.16 through 2.19b (key management, the attack taxonomy, applied
 systems, practical guidance, and protecting data in its three states) carry the examinable material. Section
 2.15 (advanced and emerging cryptography, including homomorphic encryption and lattices) and Section 2.20
