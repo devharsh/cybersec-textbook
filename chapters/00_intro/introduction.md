@@ -20,6 +20,7 @@ mix and match chapters to match their exact syllabus.
 | Introduction to IT Security | 1, 2, 3, 4, 5, 19 | 180 |
 | Computer Security (survey) | 1, 4, 5, 9, 10, 11, 12, 15, 17 | 165 |
 | Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 | 120 |
+| Software Reverse Engineering | 9, 15 (+ 3) | 32 |
 | Computer and Network Security | 2, 3, 5, 11, 12, 17 | 180 |
 | Advanced Network Security (Security+ aligned) | 1, 2, 3, 11, 12, 15, 19 | 180 |
 | Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 120 |
@@ -41,6 +42,13 @@ Appendix C.2). *Advanced Systems Security* is the operations-and-architecture co
 configuration, change, and patch management, security assessment, monitoring, secure device and endpoint
 management, network-based security devices, software-defined networking, clustering, and big-data access
 control.
+
+*Software Reverse Engineering* is built on Section 15.10, which develops static and dynamic analysis, x86 and
+x86-64 assembly, the PE format and Windows APIs, DLL and process injection, obfuscation and deobfuscation,
+anti-disassembly, anti-debugging and anti-VM techniques, packing and unpacking, and shellcode. Chapter 9
+supplies the memory-corruption and exploitation foundations it assumes, and Chapter 3 supplies the
+networking-attack analysis; the listed page count covers Chapters 9 and 15, with Chapter 3 added where the
+network component is emphasized.
 
 ### Adapting the Reading Load
 
