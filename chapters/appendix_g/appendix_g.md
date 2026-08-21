@@ -26,8 +26,8 @@ Last generated: 2026-08-20.
 | Chapter 14: Incident Response | 9,813 | 828 | 19.6 |
 | Chapter 15: Malware Analysis | 16,753 | 423 | 33.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 4,793 | 366 | 9.6 |
-| Chapter 17: Emerging Threats and Future Challenges | 14,735 | 851 | 29.5 |
-| Chapter 18: Privacy, Law, and Information Governance | 4,877 | 387 | 9.8 |
+| Chapter 17: Emerging Threats and Future Challenges | 16,147 | 851 | 32.3 |
+| Chapter 18: Privacy, Law, and Information Governance | 6,842 | 387 | 13.7 |
 | Chapter 19: Security Governance, Policy, and Culture | 6,421 | 482 | 12.8 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,724 | 442 | 7.4 |
 | Appendix A: Security Command Reference | 1,755 | 0 | 3.5 |
@@ -41,7 +41,7 @@ Last generated: 2026-08-20.
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,782 | 0 | 7.6 |
 | Appendix K: Course Materials and Sample Assignments | 1,345 | 0 | 2.7 |
-| **TOTAL** | **235,210** | **12,071** | **470** |
+| **TOTAL** | **238,587** | **12,071** | **477** |
 
 ## Detailed Word Count by Section
 
@@ -629,7 +629,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*14,735 markdown words (29.5 pages); 851 code words.*
+*16,147 markdown words (32.3 pages); 851 code words.*
 
 | Section | Words |
 |---|---:|
@@ -648,6 +648,7 @@ Last generated: 2026-08-20.
 | 17.11 Zero-Day Markets and Disclosure | 110 |
 | 17.12 Securing AI Systems: Agentic AI, Red Teaming, and the Model Supply Chain | 912 |
 | 17.13 Big Data Security and Access Control | 397 |
+| 17.14 Sandbox and Virtual-Machine Escape, and What "AI Escaped the Sandbox" Really Means | 1,412 |
 | Chapter Summary | 106 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
@@ -657,7 +658,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
-*4,877 markdown words (9.8 pages); 387 code words.*
+*6,842 markdown words (13.7 pages); 387 code words.*
 
 | Section | Words |
 |---|---:|
@@ -673,6 +674,8 @@ Last generated: 2026-08-20.
 | 18.8 Computer-Crime Law: CFAA, DMCA, and the Ethical Hacker | 232 |
 | 18.9 The Global Privacy Landscape and Breach Notification | 219 |
 | 18.10 Cryptography, Lawful Access, and Privacy-Enhancing Technologies | 330 |
+| 18.11 Anonymity Networks and Privacy-Focused Operating Systems | 1,127 |
+| 18.12 Mass Surveillance and the Reasonable Expectation of Privacy: Automated License Plate Readers | 838 |
 | Chapter Summary | 107 |
 | Why This Matters | 50 |
 | News in Focus: Billion-Euro GDPR Enforcement | 76 |
