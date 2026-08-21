@@ -35,6 +35,35 @@ check: every topic in a conventional sequence is treated somewhere in the text.
 | Formal adversary and threat models | Appendix J |
 | Companion source code (cryptography, networking, exploitation) | Appendix F, `code/` |
 
+### K.1.1 Software Reverse Engineering: A Malware-Analysis Course Map
+
+A common Software Reverse Engineering course is organized around a hands-on malware-analysis textbook and a
+fifteen-week laboratory sequence. The mapping below aligns that standard progression to the chapters and sections
+of this book, so an instructor using such a syllabus can assign the corresponding reading. It also serves as a
+coverage check for the reverse-engineering track (Chapters 9 and 15, with networking analysis from Chapter 3).
+
+| Weekly topic (typical SRE sequence) | Book section(s) |
+|---|---|
+| Basic static techniques | 15.3, 15.4 |
+| Malware analysis in virtual machines (safe lab) | 15.21, 15.2 |
+| Basic dynamic analysis | 15.25, 15.4 |
+| x86 assembly and IDA Pro | 9.27, 15.22, 15.35 |
+| C code in assembly; malicious Windows programs | 15.22, 15.23 |
+| Debugging and OllyDbg/x64dbg | 9.28, 15.25, 15.35 |
+| Malware behavior | 15.13 to 15.17 |
+| Covert launching and data encoding | 15.33, 15.24 |
+| Network signatures and anti-disassembly | 15.34, 15.30 |
+| Anti-debugging | 15.30, 15.35 |
+| Anti-virtual-machine techniques | 15.30 |
+| Packers and unpacking; shellcode analysis | 15.5, 15.25, 9.25 |
+| C++ analysis | 15.32 |
+| 64-bit malware | 15.22, 15.27 |
+| Final project: analyze real-world malware | 15.11, 15.19, 15.29, 15.31 |
+
+The standard reference for such a course is Sikorski and Honig's *Practical Malware Analysis* (No Starch Press,
+2012), and a concise scholarly overview is Cipresso and Stamp's "Software Reverse Engineering" chapter in the
+*Handbook of Information and Communication Security* (Springer, 2010).
+
 ## K.2 Sample Lecture Modules
 
 The three outlines below are complete single-topic modules distilled to their teaching structure. Each can be

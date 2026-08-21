@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-08-20.
+Last generated: 2026-08-21.
 
 ## Summary by Chapter
 
@@ -24,7 +24,7 @@ Last generated: 2026-08-20.
 | Chapter 12: Intrusion Detection and Prevention Systems | 8,963 | 1,114 | 17.9 |
 | Chapter 13: Digital Forensics | 10,499 | 875 | 21.0 |
 | Chapter 14: Incident Response | 9,813 | 828 | 19.6 |
-| Chapter 15: Malware Analysis | 16,753 | 423 | 33.5 |
+| Chapter 15: Malware Analysis | 19,272 | 423 | 38.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 4,793 | 366 | 9.6 |
 | Chapter 17: Emerging Threats and Future Challenges | 16,147 | 851 | 32.3 |
 | Chapter 18: Privacy, Law, and Information Governance | 6,842 | 387 | 13.7 |
@@ -40,8 +40,8 @@ Last generated: 2026-08-20.
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,782 | 0 | 7.6 |
-| Appendix K: Course Materials and Sample Assignments | 1,345 | 0 | 2.7 |
-| **TOTAL** | **238,587** | **12,071** | **477** |
+| Appendix K: Course Materials and Sample Assignments | 1,606 | 0 | 3.2 |
+| **TOTAL** | **241,367** | **12,071** | **483** |
 
 ## Detailed Word Count by Section
 
@@ -556,7 +556,7 @@ Last generated: 2026-08-20.
 
 ### Chapter 15: Malware Analysis
 
-*16,753 markdown words (33.5 pages); 423 code words.*
+*19,272 markdown words (38.5 pages); 423 code words.*
 
 | Section | Words |
 |---|---:|
@@ -593,6 +593,10 @@ Last generated: 2026-08-20.
 | 15.29 Case Study: The WannaCry Worm | 643 |
 | 15.30 A Catalog of Anti-Analysis Techniques | 706 |
 | 15.31 Writing the Malware Analysis Report | 557 |
+| 15.32 Recognizing C++ in Disassembly | 727 |
+| 15.33 Covert and Stealthy Launching | 612 |
+| 15.34 Malware-Focused Network Signatures | 567 |
+| 15.35 Debuggers, Disassemblers, and Kernel Debugging | 613 |
 | Chapter Summary | 98 |
 | Why This Matters | 61 |
 | News in Focus: WannaCry and the Worm That Used a Leaked Exploit (2017) | 286 |
@@ -862,11 +866,11 @@ Last generated: 2026-08-20.
 
 ### Appendix K: Course Materials and Sample Assignments
 
-*1,345 markdown words (2.7 pages); 0 code words.*
+*1,606 markdown words (3.2 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
-| K.1 Source-Materials Coverage Map | 346 |
+| K.1 Source-Materials Coverage Map | 607 |
 | K.2 Sample Lecture Modules | 501 |
 | K.3 Sample Assignments and Group Projects | 321 |
 | K.4 Adapting These Materials | 102 |
