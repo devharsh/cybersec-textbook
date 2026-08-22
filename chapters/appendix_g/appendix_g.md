@@ -12,7 +12,7 @@ Last generated: 2026-08-21.
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 10,584 | 361 | 21.2 |
 | Chapter 2: Cryptography | 30,934 | 2,387 | 61.9 |
-| Chapter 3: Networking and Network Attacks | 15,011 | 374 | 30.0 |
+| Chapter 3: Networking and Network Attacks | 16,561 | 374 | 33.1 |
 | Chapter 4: Social Engineering and the Human Element | 7,495 | 203 | 15.0 |
 | Chapter 5: Risk Management | 12,577 | 469 | 25.2 |
 | Chapter 6: Penetration Testing Methodology | 9,760 | 265 | 19.5 |
@@ -41,7 +41,7 @@ Last generated: 2026-08-21.
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,782 | 0 | 7.6 |
 | Appendix K: Course Materials and Sample Assignments | 1,606 | 0 | 3.2 |
-| **TOTAL** | **241,367** | **12,071** | **483** |
+| **TOTAL** | **242,917** | **12,071** | **486** |
 
 ## Detailed Word Count by Section
 
@@ -140,7 +140,7 @@ Last generated: 2026-08-21.
 
 ### Chapter 3: Networking and Network Attacks
 
-*15,011 markdown words (30.0 pages); 374 code words.*
+*16,561 markdown words (33.1 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
@@ -158,6 +158,8 @@ Last generated: 2026-08-21.
 | 3.10 Denial-of-Service and Distributed Denial-of-Service Attacks | 1,590 |
 | 3.11 Securing the Network: A Preview | 713 |
 | 3.12 QUIC, HTTP/3, and Encrypted Client Hello | 223 |
+| 3.13 The Access Link: How a Network Connects to the Internet | 780 |
+| 3.14 Premises Wireless: Wi-Fi Generations, Extenders, and Mesh | 770 |
 | Chapter Summary | 215 |
 | Why This Matters | 153 |
 | News in Focus: The Mirai Botnet and the Dyn Attack (2016) | 186 |
