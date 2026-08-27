@@ -44,6 +44,8 @@ coverage check for the reverse-engineering track (Chapters 9 and 15, with networ
 
 | Weekly topic (typical SRE sequence) | Book section(s) |
 |---|---|
+| What reverse engineering is: discipline, domains, law, and careers | 15.39 |
+| How software is built; toolchains, artifacts, and malware versus software | 15.38, 15.1 |
 | Basic static techniques | 15.3, 15.4 |
 | Malware analysis in virtual machines (safe lab) | 15.21, 15.2 |
 | Basic dynamic analysis | 15.25, 15.4 |
@@ -58,6 +60,9 @@ coverage check for the reverse-engineering track (Chapters 9 and 15, with networ
 | Packers and unpacking; shellcode analysis | 15.5, 15.25, 9.25 |
 | C++ analysis | 15.32 |
 | 64-bit malware | 15.22, 15.27 |
+| Linux-only analysis workflow (pev, gdb, edb, crackmes) | 15.37, 15.27 |
+| AI-assisted reverse engineering | 15.36 |
+| Competitive practice: the CTF reverse engineering category | 16.12, 16.2 |
 | Final project: analyze real-world malware | 15.11, 15.19, 15.29, 15.31 |
 
 The standard reference for such a course is Sikorski and Honig's *Practical Malware Analysis* (No Starch Press,
