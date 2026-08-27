@@ -31,7 +31,7 @@ Last generated: 2026-08-27.
 | Chapter 19: Security Governance, Policy, and Culture | 6,329 | 482 | 12.7 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,663 | 442 | 7.3 |
 | Appendix A: Security Command Reference | 1,653 | 0 | 3.3 |
-| Appendix B: Glossary | 2,919 | 0 | 5.8 |
+| Appendix B: Glossary | 3,839 | 0 | 7.7 |
 | Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,583 | 0 | 3.2 |
@@ -40,7 +40,7 @@ Last generated: 2026-08-27.
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 1,622 | 0 | 3.2 |
-| **TOTAL** | **254,233** | **12,071** | **508** |
+| **TOTAL** | **255,153** | **12,071** | **510** |
 
 ## Detailed Word Count by Section
 
@@ -1251,12 +1251,19 @@ Last generated: 2026-08-27.
 
 ### Appendix B: Glossary
 
-*2,919 markdown words (5.8 pages); 0 code words.*
+*3,839 markdown words (7.7 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
 | Cloud and Infrastructure Terminology | 1,490 |
 | Adversary and Threat-Model Terminology | 574 |
+| Reverse Engineering Acronyms and Notation | 54 |
+|     Executable formats and file structure | 241 |
+|     Processor and architecture | 93 |
+|     Windows internals | 111 |
+|     Tools and projects | 203 |
+|     Standards, law and certification | 116 |
+|     Notation that is not an acronym | 102 |
 
 ### Appendix C: Certification Mapping
 
