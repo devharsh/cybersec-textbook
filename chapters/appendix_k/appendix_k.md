@@ -69,6 +69,65 @@ The standard reference for such a course is Sikorski and Honig's *Practical Malw
 2012), and a concise scholarly overview is Cipresso and Stamp's "Software Reverse Engineering" chapter in the
 *Handbook of Information and Communication Security* (Springer, 2010).
 
+### K.1.2 Three Systems- and Network-Security Course Maps
+
+Three further course maps align this book to a twelve-week sequence for an introductory computer-security course,
+a Security+ oriented advanced network-security course, and an advanced systems-security course. Each row is one
+weekly lecture in the order a syllabus would teach it, so an instructor can assign the corresponding reading. The
+sequences are institution-neutral and pair one graded midterm, one final, and one semester-long group research
+project.
+
+Introductory Computer Security:
+
+| Weekly lecture | Book chapter(s) |
+|---|---|
+| Security overview and cryptographic tools | 1, 2 |
+| User authentication and access control | 11, 1 |
+| Denial-of-service attacks, intrusion detection, and honeypots | 3, 12 |
+| Malicious software and countermeasures | 15, 4 |
+| Software security: buffer overflows and safe coding | 9, 10 |
+| Operating-system security and human-resources security | 11, 19 |
+| Application security: OWASP Top 10, sessions, TLS, SSH | 10, 2 |
+| Browser attacks and web security principles | 10 |
+| Database security and SQL injection | 10, 19 |
+| Security development methodologies: SDL, CLASP, SAMM, BSIMM | 10, 19 |
+| IT security management and risk assessment | 5, 19 |
+| Cloud security, IoT, electronic voting, and cyber warfare | 17, 20, 18 |
+
+Advanced Network Security (CompTIA Security+ oriented):
+
+| Weekly lecture | Book chapter(s) |
+|---|---|
+| Introduction to security and access-control models | 1, 11 |
+| Threats: malware, social engineering, and application attacks | 4, 15, 10 |
+| Identifying and mitigating threats | 4, 9 |
+| Policies, network plans, risk management, and incident response | 5, 19, 14 |
+| Physical security, tailgating, and breaking into a system | 4, 11 |
+| Cryptography | 2 |
+| Denial of service, DNS attacks, and firewalls | 3, 11 |
+| Virtual private networks | 11, 2 |
+| Securing network devices and file-server security | 3, 11 |
+| Web application attacks, browsers, and wireless security | 10, 3 |
+| Data defenses: redundancy, backup, and file encryption | 5, 2, 11 |
+| Assessment and audit techniques, penetration testing, and log management | 6, 8, 12 |
+
+Advanced Systems Security:
+
+| Weekly lecture | Book chapter(s) |
+|---|---|
+| Access controls and the identity-management life cycle | 11 |
+| Security concepts and asset management | 1, 5 |
+| Documenting and operating controls; change and patch management | 19, 11 |
+| Risk management | 5 |
+| Security assessment activities | 6, 8 |
+| Monitoring systems and security analytics | 12 |
+| Cryptography and key management | 2 |
+| Network and communications security | 3, 11 |
+| Endpoint device security: HIDS, TPM, and mobile device management | 11, 15 |
+| Cloud security | 17 |
+| Data-warehouse and big-data security | 10, 17 |
+| Software-defined networks, clustering, and virtualization | 17, 11 |
+
 ## K.2 Sample Lecture Modules
 
 The three outlines below are complete single-topic modules distilled to their teaching structure. Each can be
