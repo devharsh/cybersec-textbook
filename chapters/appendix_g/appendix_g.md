@@ -11,7 +11,7 @@ Last generated: 2026-08-31.
 | Introduction | 1,559 | 0 | 3.1 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 10,534 | 361 | 21.1 |
-| Chapter 2: Cryptography | 34,101 | 3,039 | 68.2 |
+| Chapter 2: Cryptography | 34,464 | 3,039 | 68.9 |
 | Chapter 3: Networking and Network Attacks | 16,436 | 374 | 32.9 |
 | Chapter 4: Social Engineering and the Human Element | 7,476 | 203 | 15.0 |
 | Chapter 5: Risk Management | 12,541 | 469 | 25.1 |
@@ -26,7 +26,7 @@ Last generated: 2026-08-31.
 | Chapter 14: Incident Response | 9,771 | 828 | 19.5 |
 | Chapter 15: Malware Analysis | 29,945 | 423 | 59.9 |
 | Chapter 16: Capture the Flag and Competitive Security | 6,888 | 366 | 13.8 |
-| Chapter 17: Emerging Threats and Future Challenges | 15,938 | 851 | 31.9 |
+| Chapter 17: Emerging Threats and Future Challenges | 16,153 | 851 | 32.3 |
 | Chapter 18: Privacy, Law, and Information Governance | 6,765 | 387 | 13.5 |
 | Chapter 19: Security Governance, Policy, and Culture | 6,329 | 482 | 12.7 |
 | Chapter 20: Industrial Control Systems and OT Security | 3,663 | 442 | 7.3 |
@@ -40,7 +40,7 @@ Last generated: 2026-08-31.
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,105 | 0 | 4.2 |
-| **TOTAL** | **259,568** | **12,723** | **519** |
+| **TOTAL** | **260,146** | **12,723** | **520** |
 
 ## Detailed Word Count by Section
 
@@ -112,7 +112,7 @@ Last generated: 2026-08-31.
 
 ### Chapter 2: Cryptography
 
-*34,101 markdown words (68.2 pages); 3,039 code words.*
+*34,464 markdown words (68.9 pages); 3,039 code words.*
 
 | Section | Words |
 |---|---:|
@@ -159,6 +159,7 @@ Last generated: 2026-08-31.
 |     Computing Paradigms: Mainframes, Classical, DNA, and Quantum | 395 |
 |     Searchable, Deniable, and Functional Encryption | 341 |
 |     The Algebra Beneath Cryptography: Finite Fields, Abelian and Non-Abelian Groups | 470 |
+|     Quantum Cryptography: What Quantum Mechanics Offers the Defender | 271 |
 |     Anonymous Credentials and Selective Disclosure | 1,412 |
 |     The Signature Zoo: Variants Beyond Sign-and-Verify | 691 |
 |     Primitives Beyond Encryption and Signatures | 925 |
@@ -188,7 +189,7 @@ Last generated: 2026-08-31.
 | Review Questions (MCQ) | 433 |
 |     Answer Key | 106 |
 | Lab Assignment | 387 |
-| References | 1,285 |
+| References | 1,377 |
 
 ### Chapter 3: Networking and Network Attacks
 
@@ -1010,7 +1011,7 @@ Last generated: 2026-08-31.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*15,938 markdown words (31.9 pages); 851 code words.*
+*16,153 markdown words (32.3 pages); 851 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1019,7 +1020,7 @@ Last generated: 2026-08-31.
 | 17.1 Post-Quantum Cryptography | 0 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 162 |
-|     Quantum Key Distribution and the Quantum Horizon | 168 |
+|     Quantum Key Distribution and the Quantum Horizon | 383 |
 | 17.2 AI-Enabled Attacks and Defenses | 0 |
 |     Offensive AI | 151 |
 |     Defensive AI | 77 |
