@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-08-27.
+Last generated: 2026-08-31.
 
 ## Summary by Chapter
 
@@ -11,7 +11,7 @@ Last generated: 2026-08-27.
 | Introduction | 1,559 | 0 | 3.1 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 10,534 | 361 | 21.1 |
-| Chapter 2: Cryptography | 30,706 | 2,387 | 61.4 |
+| Chapter 2: Cryptography | 34,101 | 3,039 | 68.2 |
 | Chapter 3: Networking and Network Attacks | 16,436 | 374 | 32.9 |
 | Chapter 4: Social Engineering and the Human Element | 7,476 | 203 | 15.0 |
 | Chapter 5: Risk Management | 12,541 | 469 | 25.1 |
@@ -32,15 +32,15 @@ Last generated: 2026-08-27.
 | Chapter 20: Industrial Control Systems and OT Security | 3,663 | 442 | 7.3 |
 | Appendix A: Security Command Reference | 1,653 | 0 | 3.3 |
 | Appendix B: Glossary | 3,839 | 0 | 7.7 |
-| Appendix C: Certification Mapping | 1,277 | 0 | 2.6 |
+| Appendix C: Certification Mapping | 1,814 | 0 | 3.6 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,583 | 0 | 3.2 |
 | Appendix F: Companion Code and Repositories | 1,259 | 0 | 2.5 |
 | Appendix H: Capstone and Group Project Ideas | 1,930 | 0 | 3.9 |
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
-| Appendix K: Course Materials and Sample Assignments | 1,622 | 0 | 3.2 |
-| **TOTAL** | **255,153** | **12,071** | **510** |
+| Appendix K: Course Materials and Sample Assignments | 2,105 | 0 | 4.2 |
+| **TOTAL** | **259,568** | **12,723** | **519** |
 
 ## Detailed Word Count by Section
 
@@ -112,7 +112,7 @@ Last generated: 2026-08-27.
 
 ### Chapter 2: Cryptography
 
-*30,706 markdown words (61.4 pages); 2,387 code words.*
+*34,101 markdown words (68.2 pages); 3,039 code words.*
 
 | Section | Words |
 |---|---:|
@@ -158,7 +158,10 @@ Last generated: 2026-08-27.
 | 2.15 Advanced and Emerging Cryptography | 831 |
 |     Computing Paradigms: Mainframes, Classical, DNA, and Quantum | 395 |
 |     Searchable, Deniable, and Functional Encryption | 341 |
-|     The Algebra Beneath Cryptography: Finite Fields, Abelian and Non-Abelian Groups | 471 |
+|     The Algebra Beneath Cryptography: Finite Fields, Abelian and Non-Abelian Groups | 470 |
+|     Anonymous Credentials and Selective Disclosure | 1,412 |
+|     The Signature Zoo: Variants Beyond Sign-and-Verify | 691 |
+|     Primitives Beyond Encryption and Signatures | 925 |
 |     Lattice-Based Cryptography: The Hard Problems Behind Post-Quantum Schemes | 356 |
 |     The Mathematics of Lattices | 315 |
 |     Three Families by Underlying Structure: Abelian, Non-Abelian, and Lattice | 298 |
@@ -185,7 +188,7 @@ Last generated: 2026-08-27.
 | Review Questions (MCQ) | 433 |
 |     Answer Key | 106 |
 | Lab Assignment | 387 |
-| References | 917 |
+| References | 1,285 |
 
 ### Chapter 3: Networking and Network Attacks
 
@@ -1267,7 +1270,7 @@ Last generated: 2026-08-27.
 
 ### Appendix C: Certification Mapping
 
-*1,277 markdown words (2.6 pages); 0 code words.*
+*1,814 markdown words (3.6 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1276,7 +1279,10 @@ Last generated: 2026-08-27.
 | C.3 EC-Council CEH v13 - 9 Domains | 175 |
 | C.4 ISACA CISA - 5 Domains | 140 |
 | C.5 (ISC)2 CGRC / CAP - 7 Job Practice Areas (NIST RMF) | 167 |
-| C.6 Chapter-to-Certification Coverage Matrix | 378 |
+| C.6 (ISC)2 SSCP - 7 Domains | 132 |
+| C.7 (ISC)2 Certified in Cybersecurity (CC) - 5 Domains | 127 |
+| C.8 GIAC GREM (Reverse Engineering Malware) - Topic Areas | 147 |
+| C.9 Chapter-to-Certification Coverage Matrix | 408 |
 
 ### Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping
 
@@ -1382,12 +1388,13 @@ Last generated: 2026-08-27.
 
 ### Appendix K: Course Materials and Sample Assignments
 
-*1,622 markdown words (3.2 pages); 0 code words.*
+*2,105 markdown words (4.2 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
 | K.1 Source-Materials Coverage Map | 346 |
 |     K.1.1 Software Reverse Engineering: A Malware-Analysis Course Map | 312 |
+|     K.1.2 Three Systems- and Network-Security Course Maps | 483 |
 | K.2 Sample Lecture Modules | 28 |
 |     K.2.1 Social Engineering and the Human Attack Surface (pairs with Chapter 4) | 180 |
 |     K.2.2 Ethical Hacking Foundations (pairs with Chapters 1, 5, and 6) | 131 |
