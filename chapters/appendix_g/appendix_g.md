@@ -11,7 +11,7 @@ Last generated: 2026-08-31.
 | Introduction | 1,559 | 0 | 3.1 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 10,534 | 361 | 21.1 |
-| Chapter 2: Cryptography | 34,464 | 3,039 | 68.9 |
+| Chapter 2: Cryptography | 34,580 | 3,039 | 69.2 |
 | Chapter 3: Networking and Network Attacks | 16,436 | 374 | 32.9 |
 | Chapter 4: Social Engineering and the Human Element | 7,476 | 203 | 15.0 |
 | Chapter 5: Risk Management | 12,541 | 469 | 25.1 |
@@ -40,7 +40,7 @@ Last generated: 2026-08-31.
 | Appendix I: Protocol Security Reference | 3,230 | 0 | 6.5 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,105 | 0 | 4.2 |
-| **TOTAL** | **260,146** | **12,723** | **520** |
+| **TOTAL** | **260,262** | **12,723** | **521** |
 
 ## Detailed Word Count by Section
 
@@ -112,7 +112,7 @@ Last generated: 2026-08-31.
 
 ### Chapter 2: Cryptography
 
-*34,464 markdown words (68.9 pages); 3,039 code words.*
+*34,580 markdown words (69.2 pages); 3,039 code words.*
 
 | Section | Words |
 |---|---:|
@@ -159,13 +159,14 @@ Last generated: 2026-08-31.
 |     Computing Paradigms: Mainframes, Classical, DNA, and Quantum | 395 |
 |     Searchable, Deniable, and Functional Encryption | 341 |
 |     The Algebra Beneath Cryptography: Finite Fields, Abelian and Non-Abelian Groups | 470 |
-|     Quantum Cryptography: What Quantum Mechanics Offers the Defender | 271 |
-|     Anonymous Credentials and Selective Disclosure | 1,412 |
-|     The Signature Zoo: Variants Beyond Sign-and-Verify | 691 |
-|     Primitives Beyond Encryption and Signatures | 925 |
+|     Quantum Cryptography: What Quantum Mechanics Offers the Defender | 272 |
 |     Lattice-Based Cryptography: The Hard Problems Behind Post-Quantum Schemes | 356 |
 |     The Mathematics of Lattices | 315 |
 |     Three Families by Underlying Structure: Abelian, Non-Abelian, and Lattice | 298 |
+| 2.15a Privacy-Preserving Cryptography and the Wider Toolbox | 116 |
+|     Anonymous Credentials and Selective Disclosure | 1,412 |
+|     The Signature Zoo: Variants Beyond Sign-and-Verify | 691 |
+|     Primitives Beyond Encryption and Signatures | 924 |
 | 2.16 Key Management | 530 |
 |     Key Management Services and Key Escrow | 347 |
 | 2.17 A Taxonomy of Cryptographic Attacks | 348 |
