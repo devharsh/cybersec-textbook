@@ -19,3 +19,5 @@ assets/mermaid/
 
 # Planning-only roadmap (not for publication)
 ROADMAP_v1.2.md
+*.bak*
+_new_cells_staging.json
