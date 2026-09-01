@@ -115,7 +115,63 @@ These map to Chapters 6, 18, and 19, the methodology, legal, and governance dime
   technology's effects on privacy, trust, equity, and policy (the cybersecurity-and-society perspective).
   (Ch. 18, Ch. 19)
 
-## H.7 GitHub Submission Standards
+## H.7 Track 6: Encoding, Provenance, and Data Integrity
+
+These start from a file format or a wire format rather than from a system or a network. They map to
+Chapters 2, 13, 15, and 18. Each is scoped so a semester produces a measurement rather than an opinion, and
+each has a genuinely open question at its center rather than a solved one.
+
+- **Privacy leakage when the same image crosses different platforms**: build a controlled corpus of images
+  carrying known Exif, GPS, and maker-note fields, send each through several messaging and social platforms,
+  and recover what survived. Measure three layers separately: which metadata fields are stripped, kept, or
+  newly added; whether the recompression itself fingerprints the platform, since quantization tables and
+  chroma subsampling have been used for source attribution; and whether any platform-assigned identifier
+  persists. The honest gap is that the empirical per-platform studies date from the 2011 to 2019 JPEG era, so
+  a current measurement is a contribution rather than a repetition. Extend it by asking whether C2PA Content
+  Credentials survive the same round trip, and whether a manifest that does survive has quietly become a
+  cross-context tracking identifier. (Ch. 13, Ch. 18)
+- **Allergen-aware menu presentation, and whether the data underneath can be trusted**: the finding comes
+  before the code. In the United States, FALCPA labels packaged food and the FASTER Act recognizes sesame as
+  the ninth major allergen, but the law largely excludes restaurant food, so no federal rule requires a menu
+  to declare allergens at all. In the European Union, Regulation (EU) No 1169/2011 does require disclosure for
+  the fourteen allergens in Annex II, including for non-prepacked food under Article 44, while leaving the
+  presentation to member states. On top of that asymmetry sits a data gap: schema.org models menus and menu
+  items but has no allergen property, pending or otherwise. Design one, implement a filter that renders a menu
+  for a given allergen profile, then audit published restaurant or delivery-app allergen data against the dish
+  descriptions and report the disagreement rate, counting a missing field and a wrong field as different
+  failures. Any such tool is an aid and never a substitute for asking the kitchen, and the paper must say so.
+  (Ch. 18, Ch. 19)
+- **The electronic authentication function inside a QR code**: a QR code is a container, not a security
+  mechanism. Reverse two or three deployed schemes end to end and state precisely what each authenticates. The
+  EU Digital COVID Certificate is the cleanest teaching case because its specification pins every layer: a CBOR
+  Web Token (RFC 8392) signed with COSE (RFC 9052) using ES256, zlib compressed, Base45 encoded, prefixed
+  `HC1:`. Compare it against the Swiss QR-bill, an EMVCo payment QR, and a W3C Verifiable Credential. The open
+  problem is worth naming in the abstract: every deployed scheme authenticates the payload and none
+  authenticates placement, so a sticker pasted over a legitimate code defeats all of them, which is the
+  mechanism behind quishing. A strong project also asks whether a post-quantum signature fits at all, given an
+  ML-DSA-44 signature of 2420 bytes against a maximum QR payload well under 3 kB. (Ch. 2, Ch. 4, Ch. 10)
+- **Reed-Solomon error correction, and what its slack lets you get away with**: implement encoding and syndrome
+  decoding, then Berlekamp-Massey, and read Guruswami and Sudan to see where the classical half-distance bound
+  stops being the limit. Then turn to QR codes, where ISO/IEC 18004 defines levels L, M, Q, and H recoverable
+  at roughly 7, 15, 25, and 30 percent of codewords. The research angle is the slack itself: published work has
+  shown a single symbol can be built to yield two different readable messages, which makes error-correction
+  capacity both an attack surface and a covert channel. Measure the hidden capacity each level really affords,
+  then attack one of three unanswered questions: there is no published notion of canonical decoding for a QR
+  symbol, no detector for whether a symbol admits more than one valid reading, and no measurement of how far
+  deployed scanners diverge from the reference decoder in Annex B. (Ch. 2, Ch. 15)
+
+Anchor references for this track, all verified against primary sources: Reed and Solomon, *Journal of the
+Society for Industrial and Applied Mathematics* 8(2):300-304, 1960 (doi:10.1137/0108018); Guruswami and Sudan,
+*IEEE Transactions on Information Theory* 45(6):1757-1767, 1999 (doi:10.1109/18.782097); Tkachenko and
+colleagues, *IEEE Transactions on Information Forensics and Security* 11(3):571-583, 2016
+(doi:10.1109/TIFS.2015.2506546); Caldelli, Becarelli, and Amerini, *IEEE Transactions on Information Forensics
+and Security* 12(6):1299-1308, 2017 (doi:10.1109/TIFS.2017.2656842); Castiglione, Cattaneo, and De Santis,
+INCoS 2011 (doi:10.1109/INCoS.2011.17); James, Welham, and Rose, *Food Control* 162:110462, 2024
+(doi:10.1016/j.foodcont.2024.110462); Sharevski and colleagues, USEC 2024 (doi:10.14722/usec.2024.23050);
+ISO/IEC 18004:2024; Regulation (EU) No 1169/2011; FALCPA (Public Law 108-282) and the FASTER Act (Public Law
+117-11); RFC 8392 and RFC 9052; FIPS 204; and the C2PA Technical Specification.
+
+## H.8 GitHub Submission Standards
 
 A professional repository should contain: a `/src` directory with modular, commented source code and proper
 error handling; a `/docs` directory with the report, user manual, and DOI link; a `/tests` directory with unit
@@ -123,14 +179,14 @@ and integration tests and sample logs; a `README` with setup instructions, usage
 considerations; a dependencies/`requirements` file; and a `.gitignore` excluding build artifacts and sensitive
 data. Use version control with meaningful commits from every team member.
 
-## H.8 Approved Preprint Servers for DOI Generation
+## H.9 Approved Preprint Servers for DOI Generation
 
 To obtain a citable DOI for the preprint deliverable, teams may use, for example: **Zenodo**
 (https://zenodo.org), **Preprints.org** (https://www.preprints.org), **ResearchGate**
 (https://www.researchgate.net), **arXiv** (https://arxiv.org), and **TechRxiv** (https://www.techrxiv.org).
 Always confirm a server's scope and licensing before submitting.
 
-## H.9 Where to Publish Each Type of Research Output (Free Platforms)
+## H.10 Where to Publish Each Type of Research Output (Free Platforms)
 
 When you want to share your research with the world for free, the trick is matching each type of output to
 the platform built for it. Posting a dataset to a preprint server, or a manuscript to a code host, only
@@ -190,7 +246,7 @@ institutional work to your university's DSpace archive. Putting each piece where
 both discoverability and proper credit. This guide is adapted from the companion tutorial at
 https://com.puter.tips/2026/06/where-to-publish-your-research-for-free.html.
 
-## H.10 Example Completed Student Projects (Spring 2026)
+## H.11 Example Completed Student Projects (Spring 2026)
 
 The following capstone projects were completed by students and published with DOIs, and they show the level and
 form of a finished deliverable. Each maps to one of the tracks above.

@@ -1334,10 +1334,11 @@ Last generated: 2026-08-31.
 | H.4 Track 3: Specialized Technical Tools and Ethical Hacking | 152 |
 | H.5 Track 4: Defensive Security, Detection, and Digital Forensics | 88 |
 | H.6 Track 5: Penetration Testing, Governance, Privacy, and Society | 193 |
-| H.7 GitHub Submission Standards | 71 |
-| H.8 Approved Preprint Servers for DOI Generation | 34 |
-| H.9 Where to Publish Each Type of Research Output (Free Platforms) | 671 |
-| H.10 Example Completed Student Projects (Spring 2026) | 195 |
+| H.7 Track 6: Encoding, Provenance, and Data Integrity | 796 |
+| H.8 GitHub Submission Standards | 71 |
+| H.9 Approved Preprint Servers for DOI Generation | 34 |
+| H.10 Where to Publish Each Type of Research Output (Free Platforms) | 671 |
+| H.11 Example Completed Student Projects (Spring 2026) | 195 |
 
 ### Appendix I: Protocol Security Reference
 
