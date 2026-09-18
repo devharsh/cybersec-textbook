@@ -1,0 +1,49 @@
+/*
+ * Hiding rules for the primary sidebar toggle, paired with sidebar-toggle-fix.js.
+ *
+ * The theme ships an equivalent rule keyed on .pst-sidebar-hidden, but it does not take
+ * effect in the built site: the element matches the selector and the media query matches,
+ * yet the computed visibility stays "visible". Rather than fight that, the toggle sets a
+ * class on <html> and these rules do the hiding.
+ *
+ * display: none, not width: 0. The sidebar's parent is a flex container and the sidebar
+ * takes its size from flex-basis: 20%, so setting width has no effect at all; that was the
+ * first attempt and it left a 282px gap with an invisible sidebar in it. Removing the
+ * element from flow is what lets the article reclaim the space, which is the point of the
+ * control. Measured on the live site: the article's left edge moves from 822px to 540px.
+ *
+ * !important is used deliberately and only here, because the theme sets this element's
+ * layout from several rules of its own and this has to win over all of them without our
+ * having to track their specificity across theme upgrades.
+ */
+
+@media (min-width: 992px) {
+  html.sbt-primary-sidebar-hidden .bd-sidebar-primary {
+    display: none !important;
+  }
+
+  /* Some theme versions cap the article width to leave room for the sidebar. With the
+     sidebar gone there is nothing to leave room for. */
+  html.sbt-primary-sidebar-hidden .bd-main,
+  html.sbt-primary-sidebar-hidden .bd-article-container {
+    max-width: none !important;
+  }
+}
+
+/* The button changes the layout, so it should look and behave like a control. The theme
+   renders it as a bare icon with no pointer and no visible focus ring. */
+.primary-toggle {
+  cursor: pointer;
+}
+
+.primary-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* A collapsed sidebar must never reach print, where the toggle cannot be undone. */
+@media print {
+  html.sbt-primary-sidebar-hidden .bd-sidebar-primary {
+    display: none !important;
+  }
+}
