@@ -11,25 +11,25 @@ Last generated: 2026-09-18.
 | Introduction | 1,566 | 0 | 3.1 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 10,537 | 403 | 21.1 |
-| Chapter 2: Cryptography | 34,959 | 3,066 | 69.9 |
+| Chapter 2: Cryptography | 34,965 | 3,066 | 69.9 |
 | Chapter 3: Networking and Network Attacks | 16,512 | 374 | 33.0 |
 | Chapter 4: Social Engineering and the Human Element | 7,476 | 203 | 15.0 |
-| Chapter 5: Risk Management | 12,572 | 469 | 25.1 |
+| Chapter 5: Risk Management | 12,645 | 469 | 25.3 |
 | Chapter 6: Penetration Testing Methodology | 9,787 | 265 | 19.6 |
-| Chapter 7: Reconnaissance and Open-Source Intelligence | 7,237 | 464 | 14.5 |
+| Chapter 7: Reconnaissance and Open-Source Intelligence | 7,605 | 464 | 15.2 |
 | Chapter 8: Scanning and Enumeration | 7,231 | 816 | 14.5 |
 | Chapter 9: Exploitation and Post-Exploitation | 18,228 | 587 | 36.5 |
-| Chapter 10: Web Application Security | 8,451 | 372 | 16.9 |
-| Chapter 11: Network Defense and Hardening | 14,393 | 258 | 28.8 |
+| Chapter 10: Web Application Security | 8,526 | 372 | 17.1 |
+| Chapter 11: Network Defense and Hardening | 14,884 | 258 | 29.8 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 8,913 | 1,114 | 17.8 |
 | Chapter 13: Digital Forensics | 10,462 | 875 | 20.9 |
 | Chapter 14: Incident Response | 9,783 | 828 | 19.6 |
 | Chapter 15: Malware Analysis | 34,080 | 423 | 68.2 |
-| Chapter 16: Capture the Flag and Competitive Security | 6,915 | 366 | 13.8 |
-| Chapter 17: Emerging Threats and Future Challenges | 16,299 | 878 | 32.6 |
+| Chapter 16: Capture the Flag and Competitive Security | 7,574 | 366 | 15.1 |
+| Chapter 17: Emerging Threats and Future Challenges | 16,778 | 878 | 33.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
-| Chapter 19: Security Governance, Policy, and Culture | 13,558 | 482 | 27.1 |
-| Chapter 20: Industrial Control Systems and OT Security | 13,470 | 442 | 26.9 |
+| Chapter 19: Security Governance, Policy, and Culture | 13,598 | 482 | 27.2 |
+| Chapter 20: Industrial Control Systems and OT Security | 12,929 | 442 | 25.9 |
 | Appendix A: Security Command Reference | 1,681 | 0 | 3.4 |
 | Appendix B: Glossary | 5,207 | 0 | 10.4 |
 | Appendix C: Certification Mapping | 1,861 | 0 | 3.7 |
@@ -40,7 +40,7 @@ Last generated: 2026-09-18.
 | Appendix I: Protocol Security Reference | 4,063 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,170 | 0 | 4.3 |
-| **TOTAL** | **295,078** | **13,072** | **590** |
+| **TOTAL** | **296,728** | **13,072** | **593** |
 
 ## Detailed Word Count by Section
 
@@ -112,12 +112,12 @@ Last generated: 2026-09-18.
 
 ### Chapter 2: Cryptography
 
-*34,959 markdown words (69.9 pages); 3,066 code words.*
+*34,965 markdown words (69.9 pages); 3,066 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 185 |
-| Key Terms | 728 |
+| Key Terms | 732 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
 |     Encoding versus Encryption versus Hashing | 477 |
 | 2.2 Classical Ciphers and Why They Fall | 604 |
@@ -159,7 +159,7 @@ Last generated: 2026-09-18.
 |     Computing Paradigms: Mainframes, Classical, DNA, and Quantum | 395 |
 |     Searchable, Deniable, and Functional Encryption | 341 |
 |     The Algebra Beneath Cryptography: Finite Fields, Abelian and Non-Abelian Groups | 470 |
-|     Quantum Cryptography: What Quantum Mechanics Offers the Defender | 275 |
+|     Quantum Cryptography: What Quantum Mechanics Offers the Defender | 277 |
 |     Lattice-Based Cryptography: The Hard Problems Behind Post-Quantum Schemes | 356 |
 |     The Mathematics of Lattices | 315 |
 |     Three Families by Underlying Structure: Abelian, Non-Abelian, and Lattice | 298 |
@@ -279,7 +279,7 @@ Last generated: 2026-09-18.
 
 ### Chapter 5: Risk Management
 
-*12,572 markdown words (25.1 pages); 469 code words.*
+*12,645 markdown words (25.3 pages); 469 code words.*
 
 | Section | Words |
 |---|---:|
@@ -297,7 +297,7 @@ Last generated: 2026-09-18.
 | 5.8 Threat Modeling | 782 |
 | 5.9 Risk Frameworks and Standards | 329 |
 |     The NIST RMF Steps in Detail | 170 |
-|     CSF Tiers and Profiles, and ISO 27001 | 423 |
+|     CSF Tiers and Profiles, and ISO/IEC 27001:2022 | 423 |
 | 5.10 The Security Program: Policies, Standards, and Controls | 306 |
 |     Control Catalogs and Foundational Control Principles | 344 |
 | 5.11 Business Continuity and Disaster Recovery | 328 |
@@ -315,7 +315,7 @@ Last generated: 2026-09-18.
 | 5.22 Comparing FAIR, NIST RMF, and ISO/IEC 27005 | 244 |
 | Chapter Summary | 242 |
 | Why This Matters | 164 |
-| News in Focus: Repeat Breaches at Neiman Marcus | 467 |
+| News in Focus: Repeat Breaches at Neiman Marcus | 540 |
 | Review Questions (MCQ) | 364 |
 |     Answer Key | 30 |
 | Lab Assignment | 210 |
@@ -357,7 +357,7 @@ Last generated: 2026-09-18.
 
 ### Chapter 7: Reconnaissance and Open-Source Intelligence
 
-*7,237 markdown words (14.5 pages); 464 code words.*
+*7,605 markdown words (15.2 pages); 464 code words.*
 
 | Section | Words |
 |---|---:|
@@ -377,14 +377,15 @@ Last generated: 2026-09-18.
 | 7.12 Defending Against Reconnaissance | 485 |
 | 7.13 AI-Assisted Reconnaissance and Modern WHOIS | 232 |
 |     Lab: Reading Exposure Data the Way Shodan and Censys Present It | 72 |
-| Chapter Summary | 206 |
+| 7.14 Network Analysis Tools, and Reading a Tool's License | 279 |
+| Chapter Summary | 232 |
 | Why This Matters | 132 |
 | News in Focus: Mass Scraping of Public Profiles (2021) | 215 |
 |     Finding Exposed Devices with Shodan, and Defending Them | 448 |
 | Review Questions (MCQ) | 372 |
 |     Answer Key | 30 |
 | Lab Assignment | 185 |
-| References | 126 |
+| References | 189 |
 
 ### Chapter 8: Scanning and Enumeration
 
@@ -533,7 +534,7 @@ Last generated: 2026-09-18.
 
 ### Chapter 10: Web Application Security
 
-*8,451 markdown words (16.9 pages); 372 code words.*
+*8,526 markdown words (17.1 pages); 372 code words.*
 
 | Section | Words |
 |---|---:|
@@ -558,8 +559,8 @@ Last generated: 2026-09-18.
 |     Authentication, Sessions, and the Insufficient-Session-Expiration Flaw | 145 |
 | 10.8 Security Misconfigurations | 51 |
 |     Security Headers | 69 |
-| 10.9 The Web-Application Testing Toolkit | 279 |
-| 10.10 Application Security Testing: Static, Dynamic, Interactive, and DevSecOps | 434 |
+| 10.9 The Web-Application Testing Toolkit | 355 |
+| 10.10 Application Security Testing: Static, Dynamic, Interactive, and DevSecOps | 433 |
 | 10.11 Web Application Firewalls and Their Limits | 40 |
 |     WAF Bypass Techniques | 76 |
 | 10.12 The OWASP API Security Top 10 | 332 |
@@ -581,7 +582,7 @@ Last generated: 2026-09-18.
 
 ### Chapter 11: Network Defense and Hardening
 
-*14,393 markdown words (28.8 pages); 258 code words.*
+*14,884 markdown words (29.8 pages); 258 code words.*
 
 | Section | Words |
 |---|---:|
@@ -646,12 +647,12 @@ Last generated: 2026-09-18.
 |     Step one: inventory, grouped by who owns the risk | 97 |
 |     Step two: addresses and VLANs | 141 |
 |     Step three: the decision count, which is the real cost | 103 |
-|     Step four: the matrix, written as permitted flows only | 292 |
+|     Step four: the matrix, written as permitted flows only | 587 |
 |     Step five: micro-segmentation, and why it is a different kind of problem | 115 |
 |     Exercises | 90 |
 |     Answer Key | 156 |
 | 11.24 The 802.1Q Tag, and the Two Ways Out of a VLAN | 59 |
-|     What a VLAN is, on the wire | 324 |
+|     What a VLAN is, on the wire | 520 |
 |     The native VLAN, which is the exception that the attacks live in | 76 |
 |     Way out one: become a trunk | 101 |
 |     Way out two: two tags, one strip | 216 |
@@ -1020,7 +1021,7 @@ Last generated: 2026-09-18.
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*6,915 markdown words (13.8 pages); 366 code words.*
+*7,574 markdown words (15.1 pages); 366 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1039,33 +1040,34 @@ Last generated: 2026-09-18.
 |     Structure of a Season | 146 |
 |     Challenge Categories | 78 |
 |     Scoring and the NICE Framework | 175 |
-|     How to Prepare and Compete Well | 176 |
+|     How to Prepare and Compete Well | 175 |
 | 16.4 CTF Platforms for Learning | 84 |
 | 16.5 CTF Skills and Professional Mapping | 103 |
 | 16.6 Formats: Jeopardy, Attack-Defense, and King-of-the-Hill | 263 |
 | 16.7 Why CTFs Build Real Skill | 280 |
 | 16.8 Hosting a CTF and Competition Etiquette | 294 |
 | 16.9 Notable Competitions: picoCTF, CyberPatriot, and the Collegiate Cyber Defense Competition | 230 |
-| 16.10 A CTF Toolkit by Category | 496 |
+| 16.10 A CTF Toolkit by Category | 495 |
 | 16.11 Free Platforms and Cyber Ranges for Teaching | 367 |
 | 16.12 The Reverse Engineering Category, End to End | 332 |
 |     Eight Archetypes | 260 |
 |     The Solve Loop | 324 |
 |     A Worked Example | 414 |
 |     The Write-Up | 95 |
-|     Tooling, and One Constraint Worth Knowing | 149 |
+|     Tooling, and One Constraint Worth Knowing | 157 |
 |     Exercises | 201 |
 |     Answer Key | 348 |
-| Chapter Summary | 87 |
+| 16.13 The Teaching and Research Toolkit: Cost and License | 562 |
+| Chapter Summary | 120 |
 | Why This Matters | 62 |
 | News in Focus: Government-Sponsored CTF Competitions | 58 |
 | Review Questions (MCQ) | 314 |
 | Lab Assignment | 164 |
-| References | 97 |
+| References | 155 |
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*16,299 markdown words (32.6 pages); 878 code words.*
+*16,778 markdown words (33.6 pages); 878 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1078,7 +1080,7 @@ Last generated: 2026-09-18.
 | 17.2 AI-Enabled Attacks and Defenses | 0 |
 |     Offensive AI | 161 |
 |     Defensive AI | 77 |
-|     The OWASP Top 10 for LLM Applications (2025) | 378 |
+|     The OWASP Top 10 for LLM Applications (2026) | 392 |
 |     Privacy in LLM Chat and AI Agents | 372 |
 | 17.3 Pattern Matching, Machine Learning, and Deep Learning in Security | 63 |
 |     Pattern Matching: Rules and Signatures | 123 |
@@ -1127,7 +1129,8 @@ Last generated: 2026-09-18.
 | 17.14 Sandbox and Virtual-Machine Escape, and What "AI Escaped the Sandbox" Really Means | 1,139 |
 |     Exercises | 92 |
 |     Answer Key | 178 |
-| Chapter Summary | 106 |
+| 17.15 A Map of Open Research Problems | 451 |
+| Chapter Summary | 120 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
 | Review Questions (MCQ) | 342 |
@@ -1184,7 +1187,7 @@ Last generated: 2026-09-18.
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*13,558 markdown words (27.1 pages); 482 code words.*
+*13,598 markdown words (27.2 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1195,7 +1198,7 @@ Last generated: 2026-09-18.
 | 19.2 The CISO Role | 0 |
 |     Strategic Responsibilities | 44 |
 |     Organizational Models | 89 |
-|     Reporting Lines and Independence | 62 |
+|     Reporting Lines and Independence | 102 |
 | 19.3 The Policy Hierarchy | 0 |
 |     Policy | 92 |
 |     Standard | 47 |
@@ -1271,7 +1274,7 @@ Last generated: 2026-09-18.
 
 ### Chapter 20: Industrial Control Systems and OT Security
 
-*13,470 markdown words (26.9 pages); 442 code words.*
+*12,929 markdown words (25.9 pages); 442 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1282,25 +1285,22 @@ Last generated: 2026-09-18.
 | 20.2 ICS Components | 0 |
 |     Programmable Logic Controllers | 72 |
 |     SCADA Systems | 53 |
-|     Human-Machine Interfaces | 61 |
-|     ICS Components and Protocols in Depth | 168 |
+|     Human-Machine Interfaces | 60 |
 | 20.3 The Purdue Model and Network Segmentation | 102 |
 |     The Industrial DMZ | 57 |
 |     Air Gaps and Their Limitations | 66 |
-|     The Purdue Model, IEC 62443, and OT Defense in Depth | 372 |
 | 20.4 OT-Specific Security Challenges | 0 |
 |     Legacy Equipment and Long Lifecycles | 69 |
 |     Availability Requirements | 51 |
 |     Protocol Insecurity | 65 |
 | 20.5 ICS Malware Case Studies | 0 |
 |     Stuxnet (2010) | 69 |
-|     Industroyer/CRASHOVERRIDE (2016) | 89 |
+|     Industroyer/CRASHOVERRIDE (2016) | 93 |
 |     TRITON/TRISIS (2017) | 56 |
-|     ICS Malware: Additional Case Studies | 192 |
 | 20.6 IEC 62443 and NIST SP 800-82 | 0 |
 |     IEC 62443 | 49 |
 |     NIST SP 800-82 | 41 |
-| 20.7 OT Defense-in-Depth | 176 |
+| 20.7 OT Defense-in-Depth | 350 |
 | 20.8 OT Incident Response, Safety, and Resilience | 557 |
 | 20.9 Why OT Networks Stay Flat | 97 |
 |     Four reasons the flatness is load bearing | 307 |
@@ -1330,7 +1330,7 @@ Last generated: 2026-09-18.
 |     What was added most recently | 128 |
 |     Exercises | 94 |
 |     Answer Key | 135 |
-| 20.14 The Incidents That Changed Practice | 1,179 |
+| 20.14 The Incidents That Changed Practice | 1,193 |
 | 20.15 Why Active Scanning Is Dangerous, and What Passive Monitoring Buys | 45 |
 |     The mechanism of harm | 363 |
 |     What passive monitoring sees, and what it misses | 237 |
@@ -1376,7 +1376,7 @@ Last generated: 2026-09-18.
 |     Zeek (network security monitoring -- Chapters 12, 17) | 54 |
 |     pfSense (firewall / router -- Chapters 11, 17) | 103 |
 | OWASP Tools and Projects | 43 |
-|     OWASP ZAP (Zed Attack Proxy) (web app testing -- Chapter 10) | 74 |
+|     ZAP (Zed Attack Proxy) (web app testing -- Chapter 10) | 74 |
 |     OWASP WebGoat (deliberately vulnerable app -- Chapters 6, 10) | 43 |
 |     OWASP Juice Shop (deliberately vulnerable app -- Chapter 10) | 27 |
 |     OWASP Amass (attack-surface discovery -- Chapter 7) | 33 |

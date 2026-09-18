@@ -77,6 +77,18 @@ def is_mixed_acronym(tok):
     return (len(tok) <= 6 and caps >= 2) or (len(tok) <= 8 and caps >= 3)
 
 
+def is_acronym_shaped(tok):
+    """True if the token looks like an acronym in its own right, all-caps or mixed.
+
+    Used to tell a hyphenated proper name apart from an acronym glued to an ordinary word:
+    the DSA in FN-DSA is acronym-shaped, the injection in SQL-injection is not.
+    """
+    core = tok.strip("'").rstrip("s") if tok[-1:] == "s" else tok.strip("'")
+    if len(core) < 2:
+        return False
+    return (core.isupper() and any(c.isalpha() for c in core)) or is_mixed_acronym(core)
+
+
 def singular(tok):
     """The singular of a plural acronym, or the token unchanged.
 
@@ -821,11 +833,35 @@ def occurrences(tokens, acr):
     A plural has to count, or the first use is missed: chapter 1 writes "Constrained Data Items
     (CDIs)" and then uses CDI on its own later, and a scan that only looked for CDI reported the
     later, unexpanded use as the first one and asked for an expansion the chapter already gives.
+
+    But a fragment of a hyphenated proper name is not a use of that acronym. Chapter 17 names the
+    NIST signature standard FN-DSA, and FN is in the table as "false negative", so the scan asked
+    the chapter to expand an acronym it never uses. The rule below: if EVERY appearance is as a
+    hyphen-joined part of a compound whose neighbor is itself acronym-shaped, the compound is the
+    term and the fragment is not. One standalone appearance anywhere puts every occurrence back in
+    scope, so this cannot hide a real first use.
+
+    Hyphens only, never slashes. A slash pairs two terms that each stand alone: IDS/IPS is a use of
+    both IDS and IPS, and treating it as one name dropped IDS out of the glossary's defined set and
+    broke two appendices. A hyphen inside an all-caps compound builds a single name instead.
     """
+    found, standalone = [], False
     for i, t in enumerate(tokens):
-        parts = [singular(debase(p)) for p in re.split(r"[-/]", t)]
-        if singular(debase(t)) == acr or acr in parts:
-            yield i
+        pieces = re.split(r"[-/]", t)
+        parts = [singular(debase(p)) for p in pieces]
+        if singular(debase(t)) == acr:
+            found.append(i)
+            standalone = True
+        elif acr in parts:
+            found.append(i)
+            hyphen_only = "/" not in t
+            neighbors = [p for p, whole in zip(pieces, parts) if whole != acr]
+            if not (hyphen_only and any(is_acronym_shaped(p) for p in neighbors)):
+                standalone = True
+    if found and not standalone:
+        return
+    for i in found:
+        yield i
 
 
 def expanded_anywhere(tokens, acr):
