@@ -15,18 +15,18 @@ check: every topic in a conventional sequence is treated somewhere in the text.
 
 | Lecture topic | Book chapter(s) |
 |---|---|
-| Introduction to ethical hacking; penetration-testing methodology; rules of engagement; PTES and NIST testing | 6 |
+| Introduction to ethical hacking; penetration-testing methodology; rules of engagement; the Penetration Testing Execution Standard (PTES) and NIST testing | 6 |
 | Professional ethics; the legal system; proper and responsible disclosure | 1, 6, 18 |
 | Cryptography: classical ciphers, symmetric and public-key, hashing, signatures, HTTPS and TLS | 2 |
 | The OSI model, ports, ARP, DHCP, the TCP handshake; sniffing, Wireshark, session hijacking | 3 |
 | Reconnaissance and intelligence gathering; OSINT; Google dorking; log and SIEM review | 7 |
-| Port scanning and network mapping; enumeration; OS fingerprinting; vulnerability scanning (Nessus, NSE) | 8 |
+| Port scanning and network mapping; enumeration; OS fingerprinting; vulnerability scanning (Nessus, and the Nmap Scripting Engine or Nessus, NSE) | 8 |
 | Exploitation, Kali and Metasploit; Linux and Windows exploitation; shellcode; passive analysis and reversing | 9, 15 |
-| Password cracking; Windows security (SAM, SID/RID, LM/NTLM, Active Directory, LDAP, NetBIOS, SMB); rootkits | 9, 15 |
+| Password cracking; Windows security (SAM, the security identifier (SID) and relative identifier (RID), LM/NTLM, Active Directory, LDAP, NetBIOS, SMB); rootkits | 9, 15 |
 | Programming survival skills: C, assembly, gdb, Python for security | 9, 15 |
 | Web application attacks: the OWASP Top 10, SQL injection, XSS, Nikto, session flaws | 10 |
-| Mobile, wireless, and IoT attacks (WEP/WPA/WPA2/WPA3, evil twin, deauthentication) | 3, 17, 20 |
-| Malware: viruses, worms, trojans, RATs; antivirus and antimalware; detection methods | 12, 15 |
+| Mobile, wireless, and IoT attacks (wired equivalent privacy or WEP, WPA/WPA2/WPA3, evil twin, deauthentication) | 3, 17, 20 |
+| Malware: viruses, worms, trojans, remote access trojans (RATs); antivirus and antimalware; detection methods | 12, 15 |
 | Firewalls and their types; intrusion detection and prevention; honeypots and deception | 11, 12 |
 | Physical security and social engineering | 4, 11, 20 |
 | Incident response: before, during, and after the attack; "attacks are inevitable" | 14 |
@@ -90,7 +90,7 @@ Introductory Computer Security:
 | Application security: OWASP Top 10, sessions, TLS, SSH | 10, 2 |
 | Browser attacks and web security principles | 10 |
 | Database security and SQL injection | 10, 19 |
-| Security development methodologies: SDL, CLASP, SAMM, BSIMM | 10, 19 |
+| Security development methodologies: the Security Development Lifecycle (SDL), the Comprehensive, Lightweight Application Security Process (CLASP), the Software Assurance Maturity Model (SAMM), and the Building Security In Maturity Model (BSIMM) | 10, 19 |
 | IT security management and risk assessment | 5, 19 |
 | Cloud security, IoT, electronic voting, and cyber warfare | 17, 20, 18 |
 
@@ -123,7 +123,7 @@ Advanced Systems Security:
 | Monitoring systems and security analytics | 12 |
 | Cryptography and key management | 2 |
 | Network and communications security | 3, 11 |
-| Endpoint device security: HIDS, TPM, and mobile device management | 11, 15 |
+| Endpoint device security: host-based intrusion detection systems (HIDS), TPM, and mobile device management | 11, 15 |
 | Cloud security | 17 |
 | Data-warehouse and big-data security | 10, 17 |
 | Software-defined networks, clustering, and virtualization | 17, 11 |
@@ -177,7 +177,7 @@ A module on the security-monitoring stack and where each component fits.
    opportunity at each, connecting to MITRE ATT&CK (Section 12).
 4. IDS versus IPS. Detection versus prevention, and passive (out-of-band) versus inline deployment and its
    tradeoffs.
-5. Sensor placement. Network-based (NIDPS) versus host-based (HIDPS) sensors, and centralized versus distributed
+5. Sensor placement. Network-based (NIDPS, a network-based intrusion detection and prevention system) versus host-based intrusion detection and prevention system (HIDPS) sensors, and centralized versus distributed
    control strategies.
 6. Detection methods. Signature-based, anomaly-based, stateful-protocol, and log-file analysis, with their
    respective strengths and blind spots, plus trap-and-trace and deception (honeypots).

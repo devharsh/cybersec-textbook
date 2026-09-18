@@ -1,0 +1,2815 @@
+{
+  "generated": "2026-09-18T17:40:38.582291+00:00",
+  "root": "/sessions/hopeful-intelligent-archimedes/mnt/Downloads/cybersec-book",
+  "total_urls": 178,
+  "total_occurrences": 204,
+  "summary": {
+    "BROKEN": 4,
+    "EXAMPLE": 10,
+    "OK": 132,
+    "REDIRECT": 16,
+    "UNVERIFIABLE": 16
+  },
+  "results": [
+    {
+      "url": "http://10.0.0.5",
+      "status": null,
+      "final_url": null,
+      "classification": "EXAMPLE",
+      "method": null,
+      "note": "placeholder host used to illustrate syntax, not a real link",
+      "occurrences": [
+        {
+          "file": "chapters/08_scanning/chapter08.ipynb",
+          "location": 24,
+          "context": "code"
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:8080/WebGoat",
+      "status": null,
+      "final_url": null,
+      "classification": "EXAMPLE",
+      "method": null,
+      "note": "placeholder host used to illustrate syntax, not a real link",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_a/appendix_a.ipynb",
+          "location": 2,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "http://169.254.169.254/",
+      "status": null,
+      "final_url": null,
+      "classification": "EXAMPLE",
+      "method": null,
+      "note": "placeholder host used to illustrate syntax, not a real link",
+      "occurrences": [
+        {
+          "file": "chapters/10_web_security/chapter10.ipynb",
+          "location": 7,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "http://evil.example/c2",
+      "status": null,
+      "final_url": null,
+      "classification": "EXAMPLE",
+      "method": null,
+      "note": "placeholder host used to illustrate syntax, not a real link",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 23,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:8080/admin",
+      "status": null,
+      "final_url": null,
+      "classification": "EXAMPLE",
+      "method": null,
+      "note": "placeholder host used to illustrate syntax, not a real link",
+      "occurrences": [
+        {
+          "file": "chapters/10_web_security/chapter10.ipynb",
+          "location": 7,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "http://malicious.example/gate.php",
+      "status": null,
+      "final_url": null,
+      "classification": "EXAMPLE",
+      "method": null,
+      "note": "placeholder host used to illustrate syntax, not a real link",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 17,
+          "context": "code"
+        }
+      ]
+    },
+    {
+      "url": "http://paypa1-support.com/login",
+      "status": null,
+      "final_url": null,
+      "classification": "BROKEN",
+      "method": null,
+      "note": "DNS does not resolve",
+      "occurrences": [
+        {
+          "file": "chapters/04_social_engineering/chapter04.ipynb",
+          "location": 9,
+          "context": "code"
+        }
+      ]
+    },
+    {
+      "url": "http://target.com",
+      "status": null,
+      "final_url": null,
+      "classification": "EXAMPLE",
+      "method": null,
+      "note": "placeholder host used to illustrate syntax, not a real link",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_a/appendix_a.ipynb",
+          "location": 0,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_a/appendix_a.ipynb",
+          "location": 0,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "http://target.com/FUZZ",
+      "status": null,
+      "final_url": null,
+      "classification": "EXAMPLE",
+      "method": null,
+      "note": "placeholder host used to illustrate syntax, not a real link",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_a/appendix_a.ipynb",
+          "location": 0,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "http://target.com/page?FUZZ=value",
+      "status": null,
+      "final_url": null,
+      "classification": "EXAMPLE",
+      "method": null,
+      "note": "placeholder host used to illustrate syntax, not a real link",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_a/appendix_a.ipynb",
+          "location": 0,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "http://www.hping.org/",
+      "status": 200,
+      "final_url": "https://www.hping.org/",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/08_scanning/chapter08.ipynb",
+          "location": 40,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "http://www.pentest-standard.org",
+      "status": 200,
+      "final_url": "http://www.pentest-standard.org/index.php/Main_Page",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/06_pentest_methodology/chapter06.ipynb",
+          "location": 28,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://aclanthology.org/2024.emnlp-main.203/",
+      "status": 200,
+      "final_url": "https://aclanthology.org/2024.emnlp-main.203/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://alyssarosenzweig.ca/blog/asahi-gpu-part-n.html",
+      "status": 200,
+      "final_url": "https://alyssarosenzweig.ca/blog/asahi-gpu-part-n.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://apwg.org",
+      "status": 200,
+      "final_url": "https://apwg.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/04_social_engineering/chapter04.ipynb",
+          "location": 22,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://arxiv.org",
+      "status": 200,
+      "final_url": "https://arxiv.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 184,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 203,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 216,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.02277",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.02277",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 563,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.06469",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2608.06469",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 316,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://asahilinux.org/2022/11/tales-of-the-m1-gpu/",
+      "status": 200,
+      "final_url": "https://asahilinux.org/2022/11/tales-of-the-m1-gpu/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://astromachineworks.com/what-is-reverse-engineering/",
+      "status": 403,
+      "final_url": "https://astromachineworks.com/what-is-reverse-engineering/",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://attack.mitre.org",
+      "status": 200,
+      "final_url": "https://attack.mitre.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/01_intro/chapter01.ipynb",
+          "location": 28,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://attack.mitre.org/",
+      "status": 200,
+      "final_url": "https://attack.mitre.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 110,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/12_idps/chapter12.ipynb",
+          "location": 32,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://awards.acm.org/about/2025-turing",
+      "status": 403,
+      "final_url": "https://awards.acm.org/about/2025-turing",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 815,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/02_cryptography/chapter02.ipynb",
+          "location": 104,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://aws.amazon.com/s3/",
+      "status": 200,
+      "final_url": "https://aws.amazon.com/s3/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/17_emerging/chapter17.ipynb",
+          "location": 57,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://binary.ninja/",
+      "status": 200,
+      "final_url": "https://binary.ninja/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://book.com.puter.tips",
+      "status": 200,
+      "final_url": "https://book.com.puter.tips/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/00_intro/introduction.md",
+          "location": 138,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://book.com.puter.tips/",
+      "status": 200,
+      "final_url": "https://book.com.puter.tips/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "intro.md",
+          "location": 35,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/00_intro/introduction.md",
+          "location": 11,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://cdn.openai.com/o1-system-card.pdf",
+      "status": 200,
+      "final_url": "https://cdn.openai.com/o1-system-card.pdf",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 571,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://censys.io",
+      "status": 200,
+      "final_url": "https://censys.com/",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/07_recon/chapter07.ipynb",
+          "location": 27,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html",
+      "status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 823,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2015/01/encryption-using-openssl.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2015/01/encryption-using-openssl.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2015/05/encryptiondecryption-of-xml-file.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2015/05/encryptiondecryption-of-xml-file.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2015/06/30-must-have-softwares-for-kali-linux.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2015/06/30-must-have-softwares-for-kali-linux.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2015/06/http2-is-here.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2015/06/http2-is-here.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2015/06/steganography-using-stegomagic.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2015/06/steganography-using-stegomagic.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2016/12/extract-all-internal-and-external-links.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2016/12/extract-all-internal-and-external-links.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2017/10/monoalphabetic-substitution-cipher-in-c.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2017/10/monoalphabetic-substitution-cipher-in-c.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2018/02/hide-password-in-command-prompt.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2018/02/hide-password-in-command-prompt.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2018/09/free-vpn-service-for-device.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2018/09/free-vpn-service-for-device.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2020/03/google-search-api-in-python-3.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2020/03/google-search-api-in-python-3.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2020/10/microsoft-seal-installation-on-macos.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2020/10/microsoft-seal-installation-on-macos.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2020/11/a-primer-on-rsa.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2020/11/a-primer-on-rsa.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2020/11/codes-and-ciphers.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2020/11/codes-and-ciphers.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2020/11/procedures-to-writing-script-in-ns3.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2020/11/procedures-to-writing-script-in-ns3.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2020/11/the-rise-of-cybercrime-in-india.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2020/11/the-rise-of-cybercrime-in-india.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2021/02/how-to-check-if-intel-sgx-is-enabled.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2021/02/how-to-check-if-intel-sgx-is-enabled.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2021/02/how-to-use-cryptopp-in-xcode.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2021/02/how-to-use-cryptopp-in-xcode.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2021/02/setsockopt-protocol-not-available-solved.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2021/02/setsockopt-protocol-not-available-solved.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2021/03/how-to-install-free-ssl-certificate-for.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2021/03/how-to-install-free-ssl-certificate-for.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2021/03/random-number-generation-in-c.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2021/03/random-number-generation-in-c.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2021/09/ntru-in-python3.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2021/09/ntru-in-python3.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2022/02/how-to-calculate-hash-of-vector-in-c.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2022/02/how-to-calculate-hash-of-vector-in-c.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2022/06/how-to-run-bidirectional-lstm-in-python.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2022/06/how-to-run-bidirectional-lstm-in-python.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2022/06/how-to-run-helr-homomorphic-encryption.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2022/06/how-to-run-helr-homomorphic-encryption.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2022/07/how-to-install-pyfhel-in-macos.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2022/07/how-to-install-pyfhel-in-macos.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2022/08/top-7-free-cyber-security-newsletters.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2022/08/top-7-free-cyber-security-newsletters.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2022/11/list-supported-cpu-instructions-set.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2022/11/list-supported-cpu-instructions-set.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2023/12/mysql-injection-attack-tutorial.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2023/12/mysql-injection-attack-tutorial.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2026/03/rag-architecture-multi-gpu-training-ddp.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2026/03/rag-architecture-multi-gpu-training-ddp.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 4,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://com.puter.tips/2026/06/where-to-publish-your-research-for-free.html",
+      "status": 200,
+      "final_url": "https://com.puter.tips/2026/06/where-to-publish-your-research-for-free.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 245,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://crackmes.one/",
+      "status": 200,
+      "final_url": "https://crackmes.one/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://crypto.stanford.edu/~dabo/cryptobook/",
+      "status": 200,
+      "final_url": "https://crypto.stanford.edu/~dabo/cryptobook/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/02_cryptography/chapter02.ipynb",
+          "location": 104,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://cryptobook.nakov.com",
+      "status": 200,
+      "final_url": "https://cryptobook.nakov.com/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/02_cryptography/chapter02.ipynb",
+          "location": 104,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://cryptokait.com",
+      "status": 200,
+      "final_url": "https://cryptokait.com/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/16_ctf/chapter16.ipynb",
+          "location": 23,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://cutter.re/",
+      "status": 200,
+      "final_url": "https://cutter.re/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://cwe.mitre.org/",
+      "status": 200,
+      "final_url": "https://cwe.mitre.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 138,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://cwe.mitre.org/data/definitions/639.html",
+      "status": 200,
+      "final_url": "https://cwe.mitre.org/data/definitions/639.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 839,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://cyberscoop.com/greynoise-traffic-surge-early-warning-system-network-edge-device-vulnerabilities/",
+      "status": 200,
+      "final_url": "https://cyberscoop.com/greynoise-traffic-surge-early-warning-system-network-edge-device-vulnerabilities/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/08_scanning/chapter08.ipynb",
+          "location": 40,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://cyberskyline.com/events/ncl/info",
+      "status": 200,
+      "final_url": "https://cyberskyline.com/events/ncl/info",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/16_ctf/chapter16.ipynb",
+          "location": 23,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://datatracker.ietf.org/doc/draft-irtf-cfrg-bbs-signatures/",
+      "status": 200,
+      "final_url": "https://datatracker.ietf.org/doc/draft-irtf-cfrg-bbs-signatures/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 660,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://dblp.org/pid/29/4200.html",
+      "status": 200,
+      "final_url": "https://dblp.org/pid/29/4200.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/17_emerging/chapter17.ipynb",
+          "location": 57,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://dev.to/dmytro_huz/introduction-to-cryptography-perfect-secrecy-37aj",
+      "status": 200,
+      "final_url": "https://dev.to/dmytro_huz/introduction-to-cryptography-perfect-secrecy-37aj",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/02_cryptography/chapter02.ipynb",
+          "location": 104,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.kernel.org/filesystems/ramfs-rootfs-initramfs.html",
+      "status": 200,
+      "final_url": "https://docs.kernel.org/filesystems/ramfs-rootfs-initramfs.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.tenable.com/",
+      "status": 200,
+      "final_url": "https://docs.tenable.com/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/08_scanning/chapter08.ipynb",
+          "location": 40,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.virustotal.com/",
+      "status": 200,
+      "final_url": "https://docs.virustotal.com/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1109/SP61157.2025.00076",
+      "status": 202,
+      "final_url": "https://ieeexplore.ieee.org/document/11023357/",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/19_governance_culture/chapter19.ipynb",
+          "location": 38,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1111/1758-5899.12568",
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1111/1758-5899.12568",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "chapters/19_governance_culture/chapter19.ipynb",
+          "location": 38,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1145/2702123.2702249",
+      "status": 403,
+      "final_url": "https://dl.acm.org/doi/10.1145/2702123.2702249",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "chapters/19_governance_culture/chapter19.ipynb",
+          "location": 38,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.13140/RG.2.2.12538.86724",
+      "status": 403,
+      "final_url": "https://www.researchgate.net/doi/10.13140/RG.2.2.12538.86724",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 258,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.13140/RG.2.2.23981.45284",
+      "status": 403,
+      "final_url": "https://www.researchgate.net/doi/10.13140/RG.2.2.23981.45284",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 260,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.13140/RG.2.2.30574.37449",
+      "status": 403,
+      "final_url": "https://www.researchgate.net/doi/10.13140/RG.2.2.30574.37449",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 266,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.13140/RG.2.2.36144.93448",
+      "status": 403,
+      "final_url": "https://www.researchgate.net/doi/10.13140/RG.2.2.36144.93448",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 262,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.20189747",
+      "status": 200,
+      "final_url": "https://zenodo.org/records/20189747",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 253,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.20195275",
+      "status": 200,
+      "final_url": "https://zenodo.org/records/20195275",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 256,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.20575785",
+      "status": 200,
+      "final_url": "https://zenodo.org/records/20581926",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 511,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/00_intro/introduction.md",
+          "location": 105,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/00_intro/introduction.md",
+          "location": 109,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/00_intro/introduction.md",
+          "location": 121,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/00_intro/introduction.md",
+          "location": 132,
+          "context": "code"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.6028/NIST.CSWP.29",
+      "status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "classification": "REDIRECT",
+      "method": "GET",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/19_governance_culture/chapter19.ipynb",
+          "location": 38,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://dspace.org",
+      "status": 200,
+      "final_url": "https://dspace.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 212,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 237,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Ciphertext_indistinguishability",
+      "status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Ciphertext_indistinguishability",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/02_cryptography/chapter02.ipynb",
+          "location": 104,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32009L0024",
+      "status": 200,
+      "final_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32009L0024",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://evil/",
+      "status": null,
+      "final_url": null,
+      "classification": "BROKEN",
+      "method": null,
+      "note": "DNS does not resolve",
+      "occurrences": [
+        {
+          "file": "chapters/10_web_security/chapter10.ipynb",
+          "location": 7,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://figshare.com",
+      "status": 202,
+      "final_url": "https://figshare.com/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 207,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 227,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://filesec.io",
+      "status": 200,
+      "final_url": "https://filesec.io/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://genai.owasp.org/llm-top-10/",
+      "status": 200,
+      "final_url": "https://genai.owasp.org/llm-top-10/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 103,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/17_emerging/chapter17.ipynb",
+          "location": 57,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://ghidra-sre.org",
+      "status": 200,
+      "final_url": "https://github.com/NationalSecurityAgency/ghidra",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_a/appendix_a.ipynb",
+          "location": 3,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com",
+      "status": 200,
+      "final_url": "https://github.com/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 208,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 229,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/JusticeRage/Gepetto",
+      "status": 200,
+      "final_url": "https://github.com/JusticeRage/Gepetto",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/LOLBAS-Project/LOLBAS",
+      "status": 200,
+      "final_url": "https://github.com/LOLBAS-Project/LOLBAS",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/LaurieWired/GhidraMCP",
+      "status": 200,
+      "final_url": "https://github.com/LaurieWired/GhidraMCP",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/com-puter-tips/Links-Extractor",
+      "status": 200,
+      "final_url": "https://github.com/com-puter-tips/Links-Extractor",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 3,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/com-puter-tips/MP3-Stereo-Analyzer",
+      "status": 200,
+      "final_url": "https://github.com/com-puter-tips/MP3-Stereo-Analyzer",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 3,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/com-puter-tips/SEO-Analysis",
+      "status": 200,
+      "final_url": "https://github.com/com-puter-tips/SEO-Analysis",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 3,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/devharsh/CS-576-ROP",
+      "status": 200,
+      "final_url": "https://github.com/devharsh/CS-576-ROP",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 2,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/devharsh/Python-FHEz",
+      "status": 200,
+      "final_url": "https://github.com/devharsh/Python-FHEz",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 2,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/devharsh/VaultBox",
+      "status": 200,
+      "final_url": "https://github.com/devharsh/VaultBox",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 2,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/devharsh/chiku",
+      "status": 200,
+      "final_url": "https://github.com/devharsh/chiku",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 2,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/devharsh/cybersec-textbook",
+      "status": 200,
+      "final_url": "https://github.com/devharsh/cybersec-textbook",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_f/appendix_f.ipynb",
+          "location": 2,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/gchq/CyberChef",
+      "status": 200,
+      "final_url": "https://github.com/gchq/CyberChef",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/llnl/OGhidra",
+      "status": 200,
+      "final_url": "https://github.com/llnl/OGhidra",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/openfheorg/openfhe-development",
+      "status": 200,
+      "final_url": "https://github.com/openfheorg/openfhe-development",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/02_cryptography/chapter02.ipynb",
+          "location": 104,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/radareorg/radare2/releases",
+      "status": 200,
+      "final_url": "https://github.com/radareorg/radare2/releases",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/romainthomas/reverse-engineering-workshop",
+      "status": 200,
+      "final_url": "https://github.com/romainthomas/reverse-engineering-workshop",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/symgraph/GhidrAssist",
+      "status": 200,
+      "final_url": "https://github.com/symgraph/GhidrAssist",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/ucsd-crypto/DynamicEstimationAttack",
+      "status": 200,
+      "final_url": "https://github.com/ucsd-crypto/DynamicEstimationAttack",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/02_cryptography/chapter02.ipynb",
+          "location": 104,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://gtfobins.org",
+      "status": 200,
+      "final_url": "https://gtfobins.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://hex-rays.com/",
+      "status": 200,
+      "final_url": "https://hex-rays.com/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://host:8443/",
+      "status": null,
+      "final_url": null,
+      "classification": "BROKEN",
+      "method": null,
+      "note": "DNS does not resolve",
+      "occurrences": [
+        {
+          "file": "chapters/03_networking/chapter03.ipynb",
+          "location": 24,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/03_networking/chapter03.ipynb",
+          "location": 24,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://info.flagcounter.com/9iiX",
+      "status": 200,
+      "final_url": "https://s01.flagcounter.com/more/9iiX/",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "intro.md",
+          "location": 44,
+          "context": "code"
+        }
+      ]
+    },
+    {
+      "url": "https://insecure-website.com/customer_account?customer_number=132355",
+      "status": null,
+      "final_url": null,
+      "classification": "UNVERIFIABLE",
+      "method": null,
+      "note": "TLS error: SSLError",
+      "occurrences": [
+        {
+          "file": "chapters/10_web_security/chapter10.ipynb",
+          "location": 14,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://insecure-website.com/static/12144.txt",
+      "status": null,
+      "final_url": null,
+      "classification": "UNVERIFIABLE",
+      "method": null,
+      "note": "TLS error: SSLError",
+      "occurrences": [
+        {
+          "file": "chapters/10_web_security/chapter10.ipynb",
+          "location": 14,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://justinapplegate.me/2025/winning-ncl/",
+      "status": 200,
+      "final_url": "https://justinapplegate.me/2025/winning-ncl/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/16_ctf/chapter16.ipynb",
+          "location": 23,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://lcamtuf.coredump.cx/p0f3/",
+      "status": 200,
+      "final_url": "https://lcamtuf.coredump.cx/p0f3/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/08_scanning/chapter08.ipynb",
+          "location": 40,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://lief.re/",
+      "status": 200,
+      "final_url": "https://lief.re/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://lolbas-project.github.io",
+      "status": 200,
+      "final_url": "https://lolbas-project.github.io/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://lots-project.com",
+      "status": 200,
+      "final_url": "https://lots-project.com/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://malapi.io",
+      "status": 200,
+      "final_url": "https://malapi.io/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/syscall.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/syscall.2.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://medium.com/@ohheyymjincyber/ctf-toolkit-guide-9f5bda3931ea",
+      "status": 200,
+      "final_url": "https://medium.com/@ohheyymjincyber/ctf-toolkit-guide-9f5bda3931ea",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/16_ctf/chapter16.ipynb",
+          "location": 23,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://medium.com/iotex/elliptic-curve-cryptography-iot-security-and-cryptocurrencies-bb4acb73e387",
+      "status": 200,
+      "final_url": "https://medium.com/iotex/elliptic-curve-cryptography-iot-security-and-cryptocurrencies-bb4acb73e387",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/02_cryptography/chapter02.ipynb",
+          "location": 104,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://mybroadband.co.za/news/security/131822-how-the-anc-sent-encrypted-messages-in-the-fight-against-apartheid.html",
+      "status": 403,
+      "final_url": "https://mybroadband.co.za/news/security/131822-how-the-anc-sent-encrypted-messages-in-the-fight-against-apartheid.html",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "chapters/02_cryptography/chapter02.ipynb",
+          "location": 104,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://nationalcyberleague.org",
+      "status": 200,
+      "final_url": "https://nationalcyberleague.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/16_ctf/chapter16.ipynb",
+          "location": 23,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://nmap.org/book/man.html",
+      "status": 200,
+      "final_url": "https://nmap.org/book/man.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/08_scanning/chapter08.ipynb",
+          "location": 40,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://openfhe-development.readthedocs.io/en/latest/sphinx_rsts/intro/security.html",
+      "status": 200,
+      "final_url": "https://openfhe-development.readthedocs.io/en/latest/sphinx_rsts/intro/security.html",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/02_cryptography/chapter02.ipynb",
+          "location": 104,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://orcid.org/0000-0001-6374-7249",
+      "status": 200,
+      "final_url": "https://orcid.org/0000-0001-6374-7249",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "intro.md",
+          "location": 14,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://osf.io",
+      "status": 200,
+      "final_url": "https://osf.io/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 209,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 231,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://osintframework.com",
+      "status": 200,
+      "final_url": "https://osintframework.com/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/07_recon/chapter07.ipynb",
+          "location": 27,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://owasp.org/",
+      "status": 200,
+      "final_url": "https://owasp.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/10_web_security/chapter10.ipynb",
+          "location": 30,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/",
+      "status": 200,
+      "final_url": "https://api-security.owasp.org/editions/2023/en/0xa1-broken-object-level-authorization/",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 847,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://owasp.org/Top10/",
+      "status": 200,
+      "final_url": "https://top10.owasp.org/",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 89,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://owasp.org/Top10/2025/",
+      "status": 200,
+      "final_url": "https://top10.owasp.org/2025/",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 96,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/10_web_security/chapter10.ipynb",
+          "location": 30,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References",
+      "status": 404,
+      "final_url": "https://owasp.org/projects/web-security-testing-guide/stable/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References",
+      "classification": "BROKEN",
+      "method": "GET",
+      "note": "HTTP 404",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 855,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://portswigger.net/web-security/access-control/idor",
+      "status": 200,
+      "final_url": "https://portswigger.net/web-security/access-control/idor",
+      "classification": "OK",
+      "method": "GET",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 831,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://posts.cs.brown.edu/2024/11/04/strong-representation-at-acm-ccs-including-a-top-reviewer-award-shows-the-impact-of-brown-cs-security-research/",
+      "status": 200,
+      "final_url": "https://posts.cs.brown.edu/2024/11/04/strong-representation-at-acm-ccs-including-a-top-reviewer-award-shows-the-impact-of-brown-cs-security-research/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/17_emerging/chapter17.ipynb",
+          "location": 57,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://rada.re/",
+      "status": 200,
+      "final_url": "https://rada.re/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://research.checkpoint.com/2023/rorschach-a-new-sophisticated-and-fast-ransomware/",
+      "status": 200,
+      "final_url": "https://research.checkpoint.com/2023/rorschach-a-new-sophisticated-and-fast-ransomware/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 124,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://research.utwente.nl/en/persons/florian-werner-hahn/",
+      "status": 200,
+      "final_url": "https://research.utwente.nl/en/persons/florian-werner-hahn/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/02_cryptography/chapter02.ipynb",
+          "location": 104,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://rizin.re/",
+      "status": 200,
+      "final_url": "https://rizin.re/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://s01.flagcounter.com/count2/9iiX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_21/viewers_0/labels_1/pageviews_1/flags_0/percent_0/",
+      "status": 200,
+      "final_url": "https://s01.flagcounter.com/count2/9iiX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_21/viewers_0/labels_1/pageviews_1/flags_0/percent_0/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "intro.md",
+          "location": 44,
+          "context": "code"
+        }
+      ]
+    },
+    {
+      "url": "https://security.paloaltonetworks.com/CVE-2024-3400",
+      "status": 200,
+      "final_url": "https://security.paloaltonetworks.com/CVE-2024-3400",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/11_network_defense/chapter11.ipynb",
+          "location": 41,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://sigmahq.io/",
+      "status": 200,
+      "final_url": "https://sigmahq.io/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/12_idps/chapter12.ipynb",
+          "location": 32,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://target.example",
+      "status": null,
+      "final_url": null,
+      "classification": "EXAMPLE",
+      "method": null,
+      "note": "placeholder host used to illustrate syntax, not a real link",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_a/appendix_a.ipynb",
+          "location": 2,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://us-cert.cisa.gov/ncas/alerts/TA17-075A",
+      "status": 200,
+      "final_url": "https://www.cisa.gov/news-events/alerts/2017/03/16/https-interception-weakens-tls-security",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/11_network_defense/chapter11.ipynb",
+          "location": 41,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.cisa.gov/",
+      "status": 200,
+      "final_url": "https://www.cisa.gov/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/11_network_defense/chapter11.ipynb",
+          "location": 41,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.creaform3d.com/blog/what-is-reverse-engineering/",
+      "status": 200,
+      "final_url": "https://www.creaform3d.com/en/resources/blog/what-is-reverse-engineering",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.cve.org/",
+      "status": 200,
+      "final_url": "https://www.cve.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 183,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.darpa.mil/news/2025/aixcc-results",
+      "status": 200,
+      "final_url": "https://www.darpa.mil/news/2025/aixcc-results",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.exploit-db.com/google-hacking-database",
+      "status": 502,
+      "final_url": "https://www.exploit-db.com/google-hacking-database",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server error 502",
+      "occurrences": [
+        {
+          "file": "chapters/07_recon/chapter07.ipynb",
+          "location": 27,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.federalregister.gov/documents/2024/10/28/2024-24563/exemption-to-prohibition-on-circumvention-of-copyright-protection-systems-for-access-control",
+      "status": 200,
+      "final_url": "https://www.federalregister.gov/documents/2024/10/28/2024-24563/exemption-to-prohibition-on-circumvention-of-copyright-protection-systems-for-access-control",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/software-engineering/software-engineering-reverse-engineering/",
+      "status": 200,
+      "final_url": "https://www.geeksforgeeks.org/software-engineering/software-engineering-reverse-engineering/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.giac.org/certifications/reverse-engineering-malware-grem",
+      "status": 200,
+      "final_url": "https://www.giac.org/certifications/reverse-engineering-malware-grem",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.greenbone.net/",
+      "status": 200,
+      "final_url": "https://www.greenbone.net/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/08_scanning/chapter08.ipynb",
+          "location": 40,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.huntress.com/cybersecurity-101/topic/what-does-a-reverse-engineer-do-cybersecurity",
+      "status": 200,
+      "final_url": "https://www.huntress.com/cybersecurity-101/topic/what-does-a-reverse-engineer-do-cybersecurity",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kernel.org/doc/Documentation/networking/nf_conntrack-sysctl.rst",
+      "status": 200,
+      "final_url": "https://www.kernel.org/doc/Documentation/networking/nf_conntrack-sysctl.rst",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/11_network_defense/chapter11.ipynb",
+          "location": 41,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/17/1201",
+      "status": 200,
+      "final_url": "https://www.law.cornell.edu/uscode/text/17/1201",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.nationalcrimeagency.gov.uk/the-nca-announces-the-disruption-of-lockbit-with-operation-cronos",
+      "status": 200,
+      "final_url": "https://www.nationalcrimeagency.gov.uk/the-nca-announces-the-disruption-of-lockbit-with-operation-cronos",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 131,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.nist.gov/itl/applied-cybersecurity/nice",
+      "status": 200,
+      "final_url": "https://www.nist.gov/itl/applied-cybersecurity/nice",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/16_ctf/chapter16.ipynb",
+          "location": 23,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.nomoreransom.org",
+      "status": 200,
+      "final_url": "https://www.nomoreransom.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 117,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 14,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.preprints.org",
+      "status": 403,
+      "final_url": "https://www.preprints.org/",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 183,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.protocols.io",
+      "status": 200,
+      "final_url": "https://www.protocols.io/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 210,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 233,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.pubpub.org",
+      "status": 403,
+      "final_url": "https://www.pubpub.org/",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 206,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 224,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.researchgate.net",
+      "status": 403,
+      "final_url": "https://www.researchgate.net/",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 184,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 205,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 221,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shodan.io",
+      "status": 200,
+      "final_url": "https://www.shodan.io/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/07_recon/chapter07.ipynb",
+          "location": 27,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.tcpdump.org/",
+      "status": 200,
+      "final_url": "https://www.tcpdump.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/08_scanning/chapter08.ipynb",
+          "location": 40,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.techrxiv.org",
+      "status": 403,
+      "final_url": "https://www.techrxiv.org/",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 184,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.theopenpresenter.com/blog/reverse-engineering-google-slides",
+      "status": 200,
+      "final_url": "https://theopenpresenter.com/blog/reverse-engineering-google-slides/",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/15_malware/chapter15.ipynb",
+          "location": 42,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.verizon.com/business/resources/reports/dbir/",
+      "status": 200,
+      "final_url": "https://www.verizon.com/business/resources/reports/dbir/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "references.bib",
+          "location": 176,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wikiversity.org",
+      "status": 200,
+      "final_url": "https://www.wikiversity.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 211,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 235,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wireshark.org/docs/",
+      "status": 200,
+      "final_url": "https://www.wireshark.org/docs/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/08_scanning/chapter08.ipynb",
+          "location": 40,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://zenodo.org",
+      "status": 200,
+      "final_url": "https://zenodo.org/",
+      "classification": "OK",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 183,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 204,
+          "context": "markdown"
+        },
+        {
+          "file": "chapters/appendix_h/appendix_h.md",
+          "location": 218,
+          "context": "markdown"
+        }
+      ]
+    }
+  ]
+}

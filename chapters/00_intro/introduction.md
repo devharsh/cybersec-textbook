@@ -71,7 +71,7 @@ section, one or more "News in Focus" case studies, review questions, and a lab a
 and labs are the most valuable material to keep when time is short, because they are what students remember;
 the encyclopedic middle sections of the longer chapters are the safer cut.
 
-The appendices map every chapter to the CISSP, Security+, CEH, CISA, and CGRC certification domains
+The appendices map every chapter to the CISSP, Security+, Certified in Governance, Risk and Compliance (CGRC), CEH, CISA, and CGRC certification domains
 (Appendix C) and to ABET student outcomes and Bloom's taxonomy levels (Appendix D), and they provide a
 command reference, a glossary, pointers to companion publications and code, and a protocol security reference
 (Appendices A, B, E, F, I). For instructors, Appendix K adds a topic-to-chapter coverage map, ready-to-adapt

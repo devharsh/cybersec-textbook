@@ -69,7 +69,7 @@ These map to Chapters 4, 6, 9, and 12.
 
 These map to Chapters 3, 8, 9, 10, 16, and 17.
 
-- **Simplified mobile API vulnerability scanner** for Broken Access Control and IDOR (modify object
+- **Simplified mobile API vulnerability scanner** for Broken Access Control and insecure direct object references, IDOR (modify object
   identifiers across API endpoints through an intercepting proxy). (Ch. 10)
 - **Mobile application vulnerability analysis** using Frida or mitmproxy. (Ch. 16)
 - **Automated web-application fuzzer** (boundary-value, mutation, and generation fuzzing; boofuzz, Atheris).
@@ -105,11 +105,10 @@ These map to Chapters 6, 18, and 19, the methodology, legal, and governance dime
 - **Coordinated vulnerability-disclosure and computer-crime-law analysis**: design a responsible-disclosure
   policy and analyze the legal boundaries (authorization, CFAA/DMCA) that govern security testing. (Ch. 6,
   Ch. 18)
-- **Privacy-compliance assistant**: a tool that checks a data-handling workflow or privacy policy against GDPR
-  and CCPA/CPRA requirements (data-subject rights, breach-notification clocks) and flags gaps. (Ch. 18)
+- **Privacy-compliance assistant**: a tool that checks a data-handling workflow or privacy policy against GDPR, the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA) requirements (data-subject rights, breach-notification clocks) and flags gaps. (Ch. 18)
 - **Data-subject-access-request (DSAR) / breach-notification workflow tool**: automate the intake, tracking,
   and deadline management of privacy requests and breach reporting. (Ch. 18)
-- **GRC and security-policy maturity assessment**: map an organization's controls and policies to NIST CSF 2.0
+- **Governance, risk and compliance (GRC) and security-policy maturity assessment**: map an organization's controls and policies to NIST CSF 2.0
   or ISO/IEC 27001 and produce a maturity-tier scorecard with prioritized recommendations. (Ch. 19)
 - **Societal and ethical impact analysis of a security technology**: a scholarly evaluation of a chosen
   technology's effects on privacy, trust, equity, and policy (the cybersecurity-and-society perspective).
@@ -127,11 +126,11 @@ each has a genuinely open question at its center rather than a solved one.
   newly added; whether the recompression itself fingerprints the platform, since quantization tables and
   chroma subsampling have been used for source attribution; and whether any platform-assigned identifier
   persists. The honest gap is that the empirical per-platform studies date from the 2011 to 2019 JPEG era, so
-  a current measurement is a contribution rather than a repetition. Extend it by asking whether C2PA Content
+  a current measurement is a contribution rather than a repetition. Extend it by asking whether Coalition for Content Provenance and Authenticity (C2PA) Content
   Credentials survive the same round trip, and whether a manifest that does survive has quietly become a
   cross-context tracking identifier. (Ch. 13, Ch. 18)
 - **Allergen-aware menu presentation, and whether the data underneath can be trusted**: the finding comes
-  before the code. In the United States, FALCPA labels packaged food and the FASTER Act recognizes sesame as
+  before the code. In the United States, the Food Allergen Labeling and Consumer Protection Act (FALCPA) labels packaged food and the FASTER Act recognizes sesame as
   the ninth major allergen, but the law largely excludes restaurant food, so no federal rule requires a menu
   to declare allergens at all. In the European Union, Regulation (EU) No 1169/2011 does require disclosure for
   the fourteen allergens in Annex II, including for non-prepacked food under Article 44, while leaving the
@@ -141,10 +140,9 @@ each has a genuinely open question at its center rather than a solved one.
   descriptions and report the disagreement rate, counting a missing field and a wrong field as different
   failures. Any such tool is an aid and never a substitute for asking the kitchen, and the paper must say so.
   (Ch. 18, Ch. 19)
-- **The electronic authentication function inside a QR code**: a QR code is a container, not a security
+- **The quick response (QR) code authentication function inside a QR code**: a QR code is a container, not a security
   mechanism. Reverse two or three deployed schemes end to end and state precisely what each authenticates. The
-  EU Digital COVID Certificate is the cleanest teaching case because its specification pins every layer: a CBOR
-  Web Token (RFC 8392) signed with COSE (RFC 9052) using ES256, zlib compressed, Base45 encoded, prefixed
+  EU Digital COVID Certificate is the cleanest teaching case because its specification pins every layer: a Concise Binary Object Representation (CBOR) Web Token (RFC 8392) signed with CBOR Object Signing and Encryption (COSE) (RFC 9052) using ES256, zlib compressed, Base45 encoded, prefixed
   `HC1:`. Compare it against the Swiss QR-bill, an EMVCo payment QR, and a W3C Verifiable Credential. The open
   problem is worth naming in the abstract: every deployed scheme authenticates the payload and none
   authenticates placement, so a sticker pasted over a legitimate code defeats all of them, which is the

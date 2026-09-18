@@ -12,6 +12,80 @@ and the responsible body is named in place of an RFC. Layer-2 and layer-3 protoc
 port, are marked accordingly. Cross-references point to the chapters where each protocol is discussed in
 context.
 
+The attack and defense columns name mechanisms that are not themselves rows in these tables. They are
+expanded once here so that every column of every table below can be read without leaving the page.
+
+| Acronym | Stands for |
+|---|---|
+| AH | Authentication Header, the IPsec header that authenticates without encrypting |
+| ATA | AT Attachment, the disk interface that Serial ATA succeeded |
+| BEP | BitTorrent Enhancement Proposal, the BitTorrent specification series |
+| BGP | Border Gateway Protocol, which also has its own row below |
+| BGPsec | Border Gateway Protocol Security, the path-signing extension to BGP |
+| BPDU | Bridge Protocol Data Unit, the spanning-tree control frame that BPDU guard filters |
+| CHAP | Challenge-Handshake Authentication Protocol; MS-CHAPv2 is Microsoft's version 2 |
+| CIFS | Common Internet File System, the old name for SMB version 1 |
+| CoAP | Constrained Application Protocol |
+| CSWSH | Cross-site WebSocket hijacking |
+| DoT | DNS over TLS |
+| DTP | Dynamic Trunking Protocol, the Cisco protocol that negotiates VLAN trunks |
+| EAP | Extensible Authentication Protocol, which also has its own row below |
+| EAPOL | EAP over LAN, the layer-2 encapsulation 802.1X uses |
+| ESP | Encapsulating Security Payload, the IPsec header that encrypts |
+| GRE | Generic Routing Encapsulation |
+| HPACK | Header Compression for HTTP/2, the format defined in RFC 7541 |
+| HSTS | HTTP Strict Transport Security |
+| IKE | Internet Key Exchange, the IPsec key negotiation protocol |
+| IMAP | Internet Message Access Protocol, which also has its own row below |
+| IMAPS | IMAP over TLS |
+| INIT | The association-setup chunk of the Stream Control Transmission Protocol; a message name |
+| ISN | Initial sequence number, the value TCP randomizes to resist sequence prediction |
+| KRACK | Key Reinstallation Attack, the 2017 attack on the WPA2 four-way handshake |
+| LDAPS | LDAP over TLS |
+| MACsec | Media Access Control Security, link-layer encryption defined in IEEE 802.1AE |
+| mDNS | Multicast DNS |
+| MITM | Man-in-the-middle |
+| MS-xxx | A Microsoft protocol document number, as in MS-SMB2 and MS-CHAPv2 |
+| MTA | Mail transfer agent; MTA-STS is its Strict Transport Security policy |
+| NBT | NetBIOS over TCP/IP; NBT-NS is its name service |
+| NFS | Network File System, which also has its own row below |
+| NTP | Network Time Protocol, which also has its own row below |
+| NSEC | Next Secure record, the DNSSEC proof that a name does not exist; NSEC3 is its hashed form |
+| NTS | Network Time Security, the authentication layer for the Network Time Protocol |
+| OPC | Open Platform Communications, the industrial family whose OPC UA row appears below |
+| PAP | Password Authentication Protocol, which sends the password in the clear |
+| PKCE | Proof Key for Code Exchange, the OAuth 2.0 extension that binds a code to its requester |
+| PKINIT | Public Key Cryptography for Initial Authentication in Kerberos |
+| PMKID | Pairwise Master Key Identifier, the field that made offline Wi-Fi cracking practical |
+| POP3 | Post Office Protocol version 3, which also has its own row below |
+| POP3S | POP3 over TLS |
+| PSK | Pre-shared key |
+| PXE | Preboot Execution Environment, network boot |
+| RADSEC | RADIUS over TLS, defined in RFC 6614 |
+| RFB | Remote Framebuffer, the protocol that virtual network computing (VNC) speaks |
+| ROA | Route Origin Authorization, the signed statement RPKI validates |
+| RPKI | Resource Public Key Infrastructure |
+| RST | Reset, the TCP flag that aborts a connection |
+| RTP | Real-time Transport Protocol |
+| SAE | Simultaneous Authentication of Equals, the WPA3 handshake |
+| SAML | Security Assertion Markup Language |
+| SASL | Simple Authentication and Security Layer |
+| SCSI | Small Computer System Interface |
+| SMTP | Simple Mail Transfer Protocol, which also has its own row below |
+| SMTPS | SMTP over TLS |
+| SNMP | Simple Network Management Protocol, which also has its own row below |
+| SRTP | Secure Real-time Transport Protocol |
+| SSDP | Simple Service Discovery Protocol, which also has its own row below |
+| STARTTLS | The command that upgrades an already-open cleartext connection to TLS |
+| UPnP | Universal Plug and Play |
+| VoIP | Voice over IP |
+| WebRTC | Web Real-Time Communication |
+| WPS | Wi-Fi Protected Setup |
+| XMPP | Extensible Messaging and Presence Protocol |
+
+A trailing version marker is not a separate protocol: ICMPv6, DHCPv6, SNMPv1, NTPv4, NFSv4 and SMBv1
+are versions of the base protocols, each of which is expanded in its own row below.
+
 ## I.1 Internet and Transport Layer
 
 | Protocol (full form) | RFC / standard (year) | Port(s) | Usage | Common attacks | Key defenses |
@@ -49,11 +123,11 @@ Discussed mainly in Chapters 3, 7, and 11.
 | HTTP/2 | RFC 9113 (2022) | 443 | Multiplexed binary HTTP | Rapid Reset DDoS (CVE-2023-44487), HPACK abuse | Patching, stream limits, TLS |
 | HTTP/3 | RFC 9114 (2022) | 443 UDP | HTTP carried over QUIC | QUIC flooding, amplification | Address validation, rate limiting |
 | QUIC | RFC 9000 (2021) | 443 UDP | Encrypted UDP transport with built-in TLS 1.3 | Amplification, connection flooding | Retry/address validation, limits |
-| TLS (Transport Layer Security) | RFC 8446 v1.3 (2018); v1.2 RFC 5246 (2008) | application (e.g., 443) | Encrypts and authenticates sessions | Downgrade, BEAST/POODLE (legacy), forged certs | TLS 1.3, HSTS, certificate pinning, strong ciphers |
+| TLS (Transport Layer Security) | RFC 9846 v1.3 (2026, obsoleting RFC 8446 of 2018); v1.2 RFC 5246 (2008) | application (e.g., 443) | Encrypts and authenticates sessions | Downgrade, BEAST/POODLE (legacy), forged certs | TLS 1.3, HSTS, certificate pinning, strong ciphers |
 | SSL (Secure Sockets Layer) | Netscape; deprecated by RFC 7568 (2015) | 443 | Legacy session encryption (predecessor of TLS) | POODLE; all versions are broken | Disable entirely; use TLS 1.2 or 1.3 |
 | DTLS (Datagram Transport Layer Security) | RFC 9147 v1.3 (2022); v1.2 RFC 6347 (2012) | application/UDP | TLS for datagram transports (VPN, WebRTC, CoAP) | Amplification, downgrade | DTLS 1.3, cookies |
 | HTTPS (HTTP over TLS) | RFC 9110; RFC 2818 (2000) | 443 | Secure web browsing | SSL stripping, mixed content | HSTS, redirect to TLS, secure cookies |
-| WebSocket | RFC 6455 (2011) | 80/443 | Full-duplex channel over HTTP | Cross-site hijacking (CSWSH), injection | Origin validation, wss (TLS), auth tokens |
+| WebSocket | RFC 6455 (2011) | 80/443 | Full-duplex channel over HTTP | Cross-site WebSocket hijacking (CSWSH), injection | Origin validation, wss (TLS), auth tokens |
 | OAuth 2.0 | RFC 6749 (2012) | application (443) | Delegated authorization | Token theft, redirect/CSRF, phishing | PKCE, exact redirect URIs, short-lived tokens |
 | SAML 2.0 | OASIS (2005) | application (443) | Federated single sign-on via XML assertions | Assertion forgery, XML signature wrapping | Validate signatures, audience and time restrictions |
 | OpenID Connect | OpenID Foundation (2014) | application (443) | Identity layer on top of OAuth 2.0 | Token replay, identity-provider mix-up | Nonce, validate issuer/audience, PKCE |
