@@ -18,6 +18,11 @@ exclude_patterns:
   - scripts
   - README.md
   - "**/.ipynb_checkpoints/**"
+  - .venv/**
+  - .venv
+  - venv/**
+  - venv
+  - "**/site-packages/**"
 
 execute:
   execute_notebooks: "off"

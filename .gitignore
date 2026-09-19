@@ -21,3 +21,7 @@ assets/mermaid/
 ROADMAP_v1.2.md
 *.bak*
 _new_cells_staging.json
+
+# Virtualenvs
+.venv/
+venv/
