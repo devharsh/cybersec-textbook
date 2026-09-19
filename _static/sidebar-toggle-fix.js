@@ -71,7 +71,25 @@
         "click",
         function (ev) {
           if (!isDesktop()) {
-            return; // let the theme's own off-canvas behaviour handle small screens
+            // Below 992px the theme opens the sidebar as an off-canvas <dialog>. Both
+            // sphinx-book-theme and pydata-sphinx-theme wire that up with
+            // querySelector(".primary-toggle"), taking the FIRST match. Measured on the
+            // live site at a 384px viewport: the first match is the .pst-navbar-icon
+            // button, and it is display:none at EVERY width, mobile included. The button
+            // a phone reader actually taps is the second one, which no theme handler is
+            // attached to. So on mobile the tap reached nothing at all.
+            //
+            // Forward it to the element the theme did bind, rather than reimplementing
+            // the dialog logic here. That reuses the theme's own content move, showModal,
+            // and focus restore, so this keeps working if the theme changes them.
+            var bound = document.querySelector(".primary-toggle");
+            if (!bound || btn === bound) {
+              return; // already the bound element; the theme's handler will run
+            }
+            ev.preventDefault();
+            ev.stopImmediatePropagation();
+            bound.click();
+            return;
           }
           ev.preventDefault();
           ev.stopImmediatePropagation();
