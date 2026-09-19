@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-09-18.
+Last generated: 2026-09-19.
 
 ## Summary by Chapter
 
@@ -20,7 +20,7 @@ Last generated: 2026-09-18.
 | Chapter 8: Scanning and Enumeration | 7,231 | 816 | 14.5 |
 | Chapter 9: Exploitation and Post-Exploitation | 18,228 | 587 | 36.5 |
 | Chapter 10: Web Application Security | 8,526 | 372 | 17.1 |
-| Chapter 11: Network Defense and Hardening | 14,884 | 258 | 29.8 |
+| Chapter 11: Network Defense and Hardening | 16,219 | 258 | 32.4 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 8,913 | 1,114 | 17.8 |
 | Chapter 13: Digital Forensics | 10,462 | 875 | 20.9 |
 | Chapter 14: Incident Response | 9,783 | 828 | 19.6 |
@@ -40,7 +40,7 @@ Last generated: 2026-09-18.
 | Appendix I: Protocol Security Reference | 4,063 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,170 | 0 | 4.3 |
-| **TOTAL** | **296,728** | **13,072** | **593** |
+| **TOTAL** | **298,063** | **13,072** | **596** |
 
 ## Detailed Word Count by Section
 
@@ -582,7 +582,7 @@ Last generated: 2026-09-18.
 
 ### Chapter 11: Network Defense and Hardening
 
-*14,884 markdown words (29.8 pages); 258 code words.*
+*16,219 markdown words (32.4 pages); 258 code words.*
 
 | Section | Words |
 |---|---:|
@@ -614,7 +614,8 @@ Last generated: 2026-09-18.
 |     DDoS Attack Categories | 41 |
 |     DDoS Mitigation | 60 |
 | 11.10 Authentication, Identity, and Access | 351 |
-|     Biometrics and the Reality of False Positives and Negatives | 393 |
+|     Biometrics and the Reality of False Positives and Negatives | 392 |
+|     Identity Providers, Identity Management, and Who Does What | 1,198 |
 | 11.11 Network Monitoring and Visibility | 359 |
 | 11.12 Deception: Honeypots, Honeynets, and Honeytokens | 175 |
 | 11.13 Network Forensics in Defense | 159 |
@@ -667,7 +668,7 @@ Last generated: 2026-09-18.
 | News in Focus: Flat Networks and Nation-State Lateral Movement | 64 |
 | Review Questions (MCQ) | 299 |
 | Lab Assignment | 159 |
-| References | 400 |
+| References | 538 |
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
