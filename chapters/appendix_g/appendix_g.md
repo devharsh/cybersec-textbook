@@ -11,25 +11,25 @@ Last generated: 2026-09-19.
 | Introduction | 1,566 | 0 | 3.1 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 10,537 | 403 | 21.1 |
-| Chapter 2: Cryptography | 34,965 | 3,066 | 69.9 |
+| Chapter 2: Cryptography | 35,443 | 3,066 | 70.9 |
 | Chapter 3: Networking and Network Attacks | 16,512 | 374 | 33.0 |
 | Chapter 4: Social Engineering and the Human Element | 7,476 | 203 | 15.0 |
-| Chapter 5: Risk Management | 12,645 | 469 | 25.3 |
+| Chapter 5: Risk Management | 13,104 | 469 | 26.2 |
 | Chapter 6: Penetration Testing Methodology | 9,787 | 265 | 19.6 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,605 | 464 | 15.2 |
 | Chapter 8: Scanning and Enumeration | 7,231 | 816 | 14.5 |
 | Chapter 9: Exploitation and Post-Exploitation | 18,228 | 587 | 36.5 |
 | Chapter 10: Web Application Security | 8,526 | 372 | 17.1 |
-| Chapter 11: Network Defense and Hardening | 16,219 | 258 | 32.4 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 8,913 | 1,114 | 17.8 |
+| Chapter 11: Network Defense and Hardening | 16,720 | 258 | 33.4 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 9,471 | 1,114 | 18.9 |
 | Chapter 13: Digital Forensics | 10,462 | 875 | 20.9 |
 | Chapter 14: Incident Response | 9,783 | 828 | 19.6 |
 | Chapter 15: Malware Analysis | 34,080 | 423 | 68.2 |
 | Chapter 16: Capture the Flag and Competitive Security | 7,574 | 366 | 15.1 |
-| Chapter 17: Emerging Threats and Future Challenges | 16,778 | 878 | 33.6 |
+| Chapter 17: Emerging Threats and Future Challenges | 17,298 | 878 | 34.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
 | Chapter 19: Security Governance, Policy, and Culture | 13,598 | 482 | 27.2 |
-| Chapter 20: Industrial Control Systems and OT Security | 12,929 | 442 | 25.9 |
+| Chapter 20: Industrial Control Systems and OT Security | 13,453 | 442 | 26.9 |
 | Appendix A: Security Command Reference | 1,681 | 0 | 3.4 |
 | Appendix B: Glossary | 5,207 | 0 | 10.4 |
 | Appendix C: Certification Mapping | 1,861 | 0 | 3.7 |
@@ -39,8 +39,8 @@ Last generated: 2026-09-19.
 | Appendix H: Capstone and Group Project Ideas | 2,765 | 0 | 5.5 |
 | Appendix I: Protocol Security Reference | 4,063 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
-| Appendix K: Course Materials and Sample Assignments | 2,170 | 0 | 4.3 |
-| **TOTAL** | **298,063** | **13,072** | **596** |
+| Appendix K: Course Materials and Sample Assignments | 2,318 | 0 | 4.6 |
+| **TOTAL** | **301,251** | **13,072** | **603** |
 
 ## Detailed Word Count by Section
 
@@ -112,7 +112,7 @@ Last generated: 2026-09-19.
 
 ### Chapter 2: Cryptography
 
-*34,965 markdown words (69.9 pages); 3,066 code words.*
+*35,443 markdown words (70.9 pages); 3,066 code words.*
 
 | Section | Words |
 |---|---:|
@@ -135,7 +135,8 @@ Last generated: 2026-09-19.
 |     The Feistel Network: A Blueprint for Block Ciphers | 222 |
 | 2.6 Block Cipher Modes of Operation | 543 |
 |     AES Modes in Code: ECB versus CTR | 327 |
-| 2.7 Cryptographic Hash Functions | 804 |
+| 2.7 Cryptographic Hash Functions | 803 |
+|     The Length Extension Attack, and Why MAC Construction Is Not Obvious | 461 |
 |     The Merkle-Damgard Construction | 215 |
 |     Hashing in Code, and Why a CRC (Cyclic Redundancy Check) Is Not a Hash | 213 |
 |     Error Detection versus Error Correction: CRC and Hamming Codes | 205 |
@@ -190,7 +191,7 @@ Last generated: 2026-09-19.
 | Review Questions (MCQ) | 433 |
 |     Answer Key | 106 |
 | Lab Assignment | 387 |
-| References | 1,381 |
+| References | 1,399 |
 
 ### Chapter 3: Networking and Network Attacks
 
@@ -279,7 +280,7 @@ Last generated: 2026-09-19.
 
 ### Chapter 5: Risk Management
 
-*12,645 markdown words (25.3 pages); 469 code words.*
+*13,104 markdown words (26.2 pages); 469 code words.*
 
 | Section | Words |
 |---|---:|
@@ -302,6 +303,7 @@ Last generated: 2026-09-19.
 |     Control Catalogs and Foundational Control Principles | 344 |
 | 5.11 Business Continuity and Disaster Recovery | 328 |
 |     Resilience Engineering: Backups, Redundancy, and Plan Testing | 441 |
+|     Redundancy Engineering: RAID, Replication, and the Difference From Backup | 459 |
 | 5.12 Third-Party and Supply-Chain Risk | 460 |
 | 5.13 Assurance Evaluation | 337 |
 | 5.14 Security Roles, Responsibilities, and Accountability | 251 |
@@ -582,7 +584,7 @@ Last generated: 2026-09-19.
 
 ### Chapter 11: Network Defense and Hardening
 
-*16,219 markdown words (32.4 pages); 258 code words.*
+*16,720 markdown words (33.4 pages); 258 code words.*
 
 | Section | Words |
 |---|---:|
@@ -621,6 +623,7 @@ Last generated: 2026-09-19.
 | 11.13 Network Forensics in Defense | 159 |
 | 11.14 CVE Case Study: When the Firewall Is the Door (CVE-2024-3400) | 242 |
 | 11.15 Operating System and Host Hardening | 436 |
+|     Mobile Devices, BYOD, and the Hardware Root of Trust | 474 |
 | 11.16 Network Device Hardening: Switches and Routers | 327 |
 | 11.17 Software-Defined Networking, Virtualization, and Clustering | 332 |
 | 11.18 Asset, Configuration, Change, and Patch Management | 378 |
@@ -668,11 +671,11 @@ Last generated: 2026-09-19.
 | News in Focus: Flat Networks and Nation-State Lateral Movement | 64 |
 | Review Questions (MCQ) | 299 |
 | Lab Assignment | 159 |
-| References | 538 |
+| References | 565 |
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*8,913 markdown words (17.8 pages); 1,114 code words.*
+*9,471 markdown words (18.9 pages); 1,114 code words.*
 
 | Section | Words |
 |---|---:|
@@ -708,7 +711,8 @@ Last generated: 2026-09-19.
 |     Exercises | 88 |
 |     Answer Key | 124 |
 | 12.12 Deception: Honeypots and Honeytokens | 190 |
-| 12.13 Log Sources, Normalization, and the SOC Workflow | 247 |
+| 12.13 Log Sources, Normalization, and the SOC Workflow | 115 |
+|     Log Management: Retention, Integrity, and the Questions Logs Must Survive | 672 |
 | 12.14 Evading Detection | 159 |
 |     Exercises | 97 |
 |     Answer Key | 129 |
@@ -731,7 +735,7 @@ Last generated: 2026-09-19.
 | News in Focus: Breaches That Were Detectable but Missed | 69 |
 | Review Questions (MCQ) | 306 |
 | Lab Assignment | 183 |
-| References | 79 |
+| References | 97 |
 
 ### Chapter 13: Digital Forensics
 
@@ -1068,7 +1072,7 @@ Last generated: 2026-09-19.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*16,778 markdown words (33.6 pages); 878 code words.*
+*17,298 markdown words (34.6 pages); 878 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1130,13 +1134,14 @@ Last generated: 2026-09-19.
 | 17.14 Sandbox and Virtual-Machine Escape, and What "AI Escaped the Sandbox" Really Means | 1,139 |
 |     Exercises | 92 |
 |     Answer Key | 178 |
+|     Election Security and Electronic Voting | 500 |
 | 17.15 A Map of Open Research Problems | 451 |
 | Chapter Summary | 120 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
 | Review Questions (MCQ) | 342 |
 | Lab Assignment | 192 |
-| References | 309 |
+| References | 329 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
@@ -1275,7 +1280,7 @@ Last generated: 2026-09-19.
 
 ### Chapter 20: Industrial Control Systems and OT Security
 
-*12,929 markdown words (25.9 pages); 442 code words.*
+*13,453 markdown words (26.9 pages); 442 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1332,6 +1337,7 @@ Last generated: 2026-09-19.
 |     Exercises | 94 |
 |     Answer Key | 135 |
 | 20.14 The Incidents That Changed Practice | 1,193 |
+|     Cyber Warfare, Cyber Operations, and the Law of Armed Conflict | 491 |
 | 20.15 Why Active Scanning Is Dangerous, and What Passive Monitoring Buys | 45 |
 |     The mechanism of harm | 363 |
 |     What passive monitoring sees, and what it misses | 237 |
@@ -1347,7 +1353,7 @@ Last generated: 2026-09-19.
 | News in Focus: Attacks on Water-Treatment Facilities | 314 |
 | Review Questions (MCQ) | 626 |
 | Lab Assignment | 193 |
-| References | 243 |
+| References | 276 |
 
 ### Appendix A: Security Command Reference
 
@@ -1522,11 +1528,11 @@ Last generated: 2026-09-19.
 
 ### Appendix K: Course Materials and Sample Assignments
 
-*2,170 markdown words (4.3 pages); 0 code words.*
+*2,318 markdown words (4.6 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
-| K.1 Source-Materials Coverage Map | 373 |
+| K.1 Source-Materials Coverage Map | 521 |
 |     K.1.1 Software Reverse Engineering: A Malware-Analysis Course Map | 312 |
 |     K.1.2 Three Systems- and Network-Security Course Maps | 509 |
 | K.2 Sample Lecture Modules | 28 |

@@ -28,6 +28,13 @@ check: every topic in a conventional sequence is treated somewhere in the text.
 | Mobile, wireless, and IoT attacks (wired equivalent privacy or WEP, WPA/WPA2/WPA3, evil twin, deauthentication) | 3, 17, 20 |
 | Malware: viruses, worms, trojans, remote access trojans (RATs); antivirus and antimalware; detection methods | 12, 15 |
 | Firewalls and their types; intrusion detection and prevention; honeypots and deception | 11, 12 |
+| Identity providers versus identity management; federation (SAML, OpenID Connect); the joiner/mover/leaver lifecycle; SCIM provisioning; IGA, PAM, CIAM | 11 |
+| Log management: retention tiers, log integrity and chaining, legal hold, evidentiary requirements under PCI DSS, HIPAA, SOX, GDPR | 12, 13, 19 |
+| Mobile and BYOD security; MDM, MAM, and containerization; the hardware root of trust (UEFI Secure Boot, TPM, measured boot, remote attestation) | 11 |
+| Redundancy engineering: RAID levels and the rebuild window; replication versus backup; the 3-2-1 rule and immutable copies | 5 |
+| Hash-function construction pitfalls: Merkle-Damgard length extension and why HMAC is built as it is | 2 |
+| Election security and electronic voting: the secret-ballot tension, VVPAT, risk-limiting audits, internet voting, end-to-end verifiability | 17 |
+| Cyber warfare and state cyber operations: the effects-based test, the Tallinn Manual, attribution, proportionality, hybrid operations | 20 |
 | Physical security and social engineering | 4, 11, 20 |
 | Incident response: before, during, and after the attack; "attacks are inevitable" | 14 |
 | Virtualization and its security | 17 |
