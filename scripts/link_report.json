@@ -1,13 +1,13 @@
 {
-  "generated": "2026-09-18T22:55:52.666686+00:00",
+  "generated": "2026-09-20T00:18:33.335432+00:00",
   "root": "/sessions/hopeful-intelligent-archimedes/mnt/Downloads/cybersec-book",
-  "total_urls": 189,
-  "total_occurrences": 216,
+  "total_urls": 195,
+  "total_occurrences": 222,
   "summary": {
     "EXAMPLE": 15,
-    "OK": 153,
-    "REDIRECT": 8,
-    "UNVERIFIABLE": 13
+    "OK": 151,
+    "REDIRECT": 14,
+    "UNVERIFIABLE": 15
   },
   "results": [
     {
@@ -355,7 +355,7 @@
         },
         {
           "file": "chapters/12_idps/chapter12.ipynb",
-          "location": 32,
+          "location": 33,
           "context": "markdown"
         }
       ]
@@ -375,7 +375,7 @@
         },
         {
           "file": "chapters/02_cryptography/chapter02.ipynb",
-          "location": 104,
+          "location": 105,
           "context": "markdown"
         }
       ]
@@ -390,7 +390,7 @@
       "occurrences": [
         {
           "file": "chapters/17_emerging/chapter17.ipynb",
-          "location": 58,
+          "location": 59,
           "context": "markdown"
         }
       ]
@@ -965,7 +965,7 @@
       "occurrences": [
         {
           "file": "chapters/02_cryptography/chapter02.ipynb",
-          "location": 104,
+          "location": 105,
           "context": "markdown"
         }
       ]
@@ -980,7 +980,7 @@
       "occurrences": [
         {
           "file": "chapters/02_cryptography/chapter02.ipynb",
-          "location": 104,
+          "location": 105,
           "context": "markdown"
         }
       ]
@@ -1100,7 +1100,7 @@
       "occurrences": [
         {
           "file": "chapters/17_emerging/chapter17.ipynb",
-          "location": 58,
+          "location": 59,
           "context": "markdown"
         }
       ]
@@ -1115,7 +1115,7 @@
       "occurrences": [
         {
           "file": "chapters/02_cryptography/chapter02.ipynb",
-          "location": 104,
+          "location": 105,
           "context": "markdown"
         }
       ]
@@ -1271,6 +1271,51 @@
       ]
     },
     {
+      "url": "https://doi.org/10.17226/25120",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/projects/PGA-STL-16-02/publication/25120",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/17_emerging/chapter17.ipynb",
+          "location": 59,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.17487/RFC2104",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc2104/",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/02_cryptography/chapter02.ipynb",
+          "location": 105,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.17487/RFC6749",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc6749/",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/11_network_defense/chapter11.ipynb",
+          "location": 43,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
       "url": "https://doi.org/10.5281/zenodo.20189747",
       "status": 200,
       "final_url": "https://zenodo.org/records/20189747",
@@ -1351,6 +1396,51 @@
       ]
     },
     {
+      "url": "https://doi.org/10.6028/NIST.SP.800-124r2",
+      "status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-124r2.pdf",
+      "classification": "REDIRECT",
+      "method": "GET",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/11_network_defense/chapter11.ipynb",
+          "location": 43,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.6028/NIST.SP.800-63-4",
+      "status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-4.pdf",
+      "classification": "REDIRECT",
+      "method": "HEAD",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/11_network_defense/chapter11.ipynb",
+          "location": 43,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
+      "url": "https://doi.org/10.6028/NIST.SP.800-92",
+      "status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-92.pdf",
+      "classification": "REDIRECT",
+      "method": "GET",
+      "note": "",
+      "occurrences": [
+        {
+          "file": "chapters/12_idps/chapter12.ipynb",
+          "location": 33,
+          "context": "markdown"
+        }
+      ]
+    },
+    {
       "url": "https://dspace.org",
       "status": 200,
       "final_url": "https://dspace.org/",
@@ -1380,7 +1470,7 @@
       "occurrences": [
         {
           "file": "chapters/02_cryptography/chapter02.ipynb",
-          "location": 104,
+          "location": 105,
           "context": "markdown"
         }
       ]
@@ -1465,7 +1555,7 @@
         },
         {
           "file": "chapters/17_emerging/chapter17.ipynb",
-          "location": 58,
+          "location": 59,
           "context": "markdown"
         }
       ]
@@ -1480,7 +1570,7 @@
       "occurrences": [
         {
           "file": "chapters/17_emerging/chapter17.ipynb",
-          "location": 58,
+          "location": 59,
           "context": "markdown"
         }
       ]
@@ -1740,7 +1830,7 @@
       "occurrences": [
         {
           "file": "chapters/02_cryptography/chapter02.ipynb",
-          "location": 104,
+          "location": 105,
           "context": "markdown"
         }
       ]
@@ -1800,7 +1890,7 @@
       "occurrences": [
         {
           "file": "chapters/02_cryptography/chapter02.ipynb",
-          "location": 104,
+          "location": 105,
           "context": "markdown"
         }
       ]
@@ -2022,11 +2112,11 @@
     },
     {
       "url": "https://medium.com/@ohheyymjincyber/ctf-toolkit-guide-9f5bda3931ea",
-      "status": 200,
+      "status": 403,
       "final_url": "https://medium.com/@ohheyymjincyber/ctf-toolkit-guide-9f5bda3931ea",
-      "classification": "OK",
-      "method": "HEAD",
-      "note": "",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
       "occurrences": [
         {
           "file": "chapters/16_ctf/chapter16.ipynb",
@@ -2037,15 +2127,15 @@
     },
     {
       "url": "https://medium.com/iotex/elliptic-curve-cryptography-iot-security-and-cryptocurrencies-bb4acb73e387",
-      "status": 200,
+      "status": 403,
       "final_url": "https://medium.com/iotex/elliptic-curve-cryptography-iot-security-and-cryptocurrencies-bb4acb73e387",
-      "classification": "OK",
-      "method": "HEAD",
-      "note": "",
+      "classification": "UNVERIFIABLE",
+      "method": "GET",
+      "note": "server refuses automated requests",
       "occurrences": [
         {
           "file": "chapters/02_cryptography/chapter02.ipynb",
-          "location": 104,
+          "location": 105,
           "context": "markdown"
         }
       ]
@@ -2060,7 +2150,7 @@
       "occurrences": [
         {
           "file": "chapters/02_cryptography/chapter02.ipynb",
-          "location": 104,
+          "location": 105,
           "context": "markdown"
         }
       ]
@@ -2125,7 +2215,7 @@
       "occurrences": [
         {
           "file": "chapters/02_cryptography/chapter02.ipynb",
-          "location": 104,
+          "location": 105,
           "context": "markdown"
         }
       ]
@@ -2265,7 +2355,7 @@
       "occurrences": [
         {
           "file": "chapters/17_emerging/chapter17.ipynb",
-          "location": 58,
+          "location": 59,
           "context": "markdown"
         }
       ]
@@ -2310,7 +2400,7 @@
       "occurrences": [
         {
           "file": "chapters/02_cryptography/chapter02.ipynb",
-          "location": 104,
+          "location": 105,
           "context": "markdown"
         }
       ]
@@ -2355,7 +2445,7 @@
       "occurrences": [
         {
           "file": "chapters/11_network_defense/chapter11.ipynb",
-          "location": 41,
+          "location": 43,
           "context": "markdown"
         }
       ]
@@ -2370,7 +2460,7 @@
       "occurrences": [
         {
           "file": "chapters/12_idps/chapter12.ipynb",
-          "location": 32,
+          "location": 33,
           "context": "markdown"
         }
       ]
@@ -2465,7 +2555,7 @@
       "occurrences": [
         {
           "file": "chapters/11_network_defense/chapter11.ipynb",
-          "location": 41,
+          "location": 43,
           "context": "markdown"
         }
       ]
@@ -2480,7 +2570,7 @@
       "occurrences": [
         {
           "file": "chapters/11_network_defense/chapter11.ipynb",
-          "location": 41,
+          "location": 43,
           "context": "markdown"
         }
       ]
@@ -2645,7 +2735,7 @@
       "occurrences": [
         {
           "file": "chapters/11_network_defense/chapter11.ipynb",
-          "location": 41,
+          "location": 43,
           "context": "markdown"
         }
       ]

@@ -10,18 +10,18 @@ Last generated: 2026-09-19.
 |---|---:|---:|---:|
 | Introduction | 1,566 | 0 | 3.1 |
 | Preface | 433 | 0 | 0.9 |
-| Chapter 1: Introduction to Cybersecurity | 11,006 | 403 | 22.0 |
-| Chapter 2: Cryptography | 36,865 | 3,066 | 73.7 |
+| Chapter 1: Introduction to Cybersecurity | 11,068 | 403 | 22.1 |
+| Chapter 2: Cryptography | 37,058 | 3,066 | 74.1 |
 | Chapter 3: Networking and Network Attacks | 16,806 | 374 | 33.6 |
 | Chapter 4: Social Engineering and the Human Element | 7,647 | 203 | 15.3 |
-| Chapter 5: Risk Management | 13,585 | 469 | 27.2 |
+| Chapter 5: Risk Management | 13,747 | 469 | 27.5 |
 | Chapter 6: Penetration Testing Methodology | 9,787 | 265 | 19.6 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,605 | 464 | 15.2 |
 | Chapter 8: Scanning and Enumeration | 7,231 | 816 | 14.5 |
-| Chapter 9: Exploitation and Post-Exploitation | 18,802 | 587 | 37.6 |
+| Chapter 9: Exploitation and Post-Exploitation | 18,984 | 587 | 38.0 |
 | Chapter 10: Web Application Security | 8,526 | 372 | 17.1 |
-| Chapter 11: Network Defense and Hardening | 17,787 | 258 | 35.6 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 9,729 | 1,114 | 19.5 |
+| Chapter 11: Network Defense and Hardening | 17,938 | 258 | 35.9 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 10,043 | 1,114 | 20.1 |
 | Chapter 13: Digital Forensics | 10,469 | 875 | 20.9 |
 | Chapter 14: Incident Response | 9,786 | 828 | 19.6 |
 | Chapter 15: Malware Analysis | 34,725 | 423 | 69.5 |
@@ -29,7 +29,7 @@ Last generated: 2026-09-19.
 | Chapter 17: Emerging Threats and Future Challenges | 17,298 | 878 | 34.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
 | Chapter 19: Security Governance, Policy, and Culture | 13,598 | 482 | 27.2 |
-| Chapter 20: Industrial Control Systems and OT Security | 13,453 | 442 | 26.9 |
+| Chapter 20: Industrial Control Systems and OT Security | 13,679 | 442 | 27.4 |
 | Appendix A: Security Command Reference | 1,681 | 0 | 3.4 |
 | Appendix B: Glossary | 5,242 | 0 | 10.5 |
 | Appendix C: Certification Mapping | 1,861 | 0 | 3.7 |
@@ -40,7 +40,7 @@ Last generated: 2026-09-19.
 | Appendix I: Protocol Security Reference | 4,071 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **306,775** | **13,072** | **614** |
+| **TOTAL** | **308,065** | **13,072** | **616** |
 
 ## Detailed Word Count by Section
 
@@ -73,7 +73,7 @@ Last generated: 2026-09-19.
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*11,006 markdown words (22.0 pages); 403 code words.*
+*11,068 markdown words (22.1 pages); 403 code words.*
 
 | Section | Words |
 |---|---:|
@@ -84,7 +84,7 @@ Last generated: 2026-09-19.
 |     The DIE Model: A Modern Complement to CIA | 254 |
 | 1.3 The Anatomy of an Attack | 594 |
 |     A Concept Map of the Core Terms | 130 |
-| 1.4 Threat Actors and the Adversary Model | 529 |
+| 1.4 Threat Actors and the Adversary Model | 591 |
 | 1.5 Defense in Depth and Security Controls | 655 |
 | 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 561 |
 | 1.7 The NIST Cybersecurity Framework | 403 |
@@ -112,14 +112,14 @@ Last generated: 2026-09-19.
 
 ### Chapter 2: Cryptography
 
-*36,865 markdown words (73.7 pages); 3,066 code words.*
+*37,058 markdown words (74.1 pages); 3,066 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 185 |
 | Key Terms | 732 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
-|     Encoding versus Encryption versus Hashing | 651 |
+|     Encoding versus Encryption versus Hashing | 844 |
 | 2.2 Classical Ciphers and Why They Fall | 604 |
 |     Classical versus Modern Ciphers | 295 |
 |     A Classification of Ciphers | 226 |
@@ -280,7 +280,7 @@ Last generated: 2026-09-19.
 
 ### Chapter 5: Risk Management
 
-*13,585 markdown words (27.2 pages); 469 code words.*
+*13,747 markdown words (27.5 pages); 469 code words.*
 
 | Section | Words |
 |---|---:|
@@ -292,7 +292,7 @@ Last generated: 2026-09-19.
 | 5.4 Risk Identification | 275 |
 |     Asset and Data Classification | 239 |
 |     A Worked Risk Register | 286 |
-| 5.5 Qualitative Risk Assessment | 346 |
+| 5.5 Qualitative Risk Assessment | 508 |
 | 5.6 Quantitative Risk Assessment | 702 |
 | 5.7 Risk Treatment | 891 |
 | 5.8 Threat Modeling | 782 |
@@ -431,7 +431,7 @@ Last generated: 2026-09-19.
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*18,802 markdown words (37.6 pages); 587 code words.*
+*18,984 markdown words (38.0 pages); 587 code words.*
 
 | Section | Words |
 |---|---:|
@@ -499,7 +499,7 @@ Last generated: 2026-09-19.
 | 9.29 Return-Oriented Programming, Worked | 445 |
 |     Exercises | 64 |
 |     Answer Key | 120 |
-| 9.30 Heap Exploitation Internals | 466 |
+| 9.30 Heap Exploitation Internals | 648 |
 |     Exercises | 65 |
 |     Answer Key | 141 |
 | 9.31 Defeating Modern Mitigations: Information Leaks and Canary Bypasses | 456 |
@@ -584,7 +584,7 @@ Last generated: 2026-09-19.
 
 ### Chapter 11: Network Defense and Hardening
 
-*17,787 markdown words (35.6 pages); 258 code words.*
+*17,938 markdown words (35.9 pages); 258 code words.*
 
 | Section | Words |
 |---|---:|
@@ -595,7 +595,7 @@ Last generated: 2026-09-19.
 |     Writing Firewall Rules | 154 |
 | 11.2 Firewall Types and Topologies | 399 |
 |     Physical and Virtual Firewalls | 174 |
-|     Stateless and Stateful Packet Filtering | 363 |
+|     Stateless and Stateful Packet Filtering | 514 |
 | 11.3 Network Segmentation | 0 |
 |     DMZ Architecture | 200 |
 |     VLAN and Micro-Segmentation | 198 |
@@ -675,7 +675,7 @@ Last generated: 2026-09-19.
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*9,729 markdown words (19.5 pages); 1,114 code words.*
+*10,043 markdown words (20.1 pages); 1,114 code words.*
 
 | Section | Words |
 |---|---:|
@@ -686,7 +686,7 @@ Last generated: 2026-09-19.
 |     Host-Based IDS | 49 |
 |     Intrusion Detection Systems: What They Watch | 216 |
 |     Intrusion Prevention Systems: From Alert to Action | 242 |
-| 12.2 Detection Methods | 0 |
+| 12.2 Detection Methods | 159 |
 |     Signature-Based Detection | 133 |
 |     Anomaly-Based Detection | 116 |
 |     Stateful Protocol Analysis | 50 |
@@ -699,7 +699,7 @@ Last generated: 2026-09-19.
 |     User and Entity Behavior Analytics | 58 |
 |     Threat Hunting | 189 |
 |     Detection Engineering, Threat Hunting, and Deception | 350 |
-| 12.5 The Cyber Kill Chain and MITRE ATT&CK | 461 |
+| 12.5 The Cyber Kill Chain and MITRE ATT&CK | 616 |
 | 12.6 Modern SOC Operations: EDR, XDR, SOAR, and Detection Engineering | 220 |
 | 12.7 Writing Detection Rules: Snort, YARA, and Sigma | 341 |
 | 12.8 SIEM Correlation and Tuning | 190 |
@@ -1280,7 +1280,7 @@ Last generated: 2026-09-19.
 
 ### Chapter 20: Industrial Control Systems and OT Security
 
-*13,453 markdown words (26.9 pages); 442 code words.*
+*13,679 markdown words (27.4 pages); 442 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1292,7 +1292,7 @@ Last generated: 2026-09-19.
 |     Programmable Logic Controllers | 72 |
 |     SCADA Systems | 53 |
 |     Human-Machine Interfaces | 60 |
-| 20.3 The Purdue Model and Network Segmentation | 102 |
+| 20.3 The Purdue Model and Network Segmentation | 328 |
 |     The Industrial DMZ | 57 |
 |     Air Gaps and Their Limitations | 66 |
 | 20.4 OT-Specific Security Challenges | 0 |
