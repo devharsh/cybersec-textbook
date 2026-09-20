@@ -260,6 +260,8 @@ BOOK_LITERAL = {
     "NSEC5": "a DNSSEC record-type name",
     "ROBOT": "the published name of an attack, used here as a name",
     "SHA256": "a hash function name", "SCN": "a conference name", "SIAM": "a journal name",
+    "BLAKE3": "a hash function name; BLAKE is not an initialism, and the reviewed table already "
+              "lists BLAKE2, which stands beside it in the same sentence",
     "TISSEC": "a journal name", "TAA": "part of the paper title k-TAA",
     "UCSD": "an institution name in a bibliography entry",
     "DEV": "the website name DEV Community, in a bibliography entry",
@@ -291,12 +293,16 @@ BOOK_LITERAL = {
     "REMnux": "a Linux distribution name", "FlareVM": "a Windows tool collection name",
     "LM": "collides: LAN Manager in Ch. 9, and the product name LM Studio in Ch. 15",
     "PicoCTF": "a platform name",
+    "NET": "from .NET, the Microsoft platform name, in Ch. 15 and Ch. 16; the reviewed deck table "
+           "lists it as a literal for the same reason",
     # Chapter 3: hex groups inside an IPv6 address, a quiz distractor, a standard and tool name.
     "DFE1": "a hextet inside an example IPv6 address",
     "FEFB": "a hextet inside an example IPv6 address",
     "DALE": "a wrong-answer distractor in a review question",
     "XYZ": "a placeholder in a worked example", "RS": "part of the standard name RS-232",
     "SMAC": "a tool name", "XGS": "part of the standard name XGS-PON",
+    "TXT": "a DNS record type, named for the text it carries; the row beside it names A, AAAA, MX "
+           "and NS the same way, and Ch. 16 uses it for the same record (Ch. 3, Ch. 16)",
     # Chapter 9: tool names.
     "LinPEAS": "a tool name", "WinPEAS": "a tool name", "PEDA": "a tool name",
     "KLEE": "a tool name", "Z3": "a tool name", "DCSync": "a technique name",
@@ -316,6 +322,11 @@ BOOK_LITERAL = {
     "MAR": "part of a CISA Malware Analysis Report document number",
     "IOS": "collides: Cisco IOS the router operating system, and Apple iOS; a product name either way",
     "TRISIS": "a malware name", "HatMan": "a malware name", "ESET": "a company name",
+    "TRITON": "a malware name, the same malware as TRISIS and HatMan beside it",
+    "NATO": "an organization name of the class already allowed above (FBI, NSA, DHS), and every use "
+            "is inside the proper name of the NATO Cooperative Cyber Defence Centre of Excellence",
+    "eduGAIN": "the name of the GEANT interfederation service, which its own site does not expand; "
+               "it stands beside InCommon, which is a name too",
     "OMRON": "a company name", "ISA": "a standards body inside the designation ANSI/ISA-62443",
     # Chapter 13 and 16: tool, dataset, format and platform names, and quiz answer options.
     "AXIOM": "a product name", "SQLite": "a product name", "ALEAPP": "a tool name",
@@ -383,6 +394,7 @@ GENERATED = {"appendix_g"}
 BOOK_EXPANSIONS = {
     "UC": "universal composability",
     "CTF": "capture the flag",
+    "GDB": "GNU debugger",
     "PCAP": "packet capture",
     "MPC": "multi-party computation",
     "SGX": "software guard extensions",
@@ -894,19 +906,42 @@ def glossary_terms():
 
 
 def ordinary_words(files):
-    """Words the book uses in lower case often enough to be English, not acronyms.
+    """Words the book uses in lower case as ordinary English rather than as acronyms.
 
     CHECK, TERM, CLASS and SELECT are English; XSS and SIEM are not. Deriving the distinction from
     the book's own vocabulary beats maintaining a stoplist. An acronym-shaped token never votes
     itself into the ordinary vocabulary.
+
+    The first version of this test was "the lower-case spelling appears at least three times", an
+    absolute count over whatever set of files the run happened to see. That is not a property of the
+    word, it is a property of the run, and it made the scanner's answer depend on how much prose the
+    book contained. The same commit measured 0 failures on one run and 20 on another, because a
+    truncated file set crossed different thresholds. The identical bug was found and fixed on the
+    deck-side copy of this scanner, where scanning one course reported findings that scanning the
+    whole corpus did not.
+
+    Two changes, both of which make the answer independent of the size of the scanned set.
+
+    A word is ordinary only if the book uses it in lower case MORE often than in acronym shape. That
+    is a ratio, so it holds at nine chapters and at thirty-three: `of`, `from` and `state` outnumber
+    OF, FROM and STATE by orders of magnitude, while a lower-case `ntp` inside a config example
+    loses to NTP in the prose. Three occurrences are still required, so one stray spelling settles
+    nothing on its own.
+
+    And a term the table classifies is never ordinary. acronyms.json is the authoritative judgment
+    and a vocabulary heuristic must not overrule it.
     """
-    count = collections.Counter()
+    english, shapes = collections.Counter(), collections.Counter()
     for _, path in files:
         for _, text in cell_texts(path):
             for w in tokenize(text):
-                if not w.isupper() and not is_mixed_acronym(w):
-                    count[w.lower()] += 1
-    return {w for w, n in count.items() if n >= 3}
+                if w.isupper() or is_mixed_acronym(w):
+                    shapes[w.lower()] += 1
+                else:
+                    english[w.lower()] += 1
+    classified = {k.lower() for k in EXPANSIONS}
+    return {w for w, n in english.items()
+            if n >= 3 and w not in classified and n > shapes.get(w, 0)}
 
 
 def scan_chapter(path, ordinary, defined, mentioned, min_uses=1, chapter=""):

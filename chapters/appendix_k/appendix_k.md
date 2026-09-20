@@ -13,6 +13,13 @@ The table below maps those standard topics to the chapters of this book, so an i
 slide deck can find the corresponding reading, worked examples, exercises, and labs. It doubles as a coverage
 check: every topic in a conventional sequence is treated somewhere in the text.
 
+The topic column names things the way a syllabus or a product datasheet names them, so the abbreviations it
+uses are spelled out once here rather than inside the rows: bring your own device (BYOD), customer identity
+and access management (CIAM), identity governance and administration (IGA), mobile application management
+(MAM), mobile device management (MDM), the Windows Security Account Manager (SAM), Security Assertion Markup
+Language (SAML), System for Cross-domain Identity Management (SCIM), Unified Extensible Firmware Interface
+(UEFI), and voter-verified paper audit trail (VVPAT). Each is treated in the chapter its row points to.
+
 | Lecture topic | Book chapter(s) |
 |---|---|
 | Introduction to ethical hacking; penetration-testing methodology; rules of engagement; the Penetration Testing Execution Standard (PTES) and NIST testing | 6 |
@@ -20,7 +27,7 @@ check: every topic in a conventional sequence is treated somewhere in the text.
 | Cryptography: classical ciphers, symmetric and public-key, hashing, signatures, HTTPS and TLS | 2 |
 | The OSI model, ports, ARP, DHCP, the TCP handshake; sniffing, Wireshark, session hijacking | 3 |
 | Reconnaissance and intelligence gathering; OSINT; Google dorking; log and SIEM review | 7 |
-| Port scanning and network mapping; enumeration; OS fingerprinting; vulnerability scanning (Nessus, and the Nmap Scripting Engine or Nessus, NSE) | 8 |
+| Port scanning and network mapping; enumeration; OS fingerprinting; vulnerability scanning (Nessus, and the Nmap Scripting Engine, NSE) | 8 |
 | Exploitation, Kali and Metasploit; Linux and Windows exploitation; shellcode; passive analysis and reversing | 9, 15 |
 | Password cracking; Windows security (SAM, the security identifier (SID) and relative identifier (RID), LM/NTLM, Active Directory, LDAP, NetBIOS, SMB); rootkits | 9, 15 |
 | Programming survival skills: C, assembly, gdb, Python for security | 9, 15 |

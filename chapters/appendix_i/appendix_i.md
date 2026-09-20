@@ -61,7 +61,7 @@ expanded once here so that every column of every table below can be read without
 | POP3S | POP3 over TLS |
 | PSK | Pre-shared key |
 | PXE | Preboot Execution Environment, network boot |
-| RADSEC | RADIUS over TLS, defined in RFC 6614 |
+| RADSEC | Remote Authentication Dial-In User Service (RADIUS) over TLS, defined in RFC 6614 |
 | RFB | Remote Framebuffer, the protocol that virtual network computing (VNC) speaks |
 | ROA | Route Origin Authorization, the signed statement RPKI validates |
 | RPKI | Resource Public Key Infrastructure |
@@ -226,7 +226,7 @@ Discussed mainly in Chapters 3, 7, and 11.
 | CoAP (Constrained Application Protocol) | RFC 7252 (2014) | 5683 UDP (5684 DTLS) | REST-like messaging for constrained IoT | Amplification, spoofing | DTLS, rate limiting |
 | AMQP (Advanced Message Queuing Protocol) | OASIS / ISO-IEC 19464 (2014) | 5672 (5671 TLS) | Enterprise message queuing | Cleartext, weak auth | TLS, SASL authentication |
 | XMPP (Extensible Messaging and Presence Protocol) | RFC 6120 (2011) | 5222, 5269 | Messaging and presence | Spoofing, sniffing | TLS, SASL |
-| IRC (Internet Relay Chat) | RFC 1459 (1993) | 6667 (6697 TLS) | Group chat (and historic botnet C2) | C2 abuse, cleartext | TLS, monitoring, egress control |
+| IRC (Internet Relay Chat) | RFC 1459 (1993) | 6667 (6697 TLS) | Group chat (and historic botnet command and control, C2) | C2 abuse, cleartext | TLS, monitoring, egress control |
 | BitTorrent | BEP specifications (no RFC) | 6881-6889 TCP | Peer-to-peer file sharing | Malware distribution, IP exposure | Policy controls, monitoring |
 
 Discussed mainly in Chapters 3, 7, 15, and 17.
