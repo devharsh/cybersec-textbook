@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-09-19.
+Last generated: 2026-09-24.
 
 ## Summary by Chapter
 
@@ -24,7 +24,7 @@ Last generated: 2026-09-19.
 | Chapter 12: Intrusion Detection and Prevention Systems | 10,043 | 1,114 | 20.1 |
 | Chapter 13: Digital Forensics | 10,469 | 875 | 20.9 |
 | Chapter 14: Incident Response | 9,786 | 828 | 19.6 |
-| Chapter 15: Malware Analysis | 34,725 | 423 | 69.5 |
+| Chapter 15: Malware Analysis | 36,655 | 423 | 73.3 |
 | Chapter 16: Capture the Flag and Competitive Security | 7,574 | 366 | 15.1 |
 | Chapter 17: Emerging Threats and Future Challenges | 17,298 | 878 | 34.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
@@ -40,7 +40,7 @@ Last generated: 2026-09-19.
 | Appendix I: Protocol Security Reference | 4,071 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **308,065** | **13,072** | **616** |
+| **TOTAL** | **309,995** | **13,072** | **620** |
 
 ## Detailed Word Count by Section
 
@@ -878,7 +878,7 @@ Last generated: 2026-09-19.
 
 ### Chapter 15: Malware Analysis
 
-*34,725 markdown words (69.5 pages); 423 code words.*
+*36,655 markdown words (73.3 pages); 423 code words.*
 
 | Section | Words |
 |---|---:|
@@ -945,9 +945,10 @@ Last generated: 2026-09-19.
 | 15.21 Building and Operating an Analysis Lab | 231 |
 |     Exercises | 77 |
 |     Answer Key | 136 |
-| 15.22 Reading x86-64 Disassembly | 455 |
-|     Exercises | 69 |
-|     Answer Key | 99 |
+| 15.22 Reading x86-64 Disassembly | 492 |
+|     How cmp and a Conditional Jump Build a Branch | 1,517 |
+|     Exercises | 186 |
+|     Answer Key | 286 |
 | 15.23 Windows Internals for Malware Analysts | 476 |
 |     Exercises | 64 |
 |     Answer Key | 120 |
@@ -1022,7 +1023,7 @@ Last generated: 2026-09-19.
 | News in Focus: Fileless and Living-off-the-Land Attacks | 68 |
 | Review Questions (MCQ) | 335 |
 | Lab Assignment | 176 |
-| References | 660 |
+| References | 732 |
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
