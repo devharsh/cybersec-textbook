@@ -18,7 +18,7 @@ Last generated: 2026-09-24.
 | Chapter 6: Penetration Testing Methodology | 9,787 | 265 | 19.6 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,605 | 464 | 15.2 |
 | Chapter 8: Scanning and Enumeration | 7,231 | 816 | 14.5 |
-| Chapter 9: Exploitation and Post-Exploitation | 18,984 | 587 | 38.0 |
+| Chapter 9: Exploitation and Post-Exploitation | 20,540 | 587 | 41.1 |
 | Chapter 10: Web Application Security | 8,526 | 372 | 17.1 |
 | Chapter 11: Network Defense and Hardening | 17,938 | 258 | 35.9 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 10,043 | 1,114 | 20.1 |
@@ -40,7 +40,7 @@ Last generated: 2026-09-24.
 | Appendix I: Protocol Security Reference | 4,071 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **309,995** | **13,072** | **620** |
+| **TOTAL** | **311,551** | **13,072** | **623** |
 
 ## Detailed Word Count by Section
 
@@ -431,7 +431,7 @@ Last generated: 2026-09-24.
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*18,984 markdown words (38.0 pages); 587 code words.*
+*20,540 markdown words (41.1 pages); 587 code words.*
 
 | Section | Words |
 |---|---:|
@@ -491,8 +491,9 @@ Last generated: 2026-09-24.
 |     Exercises | 63 |
 |     Answer Key | 108 |
 | 9.27 The Machine Underneath: Registers, the Stack, and Calling Conventions | 779 |
-|     Exercises | 76 |
-|     Answer Key | 123 |
+|     The Prologue and Epilogue, Instruction by Instruction | 1,150 |
+|     Exercises | 176 |
+|     Answer Key | 282 |
 | 9.28 A Debugger Session, Step by Step | 460 |
 |     Exercises | 73 |
 |     Answer Key | 116 |
@@ -532,7 +533,7 @@ Last generated: 2026-09-24.
 | News in Focus: The Ransomware Post-Exploitation Playbook | 78 |
 | Review Questions (MCQ) | 285 |
 | Lab Assignment | 189 |
-| References | 78 |
+| References | 225 |
 
 ### Chapter 10: Web Application Security
 
