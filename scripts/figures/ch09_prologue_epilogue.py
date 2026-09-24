@@ -3,12 +3,12 @@
 
 The prologue and epilogue of a 32-bit cdecl function, one instruction at a time: nine snapshots of
 the same nine stack slots, from the moment before the call to the moment after the caller removes
-its arguments. Every address and value was measured in gdb for add3(1, 2, 3) built with
-gcc -m32 -O0. Released slots are drawn dashed and keep their old contents, because that is what
-the trace showed: after leave, the old local still read 6.
+its arguments. Every address and value is read from data/trace_ex1_add3_32.json, a gdb trace of
+add3(1, 2, 3) built with gcc -m32 -O0. Released slots are drawn dashed and keep their old contents,
+because that is what the trace shows: after leave, the old local still reads 6.
 
-The same figure appears on the COSC 332 week 5 slides, drawn by a twin of this script, because the
-book and the decks carry the same pictures. Change both or neither.
+The same figure appears on the COSC 332 week 5 slides, drawn by a twin of this script from the same
+trace, because the book and the decks carry the same pictures. Change both or neither.
 
 Run from anywhere:  python3 scripts/figures/ch09_prologue_epilogue.py
 """
@@ -31,25 +31,55 @@ KIND = {  # face, edge, text
 MONO = "DejaVu Sans Mono"
 W, H = 8.10, 4.30
 
-ADDR = ["ffffdb6c", "ffffdb68", "ffffdb64", "ffffdb60", "ffffdb5c",
-        "ffffdb58", "ffffdb54", "ffffdb50", "ffffdb4c"]
-LIVE = {"ffffdb6c": ("arg", "arg 3 = 3"), "ffffdb68": ("arg", "arg 2 = 2"),
-        "ffffdb64": ("arg", "arg 1 = 1"), "ffffdb60": ("ret", "ret addr"),
-        "ffffdb5c": ("ebp", "old ebp"), "ffffdb58": ("sum", "sum"),
-        "ffffdb54": ("unused", "unused"), "ffffdb50": ("unused", "unused"),
-        "ffffdb4c": ("unused", "unused")}
+TRACE = os.path.join(HERE, "data", "trace_ex1_add3_32.json")
 
-# (header, instruction, esp, ebp, live slots, released slots, overrides)
+
+def _trace():
+    import json
+    t = json.load(open(TRACE))
+    for st in t:
+        st["r"] = {k: int(v, 16) for k, v in st["regs"].items()}
+        st["m"] = {int(k, 16): v for k, v in st["stack"].items()}
+    return t
+
+
+_T = _trace()
+
+
+def _at(pc):
+    return [st for st in _T if int(st["pc"], 16) == pc][0]
+
+
+def _after(pc):
+    i = [k for k, st in enumerate(_T) if int(st["pc"], 16) == pc][0]
+    return _T[i + 1]
+
+
+BP = _after(0x8049018)["r"]["ebp"]
+RET = _at(0x8049031)["m"][BP + 4]
+ADDR = [f"{BP + d:08x}" for d in (16, 12, 8, 4, 0, -4, -8, -12, -16)]
+LIVE = {ADDR[0]: ("arg", "arg 3 = 3"), ADDR[1]: ("arg", "arg 2 = 2"), ADDR[2]: ("arg", "arg 1 = 1"),
+        ADDR[3]: ("ret", "ret addr"), ADDR[4]: ("ebp", "old ebp"), ADDR[5]: ("sum", "sum"),
+        ADDR[6]: ("unused", "unused"), ADDR[7]: ("unused", "unused"), ADDR[8]: ("unused", "unused")}
+assert [_at(0x8049031)["m"][BP + k] for k in (16, 12, 8, 0, -4)] == [3, 2, 1, 0, 6]
+
+
+def _regs(st):
+    esp, ebp = st["r"]["esp"], st["r"]["ebp"]
+    return f"{esp:08x}", (f"{ebp:08x}" if ebp else None)
+
+
+# (header, instruction, esp, ebp, live slots, released slots, overrides), every esp and ebp from the trace
 STEPS = [
-    ("caller", "before the call", "ffffdb64", None, ADDR[:3], [], {}),
-    ("caller", "call add3", "ffffdb60", None, ADDR[:4], [], {}),
-    ("prologue", "push ebp", "ffffdb5c", None, ADDR[:5], [], {}),
-    ("prologue", "mov ebp, esp", "ffffdb5c", "ffffdb5c", ADDR[:5], [], {}),
-    ("prologue", "sub esp, 0x10", "ffffdb4c", "ffffdb5c", ADDR, [], {}),
-    ("body", "body runs", "ffffdb4c", "ffffdb5c", ADDR, [], {"ffffdb58": "sum = 6"}),
-    ("epilogue", "leave", "ffffdb60", None, ADDR[:4], ADDR[4:], {"ffffdb58": "6"}),
-    ("epilogue", "ret", "ffffdb64", None, ADDR[:3], ADDR[3:], {"ffffdb58": "6"}),
-    ("caller", "add esp, 12", "ffffdb70", None, [], ADDR, {"ffffdb58": "6"}),
+    ("caller", "before the call", *_regs(_at(0x8049006)), ADDR[:3], [], {}),
+    ("caller", "call add3", *_regs(_after(0x8049006)), ADDR[:4], [], {}),
+    ("prologue", "push ebp", *_regs(_after(0x8049017)), ADDR[:5], [], {}),
+    ("prologue", "mov ebp, esp", *_regs(_after(0x8049018)), ADDR[:5], [], {}),
+    ("prologue", "sub esp, 0x10", *_regs(_after(0x804901a)), ADDR, [], {}),
+    ("body", "body runs", *_regs(_at(0x8049031)), ADDR, [], {ADDR[5]: "sum = 6"}),
+    ("epilogue", "leave", *_regs(_after(0x8049031)), ADDR[:4], ADDR[4:], {ADDR[5]: "6"}),
+    ("epilogue", "ret", *_regs(_after(0x8049032)), ADDR[:3], ADDR[3:], {ADDR[5]: "6"}),
+    ("caller", "add esp, 12", *_regs(_after(0x804900b)), [], ADDR, {ADDR[5]: "6"}),
 ]
 BAND = {"caller": ("#E5E7EB", INK), "prologue": ("#DBEAFE", "#1E3A8A"),
         "body": ("#DCFCE7", "#14532D"), "epilogue": ("#FFEDD5", "#9A3412")}
@@ -117,7 +147,7 @@ def figure():
             if ebp and a == ebp:
                 ax.add_patch(Polygon([[cx + cw + 0.075, y + 0.05], [cx + cw + 0.075, y + rh - 0.086], [cx + cw + 0.012, y + (rh - 0.036) / 2]],
                                      closed=True, fc=EBP_C, ec="none"))
-        if esp == "ffffdb70":  # above the grid: the caller's stack before the arguments were pushed
+        if int(esp, 16) > int(ADDR[0], 16):  # above the grid: the caller's stack before the arguments
             ax.add_patch(Polygon([[cx - 0.075, top + 0.02], [cx - 0.075, top + 0.12], [cx - 0.012, top + 0.07]],
                                  closed=True, fc=ESP_C, ec="none"))
         ax.text(cx + cw / 2, top - 9 * rh - 0.10, "esp " + esp[4:], ha="center", va="center", fontsize=6.3,
@@ -133,7 +163,7 @@ def figure():
                                 fc="#FFFFFF", ec="#CBD5E1", lw=0.9, ls="--"))
     ax.text(2.97, 0.42, "released: free to reuse, but the old bytes are still there", fontsize=6.6,
             va="center", color=INK)
-    ax.text(0.30, 0.215, "ret addr is 0804900b, the instruction after the call; old ebp is 0 because this is the "
+    ax.text(0.30, 0.215, f"ret addr is {RET:08x}, the instruction after the call; old ebp is 0 because this is the "
             "outermost frame.", fontsize=6.3, va="center", color=GREY)
     ax.text(0.30, 0.085, "leave is mov esp, ebp then pop ebp. Addresses are from one gdb run of gcc -m32 -O0 code; "
             "yours will differ.", fontsize=6.3, va="center", color=GREY)
