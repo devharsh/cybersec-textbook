@@ -15,25 +15,29 @@ A live, continuously updated web version of this book is available at https://bo
 The chapters map cleanly onto standard three-credit university courses. Instructors can
 mix and match chapters to match their exact syllabus.
 
+<!-- BEGIN generated:course-pages. scripts/gen_wordcounts.py rewrites only the Approx. Pages column, from the same word counts as Appendix G. Edit course names and chapter lists here; chapters in parentheses are optional and not counted. -->
+
 | Course | Recommended Chapters | Approx. Pages |
 |---|---|---|
-| Introduction to IT Security | 1, 2, 3, 4, 5, 19 | 180 |
-| Computer Security (survey) | 1, 4, 5, 9, 10, 11, 12, 15, 17 | 220 |
-| Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 | 140 |
-| Software Reverse Engineering | 9, 15 (+ 3) | 100 |
-| Computer and Network Security | 2, 3, 5, 11, 12, 17 | 195 |
-| Advanced Network Security (Security+ aligned) | 1, 2, 3, 11, 12, 15, 19 | 215 |
-| Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 135 |
-| Fundamentals of Cryptography | 2, 3, 11, 17 | 145 |
-| Incident Response and Digital Forensics | 12, 13, 14, 15 | 108 |
-| Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 | 135 |
-| Capstone or Certification Prep | All chapters | 470 (about 570 with appendices) |
+| Introduction to IT Security | 1, 2, 3, 4, 5, 19 | 200 |
+| Computer Security (survey) | 1, 4, 5, 9, 10, 11, 12, 15, 17 | 290 |
+| Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 | 150 |
+| Software Reverse Engineering | 9, 15 (+ 3) | 120 |
+| Computer and Network Security | 2, 3, 5, 11, 12, 17 | 225 |
+| Advanced Network Security (Security+ aligned) | 1, 2, 3, 11, 12, 15, 19 | 285 |
+| Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 150 |
+| Fundamentals of Cryptography | 2, 3, 11, 17 | 180 |
+| Incident Response and Digital Forensics | 12, 13, 14, 15 | 135 |
+| Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 | 170 |
+| Capstone or Certification Prep | All chapters | 572 (about 628 with appendices) |
 
-The page counts are approximate and based on the PDF edition, counting only the listed chapters (not the
-appendices). They are a planning aid for gauging reading load per course; the full book runs about 570 pages
-including all appendices. Several courses now exceed a single term's reading if every listed chapter is covered
-in full, so the guidance under "Adapting the Reading Load" below on trimming the encyclopedic back sections of
-the longer chapters applies directly.
+<!-- END generated:course-pages -->
+
+<!-- BEGIN generated:page-basis. Written by scripts/gen_wordcounts.py; edit the wording in that script. -->
+
+The page counts are estimates at about 500 words of prose per page, the same measure Appendix G uses, and they count only the listed chapters, not the appendices. Code listings, figures, and tables are not counted, so a typeset copy will run to a different length. These figures, like Appendix G, are regenerated from the book source whenever the book is rebuilt. They are a planning aid for gauging reading load per course: on the same measure the 20 chapters come to about 572 pages, and the whole book, with its front matter and appendices, to about 628. Several courses now exceed a single term's reading if every listed chapter is covered in full, so the guidance under *Adapting the Reading Load* below on trimming the encyclopedic back sections of the longer chapters applies directly.
+
+<!-- END generated:page-basis -->
 
 Three of these rows correspond to a common community-college and undergraduate sequence. *Computer Security*
 is the introductory survey, covering fundamentals, authentication and access control, attacks, malicious
@@ -57,22 +61,25 @@ network component is emphasized.
 Chapters are written so that the foundational sections come first and the advanced material comes last, which
 means a chapter can be truncated rather than dropped when a term runs short. Two practical consequences:
 
-**Chapter 2 is the outlier.** At roughly 68 pages it is nearly twice the length of the next-longest chapters
-(Chapters 9, 15, and 17), so it dominates any course that includes it. For a certification-oriented or introductory course, Sections 2.1
-through 2.14 (through the TLS handshake) plus 2.16 through 2.19b (key management, the attack taxonomy, applied
-systems, practical guidance, and protecting data in its three states) carry the examinable material. Section
-2.15 (advanced and emerging cryptography, including homomorphic encryption and lattices) and Section 2.20
-(formal security analysis and provable security) are graduate-level and can be assigned as optional reading;
-Section 2.21 (post-quantum standards) repays a single lecture even in an introductory course, because the
-migration deadlines are now concrete. Appendix J likewise belongs to the advanced track.
+<!-- BEGIN generated:outliers. Written by scripts/gen_wordcounts.py; edit the wording in that script. -->
+
+**Chapters 2 and 15 are the outliers.** At about 74 and 73 pages, they are roughly 1.7 and 1.6 times the length of the next-longest chapter, Chapter 9 (about 45 pages), and more than three times the median chapter (about 22 pages), so either one dominates any course that includes it.
+
+For Chapter 2 in a certification-oriented or introductory course, Sections 2.1 through 2.14 (through the TLS handshake) plus 2.16 through 2.19b (key management, the attack taxonomy, applied systems, practical guidance, protecting data in its three states, and tamper-evident mechanisms) carry the examinable material. Sections 2.15 and 2.15a (advanced and emerging cryptography, including homomorphic encryption and lattices, and privacy-preserving constructions such as zero-knowledge proofs) and Section 2.20 (formal security analysis and provable security) are graduate-level and can be assigned as optional reading; Section 2.21 (post-quantum standards) repays a single lecture even in an introductory course, because the migration deadlines are now concrete. Appendix J likewise belongs to the advanced track.
+
+For Chapter 15, Sections 15.1 through 15.21 (about 19 pages) carry the malware-analysis material, including the reverse-engineering overview in Section 15.10. Sections 15.22 through 15.43 (about 50 pages) go deeper, mostly into reverse engineering: disassembly, Windows internals, obfuscation, analysis tooling, and the discipline itself. The *Software Reverse Engineering* course draws on them, and other courses can assign them as optional reading.
+
+<!-- END generated:outliers -->
 
 **Trim from the back of a chapter, not the middle.** Every chapter ends with a summary, a "Why This Matters"
 section, one or more "News in Focus" case studies, review questions, and a lab assignment. The case studies
 and labs are the most valuable material to keep when time is short, because they are what students remember;
 the encyclopedic middle sections of the longer chapters are the safer cut.
 
-The appendices map every chapter to the CISSP, Security+, Certified in Governance, Risk and Compliance (CGRC), CEH, CISA, and CGRC certification domains
-(Appendix C) and to ABET student outcomes and Bloom's taxonomy levels (Appendix D), and they provide a
+The appendices map the chapters to the domains of eight certifications (Appendix C): CISSP, Security+, CEH,
+Certified Information Systems Auditor (CISA), Certified in Governance, Risk and Compliance (CGRC), Systems
+Security Certified Practitioner (SSCP), Certified in Cybersecurity (CC), and GIAC Reverse Engineering Malware
+(GREM). They also map every chapter to ABET student outcomes and Bloom's taxonomy levels (Appendix D), and they provide a
 command reference, a glossary, pointers to companion publications and code, and a protocol security reference
 (Appendices A, B, E, F, I). For instructors, Appendix K adds a topic-to-chapter coverage map, ready-to-adapt
 lecture modules, and sample assignments and group projects, and the companion source code is bundled in the

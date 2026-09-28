@@ -127,3 +127,20 @@ WebGoat and ZAP. GitHub's license detector reports NOASSERTION for the first two
 - `scripts/add_session_sections.py`, which computes and asserts every number in 15.43 and 9.38
 - `scripts/_edit_helper.py`, the notebook-safe substitution helper. Delete if unwanted.
 - `scripts/figures/ch11_8021q_tag.py` and `ch11_segmentation_zones.py`, the two Ch11 figures
+
+## 2026-09-27: reading-load figures in the Introduction follow Appendix G
+
+The Introduction said Chapter 2 ran about 68 pages and was nearly twice the length of the next-longest
+chapters, while Appendix G reported 74.1 pages for it and 73.3 for Chapter 15. The Introduction's page
+figures were typed by hand against an older edition and had drifted; the course table understated
+every course by 10 to 70 pages, and the stated book length was about 570 pages against 628.
+
+- `scripts/gen_wordcounts.py` now also writes the Introduction's Approx. Pages column, the page-basis
+  paragraph and the outliers paragraph, between `generated:` markers, from the same word counts and
+  the same 500 words per page as Appendix G. It settles the Introduction before writing Appendix G,
+  because the Introduction is itself counted. Course names and chapter lists stay editable in the
+  Introduction; chapters in parentheses are optional and not counted.
+- The outliers paragraph now names Chapters 2 and 15 and gives trimming guidance for both. The
+  script warns if the two longest chapters ever stop being 2 and 15.
+- The Appendix C sentence listed CGRC twice and omitted SSCP, CC and GREM; it now lists the eight
+  certifications Appendix C maps.

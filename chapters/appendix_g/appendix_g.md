@@ -2,19 +2,19 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-09-24.
+Last generated: 2026-09-27.
 
 ## Summary by Chapter
 
 | Chapter | Markdown words | Code words | Approx. pages |
 |---|---:|---:|---:|
-| Introduction | 1,566 | 0 | 3.1 |
+| Introduction | 1,814 | 0 | 3.6 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 11,068 | 403 | 22.1 |
 | Chapter 2: Cryptography | 37,058 | 3,066 | 74.1 |
 | Chapter 3: Networking and Network Attacks | 16,806 | 374 | 33.6 |
 | Chapter 4: Social Engineering and the Human Element | 7,647 | 203 | 15.3 |
-| Chapter 5: Risk Management | 13,747 | 469 | 27.5 |
+| Chapter 5: Risk Management | 13,850 | 469 | 27.7 |
 | Chapter 6: Penetration Testing Methodology | 9,787 | 265 | 19.6 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,605 | 464 | 15.2 |
 | Chapter 8: Scanning and Enumeration | 7,231 | 816 | 14.5 |
@@ -40,19 +40,19 @@ Last generated: 2026-09-24.
 | Appendix I: Protocol Security Reference | 4,071 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **313,418** | **13,072** | **627** |
+| **TOTAL** | **313,769** | **13,072** | **628** |
 
 ## Detailed Word Count by Section
 
 
 ### Introduction
 
-*1,566 markdown words (3.1 pages); 0 code words.*
+*1,814 markdown words (3.6 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
-| Course Mapping | 446 |
-|     Adapting the Reading Load | 425 |
+| Course Mapping | 560 |
+|     Adapting the Reading Load | 559 |
 | What Every Chapter Contains | 64 |
 | How to Cite This Book | 181 |
 | Accessibility | 310 |
@@ -280,7 +280,7 @@ Last generated: 2026-09-24.
 
 ### Chapter 5: Risk Management
 
-*13,747 markdown words (27.5 pages); 469 code words.*
+*13,850 markdown words (27.7 pages); 469 code words.*
 
 | Section | Words |
 |---|---:|
@@ -306,7 +306,7 @@ Last generated: 2026-09-24.
 |     Redundancy Engineering: RAID, Replication, and the Difference From Backup | 459 |
 | 5.12 Third-Party and Supply-Chain Risk | 460 |
 | 5.13 Assurance Evaluation | 337 |
-| 5.14 Security Roles, Responsibilities, and Accountability | 251 |
+| 5.14 Security Roles, Responsibilities, and Accountability | 354 |
 | 5.15 Measuring Risk: Metrics, Key Performance Indicators, and Key Risk Indicators | 236 |
 | 5.16 Managing Risk Across the System Lifecycle | 244 |
 | 5.17 Compliance as a Risk Driver | 303 |
