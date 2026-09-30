@@ -231,8 +231,9 @@ Every new claim was checked against primary documentation and, where possible, i
 
 ### Still left for you
 
-- The push could not be made from this environment (no GitHub credentials here). The change is
-  committed locally; apply the delivered patch on your Mac and push with scripts/sync.sh.
+- Done: after the Claude GitHub App was installed, the change was pushed to main as 74de5b0 on
+  2026-09-30, the Build and Deploy Jupyter Book run succeeded, and 15.44 is live. The patch files
+  delivered to Downloads earlier (v1 and v2) are now redundant; do not apply them.
 - The build here ran in a fresh cloud venv. The venv path recorded from earlier work,
   /Users/devharsh/Downloads/venv311/bin, no longer exists (Downloads is empty), so rebuild with your
   current local environment.
