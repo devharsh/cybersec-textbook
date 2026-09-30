@@ -144,3 +144,95 @@ every course by 10 to 70 pages, and the stated book length was about 570 pages a
   script warns if the two longest chapters ever stop being 2 and 15.
 - The Appendix C sentence listed CGRC twice and omitted SSCP, CC and GREM; it now lists the eight
   certifications Appendix C maps.
+
+## 2026-09-30: new Section 15.44, Launching versus Attaching
+
+Chapter 15 gains Section 15.44, "Launching Versus Attaching: How a Debugger Takes Control," inserted
+after 15.43 and before the Chapter Summary. It started from a reader's uploaded note that compared
+launching a debugger with attaching to a process; the note was expanded into a full section and every
+claim in it was checked against primary sources before anything was written.
+
+Two claims in the source note were wrong or too loose and are corrected in the section:
+
+- The note implied Ctrl+Alt+P is the Attach-to-Process shortcut in both Visual Studio and the
+  JetBrains IDEs. It is Visual Studio only. IntelliJ IDEA uses Ctrl+Alt+F5 in its default Windows
+  keymap, Ctrl+Alt+5 in its Linux keymaps and Option+Shift+F5 on macOS (read from the keymap files
+  in the intellij-community repository); Rider adds Ctrl+Alt+Shift+F5 to reattach. The section
+  states this and Exercise 7 makes students correct it.
+- The note said disconnecting the debugger leaves the app running safely, stated unconditionally. On
+  Windows the default is the opposite: DebugSetProcessKillOnExit's KillOnExit parameter defaults to
+  TRUE, and DebugActiveProcess's own documentation says exiting the debugger also exits the target
+  unless that default is cleared. The section explains that IDEs and WinDbg (qd, .detach) opt out of
+  the kill-on-exit default, and that q closes the target.
+
+What the section adds beyond the note: the operating-system mechanism and permission check behind each
+path. Linux ptrace (PTRACE_TRACEME for launch, PTRACE_ATTACH/PTRACE_SEIZE for attach), the
+one-tracer-per-thread rule, GDB's attach-stops / detach-continues / exit-detaches / run-kills behavior,
+Yama ptrace_scope 0 to 3 and CAP_SYS_PTRACE; Windows DebugActiveProcess, SeDebugPrivilege, Session 0
+and w3wp.exe, and the WinDbg -p/-pn/-pv/-o options; macOS task ports, the com.apple.security.cs.debugger
+entitlement, get-task-allow and SIP; the cooperative attach of language runtimes (JDWP suspend and
+binding, the Node.js inspector, Python debugpy); and a security section covering the startup gap for
+packed samples, detach safety for live analysis, anti-debugging (MITRE ATT&CK T1622), and the debugger
+interface itself as an attack surface (unauthenticated JDWP and exposed Node inspectors as
+remote-code-execution exposures).
+
+Every command transcript in the section (launch, attach, detach, quit-while-attached, the self-trace
+anti-debugging check, cross-user attach, lldb wait-for-launch, JDWP suspend and interface binding, the
+Node inspector) was reproduced in a Linux lab (GDB 15.1, LLDB 18.1.3, OpenJDK 21, Node 22) rather than
+recalled. YouTube links from the source note were not reachable to verify and are not used; the section
+cites primary documentation instead (GDB manual, ptrace(2), Yama, Microsoft Learn, JetBrains, Node.js,
+Oracle JPDA, Apple, MITRE, Wiz).
+
+Other files touched, all mechanical:
+
+- references.bib is not used by Chapter 15; the chapter keeps its own numbered list, which gains
+  entries 44 to 69 for the primary sources above.
+- Appendix B gains a JDWP glossary entry.
+- Chapter 9 (Section 9.28) and Section 15.35 gain one-sentence cross-references to 15.44.
+- gen_wordcounts.py was re-run, so the Introduction and Appendix G now read Chapter 15 at about 83
+  pages and the book at about 637, and the Introduction's deep-material range reads 15.22 through 15.44
+  (about 58 pages).
+
+Checks: check_acronyms.py passes with 0 failures; check_links.py finds no dead links among the new
+references (GitHub and a few others return anti-bot 403s, as before); jupyter-book build succeeds with
+only the two pre-existing asm-lexer warnings in older Chapter 15 cells, none from the new section.
+
+An independent agent that had not seen the drafting re-verified every claim against primary sources and
+found no factual errors; its two minor precision notes (the per-thread nature of the tracer limit, and
+the JDWP example binding) were folded in.
+
+### Second pass, same day
+
+The note was sent again, and the section was re-reviewed and extended where the first pass was thin.
+Every new claim was checked against primary documentation and, where possible, in the lab:
+
+- 15.44.1 now says that both modes give the same core tools once connected; that a launched program
+  inherits the debugger's permissions (a sample detonated from an elevated debugger runs elevated);
+  that code optimized before an attach can hide local variables; that building is a separate step
+  (the VS Code preLaunchTask) except where the debugger builds the program itself (Go's Delve); the
+  Start Debugging keys (F5 in Visual Studio and VS Code, Shift+F9 for Debug in IntelliJ IDEA); and that
+  PIDs are reused (pid_max). The table gains a While connected row, a corrected Gate on use row
+  (Yama 2 and 3 can refuse even launch-mode tracing) and a clearer On disconnect row, and a new
+  paragraph covers GDB's all-stop mode and the cost of pausing a live service.
+- New 15.44.6, Remote hosts and containers: gdbserver launch and attach, Visual Studio's msvsmon.exe,
+  and the gdbserver no-security warning. A lab run found that `gdbserver 127.0.0.1:2345` still listens
+  on every interface (the manual says the host part is ignored), so the section recommends a firewall
+  or the manual's stdio-over-ssh route, which opens no port. For containers: Docker's default seccomp
+  profile and CAP_SYS_PTRACE, the VS Code dev container guidance, and `kubectl debug --target`, with
+  the general profile's SYS_PTRACE grant to the ephemeral container and the baseline Pod Security
+  Standard that forbids it. The former 15.44.6 is now 15.44.7.
+- Exercise 9 and its answer, and references 57 to 69.
+- References 45 and 62 now credit the Linux man-pages project, maintained by Alejandro Colomar since
+  2020 (release 5.09 onward), with the man7.org HTML rendering by Michael Kerrisk. Reference 37,
+  which predates this work, still names Kerrisk as editor without a version. That is accurate for
+  pages up to 5.13, so it is left for you to decide.
+- A second independent review of the changed passages found no errors in the core claims. Its
+  precision corrections were each verified before being applied.
+
+### Still left for you
+
+- The push could not be made from this environment (no GitHub credentials here). The change is
+  committed locally; apply the delivered patch on your Mac and push with scripts/sync.sh.
+- The build here ran in a fresh cloud venv. The venv path recorded from earlier work,
+  /Users/devharsh/Downloads/venv311/bin, no longer exists (Downloads is empty), so rebuild with your
+  current local environment.

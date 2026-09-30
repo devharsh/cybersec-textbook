@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-09-27.
+Last generated: 2026-09-30.
 
 ## Summary by Chapter
 
@@ -18,20 +18,20 @@ Last generated: 2026-09-27.
 | Chapter 6: Penetration Testing Methodology | 9,787 | 265 | 19.6 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,605 | 464 | 15.2 |
 | Chapter 8: Scanning and Enumeration | 7,231 | 816 | 14.5 |
-| Chapter 9: Exploitation and Post-Exploitation | 22,407 | 587 | 44.8 |
+| Chapter 9: Exploitation and Post-Exploitation | 22,438 | 587 | 44.9 |
 | Chapter 10: Web Application Security | 8,526 | 372 | 17.1 |
 | Chapter 11: Network Defense and Hardening | 17,938 | 258 | 35.9 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 10,043 | 1,114 | 20.1 |
 | Chapter 13: Digital Forensics | 10,469 | 875 | 20.9 |
 | Chapter 14: Incident Response | 9,786 | 828 | 19.6 |
-| Chapter 15: Malware Analysis | 36,655 | 423 | 73.3 |
+| Chapter 15: Malware Analysis | 41,509 | 423 | 83.0 |
 | Chapter 16: Capture the Flag and Competitive Security | 7,574 | 366 | 15.1 |
 | Chapter 17: Emerging Threats and Future Challenges | 17,298 | 878 | 34.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
 | Chapter 19: Security Governance, Policy, and Culture | 13,598 | 482 | 27.2 |
 | Chapter 20: Industrial Control Systems and OT Security | 13,679 | 442 | 27.4 |
 | Appendix A: Security Command Reference | 1,681 | 0 | 3.4 |
-| Appendix B: Glossary | 5,242 | 0 | 10.5 |
+| Appendix B: Glossary | 5,286 | 0 | 10.6 |
 | Appendix C: Certification Mapping | 1,861 | 0 | 3.7 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,583 | 0 | 3.2 |
@@ -40,7 +40,7 @@ Last generated: 2026-09-27.
 | Appendix I: Protocol Security Reference | 4,071 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **313,769** | **13,072** | **628** |
+| **TOTAL** | **318,698** | **13,072** | **637** |
 
 ## Detailed Word Count by Section
 
@@ -431,7 +431,7 @@ Last generated: 2026-09-27.
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*22,407 markdown words (44.8 pages); 587 code words.*
+*22,438 markdown words (44.9 pages); 587 code words.*
 
 | Section | Words |
 |---|---:|
@@ -495,7 +495,7 @@ Last generated: 2026-09-27.
 |     Worked Examples: Registers and the Stack, Step by Step | 1,656 |
 |     Exercises | 249 |
 |     Answer Key | 408 |
-| 9.28 A Debugger Session, Step by Step | 460 |
+| 9.28 A Debugger Session, Step by Step | 491 |
 |     Exercises | 73 |
 |     Answer Key | 116 |
 | 9.29 Return-Oriented Programming, Worked | 445 |
@@ -880,7 +880,7 @@ Last generated: 2026-09-27.
 
 ### Chapter 15: Malware Analysis
 
-*36,655 markdown words (73.3 pages); 423 code words.*
+*41,509 markdown words (83.0 pages); 423 code words.*
 
 | Section | Words |
 |---|---:|
@@ -987,7 +987,7 @@ Last generated: 2026-09-27.
 | 15.34 Malware-Focused Network Signatures | 352 |
 |     Exercises | 63 |
 |     Answer Key | 149 |
-| 15.35 Debuggers, Disassemblers, and Kernel Debugging | 419 |
+| 15.35 Debuggers, Disassemblers, and Kernel Debugging | 439 |
 |     Exercises | 56 |
 |     Answer Key | 135 |
 | 15.36 AI-Assisted Reverse Engineering | 1,042 |
@@ -1019,13 +1019,23 @@ Last generated: 2026-09-27.
 |     Reading a memory operand | 145 |
 |     Exercises | 82 |
 |     Answer Key | 109 |
+| 15.44 Launching Versus Attaching: How a Debugger Takes Control | 136 |
+|     15.44.1 The two control paths | 884 |
+|     15.44.2 Linux: ptrace and the one-tracer rule | 507 |
+|     15.44.3 Windows: DebugActiveProcess, kill on exit, and privilege | 316 |
+|     15.44.4 macOS: task ports, entitlements, and System Integrity Protection | 126 |
+|     15.44.5 IDEs and language runtimes: the cooperative attach | 333 |
+|     15.44.6 Remote hosts and containers | 398 |
+|     15.44.7 Why the distinction matters for analysis and security | 513 |
+|     Exercises | 275 |
+|     Answer Key | 625 |
 | Chapter Summary | 98 |
 | Why This Matters | 61 |
 | News in Focus: WannaCry and the Worm That Used a Leaked Exploit (2017) | 286 |
 | News in Focus: Fileless and Living-off-the-Land Attacks | 68 |
 | Review Questions (MCQ) | 335 |
 | Lab Assignment | 176 |
-| References | 732 |
+| References | 1,453 |
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
@@ -1395,7 +1405,7 @@ Last generated: 2026-09-27.
 
 ### Appendix B: Glossary
 
-*5,242 markdown words (10.5 pages); 0 code words.*
+*5,286 markdown words (10.6 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1406,7 +1416,7 @@ Last generated: 2026-09-27.
 |     Executable formats and file structure | 241 |
 |     Processor and architecture | 93 |
 |     Windows internals | 111 |
-|     Tools and projects | 203 |
+|     Tools and projects | 247 |
 |     Standards, law and certification | 116 |
 |     Notation that is not an acronym | 102 |
 
