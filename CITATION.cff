@@ -22,7 +22,10 @@ url: "https://book.com.puter.tips/intro.html"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20575785"
-    description: "Zenodo deposit of the textbook (v1.1.1)"
+    description: "Zenodo concept DOI for all versions; resolves to the newest release"
+  - type: doi
+    value: "10.5281/zenodo.20581926"
+    description: "Zenodo DOI of release v1.1.1"
 keywords:
   - cybersecurity
   - information security
@@ -34,3 +37,16 @@ keywords:
   - open educational resource
 version: "1.1.1"
 date-released: "2026-06-07"
+preferred-citation:
+  type: book
+  title: "Cybersecurity: Theory, Practice, and Ethics"
+  authors:
+    - family-names: Trivedi
+      given-names: Devharsh
+      orcid: "https://orcid.org/0000-0001-6374-7249"
+  year: 2026
+  publisher:
+    name: Zenodo
+  doi: "10.5281/zenodo.20575785"
+  url: "https://doi.org/10.5281/zenodo.20575785"
+  license: CC-BY-4.0
