@@ -156,7 +156,7 @@ Discussed mainly in Chapters 3 and 4.
 | Telnet | RFC 854 (1983) | 23 | Legacy remote shell | Cleartext, sniffing, session hijacking | Replace with SSH, disable |
 | RDP (Remote Desktop Protocol) | Microsoft MS-RDPBCGR | 3389 | Windows remote desktop | BlueKeep (CVE-2019-0708), brute force, MITM | Network Level Authentication, patch, VPN/gateway, MFA |
 | VNC / RFB (Remote Framebuffer) | RFC 6143 (2011) | 5900 | Cross-platform remote desktop | Weak or cleartext auth, exposure | Tunnel over SSH/VPN, strong auth |
-| SMB (Server Message Block) | Microsoft MS-SMB2 (SMB1 = CIFS) | 445 (139 legacy) | Windows file and printer sharing | EternalBlue (MS17-010), relay, null sessions | Patch, disable SMBv1, signing, block 445 at the edge |
+| SMB (Server Message Block) | Microsoft MS-SMB2 (SMB1 = CIFS) | 445 (139 legacy) | Windows file and printer sharing | EternalBlue (MS17-010), relay, null sessions | Patch, disable SMBv1, signing, block 445 at the edge (Section 11.26) |
 | NFS (Network File System) | RFC 7530 v4 (2015); RFC 1813 v3 (1995) | 2049 | Unix/Linux file sharing | Weak host-based trust, exposure | Kerberos (NFSv4), export restrictions, firewalling |
 
 Discussed mainly in Chapters 3, 9, 11, and 13.

@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-09-30.
+Last generated: 2026-10-05.
 
 ## Summary by Chapter
 
@@ -12,15 +12,15 @@ Last generated: 2026-09-30.
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 11,068 | 403 | 22.1 |
 | Chapter 2: Cryptography | 37,058 | 3,066 | 74.1 |
-| Chapter 3: Networking and Network Attacks | 16,806 | 374 | 33.6 |
+| Chapter 3: Networking and Network Attacks | 16,823 | 374 | 33.6 |
 | Chapter 4: Social Engineering and the Human Element | 7,647 | 203 | 15.3 |
 | Chapter 5: Risk Management | 13,850 | 469 | 27.7 |
 | Chapter 6: Penetration Testing Methodology | 9,787 | 265 | 19.6 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,605 | 464 | 15.2 |
-| Chapter 8: Scanning and Enumeration | 7,231 | 816 | 14.5 |
+| Chapter 8: Scanning and Enumeration | 7,242 | 816 | 14.5 |
 | Chapter 9: Exploitation and Post-Exploitation | 22,438 | 587 | 44.9 |
 | Chapter 10: Web Application Security | 8,526 | 372 | 17.1 |
-| Chapter 11: Network Defense and Hardening | 17,938 | 258 | 35.9 |
+| Chapter 11: Network Defense and Hardening | 22,325 | 258 | 44.6 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 10,043 | 1,114 | 20.1 |
 | Chapter 13: Digital Forensics | 10,469 | 875 | 20.9 |
 | Chapter 14: Incident Response | 9,786 | 828 | 19.6 |
@@ -37,10 +37,10 @@ Last generated: 2026-09-30.
 | Appendix E: Selected Works by the Author | 1,583 | 0 | 3.2 |
 | Appendix F: Companion Code and Repositories | 1,284 | 0 | 2.6 |
 | Appendix H: Capstone and Group Project Ideas | 2,765 | 0 | 5.5 |
-| Appendix I: Protocol Security Reference | 4,071 | 0 | 8.1 |
+| Appendix I: Protocol Security Reference | 4,073 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **318,698** | **13,072** | **637** |
+| **TOTAL** | **323,115** | **13,072** | **646** |
 
 ## Detailed Word Count by Section
 
@@ -195,7 +195,7 @@ Last generated: 2026-09-30.
 
 ### Chapter 3: Networking and Network Attacks
 
-*16,806 markdown words (33.6 pages); 374 code words.*
+*16,823 markdown words (33.6 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
@@ -213,7 +213,7 @@ Last generated: 2026-09-30.
 |     Special and Reserved Addresses | 233 |
 |     IP Address Management and Internet Registries | 223 |
 | 3.5 Ports and Common Protocols | 437 |
-|     Application Protocols and Their Security Posture | 383 |
+|     Application Protocols and Their Security Posture | 400 |
 |     Secure versus Insecure Protocols | 319 |
 | 3.6 The Core Protocols: TCP, UDP, ICMP, and Their Headers | 793 |
 |     Sockets: Programming the Transport Layer | 216 |
@@ -391,7 +391,7 @@ Last generated: 2026-09-30.
 
 ### Chapter 8: Scanning and Enumeration
 
-*7,231 markdown words (14.5 pages); 816 code words.*
+*7,242 markdown words (14.5 pages); 816 code words.*
 
 | Section | Words |
 |---|---:|
@@ -412,7 +412,7 @@ Last generated: 2026-09-30.
 | 8.7 hping3: Crafting Packets by Hand | 289 |
 | 8.8 Always Sniff the Wire | 176 |
 | 8.9 Operating-System Fingerprinting | 205 |
-| 8.10 Service and Version Scanning, and Enumeration | 220 |
+| 8.10 Service and Version Scanning, and Enumeration | 231 |
 | 8.11 Vulnerability Scanning | 316 |
 | 8.12 The Nmap Scripting Engine (NSE) | 160 |
 | 8.13 Detection and Evasion | 309 |
@@ -586,12 +586,12 @@ Last generated: 2026-09-30.
 
 ### Chapter 11: Network Defense and Hardening
 
-*17,938 markdown words (35.9 pages); 258 code words.*
+*22,325 markdown words (44.6 pages); 258 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 156 |
-| Key Terms | 310 |
+| Learning Objectives | 178 |
+| Key Terms | 363 |
 | 11.1 Firewalls | 161 |
 |     Firewall Types and Evolution | 144 |
 |     Writing Firewall Rules | 154 |
@@ -668,12 +668,22 @@ Last generated: 2026-09-30.
 | 11.25 Egress Filtering, and the Price of Seeing Inside TLS | 118 |
 |     Restrict the destinations | 162 |
 |     Or inspect the contents, and pay for it | 339 |
+| 11.26 SMB File Sharing on Windows and macOS, and How to Secure It | 200 |
+|     How SMB works | 439 |
+|     Turning sharing on in Windows | 356 |
+|     Turning sharing on in macOS | 216 |
+|     What the defaults do not protect: a measured example | 307 |
+|     What attackers do with SMB | 430 |
+|     Hardening Windows | 625 |
+|     Hardening macOS | 267 |
+|     Exercises | 231 |
+|     Answer Key | 451 |
 | Chapter Summary | 204 |
 | Why This Matters | 72 |
 | News in Focus: Flat Networks and Nation-State Lateral Movement | 64 |
 | Review Questions (MCQ) | 299 |
 | Lab Assignment | 159 |
-| References | 565 |
+| References | 1,355 |
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
@@ -1492,7 +1502,7 @@ Last generated: 2026-09-30.
 
 ### Appendix I: Protocol Security Reference
 
-*4,071 markdown words (8.1 pages); 0 code words.*
+*4,073 markdown words (8.1 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1500,7 +1510,7 @@ Last generated: 2026-09-30.
 | I.2 Naming and Address Assignment | 270 |
 | I.3 Web, Transport Security, and Identity | 392 |
 | I.4 Email | 128 |
-| I.5 File Transfer, Remote Access, and Sharing | 336 |
+| I.5 File Transfer, Remote Access, and Sharing | 338 |
 | I.6 Management, Authentication, Time, and Logging | 296 |
 | I.7 VPN and Tunneling | 240 |
 | I.8 Routing, Switching, and Redundancy | 197 |

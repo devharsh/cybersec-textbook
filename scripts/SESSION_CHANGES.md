@@ -237,3 +237,60 @@ Every new claim was checked against primary documentation and, where possible, i
 - The build here ran in a fresh cloud venv. The venv path recorded from earlier work,
   /Users/devharsh/Downloads/venv311/bin, no longer exists (Downloads is empty), so rebuild with your
   current local environment.
+
+## 2026-10-05: new Section 11.26, SMB file sharing on Windows and macOS
+
+Chapter 11 gains Section 11.26, "SMB File Sharing on Windows and macOS, and How to Secure It", after 11.25
+and before the Chapter Summary. It began from a reader's note on what SMB is, how to share a folder in Windows,
+and how to turn on SMB sharing in macOS. Every claim in the note was checked before anything was written, and
+the section adds what the note lacked: the security settings that decide whether a share is safe.
+
+Corrections to the source note, each now stated correctly in the section:
+
+- SMB is not a LAN protocol. It runs over any IP network, Microsoft describes SMB 3 improvements for branch
+  offices on WAN links, and SMB over QUIC carries it across the internet on UDP 443.
+- TCP 445 is right for direct-hosted SMB, but the legacy NetBIOS ports (UDP 137 and 138, TCP 139) are only
+  needed by SMB 1, and the note did not mention QUIC.
+- The Windows steps omitted the conditions that make sharing safe: enable discovery only on the Private
+  profile, keep password-protected sharing on (Microsoft's own troubleshooting page says to turn it off, with no
+  warning), and remember that share and NTFS permissions both apply.
+- The macOS steps were right, but left out Apple's own warning that passwords for Windows File Sharing accounts
+  may be stored less securely, and that those accounts should be deselected before turning file sharing off.
+- The note's numbered sources were bare domains, not pages, and could not be verified. The section cites
+  primary pages instead.
+
+What the section adds: how SMB works (ports, dialects from MS-SMB2 Appendix A, SMB 2.0.2 shipping with Windows
+Vista SP1), Windows and macOS sharing steps for Windows 11 and macOS 27 Golden Gate, a measured lab table, the
+attack techniques (MS17-010, CVE-2020-0796, CVE-2021-34527, ATT&CK T1135, T1021.002, T1187 with its WebDAV
+fallback, T1557.001), and hardening lists for both platforms built from Microsoft's current defaults (signing,
+encryption, guest logons, SMB 1, dialect floor, NTLM deprecation and the September 2026 retirement FAQ, firewall,
+SMB over QUIC) and Apple's documented client and server settings (nsmb.conf protocol_vers_map, port445,
+signing_required; ProtocolVersionMap on the server).
+
+The lab table comes from a real run: Samba 4.19.5 on loopback, observed with smbstatus. At defaults an SMB 3.1.1
+session was neither encrypted nor fully signed, anonymous share listing succeeded, and SMB 1 was refused;
+restrict anonymous = 2, server signing = mandatory and server smb encrypt = required fixed all three, imposed
+protection even on a client run with --client-protection=off, and refused an SMB 2.1 client.
+
+Also changed: Chapter 11 learning objective 14 and key terms SMB signing and SMB over QUIC; references 27 to 52;
+one-sentence cross-references in Sections 3.5 and 8.10 and in Appendix I's SMB row; regenerated word counts
+(Chapter 11 about 45 pages, just under Chapter 9, and the book about 646).
+
+Checks: check_acronyms.py 0 failures; no dead links (samba.org returns an anti-bot 403 to the checker but was read
+directly); jupyter-book build succeeds with only the two older asm-lexer warnings; no em dashes, curly quotes,
+prose quotation marks or non-ASCII characters in the new text.
+
+An independent agent re-verified every claim and found eleven precision problems, all checked and fixed before
+publishing: guest-logon defaults by edition, the WebDAV fallback when outbound SMB is blocked, Microsoft's
+Guest or Everyone wording as an instruction, SMB 1 on Windows 10, Vista SP1, the NTLM wording, Apple's warning
+placement and the Firewall Options path, lab wording, Linux's kernel SMB client and ksmbd, and reference dates
+and URLs.
+
+### Still left for you
+
+- No Microsoft page states the Windows 11 Home guest-logon default for version 24H2 and later, so the section
+  names only the editions Microsoft documents.
+- Microsoft's PrintNightmare workaround page is JavaScript-only, so the section's advice stays general (share
+  printers only where needed, patch).
+- The macOS nsmb.conf keys come from Apple support articles and the macOS 15.2 manual page; Apple's open-source
+  SMB repository is from the 2013 era and was not relied on.
