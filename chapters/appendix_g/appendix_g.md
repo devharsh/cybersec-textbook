@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-10-05.
+Last generated: 2026-10-08.
 
 ## Summary by Chapter
 
@@ -11,8 +11,8 @@ Last generated: 2026-10-05.
 | Introduction | 1,814 | 0 | 3.6 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 11,068 | 403 | 22.1 |
-| Chapter 2: Cryptography | 37,058 | 3,066 | 74.1 |
-| Chapter 3: Networking and Network Attacks | 16,823 | 374 | 33.6 |
+| Chapter 2: Cryptography | 37,826 | 3,066 | 75.7 |
+| Chapter 3: Networking and Network Attacks | 17,033 | 374 | 34.1 |
 | Chapter 4: Social Engineering and the Human Element | 7,647 | 203 | 15.3 |
 | Chapter 5: Risk Management | 13,850 | 469 | 27.7 |
 | Chapter 6: Penetration Testing Methodology | 9,787 | 265 | 19.6 |
@@ -25,7 +25,7 @@ Last generated: 2026-10-05.
 | Chapter 13: Digital Forensics | 10,469 | 875 | 20.9 |
 | Chapter 14: Incident Response | 9,786 | 828 | 19.6 |
 | Chapter 15: Malware Analysis | 41,509 | 423 | 83.0 |
-| Chapter 16: Capture the Flag and Competitive Security | 7,574 | 366 | 15.1 |
+| Chapter 16: Capture the Flag and Competitive Security | 8,100 | 366 | 16.2 |
 | Chapter 17: Emerging Threats and Future Challenges | 17,298 | 878 | 34.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
 | Chapter 19: Security Governance, Policy, and Culture | 13,598 | 482 | 27.2 |
@@ -40,7 +40,7 @@ Last generated: 2026-10-05.
 | Appendix I: Protocol Security Reference | 4,073 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **323,115** | **13,072** | **646** |
+| **TOTAL** | **324,619** | **13,072** | **649** |
 
 ## Detailed Word Count by Section
 
@@ -112,26 +112,26 @@ Last generated: 2026-10-05.
 
 ### Chapter 2: Cryptography
 
-*37,058 markdown words (74.1 pages); 3,066 code words.*
+*37,826 markdown words (75.7 pages); 3,066 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 185 |
-| Key Terms | 732 |
+| Key Terms | 775 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
-|     Encoding versus Encryption versus Hashing | 844 |
-| 2.2 Classical Ciphers and Why They Fall | 604 |
+|     Encoding versus Encryption versus Hashing | 876 |
+| 2.2 Classical Ciphers and Why They Fall | 730 |
 |     Classical versus Modern Ciphers | 295 |
 |     A Classification of Ciphers | 226 |
 |     Classical Ciphers in Code | 294 |
-| 2.3 Perfect Secrecy and the One-Time Pad | 633 |
+| 2.3 Perfect Secrecy and the One-Time Pad | 828 |
 |     XOR, the One-Time Pad, and Perfect Secrecy, Formally | 698 |
 |     From Information-Theoretic to Computational Security | 311 |
 |     Game-Based (Provable) Security and Ciphertext Indistinguishability | 2,295 |
 |     Real-World Case: The ANC's One-Time Pad and Operation Vula | 441 |
 | 2.4 Randomness: True, Pseudo, and Cryptographically Secure | 517 |
 |     Insecure versus Cryptographically Secure Randomness in Code | 168 |
-| 2.5 Symmetric Encryption: Stream and Block Ciphers | 850 |
+| 2.5 Symmetric Encryption: Stream and Block Ciphers | 1,007 |
 |     The Feistel Network: A Blueprint for Block Ciphers | 222 |
 | 2.6 Block Cipher Modes of Operation | 688 |
 |     AES Modes in Code: ECB versus CTR | 327 |
@@ -168,7 +168,7 @@ Last generated: 2026-10-05.
 |     Anonymous Credentials and Selective Disclosure | 1,420 |
 |     The Signature Zoo: Variants Beyond Sign-and-Verify | 694 |
 |     Primitives Beyond Encryption and Signatures | 924 |
-| 2.16 Key Management | 530 |
+| 2.16 Key Management | 714 |
 |     Key Management Services and Key Escrow | 347 |
 | 2.17 A Taxonomy of Cryptographic Attacks | 348 |
 | 2.18 Applied Cryptographic Systems | 399 |
@@ -191,16 +191,16 @@ Last generated: 2026-10-05.
 | Review Questions (MCQ) | 433 |
 |     Answer Key | 106 |
 | Lab Assignment | 387 |
-| References | 1,399 |
+| References | 1,430 |
 
 ### Chapter 3: Networking and Network Attacks
 
-*16,823 markdown words (33.6 pages); 374 code words.*
+*17,033 markdown words (34.1 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 152 |
-| Key Terms | 427 |
+| Key Terms | 461 |
 | 3.1 Why Networking Is the Battleground | 359 |
 | 3.2 The OSI Model | 550 |
 |     Mapping the OSI and TCP/IP Models | 276 |
@@ -219,7 +219,7 @@ Last generated: 2026-10-05.
 |     Sockets: Programming the Transport Layer | 216 |
 |     Sockets in Code: A TCP Server, Client, and a Tiny Web Server | 586 |
 | 3.7 ARP and DHCP: Convenience and Its Abuse | 472 |
-|     The Domain Name System (DNS) | 704 |
+|     The Domain Name System (DNS) | 847 |
 | 3.8 Sniffing: Listening on the Wire | 530 |
 |     Wireless Networking Fundamentals | 250 |
 |     Traffic Analysis and Network Monitoring | 158 |
@@ -246,7 +246,7 @@ Last generated: 2026-10-05.
 | Review Questions (MCQ) | 384 |
 |     Answer Key | 30 |
 | Lab Assignment | 393 |
-| References | 313 |
+| References | 346 |
 
 ### Chapter 4: Social Engineering and the Human Element
 
@@ -1049,12 +1049,12 @@ Last generated: 2026-10-05.
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*7,574 markdown words (15.1 pages); 366 code words.*
+*8,100 markdown words (16.2 pages); 366 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 89 |
-| Key Terms | 112 |
+| Key Terms | 132 |
 | 16.1 What Is a CTF? | 46 |
 |     Jeopardy Format | 152 |
 | 16.2 Category Deep Dives | 0 |
@@ -1075,7 +1075,8 @@ Last generated: 2026-10-05.
 | 16.7 Why CTFs Build Real Skill | 280 |
 | 16.8 Hosting a CTF and Competition Etiquette | 294 |
 | 16.9 Notable Competitions: picoCTF, CyberPatriot, and the Collegiate Cyber Defense Competition | 230 |
-| 16.10 A CTF Toolkit by Category | 495 |
+|     Case Study Competitions: When the Deliverable Is a Recommendation | 362 |
+| 16.10 A CTF Toolkit by Category | 550 |
 | 16.11 Free Platforms and Cyber Ranges for Teaching | 367 |
 | 16.12 The Reverse Engineering Category, End to End | 332 |
 |     Eight Archetypes | 260 |
@@ -1091,7 +1092,7 @@ Last generated: 2026-10-05.
 | News in Focus: Government-Sponsored CTF Competitions | 58 |
 | Review Questions (MCQ) | 314 |
 | Lab Assignment | 164 |
-| References | 155 |
+| References | 244 |
 
 ### Chapter 17: Emerging Threats and Future Challenges
 

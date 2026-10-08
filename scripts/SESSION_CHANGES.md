@@ -294,3 +294,57 @@ and URLs.
   printers only where needed, patch).
 - The macOS nsmb.conf keys come from Apple support articles and the macOS 15.2 manual page; Apple's open-source
   SMB repository is from the 2013 era and was not relied on.
+
+## 2026-10-08: workshop coverage in Chapters 2, 3 and 16
+
+The two-part CyberChef workshop for the CyberNinjas club (Encode, Encrypt, or Hash? and Crack the Case) now
+cites the book section by section, so every concept the workshop teaches had to be in the book first. Most
+already were: Sections 2.1 to 2.9, 2.13, 2.15a, 2.16, 2.17, 13.2, 13.14, 13.22, 14.2, 14.10, 14.22, 14.27,
+15.24, 15.42, 16.1, 16.2, 16.10, 17.2, 17.4 and 17.12. The gaps were filled as follows.
+
+- Section 2.1: the kitchen picture gains its third limit. Water keeps its amount, while Base64 output runs about
+  a third longer than its input.
+- Section 2.2: ROT13, the Caesar cipher with its shift fixed at 13, has no key, so by the two questions of
+  Section 2.1 it sits with the encodings even though it is usually listed among the classical ciphers.
+- Section 2.3: single-byte XOR has only 256 keys and the work is recognizing the right one; cribs, the
+  known-plaintext attack, and why a crib reveals nothing beyond itself under a one-time pad.
+- Section 2.5: the 2 to the 128th arithmetic (about 3.4 times 10 to the 38th keys, on the order of 10 to the
+  19th years at a trillion guesses a second), why practical attacks go after the key, the implementation and the
+  mode instead, and the Grover caveat that points to Section 2.15.
+- Section 2.16: deleting a leaked key does not un-leak it; GitHub's revoke-or-rotate guidance, push protection
+  and its limits (off by default for repositories, bypassable), and CWE-798.
+- Section 3.7: reserved names from RFC 2606 and RFC 6761, why names under .invalid never resolve, and why
+  .localhost and the example domains still do.
+- Section 16.9: new subsection, Case Study Competitions: When the Deliverable Is a Recommendation, with the
+  Cybersecurity Case Competition of ISACA's New York Metropolitan Chapter as the example.
+- Section 16.10: CyberChef 11.5.0 (September 18, 2026) ships 505 operations; the project's statement that no
+  recipe or input reaches its web server, and the two operations that contact outside servers by design.
+
+Also changed: key terms ROT13, Crib, Reserved domain names and Case study competition, also added to each
+chapter's static index cell; Chapter 2 references 62 to 64 (and the blank line that loosened the list removed);
+Chapter 3 references 14 and 15; a new Chapter 16 reference group for Sections 16.9 and 16.10 with five entries;
+regenerated word counts (Chapter 2 about 76 pages, the book about 649).
+
+Sources were read directly: the ISACA chapter's competition overview and Past Winners pages, the Stevens
+(May 31, 2023) and Baruch Zicklin (June 26, 2024) articles, GitHub Docs on removing sensitive data and on push
+protection, MITRE CWE-798, RFC 2606 and RFC 6761, and CyberChef's README, CHANGELOG and Categories.json at tags
+v11.3.0, v11.4.0 and v11.5.0 (501, 504 and 505 distinct operations; gchq.github.io/CyberChef serves 11.5.0).
+
+Checks: check_acronyms.py 0 failures for Chapters 2, 3 and 16; new links return 200 except two the container
+cannot test (the Baruch host fails TLS verification from the shell and was read through a fetcher, and
+github.com/gchq/CyberChef is the canonical repository); jupyter-book build in a CI-mirror copy succeeds with only
+the two older asm-lexer warnings; no em dashes, curly quotes, prose quotation marks or non-ASCII characters in
+the new text.
+
+An independent agent re-verified every claim and found precision problems, all checked and fixed before
+publishing: the ROT13 classification wording, the Section 16.2 and 15.24 cross-references, an AES sentence that
+contradicted Section 2.17, GitHub's stated reason for rotating and the limits of push protection, a claim that
+reserved names can never exist, CyberChef's client-side wording, the competition's official name, an unsupported
+time span, a phrase copied from the ISACA page, and the grouping of the new Chapter 16 references.
+
+### Still left for you
+
+- The lecture decks' bottle picture does not yet carry the third limit now stated in Section 2.1.
+- CyberChef releases often; the version and operation count in Section 16.10 will need a refresh.
+- The ISACA chapter's overview says Over six years (2020 to 2025 on its Past Winners page); when it updates the
+  totals, Section 16.9 should follow.
