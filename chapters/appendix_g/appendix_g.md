@@ -28,7 +28,7 @@ Last generated: 2026-10-09.
 | Chapter 16: Capture the Flag and Competitive Security | 8,120 | 366 | 16.2 |
 | Chapter 17: Emerging Threats and Future Challenges | 21,802 | 1,573 | 43.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
-| Chapter 19: Security Governance, Policy, and Culture | 13,598 | 482 | 27.2 |
+| Chapter 19: Security Governance, Policy, and Culture | 15,865 | 482 | 31.7 |
 | Chapter 20: Industrial Control Systems and OT Security | 13,679 | 442 | 27.4 |
 | Appendix A: Security Command Reference | 1,681 | 0 | 3.4 |
 | Appendix B: Glossary | 5,531 | 0 | 11.1 |
@@ -40,7 +40,7 @@ Last generated: 2026-10-09.
 | Appendix I: Protocol Security Reference | 4,073 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,794 | 0 | 7.6 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **333,709** | **13,994** | **667** |
+| **TOTAL** | **335,976** | **13,994** | **672** |
 
 ## Detailed Word Count by Section
 
@@ -1222,12 +1222,12 @@ Last generated: 2026-10-09.
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*13,598 markdown words (27.2 pages); 482 code words.*
+*15,865 markdown words (31.7 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 179 |
-| Key Terms | 228 |
+| Learning Objectives | 189 |
+| Key Terms | 256 |
 | 19.1 What Security Governance Is | 48 |
 |     Why Governance Matters | 50 |
 | 19.2 The CISO Role | 0 |
@@ -1237,8 +1237,10 @@ Last generated: 2026-10-09.
 | 19.3 The Policy Hierarchy | 0 |
 |     Policy | 92 |
 |     Standard | 47 |
+|     Process | 157 |
 |     Procedure | 54 |
-|     Guideline | 44 |
+|     Guideline | 43 |
+|     A Worked Example: When Claude Ends an Abusive Chat | 1,768 |
 | 19.4 Board-Level Security Reporting | 0 |
 |     Communicating Risk in Business Language | 68 |
 |     Key Metrics for Board Reporting | 78 |
@@ -1272,7 +1274,7 @@ Last generated: 2026-10-09.
 |     Writing appetite in numbers | 256 |
 | 19.14 The Three Lines Model, and the Criticisms of It | 225 |
 |     Where it breaks, and what its critics say | 186 |
-| 19.15 One Control at Four Levels, and the Metadata That Makes It Auditable | 240 |
+| 19.15 One Control at Four Levels, and the Metadata That Makes It Auditable | 258 |
 |     The verb decides everything, and the header block proves it | 179 |
 | 19.16 Exceptions and Risk Acceptance, Where Governance Usually Fails | 218 |
 |     The arithmetic that decides whether the register survives | 187 |
@@ -1300,12 +1302,12 @@ Last generated: 2026-10-09.
 |     What the evidence says about the standard intervention | 166 |
 |     Exercises | 66 |
 |     Answer Key | 101 |
-| Chapter Summary | 197 |
+| Chapter Summary | 213 |
 | Why This Matters | 63 |
 | News in Focus: What the SolarWinds Case Did and Did Not Settle | 197 |
-| Review Questions (MCQ) | 576 |
+| Review Questions (MCQ) | 691 |
 | Lab Assignment | 190 |
-| References | 486 |
+| References | 642 |
 
 ### Chapter 20: Industrial Control Systems and OT Security
 

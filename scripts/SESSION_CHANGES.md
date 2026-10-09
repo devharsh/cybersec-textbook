@@ -515,3 +515,38 @@ Checks: check_acronyms.py 0 failures; all notebooks validate; MyST token scan fi
 jupyter-book build clean apart from the two existing asm lexer notices in Chapter 15; rendered pages
 screenshotted (Chapters 1, 2, 3, 5, 13, 17, 19, Appendices B and J, all changed diagrams); word counts
 regenerated.
+
+## 2026-10-09: the policy hierarchy told through Claude's abuse rule (Section 19.3)
+
+The reader asked for policy, process and procedure to be explained with the news that Anthropic's 2026 Usage
+Policy update bans sustained abuse of its models and that Claude can end abusive chats, with the policy as the
+high-level rule and the procedure as the exact steps and technology Claude uses.
+
+Section 19.3 now has a Process level between Standard and Procedure, defined from ISO 9000:2015 (a process is a
+set of interrelated or interacting activities that use inputs to deliver an intended result; a procedure is a
+specified way to carry out an activity or a process) and illustrated with the Chapter 14 incident response
+lifecycle and its playbooks. A new worked example, When Claude Ends an Abusive Chat, sorts Anthropic's public
+statements into the five levels: the one-line Usage Policy prohibition (policy, including the trap that
+Anthropic files it under a heading called Universal Usage Standards), the published conditions for ending a
+conversation (standard), the Safeguards loop from writing the policy through training, pre-release testing,
+enforcement, feedback and revision (process), the six steps inside one conversation, ending with the
+end-conversation action shown in the Claude Opus 4 system card and the app closing the thread (procedure),
+and the feedback advice and scope note (guideline). It closes with a five-level table, two exercises and an
+answer key. Learning objective 3, a Process key term, the opening of Section 19.15, the chapter summary, review
+questions 16 and 17 (answers C and A), references 22 to 30 and index terms were updated to match.
+
+Where the procedure describes mechanics Anthropic has not published, the text says so: the system card's test
+transcript shows the action as end_conversation, and the developer documentation explains that a tool call is
+returned by the model and executed by the application, so the section calls the action a tool on that basis
+and states that the product wiring is not public.
+
+Sources read directly: Anthropic, 2026 Usage Policy update (October 8, 2026); Anthropic Usage Policy effective
+November 12, 2026; Anthropic, Claude Opus 4 and 4.1 can now end a rare subset of conversations (August 15,
+2025); Anthropic, Building safeguards for Claude (August 12, 2025); System Card: Claude Opus 4 & Claude Sonnet 4,
+Section 5.7 and Transcript 5.7.A; the published Claude Opus 5.5 system prompt (September 22, 2026); Anthropic's
+tool use documentation; Brandom, TechCrunch (October 8, 2026); the NIST glossary entry reproducing ISO 9000:2015
+3.4.5. The Gadgets Now article the reader linked could not be fetched from this session and is not cited.
+
+Checks: check_acronyms.py 0 failures; the nine new reference links return 200; no accidental math in the
+chapter; jupyter-book build clean; the new section, table, exercises and questions screenshotted; word counts
+regenerated (book about 672 pages).
