@@ -411,7 +411,13 @@
     "LSB": "least significant bit",
     "NLP": "natural language processing",
     "XAI": "explainable artificial intelligence",
-    "DOJ": "Department of Justice"
+    "DOJ": "Department of Justice",
+    "SDM": "Software Developer's Manual",
+    "SMRAM": "system management RAM",
+    "WSMT": "Windows SMM Security Mitigations Table",
+    "pKVM": "protected KVM",
+    "PIN": "personal identification number",
+    "AVF": "Android Virtualization Framework"
   },
   "literal": [
     "A01",
@@ -428,6 +434,7 @@
     "A2",
     "A3",
     "A4",
+    "A5",
     "AA20",
     "AA23",
     "AA25",
@@ -644,6 +651,7 @@
     "LiteLLM",
     "M1",
     "MB",
+    "MINIX",
     "MIT",
     "MOVEit",
     "MS08",
@@ -742,6 +750,7 @@
     "SPL",
     "SRI",
     "SSE4",
+    "ST33",
     "STL",
     "SUSE",
     "SVR",
@@ -791,6 +800,7 @@
     "UI",
     "UPX1",
     "USA",
+    "USB4",
     "USD",
     "UTC",
     "UTF",
@@ -818,8 +828,10 @@
     "YAPAXI",
     "YAXPAX",
     "ZAP",
+    "faulTPM",
     "macOS",
     "picoCTF",
-    "psABI"
+    "psABI",
+    "sepOS"
   ]
 }

@@ -355,6 +355,7 @@ ALLOW |= set(BOOK_LITERAL)
 # acronym the chapter owes the reader, but the same letters elsewhere might be; scoping the exception
 # to one file keeps a real finding in another file from being silently suppressed.
 CHAPTER_LITERAL = {
+    ("01_intro", "SL"): "part of the processor name Intel386 SL; elsewhere SL is a security level",
     ("13_forensics", "ACID"): "a wrong-answer distractor in a review question",
     ("13_forensics", "CRC"): "one of four algorithm names offered as answer options; expanding only "
                              "this one would signal the answer",

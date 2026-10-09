@@ -550,3 +550,61 @@ tool use documentation; Brandom, TechCrunch (October 8, 2026); the NIST glossary
 Checks: check_acronyms.py 0 failures; the nine new reference links return 200; no accidental math in the
 chapter; jupyter-book build clean; the new section, table, exercises and questions screenshotted; word counts
 regenerated (book about 672 pages).
+
+## 2026-10-09: what runs at each privilege level, why rings 1 and 2 go unused, and Intel TDX (Section 1.6)
+
+The reader asked for SMM firmware, TPMs, TEEs and TDX to be expanded, for examples of the software and hardware
+that run at each CPU ring, and for an explanation of why there are two privilege levels for device drivers. They
+also supplied two notes on TDX, the second stressing that TDX adds no numbered ring.
+
+Section 1.6 gains five subsections before the trusted computing base, which now has its own heading:
+
+- What Runs at Each Level: a table of real software and hardware for x86 rings 3 to -3 and the discrete TPM, a
+  table for Arm EL0 to EL3 in both worlds (OP-TEE, Trusty, Trusted Firmware-A BL31, Hafnium, pKVM), and the
+  Apple Secure Enclave.
+- Why Rings 1 and 2 Were Meant for Device Drivers: Intel's graded-trust design, the IOPL and I/O permission
+  bitmap, why mainstream systems use only rings 0 and 3 (paging treats rings 0 to 2 alike, 64-bit mode dropped
+  segment limit checks, portability), Xen's use of ring 1, and today's replacements: user-mode drivers (UMDF),
+  user-mode security products after the July 2024 CrowdStrike outage, virtualization-based security, and the
+  IOMMU with Kernel DMA Protection.
+- Beneath Ring 0: VMX root and non-root operation, SMM (SMI, SMRAM, RSM, the confused-deputy and Memory Sinkhole
+  attacks, WSMT, the SMM-transfer monitor, the Secured-core SMM requirement), and the security processors (CSME,
+  AMD Secure Processor, Pluton).
+- The Trusted Platform Module Up Close: keys, measurements, sealing with PCR 7, attestation, the Windows 11
+  requirement, Pluton no longer acting as the TPM on 2026 AMD and Qualcomm silicon, and three attack lines (bus
+  sniffing, TPM-Fail timing, faulTPM fault injection) with the enhanced-PIN lesson.
+- Trusted Execution Environments: enclaves, secure worlds and confidential virtual machines (SEV-SNP, Arm CCA),
+  then TDX: SEAM beside VMX root, the Intel-signed TDX module, trust domains with their own rings 0 and 3, guest
+  kernel support since Linux 5.19, Xeon generations, Azure and Google Cloud offerings and their live-migration
+  limits, and a Going Deeper box on SEAMCALL, TDCALL and TDG.VP.VMCALL (TDVMCALL in the Linux source), MKTME,
+  the owner bit and MAC, shared memory, and MRTD and RTMR attestation.
+
+The x86 rings figure was redrawn: the TDX trust domain is now a dashed band across rings 3 to 0, and the TDX
+module sits in a SEAM box in the ring -1 band with a callout that SEAM is a mode beside VMX root, not a new
+ring. The alt text matches. Learning objective 9, three key terms, the chapter summary, review questions 13 to
+15 (answers A, D, A), references 19 to 51, index terms and four Appendix B glossary entries were updated.
+
+Left out because no primary source could be found: VMware vSphere support for TDX, a vTPM in TDX 1.5, and OS/2
+specifics for rings 1 and 2. The supplied note's claim of unchanged guests was narrowed: applications run
+unchanged, but the guest kernel needs TDX support.
+
+An independent fact-check found no outright errors and twelve precision issues, all fixed: the PIN lesson now
+says a long alphanumeric (enhanced) PIN, because faulTPM estimates even a ten-digit numeric PIN falls in about
+half a minute; the bus-sniffing claim matches its source; the Memory Sinkhole is described as subverting SMRAM
+protection; guest rings are cited to SDM Vol. 3C Sec. 26.3; the IOPL text mentions the I/O permission bitmap;
+SMM's origin follows SDM Vol. 1 Sec. 3.1; TPM-Fail timing reads within minutes; the 2025 Microsoft post is cited
+for the private preview; most Arm levels are split; 64-bit mode replaces long mode; both CrowdStrike posts are
+credited to David Weston; and the discrete TPM examples are sourced to TPM-Fail.
+
+Sources read directly: Intel SDM 325462-093US (September 2026); Barham et al. 2003; Cheng et al. 2023; Moghimi
+et al. 2019; Jacob et al. 2023; the WSMT specification 1.0; Microsoft Learn pages on user and kernel mode, UMDF
+failures, VBS, Kernel DMA Protection, System Guard, Silicon assisted security, Windows 11 Secured-core PCs, TPM
+overview and fundamentals, BitLocker countermeasures, Hardware root-of-trust, Pluton and Pluton as TPM, and Azure
+confidential VMs; Weston 2024a and 2024b; Microsoft 2025; Tanenbaum's open letter; OP-TEE, Trusty, TF-A, Hafnium,
+AVF, Apple Secure Enclave, Kernel Newbies 5.19, canonical/tdx, Google Cloud supported configurations, and the
+Linux TDX documentation and tdx.h header.
+
+Checks: check_acronyms.py 0 failures (SL scoped as a Chapter 1 literal for the Intel386 SL); MyST math scan shows
+no new math tokens; every new URL resolves (Intel's SDM page, doi.org and the canonical/tdx page refuse scripts
+but were confirmed another way); jupyter-book build has no warnings; tables, figure and Going Deeper box
+screenshotted; word counts regenerated.

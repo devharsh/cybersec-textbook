@@ -8,8 +8,11 @@ assets/figures/ch01_privilege_rings_x86.png
     firmware) and ring -3 (the platform security processor, Intel CSME or the AMD Secure
     Processor). Callouts place the two components readers look for and that are not rings:
     trusted execution environments (an SGX enclave runs in ring 3 but is sealed off from ring 0
-    and the hypervisor; a TDX trust domain is a whole guest sealed off from the host) and TPMs
-    (a firmware TPM runs inside the security processor; a discrete TPM is a separate chip).
+    and the hypervisor; an Intel TDX trust domain is a whole guest with its own rings 3 and 0,
+    drawn as a dashed band across them, sealed off from the hypervisor and host, while the TDX
+    module runs in Secure Arbitration Mode, SEAM, a mode beside the hypervisor's VMX root rather
+    than a new ring) and TPMs (a firmware TPM runs inside the security processor; a discrete TPM
+    is a separate chip).
 
 assets/figures/ch01_privilege_rings_arm.png
     Arm exception levels as concentric disks split into the TrustZone normal world (left) and
@@ -19,7 +22,7 @@ assets/figures/ch01_privilege_rings_arm.png
 Sources for every label are cited in Section 1.6 and its reference list: Tereshkin and
 Wojtczuk (2009) and Domas (2015) for the negative rings; Intel (2022) for PTT in the CSME;
 Buhren and Eichner (2020) for the AMD Secure Processor and its firmware TPM; Costan and
-Devadas (2016) for SGX; Cheng et al. (2023) for TDX; Arm's AArch64 Exception Model guide,
+Devadas (2016) for SGX; Cheng et al. (2023) for TDX and SEAM; Arm's AArch64 Exception Model guide,
 the SMC Calling Convention and Mann (2018) for the exception levels and TrustZone.
 
 Colors: one blue ordinal ramp for the processor's own rings and one orange ordinal ramp for
@@ -29,13 +32,14 @@ validator's ordinal checks (monotone lightness, visible steps, light end at leas
 Run from anywhere:  python3 scripts/figures/ch01_privilege_rings.py
 """
 
+import math
 import pathlib
 
 import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, FancyBboxPatch, Wedge
+from matplotlib.patches import Circle, FancyBboxPatch, Polygon, Wedge
 
 DPI = 200
 FIGSIZE = (9.6, 7.0)
@@ -99,13 +103,25 @@ def x86_figure():
                         linestyle=(0, (2, 1.2)), zorder=4))
     callout(ax, (ex - 0.2, ey), (-6.15, -3.0),
             "TEE (Intel SGX enclave): runs as\nring 3 code, yet its memory is\nsealed off from ring 0 and\nthe hypervisor")
-    # TDX trust domain inside ring 0
-    tx, ty = 2.25 * 0.906, -2.25 * 0.423
-    ax.add_patch(FancyBboxPatch((tx - 0.2, ty - 0.13), 0.4, 0.26, boxstyle="round,pad=0.02",
-                                facecolor=SURFACE, edgecolor=INK, linewidth=1.4,
-                                linestyle=(0, (2, 1.2)), zorder=4))
-    callout(ax, (tx + 0.22, ty), (4.0, -0.45),
-            "Confidential VM (Intel TDX):\na whole guest sealed off\nfrom the hypervisor and host")
+    # Intel TDX: a trust domain is a guest with its own rings 3 to 0, drawn as a dashed band across
+    # them; the TDX module runs in SEAM, a mode beside the hypervisor's VMX root, not a new ring.
+    th = math.radians(-16)
+    ux, uy = math.cos(th), math.sin(th)
+    px, py = -uy, ux
+    r1, r2, half = 1.97, 3.50, 0.13
+    band_pts = [(r1 * ux + half * px, r1 * uy + half * py), (r2 * ux + half * px, r2 * uy + half * py),
+                (r2 * ux - half * px, r2 * uy - half * py), (r1 * ux - half * px, r1 * uy - half * py)]
+    ax.add_patch(Polygon(band_pts, closed=True, facecolor=(1, 1, 1, 0.45), edgecolor=INK,
+                         linewidth=1.4, linestyle=(0, (2, 1.2)), zorder=4))
+    callout(ax, (3.42 * ux, 3.42 * uy), (4.0, -0.30),
+            "Intel TDX trust domain: a confidential\nVM with its own rings 3 and 0,\nsealed off from the hypervisor\nand the host")
+    sx, sy = 1.63 * math.cos(math.radians(-42)), 1.63 * math.sin(math.radians(-42))
+    ax.add_patch(FancyBboxPatch((sx - 0.23, sy - 0.11), 0.46, 0.22, boxstyle="round,pad=0.02",
+                                facecolor=SURFACE, edgecolor=INK, linewidth=1.1, zorder=4))
+    ax.text(sx, sy, "SEAM", ha="center", va="center", fontsize=6.6, color=INK, fontweight="bold",
+            zorder=6)
+    callout(ax, (sx + 0.25, sy), (4.0, -1.62),
+            "TDX module: runs in SEAM, a CPU\nmode beside the hypervisor's\nVMX root, not a new ring")
     # firmware TPM in the security processor
     callout(ax, (0.56, 0.18), (4.0, 1.35),
             "Firmware TPM (Intel PTT,\nAMD fTPM) runs inside the\nsecurity processor:\nIntel CSME or AMD Secure\nProcessor")

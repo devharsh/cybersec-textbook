@@ -10,7 +10,7 @@ Last generated: 2026-10-09.
 |---|---:|---:|---:|
 | Introduction | 1,814 | 0 | 3.6 |
 | Preface | 433 | 0 | 0.9 |
-| Chapter 1: Introduction to Cybersecurity | 12,058 | 403 | 24.1 |
+| Chapter 1: Introduction to Cybersecurity | 16,783 | 403 | 33.6 |
 | Chapter 2: Cryptography | 37,913 | 3,066 | 75.8 |
 | Chapter 3: Networking and Network Attacks | 17,033 | 374 | 34.1 |
 | Chapter 4: Social Engineering and the Human Element | 7,647 | 203 | 15.3 |
@@ -31,7 +31,7 @@ Last generated: 2026-10-09.
 | Chapter 19: Security Governance, Policy, and Culture | 15,865 | 482 | 31.7 |
 | Chapter 20: Industrial Control Systems and OT Security | 13,679 | 442 | 27.4 |
 | Appendix A: Security Command Reference | 1,681 | 0 | 3.4 |
-| Appendix B: Glossary | 5,531 | 0 | 11.1 |
+| Appendix B: Glossary | 5,659 | 0 | 11.3 |
 | Appendix C: Certification Mapping | 1,861 | 0 | 3.7 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,583 | 0 | 3.2 |
@@ -40,7 +40,7 @@ Last generated: 2026-10-09.
 | Appendix I: Protocol Security Reference | 4,073 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,794 | 0 | 7.6 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **335,976** | **13,994** | **672** |
+| **TOTAL** | **340,829** | **13,994** | **682** |
 
 ## Detailed Word Count by Section
 
@@ -73,12 +73,12 @@ Last generated: 2026-10-09.
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*12,058 markdown words (24.1 pages); 403 code words.*
+*16,783 markdown words (33.6 pages); 403 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 198 |
-| Key Terms | 332 |
+| Learning Objectives | 229 |
+| Key Terms | 418 |
 | 1.1 What Is Cybersecurity? | 636 |
 | 1.2 The CIA Triad and Its Extensions | 792 |
 |     The DIE Model: A Modern Complement to CIA | 254 |
@@ -86,7 +86,13 @@ Last generated: 2026-10-09.
 |     A Concept Map of the Core Terms | 130 |
 | 1.4 Threat Actors and the Adversary Model | 591 |
 | 1.5 Defense in Depth and Security Controls | 655 |
-| 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 1,255 |
+| 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 1,133 |
+|     What Runs at Each Level | 569 |
+|     Why Rings 1 and 2 Were Meant for Device Drivers | 936 |
+|     Beneath Ring 0: The Hypervisor, System Management Mode, and the Security Processor | 703 |
+|     The Trusted Platform Module Up Close | 565 |
+|     Trusted Execution Environments: Enclaves, Secure Worlds, and Confidential Virtual Machines | 978 |
+|     The Trusted Computing Base and the Reference Monitor | 170 |
 | 1.7 The NIST Cybersecurity Framework | 403 |
 | 1.8 Quantifying Risk in Monetary Terms | 534 |
 | 1.9 The Saltzer and Schroeder Design Principles | 641 |
@@ -100,15 +106,15 @@ Last generated: 2026-10-09.
 |     Foundational System Models | 189 |
 |     Security Models versus Cryptographic Security Definitions | 224 |
 | 1.13 Security versus Resilience | 214 |
-| Chapter Summary | 240 |
+| Chapter Summary | 307 |
 | Why This Matters | 133 |
 | News in Focus: The Colonial Pipeline Ransomware Incident (2021) | 215 |
 |     A Second Case: The SolarWinds Supply-Chain Compromise (2020) | 266 |
 | News in Focus: Cyber Warfare and the US-Iran Cyber Conflict | 535 |
-| Review Questions (MCQ) | 349 |
-|     Answer Key | 39 |
+| Review Questions (MCQ) | 558 |
+|     Answer Key | 45 |
 | Lab Assignment | 248 |
-| References | 380 |
+| References | 907 |
 
 ### Chapter 2: Cryptography
 
@@ -1423,7 +1429,7 @@ Last generated: 2026-10-09.
 
 ### Appendix B: Glossary
 
-*5,531 markdown words (11.1 pages); 0 code words.*
+*5,659 markdown words (11.3 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
