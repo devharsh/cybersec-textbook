@@ -11,7 +11,7 @@ Last generated: 2026-10-09.
 | Introduction | 1,814 | 0 | 3.6 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 12,058 | 403 | 24.1 |
-| Chapter 2: Cryptography | 37,879 | 3,066 | 75.8 |
+| Chapter 2: Cryptography | 37,913 | 3,066 | 75.8 |
 | Chapter 3: Networking and Network Attacks | 17,033 | 374 | 34.1 |
 | Chapter 4: Social Engineering and the Human Element | 7,647 | 203 | 15.3 |
 | Chapter 5: Risk Management | 17,001 | 696 | 34.0 |
@@ -26,21 +26,21 @@ Last generated: 2026-10-09.
 | Chapter 14: Incident Response | 9,786 | 828 | 19.6 |
 | Chapter 15: Malware Analysis | 41,509 | 423 | 83.0 |
 | Chapter 16: Capture the Flag and Competitive Security | 8,120 | 366 | 16.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 21,798 | 1,571 | 43.6 |
+| Chapter 17: Emerging Threats and Future Challenges | 21,802 | 1,573 | 43.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
 | Chapter 19: Security Governance, Policy, and Culture | 13,598 | 482 | 27.2 |
 | Chapter 20: Industrial Control Systems and OT Security | 13,679 | 442 | 27.4 |
 | Appendix A: Security Command Reference | 1,681 | 0 | 3.4 |
-| Appendix B: Glossary | 5,526 | 0 | 11.1 |
+| Appendix B: Glossary | 5,531 | 0 | 11.1 |
 | Appendix C: Certification Mapping | 1,861 | 0 | 3.7 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,583 | 0 | 3.2 |
 | Appendix F: Companion Code and Repositories | 1,284 | 0 | 2.6 |
 | Appendix H: Capstone and Group Project Ideas | 2,765 | 0 | 5.5 |
 | Appendix I: Protocol Security Reference | 4,073 | 0 | 8.1 |
-| Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
+| Appendix J: Adversary Models | 3,794 | 0 | 7.6 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **333,630** | **13,992** | **667** |
+| **TOTAL** | **333,709** | **13,994** | **667** |
 
 ## Detailed Word Count by Section
 
@@ -112,7 +112,7 @@ Last generated: 2026-10-09.
 
 ### Chapter 2: Cryptography
 
-*37,879 markdown words (75.8 pages); 3,066 code words.*
+*37,913 markdown words (75.8 pages); 3,066 code words.*
 
 | Section | Words |
 |---|---:|
@@ -125,14 +125,14 @@ Last generated: 2026-10-09.
 |     A Classification of Ciphers | 226 |
 |     Classical Ciphers in Code | 294 |
 | 2.3 Perfect Secrecy and the One-Time Pad | 828 |
-|     XOR, the One-Time Pad, and Perfect Secrecy, Formally | 698 |
+|     XOR, the One-Time Pad, and Perfect Secrecy, Formally | 694 |
 |     From Information-Theoretic to Computational Security | 311 |
-|     Game-Based (Provable) Security and Ciphertext Indistinguishability | 2,295 |
+|     Game-Based (Provable) Security and Ciphertext Indistinguishability | 2,316 |
 |     Real-World Case: The ANC's One-Time Pad and Operation Vula | 441 |
 | 2.4 Randomness: True, Pseudo, and Cryptographically Secure | 570 |
 |     Insecure versus Cryptographically Secure Randomness in Code | 168 |
 | 2.5 Symmetric Encryption: Stream and Block Ciphers | 1,007 |
-|     The Feistel Network: A Blueprint for Block Ciphers | 222 |
+|     The Feistel Network: A Blueprint for Block Ciphers | 223 |
 | 2.6 Block Cipher Modes of Operation | 688 |
 |     AES Modes in Code: ECB versus CTR | 327 |
 | 2.7 Cryptographic Hash Functions | 803 |
@@ -147,7 +147,7 @@ Last generated: 2026-10-09.
 |     Computing an HMAC in Code | 98 |
 |     Authenticated Encryption in Practice: Encrypt-then-MAC | 190 |
 | 2.9 Key Derivation and Password Storage | 654 |
-| 2.10 Public-Key Cryptography and RSA | 845 |
+| 2.10 Public-Key Cryptography and RSA | 847 |
 | 2.11 Diffie-Hellman Key Exchange | 798 |
 |     ElGamal Encryption | 277 |
 |     ElGamal in Code | 266 |
@@ -191,7 +191,7 @@ Last generated: 2026-10-09.
 | Review Questions (MCQ) | 503 |
 |     Answer Key | 36 |
 | Lab Assignment | 387 |
-| References | 1,430 |
+| References | 1,444 |
 
 ### Chapter 3: Networking and Network Attacks
 
@@ -1097,7 +1097,7 @@ Last generated: 2026-10-09.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*21,798 markdown words (43.6 pages); 1,571 code words.*
+*21,802 markdown words (43.6 pages); 1,573 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1118,7 +1118,7 @@ Last generated: 2026-10-09.
 |     Deep Learning: Neural Networks at Scale | 229 |
 |     Adversarial Machine Learning | 398 |
 | 17.4 Privacy-Preserving and Collaborative Machine Learning | 338 |
-|     Case Study: A Privacy-Preserving ML Research Program (SigML, SplitML, Fairis) | 2,445 |
+|     Case Study: A Privacy-Preserving ML Research Program (SigML, SplitML, Fairis) | 2,448 |
 |     Applied Privacy and Trust Systems | 851 |
 | 17.5 Anomaly Detection Across Domains | 271 |
 | 17.6 Modeling, Simulation, and Control for Security | 275 |
@@ -1170,7 +1170,7 @@ Last generated: 2026-10-09.
 | News in Focus: The Post-Quantum Migration Begins | 72 |
 | Review Questions (MCQ) | 416 |
 | Lab Assignment | 192 |
-| References | 655 |
+| References | 656 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
@@ -1421,13 +1421,13 @@ Last generated: 2026-10-09.
 
 ### Appendix B: Glossary
 
-*5,526 markdown words (11.1 pages); 0 code words.*
+*5,531 markdown words (11.1 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
 | Acronyms Used in More Than One Chapter | 1,403 |
 | Cloud and Infrastructure Terminology | 1,490 |
-| Adversary and Threat-Model Terminology | 574 |
+| Adversary and Threat-Model Terminology | 579 |
 | Reverse Engineering Acronyms and Notation | 54 |
 |     Executable formats and file structure | 241 |
 |     Processor and architecture | 93 |
@@ -1528,7 +1528,7 @@ Last generated: 2026-10-09.
 
 ### Appendix J: Adversary Models
 
-*3,758 markdown words (7.5 pages); 0 code words.*
+*3,794 markdown words (7.6 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1543,7 +1543,7 @@ Last generated: 2026-10-09.
 |     Covert | 91 |
 |     Rational | 78 |
 |     Malicious (Active, Byzantine) | 21 |
-|     Mixed Adversaries | 43 |
+|     Mixed Adversaries | 60 |
 |     Friends-and-Foes (FaF) | 256 |
 | J.3 Layer 2: Corruption Modifiers | 189 |
 | J.4 Layer 3: Single-Key Game Models | 304 |
@@ -1551,7 +1551,7 @@ Last generated: 2026-10-09.
 | J.6 Adversary Models for Homomorphic Encryption | 333 |
 | J.7 Multi-Key Settings | 418 |
 | J.8 Composing a Complete Threat Model | 190 |
-| J.9 Worked Numerical Examples | 394 |
+| J.9 Worked Numerical Examples | 413 |
 | J.10 Exercises | 238 |
 |     Answer Key | 270 |
 

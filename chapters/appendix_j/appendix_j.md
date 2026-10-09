@@ -26,7 +26,7 @@ flowchart TB
     T[Complete adversary model]
     T --> B[Layer 1: Behavior<br/>semi-honest, semi-malicious,<br/>covert, rational, malicious]
     T --> C[Layer 2: Corruption<br/>static or adaptive or mobile,<br/>threshold, computational power]
-    T --> G[Layer 3: Game<br/>goal x capability,<br/>IND-CPA, IND-CCA2, IND-CPA-D]
+    T --> G[Layer 3: Game<br/>goal × capability,<br/>IND-CPA, IND-CCA2, IND-CPA<sup>D</sup>]
     B --> S[Threat model statement]
     C --> S
     G --> S
@@ -102,9 +102,9 @@ protocol-conformant messages.
 ### Covert
 
 May deviate arbitrarily, but the protocol guarantees that cheating is detected with at least a
-fixed probability epsilon, the **deterrence factor**, so adversaries who fear reputational or contractual
+fixed probability $\epsilon$, the **deterrence factor**, so adversaries who fear reputational or contractual
 consequences refrain from cheating (Aumann and Lindell, TCC 2007; journal version, Journal of Cryptology,
-2010). Covert security collapses to malicious security as epsilon approaches 1. The **publicly verifiable**
+2010). Covert security collapses to malicious security as $\epsilon$ approaches 1. The **publicly verifiable**
 variant adds that a party detecting cheating receives a certificate it can publish to convince third parties,
 without revealing its own input (Asharov and Orlandi, "Calling Out Cheaters: Covert Security with Public
 Verifiability", ASIACRYPT 2012).
@@ -125,9 +125,10 @@ fabricated inputs, malformed keys, early aborts, and any message it likes.
 
 ### Mixed Adversaries
 
-Simultaneously corrupt up to t_a parties actively, t_p passively, and t_f in a
-fail-stop manner, filling the space between the pure settings in which passive corruption tolerates t < n/2
-but active corruption only t < n/3 (Fitzi, Hirt, and Maurer, CRYPTO 1998).
+Simultaneously corrupt up to $t_a$ parties actively, $t_p$ other parties passively, and $t_f$ in a
+fail-stop manner, filling the space between the pure settings in which passive corruption tolerates $t < n/2$
+but active corruption only $t < n/3$. Perfect security is achievable if and only if $3t_a + 2t_p + t_f < n$
+(Fitzi, Hirt, and Maurer, CRYPTO 1998).
 
 ### Friends-and-Foes (FaF)
 
@@ -143,10 +144,10 @@ Friends and Foes", CRYPTO 2020, pp. 677-706).
 | Fail-stop / omission | Yes, until crashed | Crash or message blocking forced by adversary | Fitzi, Hirt, Maurer, CRYPTO 1998 |
 | Honest-looking | Deviates undetectably | Deviations indistinguishable from honesty | Canetti, Ostrovsky, STOC 1999 |
 | Semi-malicious | Yes | Arbitrary inputs and random coins | Asharov et al., EUROCRYPT 2012 |
-| Covert | No, if unwatched | Deterred by detection probability epsilon | Aumann, Lindell, TCC 2007 |
+| Covert | No, if unwatched | Deterred by detection probability $\epsilon$ | Aumann, Lindell, TCC 2007 |
 | Rational | Depends on utility | Cheats only when payoff exceeds penalty | Halpern, Teague, STOC 2004 |
 | Malicious | No | Arbitrary deviation, aborts, fake keys | Goldreich, *Foundations*, vol. 2 |
-| Mixed | Varies per party | t_a active, t_p passive, t_f fail-stop at once | Fitzi, Hirt, Maurer, CRYPTO 1998 |
+| Mixed | Varies per party | $t_a$ active, $t_p$ passive, $t_f$ fail-stop at once | Fitzi, Hirt, Maurer, CRYPTO 1998 |
 | Friends-and-foes | Adversary no, friends yes | Curious honest parties also constrained | Alon, Omri, Paskin-Cherniavsky, CRYPTO 2020 |
 
 ## J.3 Layer 2: Corruption Modifiers
@@ -161,8 +162,8 @@ into phases and refreshing shares each phase, tolerating eventual corruption of 
 more than the threshold are corrupt within any single phase (Herzberg, Jarecki, Krawczyk, and Yung,
 CRYPTO 1995).
 
-**Scale and structure.** Either a threshold (honest versus dishonest majority, with the classical t < n/2
-passive and t < n/3 active tolerances in the unconditional setting) or a **generalized adversary structure**
+**Scale and structure.** Either a threshold (honest versus dishonest majority, with the classical $t < n/2$
+passive and $t < n/3$ active tolerances in the unconditional setting) or a **generalized adversary structure**
 specifying arbitrary sets of actively and passively corruptible subsets rather than a simple count.
 
 **Computational power.** Probabilistic polynomial-time (computational security) versus computationally
@@ -247,26 +248,26 @@ of Manulis and Nguyen (EUROCRYPT 2024) pushes past IND-CCA1 by adding integrity 
 
 The passive story is subtler than IND-CPA, and this is where the modern literature concentrates:
 
-- **IND-CPA-D** (CPA with decryption oracles on honestly evaluated ciphertexts). Li and Micciancio
+- **IND-CPA$^{\mathbf{D}}$** (CPA with decryption oracles on honestly evaluated ciphertexts). Li and Micciancio
   (EUROCRYPT 2021) presented passive attacks against the approximate scheme CKKS that run in expected
   polynomial time, achieve complete key recovery, and were implemented against HEAAN, SEAL, HElib, and
   PALISADE. The mechanism is that decryption outputs of approximate schemes leak the LWE noise in the
   ciphertext, which enables practical secret-key recovery, showing that plain IND-CPA does not adequately
   capture passive security for approximate schemes.
 - **Noise flooding as countermeasure.** Adding Gaussian noise to the CKKS decryption output suffices for
-  IND-CPA-D security, with nearly matching upper and lower bounds on the required noise (Li, Micciancio,
+  IND-CPA$^{\mathrm{D}}$ security, with nearly matching upper and lower bounds on the required noise (Li, Micciancio,
   Schultz, and Sorrell, CRYPTO 2022). However, noise tailored to the actual error in a given ciphertext rather
   than the worst-case error remains vulnerable, and Guo, Nabokov, Suvanto, and Johansson gave key-recovery
   attacks on non-worst-case noise-flooding countermeasures at USENIX Security 2024.
-- **Exact schemes are not exempt.** Checri, Sirdey, Boudguiga, and Bultel (CRYPTO 2024) exhibited a CPA-D
+- **Exact schemes are not exempt.** Checri, Sirdey, Boudguiga, and Bultel (CRYPTO 2024) exhibited a CPA$^{\mathrm{D}}$
   key-recovery attack on the linearly homomorphic Regev cryptosystem that generalizes to BFV, BGV, and TFHE,
-  and Cheon, Choe, Passelegue, Stehle, and Suvanto independently attacked the IND-CPA-D security of exact FHE
+  and Cheon, Choe, Passelegue, Stehle, and Suvanto independently attacked the IND-CPA$^{\mathrm{D}}$ security of exact FHE
   schemes at CCS 2024.
-- **Bounded-query refinement.** q-IND-CPA-D bounds the number of decryption queries, so the attacker's
+- **Bounded-query refinement.** $q$-IND-CPA$^{\mathrm{D}}$ bounds the number of decryption queries, so the attacker's
   advantage is governed by the failure probability of the scheme's noise bounds.
 
 The practical lesson for anyone deploying FHE: quoting "IND-CPA secure" is not sufficient if any decryption
-result, partial or full, ever reaches a party who also sees ciphertexts. State the model as IND-CPA-D and
+result, partial or full, ever reaches a party who also sees ciphertexts. State the model as IND-CPA$^{\mathrm{D}}$ and
 state the smudging noise explicitly.
 
 ## J.7 Multi-Key Settings
@@ -303,8 +304,8 @@ adversary gets a key-extraction oracle, and the central requirement is **collusi
 their decryption keys must not derive capability beyond what each holds individually. Orthogonally, the
 target-commitment axis distinguishes **selective** security (the adversary commits in advance to the identity
 it will attack, as in IND-sID-CPA) from **adaptive** security (it chooses the target during the game, as in
-IND-ID-CCA2). **Complexity leveraging** converts a selective proof into an adaptive one at a 2^l cost in the
-reduction, where l is the attribute or identity length.
+IND-ID-CCA2). **Complexity leveraging** converts a selective proof into an adaptive one at a $2^{\ell}$ cost in the
+reduction, where $\ell$ is the attribute or identity length.
 
 ## J.8 Composing a Complete Threat Model
 
@@ -317,48 +318,49 @@ Two worked instantiations:
 
 - *Classical public-key deployment.* "IND-CCA2 security of the KEM against a probabilistic polynomial-time
   adversary with adaptive decryption-oracle access." Only Layer 3 is needed, because there is one key holder.
-- *Federated learning with threshold CKKS.* "IND-CPA-D-style security of the threshold CKKS scheme against a
-  static, semi-malicious coalition of up to K-1 clients, plus an honest-but-curious aggregation server holding
+- *Federated learning with threshold CKKS.* "IND-CPA$^{\mathrm{D}}$-style security of the threshold CKKS scheme against a
+  static, semi-malicious coalition of up to $K-1$ clients, plus an honest-but-curious aggregation server holding
   the partial-decryption oracle, with the smudging noise variance stated explicitly." A client that
   misreports a training metric is handled separately at the protocol layer, where randomized verification
-  converts it from malicious to covert with the audit rate as the deterrence factor epsilon.
+  converts it from malicious to covert with the audit rate as the deterrence factor $\epsilon$.
 
-Notice what the second statement does: it names the game (IND-CPA-D), the timing (static), the behavior
-(semi-malicious clients, semi-honest server), the structure (up to K-1 of K), and the extra oracle (partial
+Notice what the second statement does: it names the game (IND-CPA$^{\mathrm{D}}$), the timing (static), the behavior
+(semi-malicious clients, semi-honest server), the structure (up to $K-1$ of $K$), and the extra oracle (partial
 decryption). Every one of those is a place where an unstated assumption could hide a break.
 
 ## J.9 Worked Numerical Examples
 
-**Example J.1 (covert security: the minimum deterrence factor).** An adversary gains G = 100 units by cheating
-and loses P = 1000 units if caught. With deterrence factor epsilon, its expected utility from cheating is
+**Example J.1 (covert security: the minimum deterrence factor).** An adversary gains $G = 100$ units by cheating
+and loses $P = 1000$ units if caught. With deterrence factor $\epsilon$, its expected utility from cheating is
 
-    E = (1 - epsilon) * G - epsilon * P
+$$E = (1 - \epsilon)\,G - \epsilon P.$$
 
-Cheating is irrational when E < 0, that is when G < epsilon * (G + P), so
+Cheating is irrational when $E < 0$, that is when $G < \epsilon\,(G + P)$, so
 
-    epsilon > G / (G + P) = 100 / 1100 = 0.0909
+$$\epsilon > \frac{G}{G + P} = \frac{100}{1100} \approx 0.0909.$$
 
-A detection probability above roughly 9.1 percent suffices. At the common epsilon = 1/2 the expected utility is
-0.5 * 100 - 0.5 * 1000 = -450, comfortably negative. This is why covert security is attractive in practice:
+A detection probability above roughly 9.1 percent suffices. At the common $\epsilon = 1/2$ the expected utility is
+$0.5 \times 100 - 0.5 \times 1000 = -450$, comfortably negative. This is why covert security is attractive in practice:
 deterrence needs only a modest audit rate, not the full cost of malicious security.
 
-**Example J.2 (multi-user degradation).** A scheme has single-user advantage at most 2^-128. Deployed across
-n = 2^30 users, the generic multi-user bound is n * 2^-128 = 2^30 * 2^-128 = 2^-98. The deployment therefore
+**Example J.2 (multi-user degradation).** A scheme has single-user advantage at most $2^{-128}$. Deployed across
+$n = 2^{30}$ users, the generic multi-user bound is $n \cdot 2^{-128} = 2^{30} \times 2^{-128} = 2^{-98}$. The deployment therefore
 offers about 98 bits, not 128: thirty bits of security are consumed by scale alone. To retain 128 bits across
-2^30 users, the single-user target must be 2^-158.
+$2^{30}$ users, the single-user target must be $2^{-158}$.
 
-**Example J.3 (corruption thresholds).** With n = 10 parties in the unconditional setting, passive security
-requires t < n/2 = 5, so at most 4 corrupted parties; active security requires t < n/3 = 3.33, so at most 3. A
-mixed adversary might be specified as t_a = 2 active plus t_p = 2 passive, which is feasible where t_a = 4
-active would not be.
+**Example J.3 (corruption thresholds).** With $n = 10$ parties in the unconditional setting, passive security
+requires $t < n/2 = 5$, so at most 4 corrupted parties; active security requires $t < n/3 \approx 3.33$, so at most 3. A
+mixed adversary might be specified as $t_a = 1$ active plus $t_p = 3$ passive, four corrupted parties in all.
+It satisfies $3t_a + 2t_p + t_f < n$, since $3 + 6 + 0 = 9 < 10$, so it is feasible where $t_a = 4$ active
+would not be ($12 > 10$).
 
 **Example J.4 (complexity leveraging).** An attribute-based scheme is proved selectively secure with advantage
-2^-256, and identities are l = 128 bits. Complexity leveraging yields adaptive security with advantage
-2^l * 2^-256 = 2^128 * 2^-256 = 2^-128. The selective proof must therefore be twice as strong as the adaptive
+$2^{-256}$, and identities are $\ell = 128$ bits. Complexity leveraging yields adaptive security with advantage
+$2^{\ell} \cdot 2^{-256} = 2^{128} \times 2^{-256} = 2^{-128}$. The selective proof must therefore be twice as strong as the adaptive
 guarantee you want, which is precisely why the technique is considered expensive.
 
-**Example J.5 (proactive refresh against a mobile adversary).** A system has n = 7 share holders, a
-reconstruction threshold of t = 3, and tolerates f = 2 corruptions per phase. Over 10 phases the adversary can
+**Example J.5 (proactive refresh against a mobile adversary).** A system has $n = 7$ share holders, a
+reconstruction threshold of $t = 3$, and tolerates $f = 2$ corruptions per phase. Over 10 phases the adversary can
 touch up to 20 party-slots, and may well corrupt every party at some point, yet it never holds 3 valid shares
 simultaneously because each refresh invalidates old shares. Security depends on the per-phase bound, not the
 lifetime total.
@@ -370,7 +372,7 @@ lifetime total.
 2. Explain why IND-CCA2 is unachievable for any homomorphic encryption scheme, in two sentences.
 3. An auditor cheats for a gain of 50 and faces a penalty of 200 if caught. What is the minimum deterrence
    factor that makes cheating irrational?
-4. A scheme offers 2^-120 single-user advantage and is deployed to 2^20 users. What multi-user advantage does
+4. A scheme offers $2^{-120}$ single-user advantage and is deployed to $2^{20}$ users. What multi-user advantage does
    the generic bound give, and how many bits of security are lost?
 5. Give one reason a designer might prefer covert security to malicious security, and one reason a regulator
    might reject that choice.
@@ -391,14 +393,14 @@ lifetime total.
 2. Anyone can maul a ciphertext into a ciphertext of a related plaintext, which is exactly the capability
    IND-CCA2 forbids. Since malleability is the intended functionality, the notion is unachievable and CCA1 is
    the ceiling.
-3. epsilon > 50 / (50 + 200) = 0.2, so above 20 percent.
-4. 2^20 * 2^-120 = 2^-100, so 20 bits are lost.
+3. $\epsilon > 50 / (50 + 200) = 0.2$, so above 20 percent.
+4. $2^{20} \times 2^{-120} = 2^{-100}$, so 20 bits are lost.
 5. Covert security is far cheaper computationally and suffices where participants are identifiable and
    reputation-sensitive. A regulator may reject it because cheating still succeeds with probability
-   1 - epsilon, which is unacceptable when the harm from a single undetected breach is severe.
+   $1 - \epsilon$, which is unacceptable when the harm from a single undetected breach is severe.
 6. Neither implies the other: Section J.4 records that IND-CCA1 does not imply NM-CPA and NM-CPA does not
    imply IND-CCA1. They are incomparable.
-7. It creates a partial-decryption oracle, so the appropriate notion is IND-CPA-D (with smudging noise
+7. It creates a partial-decryption oracle, so the appropriate notion is IND-CPA$^{\mathrm{D}}$ (with smudging noise
    specified), not IND-CPA.
 8. The adversary is mobile but bounded per phase, and proactive share refresh invalidates shares captured in
    earlier phases, so it never assembles a threshold set at one time.

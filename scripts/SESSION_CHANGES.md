@@ -464,5 +464,54 @@ figure colors pass the dataviz ordinal ramp checks; word counts regenerated (boo
 
 ### Still left for you
 
-- Chapter 2's ElGamal formulas, Chapter 17's fairness bound and Appendix J still write products and powers in
-  plain-text style (m * h^k, 2^30 * 2^-128); they could be typeset as math.
+- Nothing from this list: the plain-text formulas it named were typeset in the next entry.
+
+## 2026-10-09: formulas typeset as math, and money no longer read as math
+
+The reader asked for the plain-text formulas to be typeset. A book-wide audit (powers written with a caret,
+products with an asterisk, subscripts with an underscore, spelled-out Greek letters, digit-suffixed variables
+such as m0, and the same inside admonitions, which earlier audits had skipped) found them in Chapters 2, 3, 15,
+17 and 19 and Appendices B, F and J. All are now MyST math: the one-time pad, the two-time pad (now a display
+equation), the IND-CPA game, hash properties and length extension, the Feistel round, RSA, Diffie-Hellman and
+the man in the middle, ElGamal and its C++ recap, elliptic-curve point arithmetic and the ECDLP, CDH and DDH,
+GF(2^8) and the abelian-group identity, the lattice and Ring-LWE notation, the noise-flooding formula and its
+parameters, the Fairis weights and bound, (epsilon, delta) for differential privacy, the deterrence factor, the
+corruption thresholds, and every worked example and answer in Appendix J. Chapter 15's answer key now writes the
+C conditions as code, as its body text does. Diagram labels use real subscripts and superscripts (Feistel,
+IND-CPA game, Chapter 17 research map, Appendix J layers), and the Chapter 17 distributions figure reads
+lambda = 4 in math type (assets/figures/ch17_distributions.png regenerated from the notebook code).
+
+Notation: the decryption-oracle notion is written IND-CPA with a superscript D, as Li and Micciancio named it,
+in every chapter and appendix; the glossary adds that it is also written IND-CPA-D, which the index entries
+use, and the key-recovery notion is written KR with a superscript D. Reference titles keep their published
+spelling.
+
+Money read as math: with dollar math on, two dollar signs in one paragraph became a math span, so text such as
+Q9 in Chapter 1 rendered as run-together italics on the live site. Every currency amount is now escaped (Chapters
+1, 5, 16 and 19, including a Chapter 5 knowledge check and the Chapter 19 budget table), the MongoDB operators in
+Chapter 10 and the NTFS journal names in Chapter 13 are code, and a parse of every cell with the book's own
+MyST settings, admonition bodies included, finds no accidental math left. Three times signs hidden inside those
+spans or diagrams were also fixed (Chapter 1 Q9 worked, Chapter 19 answer 2, the Chapter 5 and Appendix J
+diagrams).
+
+Corrections found while checking the typeset passages against the sources: the KR-D notion is defined by Li,
+Micciancio, Schultz and Sorrell (CRYPTO 2022, Appendix A), not by Li and Micciancio (2021), and the proof that
+Gaussian noise flooding achieves IND-CPA-D with nearly matching bounds is also from the 2022 paper; Chapter 2
+and its reference notes now say so. Reference 30 of Chapter 2 adds its venue (ACM CCS 2024), reference 31 uses
+the published title (IND-CPA-D and KR-D Security With Reduced Noise from the HintLWE Problem), and reference
+33 now gives the repository's own description. Appendix J Example J.3 claimed that 2 active plus 2 passive
+corruptions of 10 parties is feasible, but Fitzi, Hirt and Maurer (CRYPTO 1998) give perfect security if and
+only if 3 t_a + 2 t_p + t_f < n, and 6 + 4 = 10 is not below 10; the example now uses 1 active plus 3 passive
+(9 < 10) against 4 active (12 > 10), and the Mixed Adversaries paragraph states the condition. Three
+cross-references sent readers to Section 2.8 for the IND-CPA-D material, which lives in Section 2.3 (the
+Chapter 2 notions table and two places in Chapter 17); they now point to Section 2.3.
+
+Sources read directly: ePrint 2020/1533 (Li and Micciancio, page and paper), 2022/816 (Li, Micciancio, Schultz
+and Sorrell, page and paper), 2024/127 (Cheon et al., page and paper), 2025/1618 (Ogilvie); the
+ucsd-crypto/DynamicEstimationAttack repository page; Fitzi, Hirt and Maurer (1998) from the ETH Zurich
+publications server.
+
+Checks: check_acronyms.py 0 failures; all notebooks validate; MyST token scan finds no accidental math;
+jupyter-book build clean apart from the two existing asm lexer notices in Chapter 15; rendered pages
+screenshotted (Chapters 1, 2, 3, 5, 13, 17, 19, Appendices B and J, all changed diagrams); word counts
+regenerated.
