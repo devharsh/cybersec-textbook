@@ -14,7 +14,7 @@ Last generated: 2026-10-09.
 | Chapter 2: Cryptography | 37,879 | 3,066 | 75.8 |
 | Chapter 3: Networking and Network Attacks | 17,033 | 374 | 34.1 |
 | Chapter 4: Social Engineering and the Human Element | 7,647 | 203 | 15.3 |
-| Chapter 5: Risk Management | 16,964 | 696 | 33.9 |
+| Chapter 5: Risk Management | 17,001 | 696 | 34.0 |
 | Chapter 6: Penetration Testing Methodology | 9,787 | 265 | 19.6 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,605 | 464 | 15.2 |
 | Chapter 8: Scanning and Enumeration | 7,242 | 816 | 14.5 |
@@ -26,7 +26,7 @@ Last generated: 2026-10-09.
 | Chapter 14: Incident Response | 9,786 | 828 | 19.6 |
 | Chapter 15: Malware Analysis | 41,509 | 423 | 83.0 |
 | Chapter 16: Capture the Flag and Competitive Security | 8,100 | 366 | 16.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 21,795 | 1,569 | 43.6 |
+| Chapter 17: Emerging Threats and Future Challenges | 21,798 | 1,571 | 43.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
 | Chapter 19: Security Governance, Policy, and Culture | 13,598 | 482 | 27.2 |
 | Chapter 20: Industrial Control Systems and OT Security | 13,679 | 442 | 27.4 |
@@ -40,7 +40,7 @@ Last generated: 2026-10-09.
 | Appendix I: Protocol Security Reference | 4,073 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **332,580** | **13,990** | **665** |
+| **TOTAL** | **332,620** | **13,992** | **665** |
 
 ## Detailed Word Count by Section
 
@@ -280,7 +280,7 @@ Last generated: 2026-10-09.
 
 ### Chapter 5: Risk Management
 
-*16,964 markdown words (33.9 pages); 696 code words.*
+*17,001 markdown words (34.0 pages); 696 code words.*
 
 | Section | Words |
 |---|---:|
@@ -294,7 +294,7 @@ Last generated: 2026-10-09.
 |     A Worked Risk Register | 286 |
 | 5.5 Qualitative Risk Assessment | 508 |
 | 5.6 Quantitative Risk Assessment | 722 |
-| 5.7 Risk Treatment | 891 |
+| 5.7 Risk Treatment | 928 |
 |     A Worked Analogy: The Skateboard and the Scraped Knee | 2,852 |
 | 5.8 Threat Modeling | 782 |
 | 5.9 Risk Frameworks and Standards | 329 |
@@ -1097,7 +1097,7 @@ Last generated: 2026-10-09.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*21,795 markdown words (43.6 pages); 1,569 code words.*
+*21,798 markdown words (43.6 pages); 1,571 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1122,7 +1122,7 @@ Last generated: 2026-10-09.
 |     Applied Privacy and Trust Systems | 851 |
 | 17.5 Anomaly Detection Across Domains | 271 |
 | 17.6 Modeling, Simulation, and Control for Security | 275 |
-| 17.7 Probability Distributions in Security | 141 |
+| 17.7 Probability Distributions in Security | 144 |
 |     Four Distributions from Everyday Life | 3,303 |
 |     A Specialized Case: Soliton Distributions in Fountain Codes | 178 |
 |     Exercises | 236 |

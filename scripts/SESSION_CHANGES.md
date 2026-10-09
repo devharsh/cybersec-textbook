@@ -414,9 +414,12 @@ condition; and answer letters rotated so the new questions are not all B.
 
 ### Still left for you
 
-- The existing Section 5.7 text twice says insurance never transfers reputational harm; some cyber policies
-  pay for profits lost to reputational damage or for crisis communications, so you may want to qualify it.
-- The existing first paragraph of Section 17.7 calls the uniform distribution the ideal for keys and nonces;
-  counter-based nonces only need to never repeat.
 - The Chapter 5 answer key leans toward B for the original questions (10 of 15).
 - The DFA shares change every quarter; refresh the 2026 Q2 figures in Section 17.7 when you next revise.
+
+Follow-up the same day: two older passages had the same overstatements the review caught in the new text, and
+were fixed. Section 5.7 twice said insurance never transfers reputational harm; it now says some policies pay
+costs that follow reputational damage (crisis communications, lost profits), but the loss of trust itself and,
+usually, legal accountability stay with the organization. The opening of Section 17.7 and the Section 17.6
+figure called the uniform distribution the ideal for nonces; they now say keys, tokens and randomly generated
+nonces, and assets/figures/ch17_distributions.png was regenerated from its own code cell with the new title.
