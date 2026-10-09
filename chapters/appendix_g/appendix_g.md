@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-10-08.
+Last generated: 2026-10-09.
 
 ## Summary by Chapter
 
@@ -11,27 +11,27 @@ Last generated: 2026-10-08.
 | Introduction | 1,814 | 0 | 3.6 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 11,068 | 403 | 22.1 |
-| Chapter 2: Cryptography | 37,826 | 3,066 | 75.7 |
+| Chapter 2: Cryptography | 37,879 | 3,066 | 75.8 |
 | Chapter 3: Networking and Network Attacks | 17,033 | 374 | 34.1 |
 | Chapter 4: Social Engineering and the Human Element | 7,647 | 203 | 15.3 |
-| Chapter 5: Risk Management | 13,850 | 469 | 27.7 |
+| Chapter 5: Risk Management | 16,964 | 696 | 33.9 |
 | Chapter 6: Penetration Testing Methodology | 9,787 | 265 | 19.6 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,605 | 464 | 15.2 |
 | Chapter 8: Scanning and Enumeration | 7,242 | 816 | 14.5 |
 | Chapter 9: Exploitation and Post-Exploitation | 22,438 | 587 | 44.9 |
 | Chapter 10: Web Application Security | 8,526 | 372 | 17.1 |
 | Chapter 11: Network Defense and Hardening | 22,325 | 258 | 44.6 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 10,043 | 1,114 | 20.1 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 10,100 | 1,114 | 20.2 |
 | Chapter 13: Digital Forensics | 10,469 | 875 | 20.9 |
 | Chapter 14: Incident Response | 9,786 | 828 | 19.6 |
 | Chapter 15: Malware Analysis | 41,509 | 423 | 83.0 |
 | Chapter 16: Capture the Flag and Competitive Security | 8,100 | 366 | 16.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 17,298 | 878 | 34.6 |
+| Chapter 17: Emerging Threats and Future Challenges | 21,795 | 1,569 | 43.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
 | Chapter 19: Security Governance, Policy, and Culture | 13,598 | 482 | 27.2 |
 | Chapter 20: Industrial Control Systems and OT Security | 13,679 | 442 | 27.4 |
 | Appendix A: Security Command Reference | 1,681 | 0 | 3.4 |
-| Appendix B: Glossary | 5,286 | 0 | 10.6 |
+| Appendix B: Glossary | 5,526 | 0 | 11.1 |
 | Appendix C: Certification Mapping | 1,861 | 0 | 3.7 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 775 | 0 | 1.6 |
 | Appendix E: Selected Works by the Author | 1,583 | 0 | 3.2 |
@@ -40,7 +40,7 @@ Last generated: 2026-10-08.
 | Appendix I: Protocol Security Reference | 4,073 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **324,619** | **13,072** | **649** |
+| **TOTAL** | **332,580** | **13,990** | **665** |
 
 ## Detailed Word Count by Section
 
@@ -112,7 +112,7 @@ Last generated: 2026-10-08.
 
 ### Chapter 2: Cryptography
 
-*37,826 markdown words (75.7 pages); 3,066 code words.*
+*37,879 markdown words (75.8 pages); 3,066 code words.*
 
 | Section | Words |
 |---|---:|
@@ -129,7 +129,7 @@ Last generated: 2026-10-08.
 |     From Information-Theoretic to Computational Security | 311 |
 |     Game-Based (Provable) Security and Ciphertext Indistinguishability | 2,295 |
 |     Real-World Case: The ANC's One-Time Pad and Operation Vula | 441 |
-| 2.4 Randomness: True, Pseudo, and Cryptographically Secure | 517 |
+| 2.4 Randomness: True, Pseudo, and Cryptographically Secure | 570 |
 |     Insecure versus Cryptographically Secure Randomness in Code | 168 |
 | 2.5 Symmetric Encryption: Stream and Block Ciphers | 1,007 |
 |     The Feistel Network: A Blueprint for Block Ciphers | 222 |
@@ -280,12 +280,12 @@ Last generated: 2026-10-08.
 
 ### Chapter 5: Risk Management
 
-*13,850 markdown words (27.7 pages); 469 code words.*
+*16,964 markdown words (33.9 pages); 696 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 160 |
-| Key Terms | 160 |
+| Learning Objectives | 189 |
+| Key Terms | 198 |
 | 5.1 Risk as the Organizing Principle of Security | 395 |
 | 5.2 The Vocabulary of Risk | 607 |
 | 5.3 The Risk-Management Lifecycle | 399 |
@@ -293,8 +293,9 @@ Last generated: 2026-10-08.
 |     Asset and Data Classification | 239 |
 |     A Worked Risk Register | 286 |
 | 5.5 Qualitative Risk Assessment | 508 |
-| 5.6 Quantitative Risk Assessment | 702 |
+| 5.6 Quantitative Risk Assessment | 722 |
 | 5.7 Risk Treatment | 891 |
+|     A Worked Analogy: The Skateboard and the Scraped Knee | 2,852 |
 | 5.8 Threat Modeling | 782 |
 | 5.9 Risk Frameworks and Standards | 329 |
 |     The NIST RMF Steps in Detail | 170 |
@@ -318,10 +319,10 @@ Last generated: 2026-10-08.
 | Chapter Summary | 242 |
 | Why This Matters | 164 |
 | News in Focus: Repeat Breaches at Neiman Marcus | 540 |
-| Review Questions (MCQ) | 364 |
-|     Answer Key | 30 |
+| Review Questions (MCQ) | 436 |
+|     Answer Key | 34 |
 | Lab Assignment | 210 |
-| References | 204 |
+| References | 303 |
 
 ### Chapter 6: Penetration Testing Methodology
 
@@ -687,7 +688,7 @@ Last generated: 2026-10-08.
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*10,043 markdown words (20.1 pages); 1,114 code words.*
+*10,100 markdown words (20.2 pages); 1,114 code words.*
 
 | Section | Words |
 |---|---:|
@@ -700,7 +701,7 @@ Last generated: 2026-10-08.
 |     Intrusion Prevention Systems: From Alert to Action | 242 |
 | 12.2 Detection Methods | 159 |
 |     Signature-Based Detection | 133 |
-|     Anomaly-Based Detection | 116 |
+|     Anomaly-Based Detection | 173 |
 |     Stateful Protocol Analysis | 50 |
 |     Detection Methods: Signature, Heuristic, and Anomaly | 466 |
 | 12.3 SIEM and Log Aggregation | 123 |
@@ -1096,12 +1097,12 @@ Last generated: 2026-10-08.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*17,298 markdown words (34.6 pages); 878 code words.*
+*21,795 markdown words (43.6 pages); 1,569 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 88 |
-| Key Terms | 149 |
+| Learning Objectives | 109 |
+| Key Terms | 291 |
 | 17.1 Post-Quantum Cryptography | 0 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 177 |
@@ -1121,7 +1122,11 @@ Last generated: 2026-10-08.
 |     Applied Privacy and Trust Systems | 851 |
 | 17.5 Anomaly Detection Across Domains | 271 |
 | 17.6 Modeling, Simulation, and Control for Security | 275 |
-| 17.7 Probability Distributions in Security | 319 |
+| 17.7 Probability Distributions in Security | 141 |
+|     Four Distributions from Everyday Life | 3,303 |
+|     A Specialized Case: Soliton Distributions in Fountain Codes | 178 |
+|     Exercises | 236 |
+|     Answer Key | 395 |
 | 17.8 Supply Chain Attacks | 0 |
 |     Why Supply Chain Is a High-Value Target | 32 |
 |     Notable Supply Chain Attack Patterns | 98 |
@@ -1163,9 +1168,9 @@ Last generated: 2026-10-08.
 | Chapter Summary | 120 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 342 |
+| Review Questions (MCQ) | 416 |
 | Lab Assignment | 192 |
-| References | 329 |
+| References | 655 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
@@ -1416,7 +1421,7 @@ Last generated: 2026-10-08.
 
 ### Appendix B: Glossary
 
-*5,286 markdown words (10.6 pages); 0 code words.*
+*5,526 markdown words (11.1 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|

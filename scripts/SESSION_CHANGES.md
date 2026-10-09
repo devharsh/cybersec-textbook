@@ -348,3 +348,75 @@ time span, a phrase copied from the ISACA page, and the grouping of the new Chap
 - CyberChef releases often; the version and operation count in Section 16.10 will need a refresh.
 - The ISACA chapter's overview says Over six years (2020 to 2025 on its Past Winners page); when it updates the
   totals, Section 16.9 should follow.
+
+## 2026-10-08: skateboard risk analogy (Section 5.7) and everyday distributions (Section 17.7)
+
+Two additions requested in one note: a skateboard analogy for the risk treatments, and everyday examples for
+the probability distributions (a fair die for uniform, student grades for normal, wealth for Poisson).
+
+Correction to the request, made before writing: wealth across a population is not Poisson distributed. A
+Poisson quantity has variance equal to its mean, so wealth with a mean of 100,000 dollars would have a standard
+deviation of about 316 dollars. Wealth is heavy tailed, and its upper tail is commonly modeled with a Pareto
+distribution. The section therefore uses wealth as the Pareto example and gives Poisson its own correct
+examples (horse-kick deaths, failed logins per hour, phishing clicks per day, annualized rates of occurrence),
+with a short paragraph explaining why wealth fails the Poisson test. Standard normal is explained as the one
+bell curve with mean 0 and standard deviation 1, not a synonym for normal.
+
+Chapter 5, Section 5.7: new subsection A Worked Analogy: The Skateboard and the Scraped Knee, after the
+existing bicycle paragraph and encryption example. It states the risk in Section 5.2 terms, maps each element
+to an organizational counterpart, and walks through avoidance (whole and partial; AAP advice that children
+under 5 not ride), mitigation split into likelihood and impact controls (AAOS gear functions: knee and elbow
+pads against scrapes, wrist guards against fractures, helmet), transfer (deductible, coinsurance, out-of-pocket
+maximum, and the cyber equivalents: retention, sublimits, conditions, policy limits), acceptance (decision by
+the risk owner, appetite by severity, revisit when conditions change), a combined plan table, residual risk,
+and secondary risk (risk compensation, Morrongiello et al. 2007). A worked-numbers subsection with a code cell
+computes the Poisson chance of at least one clinic visit, the ALE and ROSI of the gear, and the insurance split,
+and notes that likelihood versus impact depends on how the loss event is defined. Six exercises with an answer
+key, learning objective 9, two key terms, review questions 16 and 17, references 10 to 13, index terms, and a
+pointer to Section 17.7 in the Section 5.6 admonition.
+
+Chapter 17, Section 17.7: new subsection Four Distributions from Everyday Life (fair die and uniform, with
+the chi-square fairness test, Diceware and modulo bias; student grades and the normal curve, with z-scores, the
+68-95-99.7 rule, the central limit theorem and its finite-variance condition, and base-rate false alarms; Poisson
+counts with the Bortkiewicz data, the law of rare events and negative binomial burstiness; wealth and the
+Pareto distribution with Fed DFA 2026 Q2 shares, SCF 2022 mean and median, the 80/20 tail index, the Clauset et
+al. tests, and heavy-tailed breach losses), a comparison table, a code cell, and a new four-panel figure
+(assets/figures/ch17_everyday_distributions.png). The existing soliton paragraph is unchanged under a new
+heading. Eight exercises with an answer key, learning objective 9, six key terms, review questions 11 and 12,
+references 14 to 27, and index terms.
+
+Also changed: one-sentence cross-references in Section 2.4 (randomness) and Section 12.2 (anomaly thresholds);
+eight glossary entries in Appendix B (heavy tail, modulo bias, normal distribution, Pareto distribution, Poisson
+distribution, risk compensation, uniform distribution, z-score); regenerated word counts (book about 665 pages).
+
+Sources were read directly: AAOS OrthoInfo Skateboarding Safety; HealthCare.gov glossary (deductible,
+out-of-pocket maximum, 2026 limits); NIST CSRC glossary (risk response) and NISTIR 8286 wording; ISO 31000:2018
+treatment options (secondary sources, the standard is paywalled); Morrongiello et al. via PubMed and Crossref;
+NIST/SEMATECH e-Handbook; EFF Diceware post and dice page; NIST SP 800-22 Rev. 1a; Python secrets docs and the
+CPython randbelow source; FRED series WFRBST01134, WFRBSN09161, WFRBSN40188 and WFRBSB50215 (updated September
+18, 2026); the October 2023 SCF bulletin; Pareto, Poisson and Bortkiewicz bibliographic records; Newman 2005;
+Clauset et al. 2009 (arXiv full text); Edwards et al. 2016 (OUP); Maillart and Sornette 2010 (arXiv, Crossref).
+The PubMed search page for a 1996 in-line skating gear study returned HTTP 429 and was not used.
+
+Checks: every number recomputed in code; check_acronyms.py 0 failures book-wide (FRED expanded); the 18 new
+links return OK or a redirect, except three publisher DOIs that refuse scripts (verified through Crossref and
+publisher pages) and FRED, which timed out from the shell but was read through a fetcher; clean jupyter-book
+build with only the two older asm-lexer warnings; rendered pages screenshotted; no em dashes, curly quotes,
+prose quotation marks or emojis in the new text.
+
+An independent agent reviewed all new text and found 2 errors and 17 precision problems, all verified and
+fixed before publishing, including: a sample sequence that was not actually uniform; the helmet wrongly called
+the only gear AAOS says to wear every time; the Clauset et al. result misstated (it rejected a power law for
+its wealth data); sample means said never to settle for any tail index of 2 or less; the central limit
+theorem stated without its finite-variance condition; steep hills attributed to AAOS; nonces said to require
+uniformity; EFF's short lists overlooked; the Pareto share formula given without its alpha greater than 1
+condition; and answer letters rotated so the new questions are not all B.
+
+### Still left for you
+
+- The existing Section 5.7 text twice says insurance never transfers reputational harm; some cyber policies
+  pay for profits lost to reputational damage or for crisis communications, so you may want to qualify it.
+- The existing first paragraph of Section 17.7 calls the uniform distribution the ideal for keys and nonces;
+  counter-based nonces only need to never repeat.
+- The Chapter 5 answer key leans toward B for the original questions (10 of 15).
+- The DFA shares change every quarter; refresh the 2026 Q2 figures in Section 17.7 when you next revise.
