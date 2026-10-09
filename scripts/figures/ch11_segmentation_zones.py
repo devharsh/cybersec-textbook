@@ -164,7 +164,7 @@ def main():
 
     # ------------------------------------------------------------- the arithmetic beneath
     ax.text(50, 14.6,
-            "Eight zones give 8 x 7 = 56 directed pairs, plus 8 outbound and 8 inbound "
+            "Eight zones give 8 × 7 = 56 directed pairs, plus 8 outbound and 8 inbound "
             "internet paths: 72 decisions.",
             ha="center", va="center", fontsize=8.8, color=GREY_INK, zorder=4)
     ax.text(50, 11.6,

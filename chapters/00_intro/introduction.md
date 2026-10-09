@@ -24,18 +24,18 @@ mix and match chapters to match their exact syllabus.
 | Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 | 150 |
 | Software Reverse Engineering | 9, 15 (+ 3) | 130 |
 | Computer and Network Security | 2, 3, 5, 11, 12, 17 | 250 |
-| Advanced Network Security (Security+ aligned) | 1, 2, 3, 11, 12, 15, 19 | 305 |
+| Advanced Network Security (Security+ aligned) | 1, 2, 3, 11, 12, 15, 19 | 310 |
 | Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 175 |
 | Fundamentals of Cryptography | 2, 3, 11, 17 | 200 |
 | Incident Response and Digital Forensics | 12, 13, 14, 15 | 145 |
 | Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 | 185 |
-| Capstone or Certification Prep | All chapters | 609 (about 665 with appendices) |
+| Capstone or Certification Prep | All chapters | 611 (about 667 with appendices) |
 
 <!-- END generated:course-pages -->
 
 <!-- BEGIN generated:page-basis. Written by scripts/gen_wordcounts.py; edit the wording in that script. -->
 
-The page counts are estimates at about 500 words of prose per page, the same measure Appendix G uses, and they count only the listed chapters, not the appendices. Code listings, figures, and tables are not counted, so a typeset copy will run to a different length. These figures, like Appendix G, are regenerated from the book source whenever the book is rebuilt. They are a planning aid for gauging reading load per course: on the same measure the 20 chapters come to about 609 pages, and the whole book, with its front matter and appendices, to about 665. Several courses now exceed a single term's reading if every listed chapter is covered in full, so the guidance under *Adapting the Reading Load* below on trimming the encyclopedic back sections of the longer chapters applies directly.
+The page counts are estimates at about 500 words of prose per page, the same measure Appendix G uses, and they count only the listed chapters, not the appendices. Code listings, figures, and tables are not counted, so a typeset copy will run to a different length. These figures, like Appendix G, are regenerated from the book source whenever the book is rebuilt. They are a planning aid for gauging reading load per course: on the same measure the 20 chapters come to about 611 pages, and the whole book, with its front matter and appendices, to about 667. Several courses now exceed a single term's reading if every listed chapter is covered in full, so the guidance under *Adapting the Reading Load* below on trimming the encyclopedic back sections of the longer chapters applies directly.
 
 <!-- END generated:page-basis -->
 
@@ -63,7 +63,7 @@ means a chapter can be truncated rather than dropped when a term runs short. Two
 
 <!-- BEGIN generated:outliers. Written by scripts/gen_wordcounts.py; edit the wording in that script. -->
 
-**Chapters 2 and 15 are the outliers.** At about 76 and 83 pages, they are roughly 1.7 and 1.8 times the length of the next-longest chapter, Chapter 9 (about 45 pages), and more than three times the median chapter (about 22 pages), so either one dominates any course that includes it.
+**Chapters 2 and 15 are the outliers.** At about 76 and 83 pages, they are roughly 1.7 and 1.8 times the length of the next-longest chapter, Chapter 9 (about 45 pages), and more than three times the median chapter (about 23 pages), so either one dominates any course that includes it.
 
 For Chapter 2 in a certification-oriented or introductory course, Sections 2.1 through 2.14 (through the TLS handshake) plus 2.16 through 2.19b (key management, the attack taxonomy, applied systems, practical guidance, protecting data in its three states, and tamper-evident mechanisms) carry the examinable material. Sections 2.15 and 2.15a (advanced and emerging cryptography, including homomorphic encryption and lattices, and privacy-preserving constructions such as zero-knowledge proofs) and Section 2.20 (formal security analysis and provable security) are graduate-level and can be assigned as optional reading; Section 2.21 (post-quantum standards) repays a single lecture even in an introductory course, because the migration deadlines are now concrete. Appendix J likewise belongs to the advanced track.
 

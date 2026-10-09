@@ -10,7 +10,7 @@ Last generated: 2026-10-09.
 |---|---:|---:|---:|
 | Introduction | 1,814 | 0 | 3.6 |
 | Preface | 433 | 0 | 0.9 |
-| Chapter 1: Introduction to Cybersecurity | 11,068 | 403 | 22.1 |
+| Chapter 1: Introduction to Cybersecurity | 12,058 | 403 | 24.1 |
 | Chapter 2: Cryptography | 37,879 | 3,066 | 75.8 |
 | Chapter 3: Networking and Network Attacks | 17,033 | 374 | 34.1 |
 | Chapter 4: Social Engineering and the Human Element | 7,647 | 203 | 15.3 |
@@ -25,7 +25,7 @@ Last generated: 2026-10-09.
 | Chapter 13: Digital Forensics | 10,469 | 875 | 20.9 |
 | Chapter 14: Incident Response | 9,786 | 828 | 19.6 |
 | Chapter 15: Malware Analysis | 41,509 | 423 | 83.0 |
-| Chapter 16: Capture the Flag and Competitive Security | 8,100 | 366 | 16.2 |
+| Chapter 16: Capture the Flag and Competitive Security | 8,120 | 366 | 16.2 |
 | Chapter 17: Emerging Threats and Future Challenges | 21,798 | 1,571 | 43.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
 | Chapter 19: Security Governance, Policy, and Culture | 13,598 | 482 | 27.2 |
@@ -40,7 +40,7 @@ Last generated: 2026-10-09.
 | Appendix I: Protocol Security Reference | 4,073 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,758 | 0 | 7.5 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **332,620** | **13,992** | **665** |
+| **TOTAL** | **333,630** | **13,992** | **667** |
 
 ## Detailed Word Count by Section
 
@@ -73,12 +73,12 @@ Last generated: 2026-10-09.
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*11,068 markdown words (22.1 pages); 403 code words.*
+*12,058 markdown words (24.1 pages); 403 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 179 |
-| Key Terms | 252 |
+| Learning Objectives | 198 |
+| Key Terms | 332 |
 | 1.1 What Is Cybersecurity? | 636 |
 | 1.2 The CIA Triad and Its Extensions | 792 |
 |     The DIE Model: A Modern Complement to CIA | 254 |
@@ -86,7 +86,7 @@ Last generated: 2026-10-09.
 |     A Concept Map of the Core Terms | 130 |
 | 1.4 Threat Actors and the Adversary Model | 591 |
 | 1.5 Defense in Depth and Security Controls | 655 |
-| 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 561 |
+| 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 1,255 |
 | 1.7 The NIST Cybersecurity Framework | 403 |
 | 1.8 Quantifying Risk in Monetary Terms | 534 |
 | 1.9 The Saltzer and Schroeder Design Principles | 641 |
@@ -108,7 +108,7 @@ Last generated: 2026-10-09.
 | Review Questions (MCQ) | 349 |
 |     Answer Key | 39 |
 | Lab Assignment | 248 |
-| References | 183 |
+| References | 380 |
 
 ### Chapter 2: Cryptography
 
@@ -188,8 +188,8 @@ Last generated: 2026-10-09.
 | Chapter Summary | 149 |
 | Why This Matters | 161 |
 | News in Focus: Heartbleed (2014) | 202 |
-| Review Questions (MCQ) | 433 |
-|     Answer Key | 106 |
+| Review Questions (MCQ) | 503 |
+|     Answer Key | 36 |
 | Lab Assignment | 387 |
 | References | 1,430 |
 
@@ -1050,7 +1050,7 @@ Last generated: 2026-10-09.
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*8,100 markdown words (16.2 pages); 366 code words.*
+*8,120 markdown words (16.2 pages); 366 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1093,7 +1093,7 @@ Last generated: 2026-10-09.
 | News in Focus: Government-Sponsored CTF Competitions | 58 |
 | Review Questions (MCQ) | 314 |
 | Lab Assignment | 164 |
-| References | 244 |
+| References | 264 |
 
 ### Chapter 17: Emerging Threats and Future Challenges
 

@@ -423,3 +423,46 @@ costs that follow reputational damage (crisis communications, lost profits), but
 usually, legal accountability stay with the organization. The opening of Section 17.7 and the Section 17.6
 figure called the uniform distribution the ideal for nonces; they now say keys, tokens and randomly generated
 nonces, and assets/figures/ch17_distributions.png was regenerated from its own code cell with the new title.
+
+## 2026-10-09: answer keys, reference numbering, privilege rings, and the times sign
+
+Four problems reported by the reader, each fixed wherever it occurs in the book after a full audit.
+
+MCQs inside answer keys: only Chapter 2 had this. Questions 17 and 18 (ElGamal) sat below the Answer Key
+heading with their own key line; they now sit with the other questions and the key reads 1 to 18.
+
+Reference numbering: Chapters 2 and 17 placed the related-work-by-the-author block in the middle of the
+numbered list, so the list stopped and resumed (61 to 64 in Chapter 2, 13 to 27 in Chapter 17). The block now
+follows the whole list in both. Chapter 16 had one numbered item followed by three unnumbered groups; it is now
+one list numbered 1 to 19 with a sentence saying which items belong to which section. Chapter 8's item 14 was a
+see-also note, not a reference, and is now a note after the list. Every chapter's references now run 1 to N.
+
+Privilege rings: Section 1.6 drew the x86 rings as four rectangles in a mermaid graph, while its own text said
+concentric circles. Two new figures replace it (scripts/figures/ch01_privilege_rings.py): the x86 rings as
+concentric disks with the negative rings below ring 0 (ring -1 hypervisor, ring -2 System Management Mode,
+ring -3 security processor), an SGX enclave and a TDX confidential VM marked as isolation rather than rank, a
+firmware TPM in the security processor and a discrete TPM as a separate chip; and the Arm exception levels as
+concentric disks split into the TrustZone normal and secure worlds with EL3 at the center. The text was
+rewritten to match, quotation marks around the ring names removed, two new paragraphs explain where TPMs and
+TEEs fit, and references 9 to 18, three key terms, index terms and learning objective 9 were added.
+
+Times sign: x used for multiplication now uses the multiplication sign in Chapters 1, 5, 12, 17 and 19 and in
+Appendix B, in two Chapter 5 code cells (outputs rerun), and in the text drawn inside the Chapter 11
+segmentation figure (regenerated). Hex values such as 0x80, the ElGamal secret key x and a shell loop
+variable were left alone.
+
+Sources read directly: Tereshkin and Wojtczuk, Black Hat USA 2009; Domas, Black Hat USA 2015; Buhren and
+Eichner, Black Hat USA 2020; Intel Community, Choose the Right TPM Type (2022); Trusted Computing Group TPM
+summary; Costan and Devadas, Intel SGX Explained (ePrint 2016/086); Cheng et al., Intel TDX Demystified
+(arXiv 2303.15540); Arm, Learn the architecture: AArch64 Exception Model (102412, version 1.3); Arm, SMC
+Calling Convention (2013); Mann, Arm Community blog (2018). Intel's own SGX and TDX pages and the Linux kernel
+SGX page could not be fetched from this session and were not used.
+
+Checks: check_acronyms.py 0 failures book-wide; new links OK or redirect except the TCG page and the Arm blog,
+which refuse scripts and were read through a fetcher; clean jupyter-book build; rendered pages screenshotted;
+figure colors pass the dataviz ordinal ramp checks; word counts regenerated (book about 667 pages).
+
+### Still left for you
+
+- Chapter 2's ElGamal formulas, Chapter 17's fairness bound and Appendix J still write products and powers in
+  plain-text style (m * h^k, 2^30 * 2^-128); they could be typeset as math.
