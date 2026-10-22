@@ -608,3 +608,39 @@ Checks: check_acronyms.py 0 failures (SL scoped as a Chapter 1 literal for the I
 no new math tokens; every new URL resolves (Intel's SDM page, doi.org and the canonical/tdx page refuse scripts
 but were confirmed another way); jupyter-book build has no warnings; tables, figure and Going Deeper box
 screenshotted; word counts regenerated.
+
+## 2026-10-22: thread states, a pointers primer, and the shell/shellcode distinction (Chapter 15)
+
+The reader asked to fold in a set of notes on Windows process and thread states, pointers, and the three things
+called shell. Chapter 15 already covers DLL and process injection in an analyst frame (Section 15.10 Code
+Injection, and Section 15.33 Covert and Stealthy Launching), so that material was left as is and not expanded;
+the new work is the systems background around it.
+
+Three additions:
+
+- Section 15.23 (Windows Internals for Malware Analysts) gains a "Thread states" paragraph. This is where
+  verifying the reader's notes paid off: the notes listed seven process-or-thread states including Suspended.
+  In Windows the scheduler states are a thread property, and the documented set is Initialized, Ready, Standby,
+  Running, Waiting, Transition, Deferred Ready, and Terminated. Suspended is not among them: a thread created
+  CREATE_SUSPENDED or halted with SuspendThread is simply not a ready thread, which the text states and ties to
+  process hollowing as a detection cue.
+- A new Section 15.45 (Pointers and Process Memory for the Analyst) covers what a pointer is, data versus
+  function pointers, the stack, heap, and static-data and code sections, the shared address space versus the
+  per-thread stack, and the instruction and stack pointer registers (RIP/EIP, RSP/ESP), all framed for reading
+  disassembly and tied to Sections 15.23, 15.43, and 15.44 and to Chapter 9. It has three exercises and an
+  answer key.
+- A note at the head of the shellcode subsection (Section 15.10) separates a shell (the command interpreter),
+  a shell script (a .sh file), and shellcode (an exploit payload in native machine code, not managed byte
+  code), a distinction the reader asked for and a common point of confusion.
+
+Learning objective 9, three key terms (thread state, pointer, shellcode), the chapter summary, the index, and
+references 70 to 74 were added. The injection subsections were not touched.
+
+Sources read directly and cited: Microsoft Learn ThreadState enumerations (Microsoft.Windows.EventTracing.Cpu
+and System.Diagnostics), the Context Switches page, and the SuspendThread function page, plus Windows Internals,
+Part 1, 7th ed. (Yosifovich, Ionescu, Russinovich, and Solomon, 2017) for the full thread state machine. All
+four Microsoft URLs were checked and resolve.
+
+Checks: check_acronyms.py 0 failures (RIP, RSP, EIP, ESP already literals); the MyST math scan shows no new math
+tokens in Chapter 15; jupyter-book build is clean apart from the two pre-existing asm-lexer notices in other
+Chapter 15 code blocks; the new blocks were screenshotted; word counts regenerated.

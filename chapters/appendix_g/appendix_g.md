@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-10-09.
+Last generated: 2026-10-22.
 
 ## Summary by Chapter
 
@@ -24,7 +24,7 @@ Last generated: 2026-10-09.
 | Chapter 12: Intrusion Detection and Prevention Systems | 10,100 | 1,114 | 20.2 |
 | Chapter 13: Digital Forensics | 10,469 | 875 | 20.9 |
 | Chapter 14: Incident Response | 9,786 | 828 | 19.6 |
-| Chapter 15: Malware Analysis | 41,509 | 423 | 83.0 |
+| Chapter 15: Malware Analysis | 42,883 | 423 | 85.8 |
 | Chapter 16: Capture the Flag and Competitive Security | 8,120 | 366 | 16.2 |
 | Chapter 17: Emerging Threats and Future Challenges | 21,802 | 1,573 | 43.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
@@ -40,7 +40,7 @@ Last generated: 2026-10-09.
 | Appendix I: Protocol Security Reference | 4,073 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,794 | 0 | 7.6 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **340,829** | **13,994** | **682** |
+| **TOTAL** | **342,203** | **13,994** | **684** |
 
 ## Detailed Word Count by Section
 
@@ -897,12 +897,12 @@ Last generated: 2026-10-09.
 
 ### Chapter 15: Malware Analysis
 
-*41,509 markdown words (83.0 pages); 423 code words.*
+*42,883 markdown words (85.8 pages); 423 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 97 |
-| Key Terms | 162 |
+| Learning Objectives | 127 |
+| Key Terms | 214 |
 | 15.1 Malware Taxonomy | 0 |
 |     Viruses and Worms | 81 |
 |     Trojans and RATs | 53 |
@@ -940,7 +940,7 @@ Last generated: 2026-10-09.
 |     Obfuscation and Deobfuscation | 156 |
 |     Anti-Analysis: Anti-Disassembly, Anti-Debugging, and Anti-VM | 246 |
 |     Packing and Unpacking | 145 |
-|     Shellcode, Buffer Overflows, and Network Attacks | 156 |
+|     Shellcode, Buffer Overflows, and Network Attacks | 334 |
 |     Exercises | 140 |
 |     Answer Key | 216 |
 | 15.11 An End-to-End Analysis Walkthrough | 219 |
@@ -968,7 +968,7 @@ Last generated: 2026-10-09.
 |     How cmp and a Conditional Jump Build a Branch | 1,517 |
 |     Exercises | 186 |
 |     Answer Key | 286 |
-| 15.23 Windows Internals for Malware Analysts | 476 |
+| 15.23 Windows Internals for Malware Analysts | 746 |
 |     Exercises | 64 |
 |     Answer Key | 120 |
 | 15.24 Obfuscation and Deobfuscation, Worked | 425 |
@@ -1046,13 +1046,16 @@ Last generated: 2026-10-09.
 |     15.44.7 Why the distinction matters for analysis and security | 513 |
 |     Exercises | 275 |
 |     Answer Key | 625 |
-| Chapter Summary | 98 |
+| 15.45 Pointers and Process Memory for the Analyst | 512 |
+|     Exercises | 76 |
+|     Answer Key | 130 |
+| Chapter Summary | 137 |
 | Why This Matters | 61 |
 | News in Focus: WannaCry and the Worm That Used a Leaked Exploit (2017) | 286 |
 | News in Focus: Fileless and Living-off-the-Land Attacks | 68 |
 | Review Questions (MCQ) | 335 |
 | Lab Assignment | 176 |
-| References | 1,453 |
+| References | 1,540 |
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
