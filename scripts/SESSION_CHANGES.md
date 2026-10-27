@@ -710,3 +710,51 @@ regenerated.
 - The Part 2 slide deck and facilitator guide still tell the earlier version of the case (the
   attacker encrypting the file, one root cause); align them with Section 16.14 before November 11.
 - Before each run of the workshop, open every link once, as Running the Workshop advises.
+
+## 2026-10-27 (second entry): one week of October 2026 news, and the landmark bugs, across five chapters
+
+The reader asked that seven topics from a news roundup be included in the book, expanded with
+illustrations, examples, and news, and verified: PHP2Shell, a backdoored Python package with 23
+million weekly downloads, a GitLab bug dating back to 2014, rogue AI agents inside bank accounts, the
+eMudhra certificate authority keys made from numbers under 256, a Japanese cyber national emergency, and
+other critical bugs such as Y2K, Heartbleed, and Log4Shell. Each topic was researched at its primary
+sources, and three of the roundup's descriptions turned out to be imprecise; the book follows the
+sources, not the roundup.
+
+- Section 2.4 gains a case on eMudhra: eight intermediate CA keys on P-384 were integers below 256
+  (Mozilla Bugzilla 2083449), the PKI response from revocation to blocklists to root removal, about
+  30,800 certificates under the removed root, and a code cell that recovers a small key and screens for
+  them. The roundup's "HTTPS keys" were the CA's own intermediate keys, not customers' keys.
+- New Section 9.39, Landmark Bugs, from the Morris Worm to the Year 2038: a table from the Morris worm
+  to the CrowdStrike update, a figure of how long bugs stayed hidden (Shellshock 25 years, GitLab 12,
+  Log4Shell 8), and a code cell on Y2K two-digit years and the 2038 overflow. Heartbleed, Log4Shell,
+  and WannaCry point to their existing treatments.
+- New Section 10.14 on PHP2Shell (CVE-2026-109618 and CVE-2026-109619, in KEV since October 26) and
+  GitLab CVE-2026-110264, whose path runs through the org-ruby gem added in May 2014 and an unescaped
+  `Regexp.new`; a figure of both attack paths and a code cell on regular expression injection.
+  PHP2Shell is two CVEs; a third, narrower one (CVE-2026-115560) followed on October 23.
+- New Section 14.29 on Japan's national response in October 2026, with a timeline figure. No emergency
+  was declared: an LDP official said the situation could be called an emergency in cyberspace.
+- Section 17.8 gains the LiteLLM 1.107.0 case (the 23 million weekly downloads are Socket's figure)
+  with a timeline figure and a code cell on `.pth` startup hooks and hash pinning; Section 17.12 gains
+  the AI agents in bank accounts case with a figure contrasting shared passwords and delegated tokens.
+  The agents were mostly following their users' instructions through shared credentials, not rogue.
+
+Also: a key term, an index entry, a summary sentence, and references in each of the five chapters,
+new literal names and four expansions in acronyms.json, and the figure script
+scripts/figures/news_2026_10.py.
+
+Sources: every number and date was read at its primary source on October 27, 2026 (NVD API, CISA KEV
+feed, Mozilla Bugzilla REST API, vendor and researcher posts, the Japanese government PDF, the org-ruby
+gem source, and GitLab's repository API). An independent fact-check then raised 40 issues, none of them
+fabrications; all were fixed before publishing, among them the Chapter 14 table's lifecycle labels, the
+middle layer of the eMudhra chain, and the claim that banks could not tell agents from customers.
+
+Checks: check_acronyms.py 0 failures across the book; the four code cells were rerun and their stored
+output matches; a CI-mirror jupyter-book build is clean apart from the two pre-existing asm-lexer
+notices in Chapter 15; the new sections were screenshotted; word counts regenerated.
+
+### Still left for you
+
+- Several of these stories are days old (LiteLLM's process changes, eMudhra's root cause, the third
+  PHP CVE, Japan's emergency measures); expect to update them as final reports appear.

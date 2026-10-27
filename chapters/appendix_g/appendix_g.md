@@ -11,22 +11,22 @@ Last generated: 2026-10-27.
 | Introduction | 1,814 | 0 | 3.6 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 16,783 | 403 | 33.6 |
-| Chapter 2: Cryptography | 38,071 | 3,066 | 76.1 |
+| Chapter 2: Cryptography | 38,983 | 3,254 | 78.0 |
 | Chapter 3: Networking and Network Attacks | 17,033 | 374 | 34.1 |
 | Chapter 4: Social Engineering and the Human Element | 7,647 | 203 | 15.3 |
 | Chapter 5: Risk Management | 17,001 | 696 | 34.0 |
 | Chapter 6: Penetration Testing Methodology | 9,787 | 265 | 19.6 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,605 | 464 | 15.2 |
 | Chapter 8: Scanning and Enumeration | 7,242 | 816 | 14.5 |
-| Chapter 9: Exploitation and Post-Exploitation | 22,438 | 587 | 44.9 |
-| Chapter 10: Web Application Security | 8,526 | 372 | 17.1 |
+| Chapter 9: Exploitation and Post-Exploitation | 23,683 | 778 | 47.4 |
+| Chapter 10: Web Application Security | 9,726 | 516 | 19.5 |
 | Chapter 11: Network Defense and Hardening | 22,325 | 258 | 44.6 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 10,100 | 1,114 | 20.2 |
 | Chapter 13: Digital Forensics | 10,469 | 875 | 20.9 |
-| Chapter 14: Incident Response | 9,821 | 828 | 19.6 |
+| Chapter 14: Incident Response | 10,784 | 828 | 21.6 |
 | Chapter 15: Malware Analysis | 42,883 | 423 | 85.8 |
 | Chapter 16: Capture the Flag and Competitive Security | 12,876 | 818 | 25.8 |
-| Chapter 17: Emerging Threats and Future Challenges | 21,802 | 1,573 | 43.6 |
+| Chapter 17: Emerging Threats and Future Challenges | 23,531 | 1,806 | 47.1 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
 | Chapter 19: Security Governance, Policy, and Culture | 15,865 | 482 | 31.7 |
 | Chapter 20: Industrial Control Systems and OT Security | 13,679 | 442 | 27.4 |
@@ -40,7 +40,7 @@ Last generated: 2026-10-27.
 | Appendix I: Protocol Security Reference | 4,073 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,794 | 0 | 7.6 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **347,152** | **14,446** | **694** |
+| **TOTAL** | **353,201** | **15,202** | **706** |
 
 ## Detailed Word Count by Section
 
@@ -118,12 +118,12 @@ Last generated: 2026-10-27.
 
 ### Chapter 2: Cryptography
 
-*38,071 markdown words (76.1 pages); 3,066 code words.*
+*38,983 markdown words (78.0 pages); 3,254 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 185 |
-| Key Terms | 775 |
+| Key Terms | 799 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
 |     Encoding versus Encryption versus Hashing | 876 |
 | 2.2 Classical Ciphers and Why They Fall | 730 |
@@ -137,6 +137,7 @@ Last generated: 2026-10-27.
 |     Real-World Case: The ANC's One-Time Pad and Operation Vula | 441 |
 | 2.4 Randomness: True, Pseudo, and Cryptographically Secure | 570 |
 |     Insecure versus Cryptographically Secure Randomness in Code | 168 |
+|     Case Study: Private Keys Made from Numbers Under 256 (eMudhra, October 2026) | 751 |
 | 2.5 Symmetric Encryption: Stream and Block Ciphers | 1,007 |
 |     The Feistel Network: A Blueprint for Block Ciphers | 223 |
 | 2.6 Block Cipher Modes of Operation | 688 |
@@ -191,13 +192,13 @@ Last generated: 2026-10-27.
 |     Writing a Security Analysis: Proof Sketches and Experimental Evaluation | 374 |
 | 2.21 Post-Quantum Standards and the Migration Timeline | 378 |
 |     Worked Example: Toy Ring-LWE Encryption | 60 |
-| Chapter Summary | 149 |
+| Chapter Summary | 194 |
 | Why This Matters | 161 |
 | News in Focus: Heartbleed (2014) | 202 |
 | Review Questions (MCQ) | 503 |
 |     Answer Key | 36 |
 | Lab Assignment | 419 |
-| References | 1,476 |
+| References | 1,568 |
 
 ### Chapter 3: Networking and Network Attacks
 
@@ -438,12 +439,12 @@ Last generated: 2026-10-27.
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*22,438 markdown words (44.9 pages); 587 code words.*
+*23,683 markdown words (47.4 pages); 778 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 91 |
-| Key Terms | 166 |
+| Key Terms | 189 |
 | 9.1 What Exploitation Is (and Is Not) | 0 |
 |     In a Penetration Test | 53 |
 |     Ethical Boundaries | 64 |
@@ -536,21 +537,23 @@ Last generated: 2026-10-27.
 |     The problem single sign-on solves | 184 |
 |     The three exchanges | 256 |
 |     Where each attack breaks in | 314 |
-| Chapter Summary | 121 |
+| 9.39 Landmark Bugs, from the Morris Worm to the Year 2038 | 853 |
+|     Y2K and the Year 2038, Worked | 128 |
+| Chapter Summary | 155 |
 | Why This Matters | 62 |
 | News in Focus: The Ransomware Post-Exploitation Playbook | 78 |
 | Review Questions (MCQ) | 285 |
 | Lab Assignment | 189 |
-| References | 237 |
+| References | 444 |
 
 ### Chapter 10: Web Application Security
 
-*8,526 markdown words (17.1 pages); 372 code words.*
+*9,726 markdown words (19.5 pages); 516 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 109 |
-| Key Terms | 153 |
+| Key Terms | 177 |
 | 10.1 How the Web Works: HTTP, Sessions, and the Same-Origin Policy | 237 |
 | 10.2 The OWASP Top 10 | 62 |
 |     Broken Access Control | 169 |
@@ -584,12 +587,15 @@ Last generated: 2026-10-27.
 |     Read (Only) Replicas | 100 |
 |     Cloud Database Instance Classes | 561 |
 |     Attacks and Defenses | 263 |
-| Chapter Summary | 130 |
+| 10.14 Two Server-Side Bugs from One Week in October 2026: PHP2Shell and a GitLab Regex | 144 |
+|     PHP2Shell | 440 |
+|     A GitLab Bug Reachable Since 2014 | 347 |
+| Chapter Summary | 162 |
 | Why This Matters | 79 |
 | News in Focus: SQL Injection Breaches That Persist | 78 |
 | Review Questions (MCQ) | 314 |
 | Lab Assignment | 154 |
-| References | 55 |
+| References | 268 |
 
 ### Chapter 11: Network Defense and Hardening
 
@@ -830,12 +836,12 @@ Last generated: 2026-10-27.
 
 ### Chapter 14: Incident Response
 
-*9,821 markdown words (19.6 pages); 828 code words.*
+*10,784 markdown words (21.6 pages); 828 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 115 |
-| Key Terms | 137 |
+| Key Terms | 163 |
 | 14.1 Incidents Versus Events | 63 |
 |     Incident Severity Classification | 96 |
 | 14.2 The NIST SP 800-61 Lifecycle | 13 |
@@ -888,12 +894,13 @@ Last generated: 2026-10-27.
 | 14.28 Containment Decisions Under Uncertainty | 361 |
 |     Exercises | 54 |
 |     Answer Key | 123 |
-| Chapter Summary | 103 |
+| 14.29 Incident Response at National Scale: Japan, October 2026 | 689 |
+| Chapter Summary | 133 |
 | Why This Matters | 75 |
 | News in Focus: Attacker Dwell Time in Major Ransomware Incidents | 88 |
 | Review Questions (MCQ) | 320 |
 | Lab Assignment | 211 |
-| References | 90 |
+| References | 308 |
 
 ### Chapter 15: Malware Analysis
 
@@ -1112,12 +1119,12 @@ Last generated: 2026-10-27.
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*21,802 markdown words (43.6 pages); 1,573 code words.*
+*23,531 markdown words (47.1 pages); 1,806 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 109 |
-| Key Terms | 291 |
+| Key Terms | 315 |
 | 17.1 Post-Quantum Cryptography | 0 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 177 |
@@ -1146,6 +1153,7 @@ Last generated: 2026-10-27.
 |     Why Supply Chain Is a High-Value Target | 32 |
 |     Notable Supply Chain Attack Patterns | 98 |
 |     SBOM and Dependency Management | 55 |
+|     Case Study: The LiteLLM 1.107.0 Release (October 2026) | 815 |
 | 17.9 Cloud Security | 0 |
 |     The Shared Responsibility Model | 94 |
 |     Cloud-Native Threats | 34 |
@@ -1174,18 +1182,19 @@ Last generated: 2026-10-27.
 |     Lab: Crafting an Adversarial Example | 83 |
 |     Lattice Cryptography Meets Large Language Models: A Systems View | 406 |
 |     Lab: Recognizing Prompt Injection | 104 |
+|     Case Study: AI Agents Inside Bank Accounts (October 2026) | 670 |
 | 17.13 Big Data Security and Access Control | 397 |
 | 17.14 Sandbox and Virtual-Machine Escape, and What "AI Escaped the Sandbox" Really Means | 1,139 |
 |     Exercises | 92 |
 |     Answer Key | 178 |
 |     Election Security and Electronic Voting | 500 |
 | 17.15 A Map of Open Research Problems | 451 |
-| Chapter Summary | 120 |
+| Chapter Summary | 160 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
 | Review Questions (MCQ) | 416 |
 | Lab Assignment | 192 |
-| References | 656 |
+| References | 836 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
