@@ -644,3 +644,69 @@ four Microsoft URLs were checked and resolve.
 Checks: check_acronyms.py 0 failures (RIP, RSP, EIP, ESP already literals); the MyST math scan shows no new math
 tokens in Chapter 15; jupyter-book build is clean apart from the two pre-existing asm-lexer notices in other
 Chapter 15 code blocks; the new blocks were screenshotted; word counts regenerated.
+
+## 2026-10-27: the CyberChef workshop as Section 16.14, with figures, worked solutions, and news
+
+The reader asked that every material and challenge of the two-part CyberChef workshop (Decode, Defend,
+Decide, built in fall 2026 for the CyberNinjas club at LaGuardia) be in the book, expanded with
+illustrations, examples, and news, and verified. Section 16.14 (A Two-Part Workshop: From CyberChef
+Challenges to a Case Briefing) now holds all of it, so the workshop can be rerun or practiced alone.
+
+- Part 1: the three families of Section 2.1 and a five-column comparison table (with the security
+  property each family buys), the five challenges with inputs, recipes, and section pointers, the
+  bottle, napkin, and curd analogies, the dial picture for key length with the crib arithmetic
+  (7c XOR 43 = 3f), the keyspace numbers, and the five-point debrief.
+- Part 2: the Meridian Outfitters case, the five pieces of evidence with recipes, the four-step story,
+  the two weak links (prompt injection, and an AES key left in a configuration backup, CWE-798 and
+  CWE-321), the five-part executive briefing modeled on the incident report of Section 14.27, three
+  starter recommendations, and a practice rubric (20, 20, 25, 25, 10).
+- Running the Workshop: run-of-show tables for both hours, now with a slot to deliver and score the
+  briefings, and notes for room, video call, and hybrid delivery.
+- Two code cells reproduce every flag and finding with the standard library and `cryptography`; their
+  output is stored and folded with the hide-output tag so the answers stay hidden until opened.
+- Three new figures from scripts/figures/ch16_workshop.py: ch16_classify.png (two questions sort the
+  five challenges), ch16_keyspace.png (time to try every key at 10^12 guesses a second), and
+  ch16_case_chain.png (the evidence chain from E1 to the briefing).
+- News in Focus: The Workshop's Mistakes in Recent Incidents maps each challenge to verified events:
+  Tenda CVE-2026-22080, the Shai-Hulud worm, and XLab's Mr_Rot13 (Base64 and ROT13 as a lock); the
+  Black Hills 0xFA loader, Huntress on DarkMe's broken RC4, and Rapid7 on Chrysalis (XOR); the final
+  NIST IR 8547 (AES after the quantum transition); GitGuardian's 2026 report and the October 2026
+  LiteLLM release compromise (a key never revoked); Notepad++ CVE-2025-15556 (an integrity check never
+  made); and EchoLeak CVE-2025-32711, the OWASP 2026 list, and ForcedLeak (prompt injection and
+  exfiltration).
+
+Also: learning objectives 8 and 9, the key term CyberChef recipe, the chapter summary, the index,
+references 20 to 42 (with the reference intro updated), and Lab Assignment pointers to Section 16.14
+from Chapters 2 and 14. Section 2.21 now records that NIST IR 8547 became final on October 27, 2026
+(it had said initial public draft), with the federal deadlines of Executive Order 14412 and OMB
+M-26-15 and the report's position on AES; Chapter 2 reference 65 cites it. Eight names that only look
+like acronyms (CIVN, DarkMe, GenAI, M365, N300, PyPI, WinGUp, XLab) were added to the literal list in
+acronyms.json.
+
+An independent fact-check of the draft found 25 issues, all fixed before publishing. The main ones:
+the root cause contradicted the case's own story (now two weak links, with the company as the
+encryptor), the hash row recommended SHA-256 for password storage (now only inside a slow, salted
+scheme, per Section 2.9), the debrief said a wrong IV gives noise (it garbles only the first block),
+the page claims overstated (Evidence 5 shows its answer by design; Evidence 4 and 5 links carry no
+input), and gchq.github.io/CyberChef serves a later development build than the 11.5.0 release the
+workshop pages host. The two practice pages in the tex2pdf repository were corrected to match.
+
+Sources: every news item was read on October 27, 2026 at its primary source (NVD records through the
+NVD API, the vendor and researcher posts, the CISA alert, the GitGuardian report, the NIST IR 8547
+PDF, the OWASP resource page) and, for the OWASP 2026 ranking, the Cloud Security Alliance note,
+since the official PDF is gated. All 23 new reference URLs resolve (three refuse scripted requests
+and were read through a browser fetch). The practice pages were tested end to end after the edits:
+both accept all five answers, with no script errors.
+
+Checks: check_acronyms.py 0 failures across the book; the worked solutions were rerun and their
+stored output matches byte for byte; a CI-mirror jupyter-book build is clean apart from the two
+pre-existing asm-lexer notices in Chapter 15; the new section was screenshotted; word counts
+regenerated.
+
+### Still left for you
+
+- The LiteLLM incident is days old; the project promised to publish its process changes, so that
+  paragraph may need an update once they and any later analysis appear.
+- The Part 2 slide deck and facilitator guide still tell the earlier version of the case (the
+  attacker encrypting the file, one root cause); align them with Section 16.14 before November 11.
+- Before each run of the workshop, open every link once, as Running the Workshop advises.

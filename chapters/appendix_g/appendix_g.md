@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-10-22.
+Last generated: 2026-10-27.
 
 ## Summary by Chapter
 
@@ -11,7 +11,7 @@ Last generated: 2026-10-22.
 | Introduction | 1,814 | 0 | 3.6 |
 | Preface | 433 | 0 | 0.9 |
 | Chapter 1: Introduction to Cybersecurity | 16,783 | 403 | 33.6 |
-| Chapter 2: Cryptography | 37,913 | 3,066 | 75.8 |
+| Chapter 2: Cryptography | 38,071 | 3,066 | 76.1 |
 | Chapter 3: Networking and Network Attacks | 17,033 | 374 | 34.1 |
 | Chapter 4: Social Engineering and the Human Element | 7,647 | 203 | 15.3 |
 | Chapter 5: Risk Management | 17,001 | 696 | 34.0 |
@@ -23,9 +23,9 @@ Last generated: 2026-10-22.
 | Chapter 11: Network Defense and Hardening | 22,325 | 258 | 44.6 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 10,100 | 1,114 | 20.2 |
 | Chapter 13: Digital Forensics | 10,469 | 875 | 20.9 |
-| Chapter 14: Incident Response | 9,786 | 828 | 19.6 |
+| Chapter 14: Incident Response | 9,821 | 828 | 19.6 |
 | Chapter 15: Malware Analysis | 42,883 | 423 | 85.8 |
-| Chapter 16: Capture the Flag and Competitive Security | 8,120 | 366 | 16.2 |
+| Chapter 16: Capture the Flag and Competitive Security | 12,876 | 818 | 25.8 |
 | Chapter 17: Emerging Threats and Future Challenges | 21,802 | 1,573 | 43.6 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
 | Chapter 19: Security Governance, Policy, and Culture | 15,865 | 482 | 31.7 |
@@ -40,7 +40,7 @@ Last generated: 2026-10-22.
 | Appendix I: Protocol Security Reference | 4,073 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,794 | 0 | 7.6 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **342,203** | **13,994** | **684** |
+| **TOTAL** | **347,152** | **14,446** | **694** |
 
 ## Detailed Word Count by Section
 
@@ -118,7 +118,7 @@ Last generated: 2026-10-22.
 
 ### Chapter 2: Cryptography
 
-*37,913 markdown words (75.8 pages); 3,066 code words.*
+*38,071 markdown words (76.1 pages); 3,066 code words.*
 
 | Section | Words |
 |---|---:|
@@ -189,15 +189,15 @@ Last generated: 2026-10-22.
 |     Symbolic Models: Dolev-Yao and Automated Verification | 322 |
 |     A Taxonomy of Security Properties | 326 |
 |     Writing a Security Analysis: Proof Sketches and Experimental Evaluation | 374 |
-| 2.21 Post-Quantum Standards and the Migration Timeline | 284 |
+| 2.21 Post-Quantum Standards and the Migration Timeline | 378 |
 |     Worked Example: Toy Ring-LWE Encryption | 60 |
 | Chapter Summary | 149 |
 | Why This Matters | 161 |
 | News in Focus: Heartbleed (2014) | 202 |
 | Review Questions (MCQ) | 503 |
 |     Answer Key | 36 |
-| Lab Assignment | 387 |
-| References | 1,444 |
+| Lab Assignment | 419 |
+| References | 1,476 |
 
 ### Chapter 3: Networking and Network Attacks
 
@@ -830,7 +830,7 @@ Last generated: 2026-10-22.
 
 ### Chapter 14: Incident Response
 
-*9,786 markdown words (19.6 pages); 828 code words.*
+*9,821 markdown words (19.6 pages); 828 code words.*
 
 | Section | Words |
 |---|---:|
@@ -892,7 +892,7 @@ Last generated: 2026-10-22.
 | Why This Matters | 75 |
 | News in Focus: Attacker Dwell Time in Major Ransomware Incidents | 88 |
 | Review Questions (MCQ) | 320 |
-| Lab Assignment | 176 |
+| Lab Assignment | 211 |
 | References | 90 |
 
 ### Chapter 15: Malware Analysis
@@ -1059,12 +1059,12 @@ Last generated: 2026-10-22.
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*8,120 markdown words (16.2 pages); 366 code words.*
+*12,876 markdown words (25.8 pages); 818 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 89 |
-| Key Terms | 132 |
+| Learning Objectives | 140 |
+| Key Terms | 151 |
 | 16.1 What Is a CTF? | 46 |
 |     Jeopardy Format | 152 |
 | 16.2 Category Deep Dives | 0 |
@@ -1097,12 +1097,18 @@ Last generated: 2026-10-22.
 |     Exercises | 201 |
 |     Answer Key | 348 |
 | 16.13 The Teaching and Research Toolkit: Cost and License | 562 |
-| Chapter Summary | 120 |
+| 16.14 A Two-Part Workshop: From CyberChef Challenges to a Case Briefing | 324 |
+|     Telling the Three Families Apart | 299 |
+|     Part 1: Five Challenges | 824 |
+|     Part 2: Crack the Case | 977 |
+|     Running the Workshop | 397 |
+|     News in Focus: The Workshop's Mistakes in Recent Incidents | 1,344 |
+| Chapter Summary | 164 |
 | Why This Matters | 62 |
 | News in Focus: Government-Sponsored CTF Competitions | 58 |
 | Review Questions (MCQ) | 314 |
 | Lab Assignment | 164 |
-| References | 264 |
+| References | 741 |
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
