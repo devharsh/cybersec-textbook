@@ -758,3 +758,11 @@ notices in Chapter 15; the new sections were screenshotted; word counts regenera
 
 - Several of these stories are days old (LiteLLM's process changes, eMudhra's root cause, the third
   PHP CVE, Japan's emergency measures); expect to update them as final reports appear.
+
+## 2026-10-28: Part 1 buttons open an empty CyberChef (Section 16.14)
+
+Before the first workshop session, the reader asked that the Part 1 challenge page stop handing out
+answers through its Open in CyberChef links. The page's buttons now open an empty CyberChef, each card
+names the operations to drag into the recipe and shows any key, IV, or size (the AES key and IV are now
+on the card), and the instructions explain the steps. Section 16.14 was updated in two places to say so;
+the Part 2 page is unchanged. The parameterized solution links stay out of the page and the deck.
