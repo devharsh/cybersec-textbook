@@ -766,3 +766,40 @@ answers through its Open in CyberChef links. The page's buttons now open an empt
 names the operations to drag into the recipe and shows any key, IV, or size (the AES key and IV are now
 on the card), and the instructions explain the steps. Section 16.14 was updated in two places to say so;
 the Part 2 page is unchanged. The parameterized solution links stay out of the page and the deck.
+
+## 2026-10-28: hands-on threat hunting with the logs you already have (Section 12.21)
+
+The reader asked to fold in a set of grep-first threat hunts and to expand and verify everything. Chapter 12
+already had conceptual threat hunting (12.11) and log sources (12.13), so this is the practical, command-line
+complement: a new Section 12.21 with seven hunts over logs nearly every Linux host already writes, each with a
+verified command, real sample output, a false-positive and evasion note, and a MITRE ATT&CK technique ID, plus
+four exercises and an answer key.
+
+The seven hunts: rank failed SSH logins by source (T1110.001); find a success after many failures from the same
+address, the breach moment (T1078); scanner user agents in web logs (T1595.002); base64 blobs decoded out of
+URLs (T1027); cron jobs that run from /tmp or pipe the web into a shell (T1053.003); every sudo to root and who
+opened an interactive shell (T1548.003); and inverting the normal egress ports (T1571). All framed as detection
+on systems you own, with the honest caveat that each is a cheap first pass, not a finished control.
+
+Everything was verified on a real lab in the container: synthetic auth, web, cron and connection logs were
+generated and every pipeline run, so the sample output is real. Source-verified facts: sqlmap's default
+User-Agent is sqlmap/<version>#<type> (https://sqlmap.org) and masscan's banner probe carries masscan, both from
+their source; OpenSSH 9.8 (2024-07-01) split the daemon into sshd and sshd-session, so the hunts match the
+message text rather than the process tag; auth logs are /var/log/auth.log on Debian and /var/log/secure on Red
+Hat; and all seven ATT&CK IDs were checked against attack.mitre.org.
+
+An independent fact-check re-ran every command from scratch and verified every source, and caught three real
+errors that were fixed. Nikto does not identify itself by default: current Nikto draws its agent from a
+user-agent database whose first entry is an ordinary Chrome string, so a default Nikto scan masquerades as a
+browser and slips past a name grep. The section now says so and uses Nikto as the cautionary case for why
+user-agent hunting is incomplete. The ss sample output dropped its State column, because ss suppresses it when a
+state filter is given; the awk peer-port indexing by $NF was already correct. And the answer to exercise 1 now
+names the 300-failure address, matching its own reasoning. Two smaller fixes: the sqlmap format now shows the
+build-type suffix, and the journald command notes the unit is sshd on Red Hat.
+
+Learning objective 9, a Brute-force attack key term, index terms, and references 5 to 8 (sqlmap, Nikto, masscan,
+and the OpenSSH 9.8 notes) were added.
+
+Checks: check_acronyms.py 0 failures (SMTP and cgi-bin handled); the MyST math scan shows no new math tokens in
+Chapter 12; jupyter-book build is clean with no warnings; the new section and the two corrected blocks were
+screenshotted; word counts regenerated.

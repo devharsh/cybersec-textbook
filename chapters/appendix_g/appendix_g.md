@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-10-27.
+Last generated: 2026-10-28.
 
 ## Summary by Chapter
 
@@ -21,11 +21,11 @@ Last generated: 2026-10-27.
 | Chapter 9: Exploitation and Post-Exploitation | 23,683 | 778 | 47.4 |
 | Chapter 10: Web Application Security | 9,726 | 516 | 19.5 |
 | Chapter 11: Network Defense and Hardening | 22,325 | 258 | 44.6 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 10,100 | 1,114 | 20.2 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 12,439 | 1,114 | 24.9 |
 | Chapter 13: Digital Forensics | 10,469 | 875 | 20.9 |
 | Chapter 14: Incident Response | 10,784 | 828 | 21.6 |
 | Chapter 15: Malware Analysis | 42,883 | 423 | 85.8 |
-| Chapter 16: Capture the Flag and Competitive Security | 12,876 | 818 | 25.8 |
+| Chapter 16: Capture the Flag and Competitive Security | 12,924 | 818 | 25.8 |
 | Chapter 17: Emerging Threats and Future Challenges | 23,531 | 1,806 | 47.1 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,069 | 387 | 14.1 |
 | Chapter 19: Security Governance, Policy, and Culture | 15,865 | 482 | 31.7 |
@@ -40,7 +40,7 @@ Last generated: 2026-10-27.
 | Appendix I: Protocol Security Reference | 4,073 | 0 | 8.1 |
 | Appendix J: Adversary Models | 3,794 | 0 | 7.6 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **353,201** | **15,202** | **706** |
+| **TOTAL** | **355,588** | **15,202** | **711** |
 
 ## Detailed Word Count by Section
 
@@ -700,12 +700,12 @@ Last generated: 2026-10-27.
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*10,100 markdown words (20.2 pages); 1,114 code words.*
+*12,439 markdown words (24.9 pages); 1,114 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 97 |
-| Key Terms | 156 |
+| Learning Objectives | 123 |
+| Key Terms | 171 |
 | 12.1 Detection System Types | 127 |
 |     Network-Based IDS and IPS | 141 |
 |     Host-Based IDS | 49 |
@@ -755,12 +755,23 @@ Last generated: 2026-10-27.
 | 12.20 Building and Tuning a Detection, End to End | 363 |
 |     Exercises | 53 |
 |     Answer Key | 116 |
+| 12.21 Threat Hunting with the Logs You Already Have | 241 |
+|     Hunt 1: the noisiest source of failed logins | 107 |
+|     Hunt 2: a success after many failures from the same address | 258 |
+|     Hunt 3: scanner user agents in the web logs | 234 |
+|     Hunt 4: base64 blobs hidden in URLs | 186 |
+|     Hunt 5: cron jobs that run from a temporary directory or pipe the web into a shell | 200 |
+|     Hunt 6: every command run as root, and who reached for a shell | 228 |
+|     Hunt 7: invert your normal egress ports | 226 |
+|     A hunt is a habit, not a tool | 137 |
+|     Exercises | 148 |
+|     Answer Key | 261 |
 | Chapter Summary | 91 |
 | Why This Matters | 85 |
 | News in Focus: Breaches That Were Detectable but Missed | 69 |
 | Review Questions (MCQ) | 306 |
 | Lab Assignment | 183 |
-| References | 97 |
+| References | 169 |
 
 ### Chapter 13: Digital Forensics
 
@@ -1066,7 +1077,7 @@ Last generated: 2026-10-27.
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*12,876 markdown words (25.8 pages); 818 code words.*
+*12,924 markdown words (25.8 pages); 818 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1104,9 +1115,9 @@ Last generated: 2026-10-27.
 |     Exercises | 201 |
 |     Answer Key | 348 |
 | 16.13 The Teaching and Research Toolkit: Cost and License | 562 |
-| 16.14 A Two-Part Workshop: From CyberChef Challenges to a Case Briefing | 324 |
+| 16.14 A Two-Part Workshop: From CyberChef Challenges to a Case Briefing | 357 |
 |     Telling the Three Families Apart | 299 |
-|     Part 1: Five Challenges | 824 |
+|     Part 1: Five Challenges | 839 |
 |     Part 2: Crack the Case | 977 |
 |     Running the Workshop | 397 |
 |     News in Focus: The Workshop's Mistakes in Recent Incidents | 1,344 |
