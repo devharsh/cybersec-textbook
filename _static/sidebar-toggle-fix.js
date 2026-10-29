@@ -1,5 +1,6 @@
 /*
- * Make the "Toggle primary sidebar" button work again.
+ * Make the "Toggle primary sidebar" and "Toggle secondary sidebar" buttons work again.
+ * The secondary sidebar is handled at the end of this file.
  *
  * Two separate faults in the shipped theme, both confirmed against the live site:
  *
@@ -124,5 +125,40 @@
     } else if (mq.addListener) {
       mq.addListener(onChange);
     }
+  });
+
+  // The "Toggle secondary sidebar" button (the page contents panel on the right) has the
+  // same fault. Below 1200px the theme moves that panel into an off-canvas <dialog>, and
+  // pydata-sphinx-theme wires the button up with querySelector(".secondary-toggle"),
+  // taking the FIRST match. Measured on the live site at 390, 820 and 1100px: the first
+  // match is a .pst-navbar-icon copy that is display:none at every width, and the button
+  // a reader can see and tap is the second one, which has no handler. So the tap did
+  // nothing. At 1200px and wider the panel is shown in place and the button is hidden,
+  // so there is nothing to fix there.
+  //
+  // As with the primary toggle on mobile, forward the tap to the element the theme did
+  // bind, so the theme's own content move, showModal, and focus restore all run.
+  // If the theme ever binds every button itself, stopImmediatePropagation keeps its
+  // handler on the tapped button from also running, so the panel still opens only once.
+  ready(function () {
+    var secondary = document.querySelectorAll(".secondary-toggle");
+    if (secondary.length < 2) {
+      return;
+    }
+    secondary.forEach(function (btn) {
+      btn.addEventListener(
+        "click",
+        function (ev) {
+          var bound = document.querySelector(".secondary-toggle");
+          if (!bound || btn === bound) {
+            return; // the theme's own handler on this element will run
+          }
+          ev.preventDefault();
+          ev.stopImmediatePropagation();
+          bound.click();
+        },
+        true
+      );
+    });
   });
 })();

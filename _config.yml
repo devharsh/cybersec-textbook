@@ -91,7 +91,8 @@ sphinx:
     # sphinx-book-theme binds its handler with querySelector(".primary-toggle"), taking the
     # first match, but this build renders two: the navbar icon that is hidden above 992px,
     # and the button a desktop reader actually clicks. The handler lands on the invisible
-    # one. The theme's own hide rule also fails to apply. See the comments in both files.
+    # one. The theme's own hide rule also fails to apply. The "Toggle secondary sidebar"
+    # button below 1200px has the same first-match fault. See the comments in both files.
     # Stated explicitly rather than relying on a default: html_js_files and html_css_files
     # are resolved against html_static_path, and a silent miss here would ship a build with
     # the fix referenced but absent.
