@@ -803,3 +803,11 @@ and the OpenSSH 9.8 notes) were added.
 Checks: check_acronyms.py 0 failures (SMTP and cgi-bin handled); the MyST math scan shows no new math tokens in
 Chapter 12; jupyter-book build is clean with no warnings; the new section and the two corrected blocks were
 screenshotted; word counts regenerated.
+
+## 2026-10-29: Part 2 buttons open an empty CyberChef (Section 16.14)
+
+The Part 2 case page now matches Part 1: Open in CyberChef opens an empty CyberChef on every
+card, and each card's recipe line names the operations, so no click reveals an evidence-tag.
+The paragraph in Section 16.14 that described the old Part 2 buttons now says both pages work
+the same way. All five evidence items were solved on the CyberChef 11.5.0 copy with only the
+operations the cards name, and all five answers pass the live page's Check button.
