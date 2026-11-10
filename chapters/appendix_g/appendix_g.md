@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-11-04.
+Last generated: 2026-11-10.
 
 ## Summary by Chapter
 
@@ -13,7 +13,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Introduction | 1,814 | 0 | 3.6 |
 | Preface | 486 | 0 | 1.0 |
 | Chapter 1: Introduction to Cybersecurity | 17,142 | 403 | 34.3 |
-| Chapter 2: Cryptography | 46,170 | 4,187 | 92.3 |
+| Chapter 2: Cryptography | 51,500 | 4,728 | 103.0 |
 | Chapter 3: Networking and Network Attacks | 17,477 | 374 | 35.0 |
 | Chapter 4: Social Engineering and the Human Element | 7,837 | 203 | 15.7 |
 | Chapter 5: Risk Management | 17,262 | 696 | 34.5 |
@@ -33,7 +33,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
 | Appendix A: Security Command Reference | 2,019 | 0 | 4.0 |
-| Appendix B: Glossary | 5,863 | 0 | 11.7 |
+| Appendix B: Glossary | 7,132 | 0 | 14.3 |
 | Appendix C: Certification Mapping | 2,091 | 0 | 4.2 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 856 | 0 | 1.7 |
 | Appendix E: Selected Works by the Author | 1,836 | 0 | 3.7 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **380,024** | **16,135** | **760** |
+| **TOTAL** | **386,623** | **16,676** | **773** |
 
 ## Detailed Word Count by Section
 
@@ -122,18 +122,20 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 2: Cryptography
 
-*46,170 markdown words (92.3 pages); 4,187 code words.*
+*51,500 markdown words (103.0 pages); 4,728 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 185 |
-| Key Terms | 836 |
+| Key Terms | 1,071 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
-|     Encoding versus Encryption versus Hashing | 876 |
+|     Encoding versus Encryption versus Hashing | 877 |
+|     Codes, Ciphers, Cryptology, and the Words Around Them | 302 |
 | 2.2 Classical Ciphers and Why They Fall | 730 |
 |     Classical versus Modern Ciphers | 295 |
 |     A Classification of Ciphers | 226 |
-|     Classical Ciphers in Code | 294 |
+|     Classical Ciphers in Code | 295 |
+|     Rotor Machines and Teleprinter Ciphers: Enigma and Tunny | 525 |
 | 2.3 Perfect Secrecy and the One-Time Pad | 828 |
 |     XOR, the One-Time Pad, and Perfect Secrecy, Formally | 694 |
 |     From Information-Theoretic to Computational Security | 311 |
@@ -143,7 +145,8 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Insecure versus Cryptographically Secure Randomness in Code | 168 |
 |     Case Study: Private Keys Made from Numbers Under 256 (eMudhra, October 2026) | 751 |
 | 2.5 Symmetric Encryption: Stream and Block Ciphers | 1,007 |
-|     The Feistel Network: A Blueprint for Block Ciphers | 223 |
+|     The Feistel Network: A Blueprint for Block Ciphers | 224 |
+|     Legacy Symmetric Ciphers: DES, Triple DES, IDEA, RC4, and Skipjack | 406 |
 | 2.6 Block Cipher Modes of Operation | 688 |
 |     AES Modes in Code: ECB versus CTR | 328 |
 |     AES-CTR versus AES-GCM, and Which Modes Need Padding | 903 |
@@ -160,15 +163,19 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Computing an HMAC in Code | 98 |
 |     HMAC and CMAC Are Not the Only MACs | 1,424 |
 |     Authenticated Encryption in Practice: Encrypt-then-MAC | 190 |
-| 2.9 Key Derivation and Password Storage | 654 |
-| 2.10 Public-Key Cryptography and RSA | 847 |
+| 2.9 Key Derivation and Password Storage | 655 |
+|     Where Windows Keeps Password Hashes: The SAM Database and SYSKEY | 410 |
+| 2.10 Public-Key Cryptography and RSA | 848 |
+|     One-Way Functions, Trapdoor Functions, and the RSA Story | 807 |
+|     Digital Envelopes: How Public-Key Encryption Is Used in Practice | 250 |
 | 2.11 Diffie-Hellman Key Exchange | 798 |
 |     ElGamal Encryption | 277 |
 |     ElGamal in Code | 266 |
 | 2.12 Elliptic-Curve Cryptography | 495 |
 |     Elliptic Curves Up Close: Group Law, the ECDLP, and the Curve Zoo | 776 |
 | 2.13 Digital Signatures, Certificates, and PKI | 792 |
-|     Generating a Digital Signature in Code | 145 |
+|     Generating a Digital Signature in Code | 146 |
+|     The Digital Signature Standard, Certificate Authorities, and PGP | 429 |
 | 2.14 Putting It Together: The TLS Handshake | 498 |
 | 2.15 Advanced and Emerging Cryptography | 841 |
 |     Computing Paradigms: Mainframes, Classical, DNA, and Quantum | 395 |
@@ -183,9 +190,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     The Signature Zoo: Variants Beyond Sign-and-Verify | 694 |
 |     Primitives Beyond Encryption and Signatures | 924 |
 | 2.16 Key Management | 714 |
-|     Key Management Services and Key Escrow | 347 |
+|     Key Management Services and Key Escrow | 348 |
+|     The Clipper Chip and Skipjack: Key Escrow Built into Hardware | 300 |
+|     Key Words That Trip People Up: Private Key, Symmetric Key, and Pre-Shared Key | 426 |
 | 2.17 A Taxonomy of Cryptographic Attacks | 348 |
-| 2.18 Applied Cryptographic Systems | 399 |
+| 2.18 Applied Cryptographic Systems | 400 |
+|     Operating-System Cryptography APIs: CryptoAPI and CNG | 203 |
 | 2.19 Practical Guidance: Choosing and Using Cryptography | 383 |
 | 2.19a Protecting Data in All Three States | 289 |
 | 2.19b Tamper-Evident and Tamper-Proof Mechanisms | 207 |
@@ -202,10 +212,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 206 |
 | Why This Matters | 161 |
 | News in Focus: Heartbleed (2014) | 202 |
-| Review Questions (MCQ) | 858 |
-|     Answer Key | 52 |
+| Review Questions (MCQ) | 1,098 |
+|     Answer Key | 64 |
 | Lab Assignment | 622 |
-| References | 2,941 |
+| References | 3,718 |
 
 ### Chapter 3: Networking and Network Attacks
 
@@ -1465,7 +1475,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Appendix B: Glossary
 
-*5,863 markdown words (11.7 pages); 0 code words.*
+*7,132 markdown words (14.3 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1479,6 +1489,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Tools and projects | 289 |
 |     Standards, law and certification | 157 |
 |     Notation that is not an acronym | 102 |
+| Cryptography Terms from the FOLDOC Category | 1,269 |
 
 ### Appendix C: Certification Mapping
 
