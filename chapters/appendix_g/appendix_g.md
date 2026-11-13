@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-11-10.
+Last generated: 2026-11-13.
 
 ## Summary by Chapter
 
@@ -12,8 +12,8 @@ The table lists every part of the book with its prose word count, the words in i
 |---|---:|---:|---:|
 | Introduction | 1,814 | 0 | 3.6 |
 | Preface | 486 | 0 | 1.0 |
-| Chapter 1: Introduction to Cybersecurity | 17,142 | 403 | 34.3 |
-| Chapter 2: Cryptography | 51,500 | 4,728 | 103.0 |
+| Chapter 1: Introduction to Cybersecurity | 19,093 | 679 | 38.2 |
+| Chapter 2: Cryptography | 51,512 | 4,728 | 103.0 |
 | Chapter 3: Networking and Network Attacks | 17,477 | 374 | 35.0 |
 | Chapter 4: Social Engineering and the Human Element | 7,837 | 203 | 15.7 |
 | Chapter 5: Risk Management | 17,262 | 696 | 34.5 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **386,623** | **16,676** | **773** |
+| **TOTAL** | **388,586** | **16,952** | **777** |
 
 ## Detailed Word Count by Section
 
@@ -77,12 +77,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*17,142 markdown words (34.3 pages); 403 code words.*
+*19,093 markdown words (38.2 pages); 679 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 229 |
-| Key Terms | 460 |
+| Key Terms | 547 |
 | 1.1 What Is Cybersecurity? | 636 |
 | 1.2 The CIA Triad and Its Extensions | 792 |
 |     The DIE Model: A Modern Complement to CIA | 254 |
@@ -94,7 +94,8 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     What Runs at Each Level | 569 |
 |     Why Rings 1 and 2 Were Meant for Device Drivers | 936 |
 |     Beneath Ring 0: The Hypervisor, System Management Mode, and the Security Processor | 755 |
-|     The Trusted Platform Module Up Close | 565 |
+|     The Trusted Platform Module Up Close | 566 |
+|     Platform Configuration Registers: How Measured Boot Works | 1,462 |
 |     Trusted Execution Environments: Enclaves, Secure Worlds, and Confidential Virtual Machines | 978 |
 |     The Trusted Computing Base and the Reference Monitor | 170 |
 | 1.7 The NIST Cybersecurity Framework | 403 |
@@ -115,14 +116,14 @@ Each chapter below has its own table that breaks the prose word count down by se
 | News in Focus: The Colonial Pipeline Ransomware Incident (2021) | 215 |
 |     A Second Case: The SolarWinds Supply-Chain Compromise (2020) | 266 |
 | News in Focus: Cyber Warfare and the US-Iran Cyber Conflict | 535 |
-| Review Questions (MCQ) | 604 |
-|     Answer Key | 45 |
+| Review Questions (MCQ) | 738 |
+|     Answer Key | 49 |
 | Lab Assignment | 281 |
-| References | 930 |
+| References | 1,193 |
 
 ### Chapter 2: Cryptography
 
-*51,500 markdown words (103.0 pages); 4,728 code words.*
+*51,512 markdown words (103.0 pages); 4,728 code words.*
 
 | Section | Words |
 |---|---:|
@@ -166,7 +167,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 2.9 Key Derivation and Password Storage | 655 |
 |     Where Windows Keeps Password Hashes: The SAM Database and SYSKEY | 410 |
 | 2.10 Public-Key Cryptography and RSA | 848 |
-|     One-Way Functions, Trapdoor Functions, and the RSA Story | 807 |
+|     One-Way Functions, Trapdoor Functions, and the RSA Story | 819 |
 |     Digital Envelopes: How Public-Key Encryption Is Used in Practice | 250 |
 | 2.11 Diffie-Hellman Key Exchange | 798 |
 |     ElGamal Encryption | 277 |
