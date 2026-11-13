@@ -1,0 +1,47 @@
+/*
+ * Phone-width wrapping fix.
+ *
+ * A token with no break opportunity, such as a slash-joined list
+ * (preventive/detective/corrective/...), a long identifier
+ * (DNS_PROBE_FINISHED_NXDOMAIN), a command-line flag, or a CVSS vector, cannot
+ * wrap. On a 390px screen it pushes its paragraph or heading wider than the
+ * viewport, and the whole page then scrolls sideways.
+ *
+ * overflow-wrap: anywhere lets the browser break inside such a token only when
+ * it would otherwise overflow; ordinary words are unaffected. Tables are left
+ * alone: they already scroll inside the theme's .pst-scrollable-table-container,
+ * and allowing breaks there would squeeze columns until words split letter by
+ * letter. Code blocks (pre) keep their own horizontal scroll.
+ */
+.bd-article p,
+.bd-article li,
+.bd-article dd,
+.bd-article dt,
+.bd-article blockquote,
+.bd-article figcaption,
+.bd-article h1,
+.bd-article h2,
+.bd-article h3,
+.bd-article h4,
+.bd-article h5,
+.bd-article h6,
+.bd-article :not(pre) > code {
+  overflow-wrap: anywhere;
+}
+
+/* Inline literals render as <code><span class="pre">...</span></code>, and the theme
+ * sets span.pre to white-space: nowrap, which overflow-wrap cannot override. */
+.bd-article :not(pre) > code span.pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.bd-article table :not(pre) > code span.pre {
+  white-space: nowrap;
+}
+
+.bd-article table p,
+.bd-article table li,
+.bd-article table :not(pre) > code {
+  overflow-wrap: normal;
+}
