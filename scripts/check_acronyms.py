@@ -393,6 +393,14 @@ CHAPTER_LITERAL = {
     ("17_emerging", "FAT"): "the FAT* conference name in a citation",
     ("17_emerging", "PBC"): "part of a company name in a case caption",
     ("17_emerging", "VC"): "a judge's initials inside a case docket number",
+    ("17_emerging", "AML"): "the prefix of a MITRE ATLAS technique ID such as AML.T0024",
+    ("17_emerging", "ChatGPT"): "a product name",
+    ("17_emerging", "CVPR"): "a venue abbreviation in a citation",
+    ("17_emerging", "CVF"): "a venue abbreviation in a citation",
+    ("17_emerging", "EuroS"): "part of the venue abbreviation EuroS&P in a citation",
+    ("17_emerging", "ASIA"): "part of the venue abbreviation ASIA CCS in a citation",
+    ("17_emerging", "PRADA"): "the name of a published detection method",
+    ("17_emerging", "DNN"): "part of a cited paper title",
     ("17_emerging", "COSAiS"): "a former project name in a citation",
 }
 
