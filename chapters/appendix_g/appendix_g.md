@@ -22,13 +22,13 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 8: Scanning and Enumeration | 7,419 | 816 | 14.8 |
 | Chapter 9: Exploitation and Post-Exploitation | 25,504 | 778 | 51.0 |
 | Chapter 10: Web Application Security | 10,127 | 516 | 20.3 |
-| Chapter 11: Network Defense and Hardening | 23,546 | 258 | 47.1 |
+| Chapter 11: Network Defense and Hardening | 26,625 | 529 | 53.2 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 13,283 | 1,114 | 26.6 |
 | Chapter 13: Digital Forensics | 11,534 | 875 | 23.1 |
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 45,740 | 2,987 | 91.5 |
+| Chapter 17: Emerging Threats and Future Challenges | 45,750 | 2,987 | 91.5 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **411,378** | **18,133** | **823** |
+| **TOTAL** | **414,467** | **18,404** | **829** |
 
 ## Detailed Word Count by Section
 
@@ -617,12 +617,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 11: Network Defense and Hardening
 
-*23,546 markdown words (47.1 pages); 258 code words.*
+*26,625 markdown words (53.2 pages); 529 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 178 |
-| Key Terms | 398 |
+| Learning Objectives | 204 |
+| Key Terms | 484 |
 | 11.1 Firewalls | 161 |
 |     Firewall Types and Evolution | 188 |
 |     Writing Firewall Rules | 200 |
@@ -659,7 +659,8 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Mobile Devices, Bring Your Own Device (BYOD), and the Hardware Root of Trust | 478 |
 | 11.16 Network Device Hardening: Switches and Routers | 327 |
 | 11.17 Software-Defined Networking, Virtualization, and Clustering | 332 |
-| 11.18 Asset, Configuration, Change, and Patch Management | 653 |
+| 11.18 Asset, Configuration, Change, and Patch Management | 657 |
+|     Releasing Changes Safely: Staging, Canary, and Staged Rollouts | 2,361 |
 | 11.19 Capstone and Group Project Ideas (Network Defense) | 269 |
 | 11.20 How a Firewall Decides, and the Four Ways a Ruleset Lies | 78 |
 |     The evaluation model is not universal, and the default is the part people get wrong | 289 |
@@ -709,12 +710,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Hardening macOS | 320 |
 |     Exercises | 266 |
 |     Answer Key | 490 |
-| Chapter Summary | 204 |
+| Chapter Summary | 222 |
 | Why This Matters | 72 |
 | News in Focus: Flat Networks and Nation-State Lateral Movement | 64 |
-| Review Questions (MCQ) | 334 |
+| Review Questions (MCQ) | 512 |
 | Lab Assignment | 196 |
-| References | 1,388 |
+| References | 1,794 |
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
@@ -1148,7 +1149,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*45,740 markdown words (91.5 pages); 2,987 code words.*
+*45,750 markdown words (91.5 pages); 2,987 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1226,7 +1227,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Lab: Verifying a Model File Before Loading It | 134 |
 |     Identity and Authorization for AI Agents | 1,185 |
 |     Threat Modeling AI Systems, from STRIDE to MAESTRO | 908 |
-|     Building and Running AI Platforms Securely | 889 |
+|     Building and Running AI Platforms Securely | 899 |
 |     Monitoring and Responding to AI Incidents | 1,319 |
 |     Testing AI Systems and Reporting Findings | 737 |
 | 17.14 Big Data Security and Access Control | 397 |

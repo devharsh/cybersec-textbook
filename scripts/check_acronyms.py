@@ -349,7 +349,7 @@ BOOK_LITERAL = {
     "BibTeX": "a citation format name", "NVDA": "a screen reader product name",
     "FreeBSD": "an operating system name", "PowerPC": "a processor architecture name",
     # Chapter 17, Section 17.13, and Appendix C: company, product, model and organization names.
-    "NVIDIA": "a company name", "JFrog": "a company name", "KPMG": "a company name", "NGC": "the name of NVIDIA's model catalog",
+    "NVIDIA": "a company name", "JFrog": "a company name", "KPMG": "a company name", "BSOD": "part of a cited document title", "NGC": "the name of NVIDIA's model catalog",
     "GPT": "a model family name, as in GPT-2, GPT-3, and GPT-4",
     "ISC2": "the certification body's name, formerly written (ISC)2",
 }
