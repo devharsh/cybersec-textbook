@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-11-13.
+Last generated: 2026-11-18.
 
 ## Summary by Chapter
 
@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 39,421 | 2,090 | 78.8 |
+| Chapter 17: Emerging Threats and Future Challenges | 43,422 | 2,987 | 86.8 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **405,056** | **17,236** | **810** |
+| **TOTAL** | **409,057** | **18,133** | **818** |
 
 ## Detailed Word Count by Section
 
@@ -1148,12 +1148,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*39,421 markdown words (78.8 pages); 2,090 code words.*
+*43,422 markdown words (86.8 pages); 2,987 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 141 |
-| Key Terms | 836 |
+| Key Terms | 938 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 177 |
@@ -1170,14 +1170,16 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Adversarial Machine Learning | 398 |
 | 17.4 Privacy-Preserving and Collaborative Machine Learning | 338 |
 |     Case Study: A Privacy-Preserving ML Research Program (SigML, SplitML, Fairis) | 2,512 |
-|     Applied Privacy and Trust Systems | 851 |
+|     Applied Privacy and Trust Systems | 858 |
 | 17.5 Anomaly Detection Across Domains | 271 |
 | 17.6 Modeling, Simulation, and Control for Security | 275 |
-| 17.7 Probability Distributions in Security | 144 |
+| 17.7 Probability Distributions in Security | 198 |
 |     Four Distributions from Everyday Life | 3,356 |
-|     A Specialized Case: Soliton Distributions in Fountain Codes | 178 |
-|     Exercises | 273 |
-|     Answer Key | 438 |
+|     The Laplace Distribution: A Sharp Peak, Heavier Tails, and Privacy Noise | 1,311 |
+|     Other Symmetric Distributions: Peaks, Tails, and Kurtosis | 1,620 |
+|     A Specialized Case: Soliton Distributions in Fountain Codes | 182 |
+|     Exercises | 449 |
+|     Answer Key | 725 |
 | 17.8 Supply Chain Attacks | 56 |
 |     Why Supply Chain Is a High-Value Target | 32 |
 |     Notable Supply Chain Attack Patterns | 143 |
@@ -1237,7 +1239,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | News in Focus: The Post-Quantum Migration Begins | 72 |
 | Review Questions (MCQ) | 827 |
 | Lab Assignment | 364 |
-| References | 2,789 |
+| References | 3,229 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
