@@ -28,13 +28,13 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 43,422 | 2,987 | 86.8 |
+| Chapter 17: Emerging Threats and Future Challenges | 45,740 | 2,987 | 91.5 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
 | Appendix A: Security Command Reference | 2,019 | 0 | 4.0 |
 | Appendix B: Glossary | 7,132 | 0 | 14.3 |
-| Appendix C: Certification Mapping | 3,670 | 0 | 7.3 |
+| Appendix C: Certification Mapping | 3,673 | 0 | 7.3 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 856 | 0 | 1.7 |
 | Appendix E: Selected Works by the Author | 1,836 | 0 | 3.7 |
 | Appendix F: Companion Code and Repositories | 1,388 | 0 | 2.8 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **409,057** | **18,133** | **818** |
+| **TOTAL** | **411,378** | **18,133** | **823** |
 
 ## Detailed Word Count by Section
 
@@ -1148,12 +1148,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*43,422 markdown words (86.8 pages); 2,987 code words.*
+*45,740 markdown words (91.5 pages); 2,987 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 141 |
-| Key Terms | 938 |
+| Key Terms | 1,000 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 177 |
@@ -1215,9 +1215,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Lab: Recognizing Prompt Injection | 104 |
 |     Case Study: AI Agents Inside Bank Accounts (October 2026) | 671 |
 | 17.13 Securing AI in Practice: Governance, Data, Identity, and Operations | 138 |
-|     AI Building Blocks That Shape the Attack Surface | 1,042 |
+|     AI Building Blocks That Shape the Attack Surface | 1,064 |
 |     Governing AI: Laws, Standards, and Roles | 1,108 |
 |     Responsible AI, Risk Assessment, and Human Oversight | 1,235 |
+|     Human Oversight Models: In the Loop, On the Loop, and In Command | 1,856 |
 |     Protecting AI Data: Anonymization, Synthetic Data, and Unlearning | 1,277 |
 |     Lab: Checking k-Anonymity Before a Release | 112 |
 |     Attacks on Models: Inversion, Extraction, Membership Inference, and Poisoning | 924 |
@@ -1237,9 +1238,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 220 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 827 |
+| Review Questions (MCQ) | 940 |
 | Lab Assignment | 364 |
-| References | 3,229 |
+| References | 3,494 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
@@ -1510,7 +1511,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Appendix C: Certification Mapping
 
-*3,670 markdown words (7.3 pages); 0 code words.*
+*3,673 markdown words (7.3 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1522,7 +1523,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | C.6 (ISC)2 SSCP - 7 Domains | 132 |
 | C.7 (ISC)2 Certified in Cybersecurity (CC) - 5 Domains | 147 |
 | C.8 GIAC GREM (Reverse Engineering Malware) - Topic Areas | 147 |
-| C.9 ISC2 AI Security Certification (Pilot) - 6 Domains | 1,531 |
+| C.9 ISC2 AI Security Certification (Pilot) - 6 Domains | 1,534 |
 | C.10 Chapter-to-Certification Coverage Matrix | 431 |
 
 ### Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping
