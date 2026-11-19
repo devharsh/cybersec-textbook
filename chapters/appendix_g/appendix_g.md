@@ -16,25 +16,25 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 2: Cryptography | 51,512 | 4,728 | 103.0 |
 | Chapter 3: Networking and Network Attacks | 17,477 | 374 | 35.0 |
 | Chapter 4: Social Engineering and the Human Element | 10,151 | 547 | 20.3 |
-| Chapter 5: Risk Management | 17,262 | 696 | 34.5 |
+| Chapter 5: Risk Management | 18,208 | 696 | 36.4 |
 | Chapter 6: Penetration Testing Methodology | 9,989 | 265 | 20.0 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,806 | 464 | 15.6 |
 | Chapter 8: Scanning and Enumeration | 7,419 | 816 | 14.8 |
 | Chapter 9: Exploitation and Post-Exploitation | 27,699 | 1,134 | 55.4 |
-| Chapter 10: Web Application Security | 10,127 | 516 | 20.3 |
+| Chapter 10: Web Application Security | 10,212 | 516 | 20.4 |
 | Chapter 11: Network Defense and Hardening | 26,625 | 529 | 53.2 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 13,283 | 1,114 | 26.6 |
 | Chapter 13: Digital Forensics | 11,534 | 875 | 23.1 |
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 50,400 | 3,851 | 100.8 |
+| Chapter 17: Emerging Threats and Future Challenges | 51,907 | 4,142 | 103.8 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
 | Appendix A: Security Command Reference | 2,019 | 0 | 4.0 |
 | Appendix B: Glossary | 7,132 | 0 | 14.3 |
-| Appendix C: Certification Mapping | 3,683 | 0 | 7.4 |
+| Appendix C: Certification Mapping | 3,696 | 0 | 7.4 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 856 | 0 | 1.7 |
 | Appendix E: Selected Works by the Author | 1,836 | 0 | 3.7 |
 | Appendix F: Companion Code and Repositories | 1,388 | 0 | 2.8 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **423,636** | **19,968** | **847** |
+| **TOTAL** | **426,187** | **20,259** | **852** |
 
 ## Detailed Word Count by Section
 
@@ -306,12 +306,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 5: Risk Management
 
-*17,262 markdown words (34.5 pages); 696 code words.*
+*18,208 markdown words (36.4 pages); 696 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 189 |
-| Key Terms | 236 |
+| Learning Objectives | 214 |
+| Key Terms | 324 |
 | 5.1 Risk as the Organizing Principle of Security | 395 |
 | 5.2 The Vocabulary of Risk | 607 |
 | 5.3 The Risk-Management Lifecycle | 399 |
@@ -322,7 +322,8 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 5.6 Quantitative Risk Assessment | 722 |
 | 5.7 Risk Treatment | 928 |
 |     A Worked Analogy: The Skateboard and the Scraped Knee | 2,911 |
-| 5.8 Threat Modeling | 782 |
+| 5.8 Threat Modeling | 774 |
+|     STRIDE per Element and the Seven Stages of PASTA | 646 |
 | 5.9 Risk Frameworks and Standards | 329 |
 |     The NIST RMF Steps in Detail | 170 |
 |     CSF Tiers and Profiles, and ISO/IEC 27001:2022 | 423 |
@@ -345,10 +346,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 242 |
 | Why This Matters | 164 |
 | News in Focus: Repeat Breaches at Neiman Marcus | 540 |
-| Review Questions (MCQ) | 473 |
-|     Answer Key | 34 |
+| Review Questions (MCQ) | 547 |
+|     Answer Key | 38 |
 | Lab Assignment | 242 |
-| References | 329 |
+| References | 446 |
 
 ### Chapter 6: Penetration Testing Methodology
 
@@ -568,7 +569,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 10: Web Application Security
 
-*10,127 markdown words (20.3 pages); 516 code words.*
+*10,212 markdown words (20.4 pages); 516 code words.*
 
 | Section | Words |
 |---|---:|
@@ -577,7 +578,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 10.1 How the Web Works: HTTP, Sessions, and the Same-Origin Policy | 237 |
 | 10.2 The OWASP Top 10 | 62 |
 |     Broken Access Control | 169 |
-|     The OWASP Top 10:2025 | 428 |
+|     The OWASP Top 10:2025 | 513 |
 | 10.3 Injection Attacks | 48 |
 |     Introducing SQL Injection | 179 |
 |     Cross-Site Scripting | 154 |
@@ -1151,12 +1152,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*50,400 markdown words (100.8 pages); 3,851 code words.*
+*51,907 markdown words (103.8 pages); 4,142 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 167 |
-| Key Terms | 1,162 |
+| Learning Objectives | 212 |
+| Key Terms | 1,239 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 177 |
@@ -1165,7 +1166,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Offensive AI | 161 |
 |     Defensive AI | 77 |
 |     The OWASP Top 10 for LLM Applications (2026) | 392 |
-|     Privacy in LLM Chat and AI Agents | 372 |
+|     Privacy in LLM Chat and AI Agents | 384 |
 | 17.3 Pattern Matching, Machine Learning, and Deep Learning in Security | 63 |
 |     Pattern Matching: Rules and Signatures | 123 |
 |     Machine Learning: Learning Patterns from Data | 235 |
@@ -1231,6 +1232,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Lab: Verifying a Model File Before Loading It | 134 |
 |     Identity and Authorization for AI Agents | 1,185 |
 |     Threat Modeling AI Systems, from STRIDE to MAESTRO | 908 |
+|     One System, Five Lenses: STRIDE, PASTA, MAESTRO, and the Two OWASP Lists | 1,137 |
 |     Building and Running AI Platforms Securely | 899 |
 |     Monitoring and Responding to AI Incidents | 1,319 |
 |     Testing AI Systems and Reporting Findings | 737 |
@@ -1240,12 +1242,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Answer Key | 203 |
 |     Election Security and Electronic Voting | 500 |
 | 17.16 A Map of Open Research Problems | 452 |
-| Chapter Summary | 235 |
+| Chapter Summary | 247 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 1,194 |
+| Review Questions (MCQ) | 1,307 |
 | Lab Assignment | 364 |
-| References | 4,210 |
+| References | 4,321 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
@@ -1516,7 +1518,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Appendix C: Certification Mapping
 
-*3,683 markdown words (7.4 pages); 0 code words.*
+*3,696 markdown words (7.4 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1528,7 +1530,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | C.6 (ISC)2 SSCP - 7 Domains | 132 |
 | C.7 (ISC)2 Certified in Cybersecurity (CC) - 5 Domains | 147 |
 | C.8 GIAC GREM (Reverse Engineering Malware) - Topic Areas | 147 |
-| C.9 ISC2 AI Security Certification (Pilot) - 6 Domains | 1,544 |
+| C.9 ISC2 AI Security Certification (Pilot) - 6 Domains | 1,557 |
 | C.10 Chapter-to-Certification Coverage Matrix | 431 |
 
 ### Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping

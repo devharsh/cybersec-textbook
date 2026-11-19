@@ -402,6 +402,7 @@ CHAPTER_LITERAL = {
     ("09_exploitation", "N1967"): "a WG14 document number",
     ("09_exploitation", "JTC"): "part of the committee name ISO/IEC JTC 1/SC 22 in a citation",
     ("09_exploitation", "OpenBSD"): "the name of an operating system",
+    ("05_risk", "MSDN"): "the name of Microsoft's developer magazine in a citation",
     ("17_emerging", "AML"): "the prefix of a MITRE ATLAS technique ID such as AML.T0024",
     ("17_emerging", "ChatGPT"): "a product name",
     ("17_emerging", "CVPR"): "a venue abbreviation in a citation",
