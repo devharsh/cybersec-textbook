@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-11-18.
+Last generated: 2026-11-19.
 
 ## Summary by Chapter
 
@@ -15,7 +15,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 1: Introduction to Cybersecurity | 19,102 | 679 | 38.2 |
 | Chapter 2: Cryptography | 51,512 | 4,728 | 103.0 |
 | Chapter 3: Networking and Network Attacks | 17,477 | 374 | 35.0 |
-| Chapter 4: Social Engineering and the Human Element | 7,837 | 203 | 15.7 |
+| Chapter 4: Social Engineering and the Human Element | 10,152 | 547 | 20.3 |
 | Chapter 5: Risk Management | 17,262 | 696 | 34.5 |
 | Chapter 6: Penetration Testing Methodology | 9,989 | 265 | 20.0 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,806 | 464 | 15.6 |
@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 50,386 | 3,851 | 100.8 |
+| Chapter 17: Emerging Threats and Future Challenges | 50,400 | 3,851 | 100.8 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **419,113** | **19,268** | **838** |
+| **TOTAL** | **421,442** | **19,612** | **843** |
 
 ## Detailed Word Count by Section
 
@@ -275,18 +275,19 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 4: Social Engineering and the Human Element
 
-*7,837 markdown words (15.7 pages); 203 code words.*
+*10,152 markdown words (20.3 pages); 547 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 115 |
-| Key Terms | 210 |
+| Learning Objectives | 141 |
+| Key Terms | 295 |
 | 4.1 Why People Are the Weakest Link | 565 |
 | 4.2 The Psychology of Influence | 468 |
 | 4.3 The Social-Engineering Attack Lifecycle | 463 |
 | 4.4 The Taxonomy of Social-Engineering Attacks | 813 |
 | 4.5 Vectors and the Role of Open-Source Intelligence | 429 |
-| 4.6 Recognizing and Analyzing Phishing | 472 |
+| 4.6 Recognizing and Analyzing Phishing | 492 |
+|     Look-Alike Text: Homoglyphs, Confusable Characters, and Unicode Spoofing | 1,719 |
 | 4.7 Physical Security as Social Engineering's Partner | 363 |
 |     Environmental and Availability Threats | 338 |
 | 4.8 Authentication Factors | 386 |
@@ -295,13 +296,13 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Measuring and Sustaining the Human Firewall | 359 |
 | 4.10 Social Engineering in the Age of Artificial Intelligence | 441 |
 | 4.11 Deepfakes, Voice Cloning, and Synthetic Identities | 239 |
-| Chapter Summary | 219 |
+| Chapter Summary | 262 |
 | Why This Matters | 169 |
 | News in Focus: The 2020 Twitter Account Takeover | 185 |
-| Review Questions (MCQ) | 430 |
-|     Answer Key | 30 |
+| Review Questions (MCQ) | 551 |
+|     Answer Key | 36 |
 | Lab Assignment | 275 |
-| References | 184 |
+| References | 479 |
 
 ### Chapter 5: Risk Management
 
@@ -1149,7 +1150,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*50,386 markdown words (100.8 pages); 3,851 code words.*
+*50,400 markdown words (100.8 pages); 3,851 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1183,7 +1184,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Answer Key | 725 |
 | 17.8 Supply Chain Attacks | 56 |
 |     Why Supply Chain Is a High-Value Target | 32 |
-|     Notable Supply Chain Attack Patterns | 143 |
+|     Notable Supply Chain Attack Patterns | 157 |
 |     SBOM and Dependency Management | 55 |
 |     Case Study: The LiteLLM 1.107.0 Release (October 2026) | 815 |
 | 17.9 Cloud Security | 64 |
