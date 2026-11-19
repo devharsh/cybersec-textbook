@@ -15,12 +15,12 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 1: Introduction to Cybersecurity | 19,102 | 679 | 38.2 |
 | Chapter 2: Cryptography | 51,512 | 4,728 | 103.0 |
 | Chapter 3: Networking and Network Attacks | 17,477 | 374 | 35.0 |
-| Chapter 4: Social Engineering and the Human Element | 10,152 | 547 | 20.3 |
+| Chapter 4: Social Engineering and the Human Element | 10,151 | 547 | 20.3 |
 | Chapter 5: Risk Management | 17,262 | 696 | 34.5 |
 | Chapter 6: Penetration Testing Methodology | 9,989 | 265 | 20.0 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,806 | 464 | 15.6 |
 | Chapter 8: Scanning and Enumeration | 7,419 | 816 | 14.8 |
-| Chapter 9: Exploitation and Post-Exploitation | 25,504 | 778 | 51.0 |
+| Chapter 9: Exploitation and Post-Exploitation | 27,699 | 1,134 | 55.4 |
 | Chapter 10: Web Application Security | 10,127 | 516 | 20.3 |
 | Chapter 11: Network Defense and Hardening | 26,625 | 529 | 53.2 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 13,283 | 1,114 | 26.6 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **421,442** | **19,612** | **843** |
+| **TOTAL** | **423,636** | **19,968** | **847** |
 
 ## Detailed Word Count by Section
 
@@ -275,7 +275,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 4: Social Engineering and the Human Element
 
-*10,152 markdown words (20.3 pages); 547 code words.*
+*10,151 markdown words (20.3 pages); 547 code words.*
 
 | Section | Words |
 |---|---:|
@@ -287,7 +287,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 4.4 The Taxonomy of Social-Engineering Attacks | 813 |
 | 4.5 Vectors and the Role of Open-Source Intelligence | 429 |
 | 4.6 Recognizing and Analyzing Phishing | 492 |
-|     Look-Alike Text: Homoglyphs, Confusable Characters, and Unicode Spoofing | 1,719 |
+|     Look-Alike Text: Homoglyphs, Confusable Characters, and Unicode Spoofing | 1,718 |
 | 4.7 Physical Security as Social Engineering's Partner | 363 |
 |     Environmental and Availability Threats | 338 |
 | 4.8 Authentication Factors | 386 |
@@ -458,12 +458,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*25,504 markdown words (51.0 pages); 778 code words.*
+*27,699 markdown words (55.4 pages); 1,134 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 91 |
-| Key Terms | 236 |
+| Learning Objectives | 118 |
+| Key Terms | 326 |
 | 9.1 What Exploitation Is (and Is Not) | 48 |
 |     In a Penetration Test | 53 |
 |     Ethical Boundaries | 64 |
@@ -474,6 +474,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 9.3 From Source to Machine Code: The Compilation Pipeline | 247 |
 | 9.4 Memory Corruption: The Stack, the Heap, and Buffer Overflows | 608 |
 |     Stack Exhaustion and Heap Problems | 249 |
+|     CWE-120: Copying Input Without Checking Its Size | 1,712 |
 | 9.5 From Stack Smashing to Return-Oriented Programming | 647 |
 | 9.6 Programming Survival Skills for Exploitation | 302 |
 | 9.7 Shellcode and Shellcode Strategies | 277 |
@@ -510,7 +511,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Exercises | 121 |
 |     Answer Key | 164 |
 | 9.23 Case Study: Chaining Vulnerabilities into a Full Compromise | 341 |
-| 9.24 Defending Against Exploitation | 235 |
+| 9.24 Defending Against Exploitation | 248 |
 |     Exercises | 130 |
 |     Answer Key | 173 |
 | 9.25 Shellcode in Practice | 270 |
@@ -558,12 +559,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Where each attack breaks in | 357 |
 | 9.39 Landmark Bugs, from the Morris Worm to the Year 2038 | 853 |
 |     Y2K and the Year 2038, Worked | 128 |
-| Chapter Summary | 155 |
+| Chapter Summary | 181 |
 | Why This Matters | 62 |
 | News in Focus: The Ransomware Post-Exploitation Playbook | 78 |
-| Review Questions (MCQ) | 320 |
+| Review Questions (MCQ) | 476 |
 | Lab Assignment | 230 |
-| References | 477 |
+| References | 648 |
 
 ### Chapter 10: Web Application Security
 
