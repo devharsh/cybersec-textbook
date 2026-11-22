@@ -426,6 +426,7 @@ CHAPTER_LITERAL = {
     ("17_emerging", "Q44"): "a review question number",
     ("17_emerging", "Q45"): "a review question number",
     ("17_emerging", "Q46"): "a review question number",
+    ("17_emerging", "Q47"): "a review question number",
     ("17_emerging", "AAAI"): "a venue abbreviation in a citation",
     ("17_emerging", "SafeAI"): "a workshop name in a citation",
     ("17_emerging", "PRADA"): "the name of a published detection method",

@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 61,107 | 5,999 | 122.2 |
+| Chapter 17: Emerging Threats and Future Challenges | 61,372 | 5,999 | 122.7 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **437,781** | **22,569** | **876** |
+| **TOTAL** | **438,046** | **22,569** | **876** |
 
 ## Detailed Word Count by Section
 
@@ -1154,7 +1154,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*61,107 markdown words (122.2 pages); 5,999 code words.*
+*61,372 markdown words (122.7 pages); 5,999 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1238,7 +1238,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     MCP Tool Poisoning: When Tool Metadata Is the Attack | 1,181 |
 |     Threat Modeling AI Systems, from STRIDE to MAESTRO | 908 |
 |     One System, Five Lenses: STRIDE, PASTA, MAESTRO, and the Two OWASP Lists | 1,137 |
-|     Building and Running AI Platforms Securely | 899 |
+|     Building and Running AI Platforms Securely | 1,089 |
 |     The Output Channel as an Exfiltration Path | 1,754 |
 |     Monitoring and Responding to AI Incidents | 1,319 |
 |     Protecting AI Telemetry: Redact Before the SIEM | 908 |
@@ -1252,9 +1252,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 288 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 2,239 |
+| Review Questions (MCQ) | 2,310 |
 | Lab Assignment | 364 |
-| References | 5,284 |
+| References | 5,288 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
