@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-11-19.
+Last generated: 2026-11-22.
 
 ## Summary by Chapter
 
@@ -15,7 +15,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 1: Introduction to Cybersecurity | 19,102 | 679 | 38.2 |
 | Chapter 2: Cryptography | 51,512 | 4,728 | 103.0 |
 | Chapter 3: Networking and Network Attacks | 17,477 | 374 | 35.0 |
-| Chapter 4: Social Engineering and the Human Element | 10,151 | 547 | 20.3 |
+| Chapter 4: Social Engineering and the Human Element | 12,257 | 1,000 | 24.5 |
 | Chapter 5: Risk Management | 18,208 | 696 | 36.4 |
 | Chapter 6: Penetration Testing Methodology | 9,989 | 265 | 20.0 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,806 | 464 | 15.6 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **426,187** | **20,259** | **852** |
+| **TOTAL** | **428,293** | **20,712** | **857** |
 
 ## Detailed Word Count by Section
 
@@ -275,12 +275,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 4: Social Engineering and the Human Element
 
-*10,151 markdown words (20.3 pages); 547 code words.*
+*12,257 markdown words (24.5 pages); 1,000 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 141 |
-| Key Terms | 295 |
+| Learning Objectives | 167 |
+| Key Terms | 379 |
 | 4.1 Why People Are the Weakest Link | 565 |
 | 4.2 The Psychology of Influence | 468 |
 | 4.3 The Social-Engineering Attack Lifecycle | 463 |
@@ -288,21 +288,22 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 4.5 Vectors and the Role of Open-Source Intelligence | 429 |
 | 4.6 Recognizing and Analyzing Phishing | 492 |
 |     Look-Alike Text: Homoglyphs, Confusable Characters, and Unicode Spoofing | 1,718 |
+|     Case Study: The Free MyChart Medicare Kit Email | 1,583 |
 | 4.7 Physical Security as Social Engineering's Partner | 363 |
 |     Environmental and Availability Threats | 338 |
 | 4.8 Authentication Factors | 386 |
 | 4.9 Defending Against Social Engineering | 315 |
-|     Technical Controls That Reinforce the Human Defenses | 216 |
+|     Technical Controls That Reinforce the Human Defenses | 233 |
 |     Measuring and Sustaining the Human Firewall | 359 |
 | 4.10 Social Engineering in the Age of Artificial Intelligence | 441 |
 | 4.11 Deepfakes, Voice Cloning, and Synthetic Identities | 239 |
-| Chapter Summary | 262 |
+| Chapter Summary | 297 |
 | Why This Matters | 169 |
 | News in Focus: The 2020 Twitter Account Takeover | 185 |
-| Review Questions (MCQ) | 551 |
-|     Answer Key | 36 |
+| Review Questions (MCQ) | 693 |
+|     Answer Key | 42 |
 | Lab Assignment | 275 |
-| References | 479 |
+| References | 692 |
 
 ### Chapter 5: Risk Management
 
