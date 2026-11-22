@@ -10,7 +10,7 @@ The table lists every part of the book with its prose word count, the words in i
 
 | Chapter | Markdown words | Code words | Approx. pages |
 |---|---:|---:|---:|
-| Introduction | 1,827 | 0 | 3.7 |
+| Introduction | 2,047 | 0 | 4.1 |
 | Preface | 486 | 0 | 1.0 |
 | Chapter 1: Introduction to Cybersecurity | 19,102 | 679 | 38.2 |
 | Chapter 2: Cryptography | 51,512 | 4,728 | 103.0 |
@@ -23,18 +23,18 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 9: Exploitation and Post-Exploitation | 27,699 | 1,134 | 55.4 |
 | Chapter 10: Web Application Security | 10,212 | 516 | 20.4 |
 | Chapter 11: Network Defense and Hardening | 26,625 | 529 | 53.2 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 13,283 | 1,114 | 26.6 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 13,324 | 1,114 | 26.6 |
 | Chapter 13: Digital Forensics | 11,534 | 875 | 23.1 |
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 58,144 | 5,757 | 116.3 |
+| Chapter 17: Emerging Threats and Future Challenges | 59,648 | 5,999 | 119.3 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
 | Appendix A: Security Command Reference | 2,019 | 0 | 4.0 |
 | Appendix B: Glossary | 7,132 | 0 | 14.3 |
-| Appendix C: Certification Mapping | 3,717 | 0 | 7.4 |
+| Appendix C: Certification Mapping | 3,723 | 0 | 7.4 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 856 | 0 | 1.7 |
 | Appendix E: Selected Works by the Author | 1,836 | 0 | 3.7 |
 | Appendix F: Companion Code and Repositories | 1,388 | 0 | 2.8 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **434,551** | **22,327** | **869** |
+| **TOTAL** | **436,322** | **22,569** | **873** |
 
 ## Detailed Word Count by Section
 
@@ -51,13 +51,14 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Introduction
 
-*1,827 markdown words (3.7 pages); 0 code words.*
+*2,047 markdown words (4.1 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
 | Course Mapping | 560 |
 |     Adapting the Reading Load | 572 |
 | What Every Chapter Contains | 64 |
+| Companion Book: Generative AI with Amazon Bedrock | 220 |
 | How to Cite This Book | 181 |
 | Accessibility | 310 |
 | License | 27 |
@@ -723,7 +724,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*13,283 markdown words (26.6 pages); 1,114 code words.*
+*13,324 markdown words (26.6 pages); 1,114 code words.*
 
 | Section | Words |
 |---|---:|
@@ -738,7 +739,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Signature-Based Detection | 133 |
 |     Anomaly-Based Detection | 173 |
 |     Stateful Protocol Analysis | 50 |
-|     Detection Methods: Signature, Heuristic, and Anomaly | 466 |
+|     Detection Methods: Signature, Heuristic, and Anomaly | 507 |
 | 12.3 SIEM and Log Aggregation | 123 |
 |     SIEM Architecture | 110 |
 |     SIEM Challenges | 59 |
@@ -1153,12 +1154,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*58,144 markdown words (116.3 pages); 5,757 code words.*
+*59,648 markdown words (119.3 pages); 5,999 code words.*
 
 | Section | Words |
 |---|---:|
-| Learning Objectives | 294 |
-| Key Terms | 1,477 |
+| Learning Objectives | 322 |
+| Key Terms | 1,586 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 177 |
@@ -1172,6 +1173,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Pattern Matching: Rules and Signatures | 123 |
 |     Machine Learning: Learning Patterns from Data | 235 |
 |     Deep Learning: Neural Networks at Scale | 278 |
+|     Symbolic, Pattern, and Semantic AI: Three Ways to Hold Knowledge | 947 |
 |     Adversarial Machine Learning | 398 |
 | 17.4 Privacy-Preserving and Collaborative Machine Learning | 338 |
 |     Case Study: A Privacy-Preserving ML Research Program (SigML, SplitML, Fairis) | 2,512 |
@@ -1219,7 +1221,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Lattice Cryptography Meets Large Language Models: A Systems View | 406 |
 |     Lab: Recognizing Prompt Injection | 104 |
 |     Case Study: AI Agents Inside Bank Accounts (October 2026) | 671 |
-| 17.13 Securing AI in Practice: Governance, Data, Identity, and Operations | 138 |
+| 17.13 Securing AI in Practice: Governance, Data, Identity, and Operations | 192 |
 |     AI Building Blocks That Shape the Attack Surface | 1,095 |
 |     Evaluating Models Under Class Imbalance: Beyond Accuracy | 985 |
 |     Choosing Between RAG and Fine-Tuning: Knowledge Versus Behavior | 1,826 |
@@ -1233,7 +1235,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Model Integrity and Provenance: Signing, AI Bills of Materials, and Watermarks | 886 |
 |     Lab: Verifying a Model File Before Loading It | 134 |
 |     Identity and Authorization for AI Agents | 1,185 |
-|     MCP Tool Poisoning: When Tool Metadata Is the Attack | 1,161 |
+|     MCP Tool Poisoning: When Tool Metadata Is the Attack | 1,181 |
 |     Threat Modeling AI Systems, from STRIDE to MAESTRO | 908 |
 |     One System, Five Lenses: STRIDE, PASTA, MAESTRO, and the Two OWASP Lists | 1,137 |
 |     Building and Running AI Platforms Securely | 899 |
@@ -1247,12 +1249,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Answer Key | 203 |
 |     Election Security and Electronic Voting | 500 |
 | 17.16 A Map of Open Research Problems | 452 |
-| Chapter Summary | 271 |
+| Chapter Summary | 288 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 1,802 |
+| Review Questions (MCQ) | 1,983 |
 | Lab Assignment | 364 |
-| References | 4,893 |
+| References | 5,041 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
@@ -1523,7 +1525,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Appendix C: Certification Mapping
 
-*3,717 markdown words (7.4 pages); 0 code words.*
+*3,723 markdown words (7.4 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1535,7 +1537,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | C.6 (ISC)2 SSCP - 7 Domains | 132 |
 | C.7 (ISC)2 Certified in Cybersecurity (CC) - 5 Domains | 147 |
 | C.8 GIAC GREM (Reverse Engineering Malware) - Topic Areas | 147 |
-| C.9 ISC2 AI Security Certification (Pilot) - 6 Domains | 1,578 |
+| C.9 ISC2 AI Security Certification (Pilot) - 6 Domains | 1,584 |
 | C.10 Chapter-to-Certification Coverage Matrix | 431 |
 
 ### Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping

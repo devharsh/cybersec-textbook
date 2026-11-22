@@ -20,22 +20,22 @@ mix and match chapters to match their exact syllabus.
 | Course | Recommended Chapters | Approx. Pages |
 |---|---|---|
 | Introduction to IT Security | 1, 2, 3, 4, 5, 19 | 270 |
-| Computer Security (survey) | 1, 4, 5, 9, 10, 11, 12, 15, 17 | 460 |
+| Computer Security (survey) | 1, 4, 5, 9, 10, 11, 12, 15, 17 | 465 |
 | Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 | 190 |
 | Software Reverse Engineering | 9, 15 (+ 3) | 145 |
-| Computer and Network Security | 2, 3, 5, 11, 12, 17 | 370 |
+| Computer and Network Security | 2, 3, 5, 11, 12, 17 | 375 |
 | Advanced Network Security (Security+ aligned) | 1, 2, 3, 11, 12, 15, 19 | 380 |
-| Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 265 |
+| Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 270 |
 | Fundamentals of Cryptography | 2, 3, 11, 17 | 310 |
 | Incident Response and Digital Forensics | 12, 13, 14, 15 | 165 |
 | Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 | 295 |
-| Capstone or Certification Prep | All chapters | 803 (about 869 with appendices) |
+| Capstone or Certification Prep | All chapters | 806 (about 873 with appendices) |
 
 <!-- END generated:course-pages -->
 
 <!-- BEGIN generated:page-basis. Written by scripts/gen_wordcounts.py; edit the wording in that script. -->
 
-The page counts are estimates at about 500 words of prose per page, the same measure Appendix G uses, and they count only the listed chapters, not the appendices. Code listings, figures, and tables are not counted, so a typeset copy will run to a different length. These figures, like Appendix G, are regenerated from the book source whenever the book is rebuilt. They are a planning aid for gauging reading load per course: on the same measure the 20 chapters come to about 803 pages, and the whole book, with its front matter and appendices, to about 869. Several courses now exceed a single term's reading if every listed chapter is covered in full, so the guidance under *Adapting the Reading Load* below on trimming the encyclopedic back sections of the longer chapters applies directly.
+The page counts are estimates at about 500 words of prose per page, the same measure Appendix G uses, and they count only the listed chapters, not the appendices. Code listings, figures, and tables are not counted, so a typeset copy will run to a different length. These figures, like Appendix G, are regenerated from the book source whenever the book is rebuilt. They are a planning aid for gauging reading load per course: on the same measure the 20 chapters come to about 806 pages, and the whole book, with its front matter and appendices, to about 873. Several courses now exceed a single term's reading if every listed chapter is covered in full, so the guidance under *Adapting the Reading Load* below on trimming the encyclopedic back sections of the longer chapters applies directly.
 
 <!-- END generated:page-basis -->
 
@@ -63,7 +63,7 @@ means a chapter can be truncated rather than dropped when a term runs short. Two
 
 <!-- BEGIN generated:outliers. Written by scripts/gen_wordcounts.py; edit the wording in that script. -->
 
-**Chapters 2 and 17 are the outliers.** At about 103 and 116 pages, they are roughly 1.1 and 1.3 times the length of the next-longest chapter, Chapter 15 (about 91 pages), and more than three times the median chapter (about 28 pages), so either one dominates any course that includes it.
+**Chapters 2 and 17 are the outliers.** At about 103 and 119 pages, they are roughly 1.1 and 1.3 times the length of the next-longest chapter, Chapter 15 (about 91 pages), and more than three times the median chapter (about 28 pages), so either one dominates any course that includes it.
 
 For Chapter 2 in a certification-oriented or introductory course, Sections 2.1 through 2.14 (through the TLS handshake) plus 2.16 through 2.19b (key management, the attack taxonomy, applied systems, practical guidance, protecting data in its three states, and tamper-evident mechanisms) carry the examinable material. Sections 2.15 and 2.15a (advanced and emerging cryptography, including homomorphic encryption and lattices, and privacy-preserving constructions such as zero-knowledge proofs) and Section 2.20 (formal security analysis and provable security) are graduate-level and can be assigned as optional reading; Section 2.21 (post-quantum standards) repays a single lecture even in an introductory course, because the migration deadlines are now concrete. Appendix J likewise belongs to the advanced track.
 
@@ -101,6 +101,19 @@ key terms with full acronym expansions, detailed prose with figures and architec
 *Why This Matters* section, a *News in Focus* box drawn from documented incidents, worked numerical
 examples, knowledge-check questions, multiple-choice questions with answers, executable Python coding
 exercises, hands-on lab assignments, in-class exercises, and references in a consistent style.
+
+## Companion Book: Generative AI with Amazon Bedrock
+
+This book covers how systems are attacked and defended, including AI systems. Its companion, the open textbook *Generative AI with Amazon Bedrock* by the same author, covers how generative AI systems are built: how language models work, how to prompt and evaluate them, and how retrieval, tool calling, the Model Context Protocol (MCP), and agents are implemented on Amazon Bedrock. Its web version is at [bsu-devharsh.github.io/aws-mlu-eep-generative-ai](https://bsu-devharsh.github.io/aws-mlu-eep-generative-ai/). The two books link to each other wherever a topic has a building side and a security side.
+
+| Topic | How it is built (companion book) | How it is secured (this book) |
+|---|---|---|
+| Symbolic, pattern, and semantic AI | [Primer](https://bsu-devharsh.github.io/aws-mlu-eep-generative-ai/primer/ai-concepts-assistants-effort.html#symbolic-pattern-and-semantic-ai) | Section 17.3; Section 12.2 for signature and anomaly detection |
+| Prompting and its abuse | [Module 1, Chapters 3 and 4](https://bsu-devharsh.github.io/aws-mlu-eep-generative-ai/module-1/03-prompt-engineering.html) | Sections 17.12 and 17.13 (One System, Five Lenses) |
+| Evaluating models | [Module 2, Chapter 1](https://bsu-devharsh.github.io/aws-mlu-eep-generative-ai/module-2/01-evaluating-llms.html) | Section 17.13 (Evaluating Models Under Class Imbalance) |
+| Guardrails and jailbreaks | [Module 2, Chapter 4](https://bsu-devharsh.github.io/aws-mlu-eep-generative-ai/module-2/04-improving-security-and-safety.html) | Sections 17.12 and 17.13 |
+| Retrieval-augmented generation | [Module 3, Chapter 3](https://bsu-devharsh.github.io/aws-mlu-eep-generative-ai/module-3/03-retrieval-augmented-generation.html) | Section 17.13 (Choosing Between RAG and Fine-Tuning; The Output Channel as an Exfiltration Path) |
+| Tool use, MCP, and agents | [Module 3, Chapter 4](https://bsu-devharsh.github.io/aws-mlu-eep-generative-ai/module-3/04-agents.html) | Section 17.13 (Identity and Authorization; MCP Tool Poisoning) |
 
 ## How to Cite This Book
 
