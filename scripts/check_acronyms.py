@@ -422,6 +422,8 @@ CHAPTER_LITERAL = {
     ("17_emerging", "MYCIN"): "the name of a 1970s expert system, not an acronym",
     ("17_emerging", "Q41"): "a review question number",
     ("17_emerging", "Q42"): "a review question number",
+    ("17_emerging", "Q43"): "a review question number",
+    ("17_emerging", "Q44"): "a review question number",
     ("17_emerging", "PRADA"): "the name of a published detection method",
     ("17_emerging", "DNN"): "part of a cited paper title",
     ("17_emerging", "COSAiS"): "a former project name in a citation",
