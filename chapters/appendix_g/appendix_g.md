@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 79,745 | 6,610 | 159.5 |
+| Chapter 17: Emerging Threats and Future Challenges | 80,998 | 6,610 | 162.0 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **456,419** | **23,180** | **913** |
+| **TOTAL** | **457,672** | **23,180** | **915** |
 
 ## Detailed Word Count by Section
 
@@ -1154,12 +1154,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*79,745 markdown words (159.5 pages); 6,610 code words.*
+*80,998 markdown words (162.0 pages); 6,610 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 322 |
-| Key Terms | 4,029 |
+| Key Terms | 4,144 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 177 |
@@ -1244,6 +1244,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     The Output Channel as an Exfiltration Path | 1,811 |
 |     Monitoring and Responding to AI Incidents | 3,162 |
 |     Protecting AI Telemetry: Redact Before the SIEM | 908 |
+|     Sampling Temperature and Decoding: A Security View | 784 |
 |     Adversarial Robustness and Jailbreaks: Attacks, Defenses, and Guardrail Models | 1,376 |
 |     Testing AI Systems and Reporting Findings | 1,307 |
 | 17.14 Big Data Security and Access Control | 397 |
@@ -1255,9 +1256,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 288 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 3,964 |
+| Review Questions (MCQ) | 4,179 |
 | Lab Assignment | 364 |
-| References | 7,507 |
+| References | 7,646 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
