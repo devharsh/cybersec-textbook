@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-11-22.
+Last generated: 2026-11-23.
 
 ## Summary by Chapter
 
@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 61,372 | 5,999 | 122.7 |
+| Chapter 17: Emerging Threats and Future Challenges | 63,479 | 5,999 | 127.0 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **438,046** | **22,569** | **876** |
+| **TOTAL** | **440,153** | **22,569** | **880** |
 
 ## Detailed Word Count by Section
 
@@ -1154,12 +1154,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*61,372 markdown words (122.7 pages); 5,999 code words.*
+*63,479 markdown words (127.0 pages); 5,999 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 322 |
-| Key Terms | 1,761 |
+| Key Terms | 1,944 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 177 |
@@ -1225,8 +1225,8 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     AI Building Blocks That Shape the Attack Surface | 1,095 |
 |     Evaluating Models Under Class Imbalance: Beyond Accuracy | 985 |
 |     Choosing Between RAG and Fine-Tuning: Knowledge Versus Behavior | 1,826 |
-|     Governing AI: Laws, Standards, and Roles | 1,487 |
-|     Responsible AI, Risk Assessment, and Human Oversight | 1,235 |
+|     Governing AI: Laws, Standards, and Roles | 2,001 |
+|     Responsible AI, Risk Assessment, and Human Oversight | 2,181 |
 |     Human Oversight Models: In the Loop, On the Loop, and In Command | 1,856 |
 |     Protecting AI Data: Anonymization, Synthetic Data, and Unlearning | 1,531 |
 |     Lab: Checking k-Anonymity Before a Release | 112 |
@@ -1252,9 +1252,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 288 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 2,310 |
+| Review Questions (MCQ) | 2,527 |
 | Lab Assignment | 364 |
-| References | 5,288 |
+| References | 5,535 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
