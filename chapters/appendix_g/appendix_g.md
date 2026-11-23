@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 80,998 | 6,610 | 162.0 |
+| Chapter 17: Emerging Threats and Future Challenges | 84,745 | 7,663 | 169.5 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **457,672** | **23,180** | **915** |
+| **TOTAL** | **461,419** | **24,233** | **923** |
 
 ## Detailed Word Count by Section
 
@@ -1154,12 +1154,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*80,998 markdown words (162.0 pages); 6,610 code words.*
+*84,745 markdown words (169.5 pages); 7,663 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 322 |
-| Key Terms | 4,144 |
+| Key Terms | 4,367 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 177 |
@@ -1232,10 +1232,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Lab: Checking k-Anonymity Before a Release | 112 |
 |     Differential Privacy for AI Training: Composition, Local DP, and DP-SGD | 731 |
 |     Attacks on Models: Inversion, Extraction, Membership Inference, and Poisoning | 1,622 |
-|     Model Extraction Versus Model Inversion: Stealing the Model or Its Data | 1,609 |
+|     Model Extraction Versus Model Inversion: Stealing the Model or Its Data | 2,249 |
 |     Model Integrity and Provenance: Signing, AI Bills of Materials, and Watermarks | 1,439 |
 |     Lab: Verifying a Model File Before Loading It | 134 |
+|     Content Credentials: Showing Where Media Came From | 1,111 |
 |     Identity and Authorization for AI Agents | 1,915 |
+|     Separation of Duties for AI Agents: Who Initiates and Who Approves | 1,307 |
 |     Designing Agents to Contain Prompt Injection | 857 |
 |     MCP Tool Poisoning: When Tool Metadata Is the Attack | 1,208 |
 |     Threat Modeling AI Systems, from STRIDE to MAESTRO | 1,200 |
@@ -1256,9 +1258,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 288 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 4,179 |
+| Review Questions (MCQ) | 4,358 |
 | Lab Assignment | 364 |
-| References | 7,646 |
+| References | 7,933 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
