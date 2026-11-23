@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 67,492 | 6,237 | 135.0 |
+| Chapter 17: Emerging Threats and Future Challenges | 71,947 | 6,237 | 143.9 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **444,166** | **22,807** | **888** |
+| **TOTAL** | **448,621** | **22,807** | **897** |
 
 ## Detailed Word Count by Section
 
@@ -1154,12 +1154,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*67,492 markdown words (135.0 pages); 6,237 code words.*
+*71,947 markdown words (143.9 pages); 6,237 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 322 |
-| Key Terms | 2,419 |
+| Key Terms | 2,991 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 177 |
@@ -1228,22 +1228,23 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Governing AI: Laws, Standards, and Roles | 2,001 |
 |     Responsible AI, Risk Assessment, and Human Oversight | 2,348 |
 |     Human Oversight Models: In the Loop, On the Loop, and In Command | 1,856 |
-|     Protecting AI Data: Anonymization, Synthetic Data, and Unlearning | 2,365 |
+|     Protecting AI Data: Anonymization, Synthetic Data, and Unlearning | 2,524 |
 |     Lab: Checking k-Anonymity Before a Release | 112 |
 |     Differential Privacy for AI Training: Composition, Local DP, and DP-SGD | 731 |
 |     Attacks on Models: Inversion, Extraction, Membership Inference, and Poisoning | 1,622 |
 |     Model Extraction Versus Model Inversion: Stealing the Model or Its Data | 1,609 |
 |     Model Integrity and Provenance: Signing, AI Bills of Materials, and Watermarks | 1,196 |
 |     Lab: Verifying a Model File Before Loading It | 134 |
-|     Identity and Authorization for AI Agents | 1,185 |
-|     MCP Tool Poisoning: When Tool Metadata Is the Attack | 1,181 |
-|     Threat Modeling AI Systems, from STRIDE to MAESTRO | 908 |
+|     Identity and Authorization for AI Agents | 1,915 |
+|     Designing Agents to Contain Prompt Injection | 857 |
+|     MCP Tool Poisoning: When Tool Metadata Is the Attack | 1,208 |
+|     Threat Modeling AI Systems, from STRIDE to MAESTRO | 1,143 |
 |     One System, Five Lenses: STRIDE, PASTA, MAESTRO, and the Two OWASP Lists | 1,137 |
-|     Building and Running AI Platforms Securely | 1,313 |
+|     Building and Running AI Platforms Securely | 2,329 |
 |     The Output Channel as an Exfiltration Path | 1,811 |
 |     Monitoring and Responding to AI Incidents | 1,319 |
 |     Protecting AI Telemetry: Redact Before the SIEM | 908 |
-|     Testing AI Systems and Reporting Findings | 737 |
+|     Testing AI Systems and Reporting Findings | 755 |
 | 17.14 Big Data Security and Access Control | 397 |
 | 17.15 Sandbox and Virtual-Machine Escape, and What "AI Escaped the Sandbox" Really Means | 1,139 |
 |     Exercises | 135 |
@@ -1253,9 +1254,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 288 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 2,842 |
+| Review Questions (MCQ) | 3,201 |
 | Lab Assignment | 364 |
-| References | 5,904 |
+| References | 6,386 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
