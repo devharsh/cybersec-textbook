@@ -63,7 +63,7 @@ means a chapter can be truncated rather than dropped when a term runs short. Two
 
 <!-- BEGIN generated:outliers. Written by scripts/gen_wordcounts.py; edit the wording in that script. -->
 
-**Chapters 2 and 17 are the outliers.** At about 103 and 159 pages, they are roughly 1.1 and 1.7 times the length of the next-longest chapter, Chapter 15 (about 91 pages), and more than three times the median chapter (about 28 pages), so either one dominates any course that includes it.
+**Chapters 2 and 17 are the outliers.** At about 103 and 159 pages, they are roughly 1.1 and 1.8 times the length of the next-longest chapter, Chapter 15 (about 91 pages), and more than three times the median chapter (about 28 pages), so either one dominates any course that includes it.
 
 For Chapter 2 in a certification-oriented or introductory course, Sections 2.1 through 2.14 (through the TLS handshake) plus 2.16 through 2.19b (key management, the attack taxonomy, applied systems, practical guidance, protecting data in its three states, and tamper-evident mechanisms) carry the examinable material. Sections 2.15 and 2.15a (advanced and emerging cryptography, including homomorphic encryption and lattices, and privacy-preserving constructions such as zero-knowledge proofs) and Section 2.20 (formal security analysis and provable security) are graduate-level and can be assigned as optional reading; Section 2.21 (post-quantum standards) repays a single lecture even in an introductory course, because the migration deadlines are now concrete. Appendix J likewise belongs to the advanced track.
 

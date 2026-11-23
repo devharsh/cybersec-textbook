@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 79,692 | 6,610 | 159.4 |
+| Chapter 17: Emerging Threats and Future Challenges | 79,745 | 6,610 | 159.5 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **456,366** | **23,180** | **913** |
+| **TOTAL** | **456,419** | **23,180** | **913** |
 
 ## Detailed Word Count by Section
 
@@ -1154,7 +1154,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*79,692 markdown words (159.4 pages); 6,610 code words.*
+*79,745 markdown words (159.5 pages); 6,610 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1226,9 +1226,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Evaluating Models Under Class Imbalance: Beyond Accuracy | 985 |
 |     Choosing Between RAG and Fine-Tuning: Knowledge Versus Behavior | 1,826 |
 |     Governing AI: Laws, Standards, and Roles | 2,001 |
-|     Responsible AI, Risk Assessment, and Human Oversight | 2,579 |
+|     Responsible AI, Risk Assessment, and Human Oversight | 2,609 |
 |     Human Oversight Models: In the Loop, On the Loop, and In Command | 1,856 |
-|     Protecting AI Data: Anonymization, Synthetic Data, and Unlearning | 2,524 |
+|     Protecting AI Data: Anonymization, Synthetic Data, and Unlearning | 2,547 |
 |     Lab: Checking k-Anonymity Before a Release | 112 |
 |     Differential Privacy for AI Training: Composition, Local DP, and DP-SGD | 731 |
 |     Attacks on Models: Inversion, Extraction, Membership Inference, and Poisoning | 1,622 |
