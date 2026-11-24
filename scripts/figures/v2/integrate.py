@@ -67,3 +67,34 @@ def add_new(nb_path, heading, name, alt, width="95%", after_text=None, after_blo
         open(nb_path, "w").write(json.dumps(nb, indent=1, ensure_ascii=False) + "\n")
         return 1
     raise ValueError(f"no place for {name} in {nb_path}")
+
+
+def md_block(prefix, name, alt, width="95%"):
+    return (f"```{{image}} {prefix}_static/figures/{name}.*\n:alt: {alt}\n:width: {width}\n:align: center\n:class: anim-fig\n```\n")
+
+
+def md_add(md_path, name, alt, after_text, prefix="../", width="95%"):
+    """Insert an animated figure after the paragraph (or fenced block, if after_text is inside one) containing after_text."""
+    s = open(md_path).read()
+    if f"_static/figures/{name}." in s: return 0
+    i = s.find(after_text)
+    if i < 0: raise ValueError(f"anchor not found for {name}: {after_text}")
+    fence = s.rfind("```", 0, i); inside = fence >= 0 and s.count("```", 0, i) % 2 == 1
+    if inside:
+        j = s.find("\n```", i); j = s.find("\n", j + 4)
+    else:
+        j = s.find("\n\n", i)
+    j = len(s) if j < 0 else j
+    s = s[:j] + "\n\n" + md_block(prefix, name, alt, width).rstrip("\n") + s[j:]
+    open(md_path, "w").write(s); return 1
+
+
+def md_swap(md_path, old_ref, name, alt, prefix="../", width="95%"):
+    """Show the new animated figure directly above an existing figure directive that references old_ref."""
+    s = open(md_path).read()
+    if f"_static/figures/{name}." in s: return 0
+    i = s.find(old_ref)
+    if i < 0: raise ValueError(f"old figure not found: {old_ref}")
+    k = s.rfind("```{", 0, i)
+    s = s[:k] + md_block(prefix, name, alt, width) + "\n" + s[k:]
+    open(md_path, "w").write(s); return 1

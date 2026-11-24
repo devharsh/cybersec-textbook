@@ -23,6 +23,7 @@ for i, (n_, name, sub, ics, fill) in enumerate(lv):
     p.text(126, y + 32, name, 16, INK, "bold", "start", step=st); p.text(126, y + 54, sub, 13, INK, anchor="start", step=st)
     for k, ic in enumerate(ics): p.icon(ic, 660 + k * 70, y + 38, 50, step=st)
     p.badge(st, 846, y + 16, step=st)
+p.raw('<line x1="30" y1="228" x2="870" y2="228" stroke="#c0392b" stroke-width="2.4" stroke-dasharray="9 5"/>', step=6); p.text(866, 222, "IT/OT boundary", 12, RED, "bold", "end", step=6)
 p.arrow([(900, 560), (900, 80)], None, MUTED, step=7, width=2.4)
 p.text(920, 110, "failure is", 12, MUTED, "bold", "start", step=7); p.text(920, 126, "expensive", 12, MUTED, "bold", "start", step=7)
 p.text(920, 520, "failure can", 12, RED, "bold", "start", step=7); p.text(920, 536, "injure people", 12, RED, "bold", "start", step=7)

@@ -54,8 +54,8 @@ n = Fig(900, 620, "NIST Cybersecurity Framework 2.0: six functions",
         "Govern sits at the center and informs the five other functions arranged around it: Identify, Protect, Detect, Respond, "
         "and Recover. CSF 2.0, published in 2024, added Govern to the original five.")
 cx, cy = 450, 330
-n.circle(cx, cy, 96, "#eaf2fb", "#1f4e9c", 4, step=1); n.icon("bank", cx, cy - 18, 70, step=1)
-n.text(cx, cy + 40, "Govern (GV)", 17, "#1f4e9c", "bold", step=1); n.text(cx, cy + 58, "strategy, roles, policy", 12, MUTED, step=1)
+n.circle(cx, cy, 96, "#eaf2fb", "#1f4e9c", 4, step=1); n.icon("bank", cx, cy - 36, 58, step=1)
+n.text(cx, cy + 16, "Govern (GV)", 17, "#1f4e9c", "bold", step=1); n.text(cx, cy + 36, "strategy, policy, roles,", 12, MUTED, step=1); n.text(cx, cy + 51, "oversight,", 12, MUTED, step=1); n.text(cx, cy + 66, "supply-chain risk", 12, MUTED, step=1)
 n.badge(1, cx - 70, cy - 70, step=1)
 fns = [("search", "Identify (ID)", "assets, risks", "#2e86c1"), ("shield", "Protect (PR)", "safeguards", "#8e44ad"),
        ("eye", "Detect (DE)", "find attacks", "#d68910"), ("warning", "Respond (RS)", "contain, act", "#c0392b"),

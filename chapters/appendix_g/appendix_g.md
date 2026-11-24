@@ -12,26 +12,26 @@ The table lists every part of the book with its prose word count, the words in i
 |---|---:|---:|---:|
 | Introduction | 2,047 | 0 | 4.1 |
 | Preface | 486 | 0 | 1.0 |
-| Chapter 1: Introduction to Cybersecurity | 19,582 | 679 | 39.2 |
-| Chapter 2: Cryptography | 52,154 | 4,728 | 104.3 |
-| Chapter 3: Networking and Network Attacks | 18,031 | 374 | 36.1 |
-| Chapter 4: Social Engineering and the Human Element | 12,552 | 1,000 | 25.1 |
-| Chapter 5: Risk Management | 18,600 | 696 | 37.2 |
-| Chapter 6: Penetration Testing Methodology | 10,225 | 265 | 20.4 |
-| Chapter 7: Reconnaissance and Open-Source Intelligence | 8,047 | 464 | 16.1 |
-| Chapter 8: Scanning and Enumeration | 7,692 | 816 | 15.4 |
-| Chapter 9: Exploitation and Post-Exploitation | 28,170 | 1,134 | 56.3 |
-| Chapter 10: Web Application Security | 10,574 | 516 | 21.1 |
-| Chapter 11: Network Defense and Hardening | 27,102 | 529 | 54.2 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 13,559 | 1,114 | 27.1 |
-| Chapter 13: Digital Forensics | 11,754 | 875 | 23.5 |
-| Chapter 14: Incident Response | 11,939 | 828 | 23.9 |
-| Chapter 15: Malware Analysis | 45,795 | 423 | 91.6 |
-| Chapter 16: Capture the Flag and Competitive Security | 13,810 | 818 | 27.6 |
-| Chapter 17: Emerging Threats and Future Challenges | 87,328 | 8,027 | 174.7 |
-| Chapter 18: Privacy, Law, and Information Governance | 7,914 | 387 | 15.8 |
-| Chapter 19: Security Governance, Policy, and Culture | 17,411 | 482 | 34.8 |
-| Chapter 20: Industrial Control Systems and OT Security | 14,953 | 442 | 29.9 |
+| Chapter 1: Introduction to Cybersecurity | 19,308 | 679 | 38.6 |
+| Chapter 2: Cryptography | 51,934 | 4,728 | 103.9 |
+| Chapter 3: Networking and Network Attacks | 17,809 | 374 | 35.6 |
+| Chapter 4: Social Engineering and the Human Element | 12,478 | 1,000 | 25.0 |
+| Chapter 5: Risk Management | 18,460 | 696 | 36.9 |
+| Chapter 6: Penetration Testing Methodology | 10,186 | 265 | 20.4 |
+| Chapter 7: Reconnaissance and Open-Source Intelligence | 7,950 | 464 | 15.9 |
+| Chapter 8: Scanning and Enumeration | 7,624 | 816 | 15.2 |
+| Chapter 9: Exploitation and Post-Exploitation | 27,919 | 1,134 | 55.8 |
+| Chapter 10: Web Application Security | 10,523 | 516 | 21.0 |
+| Chapter 11: Network Defense and Hardening | 26,753 | 529 | 53.5 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 13,488 | 1,114 | 27.0 |
+| Chapter 13: Digital Forensics | 11,708 | 875 | 23.4 |
+| Chapter 14: Incident Response | 11,816 | 828 | 23.6 |
+| Chapter 15: Malware Analysis | 45,699 | 423 | 91.4 |
+| Chapter 16: Capture the Flag and Competitive Security | 13,704 | 818 | 27.4 |
+| Chapter 17: Emerging Threats and Future Challenges | 87,073 | 8,027 | 174.1 |
+| Chapter 18: Privacy, Law, and Information Governance | 7,868 | 387 | 15.7 |
+| Chapter 19: Security Governance, Policy, and Culture | 17,315 | 482 | 34.6 |
+| Chapter 20: Industrial Control Systems and OT Security | 14,750 | 442 | 29.5 |
 | Appendix A: Security Command Reference | 2,019 | 0 | 4.0 |
 | Appendix B: Glossary | 7,132 | 0 | 14.3 |
 | Appendix C: Certification Mapping | 3,723 | 0 | 7.4 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **470,393** | **24,597** | **941** |
+| **TOTAL** | **467,566** | **24,597** | **935** |
 
 ## Detailed Word Count by Section
 
@@ -78,7 +78,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*19,582 markdown words (39.2 pages); 679 code words.*
+*19,308 markdown words (38.6 pages); 679 code words.*
 
 | Section | Words |
 |---|---:|
@@ -87,11 +87,11 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 1.1 What Is Cybersecurity? | 636 |
 | 1.2 The CIA Triad and Its Extensions | 852 |
 |     The DIE Model: A Modern Complement to CIA | 266 |
-| 1.3 The Anatomy of an Attack | 695 |
+| 1.3 The Anatomy of an Attack | 668 |
 |     A Concept Map of the Core Terms | 130 |
 | 1.4 Threat Actors and the Adversary Model | 627 |
 | 1.5 Defense in Depth and Security Controls | 655 |
-| 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 1,242 |
+| 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 1,013 |
 |     What Runs at Each Level | 569 |
 |     Why Rings 1 and 2 Were Meant for Device Drivers | 936 |
 |     Beneath Ring 0: The Hypervisor, System Management Mode, and the Security Processor | 755 |
@@ -100,7 +100,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Trusted Execution Environments: Enclaves, Secure Worlds, and Confidential Virtual Machines | 978 |
 |     The Trusted Computing Base and the Reference Monitor | 170 |
 | 1.7 The NIST Cybersecurity Framework | 433 |
-| 1.8 Quantifying Risk in Monetary Terms | 581 |
+| 1.8 Quantifying Risk in Monetary Terms | 563 |
 | 1.9 The Saltzer and Schroeder Design Principles | 641 |
 |     The Principle of Least Privilege (PoLP) | 249 |
 | 1.10 The Security Mindset, Ethics, and the Law | 369 |
@@ -124,14 +124,14 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 2: Cryptography
 
-*52,154 markdown words (104.3 pages); 4,728 code words.*
+*51,934 markdown words (103.9 pages); 4,728 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 185 |
 | Key Terms | 1,071 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
-|     Encoding versus Encryption versus Hashing | 920 |
+|     Encoding versus Encryption versus Hashing | 900 |
 |     Codes, Ciphers, Cryptology, and the Words Around Them | 302 |
 | 2.2 Classical Ciphers and Why They Fall | 730 |
 |     Classical versus Modern Ciphers | 295 |
@@ -145,11 +145,11 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Real-World Case: The ANC's One-Time Pad and Operation Vula | 441 |
 | 2.4 Randomness: True, Pseudo, and Cryptographically Secure | 570 |
 |     Insecure versus Cryptographically Secure Randomness in Code | 168 |
-|     Case Study: Private Keys Made from Numbers Under 256 (eMudhra, October 2026) | 801 |
-| 2.5 Symmetric Encryption: Stream and Block Ciphers | 1,054 |
+|     Case Study: Private Keys Made from Numbers Under 256 (eMudhra, October 2026) | 754 |
+| 2.5 Symmetric Encryption: Stream and Block Ciphers | 1,007 |
 |     The Feistel Network: A Blueprint for Block Ciphers | 224 |
 |     Legacy Symmetric Ciphers: DES, Triple DES, IDEA, RC4, and Skipjack | 406 |
-| 2.6 Block Cipher Modes of Operation | 725 |
+| 2.6 Block Cipher Modes of Operation | 708 |
 |     AES Modes in Code: ECB versus CTR | 328 |
 |     AES-CTR versus AES-GCM, and Which Modes Need Padding | 903 |
 |     The Complete Catalog: NIST-Approved Modes and the Modes Outside the List | 1,597 |
@@ -160,14 +160,14 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Error Detection versus Error Correction: CRC and Hamming Codes | 205 |
 | 2.8 Message Authentication Codes and Authenticated Encryption | 596 |
 |     Hash, MAC, and Digital Signature Compared | 729 |
-|     Wrong-Key Behavior: Garbage Output versus Null Rejection | 626 |
+|     Wrong-Key Behavior: Garbage Output versus Null Rejection | 603 |
 |     The Three-Behavior Hierarchy of Incorrect Decryption | 3,453 |
 |     Computing an HMAC in Code | 98 |
 |     HMAC and CMAC Are Not the Only MACs | 1,424 |
 |     Authenticated Encryption in Practice: Encrypt-then-MAC | 190 |
 | 2.9 Key Derivation and Password Storage | 696 |
 |     Where Windows Keeps Password Hashes: The SAM Database and SYSKEY | 410 |
-| 2.10 Public-Key Cryptography and RSA | 956 |
+| 2.10 Public-Key Cryptography and RSA | 890 |
 |     One-Way Functions, Trapdoor Functions, and the RSA Story | 819 |
 |     Digital Envelopes: How Public-Key Encryption Is Used in Practice | 250 |
 | 2.11 Diffie-Hellman Key Exchange | 798 |
@@ -221,14 +221,14 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 3: Networking and Network Attacks
 
-*18,031 markdown words (36.1 pages); 374 code words.*
+*17,809 markdown words (35.6 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 152 |
 | Key Terms | 514 |
 | 3.1 Why Networking Is the Battleground | 359 |
-| 3.2 The OSI Model | 600 |
+| 3.2 The OSI Model | 540 |
 |     Mapping the OSI and TCP/IP Models | 276 |
 | 3.3 The TCP/IP Model and Encapsulation | 293 |
 |     Network Devices and Segments | 194 |
@@ -241,7 +241,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 3.5 Ports and Common Protocols | 437 |
 |     Application Protocols and Their Security Posture | 400 |
 |     Secure versus Insecure Protocols | 319 |
-| 3.6 The Core Protocols: TCP, UDP, ICMP, and Their Headers | 837 |
+| 3.6 The Core Protocols: TCP, UDP, ICMP, and Their Headers | 799 |
 |     Sockets: Programming the Transport Layer | 216 |
 |     Sockets in Code: A TCP Server, Client, and a Tiny Web Server | 586 |
 | 3.7 ARP and DHCP: Convenience and Its Abuse | 568 |
@@ -253,12 +253,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 3.9 Spoofing, Man-in-the-Middle, and Session Hijacking | 613 |
 |     Packet Capture, On-Path Attacks, and SSL Stripping | 315 |
 |     Hands-On: Capturing a Plaintext Password, Then Encrypting It | 501 |
-| 3.10 Denial-of-Service and Distributed Denial-of-Service Attacks | 1,341 |
+| 3.10 Denial-of-Service and Distributed Denial-of-Service Attacks | 1,236 |
 |     Access Control Lists, NACLs, and Security Groups | 515 |
 | 3.11 Securing the Network: A Preview | 173 |
 |     Secure Network Protocols | 203 |
 |     Going Deeper: Routing Security and BGP Hijacking | 229 |
-|     Network Access Control | 196 |
+|     Network Access Control | 177 |
 | 3.12 QUIC, HTTP/3, and Encrypted Client Hello | 264 |
 | 3.13 The Access Link: How a Network Connects to the Internet | 611 |
 |     Exercises | 116 |
@@ -276,7 +276,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 4: Social Engineering and the Human Element
 
-*12,552 markdown words (25.1 pages); 1,000 code words.*
+*12,478 markdown words (25.0 pages); 1,000 code words.*
 
 | Section | Words |
 |---|---:|
@@ -284,8 +284,8 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Key Terms | 379 |
 | 4.1 Why People Are the Weakest Link | 565 |
 | 4.2 The Psychology of Influence | 468 |
-| 4.3 The Social-Engineering Attack Lifecycle | 503 |
-| 4.4 The Taxonomy of Social-Engineering Attacks | 857 |
+| 4.3 The Social-Engineering Attack Lifecycle | 469 |
+| 4.4 The Taxonomy of Social-Engineering Attacks | 817 |
 | 4.5 Vectors and the Role of Open-Source Intelligence | 429 |
 | 4.6 Recognizing and Analyzing Phishing | 546 |
 |     Look-Alike Text: Homoglyphs, Confusable Characters, and Unicode Spoofing | 1,718 |
@@ -308,7 +308,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 5: Risk Management
 
-*18,600 markdown words (37.2 pages); 696 code words.*
+*18,460 markdown words (36.9 pages); 696 code words.*
 
 | Section | Words |
 |---|---:|
@@ -316,15 +316,15 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Key Terms | 324 |
 | 5.1 Risk as the Organizing Principle of Security | 395 |
 | 5.2 The Vocabulary of Risk | 607 |
-| 5.3 The Risk-Management Lifecycle | 434 |
+| 5.3 The Risk-Management Lifecycle | 394 |
 | 5.4 Risk Identification | 275 |
 |     Asset and Data Classification | 239 |
 |     A Worked Risk Register | 286 |
-| 5.5 Qualitative Risk Assessment | 555 |
+| 5.5 Qualitative Risk Assessment | 539 |
 | 5.6 Quantitative Risk Assessment | 722 |
-| 5.7 Risk Treatment | 993 |
+| 5.7 Risk Treatment | 975 |
 |     A Worked Analogy: The Skateboard and the Scraped Knee | 2,911 |
-| 5.8 Threat Modeling | 870 |
+| 5.8 Threat Modeling | 821 |
 |     STRIDE per Element and the Seven Stages of PASTA | 646 |
 | 5.9 Risk Frameworks and Standards | 329 |
 |     The NIST RMF Steps in Detail | 170 |
@@ -347,7 +347,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 5.22 Comparing FAIR, NIST RMF, and ISO/IEC 27005 | 244 |
 | Chapter Summary | 242 |
 | Why This Matters | 164 |
-| News in Focus: Repeat Breaches at Neiman Marcus | 590 |
+| News in Focus: Repeat Breaches at Neiman Marcus | 573 |
 | Review Questions (MCQ) | 547 |
 |     Answer Key | 38 |
 | Lab Assignment | 242 |
@@ -355,7 +355,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 6: Penetration Testing Methodology
 
-*10,225 markdown words (20.4 pages); 265 code words.*
+*10,186 markdown words (20.4 pages); 265 code words.*
 
 | Section | Words |
 |---|---:|
@@ -365,7 +365,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 6.2 What Penetration Testing Is, and Is Not | 584 |
 | 6.3 Hats and Team Colors | 319 |
 | 6.4 Knowledge Levels: Black, Gray, and White Box | 334 |
-| 6.5 The Phases of a Penetration Test | 691 |
+| 6.5 The Phases of a Penetration Test | 652 |
 | 6.6 Types of Penetration Tests | 409 |
 | 6.7 Pre-Engagement: Scope and the Rules of Engagement | 568 |
 | 6.8 The Legal Framework | 500 |
@@ -389,14 +389,14 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 7: Reconnaissance and Open-Source Intelligence
 
-*8,047 markdown words (16.1 pages); 464 code words.*
+*7,950 markdown words (15.9 pages); 464 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 93 |
 | Key Terms | 207 |
 | 7.1 Why Reconnaissance Comes First | 501 |
-| 7.2 Footprinting: Passive and Active | 385 |
+| 7.2 Footprinting: Passive and Active | 312 |
 | 7.3 Open-Source Intelligence (OSINT) | 612 |
 | 7.4 Search-Engine Reconnaissance ("Google Dorking") | 416 |
 | 7.5 WHOIS and the Regional Internet Registries | 455 |
@@ -404,7 +404,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 7.7 Email Harvesting, Metadata, and Social-Media Profiling | 211 |
 | 7.8 Reconnaissance of Cloud and Modern Infrastructure | 408 |
 | 7.9 The Intelligence Cycle and Organizing Findings | 407 |
-| 7.10 Reconnaissance Tools | 434 |
+| 7.10 Reconnaissance Tools | 410 |
 | 7.11 Passive Fingerprinting | 265 |
 | 7.12 Defending Against Reconnaissance | 485 |
 | 7.13 AI-Assisted Reconnaissance and Modern WHOIS | 232 |
@@ -421,20 +421,20 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 8: Scanning and Enumeration
 
-*7,692 markdown words (15.4 pages); 816 code words.*
+*7,624 markdown words (15.2 pages); 816 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 152 |
 | Key Terms | 222 |
 | 8.1 From Reconnaissance to Active Probing | 301 |
-| 8.2 The Scanning Taxonomy and the Tyranny of Time | 215 |
+| 8.2 The Scanning Taxonomy and the Tyranny of Time | 177 |
 |     Why Scanning Time Dominates Planning | 304 |
 | 8.3 A TCP/IP Refresher for Scanners | 214 |
 |     The Six Nmap Port States | 284 |
 | 8.4 Host Discovery and Network Sweeps | 164 |
 |     What Nmap Probes by Default | 185 |
-| 8.5 Network Mapping: Traceroute, Firewalking, and Nmap | 265 |
+| 8.5 Network Mapping: Traceroute, Firewalking, and Nmap | 235 |
 |     Firewalking, Layer Four Traceroute (LFT), and Nmap's Smarter Traceroute | 219 |
 | 8.6 Port Scanning with Nmap | 132 |
 |     TCP Scan Types | 332 |
@@ -461,7 +461,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*28,170 markdown words (56.3 pages); 1,134 code words.*
+*27,919 markdown words (55.8 pages); 1,134 code words.*
 
 | Section | Words |
 |---|---:|
@@ -478,7 +478,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 9.4 Memory Corruption: The Stack, the Heap, and Buffer Overflows | 662 |
 |     Stack Exhaustion and Heap Problems | 249 |
 |     CWE-120: Copying Input Without Checking Its Size | 1,712 |
-| 9.5 From Stack Smashing to Return-Oriented Programming | 693 |
+| 9.5 From Stack Smashing to Return-Oriented Programming | 618 |
 | 9.6 Programming Survival Skills for Exploitation | 302 |
 | 9.7 Shellcode and Shellcode Strategies | 277 |
 | 9.8 The Exploit-Development Workflow | 414 |
@@ -558,9 +558,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Answer Key | 167 |
 | 9.38 How Kerberos Works, and Where Each Attack Breaks In | 45 |
 |     The problem single sign-on solves | 184 |
-|     The three exchanges | 380 |
-|     Where each attack breaks in | 419 |
-| 9.39 Landmark Bugs, from the Morris Worm to the Year 2038 | 902 |
+|     The three exchanges | 312 |
+|     Where each attack breaks in | 355 |
+| 9.39 Landmark Bugs, from the Morris Worm to the Year 2038 | 858 |
 |     Y2K and the Year 2038, Worked | 128 |
 | Chapter Summary | 181 |
 | Why This Matters | 62 |
@@ -571,7 +571,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 10: Web Application Security
 
-*10,574 markdown words (21.1 pages); 516 code words.*
+*10,523 markdown words (21.0 pages); 516 code words.*
 
 | Section | Words |
 |---|---:|
@@ -610,7 +610,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Read (Only) Replicas | 100 |
 |     Cloud Database Instance Classes | 561 |
 |     Attacks and Defenses | 263 |
-| 10.14 Two Server-Side Bugs from One Week in October 2026: PHP2Shell and a GitLab Regex | 207 |
+| 10.14 Two Server-Side Bugs from One Week in October 2026: PHP2Shell and a GitLab Regex | 156 |
 |     PHP2Shell | 440 |
 |     A GitLab Bug Reachable Since 2014 | 347 |
 | Chapter Summary | 162 |
@@ -622,7 +622,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 11: Network Defense and Hardening
 
-*27,102 markdown words (54.2 pages); 529 code words.*
+*26,753 markdown words (53.5 pages); 529 code words.*
 
 | Section | Words |
 |---|---:|
@@ -631,7 +631,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 11.1 Firewalls | 161 |
 |     Firewall Types and Evolution | 188 |
 |     Writing Firewall Rules | 200 |
-| 11.2 Firewall Types and Topologies | 432 |
+| 11.2 Firewall Types and Topologies | 408 |
 |     Physical and Virtual Firewalls | 174 |
 |     Stateless and Stateful Packet Filtering | 514 |
 | 11.3 Network Segmentation | 49 |
@@ -659,7 +659,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 11.11 Network Monitoring and Visibility | 365 |
 | 11.12 Deception: Honeypots, Honeynets, and Honeytokens | 221 |
 | 11.13 Network Forensics in Defense | 159 |
-| 11.14 CVE Case Study: When the Firewall Is the Door (CVE-2024-3400) | 283 |
+| 11.14 CVE Case Study: When the Firewall Is the Door (CVE-2024-3400) | 250 |
 | 11.15 Operating System and Host Hardening | 436 |
 |     Mobile Devices, Bring Your Own Device (BYOD), and the Hardware Root of Trust | 478 |
 | 11.16 Network Device Hardening: Switches and Routers | 327 |
@@ -690,7 +690,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Step one: inventory, grouped by who owns the risk | 97 |
 |     Step two: addresses and VLANs | 185 |
 |     Step three: the decision count, which is the real cost | 103 |
-|     Step four: the matrix, written as permitted flows only | 684 |
+|     Step four: the matrix, written as permitted flows only | 438 |
 |     Step five: micro-segmentation, and why it is a different kind of problem | 115 |
 |     Exercises | 127 |
 |     Answer Key | 187 |
@@ -698,7 +698,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     What a VLAN is, on the wire | 520 |
 |     The native VLAN, which is the exception that the attacks live in | 76 |
 |     Way out one: become a trunk | 101 |
-|     Way out two: two tags, one strip | 265 |
+|     Way out two: two tags, one strip | 219 |
 |     The configuration that closes both | 280 |
 |     Exercises | 128 |
 |     Answer Key | 233 |
@@ -724,7 +724,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*13,559 markdown words (27.1 pages); 1,114 code words.*
+*13,488 markdown words (27.0 pages); 1,114 code words.*
 
 | Section | Words |
 |---|---:|
@@ -734,7 +734,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Network-Based IDS and IPS | 141 |
 |     Host-Based IDS | 49 |
 |     Intrusion Detection Systems: What They Watch | 216 |
-|     Intrusion Prevention Systems: From Alert to Action | 292 |
+|     Intrusion Prevention Systems: From Alert to Action | 254 |
 | 12.2 Detection Methods | 159 |
 |     Signature-Based Detection | 133 |
 |     Anomaly-Based Detection | 173 |
@@ -748,7 +748,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     User and Entity Behavior Analytics | 58 |
 |     Threat Hunting | 228 |
 |     Detection Engineering, Threat Hunting, and Deception | 350 |
-| 12.5 The Cyber Kill Chain and MITRE ATT&CK | 650 |
+| 12.5 The Cyber Kill Chain and MITRE ATT&CK | 617 |
 | 12.6 Modern SOC Operations: EDR, XDR, SOAR, and Detection Engineering | 268 |
 | 12.7 Writing Detection Rules: Snort, YARA, and Sigma | 341 |
 | 12.8 SIEM Correlation and Tuning | 190 |
@@ -799,7 +799,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 13: Digital Forensics
 
-*11,754 markdown words (23.5 pages); 875 code words.*
+*11,708 markdown words (23.4 pages); 875 code words.*
 
 | Section | Words |
 |---|---:|
@@ -830,7 +830,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 13.9 AI-Driven Cybercrime Analytics and Attribution | 374 |
 | 13.10 Legal Admissibility and Reporting | 285 |
 | 13.11 Cloud Forensics | 263 |
-| 13.12 Disk Imaging and File Carving in Practice | 387 |
+| 13.12 Disk Imaging and File Carving in Practice | 341 |
 | 13.13 Memory Forensics with Volatility | 289 |
 | 13.14 Timeline Analysis | 225 |
 | 13.15 Windows Forensic Artifacts | 237 |
@@ -871,7 +871,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 14: Incident Response
 
-*11,939 markdown words (23.9 pages); 828 code words.*
+*11,816 markdown words (23.6 pages); 828 code words.*
 
 | Section | Words |
 |---|---:|
@@ -891,13 +891,13 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Breach Notification Laws | 60 |
 |     Law Enforcement and Evidence Preservation | 68 |
 | 14.4 The Assume-Breach Mindset | 133 |
-| 14.5 Before, During, and After: An Operational IR Playbook | 406 |
+| 14.5 Before, During, and After: An Operational IR Playbook | 382 |
 | 14.6 Case Study: The Locky Ransomware Incident | 323 |
 | 14.7 The CSIRT, Roles, and Communication | 195 |
 | 14.8 Triage, Severity, Containment, and Recovery in Depth | 289 |
 | 14.9 Postmortem, Metrics, and Exercises | 199 |
 | 14.10 Playbooks, Ransomware Negotiation, and Executive Communication | 229 |
-| 14.11 A Ransomware Incident, Hour by Hour | 515 |
+| 14.11 A Ransomware Incident, Hour by Hour | 461 |
 | 14.12 Writing and Running Playbooks | 58 |
 | 14.13 Evidence Handling and Communication Templates | 225 |
 | 14.14 Tabletop Exercises and Purple Teaming | 119 |
@@ -929,7 +929,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 14.28 Containment Decisions Under Uncertainty | 361 |
 |     Exercises | 89 |
 |     Answer Key | 146 |
-| 14.29 Incident Response at National Scale: Japan, October 2026 | 734 |
+| 14.29 Incident Response at National Scale: Japan, October 2026 | 689 |
 | Chapter Summary | 133 |
 | Why This Matters | 75 |
 | News in Focus: Attacker Dwell Time in Major Ransomware Incidents | 88 |
@@ -939,7 +939,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 15: Malware Analysis
 
-*45,795 markdown words (91.6 pages); 423 code words.*
+*45,699 markdown words (91.4 pages); 423 code words.*
 
 | Section | Words |
 |---|---:|
@@ -970,7 +970,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 15.7 Antivirus and Antimalware Defenses | 387 |
 |     The Anti-* Family: Beyond Antivirus | 326 |
 | 15.8 A Field Guide to Malware Types | 262 |
-| 15.9 The Malware Lifecycle and a Ransomware Deep Dive | 292 |
+| 15.9 The Malware Lifecycle and a Ransomware Deep Dive | 259 |
 |     Notable Ransomware Strains: LockBit 3.0 and Rorschach | 214 |
 |     Free Recovery: The No More Ransom Project | 141 |
 | 15.10 Software Reverse Engineering in Depth | 171 |
@@ -985,7 +985,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Shellcode, Buffer Overflows, and Network Attacks | 381 |
 |     Exercises | 169 |
 |     Answer Key | 243 |
-| 15.11 An End-to-End Analysis Walkthrough | 258 |
+| 15.11 An End-to-End Analysis Walkthrough | 195 |
 | 15.12 Extracting Indicators of Compromise | 196 |
 |     Exercises | 127 |
 |     Answer Key | 154 |
@@ -1101,7 +1101,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*13,810 markdown words (27.6 pages); 818 code words.*
+*13,704 markdown words (27.4 pages); 818 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1140,9 +1140,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Answer Key | 373 |
 | 16.13 The Teaching and Research Toolkit: Cost and License | 562 |
 | 16.14 A Two-Part Workshop: From CyberChef Challenges to a Case Briefing | 360 |
-|     Telling the Three Families Apart | 340 |
-|     Part 1: Five Challenges | 904 |
-|     Part 2: Crack the Case | 1,032 |
+|     Telling the Three Families Apart | 315 |
+|     Part 1: Five Challenges | 861 |
+|     Part 2: Crack the Case | 994 |
 |     Running the Workshop | 397 |
 |     News in Focus: The Workshop's Mistakes in Recent Incidents | 1,344 |
 | Chapter Summary | 164 |
@@ -1154,7 +1154,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*87,328 markdown words (174.7 pages); 8,027 code words.*
+*87,073 markdown words (174.1 pages); 8,027 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1172,10 +1172,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 17.3 Pattern Matching, Machine Learning, and Deep Learning in Security | 63 |
 |     Pattern Matching: Rules and Signatures | 123 |
 |     Machine Learning: Learning Patterns from Data | 235 |
-|     Deep Learning: Neural Networks at Scale | 312 |
+|     Deep Learning: Neural Networks at Scale | 249 |
 |     Symbolic, Pattern, and Semantic AI: Three Ways to Hold Knowledge | 947 |
-|     Adversarial Machine Learning | 433 |
-| 17.4 Privacy-Preserving and Collaborative Machine Learning | 382 |
+|     Adversarial Machine Learning | 410 |
+| 17.4 Privacy-Preserving and Collaborative Machine Learning | 333 |
 |     Case Study: A Privacy-Preserving ML Research Program (SigML, SplitML, Fairis) | 2,512 |
 |     Applied Privacy and Trust Systems | 858 |
 | 17.5 Anomaly Detection Across Domains | 271 |
@@ -1191,7 +1191,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Why Supply Chain Is a High-Value Target | 32 |
 |     Notable Supply Chain Attack Patterns | 157 |
 |     SBOM and Dependency Management | 55 |
-|     Case Study: The LiteLLM 1.107.0 Release (October 2026) | 872 |
+|     Case Study: The LiteLLM 1.107.0 Release (October 2026) | 836 |
 | 17.9 Cloud Security | 64 |
 |     The Shared Responsibility Model | 185 |
 |     Cloud-Native Threats | 34 |
@@ -1199,7 +1199,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Static and Dynamic Stability | 165 |
 |     Availability and Durability Risk | 205 |
 |     Cloud Compute Audit and Security | 181 |
-|     VPC and Cloud Network Isolation | 314 |
+|     VPC and Cloud Network Isolation | 272 |
 |     Cloud Compute Models: VMs, Containers, Serverless, and Edge | 348 |
 |     Cloud Service Scope, Resiliency, and Data Protection | 304 |
 |     Reliability Properties: Availability, Resiliency, Reliability, Scalability, Elasticity, Durability | 270 |
@@ -1220,7 +1220,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Lab: Crafting an Adversarial Example | 83 |
 |     Lattice Cryptography Meets Large Language Models: A Systems View | 406 |
 |     Lab: Recognizing Prompt Injection | 104 |
-|     Case Study: AI Agents Inside Bank Accounts (October 2026) | 729 |
+|     Case Study: AI Agents Inside Bank Accounts (October 2026) | 687 |
 | 17.13 Securing AI in Practice: Governance, Data, Identity, and Operations | 192 |
 |     AI Building Blocks That Shape the Attack Surface | 1,095 |
 |     Evaluating Models Under Class Imbalance: Beyond Accuracy | 985 |
@@ -1265,7 +1265,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
-*7,914 markdown words (15.8 pages); 387 code words.*
+*7,868 markdown words (15.7 pages); 387 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1290,7 +1290,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     The Seven Foundational Principles | 60 |
 |     Data Protection Impact Assessments | 179 |
 | 18.6 The Fourth Amendment and the Reasonable Expectation of Privacy | 54 |
-|     The Katz Reasonable-Expectation-of-Privacy Test | 243 |
+|     The Katz Reasonable-Expectation-of-Privacy Test | 197 |
 |     The Third-Party Doctrine and Its Erosion | 147 |
 |     Current Issue: Geofence Warrants and Chatrie v. United States | 375 |
 |     What the Chatrie Oral Argument Signaled, and How the Court Ruled | 661 |
@@ -1313,7 +1313,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*17,411 markdown words (34.8 pages); 482 code words.*
+*17,315 markdown words (34.6 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1346,7 +1346,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     FISMA in Depth | 275 |
 |     NIST SP 800-53 in Depth | 316 |
 |     FedRAMP in Depth | 411 |
-| 19.7 NIST Cybersecurity Framework 2.0 and the Govern Function | 298 |
+| 19.7 NIST Cybersecurity Framework 2.0 and the Govern Function | 273 |
 |     The NIST AI Risk Management Framework (AI RMF 1.0) | 249 |
 |     CSF 2.0 versus AI RMF 1.0 | 232 |
 | 19.8 Cybersecurity Governance at the Municipal Level | 135 |
@@ -1363,11 +1363,11 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Answer Key | 88 |
 | 19.13 Risk Appetite and Tolerance, Written So a Board Can Act on Them | 145 |
 |     Writing appetite in numbers | 256 |
-| 19.14 The Three Lines Model, and the Criticisms of It | 278 |
+| 19.14 The Three Lines Model, and the Criticisms of It | 245 |
 |     Where it breaks, and what its critics say | 186 |
 | 19.15 One Control at Four Levels, and the Metadata That Makes It Auditable | 258 |
 |     The verb decides everything, and the header block proves it | 179 |
-| 19.16 Exceptions and Risk Acceptance, Where Governance Usually Fails | 260 |
+| 19.16 Exceptions and Risk Acceptance, Where Governance Usually Fails | 222 |
 |     The arithmetic that decides whether the register survives | 187 |
 | 19.17 Metrics That Survive an Executive Audience | 62 |
 |     Why the mean misleads, worked | 192 |
@@ -1402,7 +1402,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 20: Industrial Control Systems and OT Security
 
-*14,953 markdown words (29.9 pages); 442 code words.*
+*14,750 markdown words (29.5 pages); 442 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1435,13 +1435,13 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     What the Purdue model assumes, and what breaks it | 231 |
 |     Where to start when you cannot re-architect | 77 |
 | 20.10 The Protocols, and Why the Old Ones Cannot Authenticate Anything | 65 |
-|     Modbus, byte by byte | 569 |
+|     Modbus, byte by byte | 506 |
 |     The rest of the family | 493 |
 |     Why the old designs cannot simply be fixed | 160 |
 |     Exercises | 138 |
 |     Answer Key | 210 |
 | 20.11 Safety Instrumented Systems, and Where Safety and Security Collide | 59 |
-|     The problem an independent layer solves | 367 |
+|     The problem an independent layer solves | 298 |
 |     The arithmetic, with real numbers | 491 |
 |     Five places the two disciplines actually collide | 375 |
 |     Exercises | 169 |
@@ -1450,7 +1450,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Which part answers which question | 179 |
 |     The seven foundational requirements | 118 |
 |     Three different security levels, and why people confuse them | 178 |
-|     The method: seven steps to a zone and conduit model | 382 |
+|     The method: seven steps to a zone and conduit model | 311 |
 |     A worked partition | 225 |
 | 20.13 NERC CIP: What Happens When OT Security Is Mandatory | 228 |
 |     The patch clock, worked | 200 |
