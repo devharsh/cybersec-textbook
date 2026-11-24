@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 460" width="1100" height="460" role="img" aria-labelledby="t d"><title id="t">Chain of custody: every hand-off recorded, from seizure to court</title><desc id="d">A responder seizes the laptop, bags it, hashes the image, and signs the custody form. Each transfer, to the courier, the lab analyst, and the evidence locker, and finally to court, is logged with who, when, and why, and the hash is re-verified. An unrecorded transfer is a break that lets the defense argue tampering.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}.s7{animation-delay:5.40s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f4e9c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f4e9c"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-user" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/></symbol>
+<symbol id="i-logbook" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="22" y="12" width="58" height="78" rx="3" fill="#8d6e63" stroke="#4e342e" stroke-width="1.4"/>
+<rect x="28" y="16" width="50" height="70" rx="2" fill="url(#g-paper)"/>
+<line x1="34" y1="26" x2="72" y2="26" stroke="#9aa6b3" stroke-width="2.2"/><line x1="34" y1="35" x2="72" y2="35" stroke="#9aa6b3" stroke-width="2.2"/><line x1="34" y1="44" x2="72" y2="44" stroke="#9aa6b3" stroke-width="2.2"/><line x1="34" y1="53" x2="72" y2="53" stroke="#9aa6b3" stroke-width="2.2"/><line x1="34" y1="62" x2="72" y2="62" stroke="#9aa6b3" stroke-width="2.2"/><line x1="34" y1="71" x2="72" y2="71" stroke="#9aa6b3" stroke-width="2.2"/><line x1="34" y1="80" x2="72" y2="80" stroke="#9aa6b3" stroke-width="2.2"/>
+<g fill="#6b7785" font-family="Courier, monospace" font-size="6"><text x="34" y="24">09:14</text><text x="34" y="33">09:15</text></g>
+</symbol>
+<symbol id="i-user2" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit2)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M33 30 C33 12 67 12 67 30 L68 46 C64 40 62 34 60 30 C52 32 44 31 38 26 C36 34 34 40 32 46 Z" fill="#1f1a17"/></symbol>
+<symbol id="i-user-laptop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/><path d="M58 78 L88 70 L92 88 L62 94 Z" fill="#2f353d"/><path d="M60.5 79.5 L86 73 L89 86 L63 92 Z" fill="url(#g-screen)"/></symbol>
+<symbol id="i-lock" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M32 44 V30 a18 18 0 0 1 36 0 V44" fill="none" stroke="#7d8796" stroke-width="7"/>
+<rect x="22" y="42" width="56" height="44" rx="6" fill="url(#g-gold)" stroke="#a5760e" stroke-width="1.4"/>
+<circle cx="50" cy="60" r="6" fill="#5d4006"/><rect x="47.5" y="62" width="5" height="12" rx="2" fill="#5d4006"/>
+</symbol>
+<symbol id="i-bank" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M12 34 L50 12 L88 34 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.2"/>
+<rect x="14" y="34" width="72" height="6" fill="#cfd5dc" stroke="#5b6570" stroke-width="1"/>
+<rect x="20" y="42" width="9" height="38" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width=".8"/><rect x="36" y="42" width="9" height="38" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width=".8"/><rect x="52" y="42" width="9" height="38" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width=".8"/><rect x="68" y="42" width="9" height="38" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width=".8"/><rect x="84" y="42" width="9" height="38" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width=".8"/>
+<rect x="10" y="80" width="80" height="8" fill="#b9c0c9" stroke="#5b6570" stroke-width="1"/>
+<circle cx="50" cy="25" r="4.5" fill="url(#g-gold)" stroke="#a5760e"/>
+</symbol>
+<symbol id="i-warning" viewBox="0 0 100 100">
+<path d="M50 10 L92 86 H8 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="3" stroke-linejoin="round"/>
+<rect x="46" y="36" width="8" height="28" rx="3" fill="#3e2a00"/><circle cx="50" cy="73" r="5" fill="#3e2a00"/>
+</symbol>
+</defs>
+<rect width="1100" height="460" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Chain of custody: every hand-off recorded, from seizure to court</text>
+<g class="st s1"><use href="#i-user" x="60.0" y="110.0" width="80" height="80"/><text x="100.0" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Responder</text><text x="100.0" y="222.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">seizes, bags, hashes</text></g>
+<g class="st s1"><circle cx="54" cy="100" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="54.0" y="104.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><path d="M150.0 150.0 L275.0 150.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s2"><use href="#i-logbook" x="197.0" y="93.0" width="30" height="30"/></g>
+<g class="st s2"><text x="212.0" y="182.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#1f4e9c" font-weight="bold" text-anchor="middle">signed, timed</text></g>
+<g class="st s2"><use href="#i-user2" x="285.0" y="110.0" width="80" height="80"/><text x="325.0" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Courier</text><text x="325.0" y="222.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">transports, sealed</text></g>
+<g class="st s2"><circle cx="279" cy="100" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="279.0" y="104.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><path d="M375.0 150.0 L500.0 150.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s3"><use href="#i-logbook" x="422.0" y="93.0" width="30" height="30"/></g>
+<g class="st s3"><text x="437.0" y="182.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#1f4e9c" font-weight="bold" text-anchor="middle">signed, timed</text></g>
+<g class="st s3"><use href="#i-user-laptop" x="510.0" y="110.0" width="80" height="80"/><text x="550.0" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Lab analyst</text><text x="550.0" y="222.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">works on a verified copy</text></g>
+<g class="st s3"><circle cx="504" cy="100" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="504.0" y="104.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><path d="M600.0 150.0 L725.0 150.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s4"><use href="#i-logbook" x="647.0" y="93.0" width="30" height="30"/></g>
+<g class="st s4"><text x="662.0" y="182.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#1f4e9c" font-weight="bold" text-anchor="middle">signed, timed</text></g>
+<g class="st s4"><use href="#i-lock" x="735.0" y="110.0" width="80" height="80"/><text x="775.0" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Evidence locker</text><text x="775.0" y="222.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">stored, access logged</text></g>
+<g class="st s4"><circle cx="729" cy="100" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="729.0" y="104.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><path d="M825.0 150.0 L950.0 150.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s5"><use href="#i-logbook" x="872.0" y="93.0" width="30" height="30"/></g>
+<g class="st s5"><text x="887.0" y="182.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#1f4e9c" font-weight="bold" text-anchor="middle">signed, timed</text></g>
+<g class="st s5"><use href="#i-bank" x="960.0" y="110.0" width="80" height="80"/><text x="1000.0" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Court</text><text x="1000.0" y="222.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">evidence admitted</text></g>
+<g class="st s5"><circle cx="954" cy="100" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="954.0" y="104.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><rect x="40.0" y="270.0" width="1020.0" height="80.0" rx="8" fill="#1f2933" fill-opacity="1" stroke="#1f2933" stroke-width="1"/></g>
+<g class="st s6"><circle cx="40" cy="270" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="40.0" y="274.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s6"><text x="60.0" y="296.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8fd16a" font-weight="bold" text-anchor="start">Custody form, item 1: laptop, serial ...  SHA-256 of image: 9c4e...a71f</text></g>
+<g class="st s6"><text x="60.0" y="320.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#e4e7eb" font-weight="normal" text-anchor="start">2026-03-02 09:14 seized by J. Doe  -&gt;  09:40 courier  -&gt;  11:05 lab  -&gt;  18:30 locker   (hash re-verified each time)</text></g>
+<g class="st s6"><text x="60.0" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#9aa5b1" font-weight="normal" text-anchor="start">illustrative entries</text></g>
+<g class="st s7"><use href="#i-warning" x="63.0" y="393.0" width="34" height="34"/></g>
+<g class="st s7"><circle cx="50" cy="392" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="50.0" y="396.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
+<g class="st s7"><text x="110.0" y="404.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">A break, such as an unrecorded transfer or a missing signature, lets the defense argue the evidence was</text></g>
+<g class="st s7"><text x="110.0" y="422.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">tampered with. Corporate cases that may reach court follow the same standard as law enforcement.</text></g>
+</svg>

@@ -23,9 +23,9 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 9: Exploitation and Post-Exploitation | 28,170 | 1,134 | 56.3 |
 | Chapter 10: Web Application Security | 10,574 | 516 | 21.1 |
 | Chapter 11: Network Defense and Hardening | 27,102 | 529 | 54.2 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 13,324 | 1,114 | 26.6 |
-| Chapter 13: Digital Forensics | 11,534 | 875 | 23.1 |
-| Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 13,559 | 1,114 | 27.1 |
+| Chapter 13: Digital Forensics | 11,754 | 875 | 23.5 |
+| Chapter 14: Incident Response | 11,939 | 828 | 23.9 |
 | Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
 | Chapter 17: Emerging Threats and Future Challenges | 86,813 | 8,027 | 173.6 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **467,891** | **24,597** | **936** |
+| **TOTAL** | **468,617** | **24,597** | **937** |
 
 ## Detailed Word Count by Section
 
@@ -724,7 +724,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*13,324 markdown words (26.6 pages); 1,114 code words.*
+*13,559 markdown words (27.1 pages); 1,114 code words.*
 
 | Section | Words |
 |---|---:|
@@ -734,27 +734,27 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Network-Based IDS and IPS | 141 |
 |     Host-Based IDS | 49 |
 |     Intrusion Detection Systems: What They Watch | 216 |
-|     Intrusion Prevention Systems: From Alert to Action | 242 |
+|     Intrusion Prevention Systems: From Alert to Action | 292 |
 | 12.2 Detection Methods | 159 |
 |     Signature-Based Detection | 133 |
 |     Anomaly-Based Detection | 173 |
 |     Stateful Protocol Analysis | 50 |
 |     Detection Methods: Signature, Heuristic, and Anomaly | 507 |
 | 12.3 SIEM and Log Aggregation | 123 |
-|     SIEM Architecture | 110 |
+|     SIEM Architecture | 167 |
 |     SIEM Challenges | 59 |
 |     SIEM, SOAR, XDR, and EDR: The Detection Stack | 269 |
 | 12.4 UEBA and Threat Hunting | 54 |
 |     User and Entity Behavior Analytics | 58 |
 |     Threat Hunting | 228 |
 |     Detection Engineering, Threat Hunting, and Deception | 350 |
-| 12.5 The Cyber Kill Chain and MITRE ATT&CK | 616 |
-| 12.6 Modern SOC Operations: EDR, XDR, SOAR, and Detection Engineering | 220 |
+| 12.5 The Cyber Kill Chain and MITRE ATT&CK | 650 |
+| 12.6 Modern SOC Operations: EDR, XDR, SOAR, and Detection Engineering | 268 |
 | 12.7 Writing Detection Rules: Snort, YARA, and Sigma | 341 |
 | 12.8 SIEM Correlation and Tuning | 190 |
 |     Exercises | 147 |
 |     Answer Key | 149 |
-| 12.9 Network Security Monitoring | 177 |
+| 12.9 Network Security Monitoring | 223 |
 | 12.10 Host Telemetry and EDR Internals | 164 |
 | 12.11 Threat Hunting | 178 |
 |     Exercises | 126 |
@@ -799,7 +799,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 13: Digital Forensics
 
-*11,534 markdown words (23.1 pages); 875 code words.*
+*11,754 markdown words (23.5 pages); 875 code words.*
 
 | Section | Words |
 |---|---:|
@@ -807,12 +807,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Key Terms | 291 |
 | 13.1 Forensic Principles | 53 |
 |     The Locard Exchange Principle | 69 |
-|     Forensic Soundness | 125 |
+|     Forensic Soundness | 173 |
 |     The Forensic Process, Order of Volatility, and Chain of Custody | 234 |
 | 13.2 Evidence Acquisition | 47 |
 |     Write Blockers | 64 |
 |     Forensic Imaging | 107 |
-|     Hash Verification | 62 |
+|     Hash Verification | 109 |
 | 13.3 File System Forensics | 62 |
 |     NTFS Artefacts | 174 |
 |     Deleted Files and Unallocated Space | 60 |
@@ -829,10 +829,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 13.8 IoT Forensics and Explainable AI | 244 |
 | 13.9 AI-Driven Cybercrime Analytics and Attribution | 374 |
 | 13.10 Legal Admissibility and Reporting | 285 |
-| 13.11 Cloud Forensics | 223 |
-| 13.12 Disk Imaging and File Carving in Practice | 344 |
+| 13.11 Cloud Forensics | 263 |
+| 13.12 Disk Imaging and File Carving in Practice | 387 |
 | 13.13 Memory Forensics with Volatility | 289 |
-| 13.14 Timeline Analysis | 183 |
+| 13.14 Timeline Analysis | 225 |
 | 13.15 Windows Forensic Artifacts | 237 |
 | 13.16 File System Internals for Investigators | 299 |
 | 13.17 Mobile Device Forensics | 201 |
@@ -871,7 +871,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 14: Incident Response
 
-*11,668 markdown words (23.3 pages); 828 code words.*
+*11,939 markdown words (23.9 pages); 828 code words.*
 
 | Section | Words |
 |---|---:|
@@ -891,13 +891,13 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Breach Notification Laws | 60 |
 |     Law Enforcement and Evidence Preservation | 68 |
 | 14.4 The Assume-Breach Mindset | 133 |
-| 14.5 Before, During, and After: An Operational IR Playbook | 375 |
-| 14.6 Case Study: The Locky Ransomware Incident | 280 |
-| 14.7 The CSIRT, Roles, and Communication | 152 |
+| 14.5 Before, During, and After: An Operational IR Playbook | 406 |
+| 14.6 Case Study: The Locky Ransomware Incident | 323 |
+| 14.7 The CSIRT, Roles, and Communication | 195 |
 | 14.8 Triage, Severity, Containment, and Recovery in Depth | 289 |
 | 14.9 Postmortem, Metrics, and Exercises | 199 |
 | 14.10 Playbooks, Ransomware Negotiation, and Executive Communication | 229 |
-| 14.11 A Ransomware Incident, Hour by Hour | 473 |
+| 14.11 A Ransomware Incident, Hour by Hour | 515 |
 | 14.12 Writing and Running Playbooks | 58 |
 | 14.13 Evidence Handling and Communication Templates | 225 |
 | 14.14 Tabletop Exercises and Purple Teaming | 119 |
@@ -914,7 +914,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 14.21 Building the Response Program | 199 |
 |     Exercises | 136 |
 |     Answer Key | 144 |
-| 14.22 Case Study: Business Email Compromise and Wire Fraud | 385 |
+| 14.22 Case Study: Business Email Compromise and Wire Fraud | 452 |
 | 14.23 Coordinating with Law Enforcement, Insurers, and Regulators | 210 |
 |     Exercises | 117 |
 |     Answer Key | 157 |
@@ -929,7 +929,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 14.28 Containment Decisions Under Uncertainty | 361 |
 |     Exercises | 89 |
 |     Answer Key | 146 |
-| 14.29 Incident Response at National Scale: Japan, October 2026 | 689 |
+| 14.29 Incident Response at National Scale: Japan, October 2026 | 734 |
 | Chapter Summary | 133 |
 | Why This Matters | 75 |
 | News in Focus: Attacker Dwell Time in Major Ransomware Incidents | 88 |
