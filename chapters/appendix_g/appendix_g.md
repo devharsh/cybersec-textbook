@@ -12,7 +12,7 @@ The table lists every part of the book with its prose word count, the words in i
 |---|---:|---:|---:|
 | Introduction | 2,047 | 0 | 4.1 |
 | Preface | 486 | 0 | 1.0 |
-| Chapter 1: Introduction to Cybersecurity | 19,672 | 679 | 39.3 |
+| Chapter 1: Introduction to Cybersecurity | 19,582 | 679 | 39.2 |
 | Chapter 2: Cryptography | 52,154 | 4,728 | 104.3 |
 | Chapter 3: Networking and Network Attacks | 18,031 | 374 | 36.1 |
 | Chapter 4: Social Engineering and the Human Element | 12,552 | 1,000 | 25.1 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **470,483** | **24,597** | **941** |
+| **TOTAL** | **470,393** | **24,597** | **941** |
 
 ## Detailed Word Count by Section
 
@@ -78,15 +78,15 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*19,672 markdown words (39.3 pages); 679 code words.*
+*19,582 markdown words (39.2 pages); 679 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 229 |
 | Key Terms | 547 |
 | 1.1 What Is Cybersecurity? | 636 |
-| 1.2 The CIA Triad and Its Extensions | 901 |
-|     The DIE Model: A Modern Complement to CIA | 285 |
+| 1.2 The CIA Triad and Its Extensions | 852 |
+|     The DIE Model: A Modern Complement to CIA | 266 |
 | 1.3 The Anatomy of an Attack | 695 |
 |     A Concept Map of the Core Terms | 130 |
 | 1.4 Threat Actors and the Adversary Model | 627 |
@@ -100,7 +100,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Trusted Execution Environments: Enclaves, Secure Worlds, and Confidential Virtual Machines | 978 |
 |     The Trusted Computing Base and the Reference Monitor | 170 |
 | 1.7 The NIST Cybersecurity Framework | 433 |
-| 1.8 Quantifying Risk in Monetary Terms | 603 |
+| 1.8 Quantifying Risk in Monetary Terms | 581 |
 | 1.9 The Saltzer and Schroeder Design Principles | 641 |
 |     The Principle of Least Privilege (PoLP) | 249 |
 | 1.10 The Security Mindset, Ethics, and the Law | 369 |
