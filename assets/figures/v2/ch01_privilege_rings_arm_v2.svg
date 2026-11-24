@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" width="1100" height="680" role="img" aria-labelledby="t d"><title id="t">Arm exception levels and the TrustZone worlds</title><desc id="d">Two half rings. The normal world on the left: EL0 applications, EL1 a rich operating system such as Linux, and EL2 the hypervisor. The secure world on the right: S-EL0 trusted applications, S-EL1 the trusted operating system or TEE, and on newer cores S-EL2, which isolates secure partitions. At the center, EL3 runs firmware and the secure monitor, always in the secure state, the most privileged level and the gatekeeper between the two worlds. The secure world can reach both worlds&#x27; memory; the normal world reaches only its own.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-desktop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="12" y="14" width="58" height="44" rx="3" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.2"/>
+<rect x="16" y="18" width="50" height="35" rx="1" fill="url(#g-screen)"/>
+<path d="M16 18 h50 v14 Q40 26 16 34 Z" fill="#fff" opacity=".18"/>
+<path d="M36 58 h10 l3 14 h-16 Z" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width="1"/>
+<rect x="26" y="72" width="30" height="4" rx="2" fill="#9aa3ae" stroke="#5b6570" stroke-width=".8"/>
+<rect x="72" y="30" width="18" height="60" rx="2" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<rect x="75" y="35" width="12" height="3" rx="1" fill="#5c6672"/><rect x="75" y="41" width="12" height="3" rx="1" fill="#5c6672"/>
+<circle cx="81" cy="80" r="2" fill="#4fc3f7"/>
+<path d="M20 82 h44 l4 8 h-52 Z" fill="#cfd5dc" stroke="#5b6570" stroke-width=".8"/>
+</symbol>
+<symbol id="i-lock" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M32 44 V30 a18 18 0 0 1 36 0 V44" fill="none" stroke="#7d8796" stroke-width="7"/>
+<rect x="22" y="42" width="56" height="44" rx="6" fill="url(#g-gold)" stroke="#a5760e" stroke-width="1.4"/>
+<circle cx="50" cy="60" r="6" fill="#5d4006"/><rect x="47.5" y="62" width="5" height="12" rx="2" fill="#5d4006"/>
+</symbol>
+<symbol id="i-gear" viewBox="0 0 100 100">
+<path d="M50 10 l7 2 2 10 8 4 9 -5 5 5 -5 9 4 8 10 2 2 7 -2 7 -10 2 -4 8 5 9 -5 5 -9 -5 -8 4 -2 10 -7 2 -7 -2 -2 -10 -8 -4 -9 5 -5 -5 5 -9 -4 -8 -10 -2 -2 -7 2 -7 10 -2 4 -8 -5 -9 5 -5 9 5 8 -4 2 -10 Z"
+ fill="url(#g-steel-top)" stroke="#3d4450" stroke-width="1.4"/>
+<circle cx="50" cy="50" r="14" fill="#eef1f4" stroke="#3d4450" stroke-width="1.4"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="i-server" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M28 16 L40 8 L72 8 L60 16 Z" fill="url(#g-steel-top)" stroke="#14181d" stroke-width="1"/>
+<path d="M60 16 L72 8 L72 82 L60 91 Z" fill="#1b1f25" stroke="#14181d" stroke-width="1"/>
+<rect x="28" y="16" width="32" height="75" rx="1.5" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<g fill="#59626f" stroke="#14181d" stroke-width=".6">
+<rect x="32" y="21" width="24" height="5" rx="1"/><rect x="32" y="28" width="24" height="5" rx="1"/>
+<rect x="32" y="35" width="24" height="5" rx="1"/><rect x="32" y="42" width="24" height="5" rx="1"/></g>
+<g fill="#8fd16a"><circle cx="53" cy="23.5" r="1"/><circle cx="53" cy="30.5" r="1"/><circle cx="53" cy="37.5" r="1"/></g>
+<g stroke="#3d4450" stroke-width="1"><line x1="32" y1="56" x2="56" y2="56"/><line x1="32" y1="60" x2="56" y2="60"/><line x1="32" y1="64" x2="56" y2="64"/></g>
+<circle cx="44" cy="80" r="3" fill="#2196f3" stroke="#0d47a1" stroke-width=".8"/>
+</symbol>
+<symbol id="i-nodes" viewBox="0 0 100 100">
+<g stroke="#5b9bd5" stroke-width="3"><line x1="50" y1="20" x2="20" y2="70"/><line x1="50" y1="20" x2="80" y2="70"/><line x1="20" y1="70" x2="80" y2="70"/><line x1="50" y1="20" x2="50" y2="52"/><line x1="20" y1="70" x2="50" y2="52"/><line x1="80" y1="70" x2="50" y2="52"/></g>
+<circle cx="50" cy="20" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/><circle cx="20" cy="70" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/><circle cx="80" cy="70" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/><circle cx="50" cy="52" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/></symbol>
+<symbol id="i-key" viewBox="0 0 100 100">
+<circle cx="32" cy="50" r="18" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+<circle cx="28" cy="50" r="6" fill="#fff8e1" stroke="#a5760e" stroke-width="1.5"/>
+<path d="M48 45 H90 V55 H84 V64 H76 V55 H70 V62 H62 V55 H48 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+</symbol>
+</defs>
+<rect width="1100" height="680" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Arm exception levels and the TrustZone worlds</text>
+<g class="st s1"><path d="M550 90 A250 250 0 0 0 550 590 Z" fill="#85b4ee" stroke="#ffffff" stroke-width="3"/></g>
+<g class="st s1"><path d="M550 90 A250 250 0 0 1 550 590 Z" fill="#f0a070" stroke="#ffffff" stroke-width="3"/></g>
+<g class="st s2"><path d="M550 150 A190 190 0 0 0 550 530 Z" fill="#5d9be6" stroke="#ffffff" stroke-width="3"/></g>
+<g class="st s2"><path d="M550 150 A190 190 0 0 1 550 530 Z" fill="#ea6a35" stroke="#ffffff" stroke-width="3"/></g>
+<g class="st s3"><path d="M550 210 A130 130 0 0 0 550 470 Z" fill="#2a78d6" stroke="#ffffff" stroke-width="3"/></g>
+<g class="st s3"><path d="M550 210 A130 130 0 0 1 550 470 Z" fill="#c0501f" stroke="#ffffff" stroke-width="3"/></g>
+<g class="st s1"><text x="510.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" font-weight="bold" text-anchor="middle">EL0</text></g>
+<g class="st s1"><text x="590.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" font-weight="bold" text-anchor="middle">S-EL0</text></g>
+<g class="st s1"><use href="#i-desktop" x="317.0" y="325.0" width="30" height="30"/></g>
+<g class="st s1"><use href="#i-lock" x="753.0" y="325.0" width="30" height="30"/></g>
+<g class="st s1"><text x="266.0" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="end">EL0: applications</text></g>
+<g class="st s1"><text x="820.0" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">S-EL0: trusted applications</text></g>
+<g class="st s1"><circle cx="284" cy="275" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="284.0" y="279.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><text x="510.0" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" font-weight="bold" text-anchor="middle">EL1</text></g>
+<g class="st s2"><text x="590.0" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" font-weight="bold" text-anchor="middle">S-EL1</text></g>
+<g class="st s2"><use href="#i-gear" x="377.0" y="325.0" width="30" height="30"/></g>
+<g class="st s2"><use href="#i-shield" x="693.0" y="325.0" width="30" height="30"/></g>
+<g class="st s2"><text x="266.0" y="380.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="end">EL1: rich OS, such as Linux</text></g>
+<g class="st s2"><text x="820.0" y="380.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">S-EL1: trusted OS, the TEE</text></g>
+<g class="st s2"><circle cx="284" cy="375" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="284.0" y="379.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><text x="510.0" y="240.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" font-weight="bold" text-anchor="middle">EL2</text></g>
+<g class="st s3"><text x="590.0" y="240.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" font-weight="bold" text-anchor="middle">S-EL2</text></g>
+<g class="st s3"><use href="#i-server" x="437.0" y="325.0" width="30" height="30"/></g>
+<g class="st s3"><use href="#i-nodes" x="633.0" y="325.0" width="30" height="30"/></g>
+<g class="st s3"><text x="266.0" y="480.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="end">EL2: hypervisor</text></g>
+<g class="st s3"><text x="820.0" y="480.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">S-EL2: isolates secure</text><text x="820.0" y="496.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">partitions (newer cores)</text></g>
+<g class="st s3"><circle cx="284" cy="475" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="284.0" y="479.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><circle cx="550" cy="340" r="70" fill="#8e3412" fill-opacity="1" stroke="#ffffff" stroke-width="3"/></g>
+<g class="st s4"><use href="#i-key" x="533.0" y="303.0" width="34" height="34"/></g>
+<g class="st s4"><text x="550.0" y="354.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#ffffff" font-weight="bold" text-anchor="middle">EL3</text></g>
+<g class="st s4"><text x="550.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#ffffff" font-weight="normal" text-anchor="middle">secure monitor</text></g>
+<g class="st s4"><circle cx="606" cy="284" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="606.0" y="288.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s1"><text x="425.0" y="60.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Normal world</text></g>
+<g class="st s1"><text x="675.0" y="60.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#c0501f" font-weight="bold" text-anchor="middle">Secure world</text></g>
+<g class="st s5"><text x="550.0" y="630.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">EL3, always in the secure state, is the most privileged level and the gatekeeper between the worlds.</text></g>
+<g class="st s5"><text x="550.0" y="654.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">The secure world can reach both worlds&#x27; memory; the normal world reaches only its own.</text></g>
+</svg>

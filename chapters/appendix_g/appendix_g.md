@@ -12,7 +12,7 @@ The table lists every part of the book with its prose word count, the words in i
 |---|---:|---:|---:|
 | Introduction | 2,047 | 0 | 4.1 |
 | Preface | 486 | 0 | 1.0 |
-| Chapter 1: Introduction to Cybersecurity | 19,563 | 679 | 39.1 |
+| Chapter 1: Introduction to Cybersecurity | 19,672 | 679 | 39.3 |
 | Chapter 2: Cryptography | 52,154 | 4,728 | 104.3 |
 | Chapter 3: Networking and Network Attacks | 18,031 | 374 | 36.1 |
 | Chapter 4: Social Engineering and the Human Element | 12,552 | 1,000 | 25.1 |
@@ -29,9 +29,9 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 15: Malware Analysis | 45,795 | 423 | 91.6 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,810 | 818 | 27.6 |
 | Chapter 17: Emerging Threats and Future Challenges | 87,328 | 8,027 | 174.7 |
-| Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
-| Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
-| Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
+| Chapter 18: Privacy, Law, and Information Governance | 7,914 | 387 | 15.8 |
+| Chapter 19: Security Governance, Policy, and Culture | 17,411 | 482 | 34.8 |
+| Chapter 20: Industrial Control Systems and OT Security | 14,953 | 442 | 29.9 |
 | Appendix A: Security Command Reference | 2,019 | 0 | 4.0 |
 | Appendix B: Glossary | 7,132 | 0 | 14.3 |
 | Appendix C: Certification Mapping | 3,723 | 0 | 7.4 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **469,596** | **24,597** | **939** |
+| **TOTAL** | **470,483** | **24,597** | **941** |
 
 ## Detailed Word Count by Section
 
@@ -78,7 +78,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*19,563 markdown words (39.1 pages); 679 code words.*
+*19,672 markdown words (39.3 pages); 679 code words.*
 
 | Section | Words |
 |---|---:|
@@ -91,7 +91,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     A Concept Map of the Core Terms | 130 |
 | 1.4 Threat Actors and the Adversary Model | 627 |
 | 1.5 Defense in Depth and Security Controls | 655 |
-| 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 1,133 |
+| 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 1,242 |
 |     What Runs at Each Level | 569 |
 |     Why Rings 1 and 2 Were Meant for Device Drivers | 936 |
 |     Beneath Ring 0: The Hypervisor, System Management Mode, and the Security Processor | 755 |
@@ -1265,7 +1265,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
-*7,723 markdown words (15.4 pages); 387 code words.*
+*7,914 markdown words (15.8 pages); 387 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1278,26 +1278,26 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Scope and Jurisdiction | 75 |
 |     Lawful Bases for Processing | 115 |
 |     Data Subject Rights | 135 |
-|     GDPR Breach Notification | 57 |
+|     GDPR Breach Notification | 108 |
 | 18.3 US Privacy Law | 50 |
 |     HIPAA | 104 |
 |     CCPA and the California Privacy Rights Act (CPRA) | 60 |
 |     FERPA and COPPA | 45 |
 | 18.4 PCI DSS | 51 |
 |     Scope and Requirements | 73 |
-|     Scoping and Cardholder Data Environment | 59 |
+|     Scoping and Cardholder Data Environment | 110 |
 | 18.5 Privacy by Design | 51 |
 |     The Seven Foundational Principles | 60 |
 |     Data Protection Impact Assessments | 179 |
 | 18.6 The Fourth Amendment and the Reasonable Expectation of Privacy | 54 |
-|     The Katz Reasonable-Expectation-of-Privacy Test | 198 |
+|     The Katz Reasonable-Expectation-of-Privacy Test | 243 |
 |     The Third-Party Doctrine and Its Erosion | 147 |
 |     Current Issue: Geofence Warrants and Chatrie v. United States | 375 |
 |     What the Chatrie Oral Argument Signaled, and How the Court Ruled | 661 |
 | 18.7 Entrapment versus Enticement in Investigations | 482 |
 | 18.8 Computer-Crime Law: CFAA, DMCA, and the Ethical Hacker | 232 |
 | 18.9 The Global Privacy Landscape and Breach Notification | 222 |
-| 18.10 Cryptography, Lawful Access, and Privacy-Enhancing Technologies | 330 |
+| 18.10 Cryptography, Lawful Access, and Privacy-Enhancing Technologies | 374 |
 | 18.11 Anonymity Networks and Privacy-Focused Operating Systems | 898 |
 |     Exercises | 124 |
 |     Answer Key | 187 |
@@ -1313,7 +1313,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*17,150 markdown words (34.3 pages); 482 code words.*
+*17,411 markdown words (34.8 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1330,10 +1330,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Standard | 47 |
 |     Process | 157 |
 |     Procedure | 54 |
-|     Guideline | 43 |
+|     Guideline | 87 |
 |     A Worked Example: When Claude Ends an Abusive Chat | 1,904 |
 | 19.4 Board-Level Security Reporting | 52 |
-|     Communicating Risk in Business Language | 68 |
+|     Communicating Risk in Business Language | 115 |
 |     Key Metrics for Board Reporting | 126 |
 |     Key Risk Indicators | 47 |
 | 19.5 Security Culture | 63 |
@@ -1346,7 +1346,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     FISMA in Depth | 275 |
 |     NIST SP 800-53 in Depth | 316 |
 |     FedRAMP in Depth | 411 |
-| 19.7 NIST Cybersecurity Framework 2.0 and the Govern Function | 268 |
+| 19.7 NIST Cybersecurity Framework 2.0 and the Govern Function | 298 |
 |     The NIST AI Risk Management Framework (AI RMF 1.0) | 249 |
 |     CSF 2.0 versus AI RMF 1.0 | 232 |
 | 19.8 Cybersecurity Governance at the Municipal Level | 135 |
@@ -1363,11 +1363,11 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Answer Key | 88 |
 | 19.13 Risk Appetite and Tolerance, Written So a Board Can Act on Them | 145 |
 |     Writing appetite in numbers | 256 |
-| 19.14 The Three Lines Model, and the Criticisms of It | 225 |
+| 19.14 The Three Lines Model, and the Criticisms of It | 278 |
 |     Where it breaks, and what its critics say | 186 |
 | 19.15 One Control at Four Levels, and the Metadata That Makes It Auditable | 258 |
 |     The verb decides everything, and the header block proves it | 179 |
-| 19.16 Exceptions and Risk Acceptance, Where Governance Usually Fails | 218 |
+| 19.16 Exceptions and Risk Acceptance, Where Governance Usually Fails | 260 |
 |     The arithmetic that decides whether the register survives | 187 |
 | 19.17 Metrics That Survive an Executive Audience | 62 |
 |     Why the mean misleads, worked | 192 |
@@ -1375,7 +1375,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Exercises | 94 |
 |     Answer Key | 117 |
 | 19.18 Committees, Decision Rights, and Who Actually Decides | 175 |
-|     Decision rights on one real decision | 204 |
+|     Decision rights on one real decision | 249 |
 | 19.19 Third-Party and Supply-Chain Governance | 236 |
 |     What the artifacts prove, and which clauses work | 212 |
 | 19.20 The CISO Reporting Line, and What the Evidence Actually Says | 135 |
@@ -1402,7 +1402,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 20: Industrial Control Systems and OT Security
 
-*14,627 markdown words (29.3 pages); 442 code words.*
+*14,953 markdown words (29.9 pages); 442 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1413,8 +1413,8 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 20.2 ICS Components | 58 |
 |     Programmable Logic Controllers | 72 |
 |     SCADA Systems | 53 |
-|     Human-Machine Interfaces | 60 |
-| 20.3 The Purdue Model and Network Segmentation | 328 |
+|     Human-Machine Interfaces | 106 |
+| 20.3 The Purdue Model and Network Segmentation | 381 |
 |     The Industrial DMZ | 57 |
 |     Air Gaps and Their Limitations | 66 |
 | 20.4 OT-Specific Security Challenges | 54 |
@@ -1422,7 +1422,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Availability Requirements | 51 |
 |     Protocol Insecurity | 65 |
 | 20.5 ICS Malware Case Studies | 52 |
-|     Stuxnet (2010) | 69 |
+|     Stuxnet (2010) | 108 |
 |     Industroyer/CRASHOVERRIDE (2016) | 93 |
 |     TRITON/TRISIS (2017) | 56 |
 | 20.6 IEC 62443 and NIST SP 800-82 | 47 |
@@ -1435,13 +1435,13 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     What the Purdue model assumes, and what breaks it | 231 |
 |     Where to start when you cannot re-architect | 77 |
 | 20.10 The Protocols, and Why the Old Ones Cannot Authenticate Anything | 65 |
-|     Modbus, byte by byte | 505 |
+|     Modbus, byte by byte | 569 |
 |     The rest of the family | 493 |
 |     Why the old designs cannot simply be fixed | 160 |
 |     Exercises | 138 |
 |     Answer Key | 210 |
 | 20.11 Safety Instrumented Systems, and Where Safety and Security Collide | 59 |
-|     The problem an independent layer solves | 321 |
+|     The problem an independent layer solves | 367 |
 |     The arithmetic, with real numbers | 491 |
 |     Five places the two disciplines actually collide | 375 |
 |     Exercises | 169 |
@@ -1450,7 +1450,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Which part answers which question | 179 |
 |     The seven foundational requirements | 118 |
 |     Three different security levels, and why people confuse them | 178 |
-|     The method: seven steps to a zone and conduit model | 344 |
+|     The method: seven steps to a zone and conduit model | 382 |
 |     A worked partition | 225 |
 | 20.13 NERC CIP: What Happens When OT Security Is Mandatory | 228 |
 |     The patch clock, worked | 200 |
@@ -1462,7 +1462,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Cyber Warfare, Cyber Operations, and the Law of Armed Conflict | 491 |
 | 20.15 Why Active Scanning Is Dangerous, and What Passive Monitoring Buys | 45 |
 |     The mechanism of harm | 363 |
-|     What passive monitoring sees, and what it misses | 237 |
+|     What passive monitoring sees, and what it misses | 277 |
 |     Where active discovery is still appropriate | 78 |
 | 20.16 Patching You Cannot Do, Access You Cannot Refuse, Response You Cannot Rush | 43 |
 |     Vulnerability management without patching | 371 |

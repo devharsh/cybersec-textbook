@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" aria-labelledby="t d"><title id="t">Decision rights on one real decision: who is Responsible, Accountable, Consulted, Informed</title><desc id="d">Three bodies: the board or its audit and risk committee oversees; the executive steering committee prioritizes, funds, and owns exceptions above the CISO&#x27;s authority; technical bodies such as a change advisory board apply the standards. For an internet-facing system that cannot be patched before a release freeze, the system owner is accountable, the platform team is responsible for compensating controls, security and legal are consulted, and the steering committee is informed through the exception register.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}.s7{animation-delay:5.40s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-bank" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M12 34 L50 12 L88 34 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.2"/>
+<rect x="14" y="34" width="72" height="6" fill="#cfd5dc" stroke="#5b6570" stroke-width="1"/>
+<rect x="20" y="42" width="9" height="38" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width=".8"/><rect x="36" y="42" width="9" height="38" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width=".8"/><rect x="52" y="42" width="9" height="38" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width=".8"/><rect x="68" y="42" width="9" height="38" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width=".8"/><rect x="84" y="42" width="9" height="38" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width=".8"/>
+<rect x="10" y="80" width="80" height="8" fill="#b9c0c9" stroke="#5b6570" stroke-width="1"/>
+<circle cx="50" cy="25" r="4.5" fill="url(#g-gold)" stroke="#a5760e"/>
+</symbol>
+<symbol id="i-group" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<g transform="translate(-18,4) scale(.8)">
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit2)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M33 30 C33 12 67 12 67 30 L68 46 C64 40 62 34 60 30 C52 32 44 31 38 26 C36 34 34 40 32 46 Z" fill="#1f1a17"/></g>
+<g transform="translate(38,4) scale(.8)">
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/></g>
+<g transform="translate(10,14) scale(.86)">
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit3)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/></g>
+</symbol>
+<symbol id="i-gear" viewBox="0 0 100 100">
+<path d="M50 10 l7 2 2 10 8 4 9 -5 5 5 -5 9 4 8 10 2 2 7 -2 7 -10 2 -4 8 5 9 -5 5 -9 -5 -8 4 -2 10 -7 2 -7 -2 -2 -10 -8 -4 -9 5 -5 -5 5 -9 -4 -8 -10 -2 -2 -7 2 -7 10 -2 4 -8 -5 -9 5 -5 9 5 8 -4 2 -10 Z"
+ fill="url(#g-steel-top)" stroke="#3d4450" stroke-width="1.4"/>
+<circle cx="50" cy="50" r="14" fill="#eef1f4" stroke="#3d4450" stroke-width="1.4"/>
+</symbol>
+<symbol id="i-server" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M28 16 L40 8 L72 8 L60 16 Z" fill="url(#g-steel-top)" stroke="#14181d" stroke-width="1"/>
+<path d="M60 16 L72 8 L72 82 L60 91 Z" fill="#1b1f25" stroke="#14181d" stroke-width="1"/>
+<rect x="28" y="16" width="32" height="75" rx="1.5" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<g fill="#59626f" stroke="#14181d" stroke-width=".6">
+<rect x="32" y="21" width="24" height="5" rx="1"/><rect x="32" y="28" width="24" height="5" rx="1"/>
+<rect x="32" y="35" width="24" height="5" rx="1"/><rect x="32" y="42" width="24" height="5" rx="1"/></g>
+<g fill="#8fd16a"><circle cx="53" cy="23.5" r="1"/><circle cx="53" cy="30.5" r="1"/><circle cx="53" cy="37.5" r="1"/></g>
+<g stroke="#3d4450" stroke-width="1"><line x1="32" y1="56" x2="56" y2="56"/><line x1="32" y1="60" x2="56" y2="60"/><line x1="32" y1="64" x2="56" y2="64"/></g>
+<circle cx="44" cy="80" r="3" fill="#2196f3" stroke="#0d47a1" stroke-width=".8"/>
+</symbol>
+<symbol id="i-warning" viewBox="0 0 100 100">
+<path d="M50 10 L92 86 H8 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="3" stroke-linejoin="round"/>
+<rect x="46" y="36" width="8" height="28" rx="3" fill="#3e2a00"/><circle cx="50" cy="73" r="5" fill="#3e2a00"/>
+</symbol>
+<symbol id="i-user2" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit2)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M33 30 C33 12 67 12 67 30 L68 46 C64 40 62 34 60 30 C52 32 44 31 38 26 C36 34 34 40 32 46 Z" fill="#1f1a17"/></symbol>
+<symbol id="i-user-laptop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/><path d="M58 78 L88 70 L92 88 L62 94 Z" fill="#2f353d"/><path d="M60.5 79.5 L86 73 L89 86 L63 92 Z" fill="url(#g-screen)"/></symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="i-logbook" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="22" y="12" width="58" height="78" rx="3" fill="#8d6e63" stroke="#4e342e" stroke-width="1.4"/>
+<rect x="28" y="16" width="50" height="70" rx="2" fill="url(#g-paper)"/>
+<line x1="34" y1="26" x2="72" y2="26" stroke="#9aa6b3" stroke-width="2.2"/><line x1="34" y1="35" x2="72" y2="35" stroke="#9aa6b3" stroke-width="2.2"/><line x1="34" y1="44" x2="72" y2="44" stroke="#9aa6b3" stroke-width="2.2"/><line x1="34" y1="53" x2="72" y2="53" stroke="#9aa6b3" stroke-width="2.2"/><line x1="34" y1="62" x2="72" y2="62" stroke="#9aa6b3" stroke-width="2.2"/><line x1="34" y1="71" x2="72" y2="71" stroke="#9aa6b3" stroke-width="2.2"/><line x1="34" y1="80" x2="72" y2="80" stroke="#9aa6b3" stroke-width="2.2"/>
+<g fill="#6b7785" font-family="Courier, monospace" font-size="6"><text x="34" y="24">09:14</text><text x="34" y="33">09:15</text></g>
+</symbol>
+<symbol id="i-clock" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<circle cx="50" cy="50" r="38" fill="url(#g-paper)" stroke="#2f6fae" stroke-width="5"/>
+<line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(0 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(30 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(60 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(90 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(120 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(150 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(180 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(210 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(240 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(270 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(300 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(330 50 50)"/>
+<line x1="50" y1="50" x2="50" y2="27" stroke="#1f2933" stroke-width="4" stroke-linecap="round"/>
+<line x1="50" y1="50" x2="68" y2="58" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/>
+<circle cx="50" cy="50" r="3.5" fill="#1f2933"/>
+</symbol>
+</defs>
+<rect width="1100" height="520" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Decision rights on one real decision: who is Responsible, Accountable, Consulted, Informed</text>
+<g class="st s1"><rect x="30.0" y="70.0" width="380.0" height="92.0" rx="8" fill="#f4f6f8" fill-opacity="1" stroke="#5b6570" stroke-width="1.6"/></g>
+<g class="st s1"><use href="#i-bank" x="51.0" y="93.0" width="46" height="46"/></g>
+<g class="st s1"><text x="110.0" y="108.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">Board, audit and risk committee</text></g>
+<g class="st s1"><text x="110.0" y="128.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">oversees</text></g>
+<g class="st s1"><rect x="30.0" y="180.0" width="380.0" height="92.0" rx="8" fill="#f4f6f8" fill-opacity="1" stroke="#5b6570" stroke-width="1.6"/></g>
+<g class="st s1"><use href="#i-group" x="51.0" y="203.0" width="46" height="46"/></g>
+<g class="st s1"><text x="110.0" y="218.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">Executive steering committee</text></g>
+<g class="st s1"><text x="110.0" y="238.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">prioritizes, funds, owns</text><text x="110.0" y="253.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">exceptions above the CISO</text></g>
+<g class="st s1"><rect x="30.0" y="290.0" width="380.0" height="92.0" rx="8" fill="#f4f6f8" fill-opacity="1" stroke="#5b6570" stroke-width="1.6"/></g>
+<g class="st s1"><use href="#i-gear" x="51.0" y="313.0" width="46" height="46"/></g>
+<g class="st s1"><text x="110.0" y="328.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">Technical bodies, e.g. CAB</text></g>
+<g class="st s1"><text x="110.0" y="348.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">apply the standards</text></g>
+<g class="st s1"><circle cx="30" cy="70" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="30.0" y="74.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><use href="#i-server" x="565.0" y="85.0" width="70" height="70"/><text x="600.0" y="170.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Internet-facing system</text><text x="600.0" y="187.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">cannot be patched before a freeze</text></g>
+<g class="st s2"><use href="#i-warning" x="622.0" y="78.0" width="24" height="24"/></g>
+<g class="st s2"><circle cx="550" cy="70" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="550.0" y="74.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><circle cx="470" cy="252" r="20" fill="#c0392b" fill-opacity="1" stroke="#c0392b" stroke-width="1"/></g>
+<g class="st s3"><text x="470.0" y="259.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle">A</text></g>
+<g class="st s3"><use href="#i-user2" x="502.0" y="234.0" width="36" height="36"/></g>
+<g class="st s3"><text x="550.0" y="246.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="start">Accountable</text></g>
+<g class="st s3"><text x="550.0" y="266.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">system owner (one name)</text></g>
+<g class="st s3"><circle cx="440" cy="230" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="440.0" y="234.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><circle cx="470" cy="318" r="20" fill="#1f4e9c" fill-opacity="1" stroke="#1f4e9c" stroke-width="1"/></g>
+<g class="st s4"><text x="470.0" y="325.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle">R</text></g>
+<g class="st s4"><use href="#i-user-laptop" x="502.0" y="300.0" width="36" height="36"/></g>
+<g class="st s4"><text x="550.0" y="312.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="start">Responsible</text></g>
+<g class="st s4"><text x="550.0" y="332.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">platform team: compensating controls</text></g>
+<g class="st s4"><circle cx="440" cy="296" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="440.0" y="300.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><circle cx="470" cy="384" r="20" fill="#d9822b" fill-opacity="1" stroke="#d9822b" stroke-width="1"/></g>
+<g class="st s5"><text x="470.0" y="391.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle">C</text></g>
+<g class="st s5"><use href="#i-shield" x="502.0" y="366.0" width="36" height="36"/></g>
+<g class="st s5"><text x="550.0" y="378.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="start">Consulted</text></g>
+<g class="st s5"><text x="550.0" y="398.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">security (rates residual risk), legal</text></g>
+<g class="st s5"><circle cx="440" cy="362" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="440.0" y="366.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><circle cx="470" cy="450" r="20" fill="#2e7d32" fill-opacity="1" stroke="#2e7d32" stroke-width="1"/></g>
+<g class="st s6"><text x="470.0" y="457.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle">I</text></g>
+<g class="st s6"><use href="#i-logbook" x="502.0" y="432.0" width="36" height="36"/></g>
+<g class="st s6"><text x="550.0" y="444.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2e7d32" font-weight="bold" text-anchor="start">Informed</text></g>
+<g class="st s6"><text x="550.0" y="464.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">steering committee via the exception register</text></g>
+<g class="st s6"><circle cx="440" cy="428" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="440.0" y="432.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s7"><rect x="30.0" y="400.0" width="380.0" height="100.0" rx="8" fill="#fff8e1" fill-opacity="1" stroke="#d9a400" stroke-width="1.6"/></g>
+<g class="st s7"><use href="#i-clock" x="52.0" y="432.0" width="36" height="36"/></g>
+<g class="st s7"><circle cx="30" cy="400" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="30.0" y="404.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
+<g class="st s7"><text x="100.0" y="436.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">The test: ask three people to name</text></g>
+<g class="st s7"><text x="100.0" y="456.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">the accountable person. More than a</text></g>
+<g class="st s7"><text x="100.0" y="476.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">minute, or more than one name: decorative.</text></g>
+</svg>
