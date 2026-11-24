@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" aria-labelledby="t d"><title id="t">Supply-chain risk: one trusted update can reach thousands of customers</title><desc id="d">A vendor&#x27;s developers and open-source dependencies feed a build pipeline that produces a signed update. If an attacker compromises the build system, as in SolarWinds, the malicious code is signed and shipped to thousands of customers who trust the vendor. Controls: assess vendors with SOC 2 or ISO/IEC 27001 evidence, put security and audit rights in contracts, keep a software bill of materials, verify the integrity and provenance of updates, secure the build pipeline, and monitor vendors over time.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f2933" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f2933"/></marker><marker id="a-c0392b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-user-laptop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/><path d="M58 78 L88 70 L92 88 L62 94 Z" fill="#2f353d"/><path d="M60.5 79.5 L86 73 L89 86 L63 92 Z" fill="url(#g-screen)"/></symbol>
+<symbol id="i-nodes" viewBox="0 0 100 100">
+<g stroke="#5b9bd5" stroke-width="3"><line x1="50" y1="20" x2="20" y2="70"/><line x1="50" y1="20" x2="80" y2="70"/><line x1="20" y1="70" x2="80" y2="70"/><line x1="50" y1="20" x2="50" y2="52"/><line x1="20" y1="70" x2="50" y2="52"/><line x1="80" y1="70" x2="50" y2="52"/></g>
+<circle cx="50" cy="20" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/><circle cx="20" cy="70" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/><circle cx="80" cy="70" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/><circle cx="50" cy="52" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/></symbol>
+<symbol id="i-code" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="10" y="16" width="80" height="66" rx="4" fill="#1e2530" stroke="#0d1014" stroke-width="1.4"/>
+<rect x="10" y="16" width="80" height="11" rx="4" fill="#3b424d"/><circle cx="18" cy="21.5" r="2.2" fill="#ff5f56"/><circle cx="25" cy="21.5" r="2.2" fill="#ffbd2e"/><circle cx="32" cy="21.5" r="2.2" fill="#27c93f"/>
+<path d="M30 42 L20 52 L30 62 M70 42 L80 52 L70 62" fill="none" stroke="#4fc3f7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="56" y1="38" x2="44" y2="66" stroke="#8fd16a" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="i-gear" viewBox="0 0 100 100">
+<path d="M50 10 l7 2 2 10 8 4 9 -5 5 5 -5 9 4 8 10 2 2 7 -2 7 -10 2 -4 8 5 9 -5 5 -9 -5 -8 4 -2 10 -7 2 -7 -2 -2 -10 -8 -4 -9 5 -5 -5 5 -9 -4 -8 -10 -2 -2 -7 2 -7 10 -2 4 -8 -5 -9 5 -5 9 5 8 -4 2 -10 Z"
+ fill="url(#g-steel-top)" stroke="#3d4450" stroke-width="1.4"/>
+<circle cx="50" cy="50" r="14" fill="#eef1f4" stroke="#3d4450" stroke-width="1.4"/>
+</symbol>
+<symbol id="i-certificate" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="12" y="16" width="76" height="56" rx="3" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.2"/>
+<rect x="17" y="21" width="66" height="46" rx="2" fill="none" stroke="#c9a227" stroke-width="1.4"/>
+<g stroke="#9aa6b3" stroke-width="2.2" stroke-linecap="round"><line x1="24" y1="32" x2="62" y2="32"/><line x1="24" y1="41" x2="56" y2="41"/><line x1="24" y1="50" x2="50" y2="50"/></g>
+<path d="M66 60 l-5 26 7 -5 7 5 -5 -26" fill="#c62828"/>
+<circle cx="70" cy="56" r="10" fill="url(#g-gold)" stroke="#a5760e" stroke-width="1.2"/>
+</symbol>
+<symbol id="i-attacker" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M16 94 C16 64 30 54 50 54 C70 54 84 64 84 94 Z" fill="url(#g-hood)" stroke="#000" stroke-width="1"/>
+<path d="M28 52 C26 22 40 10 50 10 C60 10 74 22 72 52 C66 60 34 60 28 52 Z" fill="url(#g-hood)" stroke="#000" stroke-width="1"/>
+<ellipse cx="50" cy="40" rx="15" ry="16" fill="#0a0c0f"/>
+<path d="M40 38 l7 2.5 -7 2 Z M60 38 l-7 2.5 7 2 Z" fill="#ff3b30"/>
+<path d="M30 74 L70 74 L74 92 L26 92 Z" fill="#3a414b" stroke="#000" stroke-width=".8"/>
+<rect x="33" y="77" width="34" height="12" fill="#b71c1c" opacity=".85"/>
+<path d="M46 80 a4 4 0 0 1 8 0 v1 h-8 Z M45 81 h10 v6 h-10 Z" fill="#ffcdd2"/>
+</symbol>
+<symbol id="i-bug" viewBox="0 0 100 100">
+<ellipse cx="50" cy="56" rx="20" ry="26" fill="url(#g-red)" stroke="#7f0000" stroke-width="1.6"/>
+<circle cx="50" cy="28" r="11" fill="#3e0000"/><line x1="50" y1="32" x2="50" y2="82" stroke="#7f0000" stroke-width="2"/>
+<g stroke="#3e0000" stroke-width="3" stroke-linecap="round"><path d="M31 46 l-14 -8 M31 58 h-16 M32 70 l-14 8 M69 46 l14 -8 M69 58 h16 M68 70 l14 8 M44 20 l-6 -10 M56 20 l6 -10"/></g>
+<circle cx="43" cy="50" r="4" fill="#3e0000"/><circle cx="57" cy="64" r="4" fill="#3e0000"/>
+</symbol>
+<symbol id="i-desktop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="12" y="14" width="58" height="44" rx="3" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.2"/>
+<rect x="16" y="18" width="50" height="35" rx="1" fill="url(#g-screen)"/>
+<path d="M16 18 h50 v14 Q40 26 16 34 Z" fill="#fff" opacity=".18"/>
+<path d="M36 58 h10 l3 14 h-16 Z" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width="1"/>
+<rect x="26" y="72" width="30" height="4" rx="2" fill="#9aa3ae" stroke="#5b6570" stroke-width=".8"/>
+<rect x="72" y="30" width="18" height="60" rx="2" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<rect x="75" y="35" width="12" height="3" rx="1" fill="#5c6672"/><rect x="75" y="41" width="12" height="3" rx="1" fill="#5c6672"/>
+<circle cx="81" cy="80" r="2" fill="#4fc3f7"/>
+<path d="M20 82 h44 l4 8 h-52 Z" fill="#cfd5dc" stroke="#5b6570" stroke-width=".8"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+</defs>
+<rect width="1100" height="520" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Supply-chain risk: one trusted update can reach thousands of customers</text>
+<g class="st s1"><use href="#i-user-laptop" x="40.0" y="100.0" width="80" height="80"/><text x="80.0" y="195.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Developers</text></g>
+<g class="st s1"><use href="#i-nodes" x="40.0" y="250.0" width="80" height="80"/><text x="80.0" y="345.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Open-source</text><text x="80.0" y="362.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">dependencies</text></g>
+<g class="st s1"><rect x="170" y="70" width="400" height="290" rx="14" fill="#eef5fc" stroke="#1f4e9c" stroke-width="2"/><text x="184.0" y="92.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f4e9c" font-weight="bold" text-anchor="start">Vendor</text></g>
+<g class="st s1"><use href="#i-code" x="215.0" y="175.0" width="70" height="70"/><text x="250.0" y="260.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Source</text></g>
+<g class="st s2"><use href="#i-gear" x="350.0" y="170.0" width="80" height="80"/></g>
+<g class="st s2"><text x="390.0" y="160.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Build server</text></g>
+<g class="st s2"><use href="#i-certificate" x="475.0" y="175.0" width="70" height="70"/><text x="510.0" y="260.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Signed update</text></g>
+<g class="st s1"><path d="M120.0 150.0 L214.0 200.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s1"><path d="M120.0 280.0 L214.0 222.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s2"><path d="M288.0 210.0 L346.0 210.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s2"><path d="M432.0 210.0 L472.0 210.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s3"><use href="#i-attacker" x="355.0" y="285.0" width="70" height="70"/></g>
+<g class="st s3"><path d="M390.0 284.0 L390.0 254.0" fill="none" stroke="#c0392b" stroke-width="3" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s3"><text x="428.0" y="306.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">implants code</text></g>
+<g class="st s3"><use href="#i-bug" x="404.0" y="164.0" width="32" height="32"/></g>
+<g class="st s4"><use href="#i-desktop" x="672.0" y="82.0" width="56" height="56"/></g>
+<g class="st s4"><use href="#i-bug" x="709.0" y="79.0" width="22" height="22"/></g>
+<g class="st s4"><use href="#i-desktop" x="792.0" y="82.0" width="56" height="56"/></g>
+<g class="st s4"><use href="#i-bug" x="829.0" y="79.0" width="22" height="22"/></g>
+<g class="st s4"><use href="#i-desktop" x="912.0" y="82.0" width="56" height="56"/></g>
+<g class="st s4"><use href="#i-bug" x="949.0" y="79.0" width="22" height="22"/></g>
+<g class="st s4"><use href="#i-desktop" x="672.0" y="172.0" width="56" height="56"/></g>
+<g class="st s4"><use href="#i-bug" x="709.0" y="169.0" width="22" height="22"/></g>
+<g class="st s4"><use href="#i-desktop" x="792.0" y="172.0" width="56" height="56"/></g>
+<g class="st s4"><use href="#i-bug" x="829.0" y="169.0" width="22" height="22"/></g>
+<g class="st s4"><use href="#i-desktop" x="912.0" y="172.0" width="56" height="56"/></g>
+<g class="st s4"><use href="#i-bug" x="949.0" y="169.0" width="22" height="22"/></g>
+<g class="st s4"><use href="#i-desktop" x="672.0" y="262.0" width="56" height="56"/></g>
+<g class="st s4"><use href="#i-bug" x="709.0" y="259.0" width="22" height="22"/></g>
+<g class="st s4"><use href="#i-desktop" x="792.0" y="262.0" width="56" height="56"/></g>
+<g class="st s4"><use href="#i-bug" x="829.0" y="259.0" width="22" height="22"/></g>
+<g class="st s4"><use href="#i-desktop" x="912.0" y="262.0" width="56" height="56"/></g>
+<g class="st s4"><use href="#i-bug" x="949.0" y="259.0" width="22" height="22"/></g>
+<g class="st s4"><path d="M548.0 210.0 L640.0 120.0" fill="none" stroke="#c0392b" stroke-width="2.4" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s4"><path d="M548.0 210.0 L640.0 200.0" fill="none" stroke="#c0392b" stroke-width="2.4" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s4"><path d="M548.0 210.0 L640.0 290.0" fill="none" stroke="#c0392b" stroke-width="2.4" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s4"><text x="820.0" y="370.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">thousands of trusting customers</text></g>
+<g class="st s1"><circle cx="552" cy="80" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="552.0" y="84.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="456" cy="236" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="456.0" y="240.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><circle cx="340" cy="340" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="340.0" y="344.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><circle cx="640" cy="80" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="640.0" y="84.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><rect x="30.0" y="400.0" width="1040.0" height="100.0" rx="8" fill="#e8f5e9" fill-opacity="1" stroke="#2e7d32" stroke-width="1.6"/></g>
+<g class="st s5"><use href="#i-shield" x="44.0" y="428.0" width="44" height="44"/></g>
+<g class="st s5"><circle cx="30" cy="400" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="30.0" y="404.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s5"><text x="100.0" y="436.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">vendor assessment: SOC 2, ISO/IEC 27001</text></g>
+<g class="st s5"><text x="430.0" y="436.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">contract: security terms, right to audit</text></g>
+<g class="st s5"><text x="760.0" y="436.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">SBOM: know every component</text></g>
+<g class="st s5"><text x="100.0" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">verify update integrity and provenance</text></g>
+<g class="st s5"><text x="430.0" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">harden and monitor the build pipeline</text></g>
+<g class="st s5"><text x="760.0" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">monitor vendors over time</text></g>
+</svg>

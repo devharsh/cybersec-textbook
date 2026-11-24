@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" width="1100" height="600" role="img" aria-labelledby="t d"><title id="t">The social-engineering toolkit: at a distance and in person</title><desc id="d">Phishing family: phishing casts a wide net by email; spear phishing targets a researched person; whaling targets executives, often as CEO fraud; vishing uses the phone; smishing uses text messages; pharming redirects a correct web address to a fake site by tampering with DNS. Other distance techniques: pretexting, baiting with infected USB drives, quid pro quo, and reverse social engineering. In person: tailgating, piggybacking, dumpster diving, and shoulder surfing.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-envelope" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="12" y="26" width="76" height="52" rx="3" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.4"/>
+<path d="M12 28 L50 56 L88 28" fill="none" stroke="#6b7785" stroke-width="1.6"/>
+</symbol>
+<symbol id="i-fishhook" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M54 10 v52 a16 16 0 0 1 -32 0 v-8" fill="none" stroke="#6b7785" stroke-width="5" stroke-linecap="round"/>
+<path d="M22 50 l-6 10 l10 -2" fill="#6b7785"/><circle cx="54" cy="10" r="5" fill="none" stroke="#6b7785" stroke-width="3"/>
+<rect x="56" y="34" width="34" height="24" rx="2" fill="#fff" stroke="#c0392b" stroke-width="1.6"/><path d="M56 34 l17 13 l17 -13" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+</symbol>
+<symbol id="i-user2" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit2)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M33 30 C33 12 67 12 67 30 L68 46 C64 40 62 34 60 30 C52 32 44 31 38 26 C36 34 34 40 32 46 Z" fill="#1f1a17"/></symbol>
+<symbol id="i-headset" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M22 56 v-10 a28 28 0 0 1 56 0 v10" fill="none" stroke="#3b424d" stroke-width="5"/>
+<rect x="14" y="50" width="16" height="26" rx="6" fill="#3b424d"/><rect x="70" y="50" width="16" height="26" rx="6" fill="#3b424d"/>
+<path d="M78 74 q0 14 -20 16" fill="none" stroke="#3b424d" stroke-width="3"/><rect x="48" y="86" width="12" height="8" rx="3" fill="#1f4e9c"/>
+<circle cx="50" cy="56" r="14" fill="url(#g-skin)"/><path d="M36 92 c0 -16 28 -16 28 0 Z" fill="#2e4a6b"/>
+</symbol>
+<symbol id="i-phone" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="32" y="10" width="36" height="80" rx="7" fill="#22272e" stroke="#0d1014" stroke-width="1.2"/>
+<rect x="35.5" y="18" width="29" height="62" rx="2" fill="url(#g-screen)"/>
+<path d="M35.5 18 h29 v18 Q50 30 35.5 40 Z" fill="#fff" opacity=".18"/>
+<rect x="44" y="13" width="12" height="2" rx="1" fill="#555d68"/>
+<circle cx="50" cy="85" r="2.2" fill="#3a414b"/>
+</symbol>
+<symbol id="i-browser" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="8" y="16" width="84" height="66" rx="5" fill="#ffffff" stroke="#4a5562" stroke-width="1.6"/>
+<path d="M8 21 a5 5 0 0 1 5 -5 h74 a5 5 0 0 1 5 5 v9 h-84 Z" fill="#d7dce2"/>
+<circle cx="16" cy="23" r="2.4" fill="#e74c3c"/><circle cx="24" cy="23" r="2.4" fill="#f5b041"/><circle cx="32" cy="23" r="2.4" fill="#8fd16a"/>
+<rect x="40" y="19.5" width="46" height="7" rx="3.5" fill="#ffffff" stroke="#9aa3ae" stroke-width=".8"/>
+<rect x="16" y="38" width="40" height="7" rx="2" fill="#1f4e9c"/>
+<g stroke="#b8c0ca" stroke-width="3.4" stroke-linecap="round"><line x1="16" y1="54" x2="84" y2="54"/><line x1="16" y1="63" x2="76" y2="63"/><line x1="16" y1="72" x2="64" y2="72"/></g>
+</symbol>
+<symbol id="i-idcard" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="10" y="22" width="80" height="54" rx="5" fill="url(#g-paper)" stroke="#4a6fa5" stroke-width="1.6"/>
+<rect x="10" y="22" width="80" height="12" rx="5" fill="#4a6fa5"/><rect x="10" y="29" width="80" height="5" fill="#4a6fa5"/>
+<rect x="17" y="40" width="24" height="28" rx="2" fill="#dbe7f5"/>
+<circle cx="29" cy="50" r="6" fill="url(#g-skin)"/><path d="M19 68 C19 58 39 58 39 68 Z" fill="#4b5563"/>
+<g stroke="#9aa6b3" stroke-width="3" stroke-linecap="round"><line x1="48" y1="46" x2="82" y2="46"/><line x1="48" y1="55" x2="76" y2="55"/><line x1="48" y1="64" x2="70" y2="64"/></g>
+</symbol>
+<symbol id="i-usb" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<g transform="rotate(-35 50 50)">
+<rect x="38" y="10" width="24" height="18" rx="2" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.2"/>
+<rect x="43" y="15" width="5" height="5" fill="#3b424d"/><rect x="52" y="15" width="5" height="5" fill="#3b424d"/>
+<rect x="32" y="28" width="36" height="58" rx="6" fill="#1f4e9c" stroke="#0d2c5c" stroke-width="1.4"/>
+<rect x="38" y="44" width="24" height="26" rx="2" fill="#ffffff"/>
+<text x="50" y="61" font-family="Helvetica, Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#c0392b">PAY</text></g>
+</symbol>
+<symbol id="i-gear" viewBox="0 0 100 100">
+<path d="M50 10 l7 2 2 10 8 4 9 -5 5 5 -5 9 4 8 10 2 2 7 -2 7 -10 2 -4 8 5 9 -5 5 -9 -5 -8 4 -2 10 -7 2 -7 -2 -2 -10 -8 -4 -9 5 -5 -5 5 -9 -4 -8 -10 -2 -2 -7 2 -7 10 -2 4 -8 -5 -9 5 -5 9 5 8 -4 2 -10 Z"
+ fill="url(#g-steel-top)" stroke="#3d4450" stroke-width="1.4"/>
+<circle cx="50" cy="50" r="14" fill="#eef1f4" stroke="#3d4450" stroke-width="1.4"/>
+</symbol>
+<symbol id="i-warning" viewBox="0 0 100 100">
+<path d="M50 10 L92 86 H8 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="3" stroke-linejoin="round"/>
+<rect x="46" y="36" width="8" height="28" rx="3" fill="#3e2a00"/><circle cx="50" cy="73" r="5" fill="#3e2a00"/>
+</symbol>
+<symbol id="i-door" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="24" y="10" width="52" height="82" fill="#9aa3ae" stroke="#5b6570" stroke-width="1.4"/>
+<rect x="29" y="14" width="42" height="78" fill="url(#g-brick)" stroke="#6d3b1e" stroke-width="1.2"/>
+<rect x="34" y="20" width="32" height="26" rx="2" fill="#f4e3cf" opacity=".35"/><rect x="34" y="52" width="32" height="32" rx="2" fill="#f4e3cf" opacity=".25"/>
+<circle cx="64" cy="54" r="3" fill="url(#g-gold)" stroke="#8a6d1a"/>
+<rect x="78" y="44" width="12" height="18" rx="2" fill="#3b424d"/><circle cx="84" cy="50" r="2" fill="#8fd16a"/>
+</symbol>
+<symbol id="i-group" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<g transform="translate(-18,4) scale(.8)">
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit2)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M33 30 C33 12 67 12 67 30 L68 46 C64 40 62 34 60 30 C52 32 44 31 38 26 C36 34 34 40 32 46 Z" fill="#1f1a17"/></g>
+<g transform="translate(38,4) scale(.8)">
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/></g>
+<g transform="translate(10,14) scale(.86)">
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit3)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/></g>
+</symbol>
+<symbol id="i-trash" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M22 34 h56 l-6 56 h-44 Z" fill="url(#g-green)" stroke="#1d5e22" stroke-width="1.4"/>
+<rect x="16" y="26" width="68" height="10" rx="3" fill="#2e7d32" stroke="#1d5e22" stroke-width="1.2"/>
+<g stroke="#1d5e22" stroke-width="2.4" opacity=".55"><line x1="38" y1="44" x2="40" y2="82"/><line x1="50" y1="44" x2="50" y2="82"/><line x1="62" y1="44" x2="60" y2="82"/></g>
+<path d="M30 26 l4 -14 h22 l6 14" fill="url(#g-paper)" stroke="#9aa6b3" stroke-width="1"/>
+<line x1="38" y1="18" x2="54" y2="18" stroke="#9aa6b3" stroke-width="2"/>
+</symbol>
+<symbol id="i-eye" viewBox="0 0 100 100">
+<path d="M8 50 C26 22 74 22 92 50 C74 78 26 78 8 50 Z" fill="url(#g-paper)" stroke="#2f6fae" stroke-width="3"/>
+<circle cx="50" cy="50" r="17" fill="url(#g-screen)" stroke="#0b4f9c" stroke-width="2"/>
+<circle cx="50" cy="50" r="7" fill="#0d1b2a"/><circle cx="44" cy="44" r="3.5" fill="#fff"/>
+</symbol>
+</defs>
+<rect width="1100" height="600" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">The social-engineering toolkit: at a distance and in person</text>
+<g class="st s1"><text x="40.0" y="68.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f4e9c" font-weight="bold" text-anchor="start">Phishing family (at a distance)</text></g>
+<g class="st s1"><circle cx="24" cy="62" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="24.0" y="66.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s1"><rect x="40" y="80" width="160" height="140" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="40" y="80" width="160" height="8" rx="4" fill="#1f4e9c"/><use href="#i-envelope" x="90.0" y="94.0" width="60.0" height="60.0"/><text x="120.0" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Phishing</text><text x="120.0" y="193.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">wide net, mostly email</text></g>
+<g class="st s1"><rect x="208" y="80" width="160" height="140" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="208" y="80" width="160" height="8" rx="4" fill="#1f4e9c"/><use href="#i-fishhook" x="258.0" y="94.0" width="60.0" height="60.0"/><text x="288.0" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Spear phishing</text><text x="288.0" y="193.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">researched, personal</text></g>
+<g class="st s1"><rect x="376" y="80" width="160" height="140" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="376" y="80" width="160" height="8" rx="4" fill="#1f4e9c"/><use href="#i-user2" x="426.0" y="94.0" width="60.0" height="60.0"/><text x="456.0" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Whaling</text><text x="456.0" y="193.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">executives, CEO fraud</text></g>
+<g class="st s1"><rect x="544" y="80" width="160" height="140" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="544" y="80" width="160" height="8" rx="4" fill="#1f4e9c"/><use href="#i-headset" x="594.0" y="94.0" width="60.0" height="60.0"/><text x="624.0" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Vishing</text><text x="624.0" y="193.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">voice, phone calls</text></g>
+<g class="st s1"><rect x="712" y="80" width="160" height="140" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="712" y="80" width="160" height="8" rx="4" fill="#1f4e9c"/><use href="#i-phone" x="762.0" y="94.0" width="60.0" height="60.0"/><text x="792.0" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Smishing</text><text x="792.0" y="193.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">SMS with a link</text></g>
+<g class="st s1"><rect x="880" y="80" width="160" height="140" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="880" y="80" width="160" height="8" rx="4" fill="#1f4e9c"/><use href="#i-browser" x="930.0" y="94.0" width="60.0" height="60.0"/><text x="960.0" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Pharming</text><text x="960.0" y="193.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">fake site via DNS</text></g>
+<g class="st s2"><text x="40.0" y="248.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#d9822b" font-weight="bold" text-anchor="start">Other distance techniques</text></g>
+<g class="st s2"><circle cx="24" cy="242" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="24.0" y="246.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s2"><rect x="40" y="260" width="240" height="140" rx="10" fill="#ffffff" stroke="#d9822b" stroke-width="2.2" filter="url(#f-drop)"/><rect x="40" y="260" width="240" height="8" rx="4" fill="#d9822b"/><use href="#i-idcard" x="130.0" y="274.0" width="60.0" height="60.0"/><text x="160.0" y="352.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="middle">Pretexting</text><text x="160.0" y="373.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">an invented story</text></g>
+<g class="st s2"><rect x="288" y="260" width="240" height="140" rx="10" fill="#ffffff" stroke="#d9822b" stroke-width="2.2" filter="url(#f-drop)"/><rect x="288" y="260" width="240" height="8" rx="4" fill="#d9822b"/><use href="#i-usb" x="378.0" y="274.0" width="60.0" height="60.0"/><text x="408.0" y="352.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="middle">Baiting</text><text x="408.0" y="373.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">USB drive marked Payroll</text></g>
+<g class="st s2"><rect x="536" y="260" width="240" height="140" rx="10" fill="#ffffff" stroke="#d9822b" stroke-width="2.2" filter="url(#f-drop)"/><rect x="536" y="260" width="240" height="8" rx="4" fill="#d9822b"/><use href="#i-gear" x="626.0" y="274.0" width="60.0" height="60.0"/><text x="656.0" y="352.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="middle">Quid pro quo</text><text x="656.0" y="373.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">help for a password</text></g>
+<g class="st s2"><rect x="784" y="260" width="240" height="140" rx="10" fill="#ffffff" stroke="#d9822b" stroke-width="2.2" filter="url(#f-drop)"/><rect x="784" y="260" width="240" height="8" rx="4" fill="#d9822b"/><use href="#i-warning" x="874.0" y="274.0" width="60.0" height="60.0"/><text x="904.0" y="352.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="middle">Reverse SE</text><text x="904.0" y="373.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">cause a problem, then fix it</text></g>
+<g class="st s3"><text x="40.0" y="428.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#c0392b" font-weight="bold" text-anchor="start">In person</text></g>
+<g class="st s3"><circle cx="24" cy="422" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="24.0" y="426.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s3"><rect x="40" y="440" width="240" height="140" rx="10" fill="#ffffff" stroke="#c0392b" stroke-width="2.2" filter="url(#f-drop)"/><rect x="40" y="440" width="240" height="8" rx="4" fill="#c0392b"/><use href="#i-door" x="130.0" y="454.0" width="60.0" height="60.0"/><text x="160.0" y="532.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">Tailgating</text><text x="160.0" y="553.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">follow without consent</text></g>
+<g class="st s3"><rect x="288" y="440" width="240" height="140" rx="10" fill="#ffffff" stroke="#c0392b" stroke-width="2.2" filter="url(#f-drop)"/><rect x="288" y="440" width="240" height="8" rx="4" fill="#c0392b"/><use href="#i-group" x="378.0" y="454.0" width="60.0" height="60.0"/><text x="408.0" y="532.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">Piggybacking</text><text x="408.0" y="553.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">follow with consent</text></g>
+<g class="st s3"><rect x="536" y="440" width="240" height="140" rx="10" fill="#ffffff" stroke="#c0392b" stroke-width="2.2" filter="url(#f-drop)"/><rect x="536" y="440" width="240" height="8" rx="4" fill="#c0392b"/><use href="#i-trash" x="626.0" y="454.0" width="60.0" height="60.0"/><text x="656.0" y="532.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">Dumpster diving</text><text x="656.0" y="553.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">documents in the trash</text></g>
+<g class="st s3"><rect x="784" y="440" width="240" height="140" rx="10" fill="#ffffff" stroke="#c0392b" stroke-width="2.2" filter="url(#f-drop)"/><rect x="784" y="440" width="240" height="8" rx="4" fill="#c0392b"/><use href="#i-eye" x="874.0" y="454.0" width="60.0" height="60.0"/><text x="904.0" y="532.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">Shoulder surfing</text><text x="904.0" y="553.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">watch the PIN typed</text></g>
+</svg>

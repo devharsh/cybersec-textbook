@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" role="img" aria-labelledby="t d"><title id="t">A 5 by 5 qualitative risk matrix: score = likelihood rank times impact rank</title><desc id="d">Likelihood from Rare to Almost certain on the vertical axis and impact from Negligible to Severe on the horizontal axis. Each cell holds the product of the two ranks, from 1 to 25. Scores up to 4 are green and can be accepted, 5 to 9 are yellow, 10 to 14 are orange, and 15 and above are red and urgent.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-check" viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="url(#g-green)" stroke="#1b5e20" stroke-width="2"/>
+<path d="M32 51 L45 64 L69 38" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-eye" viewBox="0 0 100 100">
+<path d="M8 50 C26 22 74 22 92 50 C74 78 26 78 8 50 Z" fill="url(#g-paper)" stroke="#2f6fae" stroke-width="3"/>
+<circle cx="50" cy="50" r="17" fill="url(#g-screen)" stroke="#0b4f9c" stroke-width="2"/>
+<circle cx="50" cy="50" r="7" fill="#0d1b2a"/><circle cx="44" cy="44" r="3.5" fill="#fff"/>
+</symbol>
+<symbol id="i-warning" viewBox="0 0 100 100">
+<path d="M50 10 L92 86 H8 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="3" stroke-linejoin="round"/>
+<rect x="46" y="36" width="8" height="28" rx="3" fill="#3e2a00"/><circle cx="50" cy="73" r="5" fill="#3e2a00"/>
+</symbol>
+</defs>
+<rect width="1000" height="600" fill="#ffffff"/>
+<text x="500.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">A 5 by 5 qualitative risk matrix: score = likelihood rank times impact rank</text>
+<g class="st s1"><text x="186.0" y="453.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="end">Rare</text></g>
+<g class="st s1"><text x="186.0" y="369.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="end">Unlikely</text></g>
+<g class="st s1"><text x="186.0" y="285.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="end">Possible</text></g>
+<g class="st s1"><text x="186.0" y="201.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="end">Likely</text></g>
+<g class="st s1"><text x="186.0" y="117.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="end">Almost certain</text></g>
+<g class="st s1"><text x="260.0" y="514.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Negligible</text></g>
+<g class="st s1"><text x="380.0" y="514.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Minor</text></g>
+<g class="st s1"><text x="500.0" y="514.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Moderate</text></g>
+<g class="st s1"><text x="620.0" y="514.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Major</text></g>
+<g class="st s1"><text x="740.0" y="514.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Severe</text></g>
+<g class="st s1"><text x="500.0" y="542.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#52606d" font-weight="bold" text-anchor="middle">Impact</text></g>
+<g class="st s1"><text x="44" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#52606d" text-anchor="middle" transform="rotate(-90 44 280.0)">Likelihood</text></g>
+<g class="st s2"><rect x="202.0" y="408.0" width="116.0" height="80.0" rx="6" fill="#2ecc71" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s2"><text x="260.0" y="456.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><rect x="322.0" y="408.0" width="116.0" height="80.0" rx="6" fill="#2ecc71" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s2"><text x="380.0" y="456.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s2"><rect x="442.0" y="408.0" width="116.0" height="80.0" rx="6" fill="#2ecc71" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s2"><text x="500.0" y="456.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s2"><rect x="562.0" y="408.0" width="116.0" height="80.0" rx="6" fill="#2ecc71" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s2"><text x="620.0" y="456.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s3"><rect x="682.0" y="408.0" width="116.0" height="80.0" rx="6" fill="#f1c40f" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s3"><text x="740.0" y="456.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s2"><rect x="202.0" y="324.0" width="116.0" height="80.0" rx="6" fill="#2ecc71" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s2"><text x="260.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s2"><rect x="322.0" y="324.0" width="116.0" height="80.0" rx="6" fill="#2ecc71" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s2"><text x="380.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s3"><rect x="442.0" y="324.0" width="116.0" height="80.0" rx="6" fill="#f1c40f" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s3"><text x="500.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s3"><rect x="562.0" y="324.0" width="116.0" height="80.0" rx="6" fill="#f1c40f" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s3"><text x="620.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">8</text></g>
+<g class="st s4"><rect x="682.0" y="324.0" width="116.0" height="80.0" rx="6" fill="#e67e22" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s4"><text x="740.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">10</text></g>
+<g class="st s2"><rect x="202.0" y="240.0" width="116.0" height="80.0" rx="6" fill="#2ecc71" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s2"><text x="260.0" y="288.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s3"><rect x="322.0" y="240.0" width="116.0" height="80.0" rx="6" fill="#f1c40f" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s3"><text x="380.0" y="288.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s3"><rect x="442.0" y="240.0" width="116.0" height="80.0" rx="6" fill="#f1c40f" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s3"><text x="500.0" y="288.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">9</text></g>
+<g class="st s4"><rect x="562.0" y="240.0" width="116.0" height="80.0" rx="6" fill="#e67e22" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s4"><text x="620.0" y="288.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">12</text></g>
+<g class="st s5"><rect x="682.0" y="240.0" width="116.0" height="80.0" rx="6" fill="#e74c3c" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s5"><text x="740.0" y="288.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">15</text></g>
+<g class="st s2"><rect x="202.0" y="156.0" width="116.0" height="80.0" rx="6" fill="#2ecc71" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s2"><text x="260.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s3"><rect x="322.0" y="156.0" width="116.0" height="80.0" rx="6" fill="#f1c40f" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s3"><text x="380.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">8</text></g>
+<g class="st s4"><rect x="442.0" y="156.0" width="116.0" height="80.0" rx="6" fill="#e67e22" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s4"><text x="500.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">12</text></g>
+<g class="st s5"><rect x="562.0" y="156.0" width="116.0" height="80.0" rx="6" fill="#e74c3c" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s5"><text x="620.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">16</text></g>
+<g class="st s5"><rect x="682.0" y="156.0" width="116.0" height="80.0" rx="6" fill="#e74c3c" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s5"><text x="740.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">20</text></g>
+<g class="st s3"><rect x="202.0" y="72.0" width="116.0" height="80.0" rx="6" fill="#f1c40f" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s3"><text x="260.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s4"><rect x="322.0" y="72.0" width="116.0" height="80.0" rx="6" fill="#e67e22" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s4"><text x="380.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">10</text></g>
+<g class="st s5"><rect x="442.0" y="72.0" width="116.0" height="80.0" rx="6" fill="#e74c3c" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s5"><text x="500.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">15</text></g>
+<g class="st s5"><rect x="562.0" y="72.0" width="116.0" height="80.0" rx="6" fill="#e74c3c" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s5"><text x="620.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">20</text></g>
+<g class="st s5"><rect x="682.0" y="72.0" width="116.0" height="80.0" rx="6" fill="#e74c3c" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
+<g class="st s5"><text x="740.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">25</text></g>
+<g class="st s2"><rect x="815.0" y="84.0" width="172.0" height="70.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#2ecc71" stroke-width="2.4"/></g>
+<g class="st s2"><use href="#i-check" x="828.0" y="101.0" width="34" height="34"/></g>
+<g class="st s2"><text x="867.0" y="112.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">1 to 4</text></g>
+<g class="st s2"><text x="867.0" y="130.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">low, accept</text></g>
+<g class="st s2"><circle cx="815" cy="84" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="815.0" y="88.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><rect x="815.0" y="174.0" width="172.0" height="70.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#f1c40f" stroke-width="2.4"/></g>
+<g class="st s3"><use href="#i-eye" x="828.0" y="191.0" width="34" height="34"/></g>
+<g class="st s3"><text x="867.0" y="202.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">5 to 9</text></g>
+<g class="st s3"><text x="867.0" y="220.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">medium, monitor</text></g>
+<g class="st s3"><circle cx="815" cy="174" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="815.0" y="178.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><rect x="815.0" y="264.0" width="172.0" height="70.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#e67e22" stroke-width="2.4"/></g>
+<g class="st s4"><use href="#i-warning" x="828.0" y="281.0" width="34" height="34"/></g>
+<g class="st s4"><text x="867.0" y="292.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">10 to 14</text></g>
+<g class="st s4"><text x="867.0" y="310.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">high, treat soon</text></g>
+<g class="st s4"><circle cx="815" cy="264" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="815.0" y="268.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><rect x="815.0" y="354.0" width="172.0" height="70.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#e74c3c" stroke-width="2.4"/></g>
+<g class="st s5"><use href="#i-warning" x="828.0" y="371.0" width="34" height="34"/></g>
+<g class="st s5"><text x="867.0" y="382.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">15 to 25</text></g>
+<g class="st s5"><text x="867.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">urgent</text></g>
+<g class="st s5"><circle cx="815" cy="354" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="815.0" y="358.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s1"><circle cx="200" cy="70" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="200.0" y="74.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+</svg>

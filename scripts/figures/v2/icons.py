@@ -381,3 +381,50 @@ ICONS["browser"] = SHADOW + """
 <rect x="16" y="38" width="40" height="7" rx="2" fill="#1f4e9c"/>
 <g stroke="#b8c0ca" stroke-width="3.4" stroke-linecap="round"><line x1="16" y1="54" x2="84" y2="54"/><line x1="16" y1="63" x2="76" y2="63"/><line x1="16" y1="72" x2="64" y2="72"/></g>
 """
+
+# ---- batch 4: people-facing attacks
+ICONS["usb"] = SHADOW + """
+<g transform="rotate(-35 50 50)">
+<rect x="38" y="10" width="24" height="18" rx="2" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.2"/>
+<rect x="43" y="15" width="5" height="5" fill="#3b424d"/><rect x="52" y="15" width="5" height="5" fill="#3b424d"/>
+<rect x="32" y="28" width="36" height="58" rx="6" fill="#1f4e9c" stroke="#0d2c5c" stroke-width="1.4"/>
+<rect x="38" y="44" width="24" height="26" rx="2" fill="#ffffff"/>
+<text x="50" y="61" font-family="Helvetica, Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#c0392b">PAY</text></g>
+"""
+ICONS["trash"] = SHADOW + """
+<path d="M22 34 h56 l-6 56 h-44 Z" fill="url(#g-green)" stroke="#1d5e22" stroke-width="1.4"/>
+<rect x="16" y="26" width="68" height="10" rx="3" fill="#2e7d32" stroke="#1d5e22" stroke-width="1.2"/>
+<g stroke="#1d5e22" stroke-width="2.4" opacity=".55"><line x1="38" y1="44" x2="40" y2="82"/><line x1="50" y1="44" x2="50" y2="82"/><line x1="62" y1="44" x2="60" y2="82"/></g>
+<path d="M30 26 l4 -14 h22 l6 14" fill="url(#g-paper)" stroke="#9aa6b3" stroke-width="1"/>
+<line x1="38" y1="18" x2="54" y2="18" stroke="#9aa6b3" stroke-width="2"/>
+"""
+ICONS["fingerprint"] = SHADOW + """
+<g fill="none" stroke="#1f4e9c" stroke-width="3.2" stroke-linecap="round">
+<path d="M30 30 a26 26 0 0 1 40 0"/><path d="M24 46 a26 26 0 0 1 52 0 v10"/><path d="M34 84 c-6 -10 -8 -22 -8 -32 a24 24 0 0 1 0 -2"/>
+<path d="M36 52 a14 14 0 0 1 28 0 c0 14 -4 26 -10 36"/><path d="M50 52 c0 16 -4 28 -12 38"/><path d="M76 66 c-2 10 -6 18 -10 24"/></g>
+"""
+ICONS["money"] = SHADOW + """
+<rect x="14" y="40" width="72" height="38" rx="4" fill="#5aa469" stroke="#1d5e22" stroke-width="1.2" transform="rotate(-8 50 59)"/>
+<rect x="14" y="34" width="72" height="38" rx="4" fill="url(#g-green)" stroke="#1d5e22" stroke-width="1.4"/>
+<circle cx="50" cy="53" r="11" fill="#e8f5e9" stroke="#1d5e22" stroke-width="1.2"/>
+<text x="50" y="59" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1d5e22">$</text>
+<circle cx="24" cy="44" r="3" fill="#e8f5e9"/><circle cx="76" cy="62" r="3" fill="#e8f5e9"/>
+"""
+ICONS["videocall"] = SHADOW + """
+<rect x="6" y="14" width="88" height="66" rx="5" fill="#2b3138" stroke="#14181d" stroke-width="1.4"/>
+""" + "".join(f'<rect x="{10+(i%2)*42}" y="{18+(i//2)*29}" width="38" height="26" rx="2" fill="#4a5562"/>'
+              f'<circle cx="{29+(i%2)*42}" cy="{27+(i//2)*29}" r="5.5" fill="url(#g-skin)"/>'
+              f'<path d="M{19+(i%2)*42} {44+(i//2)*29} c0 -9 20 -9 20 0 Z" fill="{c}"/>' for i, c in enumerate(["#1f2d3d", "#6b3fa0", "#2e4a6b", "#7a4b2a"])) + """
+<rect x="38" y="82" width="24" height="6" rx="2" fill="#9aa3ae"/>
+"""
+ICONS["fishhook"] = SHADOW + """
+<path d="M54 10 v52 a16 16 0 0 1 -32 0 v-8" fill="none" stroke="#6b7785" stroke-width="5" stroke-linecap="round"/>
+<path d="M22 50 l-6 10 l10 -2" fill="#6b7785"/><circle cx="54" cy="10" r="5" fill="none" stroke="#6b7785" stroke-width="3"/>
+<rect x="56" y="34" width="34" height="24" rx="2" fill="#fff" stroke="#c0392b" stroke-width="1.6"/><path d="M56 34 l17 13 l17 -13" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+"""
+ICONS["headset"] = SHADOW + """
+<path d="M22 56 v-10 a28 28 0 0 1 56 0 v10" fill="none" stroke="#3b424d" stroke-width="5"/>
+<rect x="14" y="50" width="16" height="26" rx="6" fill="#3b424d"/><rect x="70" y="50" width="16" height="26" rx="6" fill="#3b424d"/>
+<path d="M78 74 q0 14 -20 16" fill="none" stroke="#3b424d" stroke-width="3"/><rect x="48" y="86" width="12" height="8" rx="3" fill="#1f4e9c"/>
+<circle cx="50" cy="56" r="14" fill="url(#g-skin)"/><path d="M36 92 c0 -16 28 -16 28 0 Z" fill="#2e4a6b"/>
+"""

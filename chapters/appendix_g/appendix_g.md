@@ -15,9 +15,9 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 1: Introduction to Cybersecurity | 19,563 | 679 | 39.1 |
 | Chapter 2: Cryptography | 52,154 | 4,728 | 104.3 |
 | Chapter 3: Networking and Network Attacks | 18,031 | 374 | 36.1 |
-| Chapter 4: Social Engineering and the Human Element | 12,257 | 1,000 | 24.5 |
-| Chapter 5: Risk Management | 18,208 | 696 | 36.4 |
-| Chapter 6: Penetration Testing Methodology | 9,989 | 265 | 20.0 |
+| Chapter 4: Social Engineering and the Human Element | 12,552 | 1,000 | 25.1 |
+| Chapter 5: Risk Management | 18,600 | 696 | 37.2 |
+| Chapter 6: Penetration Testing Methodology | 10,225 | 265 | 20.4 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,806 | 464 | 15.6 |
 | Chapter 8: Scanning and Enumeration | 7,419 | 816 | 14.8 |
 | Chapter 9: Exploitation and Post-Exploitation | 27,769 | 1,134 | 55.5 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **465,214** | **24,597** | **930** |
+| **TOTAL** | **466,137** | **24,597** | **932** |
 
 ## Detailed Word Count by Section
 
@@ -276,7 +276,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 4: Social Engineering and the Human Element
 
-*12,257 markdown words (24.5 pages); 1,000 code words.*
+*12,552 markdown words (25.1 pages); 1,000 code words.*
 
 | Section | Words |
 |---|---:|
@@ -284,19 +284,19 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Key Terms | 379 |
 | 4.1 Why People Are the Weakest Link | 565 |
 | 4.2 The Psychology of Influence | 468 |
-| 4.3 The Social-Engineering Attack Lifecycle | 463 |
-| 4.4 The Taxonomy of Social-Engineering Attacks | 813 |
+| 4.3 The Social-Engineering Attack Lifecycle | 503 |
+| 4.4 The Taxonomy of Social-Engineering Attacks | 857 |
 | 4.5 Vectors and the Role of Open-Source Intelligence | 429 |
-| 4.6 Recognizing and Analyzing Phishing | 492 |
+| 4.6 Recognizing and Analyzing Phishing | 546 |
 |     Look-Alike Text: Homoglyphs, Confusable Characters, and Unicode Spoofing | 1,718 |
 |     Case Study: The Free MyChart Medicare Kit Email | 1,583 |
-| 4.7 Physical Security as Social Engineering's Partner | 363 |
+| 4.7 Physical Security as Social Engineering's Partner | 409 |
 |     Environmental and Availability Threats | 338 |
-| 4.8 Authentication Factors | 386 |
+| 4.8 Authentication Factors | 436 |
 | 4.9 Defending Against Social Engineering | 315 |
 |     Technical Controls That Reinforce the Human Defenses | 233 |
 |     Measuring and Sustaining the Human Firewall | 359 |
-| 4.10 Social Engineering in the Age of Artificial Intelligence | 441 |
+| 4.10 Social Engineering in the Age of Artificial Intelligence | 502 |
 | 4.11 Deepfakes, Voice Cloning, and Synthetic Identities | 239 |
 | Chapter Summary | 297 |
 | Why This Matters | 169 |
@@ -308,7 +308,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 5: Risk Management
 
-*18,208 markdown words (36.4 pages); 696 code words.*
+*18,600 markdown words (37.2 pages); 696 code words.*
 
 | Section | Words |
 |---|---:|
@@ -316,25 +316,25 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Key Terms | 324 |
 | 5.1 Risk as the Organizing Principle of Security | 395 |
 | 5.2 The Vocabulary of Risk | 607 |
-| 5.3 The Risk-Management Lifecycle | 399 |
+| 5.3 The Risk-Management Lifecycle | 434 |
 | 5.4 Risk Identification | 275 |
 |     Asset and Data Classification | 239 |
 |     A Worked Risk Register | 286 |
-| 5.5 Qualitative Risk Assessment | 508 |
+| 5.5 Qualitative Risk Assessment | 555 |
 | 5.6 Quantitative Risk Assessment | 722 |
-| 5.7 Risk Treatment | 928 |
+| 5.7 Risk Treatment | 993 |
 |     A Worked Analogy: The Skateboard and the Scraped Knee | 2,911 |
-| 5.8 Threat Modeling | 774 |
+| 5.8 Threat Modeling | 870 |
 |     STRIDE per Element and the Seven Stages of PASTA | 646 |
 | 5.9 Risk Frameworks and Standards | 329 |
 |     The NIST RMF Steps in Detail | 170 |
 |     CSF Tiers and Profiles, and ISO/IEC 27001:2022 | 423 |
 | 5.10 The Security Program: Policies, Standards, and Controls | 306 |
 |     Control Catalogs and Foundational Control Principles | 500 |
-| 5.11 Business Continuity and Disaster Recovery | 328 |
+| 5.11 Business Continuity and Disaster Recovery | 376 |
 |     Resilience Engineering: Backups, Redundancy, and Plan Testing | 590 |
 |     Redundancy Engineering: RAID, Replication, and the Difference From Backup | 459 |
-| 5.12 Third-Party and Supply-Chain Risk | 460 |
+| 5.12 Third-Party and Supply-Chain Risk | 511 |
 | 5.13 Assurance Evaluation | 337 |
 | 5.14 Security Roles, Responsibilities, and Accountability | 354 |
 | 5.15 Measuring Risk: Metrics, Key Performance Indicators, and Key Risk Indicators | 236 |
@@ -347,7 +347,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 5.22 Comparing FAIR, NIST RMF, and ISO/IEC 27005 | 244 |
 | Chapter Summary | 242 |
 | Why This Matters | 164 |
-| News in Focus: Repeat Breaches at Neiman Marcus | 540 |
+| News in Focus: Repeat Breaches at Neiman Marcus | 590 |
 | Review Questions (MCQ) | 547 |
 |     Answer Key | 38 |
 | Lab Assignment | 242 |
@@ -355,7 +355,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 6: Penetration Testing Methodology
 
-*9,989 markdown words (20.0 pages); 265 code words.*
+*10,225 markdown words (20.4 pages); 265 code words.*
 
 | Section | Words |
 |---|---:|
@@ -363,18 +363,18 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Key Terms | 184 |
 | 6.1 Why Methodology Matters | 409 |
 | 6.2 What Penetration Testing Is, and Is Not | 584 |
-| 6.3 Hats and Team Colors | 273 |
-| 6.4 Knowledge Levels: Black, Gray, and White Box | 284 |
-| 6.5 The Phases of a Penetration Test | 650 |
+| 6.3 Hats and Team Colors | 319 |
+| 6.4 Knowledge Levels: Black, Gray, and White Box | 334 |
+| 6.5 The Phases of a Penetration Test | 691 |
 | 6.6 Types of Penetration Tests | 409 |
-| 6.7 Pre-Engagement: Scope and the Rules of Engagement | 520 |
+| 6.7 Pre-Engagement: Scope and the Rules of Engagement | 568 |
 | 6.8 The Legal Framework | 500 |
 | 6.9 Ethics and Professional Conduct | 529 |
 | 6.10 Vulnerability Disclosure | 725 |
 |     Worked Example: CVE and CVSS in Practice (the Log4Shell case) | 524 |
 | 6.11 The Test Environment and Toolkit | 494 |
 | 6.12 Threat Modeling and Intelligence in the Engagement | 183 |
-| 6.13 Post-Exploitation, Pivoting, and Operational Discipline | 470 |
+| 6.13 Post-Exploitation, Pivoting, and Operational Discipline | 521 |
 | 6.14 Compliance-Driven and Standards-Based Testing | 232 |
 | 6.15 Reporting | 530 |
 | 6.16 Professional Certifications for Penetration Testers | 209 |

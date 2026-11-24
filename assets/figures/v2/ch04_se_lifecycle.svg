@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" role="img" aria-labelledby="t d"><title id="t">The social-engineering attack lifecycle: research, hook, play, exit</title><desc id="d">Four phases around a cycle. Research: the attacker gathers open-source intelligence from websites, social media, job postings, and trash. Hook: the attacker makes contact with a pretext and builds trust. Play: the attacker uses that trust to get a password, a wire transfer, physical access, or malware run. Exit: the attacker withdraws without arousing suspicion. Sophisticated campaigns repeat the cycle for deeper access.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f4e9c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f4e9c"/></marker><marker id="a-52606d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#52606d"/></marker><marker id="a-c0392b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker><marker id="a-d9822b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#d9822b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-attacker" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M16 94 C16 64 30 54 50 54 C70 54 84 64 84 94 Z" fill="url(#g-hood)" stroke="#000" stroke-width="1"/>
+<path d="M28 52 C26 22 40 10 50 10 C60 10 74 22 72 52 C66 60 34 60 28 52 Z" fill="url(#g-hood)" stroke="#000" stroke-width="1"/>
+<ellipse cx="50" cy="40" rx="15" ry="16" fill="#0a0c0f"/>
+<path d="M40 38 l7 2.5 -7 2 Z M60 38 l-7 2.5 7 2 Z" fill="#ff3b30"/>
+<path d="M30 74 L70 74 L74 92 L26 92 Z" fill="#3a414b" stroke="#000" stroke-width=".8"/>
+<rect x="33" y="77" width="34" height="12" fill="#b71c1c" opacity=".85"/>
+<path d="M46 80 a4 4 0 0 1 8 0 v1 h-8 Z M45 81 h10 v6 h-10 Z" fill="#ffcdd2"/>
+</symbol>
+<symbol id="i-search" viewBox="0 0 100 100">
+<circle cx="42" cy="42" r="24" fill="#e3f2fd" stroke="#2f6fae" stroke-width="7"/>
+<line x1="60" y1="60" x2="86" y2="86" stroke="#5b6570" stroke-width="11" stroke-linecap="round"/>
+<path d="M30 34 a14 14 0 0 1 12 -8" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="i-fishhook" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M54 10 v52 a16 16 0 0 1 -32 0 v-8" fill="none" stroke="#6b7785" stroke-width="5" stroke-linecap="round"/>
+<path d="M22 50 l-6 10 l10 -2" fill="#6b7785"/><circle cx="54" cy="10" r="5" fill="none" stroke="#6b7785" stroke-width="3"/>
+<rect x="56" y="34" width="34" height="24" rx="2" fill="#fff" stroke="#c0392b" stroke-width="1.6"/><path d="M56 34 l17 13 l17 -13" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+</symbol>
+<symbol id="i-money" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="14" y="40" width="72" height="38" rx="4" fill="#5aa469" stroke="#1d5e22" stroke-width="1.2" transform="rotate(-8 50 59)"/>
+<rect x="14" y="34" width="72" height="38" rx="4" fill="url(#g-green)" stroke="#1d5e22" stroke-width="1.4"/>
+<circle cx="50" cy="53" r="11" fill="#e8f5e9" stroke="#1d5e22" stroke-width="1.2"/>
+<text x="50" y="59" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1d5e22">$</text>
+<circle cx="24" cy="44" r="3" fill="#e8f5e9"/><circle cx="76" cy="62" r="3" fill="#e8f5e9"/>
+</symbol>
+<symbol id="i-door" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="24" y="10" width="52" height="82" fill="#9aa3ae" stroke="#5b6570" stroke-width="1.4"/>
+<rect x="29" y="14" width="42" height="78" fill="url(#g-brick)" stroke="#6d3b1e" stroke-width="1.2"/>
+<rect x="34" y="20" width="32" height="26" rx="2" fill="#f4e3cf" opacity=".35"/><rect x="34" y="52" width="32" height="32" rx="2" fill="#f4e3cf" opacity=".25"/>
+<circle cx="64" cy="54" r="3" fill="url(#g-gold)" stroke="#8a6d1a"/>
+<rect x="78" y="44" width="12" height="18" rx="2" fill="#3b424d"/><circle cx="84" cy="50" r="2" fill="#8fd16a"/>
+</symbol>
+</defs>
+<rect width="1000" height="600" fill="#ffffff"/>
+<text x="500.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">The social-engineering attack lifecycle: research, hook, play, exit</text>
+<circle cx="500" cy="315" r="180" fill="none" fill-opacity="1" stroke="#c5ccd3" stroke-width="3"/>
+<use href="#i-attacker" x="450.0" y="255.0" width="100" height="100"/><text x="500.0" y="370.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Social engineer</text>
+<g class="st s1"><circle cx="500.0" cy="135.0" r="50" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="3"/></g>
+<g class="st s1"><use href="#i-search" x="468.0" y="99.0" width="64" height="64"/></g>
+<g class="st s1"><text x="575.0" y="105.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#1f4e9c" font-weight="bold" text-anchor="start">Research</text></g>
+<g class="st s1"><text x="575.0" y="125.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">OSINT: website, social media,</text><text x="575.0" y="141.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">job posts, dumpster diving</text></g>
+<g class="st s1"><circle cx="462.0" cy="97.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="462.0" y="101.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><path d="M567.4 148.1 L667.0 247.6" fill="none" stroke="#1f4e9c" stroke-width="3" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s2"><circle cx="680.0" cy="315.0" r="50" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="3"/></g>
+<g class="st s2"><use href="#i-fishhook" x="648.0" y="279.0" width="64" height="64"/></g>
+<g class="st s2"><text x="755.0" y="307.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#d9822b" font-weight="bold" text-anchor="start">Hook</text></g>
+<g class="st s2"><text x="755.0" y="327.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">make contact, use a pretext,</text><text x="755.0" y="343.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">build rapport and trust</text></g>
+<g class="st s2"><circle cx="642.0" cy="277.0" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="642.0" y="281.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><path d="M666.9 382.4 L567.5 481.9" fill="none" stroke="#d9822b" stroke-width="3" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s3"><circle cx="500.0" cy="495.0" r="50" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="3"/></g>
+<g class="st s3"><use href="#i-money" x="468.0" y="459.0" width="64" height="64"/></g>
+<g class="st s3"><text x="575.0" y="517.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#c0392b" font-weight="bold" text-anchor="start">Play</text></g>
+<g class="st s3"><text x="575.0" y="537.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">exploit the trust: password,</text><text x="575.0" y="553.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">wire transfer, access, malware</text></g>
+<g class="st s3"><circle cx="462.0" cy="457.0" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="462.0" y="461.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><path d="M432.6 481.9 L333.0 382.4" fill="none" stroke="#c0392b" stroke-width="3" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s4"><circle cx="320.0" cy="315.0" r="50" fill="#ffffff" fill-opacity="1" stroke="#6a3d9a" stroke-width="3"/></g>
+<g class="st s4"><use href="#i-door" x="288.0" y="279.0" width="64" height="64"/></g>
+<g class="st s4"><text x="245.0" y="307.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#6a3d9a" font-weight="bold" text-anchor="end">Exit</text></g>
+<g class="st s4"><text x="245.0" y="327.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="end">withdraw cleanly so the</text><text x="245.0" y="343.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="end">intrusion goes unnoticed</text></g>
+<g class="st s4"><circle cx="282.0" cy="277.0" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="282.0" y="281.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><path d="M333.1 247.6 L432.6 148.1" fill="none" stroke="#52606d" stroke-width="2.4" stroke-dasharray="7 6" marker-end="url(#a-52606d)" stroke-linejoin="round"/></g>
+<g class="st s5"><text x="250.0" y="150.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="bold" text-anchor="middle" font-style="italic">repeat for deeper access</text></g>
+<g class="st s5"><circle cx="250" cy="172" r="12" fill="#52606d" stroke="#fff" stroke-width="2"/><text x="250.0" y="176.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+</svg>
