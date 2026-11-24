@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 580" width="1100" height="580" role="img" aria-labelledby="t d"><title id="t">A stack buffer overflow: too much input spills into the neighbors</title><desc id="d">Left: a process&#x27;s memory, with text, data and BSS, a heap that grows up, and a stack that grows down. Right: the frame of buf1_pass.c holds a 15-byte buffer, the pass integer, the saved base pointer, and the return address. gets() copies a long input with no bounds check; the bytes run past the buffer toward higher addresses, set pass to non-zero so root privileges are granted without the password, and with enough bytes overwrite the saved return address.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f4e9c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f4e9c"/></marker><marker id="a-2e7d32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#2e7d32"/></marker><marker id="a-52606d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#52606d"/></marker><marker id="a-9aa5b1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#9aa5b1"/></marker><marker id="a-c0392b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-user-laptop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/><path d="M58 78 L88 70 L92 88 L62 94 Z" fill="#2f353d"/><path d="M60.5 79.5 L86 73 L89 86 L63 92 Z" fill="url(#g-screen)"/></symbol>
+</defs>
+<rect width="1100" height="580" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">A stack buffer overflow: too much input spills into the neighbors</text>
+<g class="st s1"><text x="150.0" y="66.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">high addresses</text></g>
+<g class="st s1"><rect x="60.0" y="80.0" width="180.0" height="70.0" rx="0" fill="#d6e9f8" fill-opacity="1" stroke="#5b6570" stroke-width="1.6"/></g>
+<g class="st s1"><text x="150.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">stack (grows down)</text></g>
+<g class="st s1"><rect x="60.0" y="150.0" width="180.0" height="110.0" rx="0" fill="#ffffff" fill-opacity="1" stroke="#5b6570" stroke-width="1.6"/></g>
+<g class="st s1"><text x="150.0" y="210.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">free space</text></g>
+<g class="st s1"><rect x="60.0" y="260.0" width="180.0" height="70.0" rx="0" fill="#e8f5e9" fill-opacity="1" stroke="#5b6570" stroke-width="1.6"/></g>
+<g class="st s1"><text x="150.0" y="300.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">heap (grows up)</text></g>
+<g class="st s1"><rect x="60.0" y="330.0" width="180.0" height="50.0" rx="0" fill="#fef5e7" fill-opacity="1" stroke="#5b6570" stroke-width="1.6"/></g>
+<g class="st s1"><text x="150.0" y="360.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">data / BSS</text></g>
+<g class="st s1"><rect x="60.0" y="380.0" width="180.0" height="50.0" rx="0" fill="#f4ecf7" fill-opacity="1" stroke="#5b6570" stroke-width="1.6"/></g>
+<g class="st s1"><text x="150.0" y="410.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">text (code)</text></g>
+<g class="st s1"><text x="150.0" y="450.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">low addresses</text></g>
+<g class="st s1"><circle cx="60" cy="80" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="60.0" y="84.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s1"><path d="M270.0 100.0 L270.0 150.0" fill="none" stroke="#1f4e9c" stroke-width="2.4" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s1"><path d="M270.0 330.0 L270.0 280.0" fill="none" stroke="#2e7d32" stroke-width="2.4" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/></g>
+<g class="st s2"><path d="M244.0 115.0 L420.0 150.0" fill="none" stroke="#9aa5b1" stroke-width="2.2" stroke-dasharray="7 6" marker-end="url(#a-9aa5b1)" stroke-linejoin="round"/></g>
+<g class="st s2"><rect x="430.0" y="110.0" width="260.0" height="60.0" rx="4" fill="#fdecea" fill-opacity="1" stroke="#c0392b" stroke-width="2"/></g>
+<g class="st s2"><text x="560.0" y="146.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#c0392b" font-weight="bold" text-anchor="middle">return address</text></g>
+<g class="st s2"><rect x="430.0" y="170.0" width="260.0" height="60.0" rx="4" fill="#fff3e0" fill-opacity="1" stroke="#d9822b" stroke-width="2"/></g>
+<g class="st s2"><text x="560.0" y="206.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#d9822b" font-weight="bold" text-anchor="middle">saved rbp</text></g>
+<g class="st s2"><rect x="430.0" y="230.0" width="260.0" height="60.0" rx="4" fill="#e8f5e9" fill-opacity="1" stroke="#2e7d32" stroke-width="2"/></g>
+<g class="st s2"><text x="560.0" y="266.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2e7d32" font-weight="bold" text-anchor="middle">int pass = 0</text></g>
+<g class="st s2"><rect x="430.0" y="290.0" width="260.0" height="120.0" rx="4" fill="#eef5fc" fill-opacity="1" stroke="#1f4e9c" stroke-width="2"/></g>
+<g class="st s2"><text x="560.0" y="356.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f4e9c" font-weight="bold" text-anchor="middle">char buff[15]</text></g>
+<g class="st s2"><text x="560.0" y="98.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="bold" text-anchor="middle">main&#x27;s stack frame</text></g>
+<g class="st s2"><circle cx="430" cy="110" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="430.0" y="114.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s2"><text x="730.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">higher addresses</text></g>
+<g class="st s2"><path d="M720.0 410.0 L720.0 130.0" fill="none" stroke="#52606d" stroke-width="1.6" marker-end="url(#a-52606d)" stroke-linejoin="round"/></g>
+<g class="st s3"><use href="#i-user-laptop" x="998.0" y="418.0" width="64" height="64"/><text x="1030.0" y="497.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Input</text></g>
+<g class="st s3"><circle cx="790" cy="486" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="790.0" y="490.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s3"><rect x="790.0" y="500.0" width="290.0" height="30.0" rx="4" fill="#1f2933" fill-opacity="1" stroke="#1f2933" stroke-width="1"/></g>
+<g class="st s3"><text x="935.0" y="520.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#8fd16a" font-weight="bold" text-anchor="middle">AAAAAAAAAAAAAAAAAAAAAAAA</text></g>
+<g class="st s3"><text x="935.0" y="556.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">gets(buff): no bounds check</text></g>
+<g class="st s3"><path d="M790.0 515.0 L700.0 400.0" fill="none" stroke="#c0392b" stroke-width="2.6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s4"><rect x="431.0" y="231.0" width="258.0" height="178.0" rx="4" fill="#f5b7b1" fill-opacity="1" stroke="#c0392b" stroke-width="2"/></g>
+<g class="st s4"><text x="560.0" y="350.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="middle">A A A A A A A A A A A A A A A</text></g>
+<g class="st s4"><text x="560.0" y="380.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="normal" text-anchor="middle">buff, full</text></g>
+<g class="st s4"><text x="560.0" y="266.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">pass = 0x41414141 (non-zero)</text></g>
+<g class="st s4"><circle cx="690" cy="230" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="690.0" y="234.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s4"><rect x="800.0" y="210.0" width="280.0" height="56.0" rx="6" fill="#fdecea" fill-opacity="1" stroke="#c0392b" stroke-width="1.6"/></g>
+<g class="st s4"><text x="940.0" y="234.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">Root privileges given to the user</text></g>
+<g class="st s4"><text x="940.0" y="254.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">without the correct password</text></g>
+<g class="st s5"><rect x="431.0" y="111.0" width="258.0" height="119.0" rx="4" fill="#f5b7b1" fill-opacity="1" stroke="#c0392b" stroke-width="2"/></g>
+<g class="st s5"><text x="560.0" y="146.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="middle">return = 0x4141414141414141</text></g>
+<g class="st s5"><text x="560.0" y="206.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="middle">saved rbp = AAAAAAAA</text></g>
+<g class="st s5"><circle cx="690" cy="112" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="690.0" y="116.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s5"><text x="800.0" y="150.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">With more bytes: saved rbp and the return</text></g>
+<g class="st s5"><text x="800.0" y="170.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">address are overwritten, so ret jumps where</text></g>
+<g class="st s5"><text x="800.0" y="190.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">the attacker chooses.</text></g>
+</svg>

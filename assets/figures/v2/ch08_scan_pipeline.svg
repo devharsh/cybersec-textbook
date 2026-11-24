@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" width="1100" height="470" role="img" aria-labelledby="t d"><title id="t">The scanning pipeline: each stage refines what the last one found</title><desc id="d">Seven stages left to right: host discovery finds live IP addresses; network mapping finds the routers and firewalls in between; port scanning finds open, closed, and filtered ports; fingerprinting infers the operating system; version scanning pins down the exact software; vulnerability scanning finds weaknesses; exploitation follows in Chapter 9. Time dominates: 65,536 ports at one second each on 500 hosts takes about 1.1 years.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}.s7{animation-delay:5.40s}.s8{animation-delay:6.30s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f4e9c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f4e9c"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-laptop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="20" y="22" width="60" height="42" rx="3" fill="#2f353d" stroke="#14181d" stroke-width="1.2"/>
+<rect x="24" y="26" width="52" height="34" rx="1" fill="url(#g-screen)"/>
+<path d="M24 26 h52 v12 Q50 31 24 41 Z" fill="#fff" opacity=".18"/>
+<path d="M12 70 L20 64 H80 L88 70 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1"/>
+<rect x="12" y="70" width="76" height="5" rx="2" fill="#9aa3ae" stroke="#5b6570" stroke-width=".8"/>
+<rect x="42" y="66" width="16" height="2.4" rx="1" fill="#8892a0"/>
+</symbol>
+<symbol id="i-router" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M14 44 v22 a36 12 0 0 0 72 0 v-22" fill="url(#g-router)" stroke="#164b78" stroke-width="1.2"/>
+<ellipse cx="50" cy="44" rx="36" ry="12" fill="url(#g-router-top)" stroke="#164b78" stroke-width="1.2"/>
+<g fill="#1565c0" stroke="#0d3c6e" stroke-width=".5">
+<path d="M50 34 l-5 4 h3 v4 h4 v-4 h3 Z"/><path d="M50 54 l-5 -4 h3 v-4 h4 v4 h3 Z" transform="translate(0,0)"/>
+<path d="M28 44 l4 -3.5 v2.3 h6 v2.4 h-6 v2.3 Z"/><path d="M72 44 l-4 -3.5 v2.3 h-6 v2.4 h6 v2.3 Z"/></g>
+<g fill="#cfe6f7"><circle cx="30" cy="70" r="1.5"/><circle cx="36" cy="72" r="1.5"/><circle cx="42" cy="73" r="1.5"/></g>
+</symbol>
+<symbol id="i-firewall" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="14" y="26" width="72" height="62" rx="2" fill="url(#g-brick)" stroke="#7a2e18" stroke-width="1.2"/>
+<g stroke="#f6d3c4" stroke-width="2.2" fill="none">
+<path d="M14 41 H86 M14 57 H86 M14 73 H86"/>
+<path d="M38 26 V41 M62 26 V41 M26 41 V57 M50 41 V57 M74 41 V57 M38 57 V73 M62 57 V73 M26 73 V88 M50 73 V88 M74 73 V88"/></g>
+<path d="M50 4 C58 14 66 16 62 26 H38 C34 18 44 14 50 4 Z" fill="#ffb300" stroke="#e65100" stroke-width="1"/>
+<path d="M50 12 C55 18 57 21 55 26 H45 C43 21 47 18 50 12 Z" fill="#fff176"/>
+</symbol>
+<symbol id="i-fingerprint" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<g fill="none" stroke="#1f4e9c" stroke-width="3.2" stroke-linecap="round">
+<path d="M30 30 a26 26 0 0 1 40 0"/><path d="M24 46 a26 26 0 0 1 52 0 v10"/><path d="M34 84 c-6 -10 -8 -22 -8 -32 a24 24 0 0 1 0 -2"/>
+<path d="M36 52 a14 14 0 0 1 28 0 c0 14 -4 26 -10 36"/><path d="M50 52 c0 16 -4 28 -12 38"/><path d="M76 66 c-2 10 -6 18 -10 24"/></g>
+</symbol>
+<symbol id="i-code" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="10" y="16" width="80" height="66" rx="4" fill="#1e2530" stroke="#0d1014" stroke-width="1.4"/>
+<rect x="10" y="16" width="80" height="11" rx="4" fill="#3b424d"/><circle cx="18" cy="21.5" r="2.2" fill="#ff5f56"/><circle cx="25" cy="21.5" r="2.2" fill="#ffbd2e"/><circle cx="32" cy="21.5" r="2.2" fill="#27c93f"/>
+<path d="M30 42 L20 52 L30 62 M70 42 L80 52 L70 62" fill="none" stroke="#4fc3f7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="56" y1="38" x2="44" y2="66" stroke="#8fd16a" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="i-bug" viewBox="0 0 100 100">
+<ellipse cx="50" cy="56" rx="20" ry="26" fill="url(#g-red)" stroke="#7f0000" stroke-width="1.6"/>
+<circle cx="50" cy="28" r="11" fill="#3e0000"/><line x1="50" y1="32" x2="50" y2="82" stroke="#7f0000" stroke-width="2"/>
+<g stroke="#3e0000" stroke-width="3" stroke-linecap="round"><path d="M31 46 l-14 -8 M31 58 h-16 M32 70 l-14 8 M69 46 l14 -8 M69 58 h16 M68 70 l14 8 M44 20 l-6 -10 M56 20 l6 -10"/></g>
+<circle cx="43" cy="50" r="4" fill="#3e0000"/><circle cx="57" cy="64" r="4" fill="#3e0000"/>
+</symbol>
+<symbol id="i-key" viewBox="0 0 100 100">
+<circle cx="32" cy="50" r="18" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+<circle cx="28" cy="50" r="6" fill="#fff8e1" stroke="#a5760e" stroke-width="1.5"/>
+<path d="M48 45 H90 V55 H84 V64 H76 V55 H70 V62 H62 V55 H48 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+</symbol>
+<symbol id="i-hourglass" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="24" y="8" width="52" height="8" rx="3" fill="#8d6e63" stroke="#4e342e"/><rect x="24" y="84" width="52" height="8" rx="3" fill="#8d6e63" stroke="#4e342e"/>
+<path d="M30 16 H70 C70 36 54 42 54 50 C54 58 70 64 70 84 H30 C30 64 46 58 46 50 C46 42 30 36 30 16 Z" fill="#e3f2fd" stroke="#5b9bd5" stroke-width="2"/>
+<path d="M36 26 H64 C62 36 52 42 50 47 C48 42 38 36 36 26 Z" fill="#f2b84b"/>
+<path d="M34 82 H66 C64 72 56 68 50 66 C44 68 36 72 34 82 Z" fill="#f2b84b"/>
+</symbol>
+</defs>
+<rect width="1100" height="470" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">The scanning pipeline: each stage refines what the last one found</text>
+<g class="st s1"><rect x="7" y="60" width="136" height="230" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="7" y="60" width="136" height="8" rx="4" fill="#1f4e9c"/><use href="#i-laptop" x="40.0" y="74.0" width="70.0" height="70.0"/><text x="75.0" y="160.4" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Host discovery</text></g>
+<g class="st s1"><text x="75.0" y="200.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">live IPs</text></g>
+<g class="st s1"><circle cx="19" cy="72" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="19.0" y="76.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><path d="M145.0 175.0 L162.0 175.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s2"><rect x="164" y="60" width="136" height="230" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="164" y="60" width="136" height="8" rx="4" fill="#1f4e9c"/><use href="#i-router" x="197.0" y="74.0" width="70.0" height="70.0"/><text x="232.0" y="160.4" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Network mapping</text></g>
+<g class="st s2"><text x="232.0" y="200.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">topology</text></g>
+<g class="st s2"><circle cx="176" cy="72" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="176.0" y="76.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><path d="M302.0 175.0 L319.0 175.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s3"><rect x="321" y="60" width="136" height="230" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="321" y="60" width="136" height="8" rx="4" fill="#1f4e9c"/><use href="#i-firewall" x="354.0" y="74.0" width="70.0" height="70.0"/><text x="389.0" y="160.4" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Port scanning</text></g>
+<g class="st s3"><text x="389.0" y="200.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">open, closed,</text><text x="389.0" y="215.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">filtered</text></g>
+<g class="st s3"><circle cx="333" cy="72" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="333.0" y="76.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><path d="M459.0 175.0 L476.0 175.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s4"><rect x="478" y="60" width="136" height="230" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="478" y="60" width="136" height="8" rx="4" fill="#1f4e9c"/><use href="#i-fingerprint" x="511.0" y="74.0" width="70.0" height="70.0"/><text x="546.0" y="160.4" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Fingerprinting</text></g>
+<g class="st s4"><text x="546.0" y="200.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">OS, behavior</text></g>
+<g class="st s4"><circle cx="490" cy="72" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="490.0" y="76.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><path d="M616.0 175.0 L633.0 175.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s5"><rect x="635" y="60" width="136" height="230" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="635" y="60" width="136" height="8" rx="4" fill="#1f4e9c"/><use href="#i-code" x="668.0" y="74.0" width="70.0" height="70.0"/><text x="703.0" y="160.4" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Version scanning</text></g>
+<g class="st s5"><text x="703.0" y="200.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">exact software</text></g>
+<g class="st s5"><circle cx="647" cy="72" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="647.0" y="76.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><path d="M773.0 175.0 L790.0 175.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s6"><rect x="792" y="60" width="136" height="230" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="792" y="60" width="136" height="8" rx="4" fill="#1f4e9c"/><use href="#i-bug" x="825.0" y="74.0" width="70.0" height="70.0"/><text x="860.0" y="160.4" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Vulnerabilities</text></g>
+<g class="st s6"><text x="860.0" y="200.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">misconfigurations,</text><text x="860.0" y="215.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">missing patches</text></g>
+<g class="st s6"><circle cx="804" cy="72" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="804.0" y="76.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s7"><path d="M930.0 175.0 L947.0 175.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s7"><rect x="949" y="60" width="136" height="230" rx="10" fill="#ffffff" stroke="#c0392b" stroke-width="2.2" filter="url(#f-drop)"/><rect x="949" y="60" width="136" height="8" rx="4" fill="#c0392b"/><use href="#i-key" x="982.0" y="74.0" width="70.0" height="70.0"/><text x="1017.0" y="160.4" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">Exploitation</text></g>
+<g class="st s7"><text x="1017.0" y="200.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">Chapter 9</text></g>
+<g class="st s7"><circle cx="961" cy="72" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="961.0" y="76.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
+<g class="st s8"><rect x="140.0" y="330.0" width="820.0" height="110.0" rx="10" fill="#fff8e1" fill-opacity="1" stroke="#d9a400" stroke-width="1.6"/></g>
+<g class="st s8"><use href="#i-hourglass" x="165.0" y="350.0" width="70" height="70"/></g>
+<g class="st s8"><circle cx="140" cy="330" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="140.0" y="334.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">8</text></g>
+<g class="st s8"><text x="250.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Why time dominates planning:</text></g>
+<g class="st s8"><text x="250.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="normal" text-anchor="start">65,536 ports x 1 second x 500 hosts = 32,768,000 seconds = about 1.1 years (TCP alone)</text></g>
+<g class="st s8"><text x="250.0" y="424.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="start" font-style="italic">so testers prioritize ports, tune timing, and scan in stages.</text></g>
+</svg>

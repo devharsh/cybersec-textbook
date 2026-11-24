@@ -18,9 +18,9 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 4: Social Engineering and the Human Element | 12,552 | 1,000 | 25.1 |
 | Chapter 5: Risk Management | 18,600 | 696 | 37.2 |
 | Chapter 6: Penetration Testing Methodology | 10,225 | 265 | 20.4 |
-| Chapter 7: Reconnaissance and Open-Source Intelligence | 7,806 | 464 | 15.6 |
-| Chapter 8: Scanning and Enumeration | 7,419 | 816 | 14.8 |
-| Chapter 9: Exploitation and Post-Exploitation | 27,769 | 1,134 | 55.5 |
+| Chapter 7: Reconnaissance and Open-Source Intelligence | 8,047 | 464 | 16.1 |
+| Chapter 8: Scanning and Enumeration | 7,692 | 816 | 15.4 |
+| Chapter 9: Exploitation and Post-Exploitation | 28,170 | 1,134 | 56.3 |
 | Chapter 10: Web Application Security | 10,212 | 516 | 20.4 |
 | Chapter 11: Network Defense and Hardening | 26,625 | 529 | 53.2 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 13,324 | 1,114 | 26.6 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **466,137** | **24,597** | **932** |
+| **TOTAL** | **467,052** | **24,597** | **934** |
 
 ## Detailed Word Count by Section
 
@@ -389,22 +389,22 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 7: Reconnaissance and Open-Source Intelligence
 
-*7,806 markdown words (15.6 pages); 464 code words.*
+*8,047 markdown words (16.1 pages); 464 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 93 |
 | Key Terms | 207 |
 | 7.1 Why Reconnaissance Comes First | 501 |
-| 7.2 Footprinting: Passive and Active | 338 |
+| 7.2 Footprinting: Passive and Active | 385 |
 | 7.3 Open-Source Intelligence (OSINT) | 612 |
 | 7.4 Search-Engine Reconnaissance ("Google Dorking") | 416 |
 | 7.5 WHOIS and the Regional Internet Registries | 455 |
-| 7.6 DNS Reconnaissance | 436 |
+| 7.6 DNS Reconnaissance | 495 |
 | 7.7 Email Harvesting, Metadata, and Social-Media Profiling | 211 |
-| 7.8 Reconnaissance of Cloud and Modern Infrastructure | 349 |
-| 7.9 The Intelligence Cycle and Organizing Findings | 377 |
-| 7.10 Reconnaissance Tools | 388 |
+| 7.8 Reconnaissance of Cloud and Modern Infrastructure | 408 |
+| 7.9 The Intelligence Cycle and Organizing Findings | 407 |
+| 7.10 Reconnaissance Tools | 434 |
 | 7.11 Passive Fingerprinting | 265 |
 | 7.12 Defending Against Reconnaissance | 485 |
 | 7.13 AI-Assisted Reconnaissance and Modern WHOIS | 232 |
@@ -421,23 +421,23 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 8: Scanning and Enumeration
 
-*7,419 markdown words (14.8 pages); 816 code words.*
+*7,692 markdown words (15.4 pages); 816 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 152 |
 | Key Terms | 222 |
 | 8.1 From Reconnaissance to Active Probing | 301 |
-| 8.2 The Scanning Taxonomy and the Tyranny of Time | 168 |
+| 8.2 The Scanning Taxonomy and the Tyranny of Time | 215 |
 |     Why Scanning Time Dominates Planning | 304 |
 | 8.3 A TCP/IP Refresher for Scanners | 214 |
 |     The Six Nmap Port States | 284 |
 | 8.4 Host Discovery and Network Sweeps | 164 |
-|     What Nmap Probes by Default | 134 |
-| 8.5 Network Mapping: Traceroute, Firewalking, and Nmap | 209 |
+|     What Nmap Probes by Default | 185 |
+| 8.5 Network Mapping: Traceroute, Firewalking, and Nmap | 265 |
 |     Firewalking, Layer Four Traceroute (LFT), and Nmap's Smarter Traceroute | 219 |
 | 8.6 Port Scanning with Nmap | 132 |
-|     TCP Scan Types | 288 |
+|     TCP Scan Types | 332 |
 |     UDP Scanning, Timing, and Output | 355 |
 | 8.7 hping3: Crafting Packets by Hand | 289 |
 | 8.8 Always Sniff the Wire | 176 |
@@ -445,12 +445,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 8.10 Service and Version Scanning, and Enumeration | 231 |
 | 8.11 Vulnerability Scanning | 316 |
 | 8.12 The Nmap Scripting Engine (NSE) | 160 |
-| 8.13 Detection and Evasion | 309 |
+| 8.13 Detection and Evasion | 357 |
 | 8.14 Scanning Safely, Legally, and Within Scope | 195 |
 |     Automated Discovery and Mapping Tools | 142 |
 |     Scanning IPv6 | 143 |
 |     The Pentester's Toolkit: Kali and BackTrack | 262 |
-| 8.15 Attack Surface Management and Continuous Exposure Management | 203 |
+| 8.15 Attack Surface Management and Continuous Exposure Management | 230 |
 | Chapter Summary | 119 |
 | Why This Matters | 125 |
 | News in Focus: Internet-Scale Scanning as an Early-Warning Signal | 253 |
@@ -461,7 +461,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*27,769 markdown words (55.5 pages); 1,134 code words.*
+*28,170 markdown words (56.3 pages); 1,134 code words.*
 
 | Section | Words |
 |---|---:|
@@ -474,11 +474,11 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Injection Vulnerabilities | 123 |
 |     Memory Corruption | 161 |
 |     Authentication and Session Vulnerabilities | 33 |
-| 9.3 From Source to Machine Code: The Compilation Pipeline | 247 |
-| 9.4 Memory Corruption: The Stack, the Heap, and Buffer Overflows | 608 |
+| 9.3 From Source to Machine Code: The Compilation Pipeline | 294 |
+| 9.4 Memory Corruption: The Stack, the Heap, and Buffer Overflows | 662 |
 |     Stack Exhaustion and Heap Problems | 249 |
 |     CWE-120: Copying Input Without Checking Its Size | 1,712 |
-| 9.5 From Stack Smashing to Return-Oriented Programming | 647 |
+| 9.5 From Stack Smashing to Return-Oriented Programming | 693 |
 | 9.6 Programming Survival Skills for Exploitation | 302 |
 | 9.7 Shellcode and Shellcode Strategies | 277 |
 | 9.8 The Exploit-Development Workflow | 414 |
@@ -494,7 +494,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Linux Privilege Escalation | 142 |
 |     Windows Privilege Escalation | 129 |
 | 9.12 Lateral Movement | 43 |
-|     Pass-the-Hash | 61 |
+|     Pass-the-Hash | 113 |
 |     Pass-the-Ticket | 62 |
 | 9.13 Persistence | 35 |
 |     Common Persistence Mechanisms and Their Detection Signatures | 143 |
@@ -506,10 +506,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Answer Key | 162 |
 | 9.18 Linux Privilege Escalation in Depth | 267 |
 | 9.19 Windows Exploitation Specifics | 143 |
-| 9.20 Command-and-Control and Post-Exploitation Frameworks | 182 |
+| 9.20 Command-and-Control and Post-Exploitation Frameworks | 233 |
 |     Exercises | 129 |
 |     Answer Key | 132 |
-| 9.21 Finding Vulnerabilities: Fuzzing in Depth | 174 |
+| 9.21 Finding Vulnerabilities: Fuzzing in Depth | 214 |
 | 9.22 From Crash to Exploit: Reliability and Weaponization | 208 |
 |     Exercises | 121 |
 |     Answer Key | 164 |
@@ -559,8 +559,8 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 9.38 How Kerberos Works, and Where Each Attack Breaks In | 45 |
 |     The problem single sign-on solves | 184 |
 |     The three exchanges | 380 |
-|     Where each attack breaks in | 357 |
-| 9.39 Landmark Bugs, from the Morris Worm to the Year 2038 | 853 |
+|     Where each attack breaks in | 419 |
+| 9.39 Landmark Bugs, from the Morris Worm to the Year 2038 | 902 |
 |     Y2K and the Year 2038, Worked | 128 |
 | Chapter Summary | 181 |
 | Why This Matters | 62 |

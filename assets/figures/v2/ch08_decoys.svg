@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" aria-labelledby="t d"><title id="t">Decoy scanning: hiding the real scanner among spoofed sources</title><desc id="d">With nmap -D the real scanner&#x27;s probes are mixed with probes that appear to come from several spoofed decoy addresses, so the intrusion detection system logs many sources and cannot easily tell which is real. Other evasion tricks are fragmentation, source-port and timing changes, bad checksums to spot firewalls, and IPv6. Defenses: rate-limit and correlate, alert on illegal flags, reassemble fragments, validate checksums, and police IPv6 like IPv4.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-9aa5b1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#9aa5b1"/></marker><marker id="a-c0392b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-laptop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="20" y="22" width="60" height="42" rx="3" fill="#2f353d" stroke="#14181d" stroke-width="1.2"/>
+<rect x="24" y="26" width="52" height="34" rx="1" fill="url(#g-screen)"/>
+<path d="M24 26 h52 v12 Q50 31 24 41 Z" fill="#fff" opacity=".18"/>
+<path d="M12 70 L20 64 H80 L88 70 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1"/>
+<rect x="12" y="70" width="76" height="5" rx="2" fill="#9aa3ae" stroke="#5b6570" stroke-width=".8"/>
+<rect x="42" y="66" width="16" height="2.4" rx="1" fill="#8892a0"/>
+</symbol>
+<symbol id="i-attacker" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M16 94 C16 64 30 54 50 54 C70 54 84 64 84 94 Z" fill="url(#g-hood)" stroke="#000" stroke-width="1"/>
+<path d="M28 52 C26 22 40 10 50 10 C60 10 74 22 72 52 C66 60 34 60 28 52 Z" fill="url(#g-hood)" stroke="#000" stroke-width="1"/>
+<ellipse cx="50" cy="40" rx="15" ry="16" fill="#0a0c0f"/>
+<path d="M40 38 l7 2.5 -7 2 Z M60 38 l-7 2.5 7 2 Z" fill="#ff3b30"/>
+<path d="M30 74 L70 74 L74 92 L26 92 Z" fill="#3a414b" stroke="#000" stroke-width=".8"/>
+<rect x="33" y="77" width="34" height="12" fill="#b71c1c" opacity=".85"/>
+<path d="M46 80 a4 4 0 0 1 8 0 v1 h-8 Z M45 81 h10 v6 h-10 Z" fill="#ffcdd2"/>
+</symbol>
+<symbol id="i-firewall" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="14" y="26" width="72" height="62" rx="2" fill="url(#g-brick)" stroke="#7a2e18" stroke-width="1.2"/>
+<g stroke="#f6d3c4" stroke-width="2.2" fill="none">
+<path d="M14 41 H86 M14 57 H86 M14 73 H86"/>
+<path d="M38 26 V41 M62 26 V41 M26 41 V57 M50 41 V57 M74 41 V57 M38 57 V73 M62 57 V73 M26 73 V88 M50 73 V88 M74 73 V88"/></g>
+<path d="M50 4 C58 14 66 16 62 26 H38 C34 18 44 14 50 4 Z" fill="#ffb300" stroke="#e65100" stroke-width="1"/>
+<path d="M50 12 C55 18 57 21 55 26 H45 C43 21 47 18 50 12 Z" fill="#fff176"/>
+</symbol>
+<symbol id="i-server" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M28 16 L40 8 L72 8 L60 16 Z" fill="url(#g-steel-top)" stroke="#14181d" stroke-width="1"/>
+<path d="M60 16 L72 8 L72 82 L60 91 Z" fill="#1b1f25" stroke="#14181d" stroke-width="1"/>
+<rect x="28" y="16" width="32" height="75" rx="1.5" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<g fill="#59626f" stroke="#14181d" stroke-width=".6">
+<rect x="32" y="21" width="24" height="5" rx="1"/><rect x="32" y="28" width="24" height="5" rx="1"/>
+<rect x="32" y="35" width="24" height="5" rx="1"/><rect x="32" y="42" width="24" height="5" rx="1"/></g>
+<g fill="#8fd16a"><circle cx="53" cy="23.5" r="1"/><circle cx="53" cy="30.5" r="1"/><circle cx="53" cy="37.5" r="1"/></g>
+<g stroke="#3d4450" stroke-width="1"><line x1="32" y1="56" x2="56" y2="56"/><line x1="32" y1="60" x2="56" y2="60"/><line x1="32" y1="64" x2="56" y2="64"/></g>
+<circle cx="44" cy="80" r="3" fill="#2196f3" stroke="#0d47a1" stroke-width=".8"/>
+</symbol>
+<symbol id="i-eye" viewBox="0 0 100 100">
+<path d="M8 50 C26 22 74 22 92 50 C74 78 26 78 8 50 Z" fill="url(#g-paper)" stroke="#2f6fae" stroke-width="3"/>
+<circle cx="50" cy="50" r="17" fill="url(#g-screen)" stroke="#0b4f9c" stroke-width="2"/>
+<circle cx="50" cy="50" r="7" fill="#0d1b2a"/><circle cx="44" cy="44" r="3.5" fill="#fff"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+</defs>
+<rect width="1100" height="520" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Decoy scanning: hiding the real scanner among spoofed sources</text>
+<g class="st s2"><use href="#i-laptop" x="64.0" y="54.0" width="52" height="52"/></g>
+<g class="st s2"><rect x="58" y="54" width="64" height="52" rx="6" fill="none" stroke="#9aa5b1" stroke-dasharray="4 3"/></g>
+<g class="st s2"><text x="140.0" y="85.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="bold" text-anchor="start">203.0.113.5</text></g>
+<g class="st s2"><path d="M270.0 80.0 L520.0 250.0" fill="none" stroke="#9aa5b1" stroke-width="1.6" stroke-dasharray="7 6" marker-end="url(#a-9aa5b1)" stroke-linejoin="round"/></g>
+<g class="st s2"><use href="#i-laptop" x="64.0" y="126.0" width="52" height="52"/></g>
+<g class="st s2"><rect x="58" y="126" width="64" height="52" rx="6" fill="none" stroke="#9aa5b1" stroke-dasharray="4 3"/></g>
+<g class="st s2"><text x="140.0" y="157.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="bold" text-anchor="start">198.51.100.7</text></g>
+<g class="st s2"><path d="M270.0 152.0 L520.0 250.0" fill="none" stroke="#9aa5b1" stroke-width="1.6" stroke-dasharray="7 6" marker-end="url(#a-9aa5b1)" stroke-linejoin="round"/></g>
+<g class="st s1"><use href="#i-attacker" x="60.0" y="194.0" width="60" height="60"/></g>
+<g class="st s1"><text x="140.0" y="229.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">192.0.2.44 (real)</text></g>
+<g class="st s1"><path d="M270.0 224.0 L520.0 250.0" fill="none" stroke="#c0392b" stroke-width="2.4" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s2"><use href="#i-laptop" x="64.0" y="270.0" width="52" height="52"/></g>
+<g class="st s2"><rect x="58" y="270" width="64" height="52" rx="6" fill="none" stroke="#9aa5b1" stroke-dasharray="4 3"/></g>
+<g class="st s2"><text x="140.0" y="301.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="bold" text-anchor="start">203.0.113.90</text></g>
+<g class="st s2"><path d="M270.0 296.0 L520.0 250.0" fill="none" stroke="#9aa5b1" stroke-width="1.6" stroke-dasharray="7 6" marker-end="url(#a-9aa5b1)" stroke-linejoin="round"/></g>
+<g class="st s2"><use href="#i-laptop" x="64.0" y="342.0" width="52" height="52"/></g>
+<g class="st s2"><rect x="58" y="342" width="64" height="52" rx="6" fill="none" stroke="#9aa5b1" stroke-dasharray="4 3"/></g>
+<g class="st s2"><text x="140.0" y="373.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="bold" text-anchor="start">198.51.100.23</text></g>
+<g class="st s2"><path d="M270.0 368.0 L520.0 250.0" fill="none" stroke="#9aa5b1" stroke-width="1.6" stroke-dasharray="7 6" marker-end="url(#a-9aa5b1)" stroke-linejoin="round"/></g>
+<g class="st s2"><text x="90.0" y="445.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="bold" text-anchor="middle">decoys: spoofed sources</text></g>
+<g class="st s1"><use href="#i-firewall" x="525.0" y="215.0" width="70" height="70"/></g>
+<g class="st s1"><use href="#i-server" x="645.0" y="215.0" width="70" height="70"/><text x="680.0" y="300.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Target</text></g>
+<g class="st s1"><circle cx="40" cy="210" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="40.0" y="214.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="40" cy="70" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="40.0" y="74.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><use href="#i-eye" x="597.0" y="337.0" width="46" height="46"/><text x="620.0" y="398.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">IDS</text></g>
+<g class="st s3"><rect x="540.0" y="410.0" width="200.0" height="80.0" rx="6" fill="#fff8e1" fill-opacity="1" stroke="#d9a400" stroke-width="1.4"/></g>
+<g class="st s3"><text x="640.0" y="432.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">scan from 5 sources:</text></g>
+<g class="st s3"><text x="640.0" y="452.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">which one is real?</text></g>
+<g class="st s3"><circle cx="540" cy="410" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="540.0" y="414.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><text x="790.0" y="80.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Other tricks, and the defense</text></g>
+<g class="st s4"><circle cx="774" cy="74" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="774.0" y="78.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s4"><rect x="780.0" y="102.0" width="290.0" height="62.0" rx="6" fill="#ffffff" fill-opacity="1" stroke="#9aa5b1" stroke-width="1.4"/></g>
+<g class="st s4"><text x="794.0" y="124.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">Fragmentation -f</text></g>
+<g class="st s4"><use href="#i-shield" x="791.0" y="139.0" width="18" height="18"/></g>
+<g class="st s4"><text x="814.0" y="152.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold" text-anchor="start">modern sensors reassemble</text></g>
+<g class="st s4"><rect x="780.0" y="182.0" width="290.0" height="62.0" rx="6" fill="#ffffff" fill-opacity="1" stroke="#9aa5b1" stroke-width="1.4"/></g>
+<g class="st s4"><text x="794.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">Timing -T0, --source-port</text></g>
+<g class="st s4"><use href="#i-shield" x="791.0" y="219.0" width="18" height="18"/></g>
+<g class="st s4"><text x="814.0" y="232.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold" text-anchor="start">correlate over longer windows</text></g>
+<g class="st s4"><rect x="780.0" y="262.0" width="290.0" height="62.0" rx="6" fill="#ffffff" fill-opacity="1" stroke="#9aa5b1" stroke-width="1.4"/></g>
+<g class="st s4"><text x="794.0" y="284.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">--badsum firewall spotting</text></g>
+<g class="st s4"><use href="#i-shield" x="791.0" y="299.0" width="18" height="18"/></g>
+<g class="st s4"><text x="814.0" y="312.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold" text-anchor="start">only a non-validating device replies</text></g>
+<g class="st s4"><rect x="780.0" y="342.0" width="290.0" height="62.0" rx="6" fill="#ffffff" fill-opacity="1" stroke="#9aa5b1" stroke-width="1.4"/></g>
+<g class="st s4"><text x="794.0" y="364.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">IPv6 -6</text></g>
+<g class="st s4"><use href="#i-shield" x="791.0" y="379.0" width="18" height="18"/></g>
+<g class="st s4"><text x="814.0" y="392.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold" text-anchor="start">apply the same rules to IPv6</text></g>
+</svg>

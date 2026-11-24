@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" width="1100" height="600" role="img" aria-labelledby="t d"><title id="t">The reconnaissance funnel: from everything public to a validated target list</title><desc id="d">Five layers narrowing downward. The public internet holds everything. OSINT narrows it to the target&#x27;s domains, people, technology, and documents. WHOIS and the regional internet registries give the IP ranges the target owns. DNS gives hosts, mail servers, and subdomains. The result is a validated target list that feeds scanning in Chapter 8.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-2e7d32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#2e7d32"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-cloud" viewBox="0 0 100 100">
+<path d="M22 74 C8 74 4 56 18 50 C16 34 36 26 46 36 C52 20 78 22 80 42 C96 42 98 72 80 74 Z"
+ fill="url(#g-cloud)" stroke="#5b9bd5" stroke-width="2"/>
+<path d="M26 66 C20 66 18 60 22 58" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+</symbol>
+<symbol id="i-search" viewBox="0 0 100 100">
+<circle cx="42" cy="42" r="24" fill="#e3f2fd" stroke="#2f6fae" stroke-width="7"/>
+<line x1="60" y1="60" x2="86" y2="86" stroke="#5b6570" stroke-width="11" stroke-linecap="round"/>
+<path d="M30 34 a14 14 0 0 1 12 -8" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="i-database" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M24 22 v56 a26 9 0 0 0 52 0 v-56" fill="url(#g-db)" stroke="#4f5964" stroke-width="1.2"/>
+<path d="M24 41 a26 9 0 0 0 52 0 M24 60 a26 9 0 0 0 52 0" fill="none" stroke="#5f6a76" stroke-width="1.2"/>
+<ellipse cx="50" cy="22" rx="26" ry="9" fill="#f1f3f5" stroke="#4f5964" stroke-width="1.2"/>
+<ellipse cx="50" cy="22" rx="18" ry="5" fill="#dfe4e9"/>
+</symbol>
+<symbol id="i-server" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M28 16 L40 8 L72 8 L60 16 Z" fill="url(#g-steel-top)" stroke="#14181d" stroke-width="1"/>
+<path d="M60 16 L72 8 L72 82 L60 91 Z" fill="#1b1f25" stroke="#14181d" stroke-width="1"/>
+<rect x="28" y="16" width="32" height="75" rx="1.5" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<g fill="#59626f" stroke="#14181d" stroke-width=".6">
+<rect x="32" y="21" width="24" height="5" rx="1"/><rect x="32" y="28" width="24" height="5" rx="1"/>
+<rect x="32" y="35" width="24" height="5" rx="1"/><rect x="32" y="42" width="24" height="5" rx="1"/></g>
+<g fill="#8fd16a"><circle cx="53" cy="23.5" r="1"/><circle cx="53" cy="30.5" r="1"/><circle cx="53" cy="37.5" r="1"/></g>
+<g stroke="#3d4450" stroke-width="1"><line x1="32" y1="56" x2="56" y2="56"/><line x1="32" y1="60" x2="56" y2="60"/><line x1="32" y1="64" x2="56" y2="64"/></g>
+<circle cx="44" cy="80" r="3" fill="#2196f3" stroke="#0d47a1" stroke-width=".8"/>
+</symbol>
+<symbol id="i-checklist" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="22" y="14" width="56" height="76" rx="4" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.4"/>
+<rect x="38" y="9" width="24" height="10" rx="3" fill="#7d8796"/>
+<path d="M30 32 l4 4 8 -9" fill="none" stroke="#2e7d32" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><line x1="48" y1="33" x2="70" y2="33" stroke="#9aa6b3" stroke-width="3" stroke-linecap="round"/><path d="M30 48 l4 4 8 -9" fill="none" stroke="#2e7d32" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><line x1="48" y1="49" x2="70" y2="49" stroke="#9aa6b3" stroke-width="3" stroke-linecap="round"/><path d="M30 64 l4 4 8 -9" fill="none" stroke="#2e7d32" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><line x1="48" y1="65" x2="70" y2="65" stroke="#9aa6b3" stroke-width="3" stroke-linecap="round"/>
+<line x1="30" y1="81" x2="70" y2="81" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/>
+</symbol>
+<symbol id="i-nodes" viewBox="0 0 100 100">
+<g stroke="#5b9bd5" stroke-width="3"><line x1="50" y1="20" x2="20" y2="70"/><line x1="50" y1="20" x2="80" y2="70"/><line x1="20" y1="70" x2="80" y2="70"/><line x1="50" y1="20" x2="50" y2="52"/><line x1="20" y1="70" x2="50" y2="52"/><line x1="80" y1="70" x2="50" y2="52"/></g>
+<circle cx="50" cy="20" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/><circle cx="20" cy="70" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/><circle cx="80" cy="70" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/><circle cx="50" cy="52" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/></symbol>
+</defs>
+<rect width="1100" height="600" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">The reconnaissance funnel: from everything public to a validated target list</text>
+<g class="st s1"><polygon points="40.0,60.0 680.0,60.0 622.5,144.0 97.5,144.0" fill="#d6e9f8" stroke="#ffffff" stroke-width="2" fill-opacity="1"/></g>
+<g class="st s1"><use href="#i-cloud" x="333.0" y="75.0" width="54" height="54"/></g>
+<g class="st s1"><line x1="670" y1="102" x2="720" y2="102" stroke="#9aa5b1" stroke-width="1.4" stroke-dasharray="4 4"/></g>
+<g class="st s1"><text x="735.0" y="108.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f2933" font-weight="bold" text-anchor="start">Public internet (everything)</text></g>
+<g class="st s1"><circle cx="708" cy="102" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="708.0" y="106.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><polygon points="97.5,148.0 622.5,148.0 565.0,232.0 155.0,232.0" fill="#aed6f1" stroke="#ffffff" stroke-width="2" fill-opacity="1"/></g>
+<g class="st s2"><use href="#i-search" x="333.0" y="163.0" width="54" height="54"/></g>
+<g class="st s2"><line x1="612" y1="190" x2="720" y2="190" stroke="#9aa5b1" stroke-width="1.4" stroke-dasharray="4 4"/></g>
+<g class="st s2"><text x="735.0" y="196.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f2933" font-weight="bold" text-anchor="start">OSINT: domains, people, tech, docs</text></g>
+<g class="st s2"><circle cx="708" cy="190" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="708.0" y="194.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><polygon points="155.0,236.0 565.0,236.0 507.5,320.0 212.5,320.0" fill="#7fb3d5" stroke="#ffffff" stroke-width="2" fill-opacity="1"/></g>
+<g class="st s3"><use href="#i-database" x="333.0" y="251.0" width="54" height="54"/></g>
+<g class="st s3"><line x1="555" y1="278" x2="720" y2="278" stroke="#9aa5b1" stroke-width="1.4" stroke-dasharray="4 4"/></g>
+<g class="st s3"><text x="735.0" y="284.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f2933" font-weight="bold" text-anchor="start">WHOIS and RIR: owned IP ranges</text></g>
+<g class="st s3"><circle cx="708" cy="278" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="708.0" y="282.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><polygon points="212.5,324.0 507.5,324.0 450.0,408.0 270.0,408.0" fill="#5499c7" stroke="#ffffff" stroke-width="2" fill-opacity="1"/></g>
+<g class="st s4"><use href="#i-server" x="333.0" y="339.0" width="54" height="54"/></g>
+<g class="st s4"><line x1="498" y1="366" x2="720" y2="366" stroke="#9aa5b1" stroke-width="1.4" stroke-dasharray="4 4"/></g>
+<g class="st s4"><text x="735.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f2933" font-weight="bold" text-anchor="start">DNS: hosts, mail, subdomains</text></g>
+<g class="st s4"><circle cx="708" cy="366" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="708.0" y="370.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><polygon points="270.0,412.0 450.0,412.0 392.5,496.0 327.5,496.0" fill="#2e86c1" stroke="#ffffff" stroke-width="2" fill-opacity="1"/></g>
+<g class="st s5"><use href="#i-checklist" x="336.0" y="430.0" width="48" height="48"/></g>
+<g class="st s5"><line x1="440" y1="454" x2="720" y2="454" stroke="#9aa5b1" stroke-width="1.4" stroke-dasharray="4 4"/></g>
+<g class="st s5"><text x="735.0" y="460.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f2933" font-weight="bold" text-anchor="start">Validated target list</text></g>
+<g class="st s5"><circle cx="708" cy="454" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="708.0" y="458.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<text x="735.0" y="482.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="start" font-style="italic">passive at the top, active toward the bottom</text>
+<g class="st s6"><path d="M380.0 494.0 L520.0 550.0" fill="none" stroke="#2e7d32" stroke-width="3" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/></g>
+<g class="st s6"><text x="595.0" y="556.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2e7d32" font-weight="bold" text-anchor="start">to scanning (Chapter 8)</text></g>
+<g class="st s6"><use href="#i-nodes" x="535.0" y="525.0" width="50" height="50"/></g>
+<g class="st s6"><circle cx="470" cy="540" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="470.0" y="544.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+</svg>

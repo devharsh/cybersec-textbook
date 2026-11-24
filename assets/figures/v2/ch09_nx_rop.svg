@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" aria-labelledby="t d"><title id="t">After the overflow: injected shellcode or reused code, and the mitigations against each</title><desc id="d">An overflow overwrites the saved return address. If the stack is executable, the attacker injects and runs shellcode. If NX or DEP makes it non-executable, the attacker reuses existing code through return-to-libc or a chain of ROP gadgets. Against all of these: ASLR randomizes addresses, a stack canary detects the overwrite, CFI and shadow stacks block bad returns, and least privilege limits the damage.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-2e7d32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#2e7d32"/></marker><marker id="a-6a3d9a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#6a3d9a"/></marker><marker id="a-d9822b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#d9822b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-bug" viewBox="0 0 100 100">
+<ellipse cx="50" cy="56" rx="20" ry="26" fill="url(#g-red)" stroke="#7f0000" stroke-width="1.6"/>
+<circle cx="50" cy="28" r="11" fill="#3e0000"/><line x1="50" y1="32" x2="50" y2="82" stroke="#7f0000" stroke-width="2"/>
+<g stroke="#3e0000" stroke-width="3" stroke-linecap="round"><path d="M31 46 l-14 -8 M31 58 h-16 M32 70 l-14 8 M69 46 l14 -8 M69 58 h16 M68 70 l14 8 M44 20 l-6 -10 M56 20 l6 -10"/></g>
+<circle cx="43" cy="50" r="4" fill="#3e0000"/><circle cx="57" cy="64" r="4" fill="#3e0000"/>
+</symbol>
+<symbol id="i-code" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="10" y="16" width="80" height="66" rx="4" fill="#1e2530" stroke="#0d1014" stroke-width="1.4"/>
+<rect x="10" y="16" width="80" height="11" rx="4" fill="#3b424d"/><circle cx="18" cy="21.5" r="2.2" fill="#ff5f56"/><circle cx="25" cy="21.5" r="2.2" fill="#ffbd2e"/><circle cx="32" cy="21.5" r="2.2" fill="#27c93f"/>
+<path d="M30 42 L20 52 L30 62 M70 42 L80 52 L70 62" fill="none" stroke="#4fc3f7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="56" y1="38" x2="44" y2="66" stroke="#8fd16a" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="i-gear" viewBox="0 0 100 100">
+<path d="M50 10 l7 2 2 10 8 4 9 -5 5 5 -5 9 4 8 10 2 2 7 -2 7 -10 2 -4 8 5 9 -5 5 -9 -5 -8 4 -2 10 -7 2 -7 -2 -2 -10 -8 -4 -9 5 -5 -5 5 -9 -4 -8 -10 -2 -2 -7 2 -7 10 -2 4 -8 -5 -9 5 -5 9 5 8 -4 2 -10 Z"
+ fill="url(#g-steel-top)" stroke="#3d4450" stroke-width="1.4"/>
+<circle cx="50" cy="50" r="14" fill="#eef1f4" stroke="#3d4450" stroke-width="1.4"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+</defs>
+<rect width="1100" height="520" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">After the overflow: injected shellcode or reused code, and the mitigations against each</text>
+<g class="st s1"><rect x="420" y="50" width="260" height="120" rx="10" fill="#ffffff" stroke="#c0392b" stroke-width="2.2" filter="url(#f-drop)"/><rect x="420" y="50" width="260" height="8" rx="4" fill="#c0392b"/><use href="#i-bug" x="522.0" y="64.0" width="56.0" height="56.0"/><text x="550.0" y="138.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">Return address overwritten</text></g>
+<g class="st s1"><circle cx="420" cy="50" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="420.0" y="54.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><path d="M470.0 172.0 L250.0 230.0" fill="none" stroke="#d9822b" stroke-width="2.2" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s2"><text x="330.0" y="186.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#d9822b" font-weight="bold" text-anchor="end">stack executable (no NX)</text></g>
+<g class="st s3"><path d="M630.0 172.0 L850.0 230.0" fill="none" stroke="#6a3d9a" stroke-width="2.2" marker-end="url(#a-6a3d9a)" stroke-linejoin="round"/></g>
+<g class="st s3"><text x="770.0" y="186.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#6a3d9a" font-weight="bold" text-anchor="start">stack not executable (NX / DEP)</text></g>
+<g class="st s2"><rect x="120" y="232" width="260" height="140" rx="10" fill="#ffffff" stroke="#d9822b" stroke-width="2.2" filter="url(#f-drop)"/><rect x="120" y="232" width="260" height="8" rx="4" fill="#d9822b"/><use href="#i-code" x="220.0" y="246.0" width="60.0" height="60.0"/><text x="250.0" y="324.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="middle">Inject and run shellcode</text></g>
+<g class="st s2"><circle cx="120" cy="232" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="120.0" y="236.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><rect x="720" y="232" width="260" height="140" rx="10" fill="#ffffff" stroke="#6a3d9a" stroke-width="2.2" filter="url(#f-drop)"/><rect x="720" y="232" width="260" height="8" rx="4" fill="#6a3d9a"/><use href="#i-gear" x="825.0" y="246.0" width="50.0" height="50.0"/><text x="850.0" y="314.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6a3d9a" font-weight="bold" text-anchor="middle">Reuse existing code</text><text x="850.0" y="335.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">return-to-libc or a</text><text x="850.0" y="351.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">chain of ROP gadgets</text></g>
+<g class="st s3"><circle cx="720" cy="232" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="720.0" y="236.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><rect x="40.0" y="410.0" width="245.0" height="80.0" rx="8" fill="#e8f5e9" fill-opacity="1" stroke="#2e7d32" stroke-width="2"/></g>
+<g class="st s4"><use href="#i-shield" x="54.0" y="428.0" width="44" height="44"/></g>
+<g class="st s4"><text x="106.0" y="444.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2e7d32" font-weight="bold" text-anchor="start">ASLR</text></g>
+<g class="st s4"><text x="106.0" y="466.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">randomizes addresses</text></g>
+<g class="st s4"><rect x="305.0" y="410.0" width="245.0" height="80.0" rx="8" fill="#e8f5e9" fill-opacity="1" stroke="#2e7d32" stroke-width="2"/></g>
+<g class="st s4"><use href="#i-shield" x="319.0" y="428.0" width="44" height="44"/></g>
+<g class="st s4"><text x="371.0" y="444.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2e7d32" font-weight="bold" text-anchor="start">Stack canary</text></g>
+<g class="st s4"><text x="371.0" y="466.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">detects the overwrite</text></g>
+<g class="st s4"><rect x="570.0" y="410.0" width="245.0" height="80.0" rx="8" fill="#e8f5e9" fill-opacity="1" stroke="#2e7d32" stroke-width="2"/></g>
+<g class="st s4"><use href="#i-shield" x="584.0" y="428.0" width="44" height="44"/></g>
+<g class="st s4"><text x="636.0" y="444.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2e7d32" font-weight="bold" text-anchor="start">CFI, shadow stack</text></g>
+<g class="st s4"><text x="636.0" y="466.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">blocks bad returns</text></g>
+<g class="st s4"><rect x="835.0" y="410.0" width="245.0" height="80.0" rx="8" fill="#e8f5e9" fill-opacity="1" stroke="#2e7d32" stroke-width="2"/></g>
+<g class="st s4"><use href="#i-shield" x="849.0" y="428.0" width="44" height="44"/></g>
+<g class="st s4"><text x="901.0" y="444.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2e7d32" font-weight="bold" text-anchor="start">Least privilege</text></g>
+<g class="st s4"><text x="901.0" y="466.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">limits the impact</text></g>
+<g class="st s4"><path d="M250.0 374.0 L300.0 406.0" fill="none" stroke="#2e7d32" stroke-width="2.2" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/></g>
+<g class="st s4"><path d="M850.0 374.0 L800.0 406.0" fill="none" stroke="#2e7d32" stroke-width="2.2" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/></g>
+<g class="st s4"><circle cx="40" cy="410" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="40.0" y="414.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+</svg>
