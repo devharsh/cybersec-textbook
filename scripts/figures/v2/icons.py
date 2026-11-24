@@ -327,3 +327,57 @@ ICONS["check"] = """<circle cx="50" cy="50" r="38" fill="url(#g-green)" stroke="
 <path d="M32 51 L45 64 L69 38" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>"""
 ICONS["cross"] = """<circle cx="50" cy="50" r="38" fill="url(#g-red)" stroke="#7f0000" stroke-width="2"/>
 <path d="M35 35 L65 65 M65 35 L35 65" stroke="#fff" stroke-width="9" stroke-linecap="round"/>"""
+
+# ---- batch 3: access and wireless gear
+ICONS["wifi"] = SHADOW + """
+<path d="M26 26 L22 52" stroke="#3b424d" stroke-width="3.4" stroke-linecap="round"/><path d="M74 26 L78 52" stroke="#3b424d" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M14 58 L22 50 H82 L90 58 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.2"/>
+<path d="M14 58 H90 V76 H14 Z" fill="url(#g-steel-top)" stroke="#5b6570" stroke-width="1.2"/>
+""" + "".join(f'<circle cx="{30+i*10}" cy="67" r="2" fill="{c}"/>' for i, c in enumerate(["#8fd16a", "#8fd16a", "#4fc3f7", "#4fc3f7", "#f5b041"])) + """
+<g fill="none" stroke="#1e88e5" stroke-width="3" stroke-linecap="round">
+<path d="M40 30 a14 14 0 0 1 20 0"/><path d="M34 23 a22 22 0 0 1 32 0"/><path d="M28 16 a30 30 0 0 1 44 0"/></g>
+<circle cx="50" cy="36" r="3" fill="#1e88e5"/>
+"""
+ICONS["hub"] = SHADOW + """
+<path d="M10 46 L24 36 H90 L76 46 Z" fill="#d7dce2" stroke="#5b6570" stroke-width="1.2"/>
+<path d="M10 46 H76 V66 H10 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.2"/>
+<path d="M76 46 L90 36 V56 L76 66 Z" fill="#9aa3ae" stroke="#5b6570" stroke-width="1.2"/>
+""" + "".join(f'<rect x="{15+i*12}" y="51" width="8" height="8" rx="1" fill="#3b424d"/><circle cx="{19+i*12}" cy="62.5" r="1.2" fill="#f5b041"/>' for i in range(5))
+ICONS["satellite"] = SHADOW + """
+<g transform="rotate(-30 50 48)">
+<rect x="6" y="40" width="28" height="16" fill="#1f4e9c" stroke="#0d2c5c" stroke-width="1.2"/>
+<rect x="66" y="40" width="28" height="16" fill="#1f4e9c" stroke="#0d2c5c" stroke-width="1.2"/>
+<g stroke="#7fa6dd" stroke-width=".8"><line x1="13" y1="40" x2="13" y2="56"/><line x1="20" y1="40" x2="20" y2="56"/><line x1="27" y1="40" x2="27" y2="56"/>
+<line x1="73" y1="40" x2="73" y2="56"/><line x1="80" y1="40" x2="80" y2="56"/><line x1="87" y1="40" x2="87" y2="56"/><line x1="6" y1="48" x2="34" y2="48"/><line x1="66" y1="48" x2="94" y2="48"/></g>
+<line x1="34" y1="48" x2="40" y2="48" stroke="#5b6570" stroke-width="3"/><line x1="60" y1="48" x2="66" y2="48" stroke="#5b6570" stroke-width="3"/>
+<rect x="40" y="36" width="20" height="24" rx="2" fill="url(#g-gold)" stroke="#8a6d1a" stroke-width="1.2"/>
+<path d="M44 60 q6 10 12 0" fill="#d7dce2" stroke="#5b6570" stroke-width="1"/></g>
+"""
+ICONS["tower"] = SHADOW + """
+<g stroke="#5b6570" stroke-width="2.6" fill="none" stroke-linecap="round">
+<path d="M50 26 L34 92 M50 26 L66 92"/><path d="M40 66 L60 66 M37 80 L63 80 M43 50 L57 50"/><path d="M40 66 L57 50 M60 66 L43 50 M37 80 L60 66 M63 80 L40 66"/></g>
+<circle cx="50" cy="24" r="4" fill="#c0392b"/>
+<g fill="none" stroke="#1e88e5" stroke-width="2.8" stroke-linecap="round">
+<path d="M38 14 a16 16 0 0 0 0 20"/><path d="M62 14 a16 16 0 0 1 0 20"/><path d="M30 8 a26 26 0 0 0 0 32"/><path d="M70 8 a26 26 0 0 1 0 32"/></g>
+"""
+ICONS["modem"] = SHADOW + """
+<rect x="30" y="16" width="40" height="72" rx="6" fill="url(#g-steel-top)" stroke="#2b3138" stroke-width="1.4"/>
+<rect x="34" y="20" width="32" height="6" rx="2" fill="#3b424d"/>
+""" + "".join(f'<circle cx="50" cy="{36+i*9}" r="2.4" fill="{c}"/>' for i, c in enumerate(["#8fd16a", "#8fd16a", "#4fc3f7", "#4fc3f7", "#f5b041"])) + """
+<rect x="24" y="84" width="52" height="6" rx="2" fill="#9aa3ae"/>
+"""
+ICONS["door"] = SHADOW + """
+<rect x="24" y="10" width="52" height="82" fill="#9aa3ae" stroke="#5b6570" stroke-width="1.4"/>
+<rect x="29" y="14" width="42" height="78" fill="url(#g-brick)" stroke="#6d3b1e" stroke-width="1.2"/>
+<rect x="34" y="20" width="32" height="26" rx="2" fill="#f4e3cf" opacity=".35"/><rect x="34" y="52" width="32" height="32" rx="2" fill="#f4e3cf" opacity=".25"/>
+<circle cx="64" cy="54" r="3" fill="url(#g-gold)" stroke="#8a6d1a"/>
+<rect x="78" y="44" width="12" height="18" rx="2" fill="#3b424d"/><circle cx="84" cy="50" r="2" fill="#8fd16a"/>
+"""
+ICONS["browser"] = SHADOW + """
+<rect x="8" y="16" width="84" height="66" rx="5" fill="#ffffff" stroke="#4a5562" stroke-width="1.6"/>
+<path d="M8 21 a5 5 0 0 1 5 -5 h74 a5 5 0 0 1 5 5 v9 h-84 Z" fill="#d7dce2"/>
+<circle cx="16" cy="23" r="2.4" fill="#e74c3c"/><circle cx="24" cy="23" r="2.4" fill="#f5b041"/><circle cx="32" cy="23" r="2.4" fill="#8fd16a"/>
+<rect x="40" y="19.5" width="46" height="7" rx="3.5" fill="#ffffff" stroke="#9aa3ae" stroke-width=".8"/>
+<rect x="16" y="38" width="40" height="7" rx="2" fill="#1f4e9c"/>
+<g stroke="#b8c0ca" stroke-width="3.4" stroke-linecap="round"><line x1="16" y1="54" x2="84" y2="54"/><line x1="16" y1="63" x2="76" y2="63"/><line x1="16" y1="72" x2="64" y2="72"/></g>
+"""

@@ -1,7 +1,8 @@
-import sys; sys.path.insert(0, "/home/claude/aiwork/figs/engine")
+import os
+import sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fig import *
 import math
-OUT = "/home/claude/aiwork/figs/out/"
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out", "") + ""
 
 # AAA
 f = Fig(1060, 290, "AAA: Authentication, Authorization, Accounting",

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 500" width="1100" height="500" role="img" aria-labelledby="t d"><title id="t">Growing Wi-Fi coverage: a range extender versus a mesh system</title><desc id="d">Left: a range extender repeats the router&#x27;s signal on the same radio, which can roughly halve throughput, and older models create a second network name, so devices do not roam to the stronger signal. Right: a mesh system uses coordinated nodes with one network name and seamless handoff, ideally over Ethernet backhaul, giving one set of credentials to manage. Either way, use WPA3, a strong passphrase, current firmware, and a separate guest or IoT network.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}.s7{animation-delay:5.40s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-2e7d32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#2e7d32"/></marker><marker id="a-d9822b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#d9822b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-wifi" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M26 26 L22 52" stroke="#3b424d" stroke-width="3.4" stroke-linecap="round"/><path d="M74 26 L78 52" stroke="#3b424d" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M14 58 L22 50 H82 L90 58 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.2"/>
+<path d="M14 58 H90 V76 H14 Z" fill="url(#g-steel-top)" stroke="#5b6570" stroke-width="1.2"/>
+<circle cx="30" cy="67" r="2" fill="#8fd16a"/><circle cx="40" cy="67" r="2" fill="#8fd16a"/><circle cx="50" cy="67" r="2" fill="#4fc3f7"/><circle cx="60" cy="67" r="2" fill="#4fc3f7"/><circle cx="70" cy="67" r="2" fill="#f5b041"/>
+<g fill="none" stroke="#1e88e5" stroke-width="3" stroke-linecap="round">
+<path d="M40 30 a14 14 0 0 1 20 0"/><path d="M34 23 a22 22 0 0 1 32 0"/><path d="M28 16 a30 30 0 0 1 44 0"/></g>
+<circle cx="50" cy="36" r="3" fill="#1e88e5"/>
+</symbol>
+<symbol id="i-laptop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="20" y="22" width="60" height="42" rx="3" fill="#2f353d" stroke="#14181d" stroke-width="1.2"/>
+<rect x="24" y="26" width="52" height="34" rx="1" fill="url(#g-screen)"/>
+<path d="M24 26 h52 v12 Q50 31 24 41 Z" fill="#fff" opacity=".18"/>
+<path d="M12 70 L20 64 H80 L88 70 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1"/>
+<rect x="12" y="70" width="76" height="5" rx="2" fill="#9aa3ae" stroke="#5b6570" stroke-width=".8"/>
+<rect x="42" y="66" width="16" height="2.4" rx="1" fill="#8892a0"/>
+</symbol>
+<symbol id="i-warning" viewBox="0 0 100 100">
+<path d="M50 10 L92 86 H8 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="3" stroke-linejoin="round"/>
+<rect x="46" y="36" width="8" height="28" rx="3" fill="#3e2a00"/><circle cx="50" cy="73" r="5" fill="#3e2a00"/>
+</symbol>
+<symbol id="i-user2-phone" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit2)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M33 30 C33 12 67 12 67 30 L68 46 C64 40 62 34 60 30 C52 32 44 31 38 26 C36 34 34 40 32 46 Z" fill="#1f1a17"/><rect x="66" y="64" width="13" height="22" rx="2.5" fill="#22272e" transform="rotate(18 72 75)"/><rect x="68" y="67" width="9" height="15" rx="1" fill="url(#g-screen)" transform="rotate(18 72 75)"/></symbol>
+<symbol id="i-lock" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M32 44 V30 a18 18 0 0 1 36 0 V44" fill="none" stroke="#7d8796" stroke-width="7"/>
+<rect x="22" y="42" width="56" height="44" rx="6" fill="url(#g-gold)" stroke="#a5760e" stroke-width="1.4"/>
+<circle cx="50" cy="60" r="6" fill="#5d4006"/><rect x="47.5" y="62" width="5" height="12" rx="2" fill="#5d4006"/>
+</symbol>
+</defs>
+<rect width="1100" height="500" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Growing Wi-Fi coverage: a range extender versus a mesh system</text>
+<g class="st s1"><rect x="20" y="50" width="520" height="360" rx="14" fill="#fef5e7" stroke="#d9822b" stroke-width="2"/><text x="34.0" y="72.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#d9822b" font-weight="bold" text-anchor="start">Range extender</text></g>
+<g class="st s1"><use href="#i-wifi" x="55.0" y="175.0" width="90" height="90"/><text x="100.0" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Router</text><text x="100.0" y="297.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">SSID: Home</text></g>
+<g class="st s2"><use href="#i-wifi" x="245.0" y="175.0" width="90" height="90"/><text x="290.0" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Extender</text><text x="290.0" y="297.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">SSID: Home_EXT</text></g>
+<g class="st s3"><use href="#i-laptop" x="425.0" y="185.0" width="70" height="70"/><text x="460.0" y="270.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Far laptop</text></g>
+<g class="st s2"><path d="M150.0 205.0 L240.0 205.0" fill="none" stroke="#d9822b" stroke-width="2.2" marker-start="url(#a-d9822b)" marker-end="url(#a-d9822b)" stroke-linejoin="round"/><text x="195.0" y="197.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#d9822b" font-weight="bold" text-anchor="middle">same radio</text></g>
+<g class="st s2"><circle cx="240" cy="140" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="240.0" y="144.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><path d="M340.0 205.0 L420.0 205.0" fill="none" stroke="#d9822b" stroke-width="2.2" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s3"><circle cx="420" cy="150" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="420.0" y="154.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s3"><use href="#i-warning" x="47.0" y="317.0" width="26" height="26"/></g>
+<g class="st s3"><text x="80.0" y="326.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#d9822b" font-weight="bold" text-anchor="start">throughput can roughly halve</text></g>
+<g class="st s3"><text x="80.0" y="350.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#d9822b" font-weight="bold" text-anchor="start">second SSID: devices cling to the weak signal</text></g>
+<g class="st s3"><text x="80.0" y="374.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#d9822b" font-weight="bold" text-anchor="start">an extra, easily forgotten network to secure</text></g>
+<g class="st s1"><circle cx="522" cy="66" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="522.0" y="70.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s4"><rect x="560" y="50" width="520" height="360" rx="14" fill="#eef8ef" stroke="#2e7d32" stroke-width="2"/><text x="574.0" y="72.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2e7d32" font-weight="bold" text-anchor="start">Mesh system (for example EasyMesh)</text></g>
+<g class="st s4"><use href="#i-wifi" x="590.0" y="160.0" width="80" height="80"/><text x="630.0" y="255.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">Main node</text></g>
+<g class="st s4"><use href="#i-wifi" x="785.0" y="75.0" width="70" height="70"/><text x="820.0" y="160.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">Node</text></g>
+<g class="st s4"><use href="#i-wifi" x="955.0" y="165.0" width="70" height="70"/><text x="990.0" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">Node</text></g>
+<g class="st s5"><path d="M668.0 188.0 L782.0 122.0" fill="none" stroke="#2e7d32" stroke-width="3" marker-start="url(#a-2e7d32)" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/><text x="719.3" y="144.3" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold" text-anchor="end">Ethernet backhaul</text></g>
+<g class="st s5"><path d="M858.0 122.0 L962.0 188.0" fill="none" stroke="#2e7d32" stroke-width="2.2" stroke-dasharray="7 6" marker-start="url(#a-2e7d32)" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/><text x="894.4" y="131.1" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold" text-anchor="start">wireless backhaul</text></g>
+<g class="st s4"><text x="820.0" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2e7d32" font-weight="bold" text-anchor="middle">one SSID: Home</text></g>
+<g class="st s4"><circle cx="1062" cy="66" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="1062.0" y="70.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><circle cx="738" cy="172" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="738.0" y="176.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><use href="#i-user2-phone" x="730.0" y="290.0" width="60" height="60"/></g>
+<g class="st s6"><path d="M800.0 320.0 L980.0 320.0" fill="none" stroke="#2e7d32" stroke-width="2.2" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/><text x="890.0" y="310.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold" text-anchor="middle">seamless handoff while roaming</text></g>
+<g class="st s6"><circle cx="720" cy="300" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="720.0" y="304.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s6"><text x="820.0" y="396.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="middle">one logical network, one set of credentials</text></g>
+<g class="st s7"><use href="#i-lock" x="285.0" y="435.0" width="30" height="30"/></g>
+<g class="st s7"><circle cx="270" cy="438" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="270.0" y="442.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
+<g class="st s7"><text x="322.0" y="456.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">Either way: WPA3, a strong unique passphrase, current firmware on every node, and a separate guest or IoT network.</text></g>
+</svg>

@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 640" width="1100" height="640" role="img" aria-labelledby="t d"><title id="t">The OSI model with the device, data unit, and typical attacks at each layer</title><desc id="d">Seven layers built from the bottom up. Layer 1 Physical carries bits over cables, radio, and fiber, attacked by wiretapping and jamming. Layer 2 Data Link moves frames by MAC address through switches, attacked by ARP spoofing and MAC flooding. Layer 3 Network routes packets by IP address through routers, attacked by IP spoofing and BGP hijacking. Layer 4 Transport carries segments over TCP and UDP ports, filtered by firewalls, attacked by SYN floods and port scans. Layers 5 to 7 carry data for sessions, TLS, and applications such as HTTP, attacked by session hijacking, SSL stripping, injection, and phishing.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}.s7{animation-delay:5.40s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-browser" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="8" y="16" width="84" height="66" rx="5" fill="#ffffff" stroke="#4a5562" stroke-width="1.6"/>
+<path d="M8 21 a5 5 0 0 1 5 -5 h74 a5 5 0 0 1 5 5 v9 h-84 Z" fill="#d7dce2"/>
+<circle cx="16" cy="23" r="2.4" fill="#e74c3c"/><circle cx="24" cy="23" r="2.4" fill="#f5b041"/><circle cx="32" cy="23" r="2.4" fill="#8fd16a"/>
+<rect x="40" y="19.5" width="46" height="7" rx="3.5" fill="#ffffff" stroke="#9aa3ae" stroke-width=".8"/>
+<rect x="16" y="38" width="40" height="7" rx="2" fill="#1f4e9c"/>
+<g stroke="#b8c0ca" stroke-width="3.4" stroke-linecap="round"><line x1="16" y1="54" x2="84" y2="54"/><line x1="16" y1="63" x2="76" y2="63"/><line x1="16" y1="72" x2="64" y2="72"/></g>
+</symbol>
+<symbol id="i-warning" viewBox="0 0 100 100">
+<path d="M50 10 L92 86 H8 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="3" stroke-linejoin="round"/>
+<rect x="46" y="36" width="8" height="28" rx="3" fill="#3e2a00"/><circle cx="50" cy="73" r="5" fill="#3e2a00"/>
+</symbol>
+<symbol id="i-lock" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M32 44 V30 a18 18 0 0 1 36 0 V44" fill="none" stroke="#7d8796" stroke-width="7"/>
+<rect x="22" y="42" width="56" height="44" rx="6" fill="url(#g-gold)" stroke="#a5760e" stroke-width="1.4"/>
+<circle cx="50" cy="60" r="6" fill="#5d4006"/><rect x="47.5" y="62" width="5" height="12" rx="2" fill="#5d4006"/>
+</symbol>
+<symbol id="i-key" viewBox="0 0 100 100">
+<circle cx="32" cy="50" r="18" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+<circle cx="28" cy="50" r="6" fill="#fff8e1" stroke="#a5760e" stroke-width="1.5"/>
+<path d="M48 45 H90 V55 H84 V64 H76 V55 H70 V62 H62 V55 H48 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+</symbol>
+<symbol id="i-firewall" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="14" y="26" width="72" height="62" rx="2" fill="url(#g-brick)" stroke="#7a2e18" stroke-width="1.2"/>
+<g stroke="#f6d3c4" stroke-width="2.2" fill="none">
+<path d="M14 41 H86 M14 57 H86 M14 73 H86"/>
+<path d="M38 26 V41 M62 26 V41 M26 41 V57 M50 41 V57 M74 41 V57 M38 57 V73 M62 57 V73 M26 73 V88 M50 73 V88 M74 73 V88"/></g>
+<path d="M50 4 C58 14 66 16 62 26 H38 C34 18 44 14 50 4 Z" fill="#ffb300" stroke="#e65100" stroke-width="1"/>
+<path d="M50 12 C55 18 57 21 55 26 H45 C43 21 47 18 50 12 Z" fill="#fff176"/>
+</symbol>
+<symbol id="i-router" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M14 44 v22 a36 12 0 0 0 72 0 v-22" fill="url(#g-router)" stroke="#164b78" stroke-width="1.2"/>
+<ellipse cx="50" cy="44" rx="36" ry="12" fill="url(#g-router-top)" stroke="#164b78" stroke-width="1.2"/>
+<g fill="#1565c0" stroke="#0d3c6e" stroke-width=".5">
+<path d="M50 34 l-5 4 h3 v4 h4 v-4 h3 Z"/><path d="M50 54 l-5 -4 h3 v-4 h4 v4 h3 Z" transform="translate(0,0)"/>
+<path d="M28 44 l4 -3.5 v2.3 h6 v2.4 h-6 v2.3 Z"/><path d="M72 44 l-4 -3.5 v2.3 h-6 v2.4 h6 v2.3 Z"/></g>
+<g fill="#cfe6f7"><circle cx="30" cy="70" r="1.5"/><circle cx="36" cy="72" r="1.5"/><circle cx="42" cy="73" r="1.5"/></g>
+</symbol>
+<symbol id="i-switch" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M10 46 L24 36 H90 L76 46 Z" fill="url(#g-router-top)" stroke="#164b78" stroke-width="1.2"/>
+<path d="M10 46 H76 V66 H10 Z" fill="url(#g-router)" stroke="#164b78" stroke-width="1.2"/>
+<path d="M76 46 L90 36 V56 L76 66 Z" fill="#174f80" stroke="#164b78" stroke-width="1.2"/>
+<rect x="15.0" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="15.0" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="22.2" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="22.2" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="29.4" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="29.4" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="36.6" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="36.6" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="43.8" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="43.8" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="51.0" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="51.0" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="58.2" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="58.2" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="65.4" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="65.4" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/>
+<g fill="#1565c0"><path d="M38 41 h12 v-2.4 l5 3.4 -5 3.4 v-2.4 h-12 Z"/><path d="M62 41 h-12" stroke="#1565c0"/></g>
+</symbol>
+<symbol id="i-hub" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M10 46 L24 36 H90 L76 46 Z" fill="#d7dce2" stroke="#5b6570" stroke-width="1.2"/>
+<path d="M10 46 H76 V66 H10 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.2"/>
+<path d="M76 46 L90 36 V56 L76 66 Z" fill="#9aa3ae" stroke="#5b6570" stroke-width="1.2"/>
+<rect x="15" y="51" width="8" height="8" rx="1" fill="#3b424d"/><circle cx="19" cy="62.5" r="1.2" fill="#f5b041"/><rect x="27" y="51" width="8" height="8" rx="1" fill="#3b424d"/><circle cx="31" cy="62.5" r="1.2" fill="#f5b041"/><rect x="39" y="51" width="8" height="8" rx="1" fill="#3b424d"/><circle cx="43" cy="62.5" r="1.2" fill="#f5b041"/><rect x="51" y="51" width="8" height="8" rx="1" fill="#3b424d"/><circle cx="55" cy="62.5" r="1.2" fill="#f5b041"/><rect x="63" y="51" width="8" height="8" rx="1" fill="#3b424d"/><circle cx="67" cy="62.5" r="1.2" fill="#f5b041"/></symbol>
+</defs>
+<rect width="1100" height="640" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">The OSI model with the device, data unit, and typical attacks at each layer</text>
+<text x="150.0" y="66.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#52606d" font-weight="bold" text-anchor="middle">Layer</text>
+<text x="340.0" y="66.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#52606d" font-weight="bold" text-anchor="middle">Data unit</text>
+<text x="510.0" y="66.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#52606d" font-weight="bold" text-anchor="middle">Example protocols</text>
+<text x="700.0" y="66.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#52606d" font-weight="bold" text-anchor="middle">Typical device</text>
+<text x="880.0" y="66.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#52606d" font-weight="bold" text-anchor="middle">Typical attacks</text>
+<g class="st s7"><rect x="40.0" y="80.0" width="1020.0" height="68.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#8e44ad" stroke-width="1.6"/></g>
+<g class="st s7"><rect x="40.0" y="80.0" width="220.0" height="68.0" rx="8" fill="#8e44ad" fill-opacity="1" stroke="#8e44ad" stroke-width="1.6"/></g>
+<g class="st s7"><text x="150.0" y="121.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle">L7  Application</text></g>
+<g class="st s7"><text x="340.0" y="121.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#8e44ad" font-weight="bold" text-anchor="middle">Data</text></g>
+<g class="st s7"><text x="510.0" y="121.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="middle">HTTP, DNS, SMTP, SSH</text></g>
+<g class="st s7"><use href="#i-browser" x="672.0" y="86.0" width="56" height="56"/></g>
+<g class="st s7"><use href="#i-warning" x="779.0" y="103.0" width="22" height="22"/></g>
+<g class="st s7"><text x="806.0" y="119.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="start">injection, phishing</text></g>
+<g class="st s7"><circle cx="40" cy="80" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="40.0" y="84.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
+<g class="st s6"><rect x="40.0" y="156.0" width="1020.0" height="68.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#7d3c98" stroke-width="1.6"/></g>
+<g class="st s6"><rect x="40.0" y="156.0" width="220.0" height="68.0" rx="8" fill="#7d3c98" fill-opacity="1" stroke="#7d3c98" stroke-width="1.6"/></g>
+<g class="st s6"><text x="150.0" y="197.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle">L6  Presentation</text></g>
+<g class="st s6"><text x="340.0" y="197.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7d3c98" font-weight="bold" text-anchor="middle">Data</text></g>
+<g class="st s6"><text x="510.0" y="197.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="middle">TLS, encoding, compression</text></g>
+<g class="st s6"><use href="#i-lock" x="672.0" y="162.0" width="56" height="56"/></g>
+<g class="st s6"><use href="#i-warning" x="779.0" y="179.0" width="22" height="22"/></g>
+<g class="st s6"><text x="806.0" y="195.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="start">SSL stripping, downgrade</text></g>
+<g class="st s6"><circle cx="40" cy="156" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="40.0" y="160.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s5"><rect x="40.0" y="232.0" width="1020.0" height="68.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#6c3483" stroke-width="1.6"/></g>
+<g class="st s5"><rect x="40.0" y="232.0" width="220.0" height="68.0" rx="8" fill="#6c3483" fill-opacity="1" stroke="#6c3483" stroke-width="1.6"/></g>
+<g class="st s5"><text x="150.0" y="273.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle">L5  Session</text></g>
+<g class="st s5"><text x="340.0" y="273.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#6c3483" font-weight="bold" text-anchor="middle">Data</text></g>
+<g class="st s5"><text x="510.0" y="273.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="middle">sessions, RPC, NetBIOS</text></g>
+<g class="st s5"><use href="#i-key" x="672.0" y="238.0" width="56" height="56"/></g>
+<g class="st s5"><use href="#i-warning" x="779.0" y="255.0" width="22" height="22"/></g>
+<g class="st s5"><text x="806.0" y="271.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="start">session hijacking</text></g>
+<g class="st s5"><circle cx="40" cy="232" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="40.0" y="236.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s4"><rect x="40.0" y="308.0" width="1020.0" height="68.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="1.6"/></g>
+<g class="st s4"><rect x="40.0" y="308.0" width="220.0" height="68.0" rx="8" fill="#1f4e9c" fill-opacity="1" stroke="#1f4e9c" stroke-width="1.6"/></g>
+<g class="st s4"><text x="150.0" y="349.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle">L4  Transport</text></g>
+<g class="st s4"><text x="340.0" y="349.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Segment</text></g>
+<g class="st s4"><text x="510.0" y="349.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="middle">TCP, UDP, ports</text></g>
+<g class="st s4"><use href="#i-firewall" x="672.0" y="314.0" width="56" height="56"/></g>
+<g class="st s4"><use href="#i-warning" x="779.0" y="331.0" width="22" height="22"/></g>
+<g class="st s4"><text x="806.0" y="347.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="start">SYN flood, port scanning</text></g>
+<g class="st s4"><circle cx="40" cy="308" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="40.0" y="312.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s3"><rect x="40.0" y="384.0" width="1020.0" height="68.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#2471a3" stroke-width="1.6"/></g>
+<g class="st s3"><rect x="40.0" y="384.0" width="220.0" height="68.0" rx="8" fill="#2471a3" fill-opacity="1" stroke="#2471a3" stroke-width="1.6"/></g>
+<g class="st s3"><text x="150.0" y="425.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle">L3  Network</text></g>
+<g class="st s3"><text x="340.0" y="425.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2471a3" font-weight="bold" text-anchor="middle">Packet</text></g>
+<g class="st s3"><text x="510.0" y="425.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="middle">IP, ICMP, routing</text></g>
+<g class="st s3"><use href="#i-router" x="672.0" y="390.0" width="56" height="56"/></g>
+<g class="st s3"><use href="#i-warning" x="779.0" y="407.0" width="22" height="22"/></g>
+<g class="st s3"><text x="806.0" y="423.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="start">IP spoofing, BGP hijack</text></g>
+<g class="st s3"><circle cx="40" cy="384" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="40.0" y="388.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s2"><rect x="40.0" y="460.0" width="1020.0" height="68.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#138d75" stroke-width="1.6"/></g>
+<g class="st s2"><rect x="40.0" y="460.0" width="220.0" height="68.0" rx="8" fill="#138d75" fill-opacity="1" stroke="#138d75" stroke-width="1.6"/></g>
+<g class="st s2"><text x="150.0" y="501.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle">L2  Data Link</text></g>
+<g class="st s2"><text x="340.0" y="501.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#138d75" font-weight="bold" text-anchor="middle">Frame</text></g>
+<g class="st s2"><text x="510.0" y="501.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="middle">Ethernet, MAC, ARP, Wi-Fi</text></g>
+<g class="st s2"><use href="#i-switch" x="672.0" y="466.0" width="56" height="56"/></g>
+<g class="st s2"><use href="#i-warning" x="779.0" y="483.0" width="22" height="22"/></g>
+<g class="st s2"><text x="806.0" y="499.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="start">ARP spoofing, MAC flooding</text></g>
+<g class="st s2"><circle cx="40" cy="460" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="40.0" y="464.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s1"><rect x="40.0" y="536.0" width="1020.0" height="68.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#1e8449" stroke-width="1.6"/></g>
+<g class="st s1"><rect x="40.0" y="536.0" width="220.0" height="68.0" rx="8" fill="#1e8449" fill-opacity="1" stroke="#1e8449" stroke-width="1.6"/></g>
+<g class="st s1"><text x="150.0" y="577.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle">L1  Physical</text></g>
+<g class="st s1"><text x="340.0" y="577.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1e8449" font-weight="bold" text-anchor="middle">Bits</text></g>
+<g class="st s1"><text x="510.0" y="577.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="middle">cables, radio, fiber</text></g>
+<g class="st s1"><use href="#i-hub" x="672.0" y="542.0" width="56" height="56"/></g>
+<g class="st s1"><use href="#i-warning" x="779.0" y="559.0" width="22" height="22"/></g>
+<g class="st s1"><text x="806.0" y="575.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="start">wiretapping, jamming</text></g>
+<g class="st s1"><circle cx="40" cy="536" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="40.0" y="540.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<text x="550.0" y="625.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">Encapsulation runs top to bottom on the sender and bottom to top on the receiver; a defender asks what can go wrong at each layer.</text>
+</svg>

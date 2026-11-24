@@ -1,6 +1,7 @@
-import sys; sys.path.insert(0, "/home/claude/aiwork/figs/engine")
+import os
+import sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fig import *
-OUT = "/home/claude/aiwork/figs/out/"
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out", "") + ""
 
 # DDoS attack and defense
 d = Fig(1100, 560, "Distributed denial of service: attack and defense",

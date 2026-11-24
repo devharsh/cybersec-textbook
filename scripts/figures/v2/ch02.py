@@ -1,6 +1,7 @@
-import sys; sys.path.insert(0, "/home/claude/aiwork/figs/engine")
+import os
+import sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fig import *
-OUT = "/home/claude/aiwork/figs/out/"
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out", "") + ""
 PUB, PRIV = "#2e7d32", "#c0392b"
 
 # Asymmetric encryption
@@ -101,7 +102,7 @@ print("ok")
 # ECB versus CBC, using the three panels of the original image
 import base64, io
 from PIL import Image
-src = Image.open("/home/claude/cybersec-textbook/assets/figures/ch02_ecb_vs_cbc.png").convert("RGB")
+src = Image.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "assets", "figures", "") + "ch02_ecb_vs_cbc.png").convert("RGB")
 def uri(box):
     b = io.BytesIO(); src.crop(box).save(b, "PNG"); return "data:image/png;base64," + base64.b64encode(b.getvalue()).decode()
 orig, ecb, cbc = uri((18, 30, 398, 410)), uri((415, 30, 795, 410)), uri((813, 30, 1193, 410))

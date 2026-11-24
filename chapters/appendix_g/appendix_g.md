@@ -12,15 +12,15 @@ The table lists every part of the book with its prose word count, the words in i
 |---|---:|---:|---:|
 | Introduction | 2,047 | 0 | 4.1 |
 | Preface | 486 | 0 | 1.0 |
-| Chapter 1: Introduction to Cybersecurity | 19,416 | 679 | 38.8 |
-| Chapter 2: Cryptography | 51,906 | 4,728 | 103.8 |
-| Chapter 3: Networking and Network Attacks | 17,696 | 374 | 35.4 |
+| Chapter 1: Introduction to Cybersecurity | 19,563 | 679 | 39.1 |
+| Chapter 2: Cryptography | 52,154 | 4,728 | 104.3 |
+| Chapter 3: Networking and Network Attacks | 18,031 | 374 | 36.1 |
 | Chapter 4: Social Engineering and the Human Element | 12,257 | 1,000 | 24.5 |
 | Chapter 5: Risk Management | 18,208 | 696 | 36.4 |
 | Chapter 6: Penetration Testing Methodology | 9,989 | 265 | 20.0 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,806 | 464 | 15.6 |
 | Chapter 8: Scanning and Enumeration | 7,419 | 816 | 14.8 |
-| Chapter 9: Exploitation and Post-Exploitation | 27,778 | 1,134 | 55.6 |
+| Chapter 9: Exploitation and Post-Exploitation | 27,769 | 1,134 | 55.5 |
 | Chapter 10: Web Application Security | 10,212 | 516 | 20.4 |
 | Chapter 11: Network Defense and Hardening | 26,625 | 529 | 53.2 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 13,324 | 1,114 | 26.6 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **464,493** | **24,597** | **929** |
+| **TOTAL** | **465,214** | **24,597** | **930** |
 
 ## Detailed Word Count by Section
 
@@ -78,18 +78,18 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*19,416 markdown words (38.8 pages); 679 code words.*
+*19,563 markdown words (39.1 pages); 679 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 229 |
 | Key Terms | 547 |
 | 1.1 What Is Cybersecurity? | 636 |
-| 1.2 The CIA Triad and Its Extensions | 928 |
-|     The DIE Model: A Modern Complement to CIA | 294 |
-| 1.3 The Anatomy of an Attack | 645 |
+| 1.2 The CIA Triad and Its Extensions | 901 |
+|     The DIE Model: A Modern Complement to CIA | 285 |
+| 1.3 The Anatomy of an Attack | 695 |
 |     A Concept Map of the Core Terms | 130 |
-| 1.4 Threat Actors and the Adversary Model | 591 |
+| 1.4 Threat Actors and the Adversary Model | 627 |
 | 1.5 Defense in Depth and Security Controls | 655 |
 | 1.6 Hardware Foundations: Rings, Modes, and the Trusted Computing Base | 1,133 |
 |     What Runs at Each Level | 569 |
@@ -99,19 +99,19 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Platform Configuration Registers: How Measured Boot Works | 1,462 |
 |     Trusted Execution Environments: Enclaves, Secure Worlds, and Confidential Virtual Machines | 978 |
 |     The Trusted Computing Base and the Reference Monitor | 170 |
-| 1.7 The NIST Cybersecurity Framework | 403 |
-| 1.8 Quantifying Risk in Monetary Terms | 621 |
+| 1.7 The NIST Cybersecurity Framework | 433 |
+| 1.8 Quantifying Risk in Monetary Terms | 603 |
 | 1.9 The Saltzer and Schroeder Design Principles | 641 |
 |     The Principle of Least Privilege (PoLP) | 249 |
 | 1.10 The Security Mindset, Ethics, and the Law | 369 |
 | 1.11 A Taxonomy of Threats and a Roadmap to This Book | 547 |
 | 1.12 Classic Security Models | 96 |
 |     Confidentiality: Bell-LaPadula | 230 |
-|     Integrity: Biba and Clark-Wilson | 306 |
+|     Integrity: Biba and Clark-Wilson | 355 |
 |     Hybrid and Specialized Models | 218 |
 |     Foundational System Models | 239 |
 |     Security Models versus Cryptographic Security Definitions | 224 |
-| 1.13 Security versus Resilience | 214 |
+| 1.13 Security versus Resilience | 250 |
 | Chapter Summary | 307 |
 | Why This Matters | 133 |
 | News in Focus: The Colonial Pipeline Ransomware Incident (2021) | 215 |
@@ -124,32 +124,32 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 2: Cryptography
 
-*51,906 markdown words (103.8 pages); 4,728 code words.*
+*52,154 markdown words (104.3 pages); 4,728 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 185 |
 | Key Terms | 1,071 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
-|     Encoding versus Encryption versus Hashing | 929 |
+|     Encoding versus Encryption versus Hashing | 920 |
 |     Codes, Ciphers, Cryptology, and the Words Around Them | 302 |
 | 2.2 Classical Ciphers and Why They Fall | 730 |
 |     Classical versus Modern Ciphers | 295 |
 |     A Classification of Ciphers | 226 |
 |     Classical Ciphers in Code | 295 |
 |     Rotor Machines and Teleprinter Ciphers: Enigma and Tunny | 525 |
-| 2.3 Perfect Secrecy and the One-Time Pad | 828 |
+| 2.3 Perfect Secrecy and the One-Time Pad | 871 |
 |     XOR, the One-Time Pad, and Perfect Secrecy, Formally | 694 |
 |     From Information-Theoretic to Computational Security | 311 |
 |     Game-Based (Provable) Security and Ciphertext Indistinguishability | 2,316 |
 |     Real-World Case: The ANC's One-Time Pad and Operation Vula | 441 |
 | 2.4 Randomness: True, Pseudo, and Cryptographically Secure | 570 |
 |     Insecure versus Cryptographically Secure Randomness in Code | 168 |
-|     Case Study: Private Keys Made from Numbers Under 256 (eMudhra, October 2026) | 810 |
-| 2.5 Symmetric Encryption: Stream and Block Ciphers | 1,063 |
+|     Case Study: Private Keys Made from Numbers Under 256 (eMudhra, October 2026) | 801 |
+| 2.5 Symmetric Encryption: Stream and Block Ciphers | 1,054 |
 |     The Feistel Network: A Blueprint for Block Ciphers | 224 |
 |     Legacy Symmetric Ciphers: DES, Triple DES, IDEA, RC4, and Skipjack | 406 |
-| 2.6 Block Cipher Modes of Operation | 734 |
+| 2.6 Block Cipher Modes of Operation | 725 |
 |     AES Modes in Code: ECB versus CTR | 328 |
 |     AES-CTR versus AES-GCM, and Which Modes Need Padding | 903 |
 |     The Complete Catalog: NIST-Approved Modes and the Modes Outside the List | 1,597 |
@@ -160,25 +160,25 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Error Detection versus Error Correction: CRC and Hamming Codes | 205 |
 | 2.8 Message Authentication Codes and Authenticated Encryption | 596 |
 |     Hash, MAC, and Digital Signature Compared | 729 |
-|     Wrong-Key Behavior: Garbage Output versus Null Rejection | 586 |
+|     Wrong-Key Behavior: Garbage Output versus Null Rejection | 626 |
 |     The Three-Behavior Hierarchy of Incorrect Decryption | 3,453 |
 |     Computing an HMAC in Code | 98 |
 |     HMAC and CMAC Are Not the Only MACs | 1,424 |
 |     Authenticated Encryption in Practice: Encrypt-then-MAC | 190 |
-| 2.9 Key Derivation and Password Storage | 655 |
+| 2.9 Key Derivation and Password Storage | 696 |
 |     Where Windows Keeps Password Hashes: The SAM Database and SYSKEY | 410 |
-| 2.10 Public-Key Cryptography and RSA | 974 |
+| 2.10 Public-Key Cryptography and RSA | 956 |
 |     One-Way Functions, Trapdoor Functions, and the RSA Story | 819 |
 |     Digital Envelopes: How Public-Key Encryption Is Used in Practice | 250 |
 | 2.11 Diffie-Hellman Key Exchange | 798 |
-|     ElGamal Encryption | 277 |
+|     ElGamal Encryption | 323 |
 |     ElGamal in Code | 266 |
 | 2.12 Elliptic-Curve Cryptography | 495 |
 |     Elliptic Curves Up Close: Group Law, the ECDLP, and the Curve Zoo | 776 |
-| 2.13 Digital Signatures, Certificates, and PKI | 792 |
+| 2.13 Digital Signatures, Certificates, and PKI | 834 |
 |     Generating a Digital Signature in Code | 146 |
 |     The Digital Signature Standard, Certificate Authorities, and PGP | 429 |
-| 2.14 Putting It Together: The TLS Handshake | 498 |
+| 2.14 Putting It Together: The TLS Handshake | 538 |
 | 2.15 Advanced and Emerging Cryptography | 841 |
 |     Computing Paradigms: Mainframes, Classical, DNA, and Quantum | 395 |
 |     Searchable, Deniable, and Functional Encryption | 341 |
@@ -210,7 +210,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     A Taxonomy of Security Properties | 326 |
 |     Writing a Security Analysis: Proof Sketches and Experimental Evaluation | 374 |
 | 2.21 Post-Quantum Standards and the Migration Timeline | 378 |
-|     Worked Example: Toy Ring-LWE Encryption | 60 |
+|     Worked Example: Toy Ring-LWE Encryption | 110 |
 | Chapter Summary | 206 |
 | Why This Matters | 161 |
 | News in Focus: Heartbleed (2014) | 202 |
@@ -221,14 +221,14 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 3: Networking and Network Attacks
 
-*17,696 markdown words (35.4 pages); 374 code words.*
+*18,031 markdown words (36.1 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 152 |
 | Key Terms | 514 |
 | 3.1 Why Networking Is the Battleground | 359 |
-| 3.2 The OSI Model | 550 |
+| 3.2 The OSI Model | 600 |
 |     Mapping the OSI and TCP/IP Models | 276 |
 | 3.3 The TCP/IP Model and Encapsulation | 293 |
 |     Network Devices and Segments | 194 |
@@ -241,29 +241,29 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 3.5 Ports and Common Protocols | 437 |
 |     Application Protocols and Their Security Posture | 400 |
 |     Secure versus Insecure Protocols | 319 |
-| 3.6 The Core Protocols: TCP, UDP, ICMP, and Their Headers | 793 |
+| 3.6 The Core Protocols: TCP, UDP, ICMP, and Their Headers | 837 |
 |     Sockets: Programming the Transport Layer | 216 |
 |     Sockets in Code: A TCP Server, Client, and a Tiny Web Server | 586 |
-| 3.7 ARP and DHCP: Convenience and Its Abuse | 472 |
+| 3.7 ARP and DHCP: Convenience and Its Abuse | 568 |
 |     The Domain Name System (DNS) | 847 |
-| 3.8 Sniffing: Listening on the Wire | 530 |
+| 3.8 Sniffing: Listening on the Wire | 580 |
 |     Wireless Networking Fundamentals | 250 |
 |     Traffic Analysis and Network Monitoring | 158 |
 |     Syslog and Centralized Logging | 358 |
 | 3.9 Spoofing, Man-in-the-Middle, and Session Hijacking | 613 |
 |     Packet Capture, On-Path Attacks, and SSL Stripping | 315 |
 |     Hands-On: Capturing a Plaintext Password, Then Encrypting It | 501 |
-| 3.10 Denial-of-Service and Distributed Denial-of-Service Attacks | 1,368 |
+| 3.10 Denial-of-Service and Distributed Denial-of-Service Attacks | 1,341 |
 |     Access Control Lists, NACLs, and Security Groups | 515 |
 | 3.11 Securing the Network: A Preview | 173 |
 |     Secure Network Protocols | 203 |
 |     Going Deeper: Routing Security and BGP Hijacking | 229 |
-|     Network Access Control | 205 |
-| 3.12 QUIC, HTTP/3, and Encrypted Client Hello | 223 |
-| 3.13 The Access Link: How a Network Connects to the Internet | 568 |
+|     Network Access Control | 196 |
+| 3.12 QUIC, HTTP/3, and Encrypted Client Hello | 264 |
+| 3.13 The Access Link: How a Network Connects to the Internet | 611 |
 |     Exercises | 116 |
 |     Answer Key | 183 |
-| 3.14 Premises Wireless: Wi-Fi Generations, Extenders, and Mesh | 575 |
+| 3.14 Premises Wireless: Wi-Fi Generations, Extenders, and Mesh | 622 |
 |     Exercises | 102 |
 |     Answer Key | 176 |
 | Chapter Summary | 215 |
@@ -461,7 +461,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*27,778 markdown words (55.6 pages); 1,134 code words.*
+*27,769 markdown words (55.5 pages); 1,134 code words.*
 
 | Section | Words |
 |---|---:|
@@ -558,7 +558,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Answer Key | 167 |
 | 9.38 How Kerberos Works, and Where Each Attack Breaks In | 45 |
 |     The problem single sign-on solves | 184 |
-|     The three exchanges | 389 |
+|     The three exchanges | 380 |
 |     Where each attack breaks in | 357 |
 | 9.39 Landmark Bugs, from the Morris Worm to the Year 2038 | 853 |
 |     Y2K and the Year 2038, Worked | 128 |

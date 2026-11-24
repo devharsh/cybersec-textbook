@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 540" width="1100" height="540" role="img" aria-labelledby="t d"><title id="t">ARP spoofing: forged replies put the attacker in the middle</title><desc id="d">A victim PC and the default gateway talk through a switch. The attacker sends a forged ARP reply to the victim saying the gateway&#x27;s IP is at the attacker&#x27;s MAC address, and another to the gateway saying the victim&#x27;s IP is at the attacker&#x27;s MAC. Both caches are poisoned, so traffic between victim and gateway now flows through the attacker. Dynamic ARP inspection on the switch drops the forged replies.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-9aa5b1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#9aa5b1"/></marker><marker id="a-c0392b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker><marker id="a-d9822b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#d9822b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-desktop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="12" y="14" width="58" height="44" rx="3" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.2"/>
+<rect x="16" y="18" width="50" height="35" rx="1" fill="url(#g-screen)"/>
+<path d="M16 18 h50 v14 Q40 26 16 34 Z" fill="#fff" opacity=".18"/>
+<path d="M36 58 h10 l3 14 h-16 Z" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width="1"/>
+<rect x="26" y="72" width="30" height="4" rx="2" fill="#9aa3ae" stroke="#5b6570" stroke-width=".8"/>
+<rect x="72" y="30" width="18" height="60" rx="2" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<rect x="75" y="35" width="12" height="3" rx="1" fill="#5c6672"/><rect x="75" y="41" width="12" height="3" rx="1" fill="#5c6672"/>
+<circle cx="81" cy="80" r="2" fill="#4fc3f7"/>
+<path d="M20 82 h44 l4 8 h-52 Z" fill="#cfd5dc" stroke="#5b6570" stroke-width=".8"/>
+</symbol>
+<symbol id="i-switch" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M10 46 L24 36 H90 L76 46 Z" fill="url(#g-router-top)" stroke="#164b78" stroke-width="1.2"/>
+<path d="M10 46 H76 V66 H10 Z" fill="url(#g-router)" stroke="#164b78" stroke-width="1.2"/>
+<path d="M76 46 L90 36 V56 L76 66 Z" fill="#174f80" stroke="#164b78" stroke-width="1.2"/>
+<rect x="15.0" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="15.0" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="22.2" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="22.2" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="29.4" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="29.4" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="36.6" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="36.6" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="43.8" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="43.8" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="51.0" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="51.0" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="58.2" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="58.2" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="65.4" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="65.4" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/>
+<g fill="#1565c0"><path d="M38 41 h12 v-2.4 l5 3.4 -5 3.4 v-2.4 h-12 Z"/><path d="M62 41 h-12" stroke="#1565c0"/></g>
+</symbol>
+<symbol id="i-router" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M14 44 v22 a36 12 0 0 0 72 0 v-22" fill="url(#g-router)" stroke="#164b78" stroke-width="1.2"/>
+<ellipse cx="50" cy="44" rx="36" ry="12" fill="url(#g-router-top)" stroke="#164b78" stroke-width="1.2"/>
+<g fill="#1565c0" stroke="#0d3c6e" stroke-width=".5">
+<path d="M50 34 l-5 4 h3 v4 h4 v-4 h3 Z"/><path d="M50 54 l-5 -4 h3 v-4 h4 v4 h3 Z" transform="translate(0,0)"/>
+<path d="M28 44 l4 -3.5 v2.3 h6 v2.4 h-6 v2.3 Z"/><path d="M72 44 l-4 -3.5 v2.3 h-6 v2.4 h6 v2.3 Z"/></g>
+<g fill="#cfe6f7"><circle cx="30" cy="70" r="1.5"/><circle cx="36" cy="72" r="1.5"/><circle cx="42" cy="73" r="1.5"/></g>
+</symbol>
+<symbol id="i-cloud" viewBox="0 0 100 100">
+<path d="M22 74 C8 74 4 56 18 50 C16 34 36 26 46 36 C52 20 78 22 80 42 C96 42 98 72 80 74 Z"
+ fill="url(#g-cloud)" stroke="#5b9bd5" stroke-width="2"/>
+<path d="M26 66 C20 66 18 60 22 58" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+</symbol>
+<symbol id="i-attacker" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M16 94 C16 64 30 54 50 54 C70 54 84 64 84 94 Z" fill="url(#g-hood)" stroke="#000" stroke-width="1"/>
+<path d="M28 52 C26 22 40 10 50 10 C60 10 74 22 72 52 C66 60 34 60 28 52 Z" fill="url(#g-hood)" stroke="#000" stroke-width="1"/>
+<ellipse cx="50" cy="40" rx="15" ry="16" fill="#0a0c0f"/>
+<path d="M40 38 l7 2.5 -7 2 Z M60 38 l-7 2.5 7 2 Z" fill="#ff3b30"/>
+<path d="M30 74 L70 74 L74 92 L26 92 Z" fill="#3a414b" stroke="#000" stroke-width=".8"/>
+<rect x="33" y="77" width="34" height="12" fill="#b71c1c" opacity=".85"/>
+<path d="M46 80 a4 4 0 0 1 8 0 v1 h-8 Z M45 81 h10 v6 h-10 Z" fill="#ffcdd2"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+</defs>
+<rect width="1100" height="540" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">ARP spoofing: forged replies put the attacker in the middle</text>
+<use href="#i-desktop" x="80.0" y="140.0" width="100" height="100"/><text x="130.0" y="255.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Victim</text><text x="130.0" y="272.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">192.168.1.10</text><text x="130.0" y="286.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">MAC AA:AA</text>
+<use href="#i-switch" x="495.0" y="135.0" width="110" height="110"/><text x="550.0" y="260.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Switch</text>
+<use href="#i-router" x="870.0" y="140.0" width="100" height="100"/><text x="920.0" y="255.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Gateway</text><text x="920.0" y="272.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">192.168.1.1</text><text x="920.0" y="286.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">MAC GG:GG</text>
+<use href="#i-cloud" x="995.0" y="55.0" width="90" height="90"/>
+<line x1="960" y1="160" x2="1010" y2="120" stroke="#52606d" stroke-width="2"/>
+<path d="M190.0 190.0 L490.0 190.0" fill="none" stroke="#9aa5b1" stroke-width="2" marker-end="url(#a-9aa5b1)" stroke-linejoin="round"/>
+<path d="M610.0 190.0 L860.0 190.0" fill="none" stroke="#9aa5b1" stroke-width="2" marker-end="url(#a-9aa5b1)" stroke-linejoin="round"/>
+<text x="380.0" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">normal path</text>
+<use href="#i-attacker" x="500.0" y="370.0" width="100" height="100"/><text x="550.0" y="485.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Attacker</text><text x="550.0" y="502.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">MAC EE:EE</text>
+<line x1="550" y1="226" x2="550" y2="360" stroke="#9aa5b1" stroke-width="2"/>
+<g class="st s1"><path d="M498.0 410.0 L180.0 270.0" fill="none" stroke="#c0392b" stroke-width="2.2" stroke-dasharray="7 6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s1"><text x="360.0" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">ARP reply: 192.168.1.1 is at EE:EE</text></g>
+<g class="st s2"><path d="M602.0 410.0 L880.0 270.0" fill="none" stroke="#c0392b" stroke-width="2.2" stroke-dasharray="7 6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s2"><text x="720.0" y="268.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">ARP reply: 192.168.1.10 is at EE:EE</text></g>
+<g class="st s1"><circle cx="470" cy="400" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="470.0" y="404.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="630" cy="400" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="630.0" y="404.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><rect x="20.0" y="56.0" width="220.0" height="60.0" rx="6" fill="#fdecea" fill-opacity="1" stroke="#c0392b" stroke-width="1.6"/></g>
+<g class="st s3"><text x="130.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">victim ARP cache</text></g>
+<g class="st s3"><text x="130.0" y="100.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="middle">192.168.1.1 -&gt; EE:EE</text></g>
+<g class="st s3"><rect x="740.0" y="56.0" width="220.0" height="60.0" rx="6" fill="#fdecea" fill-opacity="1" stroke="#c0392b" stroke-width="1.6"/></g>
+<g class="st s3"><text x="850.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">gateway ARP cache</text></g>
+<g class="st s3"><text x="850.0" y="100.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="middle">192.168.1.10 -&gt; EE:EE</text></g>
+<g class="st s3"><circle cx="20" cy="56" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="20.0" y="60.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s3"><circle cx="740" cy="56" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="740.0" y="60.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><path d="M240.0 380.0 L480.0 470.0" fill="none" stroke="#d9822b" stroke-width="3" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s4"><path d="M620.0 470.0 L860.0 380.0" fill="none" stroke="#d9822b" stroke-width="3" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s4"><text x="320.0" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#d9822b" font-weight="bold" text-anchor="middle">traffic now flows through the attacker:</text></g>
+<g class="st s4"><text x="320.0" y="488.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#d9822b" font-weight="bold" text-anchor="middle">read, record, or alter it</text></g>
+<g class="st s4"><circle cx="180" cy="465" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="180.0" y="469.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><use href="#i-shield" x="620.0" y="130.0" width="40" height="40"/></g>
+<g class="st s5"><text x="664.0" y="140.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">Defense: dynamic ARP inspection,</text></g>
+<g class="st s5"><text x="664.0" y="158.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">port security, static ARP for key hosts</text></g>
+<g class="st s5"><circle cx="618" cy="128" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="618.0" y="132.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+</svg>

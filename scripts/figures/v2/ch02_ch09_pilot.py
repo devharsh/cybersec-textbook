@@ -1,3 +1,4 @@
+import os
 from fig import *
 
 # A. Symmetric encryption, in the style of the Stevens deck
@@ -26,7 +27,7 @@ f.icon("user-laptop", 922, 255, 96, "Bob", step=4)
 f.badge(4, 690, 232, step=4)
 f.text(500, 366, "The same key encrypts and decrypts (AES, ChaCha20). It is fast; sharing k safely is the hard part.",
        13, MUTED, italic=True)
-f.save("/home/claude/aiwork/figs/out/symmetric")
+f.save(os.path.join(os.path.dirname(os.path.abspath(__file__)), "out", "symmetric"))
 
 # B. Kerberos exchanges as a sequence with device icons
 g = Fig(1120, 560, "Kerberos in three exchanges: the password never crosses the network",
@@ -55,5 +56,5 @@ for y, name, sub, req, rep, rc in rows:
     g.badge(n, 830, y + 16, step=n); n += 1
 g.text(560, 540, "Every ticket is encrypted with a key the client does not have, so the client can carry a ticket it cannot read or alter.",
        13, MUTED, italic=True)
-g.save("/home/claude/aiwork/figs/out/kerberos")
+g.save(os.path.join(os.path.dirname(os.path.abspath(__file__)), "out", "kerberos"))
 print("ok")
