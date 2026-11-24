@@ -92,4 +92,5 @@
 <g class="st s7"><path d="M1070.0 70.0 L1070.0 480.0" fill="none" stroke="#52606d" stroke-width="2.4" marker-end="url(#a-52606d)" stroke-linejoin="round"/></g>
 <g class="st s7"><text x="1060.0" y="500.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="bold" text-anchor="end">less volatile</text></g>
 <g class="st s7"><text x="40.0" y="506.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="start">Collect from the top: a reboot destroys levels 1 and 2 at once.</text></g>
+<g class="st s7"><circle cx="975.2" cy="495.7" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="975.2" y="500.3" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
 </svg>

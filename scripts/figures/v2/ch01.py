@@ -32,6 +32,7 @@ def tri(cx, color, fill, corners, center_icon, center_label, step):
     top, bl, br = (cx, 136), (cx - 200, 426), (cx + 200, 426)
     g.poly([top, bl, br], fill, color, 3, step=step, opacity=.16)
     g.icon(center_icon, cx, 330, 92, center_label, step=step, label_color=color)
+    g.badge(step, cx - text_width(center_label, 15, True) / 2 - 18, 386, step=step, color=color)
     for (px, py), (ic, name) in zip([top, bl, br], corners):
         g.circle(px, py, 40, "#ffffff", color, 3, step=step)
         g.icon(ic, px, py, 52, step=step)

@@ -98,4 +98,9 @@
 <g class="st s6"><text x="993.5" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="end">2038: signed 32-bit time runs out</text></g>
 <g class="st s6"><circle cx="1043.4510092596183" cy="74" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="1043.5" y="78.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 <text x="550.0" y="450.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">bug icon: introduced     warning icon: publicly disclosed</text>
+<g class="st s1"><circle cx="77.6" cy="110.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="77.6" y="114.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="50.1" cy="170.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="50.1" y="174.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><circle cx="69.9" cy="230.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="69.9" y="234.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><circle cx="45.0" cy="290.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="45.0" y="294.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><circle cx="36.3" cy="350.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="36.3" y="354.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 </svg>

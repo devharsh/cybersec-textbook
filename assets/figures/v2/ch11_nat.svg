@@ -111,4 +111,5 @@
 <g class="st s6"><circle cx="40" cy="430" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="40.0" y="434.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 <g class="st s6"><text x="108.0" y="464.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">RFC 4864: translation alone is not security. A static NAT of all ports to one host leaves it fully exposed;</text></g>
 <g class="st s6"><text x="108.0" y="486.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">the real protection is a stateful filter, which a firewall provides deliberately and logs.</text></g>
+<g class="st s1"><circle cx="79.0" cy="129.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="79.0" y="133.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
 </svg>

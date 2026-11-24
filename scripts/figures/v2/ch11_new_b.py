@@ -94,17 +94,19 @@ v = Fig(1100, 560, "Two ways out of a VLAN: switch spoofing and double tagging",
         "outer tag for VLAN 1 and an inner tag for VLAN 140; switch 1 strips the outer tag as native and forwards it on the trunk; "
         "switch 2 reads VLAN 140 and delivers it. Double tagging is one-way. Fixes: switchport nonegotiate, an unused native VLAN, "
         "an allowed list, and tagging the native VLAN.")
-v.zone(20, 60, 500, 340, "1. Switch spoofing (DTP)", RED, "#fdf2f1", step=1)
+v.zone(20, 60, 500, 340, "", RED, "#fdf2f1", step=1); v.badge(1, 42, 78, step=1, color=RED)
+v.text(62, 83, "Switch spoofing (DTP)", 14, RED, "bold", "start", step=1)
 v.icon("attacker", 100, 260, 76, "Attacker", step=1); v.icon("switch", 330, 260, 100, "Switch", "port: dynamic desirable", step=1)
 v.arrow([(140, 245), (280, 245)], "DTP: let's trunk", RED, step=2, size=12, width=2.4); v.badge(2, 150, 222, step=2, color=RED)
 for k, (vl, col) in enumerate([("VLAN 100", "#2471a3"), ("VLAN 110", "#16a085"), ("VLAN 140", "#8e44ad")]):
     v.arrow([(280, 285 + k * 18), (140, 285 + k * 18)], None, col, step=3, width=2.4); v.text(210, 282 + k * 18, vl, 11, col, "bold", step=3)
 v.text(210, 370, "every allowed VLAN arrives, tagged", 13, RED, "bold", step=3); v.badge(3, 380, 360, step=3, color=RED)
-v.zone(540, 60, 540, 340, "2. Double tagging (one-way)", RED, "#fdf2f1", step=4)
+v.zone(540, 60, 540, 340, "", RED, "#fdf2f1", step=4)
+v.text(582, 83, "Double tagging (one-way)", 14, RED, "bold", "start", step=4)
 v.icon("attacker", 600, 170, 64, "VLAN 1 = native", step=4, label_size=12)
 v.icon("switch", 760, 170, 84, "Switch 1", step=4); v.icon("switch", 1000, 170, 84, "Switch 2", step=4)
 v.rect(626, 100, 90, 24, "#fff3e0", ORANGE, 1.4, rx=4, step=4); v.text(671, 116, "1 | 140 | data", 11, INK, "bold", step=4)
-v.arrow([(636, 150), (712, 150)], None, RED, step=4, width=2.2); v.badge(4, 560, 120, step=4, color=RED)
+v.arrow([(636, 150), (712, 150)], None, RED, step=4, width=2.2); v.badge(4, 562, 78, step=4, color=RED)
 v.arrow([(806, 170), (954, 170)], "trunk, outer tag stripped", RED, step=5, size=12, width=2.4, label_dy=-26)
 v.rect(835, 178, 90, 24, "#fff3e0", ORANGE, 1.4, rx=4, step=5); v.text(880, 194, "140 | data", 11, INK, "bold", step=5); v.badge(5, 880, 230, step=5, color=RED)
 v.icon("server", 1000, 320, 60, "VLAN 140 host", step=6, label_size=12); v.arrow([(1000, 238), (1000, 286)], None, RED, step=6, width=2.4)

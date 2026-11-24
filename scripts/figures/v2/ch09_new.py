@@ -78,8 +78,8 @@ for i, (f, sub, ic, tool) in enumerate(st):
     if i: 
         c.arrow([(x - 150, 170), (x - 44, 170)], None, BLUE, step=i + 1, width=2.6)
         if tool: c.text(x - 97, 120, tool, 13, BLUE, "bold", step=i + 1)
-        c.badge(i, x - 97, 150, step=i + 1) if tool else None
-    if i == 5: c.badge(5, x - 97, 150, step=6)
+        c.badge(i + 1, x - 97, 150, step=i + 1) if tool else None
+    if i == 5: c.badge(6, x - 97, 150, step=6)
 c.rect(260, 300, 580, 70, "#1f2933", "#1f2933", 1, rx=8, step=3)
 c.text(280, 326, "pushq %rbp      ; save caller's base pointer", 13, "#e4e7eb", anchor="start", step=3)
 c.text(280, 350, "movq  %rsp, %rbp ; set up this function's frame ... ret", 13, "#e4e7eb", anchor="start", step=3)

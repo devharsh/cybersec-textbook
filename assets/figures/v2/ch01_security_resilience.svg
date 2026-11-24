@@ -49,4 +49,6 @@
 <g class="st s4"><text x="530.0" y="200.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2e7d32" font-weight="bold" text-anchor="start">resilient: shallow and fast</text></g>
 <g class="st s3"><circle cx="410" cy="360" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="410.0" y="364.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
 <g class="st s4"><circle cx="410" cy="230" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="410.0" y="234.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s1"><circle cx="167.0" cy="123.3" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="167.0" y="127.9" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="334.6" cy="59.3" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="334.6" y="63.9" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
 </svg>

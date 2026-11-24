@@ -116,4 +116,5 @@
 <g class="st s5"><circle cx="712" cy="274" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="712.0" y="278.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 <g class="st s6"><use href="#i-cross" x="125.0" y="315.0" width="30" height="30"/></g>
 <g class="st s6"><text x="162.0" y="336.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="start">Reuse k and c1 ⊕ c2 = m1 ⊕ m2 leaks both messages; the key must be as long as the message.</text></g>
+<g class="st s6"><circle cx="113.0" cy="331.0" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="113.0" y="335.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 </svg>

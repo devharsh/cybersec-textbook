@@ -110,4 +110,5 @@
 <g class="st s2"><circle cx="70" cy="220" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="70.0" y="224.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
 <g class="st s3"><circle cx="40" cy="384" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="40.0" y="388.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
 <g class="st s4"><text x="550.0" y="508.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">Threat modeling then rates and mitigates each leaf, so the risk register reflects real attack paths.</text></g>
+<g class="st s4"><circle cx="256.6" cy="503.3" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="256.6" y="507.9" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
 </svg>

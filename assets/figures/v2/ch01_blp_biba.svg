@@ -91,4 +91,6 @@
 <g class="st s4"><use href="#i-check" x="927.0" y="416.0" width="22" height="22"/></g>
 <g class="st s4"><text x="952.0" y="432.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">write down: allowed</text></g>
 <g class="st s3"><text x="700.0" y="284.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="bold" text-anchor="start">subject</text></g>
+<g class="st s2"><circle cx="164.1" cy="145.3" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="164.1" y="149.9" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s4"><circle cx="708.5" cy="145.3" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="708.5" y="149.9" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
 </svg>

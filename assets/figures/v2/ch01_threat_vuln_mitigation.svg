@@ -78,4 +78,8 @@
 <g class="st s4"><use href="#i-shield" x="464.0" y="198.0" width="76" height="76"/></g>
 <g class="st s4"><use href="#i-check" x="425.0" y="429.0" width="30" height="30"/></g>
 <g class="st s4"><text x="462.0" y="450.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2e7d32" font-weight="bold" text-anchor="start">Mitigation: a patch or control closes the crack</text></g>
+<g class="st s1"><circle cx="436.4" cy="413.3" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="436.4" y="417.9" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="268.6" cy="219.3" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="268.6" y="223.9" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><circle cx="409.0" cy="50.6" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="409.0" y="55.2" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><circle cx="413.0" cy="445.0" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="413.0" y="449.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
 </svg>

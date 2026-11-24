@@ -83,4 +83,5 @@
 <g class="st s6"><circle cx="990" cy="160" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="990.0" y="164.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 <g class="st s7"><path d="M950.0 270.0 L950.0 420.0 L430.0 420.0 L430.0 372.0" fill="none" stroke="#2e7d32" stroke-width="2.4" stroke-dasharray="7 6" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/><text x="841.5" y="412.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="middle">feedback: retrain models, update rules</text></g>
 <g class="st s7"><circle cx="690" cy="420" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="690.0" y="424.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
+<g class="st s1"><circle cx="54.0" cy="184.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="54.0" y="188.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
 </svg>

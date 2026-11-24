@@ -151,4 +151,6 @@
 <g class="st s9"><use href="#i-attacker" x="20.0" y="610.0" width="100" height="100"/><text x="70.0" y="725.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">Attacker</text></g>
 <g class="st s9"><path d="M118.0 620.0 L220.0 560.0" fill="none" stroke="#c0392b" stroke-width="3" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
 <g class="st s9"><text x="28.0" y="586.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="start">must pass</text><text x="28.0" y="601.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="start">every layer</text></g>
+<g class="st s8"><circle cx="433.0" cy="423.7" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="433.0" y="428.3" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">8</text></g>
+<g class="st s9"><circle cx="107.2" cy="581.7" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="107.2" y="586.3" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">9</text></g>
 </svg>

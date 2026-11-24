@@ -131,4 +131,5 @@
 <g class="st s10"><text x="780.0" y="378.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">beside the hypervisor&#x27;s VMX root, not a new ring</text></g>
 <g class="st s10"><circle cx="762" cy="352" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="762.0" y="356.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">10</text></g>
 <g class="st s11"><text x="550.0" y="600.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">Rings below 0 are informal names, not hardware ring numbers. Dashed outlines mark TEEs, which add isolation rather than rank.</text></g>
+<g class="st s11"><circle cx="190.3" cy="595.7" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="190.3" y="600.3" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">11</text></g>
 </svg>

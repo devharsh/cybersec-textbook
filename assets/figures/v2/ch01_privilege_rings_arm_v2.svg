@@ -106,4 +106,5 @@
 <g class="st s1"><text x="675.0" y="60.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#c0501f" font-weight="bold" text-anchor="middle">Secure world</text></g>
 <g class="st s5"><text x="550.0" y="630.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">EL3, always in the secure state, is the most privileged level and the gatekeeper between the worlds.</text></g>
 <g class="st s5"><text x="550.0" y="654.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">The secure world can reach both worlds&#x27; memory; the normal world reaches only its own.</text></g>
+<g class="st s5"><circle cx="226.2" cy="625.3" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="226.2" y="629.9" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 </svg>

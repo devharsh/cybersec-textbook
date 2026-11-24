@@ -10,20 +10,41 @@ BLUE, RED, GREEN, ORANGE, PURPLE = "#1f4e9c", "#c0392b", "#2e7d32", "#d9822b", "
 
 def esc(t): return html.escape(str(t), quote=True)
 
+_FONTS = {}
+def text_width(t, size, bold=False):
+    """Width of a label in SVG units, measured with a Helvetica-metric font when one is installed."""
+    try:
+        from PIL import ImageFont
+        key = (bold, size)
+        if key not in _FONTS:
+            path = subprocess.run(["fc-match", "-f", "%{file}", "Helvetica:bold" if bold else "Helvetica"],
+                                  capture_output=True, text=True).stdout.strip()
+            _FONTS[key] = ImageFont.truetype(path, size * 10)
+        return _FONTS[key].getlength(str(t)) / 10
+    except Exception:
+        return len(str(t)) * size * (0.56 if bold else 0.5)
+
 class Fig:
     def __init__(self, w, h, title=None, desc="", step_gap=0.9):
         self.w, self.h, self.title, self.desc = w, h, title, desc
         self.items, self.used, self.colors = [], [], set()
         self.step_gap, self.max_step = step_gap, 0
+        # Every build step carries a numbered badge. Steps the source leaves unnumbered get one
+        # at save time, beside the step's first box, label, or icon (see _fill_badges).
+        self.anchors, self.badged, self.steps, self.auto_badges = {}, set(), set(), True
+
+    def _anchor(self, step, *a):
+        if step: self.anchors.setdefault(step, []).append(a)
 
     def _add(self, svg, step):
         if step:
-            self.max_step = max(self.max_step, step)
+            self.max_step = max(self.max_step, step); self.steps.add(step)
             svg = f'<g class="st s{step}">{svg}</g>'
         self.items.append(svg)
 
     def icon(self, name, x, y, size=70, label=None, sub=None, step=None, label_color=INK, label_size=15):
         if name not in self.used: self.used.append(name)
+        self._anchor(step, "icon", x, y, size)
         s = f'<use href="#i-{name}" x="{x - size/2:.1f}" y="{y - size/2:.1f}" width="{size}" height="{size}"/>'
         ty = y + size/2 + 15
         if label:
@@ -41,12 +62,14 @@ class Fig:
 
     def text(self, x, y, t, size=13, color=INK, weight="normal", anchor="middle", step=None, italic=False):
         lines = str(t).split("\n")
+        self._anchor(step, "text", x, y, size, anchor, max(lines, key=len), weight, color)
         self._add("".join(self._text(x, y + i*(size+3), l, size, color, weight, anchor, italic) for i, l in enumerate(lines)), step)
 
     def box(self, x, y, w, h, text, step=None, kind="process", size=14, color=INK):
         fills = {"process": ("url(#g-box)", "#4a6fa5"), "note": ("#fff8e1", "#d9a400"),
                  "danger": ("#fdecea", RED), "ok": ("#e8f5e9", GREEN), "plain": ("#ffffff", "#9aa5b1")}
         f, stroke = fills[kind]
+        self._anchor(step, "box", x, y, w, h)
         s = (f'<rect x="{x:.1f}" y="{y:.1f}" width="{w}" height="{h}" rx="6" fill="{f}" stroke="{stroke}" stroke-width="1.6" filter="url(#f-drop)"/>')
         lines = str(text).split("\n")
         y0 = y + h/2 - (len(lines)-1)*(size+3)/2 + size*0.35
@@ -56,6 +79,7 @@ class Fig:
 
     def zone(self, x, y, w, h, label, color="#5b9bd5", fill="#eef5fc", step=None, dash=False):
         d = ' stroke-dasharray="7 5"' if dash else ""
+        self._anchor(step, "text", x + 14, y + 22, 14, "start", str(label), "bold", color)
         s = (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="14" fill="{fill}" stroke="{color}" stroke-width="2"{d}/>'
              + self._text(x + 14, y + 22, label, 14, color, "bold", "start"))
         self._add(s, step)
@@ -63,6 +87,12 @@ class Fig:
     def arrow(self, pts, label=None, color=INK, step=None, dash=False, width=2.2, label_at=0.5, label_dy=-8,
               label_color=None, both=False, size=13, label_anchor="middle"):
         self.colors.add(color)
+        segs0 = list(zip(pts, pts[1:])); L0 = [math.dist(a, b) for a, b in segs0]; half, acc0 = sum(L0) / 2, 0
+        for (a, b), L in zip(segs0, L0):
+            if acc0 + L >= half:
+                t = (half - acc0) / L if L else 0
+                self._anchor(step, "mid", a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, color); break
+            acc0 += L
         cid = color.strip("#")
         d = "M" + " L".join(f"{px:.1f} {py:.1f}" for px, py in pts)
         dash_attr = ' stroke-dasharray="7 6"' if dash else ""
@@ -80,11 +110,13 @@ class Fig:
                     break
                 acc += L
             lc = label_color or color
+            self._anchor(step, "text", lx, ly + label_dy, size, label_anchor, max(str(label).split("\n"), key=len), "bold", lc)
             for i, line in enumerate(str(label).split("\n")):
                 s += self._text(lx, ly + label_dy + i*(size+2), line, size, lc, "bold", label_anchor)
         self._add(s, step)
 
     def badge(self, n, x, y, step=None, color=BLUE):
+        self.badged.add(step if step is not None else n)
         s = (f'<circle cx="{x}" cy="{y}" r="12" fill="{color}" stroke="#fff" stroke-width="2"/>'
              + self._text(x, y + 4.6, str(n), 13, "#fff", "bold"))
         self._add(s, step if step is not None else n)
@@ -112,7 +144,41 @@ class Fig:
         body += self.items + ["</svg>"]
         return "\n".join(body)
 
+    def _fill_badges(self):
+        for st in sorted(self.steps - self.badged):
+            a = self.anchors.get(st, [])
+            pick = next((x for x in a if x[0] == "box"), None) or next((x for x in a if x[0] == "text"), None) \
+                or next((x for x in a if x[0] == "rect"), None) or next((x for x in a if x[0] == "icon"), None) \
+                or next((x for x in a if x[0] == "circ"), None) or next((x for x in a if x[0] == "mid"), None)
+            if not pick:
+                raise ValueError(f"{self.title}: step {st} has no box, label, or icon to number; place its badge by hand")
+            col = BLUE
+            if pick[0] in ("box", "rect"):
+                bx, by = pick[1] + 2, pick[2] + 2
+            elif pick[0] == "mid":
+                bx, by = pick[1], pick[2]
+                if pick[3] in (RED, GREEN, ORANGE, PURPLE): col = pick[3]
+            elif pick[0] in ("icon", "circ"):
+                bx, by = pick[1] - pick[3] / 2 + 4, pick[2] - pick[3] / 2 + 4
+            else:
+                _, x, y, size, anchor, n, weight, color = pick
+                w = text_width(n, size, weight == "bold")
+                left = {"start": x, "middle": x - w / 2, "end": x - w}[anchor]
+                bx, by = left - 17, y - size * 0.36
+                if bx < 14: bx = left + w + 17
+                # step past any icon the badge would sit on (icons often lead a label)
+                icons_all = [x for v in self.anchors.values() for x in v if x[0] == "icon"]
+                for _ in range(4):
+                    hit = next((ic for ic in icons_all if abs(ic[1] - bx) < ic[3] * 0.4 + 12 and abs(ic[2] - by) < ic[3] * 0.4 + 10), None)
+                    if not hit: break
+                    bx = hit[1] - hit[3] * 0.4 - 15
+                    import os
+                    if os.environ.get("BADGE_LOG"): open(os.environ["BADGE_LOG"], "a").write(f"{self.title}|{st}\n")
+                if color in (RED, GREEN, ORANGE, PURPLE): col = color
+            self.badge(st, round(bx, 1), round(by, 1), step=st, color=col)
+
     def save(self, path_no_ext, png_width=None):
+        if self.auto_badges: self._fill_badges()
         open(path_no_ext + ".svg", "w").write(self.svg())
         subprocess.run(["rsvg-convert", "-w", str(png_width or self.w * 2), path_no_ext + ".svg",
                         "-o", path_no_ext + ".png"], check=True)
@@ -120,6 +186,7 @@ class Fig:
 def _card(self, x, y, w, h, icon, title, sub=None, color=BLUE, step=None, icon_size=None, title_size=16):
     """A colored card with an icon, a bold title, and an optional subtitle."""
     if icon and icon not in self.used: self.used.append(icon)
+    self._anchor(step, "box", x, y, w, h)
     isz = icon_size or min(w * 0.5, h * 0.45)
     s = (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" fill="#ffffff" stroke="{color}" stroke-width="2.2" filter="url(#f-drop)"/>'
          f'<rect x="{x}" y="{y}" width="{w}" height="8" rx="4" fill="{color}"/>')
@@ -142,10 +209,12 @@ def _poly(self, pts, fill="none", stroke=INK, width=2, step=None, opacity=1, das
 Fig.poly = _poly
 
 def _circle(self, cx, cy, r, fill="none", stroke=INK, width=2, step=None, opacity=1):
+    self._anchor(step, "circ", cx, cy, 2 * r * 0.75)
     self._add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{fill}" fill-opacity="{opacity}" stroke="{stroke}" stroke-width="{width}"/>', step)
 Fig.circle = _circle
 
 def _rect(self, x, y, w, h, fill="none", stroke=INK, width=1.5, rx=4, step=None, opacity=1, dash=False):
+    self._anchor(step, "rect", x, y, w, h)
     d = ' stroke-dasharray="6 4"' if dash else ""
     self._add(f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" rx="{rx}" fill="{fill}" fill-opacity="{opacity}" '
               f'stroke="{stroke}" stroke-width="{width}"{d}/>', step)

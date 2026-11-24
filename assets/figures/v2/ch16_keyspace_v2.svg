@@ -80,4 +80,5 @@
 <g class="st s6"><text x="398.5" y="70.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="bold" text-anchor="start">1 second</text></g>
 <g class="st s6"><line x1="555.7" y1="60" x2="555.7" y2="430" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="6 5"/></g>
 <g class="st s6"><text x="561.7" y="70.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="start">age of the universe</text></g>
+<g class="st s6"><circle cx="374.5" cy="66" r="12" fill="#52606d" stroke="#fff" stroke-width="2"/><text x="374.5" y="70.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 </svg>

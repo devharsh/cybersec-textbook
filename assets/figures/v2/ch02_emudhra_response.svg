@@ -82,23 +82,24 @@
 <g class="st s1"><rect x="640.0" y="180.0" width="380" height="78" rx="6" fill="url(#g-box)" stroke="#4a6fa5" stroke-width="1.6" filter="url(#f-drop)"/><text x="830.0" y="207.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">Sibling intermediates, same root</text><text x="830.0" y="223.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">about 30,800 unexpired precertificates</text><text x="830.0" y="239.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">(Chrome) had to move to another hierarchy</text></g>
 <g class="st s1"><text x="60.0" y="302.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#52606d" font-weight="bold" text-anchor="start">Response, from narrowest to widest (2026, UTC)</text></g>
 <g class="st s2"><rect x="60" y="322" width="1000" height="58" rx="8" fill="#f5f7f9" stroke="#9aa5b1" stroke-width="1.5"/></g>
-<g class="st s2"><circle cx="84" cy="351" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="84.0" y="355.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="84" cy="351" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="84.0" y="355.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
 <g class="st s2"><use href="#i-cross" x="108.0" y="329.0" width="44" height="44"/></g>
 <g class="st s2"><text x="164.0" y="356.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Revocation by the CA</text></g>
 <g class="st s2"><text x="370.0" y="356.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="start">October 18: all eight revoked as a CA compromise</text></g>
 <g class="st s3"><rect x="60" y="394" width="1000" height="58" rx="8" fill="#f5f7f9" stroke="#9aa5b1" stroke-width="1.5"/></g>
-<g class="st s3"><circle cx="84" cy="423" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="84.0" y="427.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><circle cx="84" cy="423" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="84.0" y="427.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
 <g class="st s3"><use href="#i-desktop" x="108.0" y="401.0" width="44" height="44"/></g>
 <g class="st s3"><text x="164.0" y="428.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Browser blocklists</text></g>
 <g class="st s3"><text x="370.0" y="428.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="start">Oct 17: Chrome CRLSet 19:45, Firefox OneCRL 22:59; Windows list, Oct 20</text></g>
 <g class="st s4"><rect x="60" y="466" width="1000" height="58" rx="8" fill="#f5f7f9" stroke="#9aa5b1" stroke-width="1.5"/></g>
-<g class="st s4"><circle cx="84" cy="495" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="84.0" y="499.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><circle cx="84" cy="495" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="84.0" y="499.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
 <g class="st s4"><use href="#i-certificate" x="108.0" y="473.0" width="44" height="44"/></g>
 <g class="st s4"><text x="164.0" y="500.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Root removal</text></g>
 <g class="st s4"><text x="370.0" y="500.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="start">Oct 20: Mozilla announces it; Chrome follows; Windows drops G3 roots, Oct 26</text></g>
 <g class="st s5"><rect x="60" y="538" width="1000" height="58" rx="8" fill="#f5f7f9" stroke="#9aa5b1" stroke-width="1.5"/></g>
-<g class="st s5"><circle cx="84" cy="567" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="84.0" y="571.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><circle cx="84" cy="567" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="84.0" y="571.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 <g class="st s5"><use href="#i-group" x="108.0" y="545.0" width="44" height="44"/></g>
 <g class="st s5"><text x="164.0" y="572.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Collateral</text></g>
 <g class="st s5"><text x="370.0" y="572.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="start">customers under the root migrate; eMudhra exits the TLS business, Oct 22</text></g>
+<g class="st s1"><circle cx="432" cy="60" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="432.0" y="64.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
 </svg>

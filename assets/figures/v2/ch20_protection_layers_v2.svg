@@ -100,4 +100,5 @@
 <g class="st s7"><text x="780.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">The outer mechanical and physical layers</text></g>
 <g class="st s7"><text x="780.0" y="418.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">need no electricity and no logic.</text></g>
 <g class="st s8"><text x="550.0" y="548.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">Each layer is credited only if it is independent of the layers around it (IEC 61511-1 clause 11.2.4 for the control system and the SIS).</text></g>
+<g class="st s8"><circle cx="184.3" cy="543.7" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="184.3" y="548.3" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">8</text></g>
 </svg>

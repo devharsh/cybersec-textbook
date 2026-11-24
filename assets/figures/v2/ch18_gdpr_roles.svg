@@ -78,4 +78,5 @@
 <g class="st s5"><circle cx="520" cy="330" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="520.0" y="334.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 <g class="st s6"><circle cx="940" cy="330" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="940.0" y="334.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 <g class="st s7"><text x="550.0" y="500.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">High risk to people: tell them too, without undue delay. Unlikely risk, such as encrypted data with no key exposed: no report.</text></g>
+<g class="st s7"><circle cx="178.9" cy="495.3" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="178.9" y="499.9" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
 </svg>

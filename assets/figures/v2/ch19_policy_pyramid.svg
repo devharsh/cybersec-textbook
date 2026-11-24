@@ -82,4 +82,5 @@
 <g class="st s6"><path d="M1060.0 90.0 L1060.0 450.0" fill="none" stroke="#52606d" stroke-width="2.2" marker-end="url(#a-52606d)" stroke-linejoin="round"/></g>
 <g class="st s6"><text x="1050.0" y="476.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="bold" text-anchor="end">changes more often</text></g>
 <g class="st s6"><text x="1050.0" y="76.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="bold" text-anchor="end">changes rarely</text></g>
+<g class="st s6"><circle cx="918.6" cy="471.7" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="918.6" y="476.3" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 </svg>

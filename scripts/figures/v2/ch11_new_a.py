@@ -108,7 +108,7 @@ for p, (title, split, y0) in enumerate([("Full tunnel", False, 70), ("Split tunn
     v.icon("server", 900, y0 + 100, 64, "Corporate apps", step=1 + 2 * p)
     v.arrow([(768, y0 + 100), (864, y0 + 100)], None, GREEN, step=1 + 2 * p, width=2.4)
     if not split:
-        v.text(820, y0 + 40, "web traffic also inspected here", 12, GREEN, "bold", step=1)
+        v.text(820, y0 + 40, "web traffic also inspected here", 12, GREEN, "bold", step=2)
     else:
         v.icon("bug", 130, y0 + 60, 28, step=4); v.icon("server", 600, y0 + 200, 50, "C2 server", step=4, label_size=12); v.icon("devil", 624, y0 + 180, 24, step=4)
         v.arrow([(150, y0 + 138), (568, y0 + 200)], "web and C2 traffic go direct", RED, step=4, size=12, width=2.6, dash=True, label_dy=24, label_at=.4)
@@ -129,7 +129,7 @@ for i, (x1, x2, layers) in enumerate([(140, 280, 3), (380, 510, 2), (610, 740, 1
     for k in range(layers):
         r.rect(x1 + k * 9, 120 + k * 9, x2 - x1 - k * 18, 60 - k * 18, "#ffffff" if k == 0 else "none", ["#8e44ad", "#2471a3", "#16a085"][k + (3 - layers)], 3, rx=14, step=i + 2)
     r.icon("envelope", (x1 + x2) / 2, 150, 26, step=i + 2)
-r.arrow([(840, 150), (960, 150)], "HTTPS still needed", ORANGE, step=5, size=12, width=2.4)
+r.arrow([(840, 150), (960, 150)], "HTTPS still needed", ORANGE, step=5, size=12, width=2.4); r.badge(5, 900, 170, step=5, color=ORANGE)
 for i, (col, lab) in enumerate([("#8e44ad", "layer for the guard"), ("#2471a3", "layer for the middle"), ("#16a085", "layer for the exit")]):
     r.rect(180 + i * 250, 320, 30, 18, "none", col, 3, rx=9, step=6); r.text(220 + i * 250, 334, lab, 13, INK, anchor="start", step=6)
 r.badge(6, 150, 320, step=6)

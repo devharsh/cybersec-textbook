@@ -82,6 +82,7 @@ for i, (name, bits, lab, col) in enumerate(rows):
 for e, lab, col in [(0, "1 second", MUTED), (math.log10(13.8e9 * 3.156e7), "age of the universe", RED)]:
     s.raw(f'<line x1="{xs(e):.1f}" y1="60" x2="{xs(e):.1f}" y2="430" stroke="{col}" stroke-width="1.6" stroke-dasharray="6 5"/>', step=6)
     s.text(xs(e) + 6, 70, lab, 12, col, "bold", "start", step=6)
+s.badge(6, xs(0) - 18, 66, step=6, color=MUTED)
 s.save(OUT + "ch16_keyspace_v2")
 
 # New: CTF formats

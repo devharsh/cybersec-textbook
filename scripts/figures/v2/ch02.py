@@ -87,14 +87,14 @@ modes = [("Stream / CTR / CFB / OFB", "warning", "Garbage output", "no error at 
          ("CBC / ECB + padding", "warning", "Padding error ~255/256", "garbage ~1/256", "#ffe8cc", ORANGE),
          ("AEAD: AES-GCM,\nChaCha20-Poly1305", "shield", "Clean rejection", "authentication fails", "#e6f4ea", GREEN)]
 for k, (m, ic, res, sub, fill, col) in enumerate(modes):
-    y = 90 + k * 118; st = k + 2
+    y = 90 + k * 118; st = k + 1  # the ciphertext and wrong key build with mode 1, matching the (1)-(3) labels in the code cell
     w.arrow([(126, 214), (300, y + 30)], None, INK, step=st)
     w.box(306, y, 250, 60, m, step=st, size=14)
     w.arrow([(560, y + 30), (640, y + 30)], None, INK, step=st)
     w.raw(f'<rect x="646" y="{y}" width="300" height="60" rx="8" fill="{fill}" stroke="{col}" stroke-width="1.8"/>', step=st)
     w.icon(ic, 680, y + 30, 40, step=st)
     w.text(710, y + 26, res, 15, INK, "bold", "start", step=st); w.text(710, y + 46, sub, 13, MUTED, anchor="start", step=st)
-    w.badge(k + 1, 306, y, step=st)
+    w.badge(st, 306, y, step=st)
 w.text(500, 428, "Only authenticated encryption tells you the key or ciphertext is wrong; the other modes fail silently or leak.", 13, MUTED, italic=True)
 w.save(OUT + "ch02_wrongkey")
 print("ok")
@@ -153,7 +153,7 @@ resp = [("cross", "Revocation by the CA", "October 18: all eight revoked as a CA
 for k, (ic, name, detail) in enumerate(resp):
     y = 322 + k * 72; st = k + 2
     m.raw(f'<rect x="60" y="{y}" width="1000" height="58" rx="8" fill="#f5f7f9" stroke="#9aa5b1" stroke-width="1.5"/>', step=st)
-    m.badge(k + 1, 84, y + 29, step=st)
+    m.badge(st, 84, y + 29, step=st)
     m.icon(ic, 130, y + 29, 44, step=st)
     m.text(164, y + 34, name, 15, INK, "bold", "start", step=st)
     m.text(370, y + 34, detail, 14, INK, anchor="start", step=st)

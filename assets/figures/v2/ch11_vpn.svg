@@ -88,7 +88,7 @@
 <g class="st s1"><use href="#i-firewall" x="695.0" y="135.0" width="70" height="70"/><text x="730.0" y="220.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">VPN gateway</text><text x="730.0" y="237.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">security stack</text></g>
 <g class="st s1"><use href="#i-server" x="868.0" y="138.0" width="64" height="64"/><text x="900.0" y="217.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Corporate apps</text></g>
 <g class="st s1"><path d="M768.0 170.0 L864.0 170.0" fill="none" stroke="#2e7d32" stroke-width="2.4" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/></g>
-<g class="st s1"><text x="820.0" y="110.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold" text-anchor="middle">web traffic also inspected here</text></g>
+<g class="st s2"><text x="820.0" y="110.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold" text-anchor="middle">web traffic also inspected here</text></g>
 <g class="st s3"><text x="40.0" y="310.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#d9822b" font-weight="bold" text-anchor="start">Split tunnel</text></g>
 <g class="st s3"><circle cx="24" cy="304" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="24.0" y="308.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
 <g class="st s3"><use href="#i-laptop" x="70.0" y="360.0" width="80" height="80"/><text x="110.0" y="455.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Remote laptop</text></g>
@@ -106,4 +106,5 @@
 <g class="st s4"><path d="M150.0 438.0 L568.0 500.0" fill="none" stroke="#c0392b" stroke-width="2.6" stroke-dasharray="7 6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/><text x="317.2" y="486.8" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="middle">web and C2 traffic go direct</text></g>
 <g class="st s4"><text x="820.0" y="506.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">never seen by the corporate stack</text></g>
 <g class="st s4"><circle cx="660" cy="476" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="660.0" y="480.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s2"><circle cx="715.4" cy="105.7" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="715.4" y="110.3" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
 </svg>

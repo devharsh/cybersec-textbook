@@ -109,4 +109,5 @@
 <g class="st s6"><circle cx="830" cy="470" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="830.0" y="474.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 <g class="st s6"><text x="220.0" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">IDS: cheap when wrong, but someone must act.</text></g>
 <g class="st s6"><text x="220.0" y="490.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">IPS: acts alone, so a false positive is an outage.</text></g>
+<g class="st s3"><circle cx="564.0" cy="154.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="564.0" y="158.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
 </svg>

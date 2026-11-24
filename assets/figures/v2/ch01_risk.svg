@@ -70,4 +70,7 @@
 <g class="st s3"><text x="690.0" y="282.9" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">20,000</text></g>
 <g class="st s3"><text x="690.0" y="442.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">Control cost</text></g>
 <g class="st s3"><text x="470.0" y="484.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">Savings of 51,000 a year for a 20,000 control: worth buying.</text></g>
+<g class="st s1"><circle cx="210.1" cy="123.2" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="210.1" y="127.8" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="434.2" cy="319.9" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="434.2" y="324.5" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><circle cx="650.1" cy="277.5" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="650.1" y="282.1" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
 </svg>

@@ -73,4 +73,6 @@
 <g class="st s10"><text x="840.0" y="357.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2e7d32" font-weight="bold" text-anchor="middle">request after 1 round trip</text></g>
 <line x1="560" y1="56" x2="560" y2="470" stroke="#d0d6dd" stroke-width="2" stroke-dasharray="6 6"/>
 <text x="550.0" y="505.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">QUIC encrypts most connection metadata, and Encrypted Client Hello (ECH) hides the server name, so defenders lean on endpoints and DNS logs.</text>
+<g class="st s6"><circle cx="179.5" cy="463.6" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="179.5" y="468.2" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s10"><circle cx="733.6" cy="351.6" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="733.6" y="356.2" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">10</text></g>
 </svg>

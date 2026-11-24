@@ -99,4 +99,5 @@
 <g class="st s4"><circle cx="740" cy="80" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="740.0" y="84.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
 <g class="st s5"><circle cx="820" cy="250" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="820.0" y="254.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 <g class="st s6"><text x="550.0" y="420.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">Lesson: air gaps are not absolute, and the operator&#x27;s screen is part of the attack surface.</text></g>
+<g class="st s6"><circle cx="236.9" cy="415.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="236.9" y="419.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 </svg>

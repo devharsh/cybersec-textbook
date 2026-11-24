@@ -70,6 +70,7 @@
 <g class="st s4"><rect x="610.0" y="120.0" width="130.0" height="60.0" rx="14" fill="#ffffff" fill-opacity="1" stroke="#16a085" stroke-width="3"/></g>
 <g class="st s4"><use href="#i-envelope" x="662.0" y="137.0" width="26" height="26"/></g>
 <g class="st s5"><path d="M840.0 150.0 L960.0 150.0" fill="none" stroke="#d9822b" stroke-width="2.4" marker-end="url(#a-d9822b)" stroke-linejoin="round"/><text x="900.0" y="142.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#d9822b" font-weight="bold" text-anchor="middle">HTTPS still needed</text></g>
+<g class="st s5"><circle cx="900" cy="170" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="900.0" y="174.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 <g class="st s6"><rect x="180.0" y="320.0" width="30.0" height="18.0" rx="9" fill="none" fill-opacity="1" stroke="#8e44ad" stroke-width="3"/></g>
 <g class="st s6"><text x="220.0" y="334.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">layer for the guard</text></g>
 <g class="st s6"><rect x="430.0" y="320.0" width="30.0" height="18.0" rx="9" fill="none" fill-opacity="1" stroke="#2471a3" stroke-width="3"/></g>
@@ -78,4 +79,9 @@
 <g class="st s6"><text x="720.0" y="334.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">layer for the exit</text></g>
 <g class="st s6"><circle cx="150" cy="320" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="150.0" y="324.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 <g class="st s7"><text x="550.0" y="392.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Proxy: redirects and inspects.   VPN: encrypts and relocates.   Tor: anonymizes.</text></g>
+<g class="st s1"><circle cx="52.0" cy="132.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="52.0" y="136.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="142" cy="122" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="142.0" y="126.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><circle cx="382" cy="122" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="382.0" y="126.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><circle cx="612" cy="122" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="612.0" y="126.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s7"><circle cx="249.0" cy="386.6" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="249.0" y="391.2" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
 </svg>

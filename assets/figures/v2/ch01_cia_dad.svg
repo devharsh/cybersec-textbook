@@ -72,6 +72,7 @@
 <text x="530.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">CIA triad (defender goals) and DAD triad (attacker goals)</text>
 <g class="st s1"><polygon points="270.0,136.0 70.0,426.0 470.0,426.0" fill="#2f6fae" stroke="#2f6fae" stroke-width="3" fill-opacity="0.16"/></g>
 <g class="st s1"><use href="#i-shield" x="224.0" y="284.0" width="92" height="92"/><text x="270.0" y="391.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2f6fae" font-weight="bold" text-anchor="middle">Defender</text></g>
+<g class="st s1"><circle cx="219.53125" cy="386" r="12" fill="#2f6fae" stroke="#fff" stroke-width="2"/><text x="219.5" y="390.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
 <g class="st s1"><circle cx="270" cy="136" r="40" fill="#ffffff" fill-opacity="1" stroke="#2f6fae" stroke-width="3"/></g>
 <g class="st s1"><use href="#i-lock" x="244.0" y="110.0" width="52" height="52"/></g>
 <g class="st s1"><text x="270.0" y="86.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2f6fae" font-weight="bold" text-anchor="middle">Confidentiality</text></g>
@@ -83,6 +84,7 @@
 <g class="st s1"><text x="470.0" y="490.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2f6fae" font-weight="bold" text-anchor="middle">Availability</text></g>
 <g class="st s2"><polygon points="790.0,136.0 590.0,426.0 990.0,426.0" fill="#c0392b" stroke="#c0392b" stroke-width="3" fill-opacity="0.16"/></g>
 <g class="st s2"><use href="#i-attacker" x="744.0" y="284.0" width="92" height="92"/><text x="790.0" y="391.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">Attacker</text></g>
+<g class="st s2"><circle cx="742.17890625" cy="386" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="742.2" y="390.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
 <g class="st s2"><circle cx="790" cy="136" r="40" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="3"/></g>
 <g class="st s2"><use href="#i-eye" x="764.0" y="110.0" width="52" height="52"/></g>
 <g class="st s2"><text x="790.0" y="86.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#c0392b" font-weight="bold" text-anchor="middle">Disclosure</text></g>

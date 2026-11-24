@@ -117,4 +117,5 @@
 <g class="st s4"><text x="980.0" y="380.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">Audit closure</text></g>
 <g class="st s4"><circle cx="30" cy="300" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="30.0" y="304.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
 <g class="st s5"><text x="550.0" y="440.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">Pair them with key risk indicators, which warn before an incident rather than after.</text></g>
+<g class="st s5"><circle cx="300.2" cy="435.3" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="300.2" y="439.9" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 </svg>

@@ -14,11 +14,10 @@ layers = [("Data", "database", "C"), ("Applications", "code", "C"), ("Identity a
 for i, (name, ic, who) in enumerate(layers):
     y = 60 + i * 58; col = BLUE if who == "C" else "#7f8c8d"; st = 7 - i
     s.rect(40, y, 560, 50, "#eef5fc" if who == "C" else "#f4f6f8", col, 1.8, rx=8, step=st); s.icon(ic, 78, y + 25, 36, step=st)
-    s.text(110, y + 31, name, 15, INK, "bold", "start", step=st)
+    s.text(110, y + 31, name, 15, INK, "bold", "start", step=st); s.badge(st, 576, y + 25, step=st, color=col if who == "C" else BLUE)
 s.raw('<line x1="30" y1="291" x2="620" y2="291" stroke="#c0392b" stroke-width="3" stroke-dasharray="9 6"/>', step=8)
 s.text(640, 290, "the boundary", 14, RED, "bold", "start", step=8); s.badge(8, 760, 284, step=8, color=RED)
 s.icon("user-laptop", 690, 170, 64, "Customer secures", step=4); s.icon("cloud", 690, 400, 90, "Provider secures", step=1)
-s.badge(1, 650, 360, step=1); s.badge(4, 650, 130, step=4)
 s.rect(800, 60, 270, 210, "#fdecea", RED, 1.6, rx=8, step=9); s.badge(9, 800, 60, step=9, color=RED)
 s.text(816, 86, "Common customer mistakes", 14, RED, "bold", "start", step=9)
 for k, t in enumerate(["public storage buckets", "admin-level instance roles", "0.0.0.0/0 on SSH or RDP", "secrets in code", "logging turned off"]):

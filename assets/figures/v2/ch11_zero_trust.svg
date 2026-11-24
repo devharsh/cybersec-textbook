@@ -129,4 +129,5 @@
 <g class="st s6"><text x="548.0" y="396.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="start">continuous verification: posture or behavior changes,</text></g>
 <g class="st s6"><text x="548.0" y="412.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="start">and access steps down or is revoked mid-session</text></g>
 <g class="st s7"><text x="550.0" y="500.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">VPN: authenticate once, broad network reach.   ZTNA: verify each request, reach one app, resources invisible until authorized.</text></g>
+<g class="st s7"><circle cx="170.1" cy="495.3" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="170.1" y="499.9" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
 </svg>
