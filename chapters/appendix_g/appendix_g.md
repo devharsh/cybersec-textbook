@@ -26,9 +26,9 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 12: Intrusion Detection and Prevention Systems | 13,559 | 1,114 | 27.1 |
 | Chapter 13: Digital Forensics | 11,754 | 875 | 23.5 |
 | Chapter 14: Incident Response | 11,939 | 828 | 23.9 |
-| Chapter 15: Malware Analysis | 45,539 | 423 | 91.1 |
-| Chapter 16: Capture the Flag and Competitive Security | 13,602 | 818 | 27.2 |
-| Chapter 17: Emerging Threats and Future Challenges | 86,813 | 8,027 | 173.6 |
+| Chapter 15: Malware Analysis | 45,795 | 423 | 91.6 |
+| Chapter 16: Capture the Flag and Competitive Security | 13,810 | 818 | 27.6 |
+| Chapter 17: Emerging Threats and Future Challenges | 87,328 | 8,027 | 174.7 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,723 | 387 | 15.4 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,150 | 482 | 34.3 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,627 | 442 | 29.3 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **468,617** | **24,597** | **937** |
+| **TOTAL** | **469,596** | **24,597** | **939** |
 
 ## Detailed Word Count by Section
 
@@ -939,7 +939,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 15: Malware Analysis
 
-*45,539 markdown words (91.1 pages); 423 code words.*
+*45,795 markdown words (91.6 pages); 423 code words.*
 
 | Section | Words |
 |---|---:|
@@ -950,10 +950,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Trojans and RATs | 53 |
 |     Ransomware | 157 |
 |     Rootkits | 65 |
-|     Botnets and Command and Control | 75 |
+|     Botnets and Command and Control | 108 |
 | 15.2 Analysis Environment Setup | 123 |
 |     Safe Lab Requirements | 101 |
-|     REMnux and FlareVM | 41 |
+|     REMnux and FlareVM | 95 |
 | 15.3 Static Analysis | 55 |
 |     File Identification | 86 |
 |     PE Analysis | 93 |
@@ -970,7 +970,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 15.7 Antivirus and Antimalware Defenses | 387 |
 |     The Anti-* Family: Beyond Antivirus | 326 |
 | 15.8 A Field Guide to Malware Types | 262 |
-| 15.9 The Malware Lifecycle and a Ransomware Deep Dive | 250 |
+| 15.9 The Malware Lifecycle and a Ransomware Deep Dive | 292 |
 |     Notable Ransomware Strains: LockBit 3.0 and Rorschach | 214 |
 |     Free Recovery: The No More Ransom Project | 141 |
 | 15.10 Software Reverse Engineering in Depth | 171 |
@@ -985,17 +985,17 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Shellcode, Buffer Overflows, and Network Attacks | 381 |
 |     Exercises | 169 |
 |     Answer Key | 243 |
-| 15.11 An End-to-End Analysis Walkthrough | 219 |
+| 15.11 An End-to-End Analysis Walkthrough | 258 |
 | 15.12 Extracting Indicators of Compromise | 196 |
 |     Exercises | 127 |
 |     Answer Key | 154 |
 | 15.13 Ransomware Internals and the Criminal Economy | 258 |
-| 15.14 Rootkits, Bootkits, and Firmware Malware | 306 |
+| 15.14 Rootkits, Bootkits, and Firmware Malware | 348 |
 | 15.15 Mobile and Cross-Platform Malware | 142 |
 |     Exercises | 125 |
 |     Answer Key | 184 |
 | 15.16 Fileless and Living-off-the-Land Malware | 177 |
-| 15.17 Worms, Botnets, and Supply-Chain Malware | 208 |
+| 15.17 Worms, Botnets, and Supply-Chain Malware | 254 |
 | 15.18 Threat Intelligence and Malware Families | 169 |
 |     Exercises | 118 |
 |     Answer Key | 453 |
@@ -1101,7 +1101,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*13,602 markdown words (27.2 pages); 818 code words.*
+*13,810 markdown words (27.6 pages); 818 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1123,7 +1123,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     How to Prepare and Compete Well | 175 |
 | 16.4 CTF Platforms for Learning | 130 |
 | 16.5 CTF Skills and Professional Mapping | 103 |
-| 16.6 Formats: Jeopardy, Attack-Defense, and King-of-the-Hill | 263 |
+| 16.6 Formats: Jeopardy, Attack-Defense, and King-of-the-Hill | 310 |
 | 16.7 Why CTFs Build Real Skill | 280 |
 | 16.8 Hosting a CTF and Competition Etiquette | 294 |
 | 16.9 Notable Competitions: picoCTF, CyberPatriot, and the Collegiate Cyber Defense Competition | 230 |
@@ -1140,9 +1140,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Answer Key | 373 |
 | 16.13 The Teaching and Research Toolkit: Cost and License | 562 |
 | 16.14 A Two-Part Workshop: From CyberChef Challenges to a Case Briefing | 360 |
-|     Telling the Three Families Apart | 299 |
-|     Part 1: Five Challenges | 839 |
-|     Part 2: Crack the Case | 977 |
+|     Telling the Three Families Apart | 340 |
+|     Part 1: Five Challenges | 904 |
+|     Part 2: Crack the Case | 1,032 |
 |     Running the Workshop | 397 |
 |     News in Focus: The Workshop's Mistakes in Recent Incidents | 1,344 |
 | Chapter Summary | 164 |
@@ -1154,7 +1154,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*86,813 markdown words (173.6 pages); 8,027 code words.*
+*87,328 markdown words (174.7 pages); 8,027 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1162,7 +1162,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Key Terms | 4,501 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
-|     NIST PQC Standardization | 177 |
+|     NIST PQC Standardization | 229 |
 |     Quantum Key Distribution and the Quantum Horizon | 383 |
 | 17.2 AI-Enabled Attacks and Defenses | 53 |
 |     Offensive AI | 161 |
@@ -1172,10 +1172,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 17.3 Pattern Matching, Machine Learning, and Deep Learning in Security | 63 |
 |     Pattern Matching: Rules and Signatures | 123 |
 |     Machine Learning: Learning Patterns from Data | 235 |
-|     Deep Learning: Neural Networks at Scale | 278 |
+|     Deep Learning: Neural Networks at Scale | 312 |
 |     Symbolic, Pattern, and Semantic AI: Three Ways to Hold Knowledge | 947 |
-|     Adversarial Machine Learning | 398 |
-| 17.4 Privacy-Preserving and Collaborative Machine Learning | 338 |
+|     Adversarial Machine Learning | 433 |
+| 17.4 Privacy-Preserving and Collaborative Machine Learning | 382 |
 |     Case Study: A Privacy-Preserving ML Research Program (SigML, SplitML, Fairis) | 2,512 |
 |     Applied Privacy and Trust Systems | 858 |
 | 17.5 Anomaly Detection Across Domains | 271 |
@@ -1191,15 +1191,15 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Why Supply Chain Is a High-Value Target | 32 |
 |     Notable Supply Chain Attack Patterns | 157 |
 |     SBOM and Dependency Management | 55 |
-|     Case Study: The LiteLLM 1.107.0 Release (October 2026) | 815 |
+|     Case Study: The LiteLLM 1.107.0 Release (October 2026) | 872 |
 | 17.9 Cloud Security | 64 |
-|     The Shared Responsibility Model | 142 |
+|     The Shared Responsibility Model | 185 |
 |     Cloud-Native Threats | 34 |
 |     Control Plane and Data Plane | 159 |
 |     Static and Dynamic Stability | 165 |
 |     Availability and Durability Risk | 205 |
 |     Cloud Compute Audit and Security | 181 |
-|     VPC and Cloud Network Isolation | 264 |
+|     VPC and Cloud Network Isolation | 314 |
 |     Cloud Compute Models: VMs, Containers, Serverless, and Edge | 348 |
 |     Cloud Service Scope, Resiliency, and Data Protection | 304 |
 |     Reliability Properties: Availability, Resiliency, Reliability, Scalability, Elasticity, Durability | 270 |
@@ -1211,16 +1211,16 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     AI for Security and Security for AI | 269 |
 | 17.10 Internet of Things Security | 57 |
 |     The IoT Attack Surface | 51 |
-|     Consequences | 57 |
+|     Consequences | 99 |
 |     Smart-Home Energy Data and Privacy-Preserving Forecasting | 234 |
 | 17.11 Zero-Day Markets and Disclosure | 46 |
 |     The Zero-Day Economy | 54 |
 |     Responsible Disclosure and Bug Bounties | 48 |
-| 17.12 Securing AI Systems: Agentic AI, Red Teaming, and the Model Supply Chain | 305 |
+| 17.12 Securing AI Systems: Agentic AI, Red Teaming, and the Model Supply Chain | 361 |
 |     Lab: Crafting an Adversarial Example | 83 |
 |     Lattice Cryptography Meets Large Language Models: A Systems View | 406 |
 |     Lab: Recognizing Prompt Injection | 104 |
-|     Case Study: AI Agents Inside Bank Accounts (October 2026) | 671 |
+|     Case Study: AI Agents Inside Bank Accounts (October 2026) | 729 |
 | 17.13 Securing AI in Practice: Governance, Data, Identity, and Operations | 192 |
 |     AI Building Blocks That Shape the Attack Surface | 1,095 |
 |     Evaluating Models Under Class Imbalance: Beyond Accuracy | 985 |
@@ -1250,7 +1250,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Sampling Temperature and Decoding: A Security View | 784 |
 |     Adversarial Robustness and Jailbreaks: Attacks, Defenses, and Guardrail Models | 1,376 |
 |     Testing AI Systems and Reporting Findings | 1,307 |
-| 17.14 Big Data Security and Access Control | 397 |
+| 17.14 Big Data Security and Access Control | 441 |
 | 17.15 Sandbox and Virtual-Machine Escape, and What "AI Escaped the Sandbox" Really Means | 1,139 |
 |     Exercises | 135 |
 |     Answer Key | 203 |

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" aria-labelledby="t d"><title id="t">A safe malware analysis lab: isolated, snapshotted, with a fake internet</title><desc id="d">The analyst&#x27;s host runs a Windows analysis VM with FlareVM tools and a REMnux VM on an isolated host-only network with no route to production or the real internet. REMnux runs INetSim, which answers DNS, HTTP, SMTP, and IRC so the sample behaves normally. A clean snapshot is taken before each run and restored afterward.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-2e7d32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#2e7d32"/></marker><marker id="a-52606d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#52606d"/></marker><marker id="a-c0392b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker><marker id="a-d9822b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#d9822b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-desktop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="12" y="14" width="58" height="44" rx="3" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.2"/>
+<rect x="16" y="18" width="50" height="35" rx="1" fill="url(#g-screen)"/>
+<path d="M16 18 h50 v14 Q40 26 16 34 Z" fill="#fff" opacity=".18"/>
+<path d="M36 58 h10 l3 14 h-16 Z" fill="url(#g-silver-side)" stroke="#5b6570" stroke-width="1"/>
+<rect x="26" y="72" width="30" height="4" rx="2" fill="#9aa3ae" stroke="#5b6570" stroke-width=".8"/>
+<rect x="72" y="30" width="18" height="60" rx="2" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<rect x="75" y="35" width="12" height="3" rx="1" fill="#5c6672"/><rect x="75" y="41" width="12" height="3" rx="1" fill="#5c6672"/>
+<circle cx="81" cy="80" r="2" fill="#4fc3f7"/>
+<path d="M20 82 h44 l4 8 h-52 Z" fill="#cfd5dc" stroke="#5b6570" stroke-width=".8"/>
+</symbol>
+<symbol id="i-bug" viewBox="0 0 100 100">
+<ellipse cx="50" cy="56" rx="20" ry="26" fill="url(#g-red)" stroke="#7f0000" stroke-width="1.6"/>
+<circle cx="50" cy="28" r="11" fill="#3e0000"/><line x1="50" y1="32" x2="50" y2="82" stroke="#7f0000" stroke-width="2"/>
+<g stroke="#3e0000" stroke-width="3" stroke-linecap="round"><path d="M31 46 l-14 -8 M31 58 h-16 M32 70 l-14 8 M69 46 l14 -8 M69 58 h16 M68 70 l14 8 M44 20 l-6 -10 M56 20 l6 -10"/></g>
+<circle cx="43" cy="50" r="4" fill="#3e0000"/><circle cx="57" cy="64" r="4" fill="#3e0000"/>
+</symbol>
+<symbol id="i-server" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M28 16 L40 8 L72 8 L60 16 Z" fill="url(#g-steel-top)" stroke="#14181d" stroke-width="1"/>
+<path d="M60 16 L72 8 L72 82 L60 91 Z" fill="#1b1f25" stroke="#14181d" stroke-width="1"/>
+<rect x="28" y="16" width="32" height="75" rx="1.5" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<g fill="#59626f" stroke="#14181d" stroke-width=".6">
+<rect x="32" y="21" width="24" height="5" rx="1"/><rect x="32" y="28" width="24" height="5" rx="1"/>
+<rect x="32" y="35" width="24" height="5" rx="1"/><rect x="32" y="42" width="24" height="5" rx="1"/></g>
+<g fill="#8fd16a"><circle cx="53" cy="23.5" r="1"/><circle cx="53" cy="30.5" r="1"/><circle cx="53" cy="37.5" r="1"/></g>
+<g stroke="#3d4450" stroke-width="1"><line x1="32" y1="56" x2="56" y2="56"/><line x1="32" y1="60" x2="56" y2="60"/><line x1="32" y1="64" x2="56" y2="64"/></g>
+<circle cx="44" cy="80" r="3" fill="#2196f3" stroke="#0d47a1" stroke-width=".8"/>
+</symbol>
+<symbol id="i-clock" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<circle cx="50" cy="50" r="38" fill="url(#g-paper)" stroke="#2f6fae" stroke-width="5"/>
+<line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(0 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(30 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(60 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(90 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(120 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(150 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(180 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(210 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(240 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(270 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(300 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(330 50 50)"/>
+<line x1="50" y1="50" x2="50" y2="27" stroke="#1f2933" stroke-width="4" stroke-linecap="round"/>
+<line x1="50" y1="50" x2="68" y2="58" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/>
+<circle cx="50" cy="50" r="3.5" fill="#1f2933"/>
+</symbol>
+<symbol id="i-gear" viewBox="0 0 100 100">
+<path d="M50 10 l7 2 2 10 8 4 9 -5 5 5 -5 9 4 8 10 2 2 7 -2 7 -10 2 -4 8 5 9 -5 5 -9 -5 -8 4 -2 10 -7 2 -7 -2 -2 -10 -8 -4 -9 5 -5 -5 5 -9 -4 -8 -10 -2 -2 -7 2 -7 10 -2 4 -8 -5 -9 5 -5 9 5 8 -4 2 -10 Z"
+ fill="url(#g-steel-top)" stroke="#3d4450" stroke-width="1.4"/>
+<circle cx="50" cy="50" r="14" fill="#eef1f4" stroke="#3d4450" stroke-width="1.4"/>
+</symbol>
+<symbol id="i-cloud" viewBox="0 0 100 100">
+<path d="M22 74 C8 74 4 56 18 50 C16 34 36 26 46 36 C52 20 78 22 80 42 C96 42 98 72 80 74 Z"
+ fill="url(#g-cloud)" stroke="#5b9bd5" stroke-width="2"/>
+<path d="M26 66 C20 66 18 60 22 58" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+</symbol>
+<symbol id="i-rack" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="24" y="10" width="52" height="82" rx="3" fill="url(#g-steel)" stroke="#14181d" stroke-width="1.2"/>
+<rect x="29" y="15" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="18" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="20.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="20.5" r="1.4" fill="#4fc3f7"/><rect x="29" y="30" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="33" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="35.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="35.5" r="1.4" fill="#4fc3f7"/><rect x="29" y="45" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="48" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="50.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="50.5" r="1.4" fill="#4fc3f7"/><rect x="29" y="60" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="63" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="65.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="65.5" r="1.4" fill="#4fc3f7"/><rect x="29" y="75" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="78" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="80.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="80.5" r="1.4" fill="#4fc3f7"/></symbol>
+<symbol id="i-cross" viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="url(#g-red)" stroke="#7f0000" stroke-width="2"/>
+<path d="M35 35 L65 65 M65 35 L35 65" stroke="#fff" stroke-width="9" stroke-linecap="round"/></symbol>
+</defs>
+<rect width="1100" height="520" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">A safe malware analysis lab: isolated, snapshotted, with a fake internet</text>
+<rect x="30" y="60" width="1040" height="340" rx="14" fill="#eef5fc" stroke="#1f4e9c" stroke-width="2"/><text x="44.0" y="82.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f4e9c" font-weight="bold" text-anchor="start">Analyst workstation (hypervisor)</text>
+<g class="st s1"><rect x="70" y="100" width="640" height="270" rx="14" fill="#eef8ef" stroke="#2e7d32" stroke-width="2" stroke-dasharray="7 5"/><text x="84.0" y="122.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2e7d32" font-weight="bold" text-anchor="start">Isolated host-only network</text></g>
+<g class="st s1"><circle cx="692" cy="116" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="692.0" y="120.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><use href="#i-desktop" x="155.0" y="175.0" width="90" height="90"/><text x="200.0" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Windows analysis VM</text><text x="200.0" y="297.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">FlareVM: x64dbg, Ghidra</text></g>
+<g class="st s2"><use href="#i-bug" x="220.0" y="165.0" width="30" height="30"/></g>
+<g class="st s2"><circle cx="140" cy="150" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="140.0" y="154.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><use href="#i-server" x="515.0" y="175.0" width="90" height="90"/><text x="560.0" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">REMnux VM</text><text x="560.0" y="297.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">INetSim: fake DNS, HTTP,</text><text x="560.0" y="311.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">SMTP, IRC</text></g>
+<g class="st s3"><circle cx="500" cy="150" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="500.0" y="154.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s3"><path d="M250.0 210.0 L510.0 210.0" fill="none" stroke="#d9822b" stroke-width="2.4" marker-end="url(#a-d9822b)" stroke-linejoin="round"/><text x="380.0" y="202.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#d9822b" font-weight="bold" text-anchor="middle">sample&#x27;s traffic</text></g>
+<g class="st s3"><path d="M510.0 236.0 L250.0 236.0" fill="none" stroke="#2e7d32" stroke-width="2.4" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/><text x="380.0" y="256.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold" text-anchor="middle">fake answers</text></g>
+<g class="st s4"><use href="#i-clock" x="850.0" y="140.0" width="60" height="60"/><text x="880.0" y="215.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Clean snapshot</text><text x="880.0" y="232.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">taken before each run</text></g>
+<g class="st s4"><path d="M840.0 158.0 L252.0 158.0" fill="none" stroke="#52606d" stroke-width="1.6" stroke-dasharray="7 6" marker-end="url(#a-52606d)" stroke-linejoin="round"/></g>
+<g class="st s5"><use href="#i-gear" x="855.0" y="275.0" width="50" height="50"/><text x="880.0" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">revert after</text></g>
+<g class="st s4"><circle cx="840" cy="120" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="840.0" y="124.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><circle cx="840" cy="270" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="840.0" y="274.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><use href="#i-cloud" x="860.0" y="420.0" width="80" height="80"/></g>
+<g class="st s6"><use href="#i-rack" x="572.0" y="432.0" width="56" height="56"/></g>
+<g class="st s6"><text x="600.0" y="505.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="bold" text-anchor="middle">production</text></g>
+<g class="st s6"><text x="900.0" y="505.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="bold" text-anchor="middle">real internet</text></g>
+<g class="st s6"><path d="M400.0 372.0 L580.0 440.0" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s6"><path d="M400.0 372.0 L860.0 450.0" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s6"><use href="#i-cross" x="517.0" y="407.0" width="26" height="26"/></g>
+<g class="st s6"><use href="#i-cross" x="747.0" y="419.0" width="26" height="26"/></g>
+<g class="st s6"><circle cx="330" cy="440" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="330.0" y="444.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s6"><text x="200.0" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="middle">no route out</text></g>
+</svg>

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 440" width="1100" height="440" role="img" aria-labelledby="t d"><title id="t">The modern ransomware lifecycle: encryption comes last</title><desc id="d">Seven stages: initial access through phishing or an exposed service; execute and persist; escalate and spread; exfiltrate data; disable backups and security tools; encrypt everything; and demand a ransom with a threat to leak the stolen data. Defenses map onto each stage, and tested offline or immutable backups make encryption a recoverable outage.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}.s7{animation-delay:5.40s}.s8{animation-delay:6.30s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-c0392b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker><marker id="a-d9822b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#d9822b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-envelope" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="12" y="26" width="76" height="52" rx="3" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.4"/>
+<path d="M12 28 L50 56 L88 28" fill="none" stroke="#6b7785" stroke-width="1.6"/>
+</symbol>
+<symbol id="i-gear" viewBox="0 0 100 100">
+<path d="M50 10 l7 2 2 10 8 4 9 -5 5 5 -5 9 4 8 10 2 2 7 -2 7 -10 2 -4 8 5 9 -5 5 -9 -5 -8 4 -2 10 -7 2 -7 -2 -2 -10 -8 -4 -9 5 -5 -5 5 -9 -4 -8 -10 -2 -2 -7 2 -7 10 -2 4 -8 -5 -9 5 -5 9 5 8 -4 2 -10 Z"
+ fill="url(#g-steel-top)" stroke="#3d4450" stroke-width="1.4"/>
+<circle cx="50" cy="50" r="14" fill="#eef1f4" stroke="#3d4450" stroke-width="1.4"/>
+</symbol>
+<symbol id="i-nodes" viewBox="0 0 100 100">
+<g stroke="#5b9bd5" stroke-width="3"><line x1="50" y1="20" x2="20" y2="70"/><line x1="50" y1="20" x2="80" y2="70"/><line x1="20" y1="70" x2="80" y2="70"/><line x1="50" y1="20" x2="50" y2="52"/><line x1="20" y1="70" x2="50" y2="52"/><line x1="80" y1="70" x2="50" y2="52"/></g>
+<circle cx="50" cy="20" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/><circle cx="20" cy="70" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/><circle cx="80" cy="70" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/><circle cx="50" cy="52" r="11" fill="url(#g-router)" stroke="#164b78" stroke-width="1.6"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 100 100">
+<path d="M22 74 C8 74 4 56 18 50 C16 34 36 26 46 36 C52 20 78 22 80 42 C96 42 98 72 80 74 Z"
+ fill="url(#g-cloud)" stroke="#5b9bd5" stroke-width="2"/>
+<path d="M26 66 C20 66 18 60 22 58" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+</symbol>
+<symbol id="i-database" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M24 22 v56 a26 9 0 0 0 52 0 v-56" fill="url(#g-db)" stroke="#4f5964" stroke-width="1.2"/>
+<path d="M24 41 a26 9 0 0 0 52 0 M24 60 a26 9 0 0 0 52 0" fill="none" stroke="#5f6a76" stroke-width="1.2"/>
+<ellipse cx="50" cy="22" rx="26" ry="9" fill="#f1f3f5" stroke="#4f5964" stroke-width="1.2"/>
+<ellipse cx="50" cy="22" rx="18" ry="5" fill="#dfe4e9"/>
+</symbol>
+<symbol id="i-lock" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M32 44 V30 a18 18 0 0 1 36 0 V44" fill="none" stroke="#7d8796" stroke-width="7"/>
+<rect x="22" y="42" width="56" height="44" rx="6" fill="url(#g-gold)" stroke="#a5760e" stroke-width="1.4"/>
+<circle cx="50" cy="60" r="6" fill="#5d4006"/><rect x="47.5" y="62" width="5" height="12" rx="2" fill="#5d4006"/>
+</symbol>
+<symbol id="i-money" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="14" y="40" width="72" height="38" rx="4" fill="#5aa469" stroke="#1d5e22" stroke-width="1.2" transform="rotate(-8 50 59)"/>
+<rect x="14" y="34" width="72" height="38" rx="4" fill="url(#g-green)" stroke="#1d5e22" stroke-width="1.4"/>
+<circle cx="50" cy="53" r="11" fill="#e8f5e9" stroke="#1d5e22" stroke-width="1.2"/>
+<text x="50" y="59" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1d5e22">$</text>
+<circle cx="24" cy="44" r="3" fill="#e8f5e9"/><circle cx="76" cy="62" r="3" fill="#e8f5e9"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+</defs>
+<rect width="1100" height="440" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">The modern ransomware lifecycle: encryption comes last</text>
+<g class="st s1"><circle cx="80" cy="150" r="54" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="3.2"/></g>
+<g class="st s1"><use href="#i-envelope" x="50.0" y="116.0" width="60" height="60"/></g>
+<g class="st s1"><text x="80.0" y="230.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#d9822b" font-weight="bold" text-anchor="middle">Initial access</text></g>
+<g class="st s1"><text x="80.0" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">phishing, exposed</text><text x="80.0" y="265.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">service</text></g>
+<g class="st s1"><circle cx="36" cy="106" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="36.0" y="110.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><path d="M136.0 150.0 L179.0 150.0" fill="none" stroke="#d9822b" stroke-width="2.6" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s2"><circle cx="237" cy="150" r="54" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="3.2"/></g>
+<g class="st s2"><use href="#i-gear" x="207.0" y="116.0" width="60" height="60"/></g>
+<g class="st s2"><text x="237.0" y="230.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#d9822b" font-weight="bold" text-anchor="middle">Execute,</text><text x="237.0" y="247.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#d9822b" font-weight="bold" text-anchor="middle">persist</text></g>
+<g class="st s2"><text x="237.0" y="268.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle"></text></g>
+<g class="st s2"><circle cx="193" cy="106" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="193.0" y="110.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><path d="M293.0 150.0 L336.0 150.0" fill="none" stroke="#d9822b" stroke-width="2.6" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s3"><circle cx="394" cy="150" r="54" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="3.2"/></g>
+<g class="st s3"><use href="#i-nodes" x="364.0" y="116.0" width="60" height="60"/></g>
+<g class="st s3"><text x="394.0" y="230.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#d9822b" font-weight="bold" text-anchor="middle">Escalate,</text><text x="394.0" y="247.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#d9822b" font-weight="bold" text-anchor="middle">spread</text></g>
+<g class="st s3"><text x="394.0" y="268.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle"></text></g>
+<g class="st s3"><circle cx="350" cy="106" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="350.0" y="110.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><path d="M450.0 150.0 L493.0 150.0" fill="none" stroke="#d9822b" stroke-width="2.6" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s4"><circle cx="551" cy="150" r="54" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="3.2"/></g>
+<g class="st s4"><use href="#i-cloud" x="521.0" y="116.0" width="60" height="60"/></g>
+<g class="st s4"><text x="551.0" y="230.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="middle">Exfiltrate</text></g>
+<g class="st s4"><text x="551.0" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">data stolen first</text></g>
+<g class="st s4"><circle cx="507" cy="106" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="507.0" y="110.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><path d="M607.0 150.0 L650.0 150.0" fill="none" stroke="#c0392b" stroke-width="2.6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s5"><circle cx="708" cy="150" r="54" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="3.2"/></g>
+<g class="st s5"><use href="#i-database" x="678.0" y="116.0" width="60" height="60"/></g>
+<g class="st s5"><text x="708.0" y="230.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="middle">Disable backups</text><text x="708.0" y="247.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="middle">and tools</text></g>
+<g class="st s5"><text x="708.0" y="268.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle"></text></g>
+<g class="st s5"><circle cx="664" cy="106" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="664.0" y="110.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><path d="M764.0 150.0 L807.0 150.0" fill="none" stroke="#c0392b" stroke-width="2.6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s6"><circle cx="865" cy="150" r="54" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="3.2"/></g>
+<g class="st s6"><use href="#i-lock" x="835.0" y="116.0" width="60" height="60"/></g>
+<g class="st s6"><text x="865.0" y="230.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="middle">Encrypt</text></g>
+<g class="st s6"><text x="865.0" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">everything</text></g>
+<g class="st s6"><circle cx="821" cy="106" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="821.0" y="110.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s7"><path d="M921.0 150.0 L964.0 150.0" fill="none" stroke="#c0392b" stroke-width="2.6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s7"><circle cx="1022" cy="150" r="54" fill="#ffffff" fill-opacity="1" stroke="#922b21" stroke-width="3.2"/></g>
+<g class="st s7"><use href="#i-money" x="992.0" y="116.0" width="60" height="60"/></g>
+<g class="st s7"><text x="1022.0" y="230.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#922b21" font-weight="bold" text-anchor="middle">Ransom +</text><text x="1022.0" y="247.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#922b21" font-weight="bold" text-anchor="middle">leak threat</text></g>
+<g class="st s7"><text x="1022.0" y="268.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">double extortion</text></g>
+<g class="st s7"><circle cx="978" cy="106" r="12" fill="#922b21" stroke="#fff" stroke-width="2"/><text x="978.0" y="110.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
+<g class="st s8"><rect x="30.0" y="310.0" width="1040.0" height="100.0" rx="8" fill="#e8f5e9" fill-opacity="1" stroke="#2e7d32" stroke-width="1.6"/></g>
+<g class="st s8"><use href="#i-shield" x="48.0" y="338.0" width="44" height="44"/></g>
+<g class="st s8"><circle cx="30" cy="310" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="30.0" y="314.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">8</text></g>
+<g class="st s8"><text x="104.0" y="344.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">Defenses by stage: phishing-resistant MFA and training; patching and least privilege; EDR to catch staging;</text></g>
+<g class="st s8"><text x="104.0" y="366.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">and, decisively, tested offline or immutable backups. Paying funds the ecosystem, may be legally restricted,</text></g>
+<g class="st s8"><text x="104.0" y="388.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">and does not guarantee recovery.</text></g>
+</svg>

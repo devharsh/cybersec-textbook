@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" aria-labelledby="t d"><title id="t">Each added key bit doubles the work: time to try every key at a trillion guesses a second</title><desc id="d">On a log scale of seconds: one-byte XOR, 2 to the 8 keys, about 0.26 nanoseconds; four-byte XOR, 2 to the 32, about 4.3 milliseconds; DES, 2 to the 56, about 20 hours; AES-128, 2 to the 128, about 1.1 times 10 to the 19 years; AES-256, 2 to the 256, about 3.7 times 10 to the 57 years. Reference lines mark one second and the 13.8-billion-year age of the universe.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-key" viewBox="0 0 100 100">
+<circle cx="32" cy="50" r="18" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+<circle cx="28" cy="50" r="6" fill="#fff8e1" stroke="#a5760e" stroke-width="1.5"/>
+<path d="M48 45 H90 V55 H84 V64 H76 V55 H70 V62 H62 V55 H48 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+</symbol>
+</defs>
+<rect width="1100" height="520" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Each added key bit doubles the work: time to try every key at a trillion guesses a second</text>
+<line x1="300" y1="430" x2="1040" y2="430" stroke="#52606d" stroke-width="2"/>
+<line x1="300.0" y1="430" x2="300.0" y2="436" stroke="#52606d"/>
+<text x="300.0" y="452.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10^-10</text>
+<line x1="392.5" y1="430" x2="392.5" y2="436" stroke="#52606d"/>
+<text x="392.5" y="452.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10^0</text>
+<line x1="485.0" y1="430" x2="485.0" y2="436" stroke="#52606d"/>
+<text x="485.0" y="452.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10^10</text>
+<line x1="577.5" y1="430" x2="577.5" y2="436" stroke="#52606d"/>
+<text x="577.5" y="452.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10^20</text>
+<line x1="670.0" y1="430" x2="670.0" y2="436" stroke="#52606d"/>
+<text x="670.0" y="452.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10^30</text>
+<line x1="762.5" y1="430" x2="762.5" y2="436" stroke="#52606d"/>
+<text x="762.5" y="452.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10^40</text>
+<line x1="855.0" y1="430" x2="855.0" y2="436" stroke="#52606d"/>
+<text x="855.0" y="452.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10^50</text>
+<line x1="947.5" y1="430" x2="947.5" y2="436" stroke="#52606d"/>
+<text x="947.5" y="452.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10^60</text>
+<line x1="1040.0" y1="430" x2="1040.0" y2="436" stroke="#52606d"/>
+<text x="1040.0" y="452.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10^70</text>
+<text x="670.0" y="476.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="bold" text-anchor="middle">seconds to try every key, log scale</text>
+<g class="st s1"><use href="#i-key" x="23.0" y="73.0" width="34" height="34"/></g>
+<g class="st s1"><text x="70.0" y="95.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">XOR, one-byte key</text></g>
+<g class="st s1"><rect x="300.0" y="74.0" width="4.0" height="32.0" rx="4" fill="#d9822b" fill-opacity="1" stroke="#d9822b" stroke-width="1"/></g>
+<g class="st s1"><text x="313.8" y="95.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">2^8 keys: 0.26 nanoseconds</text></g>
+<g class="st s1"><circle cx="24" cy="72" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="24.0" y="76.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><use href="#i-key" x="23.0" y="139.0" width="34" height="34"/></g>
+<g class="st s2"><text x="70.0" y="161.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">XOR, four-byte key</text></g>
+<g class="st s2"><rect x="300.0" y="140.0" width="70.6" height="32.0" rx="4" fill="#d9822b" fill-opacity="1" stroke="#d9822b" stroke-width="1"/></g>
+<g class="st s2"><text x="380.6" y="161.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">2^32 keys: 4.3 milliseconds</text></g>
+<g class="st s2"><circle cx="24" cy="138" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="24.0" y="142.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><use href="#i-key" x="23.0" y="205.0" width="34" height="34"/></g>
+<g class="st s3"><text x="70.0" y="227.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">DES, 56-bit key</text></g>
+<g class="st s3"><rect x="300.0" y="206.0" width="137.4" height="32.0" rx="4" fill="#7f8c8d" fill-opacity="1" stroke="#7f8c8d" stroke-width="1"/></g>
+<g class="st s3"><text x="447.4" y="227.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">2^56 keys: 20 hours</text></g>
+<g class="st s3"><circle cx="24" cy="204" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="24.0" y="208.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><use href="#i-key" x="23.0" y="271.0" width="34" height="34"/></g>
+<g class="st s4"><text x="70.0" y="293.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">AES-128</text></g>
+<g class="st s4"><rect x="300.0" y="272.0" width="337.9" height="32.0" rx="4" fill="#d9822b" fill-opacity="1" stroke="#d9822b" stroke-width="1"/></g>
+<g class="st s4"><text x="647.9" y="293.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">2^128 keys: about 1.1 x 10^19 years</text></g>
+<g class="st s4"><circle cx="24" cy="270" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="24.0" y="274.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><use href="#i-key" x="23.0" y="337.0" width="34" height="34"/></g>
+<g class="st s5"><text x="70.0" y="359.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">AES-256</text></g>
+<g class="st s5"><rect x="300.0" y="338.0" width="694.3" height="32.0" rx="4" fill="#d9822b" fill-opacity="1" stroke="#d9822b" stroke-width="1"/></g>
+<g class="st s5"><text x="984.3" y="359.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#ffffff" font-weight="bold" text-anchor="end">2^256 keys: about 3.7 x 10^57 years</text></g>
+<g class="st s5"><circle cx="24" cy="336" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="24.0" y="340.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><line x1="392.5" y1="60" x2="392.5" y2="430" stroke="#52606d" stroke-width="1.6" stroke-dasharray="6 5"/></g>
+<g class="st s6"><text x="398.5" y="70.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="bold" text-anchor="start">1 second</text></g>
+<g class="st s6"><line x1="555.7" y1="60" x2="555.7" y2="430" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="6 5"/></g>
+<g class="st s6"><text x="561.7" y="70.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="start">age of the universe</text></g>
+</svg>

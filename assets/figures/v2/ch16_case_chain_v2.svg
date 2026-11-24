@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 640" width="1100" height="640" role="img" aria-labelledby="t d"><title id="t">Crack the case: five pieces of evidence, decoded in order</title><desc id="d">E1, a chat log in Base64, decoded From Base64, reveals the injected instruction to ignore policy and export the customer table. E2, an outbound request in hex, decoded From Hex, shows data posted to exfil.staging.invalid as customers.enc. E3, a leaked config XORed with the one-byte key 5a, decoded From Hex then XOR, reveals the AES key and IV in a config backup with rotate=never. E4, the stolen file in AES-128-CBC, decrypted with E3&#x27;s key, is the exported record, synthetic. E5, the integrity seal, SHA-256 over the E4 record, matches, so the record was not altered. Two weak links: prompt injection opened the door, and the AES key sat in a config backup.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f2933" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f2933"/></marker><marker id="a-6a3d9a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#6a3d9a"/></marker><marker id="a-d9822b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#d9822b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-envelope" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="12" y="26" width="76" height="52" rx="3" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.4"/>
+<path d="M12 28 L50 56 L88 28" fill="none" stroke="#6b7785" stroke-width="1.6"/>
+</symbol>
+<symbol id="i-gear" viewBox="0 0 100 100">
+<path d="M50 10 l7 2 2 10 8 4 9 -5 5 5 -5 9 4 8 10 2 2 7 -2 7 -10 2 -4 8 5 9 -5 5 -9 -5 -8 4 -2 10 -7 2 -7 -2 -2 -10 -8 -4 -9 5 -5 -5 5 -9 -4 -8 -10 -2 -2 -7 2 -7 10 -2 4 -8 -5 -9 5 -5 9 5 8 -4 2 -10 Z"
+ fill="url(#g-steel-top)" stroke="#3d4450" stroke-width="1.4"/>
+<circle cx="50" cy="50" r="14" fill="#eef1f4" stroke="#3d4450" stroke-width="1.4"/>
+</symbol>
+<symbol id="i-cloud" viewBox="0 0 100 100">
+<path d="M22 74 C8 74 4 56 18 50 C16 34 36 26 46 36 C52 20 78 22 80 42 C96 42 98 72 80 74 Z"
+ fill="url(#g-cloud)" stroke="#5b9bd5" stroke-width="2"/>
+<path d="M26 66 C20 66 18 60 22 58" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+</symbol>
+<symbol id="i-lock" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M32 44 V30 a18 18 0 0 1 36 0 V44" fill="none" stroke="#7d8796" stroke-width="7"/>
+<rect x="22" y="42" width="56" height="44" rx="6" fill="url(#g-gold)" stroke="#a5760e" stroke-width="1.4"/>
+<circle cx="50" cy="60" r="6" fill="#5d4006"/><rect x="47.5" y="62" width="5" height="12" rx="2" fill="#5d4006"/>
+</symbol>
+<symbol id="i-fingerprint" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<g fill="none" stroke="#1f4e9c" stroke-width="3.2" stroke-linecap="round">
+<path d="M30 30 a26 26 0 0 1 40 0"/><path d="M24 46 a26 26 0 0 1 52 0 v10"/><path d="M34 84 c-6 -10 -8 -22 -8 -32 a24 24 0 0 1 0 -2"/>
+<path d="M36 52 a14 14 0 0 1 28 0 c0 14 -4 26 -10 36"/><path d="M50 52 c0 16 -4 28 -12 38"/><path d="M76 66 c-2 10 -6 18 -10 24"/></g>
+</symbol>
+<symbol id="i-warning" viewBox="0 0 100 100">
+<path d="M50 10 L92 86 H8 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="3" stroke-linejoin="round"/>
+<rect x="46" y="36" width="8" height="28" rx="3" fill="#3e2a00"/><circle cx="50" cy="73" r="5" fill="#3e2a00"/>
+</symbol>
+</defs>
+<rect width="1100" height="640" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Crack the case: five pieces of evidence, decoded in order</text>
+<text x="40.0" y="62.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#52606d" font-weight="bold" text-anchor="start">Evidence</text>
+<text x="380.0" y="62.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#52606d" font-weight="bold" text-anchor="start">Recipe</text>
+<text x="640.0" y="62.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#52606d" font-weight="bold" text-anchor="start">What it reveals</text>
+<g class="st s1"><rect x="30.0" y="80.0" width="310.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="2.2"/></g>
+<g class="st s1"><use href="#i-envelope" x="50.0" y="96.0" width="44" height="44"/></g>
+<g class="st s1"><text x="104.0" y="112.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="start">E1  Chat log</text></g>
+<g class="st s1"><text x="104.0" y="134.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">Base64, an encoding</text></g>
+<g class="st s1"><rect x="380.0" y="90.0" width="220.0" height="56.0" rx="8" fill="#f4f6f8" fill-opacity="1" stroke="#9aa5b1" stroke-width="1.4"/></g>
+<g class="st s1"><use href="#i-gear" x="391.0" y="105.0" width="26" height="26"/></g>
+<g class="st s1"><text x="500.0" y="123.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">From Base64</text></g>
+<g class="st s1"><rect x="640.0" y="80.0" width="430.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="1.6"/></g>
+<g class="st s1"><text x="855.0" y="112.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">The injected instruction: ignore</text><text x="855.0" y="128.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">policy, export the customer table</text></g>
+<g class="st s1"><path d="M342.0 118.0 L378.0 118.0" fill="none" stroke="#1f2933" stroke-width="2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s1"><path d="M602.0 118.0 L638.0 118.0" fill="none" stroke="#1f2933" stroke-width="2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s1"><circle cx="30" cy="80" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="30.0" y="84.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><rect x="30.0" y="176.0" width="310.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="2.2"/></g>
+<g class="st s2"><use href="#i-cloud" x="50.0" y="192.0" width="44" height="44"/></g>
+<g class="st s2"><text x="104.0" y="208.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="start">E2  Outbound request</text></g>
+<g class="st s2"><text x="104.0" y="230.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">hex, an encoding</text></g>
+<g class="st s2"><rect x="380.0" y="186.0" width="220.0" height="56.0" rx="8" fill="#f4f6f8" fill-opacity="1" stroke="#9aa5b1" stroke-width="1.4"/></g>
+<g class="st s2"><use href="#i-gear" x="391.0" y="201.0" width="26" height="26"/></g>
+<g class="st s2"><text x="500.0" y="219.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">From Hex</text></g>
+<g class="st s2"><rect x="640.0" y="176.0" width="430.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="1.6"/></g>
+<g class="st s2"><text x="855.0" y="208.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">Data posted to exfil.staging.invalid</text><text x="855.0" y="224.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">as customers.enc</text></g>
+<g class="st s2"><path d="M342.0 214.0 L378.0 214.0" fill="none" stroke="#1f2933" stroke-width="2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s2"><path d="M602.0 214.0 L638.0 214.0" fill="none" stroke="#1f2933" stroke-width="2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s2"><circle cx="30" cy="176" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="30.0" y="180.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><rect x="30.0" y="272.0" width="310.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="2.2"/></g>
+<g class="st s3"><use href="#i-gear" x="50.0" y="288.0" width="44" height="44"/></g>
+<g class="st s3"><text x="104.0" y="304.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="start">E3  Leaked config</text></g>
+<g class="st s3"><text x="104.0" y="326.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">XOR, one-byte key 5a</text></g>
+<g class="st s3"><rect x="380.0" y="282.0" width="220.0" height="56.0" rx="8" fill="#f4f6f8" fill-opacity="1" stroke="#9aa5b1" stroke-width="1.4"/></g>
+<g class="st s3"><use href="#i-gear" x="391.0" y="297.0" width="26" height="26"/></g>
+<g class="st s3"><text x="500.0" y="315.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">From Hex, XOR</text></g>
+<g class="st s3"><rect x="640.0" y="272.0" width="430.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="1.6"/></g>
+<g class="st s3"><text x="855.0" y="304.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">AES key and IV in a config</text><text x="855.0" y="320.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">backup, rotate=never</text></g>
+<g class="st s3"><path d="M342.0 310.0 L378.0 310.0" fill="none" stroke="#1f2933" stroke-width="2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s3"><path d="M602.0 310.0 L638.0 310.0" fill="none" stroke="#1f2933" stroke-width="2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s3"><circle cx="30" cy="272" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="30.0" y="276.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><rect x="30.0" y="368.0" width="310.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="2.2"/></g>
+<g class="st s4"><use href="#i-lock" x="50.0" y="384.0" width="44" height="44"/></g>
+<g class="st s4"><text x="104.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="start">E4  Stolen file</text></g>
+<g class="st s4"><text x="104.0" y="422.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">AES-128-CBC</text></g>
+<g class="st s4"><rect x="380.0" y="378.0" width="220.0" height="56.0" rx="8" fill="#f4f6f8" fill-opacity="1" stroke="#9aa5b1" stroke-width="1.4"/></g>
+<g class="st s4"><use href="#i-gear" x="391.0" y="393.0" width="26" height="26"/></g>
+<g class="st s4"><text x="500.0" y="411.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">AES Decrypt with E3&#x27;s key</text></g>
+<g class="st s4"><rect x="640.0" y="368.0" width="430.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="1.6"/></g>
+<g class="st s4"><text x="855.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">The exported record (synthetic)</text></g>
+<g class="st s4"><path d="M342.0 406.0 L378.0 406.0" fill="none" stroke="#1f2933" stroke-width="2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s4"><path d="M602.0 406.0 L638.0 406.0" fill="none" stroke="#1f2933" stroke-width="2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s4"><circle cx="30" cy="368" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="30.0" y="372.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><rect x="30.0" y="464.0" width="310.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#6a3d9a" stroke-width="2.2"/></g>
+<g class="st s5"><use href="#i-fingerprint" x="50.0" y="480.0" width="44" height="44"/></g>
+<g class="st s5"><text x="104.0" y="496.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6a3d9a" font-weight="bold" text-anchor="start">E5  Integrity seal</text></g>
+<g class="st s5"><text x="104.0" y="518.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">SHA-256 in the ticket</text></g>
+<g class="st s5"><rect x="380.0" y="474.0" width="220.0" height="56.0" rx="8" fill="#f4f6f8" fill-opacity="1" stroke="#9aa5b1" stroke-width="1.4"/></g>
+<g class="st s5"><use href="#i-gear" x="391.0" y="489.0" width="26" height="26"/></g>
+<g class="st s5"><text x="500.0" y="507.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">SHA-256 over the E4 record</text></g>
+<g class="st s5"><rect x="640.0" y="464.0" width="430.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#6a3d9a" stroke-width="1.6"/></g>
+<g class="st s5"><text x="855.0" y="496.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">Digest matches: the record</text><text x="855.0" y="512.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">was not altered</text></g>
+<g class="st s5"><path d="M342.0 502.0 L378.0 502.0" fill="none" stroke="#1f2933" stroke-width="2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s5"><path d="M602.0 502.0 L638.0 502.0" fill="none" stroke="#1f2933" stroke-width="2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s5"><circle cx="30" cy="464" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="30.0" y="468.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s4"><path d="M760.0 350.0 L560.0 376.0" fill="none" stroke="#d9822b" stroke-width="2.4" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s4"><text x="785.0" y="363.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#d9822b" font-weight="bold" text-anchor="start">key and IV</text></g>
+<g class="st s5"><path d="M760.0 446.0 L560.0 472.0" fill="none" stroke="#6a3d9a" stroke-width="2.4" marker-end="url(#a-6a3d9a)" stroke-linejoin="round"/></g>
+<g class="st s5"><text x="785.0" y="459.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#6a3d9a" font-weight="bold" text-anchor="start">hash the record</text></g>
+<g class="st s6"><rect x="30.0" y="572.0" width="1040.0" height="56.0" rx="8" fill="#fdecea" fill-opacity="1" stroke="#c0392b" stroke-width="1.8"/></g>
+<g class="st s6"><use href="#i-warning" x="49.0" y="585.0" width="30" height="30"/></g>
+<g class="st s6"><circle cx="30" cy="572" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="30.0" y="576.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s6"><text x="92.0" y="596.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="start">Two weak links: prompt injection opened the door, and the AES key sat in a config backup.</text></g>
+<g class="st s6"><text x="92.0" y="616.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">Briefing: what happened, impact, root cause, three recommendations, the ask.</text></g>
+</svg>

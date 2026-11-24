@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" aria-labelledby="t d"><title id="t">Same look, different promises: two questions sort every scrambled string</title><desc id="d">A scrambled string goes to question 1: is it meant to be undone without a secret? If yes, it is encoding: Base64 and ROT13. If no, question 2: can the right key undo it? If yes, it is encryption: one-byte XOR with 256 keys, tried at once, and AES-128 with 2 to the 128 keys, no way to try them all. If no, never, it is hashing: SHA-256, always 256 bits, check it, never undo it.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f2933" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f2933"/></marker><marker id="a-1f4e9c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f4e9c"/></marker><marker id="a-6a3d9a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#6a3d9a"/></marker><marker id="a-d9822b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#d9822b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-document" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M26 8 H62 L76 22 V90 H26 Z" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.2"/>
+<path d="M62 8 V22 H76" fill="#d5dbe2" stroke="#6b7785" stroke-width="1.2"/>
+<g stroke="#9aa6b3" stroke-width="2.4" stroke-linecap="round"><line x1="34" y1="34" x2="68" y2="34"/><line x1="34" y1="44" x2="68" y2="44"/><line x1="34" y1="54" x2="60" y2="54"/><line x1="34" y1="64" x2="66" y2="64"/></g>
+</symbol>
+<symbol id="i-code" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="10" y="16" width="80" height="66" rx="4" fill="#1e2530" stroke="#0d1014" stroke-width="1.4"/>
+<rect x="10" y="16" width="80" height="11" rx="4" fill="#3b424d"/><circle cx="18" cy="21.5" r="2.2" fill="#ff5f56"/><circle cx="25" cy="21.5" r="2.2" fill="#ffbd2e"/><circle cx="32" cy="21.5" r="2.2" fill="#27c93f"/>
+<path d="M30 42 L20 52 L30 62 M70 42 L80 52 L70 62" fill="none" stroke="#4fc3f7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="56" y1="38" x2="44" y2="66" stroke="#8fd16a" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="i-key" viewBox="0 0 100 100">
+<circle cx="32" cy="50" r="18" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+<circle cx="28" cy="50" r="6" fill="#fff8e1" stroke="#a5760e" stroke-width="1.5"/>
+<path d="M48 45 H90 V55 H84 V64 H76 V55 H70 V62 H62 V55 H48 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+</symbol>
+<symbol id="i-fingerprint" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<g fill="none" stroke="#1f4e9c" stroke-width="3.2" stroke-linecap="round">
+<path d="M30 30 a26 26 0 0 1 40 0"/><path d="M24 46 a26 26 0 0 1 52 0 v10"/><path d="M34 84 c-6 -10 -8 -22 -8 -32 a24 24 0 0 1 0 -2"/>
+<path d="M36 52 a14 14 0 0 1 28 0 c0 14 -4 26 -10 36"/><path d="M50 52 c0 16 -4 28 -12 38"/><path d="M76 66 c-2 10 -6 18 -10 24"/></g>
+</symbol>
+</defs>
+<rect width="1100" height="520" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Same look, different promises: two questions sort every scrambled string</text>
+<use href="#i-document" x="50.0" y="210.0" width="80" height="80"/><text x="90.0" y="305.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">A scrambled string</text>
+<text x="90.0" y="318.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">looks the same either way</text>
+<g class="st s1"><polygon points="340.0,175.0 455.0,250.0 340.0,325.0 225.0,250.0" fill="#f4f6f8" stroke="#52606d" stroke-width="2" fill-opacity="1"/></g>
+<g class="st s1"><text x="340.0" y="244.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">Question 1</text></g>
+<g class="st s1"><text x="340.0" y="264.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">undone without a secret?</text></g>
+<g class="st s1"><circle cx="260" cy="190" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="260.0" y="194.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s1"><path d="M132.0 250.0 L224.0 250.0" fill="none" stroke="#1f2933" stroke-width="2.4" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s3"><polygon points="560.0,325.0 675.0,400.0 560.0,475.0 445.0,400.0" fill="#f4f6f8" stroke="#52606d" stroke-width="2" fill-opacity="1"/></g>
+<g class="st s3"><text x="560.0" y="394.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">Question 2</text></g>
+<g class="st s3"><text x="560.0" y="414.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">can the right key undo it?</text></g>
+<g class="st s3"><circle cx="480" cy="340" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="480.0" y="344.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s3"><path d="M340.0 326.0 L340.0 400.0 L444.0 400.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/><text x="340.0" y="383.4" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="start">no</text></g>
+<g class="st s2"><rect x="720.0" y="60.0" width="360.0" height="130.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="2.4"/></g>
+<g class="st s2"><rect x="720.0" y="60.0" width="360.0" height="8.0" rx="4" fill="#1f4e9c" fill-opacity="1" stroke="#1f4e9c" stroke-width="1"/></g>
+<g class="st s2"><use href="#i-code" x="740.0" y="100.0" width="60" height="60"/></g>
+<g class="st s2"><text x="950.0" y="94.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="middle">ENCODING: the bottle</text></g>
+<g class="st s2"><text x="812.0" y="124.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">1  Base64: one click back, no key</text></g>
+<g class="st s2"><text x="812.0" y="150.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">2  ROT13: called a cipher, but no key</text></g>
+<g class="st s2"><path d="M455.0 250.0 L716.0 125.0" fill="none" stroke="#1f4e9c" stroke-width="2.4" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/><text x="585.5" y="179.5" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f4e9c" font-weight="bold" text-anchor="middle">yes</text></g>
+<g class="st s2"><circle cx="1062" cy="82" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="1062.0" y="86.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s4"><rect x="720.0" y="220.0" width="360.0" height="130.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="2.4"/></g>
+<g class="st s4"><rect x="720.0" y="220.0" width="360.0" height="8.0" rx="4" fill="#d9822b" fill-opacity="1" stroke="#d9822b" stroke-width="1"/></g>
+<g class="st s4"><use href="#i-key" x="740.0" y="260.0" width="60" height="60"/></g>
+<g class="st s4"><text x="950.0" y="254.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="middle">ENCRYPTION: the napkin</text></g>
+<g class="st s4"><text x="812.0" y="284.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">3  XOR, one-byte key: 256 keys, tried at once</text></g>
+<g class="st s4"><text x="812.0" y="310.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">4  AES-128: 2^128 keys, no way to try them all</text></g>
+<g class="st s4"><path d="M676.0 380.0 L716.0 285.0" fill="none" stroke="#d9822b" stroke-width="2.4" marker-end="url(#a-d9822b)" stroke-linejoin="round"/><text x="696.0" y="324.5" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#d9822b" font-weight="bold" text-anchor="middle">yes</text></g>
+<g class="st s4"><circle cx="1062" cy="242" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="1062.0" y="246.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><rect x="720.0" y="380.0" width="360.0" height="130.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#6a3d9a" stroke-width="2.4"/></g>
+<g class="st s5"><rect x="720.0" y="380.0" width="360.0" height="8.0" rx="4" fill="#6a3d9a" fill-opacity="1" stroke="#6a3d9a" stroke-width="1"/></g>
+<g class="st s5"><use href="#i-fingerprint" x="740.0" y="420.0" width="60" height="60"/></g>
+<g class="st s5"><text x="950.0" y="414.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6a3d9a" font-weight="bold" text-anchor="middle">HASHING: milk into curd</text></g>
+<g class="st s5"><text x="812.0" y="444.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">5  SHA-256: always 256 bits,</text></g>
+<g class="st s5"><text x="812.0" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">    check it, never undo it</text></g>
+<g class="st s5"><path d="M676.0 420.0 L716.0 445.0" fill="none" stroke="#6a3d9a" stroke-width="2.4" marker-end="url(#a-6a3d9a)" stroke-linejoin="round"/><text x="696.0" y="424.5" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#6a3d9a" font-weight="bold" text-anchor="middle">no, never</text></g>
+<g class="st s5"><circle cx="1062" cy="402" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="1062.0" y="406.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+</svg>
