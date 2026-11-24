@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" width="1100" height="560" role="img" aria-labelledby="t d"><title id="t">A remote-access VPN, and what split tunneling leaves out</title><desc id="d">Full tunnel: the laptop encrypts all traffic in an IPsec or WireGuard tunnel across the internet to the corporate VPN gateway, so corporate traffic and web traffic both pass the corporate security stack. Split tunnel: only corporate traffic uses the tunnel and web traffic goes straight to the internet, so malware talking to its C2 server is never seen by the corporate stack.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-2e7d32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#2e7d32"/></marker><marker id="a-c0392b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-laptop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="20" y="22" width="60" height="42" rx="3" fill="#2f353d" stroke="#14181d" stroke-width="1.2"/>
+<rect x="24" y="26" width="52" height="34" rx="1" fill="url(#g-screen)"/>
+<path d="M24 26 h52 v12 Q50 31 24 41 Z" fill="#fff" opacity=".18"/>
+<path d="M12 70 L20 64 H80 L88 70 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1"/>
+<rect x="12" y="70" width="76" height="5" rx="2" fill="#9aa3ae" stroke="#5b6570" stroke-width=".8"/>
+<rect x="42" y="66" width="16" height="2.4" rx="1" fill="#8892a0"/>
+</symbol>
+<symbol id="i-cloud" viewBox="0 0 100 100">
+<path d="M22 74 C8 74 4 56 18 50 C16 34 36 26 46 36 C52 20 78 22 80 42 C96 42 98 72 80 74 Z"
+ fill="url(#g-cloud)" stroke="#5b9bd5" stroke-width="2"/>
+<path d="M26 66 C20 66 18 60 22 58" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+</symbol>
+<symbol id="i-lock" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M32 44 V30 a18 18 0 0 1 36 0 V44" fill="none" stroke="#7d8796" stroke-width="7"/>
+<rect x="22" y="42" width="56" height="44" rx="6" fill="url(#g-gold)" stroke="#a5760e" stroke-width="1.4"/>
+<circle cx="50" cy="60" r="6" fill="#5d4006"/><rect x="47.5" y="62" width="5" height="12" rx="2" fill="#5d4006"/>
+</symbol>
+<symbol id="i-firewall" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="14" y="26" width="72" height="62" rx="2" fill="url(#g-brick)" stroke="#7a2e18" stroke-width="1.2"/>
+<g stroke="#f6d3c4" stroke-width="2.2" fill="none">
+<path d="M14 41 H86 M14 57 H86 M14 73 H86"/>
+<path d="M38 26 V41 M62 26 V41 M26 41 V57 M50 41 V57 M74 41 V57 M38 57 V73 M62 57 V73 M26 73 V88 M50 73 V88 M74 73 V88"/></g>
+<path d="M50 4 C58 14 66 16 62 26 H38 C34 18 44 14 50 4 Z" fill="#ffb300" stroke="#e65100" stroke-width="1"/>
+<path d="M50 12 C55 18 57 21 55 26 H45 C43 21 47 18 50 12 Z" fill="#fff176"/>
+</symbol>
+<symbol id="i-server" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M28 16 L40 8 L72 8 L60 16 Z" fill="url(#g-steel-top)" stroke="#14181d" stroke-width="1"/>
+<path d="M60 16 L72 8 L72 82 L60 91 Z" fill="#1b1f25" stroke="#14181d" stroke-width="1"/>
+<rect x="28" y="16" width="32" height="75" rx="1.5" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<g fill="#59626f" stroke="#14181d" stroke-width=".6">
+<rect x="32" y="21" width="24" height="5" rx="1"/><rect x="32" y="28" width="24" height="5" rx="1"/>
+<rect x="32" y="35" width="24" height="5" rx="1"/><rect x="32" y="42" width="24" height="5" rx="1"/></g>
+<g fill="#8fd16a"><circle cx="53" cy="23.5" r="1"/><circle cx="53" cy="30.5" r="1"/><circle cx="53" cy="37.5" r="1"/></g>
+<g stroke="#3d4450" stroke-width="1"><line x1="32" y1="56" x2="56" y2="56"/><line x1="32" y1="60" x2="56" y2="60"/><line x1="32" y1="64" x2="56" y2="64"/></g>
+<circle cx="44" cy="80" r="3" fill="#2196f3" stroke="#0d47a1" stroke-width=".8"/>
+</symbol>
+<symbol id="i-bug" viewBox="0 0 100 100">
+<ellipse cx="50" cy="56" rx="20" ry="26" fill="url(#g-red)" stroke="#7f0000" stroke-width="1.6"/>
+<circle cx="50" cy="28" r="11" fill="#3e0000"/><line x1="50" y1="32" x2="50" y2="82" stroke="#7f0000" stroke-width="2"/>
+<g stroke="#3e0000" stroke-width="3" stroke-linecap="round"><path d="M31 46 l-14 -8 M31 58 h-16 M32 70 l-14 8 M69 46 l14 -8 M69 58 h16 M68 70 l14 8 M44 20 l-6 -10 M56 20 l6 -10"/></g>
+<circle cx="43" cy="50" r="4" fill="#3e0000"/><circle cx="57" cy="64" r="4" fill="#3e0000"/>
+</symbol>
+<symbol id="i-devil" viewBox="0 0 100 100">
+<path d="M24 30 L18 8 L38 22 Z M76 30 L82 8 L62 22 Z" fill="#b71c1c"/>
+<circle cx="50" cy="52" r="32" fill="url(#g-red)" stroke="#7f0000" stroke-width="1.6"/>
+<path d="M34 44 l10 4 M66 44 l-10 4" stroke="#3e0000" stroke-width="4" stroke-linecap="round"/>
+<circle cx="40" cy="52" r="4" fill="#fff"/><circle cx="60" cy="52" r="4" fill="#fff"/>
+<circle cx="41" cy="53" r="2" fill="#000"/><circle cx="59" cy="53" r="2" fill="#000"/>
+<path d="M36 66 Q50 78 64 66" fill="none" stroke="#3e0000" stroke-width="3.5" stroke-linecap="round"/>
+</symbol>
+</defs>
+<rect width="1100" height="560" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">A remote-access VPN, and what split tunneling leaves out</text>
+<g class="st s1"><text x="40.0" y="80.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2e7d32" font-weight="bold" text-anchor="start">Full tunnel</text></g>
+<g class="st s1"><circle cx="24" cy="74" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="24.0" y="78.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s1"><use href="#i-laptop" x="70.0" y="130.0" width="80" height="80"/><text x="110.0" y="225.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Remote laptop</text></g>
+<g class="st s1"><use href="#i-cloud" x="345.0" y="95.0" width="150" height="150"/></g>
+<g class="st s1"><text x="420.0" y="126.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">public internet</text></g>
+<g class="st s1"><rect x="160.0" y="154.0" width="520.0" height="34.0" rx="17" fill="#e8f5e9" fill-opacity="1" stroke="#2e7d32" stroke-width="2.4"/></g>
+<g class="st s1"><use href="#i-lock" x="288.0" y="159.0" width="24" height="24"/></g>
+<g class="st s1"><text x="430.0" y="176.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="middle">encrypted tunnel (IPsec or WireGuard)</text></g>
+<g class="st s1"><use href="#i-firewall" x="695.0" y="135.0" width="70" height="70"/><text x="730.0" y="220.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">VPN gateway</text><text x="730.0" y="237.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">security stack</text></g>
+<g class="st s1"><use href="#i-server" x="868.0" y="138.0" width="64" height="64"/><text x="900.0" y="217.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Corporate apps</text></g>
+<g class="st s1"><path d="M768.0 170.0 L864.0 170.0" fill="none" stroke="#2e7d32" stroke-width="2.4" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/></g>
+<g class="st s1"><text x="820.0" y="110.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold" text-anchor="middle">web traffic also inspected here</text></g>
+<g class="st s3"><text x="40.0" y="310.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#d9822b" font-weight="bold" text-anchor="start">Split tunnel</text></g>
+<g class="st s3"><circle cx="24" cy="304" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="24.0" y="308.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s3"><use href="#i-laptop" x="70.0" y="360.0" width="80" height="80"/><text x="110.0" y="455.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Remote laptop</text></g>
+<g class="st s3"><use href="#i-cloud" x="345.0" y="325.0" width="150" height="150"/></g>
+<g class="st s3"><text x="420.0" y="356.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">public internet</text></g>
+<g class="st s3"><rect x="160.0" y="384.0" width="520.0" height="34.0" rx="17" fill="#fff3e0" fill-opacity="1" stroke="#2e7d32" stroke-width="2.4"/></g>
+<g class="st s3"><use href="#i-lock" x="288.0" y="389.0" width="24" height="24"/></g>
+<g class="st s3"><text x="430.0" y="406.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="middle">encrypted tunnel (IPsec or WireGuard)</text></g>
+<g class="st s3"><use href="#i-firewall" x="695.0" y="365.0" width="70" height="70"/><text x="730.0" y="450.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">VPN gateway</text><text x="730.0" y="467.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">security stack</text></g>
+<g class="st s3"><use href="#i-server" x="868.0" y="368.0" width="64" height="64"/><text x="900.0" y="447.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Corporate apps</text></g>
+<g class="st s3"><path d="M768.0 400.0 L864.0 400.0" fill="none" stroke="#2e7d32" stroke-width="2.4" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/></g>
+<g class="st s4"><use href="#i-bug" x="116.0" y="346.0" width="28" height="28"/></g>
+<g class="st s4"><use href="#i-server" x="575.0" y="475.0" width="50" height="50"/><text x="600.0" y="540.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">C2 server</text></g>
+<g class="st s4"><use href="#i-devil" x="612.0" y="468.0" width="24" height="24"/></g>
+<g class="st s4"><path d="M150.0 438.0 L568.0 500.0" fill="none" stroke="#c0392b" stroke-width="2.6" stroke-dasharray="7 6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/><text x="317.2" y="486.8" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="middle">web and C2 traffic go direct</text></g>
+<g class="st s4"><text x="820.0" y="506.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">never seen by the corporate stack</text></g>
+<g class="st s4"><circle cx="660" cy="476" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="660.0" y="480.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+</svg>

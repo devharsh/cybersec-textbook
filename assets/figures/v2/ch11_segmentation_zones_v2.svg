@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" width="1100" height="720" role="img" aria-labelledby="t d"><title id="t">A 250-person firm in eight zones, and the ten flows that are permitted</title><desc id="d">The internet sits above eight zones. Guest, VLAN 170, may reach the internet on TCP 80 and 443. Users, VLAN 110, reach the internet on TCP 80 and 443 through the proxy, servers on TCP 445, 88, 389, 636, and 3268, print on TCP 9100 and 631, and out-of-band management on TCP 22 and 443 from named admin hosts. Servers, VLAN 100, reach named internet destinations on TCP 443 and the camera range in building systems, VLAN 140, on TCP 554 and 80. The DMZ, VLAN 200, reaches 10.0.0.50 on TCP 5432, and the internet reaches the DMZ on TCP 80 and 443 at 203.0.113.10. Voice, VLAN 120, reaches servers on UDP 5060 and media. Everything else, 62 of 72 directions, is denied.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}.s7{animation-delay:5.40s}.s8{animation-delay:6.30s}.s9{animation-delay:7.20s}.s10{animation-delay:8.10s}.s11{animation-delay:9.00s}.s12{animation-delay:9.90s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f4e9c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f4e9c"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-cloud" viewBox="0 0 100 100">
+<path d="M22 74 C8 74 4 56 18 50 C16 34 36 26 46 36 C52 20 78 22 80 42 C96 42 98 72 80 74 Z"
+ fill="url(#g-cloud)" stroke="#5b9bd5" stroke-width="2"/>
+<path d="M26 66 C20 66 18 60 22 58" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+</symbol>
+<symbol id="i-phone" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="32" y="10" width="36" height="80" rx="7" fill="#22272e" stroke="#0d1014" stroke-width="1.2"/>
+<rect x="35.5" y="18" width="29" height="62" rx="2" fill="url(#g-screen)"/>
+<path d="M35.5 18 h29 v18 Q50 30 35.5 40 Z" fill="#fff" opacity=".18"/>
+<rect x="44" y="13" width="12" height="2" rx="1" fill="#555d68"/>
+<circle cx="50" cy="85" r="2.2" fill="#3a414b"/>
+</symbol>
+<symbol id="i-group" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<g transform="translate(-18,4) scale(.8)">
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit2)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M33 30 C33 12 67 12 67 30 L68 46 C64 40 62 34 60 30 C52 32 44 31 38 26 C36 34 34 40 32 46 Z" fill="#1f1a17"/></g>
+<g transform="translate(38,4) scale(.8)">
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/></g>
+<g transform="translate(10,14) scale(.86)">
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit3)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/></g>
+</symbol>
+<symbol id="i-rack" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="24" y="10" width="52" height="82" rx="3" fill="url(#g-steel)" stroke="#14181d" stroke-width="1.2"/>
+<rect x="29" y="15" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="18" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="20.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="20.5" r="1.4" fill="#4fc3f7"/><rect x="29" y="30" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="33" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="35.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="35.5" r="1.4" fill="#4fc3f7"/><rect x="29" y="45" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="48" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="50.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="50.5" r="1.4" fill="#4fc3f7"/><rect x="29" y="60" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="63" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="65.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="65.5" r="1.4" fill="#4fc3f7"/><rect x="29" y="75" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="78" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="80.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="80.5" r="1.4" fill="#4fc3f7"/></symbol>
+<symbol id="i-server" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M28 16 L40 8 L72 8 L60 16 Z" fill="url(#g-steel-top)" stroke="#14181d" stroke-width="1"/>
+<path d="M60 16 L72 8 L72 82 L60 91 Z" fill="#1b1f25" stroke="#14181d" stroke-width="1"/>
+<rect x="28" y="16" width="32" height="75" rx="1.5" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<g fill="#59626f" stroke="#14181d" stroke-width=".6">
+<rect x="32" y="21" width="24" height="5" rx="1"/><rect x="32" y="28" width="24" height="5" rx="1"/>
+<rect x="32" y="35" width="24" height="5" rx="1"/><rect x="32" y="42" width="24" height="5" rx="1"/></g>
+<g fill="#8fd16a"><circle cx="53" cy="23.5" r="1"/><circle cx="53" cy="30.5" r="1"/><circle cx="53" cy="37.5" r="1"/></g>
+<g stroke="#3d4450" stroke-width="1"><line x1="32" y1="56" x2="56" y2="56"/><line x1="32" y1="60" x2="56" y2="60"/><line x1="32" y1="64" x2="56" y2="64"/></g>
+<circle cx="44" cy="80" r="3" fill="#2196f3" stroke="#0d47a1" stroke-width=".8"/>
+</symbol>
+<symbol id="i-printer" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="28" y="14" width="44" height="26" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.2"/>
+<rect x="12" y="38" width="76" height="34" rx="5" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.4"/>
+<rect x="24" y="62" width="52" height="26" fill="#ffffff" stroke="#6b7785" stroke-width="1.2"/>
+<g stroke="#9aa6b3" stroke-width="2"><line x1="30" y1="70" x2="68" y2="70"/><line x1="30" y1="77" x2="60" y2="77"/></g>
+<circle cx="78" cy="48" r="2.6" fill="#8fd16a"/>
+</symbol>
+<symbol id="i-switch" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M10 46 L24 36 H90 L76 46 Z" fill="url(#g-router-top)" stroke="#164b78" stroke-width="1.2"/>
+<path d="M10 46 H76 V66 H10 Z" fill="url(#g-router)" stroke="#164b78" stroke-width="1.2"/>
+<path d="M76 46 L90 36 V56 L76 66 Z" fill="#174f80" stroke="#164b78" stroke-width="1.2"/>
+<rect x="15.0" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="15.0" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="22.2" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="22.2" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="29.4" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="29.4" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="36.6" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="36.6" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="43.8" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="43.8" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="51.0" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="51.0" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="58.2" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="58.2" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="65.4" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="65.4" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/>
+<g fill="#1565c0"><path d="M38 41 h12 v-2.4 l5 3.4 -5 3.4 v-2.4 h-12 Z"/><path d="M62 41 h-12" stroke="#1565c0"/></g>
+</symbol>
+<symbol id="i-headset" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M22 56 v-10 a28 28 0 0 1 56 0 v10" fill="none" stroke="#3b424d" stroke-width="5"/>
+<rect x="14" y="50" width="16" height="26" rx="6" fill="#3b424d"/><rect x="70" y="50" width="16" height="26" rx="6" fill="#3b424d"/>
+<path d="M78 74 q0 14 -20 16" fill="none" stroke="#3b424d" stroke-width="3"/><rect x="48" y="86" width="12" height="8" rx="3" fill="#1f4e9c"/>
+<circle cx="50" cy="56" r="14" fill="url(#g-skin)"/><path d="M36 92 c0 -16 28 -16 28 0 Z" fill="#2e4a6b"/>
+</symbol>
+<symbol id="i-camera" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="10" y="22" width="12" height="12" rx="2" fill="#6b7785"/><path d="M16 34 v18 h14" fill="none" stroke="#6b7785" stroke-width="4"/>
+<path d="M26 26 h50 l14 10 v14 l-14 10 h-50 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.4"/>
+<circle cx="80" cy="43" r="7" fill="#2b3138"/><circle cx="80" cy="43" r="3" fill="#4fc3f7"/>
+<circle cx="34" cy="34" r="2.4" fill="#e74c3c"/>
+</symbol>
+</defs>
+<rect width="1100" height="720" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">A 250-person firm in eight zones, and the ten flows that are permitted</text>
+<g class="st s1"><rect x="40.0" y="50.0" width="1020.0" height="70.0" rx="10" fill="#fdecea" fill-opacity="1" stroke="#c0392b" stroke-width="2"/></g>
+<g class="st s1"><use href="#i-cloud" x="435.0" y="49.0" width="70" height="70"/></g>
+<g class="st s1"><text x="560.0" y="82.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#1f2933" font-weight="bold" text-anchor="start">Internet</text></g>
+<g class="st s1"><text x="560.0" y="102.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">outside every zone, reached only on the paths below</text></g>
+<g class="st s2"><rect x="40.0" y="220.0" width="200.0" height="130.0" rx="10" fill="#fadbd8" fill-opacity="1" stroke="#2b3138" stroke-width="1.6"/></g>
+<g class="st s2"><use href="#i-phone" x="55.0" y="255.0" width="60" height="60"/></g>
+<g class="st s2"><text x="168.0" y="260.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Guest</text></g>
+<g class="st s2"><text x="168.0" y="290.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">VLAN 170</text></g>
+<g class="st s2"><text x="168.0" y="312.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10.0.70.0/24</text></g>
+<g class="st s2"><rect x="300.0" y="220.0" width="200.0" height="130.0" rx="10" fill="#d6e9f8" fill-opacity="1" stroke="#2b3138" stroke-width="1.6"/></g>
+<g class="st s2"><use href="#i-group" x="315.0" y="255.0" width="60" height="60"/></g>
+<g class="st s2"><text x="428.0" y="260.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Users</text></g>
+<g class="st s2"><text x="428.0" y="290.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">VLAN 110</text></g>
+<g class="st s2"><text x="428.0" y="312.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10.0.10.0/23</text></g>
+<g class="st s2"><rect x="600.0" y="220.0" width="200.0" height="130.0" rx="10" fill="#aed6f1" fill-opacity="1" stroke="#2b3138" stroke-width="1.6"/></g>
+<g class="st s2"><use href="#i-rack" x="615.0" y="255.0" width="60" height="60"/></g>
+<g class="st s2"><text x="728.0" y="260.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Servers</text></g>
+<g class="st s2"><text x="728.0" y="290.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">VLAN 100</text></g>
+<g class="st s2"><text x="728.0" y="312.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10.0.0.0/24</text></g>
+<g class="st s2"><rect x="860.0" y="220.0" width="200.0" height="130.0" rx="10" fill="#fcf3cf" fill-opacity="1" stroke="#2b3138" stroke-width="1.6"/></g>
+<g class="st s2"><use href="#i-server" x="875.0" y="255.0" width="60" height="60"/></g>
+<g class="st s2"><text x="988.0" y="260.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">DMZ</text></g>
+<g class="st s2"><text x="988.0" y="290.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">VLAN 200</text></g>
+<g class="st s2"><text x="988.0" y="312.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">203.0.113.0/24</text></g>
+<g class="st s2"><rect x="40.0" y="500.0" width="200.0" height="130.0" rx="10" fill="#eaecee" fill-opacity="1" stroke="#2b3138" stroke-width="1.6"/></g>
+<g class="st s2"><use href="#i-printer" x="55.0" y="535.0" width="60" height="60"/></g>
+<g class="st s2"><text x="168.0" y="540.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Print</text></g>
+<g class="st s2"><text x="168.0" y="570.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">VLAN 130</text></g>
+<g class="st s2"><text x="168.0" y="592.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10.0.30.0/24</text></g>
+<g class="st s2"><rect x="300.0" y="500.0" width="200.0" height="130.0" rx="10" fill="#fae5d3" fill-opacity="1" stroke="#2b3138" stroke-width="1.6"/></g>
+<g class="st s2"><use href="#i-switch" x="315.0" y="535.0" width="60" height="60"/></g>
+<g class="st s2"><text x="428.0" y="540.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Out-of-band mgmt</text></g>
+<g class="st s2"><text x="428.0" y="570.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">VLAN 160</text></g>
+<g class="st s2"><text x="428.0" y="592.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10.0.60.0/24</text></g>
+<g class="st s2"><rect x="600.0" y="500.0" width="200.0" height="130.0" rx="10" fill="#eaecee" fill-opacity="1" stroke="#2b3138" stroke-width="1.6"/></g>
+<g class="st s2"><use href="#i-headset" x="615.0" y="535.0" width="60" height="60"/></g>
+<g class="st s2"><text x="728.0" y="540.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Voice</text></g>
+<g class="st s2"><text x="728.0" y="570.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">VLAN 120</text></g>
+<g class="st s2"><text x="728.0" y="592.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10.0.20.0/24</text></g>
+<g class="st s2"><rect x="860.0" y="500.0" width="200.0" height="130.0" rx="10" fill="#eaecee" fill-opacity="1" stroke="#2b3138" stroke-width="1.6"/></g>
+<g class="st s2"><use href="#i-camera" x="875.0" y="535.0" width="60" height="60"/></g>
+<g class="st s2"><text x="988.0" y="540.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Building systems</text></g>
+<g class="st s2"><text x="988.0" y="570.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">VLAN 140</text></g>
+<g class="st s2"><text x="988.0" y="592.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">10.0.40.0/24</text></g>
+<g class="st s2"><circle cx="40" cy="220" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="40.0" y="224.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><path d="M140.0 218.0 L140.0 124.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s3"><text x="148.0" y="170.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="start">TCP 80, 443</text></g>
+<g class="st s4"><path d="M400.0 218.0 L400.0 124.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s4"><text x="408.0" y="170.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="start">TCP 80, 443 via proxy</text></g>
+<g class="st s5"><path d="M700.0 218.0 L700.0 124.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s5"><text x="708.0" y="160.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="start">TCP 443 to named</text><text x="708.0" y="175.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="start">destinations</text></g>
+<g class="st s6"><path d="M960.0 124.0 L960.0 218.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s6"><text x="952.0" y="160.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="end">TCP 80, 443 to</text><text x="952.0" y="175.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="end">203.0.113.10</text></g>
+<g class="st s7"><path d="M502.0 280.0 L598.0 280.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s7"><text x="550.0" y="236.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">TCP 445, 88,</text><text x="550.0" y="251.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">389, 636,</text><text x="550.0" y="266.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">3268</text></g>
+<g class="st s8"><path d="M858.0 300.0 L802.0 300.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s8"><text x="830.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">TCP 5432 to</text><text x="830.0" y="387.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">10.0.0.50 only</text></g>
+<g class="st s9"><path d="M330.0 352.0 L330.0 420.0 L140.0 420.0 L140.0 498.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s9"><text x="236.0" y="412.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">TCP 9100, 631</text></g>
+<g class="st s10"><path d="M420.0 352.0 L420.0 498.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s10"><text x="428.0" y="440.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="start">TCP 22, 443 from</text><text x="428.0" y="455.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="start">named admin hosts</text></g>
+<g class="st s11"><path d="M700.0 498.0 L700.0 352.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s11"><text x="692.0" y="440.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="end">UDP 5060, media</text></g>
+<g class="st s12"><path d="M760.0 352.0 L760.0 400.0 L960.0 400.0 L960.0 498.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s12"><text x="860.0" y="424.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">TCP 554, 80 to</text><text x="860.0" y="439.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">the camera range</text></g>
+<g class="st s3"><circle cx="120" cy="190" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="120.0" y="194.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s12"><circle cx="1030" cy="470" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="1030.0" y="474.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">12</text></g>
+<g class="st s12"><text x="550.0" y="680.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle">Eight zones give 8 x 7 = 56 directed pairs, plus 8 outbound and 8 inbound internet paths: 72 decisions.</text></g>
+<g class="st s12"><text x="550.0" y="702.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">Ten are permitted. The other 62 are denied, including users to users and guest to anything internal.</text></g>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 460" width="1100" height="460" role="img" aria-labelledby="t d"><title id="t">Cross-site request forgery: the browser attaches the cookie for the attacker</title><desc id="d">The victim is logged in to the bank, so the browser holds its session cookie. The victim then opens a malicious page whose hidden form posts a transfer to the bank. The browser automatically attaches the bank cookie, and the bank, seeing a valid session, performs the transfer. Anti-CSRF tokens tied to the session and SameSite cookies stop it.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f4e9c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f4e9c"/></marker><marker id="a-c0392b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-user-laptop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/><path d="M58 78 L88 70 L92 88 L62 94 Z" fill="#2f353d"/><path d="M60.5 79.5 L86 73 L89 86 L63 92 Z" fill="url(#g-screen)"/></symbol>
+<symbol id="i-server" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M28 16 L40 8 L72 8 L60 16 Z" fill="url(#g-steel-top)" stroke="#14181d" stroke-width="1"/>
+<path d="M60 16 L72 8 L72 82 L60 91 Z" fill="#1b1f25" stroke="#14181d" stroke-width="1"/>
+<rect x="28" y="16" width="32" height="75" rx="1.5" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<g fill="#59626f" stroke="#14181d" stroke-width=".6">
+<rect x="32" y="21" width="24" height="5" rx="1"/><rect x="32" y="28" width="24" height="5" rx="1"/>
+<rect x="32" y="35" width="24" height="5" rx="1"/><rect x="32" y="42" width="24" height="5" rx="1"/></g>
+<g fill="#8fd16a"><circle cx="53" cy="23.5" r="1"/><circle cx="53" cy="30.5" r="1"/><circle cx="53" cy="37.5" r="1"/></g>
+<g stroke="#3d4450" stroke-width="1"><line x1="32" y1="56" x2="56" y2="56"/><line x1="32" y1="60" x2="56" y2="60"/><line x1="32" y1="64" x2="56" y2="64"/></g>
+<circle cx="44" cy="80" r="3" fill="#2196f3" stroke="#0d47a1" stroke-width=".8"/>
+</symbol>
+<symbol id="i-devil" viewBox="0 0 100 100">
+<path d="M24 30 L18 8 L38 22 Z M76 30 L82 8 L62 22 Z" fill="#b71c1c"/>
+<circle cx="50" cy="52" r="32" fill="url(#g-red)" stroke="#7f0000" stroke-width="1.6"/>
+<path d="M34 44 l10 4 M66 44 l-10 4" stroke="#3e0000" stroke-width="4" stroke-linecap="round"/>
+<circle cx="40" cy="52" r="4" fill="#fff"/><circle cx="60" cy="52" r="4" fill="#fff"/>
+<circle cx="41" cy="53" r="2" fill="#000"/><circle cx="59" cy="53" r="2" fill="#000"/>
+<path d="M36 66 Q50 78 64 66" fill="none" stroke="#3e0000" stroke-width="3.5" stroke-linecap="round"/>
+</symbol>
+<symbol id="i-browser" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="8" y="16" width="84" height="66" rx="5" fill="#ffffff" stroke="#4a5562" stroke-width="1.6"/>
+<path d="M8 21 a5 5 0 0 1 5 -5 h74 a5 5 0 0 1 5 5 v9 h-84 Z" fill="#d7dce2"/>
+<circle cx="16" cy="23" r="2.4" fill="#e74c3c"/><circle cx="24" cy="23" r="2.4" fill="#f5b041"/><circle cx="32" cy="23" r="2.4" fill="#8fd16a"/>
+<rect x="40" y="19.5" width="46" height="7" rx="3.5" fill="#ffffff" stroke="#9aa3ae" stroke-width=".8"/>
+<rect x="16" y="38" width="40" height="7" rx="2" fill="#1f4e9c"/>
+<g stroke="#b8c0ca" stroke-width="3.4" stroke-linecap="round"><line x1="16" y1="54" x2="84" y2="54"/><line x1="16" y1="63" x2="76" y2="63"/><line x1="16" y1="72" x2="64" y2="72"/></g>
+</symbol>
+<symbol id="i-money" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="14" y="40" width="72" height="38" rx="4" fill="#5aa469" stroke="#1d5e22" stroke-width="1.2" transform="rotate(-8 50 59)"/>
+<rect x="14" y="34" width="72" height="38" rx="4" fill="url(#g-green)" stroke="#1d5e22" stroke-width="1.4"/>
+<circle cx="50" cy="53" r="11" fill="#e8f5e9" stroke="#1d5e22" stroke-width="1.2"/>
+<text x="50" y="59" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1d5e22">$</text>
+<circle cx="24" cy="44" r="3" fill="#e8f5e9"/><circle cx="76" cy="62" r="3" fill="#e8f5e9"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+</defs>
+<rect width="1100" height="460" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Cross-site request forgery: the browser attaches the cookie for the attacker</text>
+<use href="#i-user-laptop" x="110.0" y="180.0" width="100" height="100"/><text x="160.0" y="295.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Victim&#x27;s browser</text><text x="160.0" y="312.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">logged in to the bank</text>
+<use href="#i-server" x="875.0" y="75.0" width="90" height="90"/><text x="920.0" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">bank.example</text>
+<g class="st s2"><use href="#i-devil" x="890.0" y="330.0" width="60" height="60"/></g>
+<g class="st s2"><use href="#i-browser" x="850.0" y="330.0" width="60" height="60"/></g>
+<g class="st s2"><text x="900.0" y="420.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">evil.example page</text></g>
+<g class="st s1"><path d="M130.0 175.0 L130.0 95.0 L860.0 95.0" fill="none" stroke="#1f4e9c" stroke-width="2.2" marker-start="url(#a-1f4e9c)" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/><text x="536.0" y="87.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">earlier: login; the browser stores the bank cookie</text></g>
+<g class="st s1"><circle cx="130" cy="120" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="130.0" y="124.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><path d="M850.0 350.0 L230.0 260.0" fill="none" stroke="#c0392b" stroke-width="2.2" stroke-dasharray="7 6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/><text x="589.6" y="336.2" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="middle">victim opens a malicious page with a hidden form</text></g>
+<g class="st s2"><circle cx="820" cy="330" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="820.0" y="334.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><path d="M190.0 235.0 L860.0 140.0" fill="none" stroke="#c0392b" stroke-width="3" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s3"><text x="560.0" y="240.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">POST /transfer to=attacker&amp;amount=5000</text></g>
+<g class="st s3"><text x="560.0" y="258.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">Cookie: sid=... (attached automatically)</text></g>
+<g class="st s3"><circle cx="300" cy="220" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="300.0" y="224.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><use href="#i-money" x="1015.0" y="95.0" width="50" height="50"/></g>
+<g class="st s4"><text x="1040.0" y="170.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="middle">transfer done</text></g>
+<g class="st s4"><circle cx="1060" cy="80" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="1060.0" y="84.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><rect x="40.0" y="380.0" width="600.0" height="60.0" rx="8" fill="#e8f5e9" fill-opacity="1" stroke="#2e7d32" stroke-width="1.6"/></g>
+<g class="st s5"><use href="#i-shield" x="56.0" y="392.0" width="36" height="36"/></g>
+<g class="st s5"><circle cx="40" cy="380" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="40.0" y="384.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s5"><text x="100.0" y="404.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">Anti-CSRF token: an unpredictable value the evil page cannot know.</text></g>
+<g class="st s5"><text x="100.0" y="424.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">SameSite cookies: not attached to cross-site requests.</text></g>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" width="1100" height="560" role="img" aria-labelledby="t d"><title id="t">SQL injection: input becomes code, and parameters keep it data</title><desc id="d">The login form sends a username and password. Concatenated into a query, the input &#x27; OR &#x27;1&#x27;=&#x27;1 makes the WHERE clause always true and logs the attacker in; admin&#x27; -- comments out the password check; UNION SELECT reads other tables. A parameterized query sends code and data separately, so the same input is compared as a plain string and matches no user.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-c0392b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-attacker" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M16 94 C16 64 30 54 50 54 C70 54 84 64 84 94 Z" fill="url(#g-hood)" stroke="#000" stroke-width="1"/>
+<path d="M28 52 C26 22 40 10 50 10 C60 10 74 22 72 52 C66 60 34 60 28 52 Z" fill="url(#g-hood)" stroke="#000" stroke-width="1"/>
+<ellipse cx="50" cy="40" rx="15" ry="16" fill="#0a0c0f"/>
+<path d="M40 38 l7 2.5 -7 2 Z M60 38 l-7 2.5 7 2 Z" fill="#ff3b30"/>
+<path d="M30 74 L70 74 L74 92 L26 92 Z" fill="#3a414b" stroke="#000" stroke-width=".8"/>
+<rect x="33" y="77" width="34" height="12" fill="#b71c1c" opacity=".85"/>
+<path d="M46 80 a4 4 0 0 1 8 0 v1 h-8 Z M45 81 h10 v6 h-10 Z" fill="#ffcdd2"/>
+</symbol>
+<symbol id="i-server" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M28 16 L40 8 L72 8 L60 16 Z" fill="url(#g-steel-top)" stroke="#14181d" stroke-width="1"/>
+<path d="M60 16 L72 8 L72 82 L60 91 Z" fill="#1b1f25" stroke="#14181d" stroke-width="1"/>
+<rect x="28" y="16" width="32" height="75" rx="1.5" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<g fill="#59626f" stroke="#14181d" stroke-width=".6">
+<rect x="32" y="21" width="24" height="5" rx="1"/><rect x="32" y="28" width="24" height="5" rx="1"/>
+<rect x="32" y="35" width="24" height="5" rx="1"/><rect x="32" y="42" width="24" height="5" rx="1"/></g>
+<g fill="#8fd16a"><circle cx="53" cy="23.5" r="1"/><circle cx="53" cy="30.5" r="1"/><circle cx="53" cy="37.5" r="1"/></g>
+<g stroke="#3d4450" stroke-width="1"><line x1="32" y1="56" x2="56" y2="56"/><line x1="32" y1="60" x2="56" y2="60"/><line x1="32" y1="64" x2="56" y2="64"/></g>
+<circle cx="44" cy="80" r="3" fill="#2196f3" stroke="#0d47a1" stroke-width=".8"/>
+</symbol>
+<symbol id="i-database" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M24 22 v56 a26 9 0 0 0 52 0 v-56" fill="url(#g-db)" stroke="#4f5964" stroke-width="1.2"/>
+<path d="M24 41 a26 9 0 0 0 52 0 M24 60 a26 9 0 0 0 52 0" fill="none" stroke="#5f6a76" stroke-width="1.2"/>
+<ellipse cx="50" cy="22" rx="26" ry="9" fill="#f1f3f5" stroke="#4f5964" stroke-width="1.2"/>
+<ellipse cx="50" cy="22" rx="18" ry="5" fill="#dfe4e9"/>
+</symbol>
+</defs>
+<rect width="1100" height="560" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">SQL injection: input becomes code, and parameters keep it data</text>
+<use href="#i-attacker" x="40.0" y="110.0" width="80" height="80"/><text x="80.0" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Attacker</text>
+<g class="st s1"><rect x="170.0" y="90.0" width="260.0" height="120.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#9aa5b1" stroke-width="1.6"/></g>
+<g class="st s1"><text x="190.0" y="118.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">Username</text></g>
+<g class="st s1"><rect x="190.0" y="124.0" width="220.0" height="26.0" rx="4" fill="#fff8e1" fill-opacity="1" stroke="#d9a400" stroke-width="1.2"/></g>
+<g class="st s1"><text x="198.0" y="142.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="start">&#x27; OR &#x27;1&#x27;=&#x27;1</text></g>
+<g class="st s1"><text x="190.0" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">Password</text></g>
+<g class="st s1"><rect x="190.0" y="178.0" width="220.0" height="22.0" rx="4" fill="#ffffff" fill-opacity="1" stroke="#c5ccd3" stroke-width="1.2"/></g>
+<g class="st s1"><circle cx="170" cy="90" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="170.0" y="94.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><use href="#i-server" x="480.0" y="110.0" width="80" height="80"/><text x="520.0" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Web app</text></g>
+<g class="st s2"><path d="M432.0 150.0 L478.0 150.0" fill="none" stroke="#c0392b" stroke-width="2.6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s3"><use href="#i-database" x="915.0" y="105.0" width="90" height="90"/><text x="960.0" y="210.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Database</text></g>
+<g class="st s2"><rect x="590.0" y="230.0" width="480.0" height="96.0" rx="8" fill="#1f2933" fill-opacity="1" stroke="#1f2933" stroke-width="1"/></g>
+<g class="st s2"><text x="606.0" y="256.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#f5b041" font-weight="bold" text-anchor="start">Vulnerable: string concatenation</text></g>
+<g class="st s2"><text x="606.0" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#e4e7eb" font-weight="normal" text-anchor="start">SELECT * FROM users WHERE name=&#x27;&#x27; OR &#x27;1&#x27;=&#x27;1&#x27;</text></g>
+<g class="st s2"><text x="606.0" y="304.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#ff8a80" font-weight="bold" text-anchor="start">AND pass=&#x27;...&#x27;        -&gt; always true</text></g>
+<g class="st s2"><circle cx="590" cy="230" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="590.0" y="234.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><path d="M562.0 140.0 L912.0 140.0" fill="none" stroke="#c0392b" stroke-width="2.6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s3"><path d="M912.0 170.0 L562.0 170.0" fill="none" stroke="#c0392b" stroke-width="2.2" marker-end="url(#a-c0392b)" stroke-linejoin="round"/><text x="737.0" y="192.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="middle">every user row: logged in as the first, often admin</text></g>
+<g class="st s3"><circle cx="880" cy="100" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="880.0" y="104.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><text x="40.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Other payloads</text></g>
+<g class="st s4"><circle cx="24" cy="366" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="24.0" y="370.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s4"><text x="60.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">admin&#x27; --</text></g>
+<g class="st s4"><text x="60.0" y="418.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">comments out the password check</text></g>
+<g class="st s4"><text x="60.0" y="444.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">&#x27; UNION SELECT username, password FROM users --</text></g>
+<g class="st s4"><text x="60.0" y="462.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">reads another table</text></g>
+<g class="st s4"><text x="60.0" y="488.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">&#x27; AND SLEEP(5) --</text></g>
+<g class="st s4"><text x="60.0" y="506.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="start">blind, time-based inference</text></g>
+<g class="st s5"><rect x="590.0" y="360.0" width="480.0" height="110.0" rx="8" fill="#e8f5e9" fill-opacity="1" stroke="#2e7d32" stroke-width="1.6"/></g>
+<g class="st s5"><text x="606.0" y="386.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">Fixed: parameterized query (prepared statement)</text></g>
+<g class="st s5"><text x="606.0" y="410.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">SELECT * FROM users WHERE name = ? AND pass = ?</text></g>
+<g class="st s5"><text x="606.0" y="434.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">the input is data: no user is named &#x27; OR &#x27;1&#x27;=&#x27;1</text></g>
+<g class="st s5"><text x="606.0" y="456.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start" font-style="italic">plus least-privilege database accounts</text></g>
+<g class="st s5"><circle cx="590" cy="360" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="590.0" y="364.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s5"><text x="550.0" y="540.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">sqlmap automates the in-band, error-based, and blind variants.</text></g>
+</svg>

@@ -21,8 +21,8 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 8,047 | 464 | 16.1 |
 | Chapter 8: Scanning and Enumeration | 7,692 | 816 | 15.4 |
 | Chapter 9: Exploitation and Post-Exploitation | 28,170 | 1,134 | 56.3 |
-| Chapter 10: Web Application Security | 10,212 | 516 | 20.4 |
-| Chapter 11: Network Defense and Hardening | 26,625 | 529 | 53.2 |
+| Chapter 10: Web Application Security | 10,574 | 516 | 21.1 |
+| Chapter 11: Network Defense and Hardening | 27,102 | 529 | 54.2 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 13,324 | 1,114 | 26.6 |
 | Chapter 13: Digital Forensics | 11,534 | 875 | 23.1 |
 | Chapter 14: Incident Response | 11,668 | 828 | 23.3 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **467,052** | **24,597** | **934** |
+| **TOTAL** | **467,891** | **24,597** | **936** |
 
 ## Detailed Word Count by Section
 
@@ -571,13 +571,13 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 10: Web Application Security
 
-*10,212 markdown words (20.4 pages); 516 code words.*
+*10,574 markdown words (21.1 pages); 516 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 109 |
 | Key Terms | 216 |
-| 10.1 How the Web Works: HTTP, Sessions, and the Same-Origin Policy | 237 |
+| 10.1 How the Web Works: HTTP, Sessions, and the Same-Origin Policy | 286 |
 | 10.2 The OWASP Top 10 | 62 |
 |     Broken Access Control | 169 |
 |     The OWASP Top 10:2025 | 513 |
@@ -587,9 +587,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Cross-Site Request Forgery | 99 |
 |     Server-Side Request Forgery | 65 |
 | 10.4 SQL Injection in Depth | 51 |
-|     Database Models: Traditional and Modern | 763 |
-| 10.5 Cross-Site Scripting (XSS) | 378 |
-| 10.6 Broken Access Control, CSRF, SSRF, and Other High-Impact Flaws | 214 |
+|     Database Models: Traditional and Modern | 819 |
+| 10.5 Cross-Site Scripting (XSS) | 427 |
+| 10.6 Broken Access Control, CSRF, SSRF, and Other High-Impact Flaws | 312 |
 |     Insecure Direct Object References in Depth | 1,166 |
 | 10.7 Authentication and Session Management | 49 |
 |     Broken Authentication | 165 |
@@ -599,7 +599,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 10.9 The Web-Application Testing Toolkit | 355 |
 | 10.10 Application Security Testing: Static, Dynamic, Interactive, and DevSecOps | 433 |
 | 10.11 Web Application Firewalls and Their Limits | 40 |
-|     WAF Bypass Techniques | 76 |
+|     WAF Bypass Techniques | 123 |
 | 10.12 The OWASP API Security Top 10 | 332 |
 | 10.13 Database Systems in Depth: Engines, Replication, and Security | 41 |
 |     Relational Database Management Systems | 247 |
@@ -610,7 +610,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Read (Only) Replicas | 100 |
 |     Cloud Database Instance Classes | 561 |
 |     Attacks and Defenses | 263 |
-| 10.14 Two Server-Side Bugs from One Week in October 2026: PHP2Shell and a GitLab Regex | 144 |
+| 10.14 Two Server-Side Bugs from One Week in October 2026: PHP2Shell and a GitLab Regex | 207 |
 |     PHP2Shell | 440 |
 |     A GitLab Bug Reachable Since 2014 | 347 |
 | Chapter Summary | 162 |
@@ -622,7 +622,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 11: Network Defense and Hardening
 
-*26,625 markdown words (53.2 pages); 529 code words.*
+*27,102 markdown words (54.2 pages); 529 code words.*
 
 | Section | Words |
 |---|---:|
@@ -631,14 +631,14 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 11.1 Firewalls | 161 |
 |     Firewall Types and Evolution | 188 |
 |     Writing Firewall Rules | 200 |
-| 11.2 Firewall Types and Topologies | 399 |
+| 11.2 Firewall Types and Topologies | 432 |
 |     Physical and Virtual Firewalls | 174 |
 |     Stateless and Stateful Packet Filtering | 514 |
 | 11.3 Network Segmentation | 49 |
 |     DMZ Architecture | 200 |
 |     VLAN and Micro-Segmentation | 198 |
 | 11.4 Zero-Trust Architecture | 50 |
-|     The Zero-Trust Principle | 498 |
+|     The Zero-Trust Principle | 559 |
 | 11.5 DNS Security | 20 |
 |     DNSSEC | 44 |
 |     DNS over HTTPS and DNS over TLS | 53 |
@@ -646,10 +646,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     NXDOMAIN and the DNS_PROBE_FINISHED_NXDOMAIN Error | 252 |
 | 11.6 VPNs and Remote Access | 140 |
 |     IPsec and WireGuard | 57 |
-|     Split Tunneling and Its Risks | 64 |
-| 11.7 Proxies, VPNs, and Tor | 284 |
+|     Split Tunneling and Its Risks | 111 |
+| 11.7 Proxies, VPNs, and Tor | 332 |
 | 11.8 Network Access Control and 802.1X | 49 |
-|     802.1X Operation | 59 |
+|     802.1X Operation | 113 |
 | 11.9 DDoS and Mitigation | 46 |
 |     DDoS Attack Categories | 115 |
 |     DDoS Mitigation | 60 |
@@ -657,9 +657,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Biometrics and the Reality of False Positives and Negatives | 439 |
 |     Identity Providers, Identity Management, and Who Does What | 1,295 |
 | 11.11 Network Monitoring and Visibility | 365 |
-| 11.12 Deception: Honeypots, Honeynets, and Honeytokens | 175 |
+| 11.12 Deception: Honeypots, Honeynets, and Honeytokens | 221 |
 | 11.13 Network Forensics in Defense | 159 |
-| 11.14 CVE Case Study: When the Firewall Is the Door (CVE-2024-3400) | 242 |
+| 11.14 CVE Case Study: When the Firewall Is the Door (CVE-2024-3400) | 283 |
 | 11.15 Operating System and Host Hardening | 436 |
 |     Mobile Devices, Bring Your Own Device (BYOD), and the Hardware Root of Trust | 478 |
 | 11.16 Network Device Hardening: Switches and Routers | 327 |
@@ -683,14 +683,14 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Exercises | 163 |
 |     Answer Key | 248 |
 | 11.22 Network Address Translation, and the Security It Does Not Provide | 128 |
-|     What the standard actually says | 256 |
+|     What the standard actually says | 306 |
 |     A column-by-column answer | 258 |
 |     Carrier-grade NAT, and the arithmetic that broke attribution | 227 |
 | 11.23 A Worked Segmentation of a Small Enterprise | 69 |
 |     Step one: inventory, grouped by who owns the risk | 97 |
 |     Step two: addresses and VLANs | 185 |
 |     Step three: the decision count, which is the real cost | 103 |
-|     Step four: the matrix, written as permitted flows only | 636 |
+|     Step four: the matrix, written as permitted flows only | 684 |
 |     Step five: micro-segmentation, and why it is a different kind of problem | 115 |
 |     Exercises | 127 |
 |     Answer Key | 187 |
@@ -698,7 +698,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     What a VLAN is, on the wire | 520 |
 |     The native VLAN, which is the exception that the attacks live in | 76 |
 |     Way out one: become a trunk | 101 |
-|     Way out two: two tags, one strip | 216 |
+|     Way out two: two tags, one strip | 265 |
 |     The configuration that closes both | 280 |
 |     Exercises | 128 |
 |     Answer Key | 233 |

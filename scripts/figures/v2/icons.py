@@ -428,3 +428,24 @@ ICONS["headset"] = SHADOW + """
 <path d="M78 74 q0 14 -20 16" fill="none" stroke="#3b424d" stroke-width="3"/><rect x="48" y="86" width="12" height="8" rx="3" fill="#1f4e9c"/>
 <circle cx="50" cy="56" r="14" fill="url(#g-skin)"/><path d="M36 92 c0 -16 28 -16 28 0 Z" fill="#2e4a6b"/>
 """
+
+# ---- batch 5: building and deception
+ICONS["printer"] = SHADOW + """
+<rect x="28" y="14" width="44" height="26" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.2"/>
+<rect x="12" y="38" width="76" height="34" rx="5" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.4"/>
+<rect x="24" y="62" width="52" height="26" fill="#ffffff" stroke="#6b7785" stroke-width="1.2"/>
+<g stroke="#9aa6b3" stroke-width="2"><line x1="30" y1="70" x2="68" y2="70"/><line x1="30" y1="77" x2="60" y2="77"/></g>
+<circle cx="78" cy="48" r="2.6" fill="#8fd16a"/>
+"""
+ICONS["camera"] = SHADOW + """
+<rect x="10" y="22" width="12" height="12" rx="2" fill="#6b7785"/><path d="M16 34 v18 h14" fill="none" stroke="#6b7785" stroke-width="4"/>
+<path d="M26 26 h50 l14 10 v14 l-14 10 h-50 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1.4"/>
+<circle cx="80" cy="43" r="7" fill="#2b3138"/><circle cx="80" cy="43" r="3" fill="#4fc3f7"/>
+<circle cx="34" cy="34" r="2.4" fill="#e74c3c"/>
+"""
+ICONS["honeypot"] = SHADOW + """
+<path d="M30 30 q-18 10 -16 34 q2 26 36 26 q34 0 36 -26 q2 -24 -16 -34 Z" fill="url(#g-gold)" stroke="#8a6d1a" stroke-width="1.6"/>
+<rect x="28" y="20" width="44" height="12" rx="4" fill="#b9770e" stroke="#7a4b12" stroke-width="1.2"/>
+<path d="M36 32 q4 10 0 16 q-2 4 2 6" fill="none" stroke="#f9e79f" stroke-width="3" stroke-linecap="round"/>
+<text x="50" y="72" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#7a4b12">HONEY</text>
+"""

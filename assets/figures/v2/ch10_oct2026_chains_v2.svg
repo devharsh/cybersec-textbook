@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 590" width="1100" height="590" role="img" aria-labelledby="t d"><title id="t">Two October 2026 server-side chains: PHP2Shell and the GitLab org-mode bug</title><desc id="d">Top, PHP2Shell (CVE-2026-109618 and CVE-2026-109619): request 1 sends a multipart body that passes the size check but exhausts memory; PHP aborts mid-operation and the worker keeps pointers into freed memory; request 2 to the same worker reuses that stale state, giving code execution before any application code runs under mod_php. Bottom, GitLab (CVE-2026-110264): an org-mode file declares its own task keyword with #+TODO:, org-ruby escapes it in one pattern but pastes it raw into another, the regex compiler treats attacker text as pattern syntax, too many repeats overflow a counter in Onigmo, and code runs on the GitLab server with no login, CVSS 10.0.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}.s7{animation-delay:5.40s}.s8{animation-delay:6.30s}.s9{animation-delay:7.20s}.s10{animation-delay:8.10s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f4e9c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f4e9c"/></marker><marker id="a-d9822b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#d9822b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-envelope" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="12" y="26" width="76" height="52" rx="3" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.4"/>
+<path d="M12 28 L50 56 L88 28" fill="none" stroke="#6b7785" stroke-width="1.6"/>
+</symbol>
+<symbol id="i-memory" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="8" y="34" width="84" height="30" rx="2" fill="#2e7d32" stroke="#1b5e20" stroke-width="1.4"/>
+<rect x="13" y="38" width="14" height="18" rx="1" fill="#1f2933"/><rect x="33" y="38" width="14" height="18" rx="1" fill="#1f2933"/><rect x="53" y="38" width="14" height="18" rx="1" fill="#1f2933"/><rect x="73" y="38" width="14" height="18" rx="1" fill="#1f2933"/><rect x="12" y="64" width="3" height="7" fill="#c9a227"/><rect x="17" y="64" width="3" height="7" fill="#c9a227"/><rect x="22" y="64" width="3" height="7" fill="#c9a227"/><rect x="27" y="64" width="3" height="7" fill="#c9a227"/><rect x="32" y="64" width="3" height="7" fill="#c9a227"/><rect x="37" y="64" width="3" height="7" fill="#c9a227"/><rect x="42" y="64" width="3" height="7" fill="#c9a227"/><rect x="47" y="64" width="3" height="7" fill="#c9a227"/><rect x="52" y="64" width="3" height="7" fill="#c9a227"/><rect x="57" y="64" width="3" height="7" fill="#c9a227"/><rect x="62" y="64" width="3" height="7" fill="#c9a227"/><rect x="67" y="64" width="3" height="7" fill="#c9a227"/><rect x="72" y="64" width="3" height="7" fill="#c9a227"/><rect x="77" y="64" width="3" height="7" fill="#c9a227"/><rect x="82" y="64" width="3" height="7" fill="#c9a227"/><rect x="87" y="64" width="3" height="7" fill="#c9a227"/></symbol>
+<symbol id="i-warning" viewBox="0 0 100 100">
+<path d="M50 10 L92 86 H8 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="3" stroke-linejoin="round"/>
+<rect x="46" y="36" width="8" height="28" rx="3" fill="#3e2a00"/><circle cx="50" cy="73" r="5" fill="#3e2a00"/>
+</symbol>
+<symbol id="i-bug" viewBox="0 0 100 100">
+<ellipse cx="50" cy="56" rx="20" ry="26" fill="url(#g-red)" stroke="#7f0000" stroke-width="1.6"/>
+<circle cx="50" cy="28" r="11" fill="#3e0000"/><line x1="50" y1="32" x2="50" y2="82" stroke="#7f0000" stroke-width="2"/>
+<g stroke="#3e0000" stroke-width="3" stroke-linecap="round"><path d="M31 46 l-14 -8 M31 58 h-16 M32 70 l-14 8 M69 46 l14 -8 M69 58 h16 M68 70 l14 8 M44 20 l-6 -10 M56 20 l6 -10"/></g>
+<circle cx="43" cy="50" r="4" fill="#3e0000"/><circle cx="57" cy="64" r="4" fill="#3e0000"/>
+</symbol>
+<symbol id="i-document" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M26 8 H62 L76 22 V90 H26 Z" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.2"/>
+<path d="M62 8 V22 H76" fill="#d5dbe2" stroke="#6b7785" stroke-width="1.2"/>
+<g stroke="#9aa6b3" stroke-width="2.4" stroke-linecap="round"><line x1="34" y1="34" x2="68" y2="34"/><line x1="34" y1="44" x2="68" y2="44"/><line x1="34" y1="54" x2="60" y2="54"/><line x1="34" y1="64" x2="66" y2="64"/></g>
+</symbol>
+<symbol id="i-code" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="10" y="16" width="80" height="66" rx="4" fill="#1e2530" stroke="#0d1014" stroke-width="1.4"/>
+<rect x="10" y="16" width="80" height="11" rx="4" fill="#3b424d"/><circle cx="18" cy="21.5" r="2.2" fill="#ff5f56"/><circle cx="25" cy="21.5" r="2.2" fill="#ffbd2e"/><circle cx="32" cy="21.5" r="2.2" fill="#27c93f"/>
+<path d="M30 42 L20 52 L30 62 M70 42 L80 52 L70 62" fill="none" stroke="#4fc3f7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="56" y1="38" x2="44" y2="66" stroke="#8fd16a" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="i-gear" viewBox="0 0 100 100">
+<path d="M50 10 l7 2 2 10 8 4 9 -5 5 5 -5 9 4 8 10 2 2 7 -2 7 -10 2 -4 8 5 9 -5 5 -9 -5 -8 4 -2 10 -7 2 -7 -2 -2 -10 -8 -4 -9 5 -5 -5 5 -9 -4 -8 -10 -2 -2 -7 2 -7 10 -2 4 -8 -5 -9 5 -5 9 5 8 -4 2 -10 Z"
+ fill="url(#g-steel-top)" stroke="#3d4450" stroke-width="1.4"/>
+<circle cx="50" cy="50" r="14" fill="#eef1f4" stroke="#3d4450" stroke-width="1.4"/>
+</symbol>
+<symbol id="i-chip" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="24" y="24" width="52" height="52" rx="4" fill="#2f353d" stroke="#14181d" stroke-width="1.4"/>
+<rect x="34" y="34" width="32" height="32" rx="2" fill="#4a5361"/><text x="50" y="55" font-size="12" text-anchor="middle" fill="#cfd8e3" font-family="Helvetica,Arial,sans-serif" font-weight="bold">CPU</text>
+<rect x="30" y="14" width="4" height="10" fill="#c9a227"/><rect x="30" y="76" width="4" height="10" fill="#c9a227"/><rect x="14" y="30" width="10" height="4" fill="#c9a227"/><rect x="76" y="30" width="10" height="4" fill="#c9a227"/><rect x="39" y="14" width="4" height="10" fill="#c9a227"/><rect x="39" y="76" width="4" height="10" fill="#c9a227"/><rect x="14" y="39" width="10" height="4" fill="#c9a227"/><rect x="76" y="39" width="10" height="4" fill="#c9a227"/><rect x="48" y="14" width="4" height="10" fill="#c9a227"/><rect x="48" y="76" width="4" height="10" fill="#c9a227"/><rect x="14" y="48" width="10" height="4" fill="#c9a227"/><rect x="76" y="48" width="10" height="4" fill="#c9a227"/><rect x="57" y="14" width="4" height="10" fill="#c9a227"/><rect x="57" y="76" width="4" height="10" fill="#c9a227"/><rect x="14" y="57" width="10" height="4" fill="#c9a227"/><rect x="76" y="57" width="10" height="4" fill="#c9a227"/><rect x="66" y="14" width="4" height="10" fill="#c9a227"/><rect x="66" y="76" width="4" height="10" fill="#c9a227"/><rect x="14" y="66" width="10" height="4" fill="#c9a227"/><rect x="76" y="66" width="10" height="4" fill="#c9a227"/></symbol>
+</defs>
+<rect width="1100" height="590" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Two October 2026 server-side chains: PHP2Shell and the GitLab org-mode bug</text>
+<g class="st s1"><text x="40.0" y="74.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#d9822b" font-weight="bold" text-anchor="start">PHP2Shell (CVE-2026-109618 and CVE-2026-109619)</text></g>
+<g class="st s1"><rect x="40.0" y="100.0" width="190.0" height="170.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="2.2"/></g>
+<g class="st s1"><rect x="40.0" y="100.0" width="190.0" height="8.0" rx="4" fill="#d9822b" fill-opacity="1" stroke="#d9822b" stroke-width="1"/></g>
+<g class="st s1"><use href="#i-envelope" x="104.0" y="121.0" width="62" height="62"/></g>
+<g class="st s1"><text x="135.0" y="206.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="middle">Request 1</text></g>
+<g class="st s1"><text x="135.0" y="226.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">multipart body passes</text><text x="135.0" y="241.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">the size check, then</text><text x="135.0" y="256.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">exhausts memory</text></g>
+<g class="st s1"><circle cx="212" cy="118" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="212.0" y="122.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><path d="M232.0 185.0 L250.0 185.0" fill="none" stroke="#d9822b" stroke-width="2.6" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s2"><rect x="252.0" y="100.0" width="190.0" height="170.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="2.2"/></g>
+<g class="st s2"><rect x="252.0" y="100.0" width="190.0" height="8.0" rx="4" fill="#d9822b" fill-opacity="1" stroke="#d9822b" stroke-width="1"/></g>
+<g class="st s2"><use href="#i-memory" x="316.0" y="121.0" width="62" height="62"/></g>
+<g class="st s2"><text x="347.0" y="206.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="middle">Out of memory</text></g>
+<g class="st s2"><text x="347.0" y="226.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">PHP aborts mid-operation;</text><text x="347.0" y="241.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">state half built</text></g>
+<g class="st s2"><circle cx="424" cy="118" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="424.0" y="122.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><path d="M444.0 185.0 L462.0 185.0" fill="none" stroke="#d9822b" stroke-width="2.6" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s3"><rect x="464.0" y="100.0" width="190.0" height="170.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="2.2"/></g>
+<g class="st s3"><rect x="464.0" y="100.0" width="190.0" height="8.0" rx="4" fill="#d9822b" fill-opacity="1" stroke="#d9822b" stroke-width="1"/></g>
+<g class="st s3"><use href="#i-warning" x="528.0" y="121.0" width="62" height="62"/></g>
+<g class="st s3"><text x="559.0" y="206.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="middle">Stale state</text></g>
+<g class="st s3"><text x="559.0" y="226.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">worker keeps pointers</text><text x="559.0" y="241.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">into freed memory</text></g>
+<g class="st s3"><circle cx="636" cy="118" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="636.0" y="122.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><path d="M656.0 185.0 L674.0 185.0" fill="none" stroke="#d9822b" stroke-width="2.6" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s4"><rect x="676.0" y="100.0" width="190.0" height="170.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="2.2"/></g>
+<g class="st s4"><rect x="676.0" y="100.0" width="190.0" height="8.0" rx="4" fill="#d9822b" fill-opacity="1" stroke="#d9822b" stroke-width="1"/></g>
+<g class="st s4"><use href="#i-envelope" x="740.0" y="121.0" width="62" height="62"/></g>
+<g class="st s4"><text x="771.0" y="206.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="middle">Request 2</text></g>
+<g class="st s4"><text x="771.0" y="226.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">same worker reuses</text><text x="771.0" y="241.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">the stale state</text></g>
+<g class="st s4"><circle cx="848" cy="118" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="848.0" y="122.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><path d="M868.0 185.0 L886.0 185.0" fill="none" stroke="#d9822b" stroke-width="2.6" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s5"><rect x="888.0" y="100.0" width="190.0" height="170.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="2.2"/></g>
+<g class="st s5"><rect x="888.0" y="100.0" width="190.0" height="8.0" rx="4" fill="#c0392b" fill-opacity="1" stroke="#c0392b" stroke-width="1"/></g>
+<g class="st s5"><use href="#i-bug" x="952.0" y="121.0" width="62" height="62"/></g>
+<g class="st s5"><text x="983.0" y="206.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">Code execution</text></g>
+<g class="st s5"><text x="983.0" y="226.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">before any application</text><text x="983.0" y="241.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">code runs (mod_php)</text></g>
+<g class="st s5"><circle cx="1060" cy="118" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="1060.0" y="122.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><text x="40.0" y="334.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f4e9c" font-weight="bold" text-anchor="start">GitLab org-mode rendering (CVE-2026-110264)</text></g>
+<g class="st s6"><rect x="40.0" y="360.0" width="190.0" height="170.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="2.2"/></g>
+<g class="st s6"><rect x="40.0" y="360.0" width="190.0" height="8.0" rx="4" fill="#1f4e9c" fill-opacity="1" stroke="#1f4e9c" stroke-width="1"/></g>
+<g class="st s6"><use href="#i-document" x="104.0" y="381.0" width="62" height="62"/></g>
+<g class="st s6"><text x="135.0" y="466.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Org-mode file</text></g>
+<g class="st s6"><text x="135.0" y="486.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">declares its own task</text><text x="135.0" y="501.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">keyword with #+TODO:</text></g>
+<g class="st s6"><circle cx="212" cy="378" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="212.0" y="382.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s7"><path d="M232.0 445.0 L250.0 445.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s7"><rect x="252.0" y="360.0" width="190.0" height="170.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="2.2"/></g>
+<g class="st s7"><rect x="252.0" y="360.0" width="190.0" height="8.0" rx="4" fill="#1f4e9c" fill-opacity="1" stroke="#1f4e9c" stroke-width="1"/></g>
+<g class="st s7"><use href="#i-code" x="316.0" y="381.0" width="62" height="62"/></g>
+<g class="st s7"><text x="347.0" y="466.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="middle">org-ruby</text></g>
+<g class="st s7"><text x="347.0" y="486.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">escapes it for one</text><text x="347.0" y="501.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">pattern, pastes it raw</text><text x="347.0" y="516.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">into another</text></g>
+<g class="st s7"><circle cx="424" cy="378" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="424.0" y="382.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s8"><path d="M444.0 445.0 L462.0 445.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s8"><rect x="464.0" y="360.0" width="190.0" height="170.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="2.2"/></g>
+<g class="st s8"><rect x="464.0" y="360.0" width="190.0" height="8.0" rx="4" fill="#1f4e9c" fill-opacity="1" stroke="#1f4e9c" stroke-width="1"/></g>
+<g class="st s8"><use href="#i-gear" x="528.0" y="381.0" width="62" height="62"/></g>
+<g class="st s8"><text x="559.0" y="466.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Regex compiler</text></g>
+<g class="st s8"><text x="559.0" y="486.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">attacker text becomes</text><text x="559.0" y="501.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">pattern syntax</text></g>
+<g class="st s8"><circle cx="636" cy="378" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="636.0" y="382.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s9"><path d="M656.0 445.0 L674.0 445.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s9"><rect x="676.0" y="360.0" width="190.0" height="170.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="2.2"/></g>
+<g class="st s9"><rect x="676.0" y="360.0" width="190.0" height="8.0" rx="4" fill="#1f4e9c" fill-opacity="1" stroke="#1f4e9c" stroke-width="1"/></g>
+<g class="st s9"><use href="#i-chip" x="740.0" y="381.0" width="62" height="62"/></g>
+<g class="st s9"><text x="771.0" y="466.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Onigmo engine</text></g>
+<g class="st s9"><text x="771.0" y="486.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">too many repeats overflow</text><text x="771.0" y="501.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">an internal ID counter</text></g>
+<g class="st s9"><circle cx="848" cy="378" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="848.0" y="382.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s10"><path d="M868.0 445.0 L886.0 445.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s10"><rect x="888.0" y="360.0" width="190.0" height="170.0" rx="10" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="2.2"/></g>
+<g class="st s10"><rect x="888.0" y="360.0" width="190.0" height="8.0" rx="4" fill="#c0392b" fill-opacity="1" stroke="#c0392b" stroke-width="1"/></g>
+<g class="st s10"><use href="#i-bug" x="952.0" y="381.0" width="62" height="62"/></g>
+<g class="st s10"><text x="983.0" y="466.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">Code execution</text></g>
+<g class="st s10"><text x="983.0" y="486.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">on the GitLab server,</text><text x="983.0" y="501.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">no login (CVSS 10.0)</text></g>
+<g class="st s10"><circle cx="1060" cy="378" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="1060.0" y="382.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s10"><text x="550.0" y="570.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">Both: untrusted input reaches a native component below a memory-safe or interpreted layer.</text></g>
+</svg>

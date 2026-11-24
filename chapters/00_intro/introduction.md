@@ -25,17 +25,17 @@ mix and match chapters to match their exact syllabus.
 | Software Reverse Engineering | 9, 15 (+ 3) | 145 |
 | Computer and Network Security | 2, 3, 5, 11, 12, 17 | 430 |
 | Advanced Network Security (Security+ aligned) | 1, 2, 3, 11, 12, 15, 19 | 385 |
-| Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 325 |
-| Fundamentals of Cryptography | 2, 3, 11, 17 | 365 |
+| Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 330 |
+| Fundamentals of Cryptography | 2, 3, 11, 17 | 370 |
 | Incident Response and Digital Forensics | 12, 13, 14, 15 | 165 |
 | Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 | 355 |
-| Capstone or Certification Prep | All chapters | 868 (about 934 with appendices) |
+| Capstone or Certification Prep | All chapters | 869 (about 936 with appendices) |
 
 <!-- END generated:course-pages -->
 
 <!-- BEGIN generated:page-basis. Written by scripts/gen_wordcounts.py; edit the wording in that script. -->
 
-The page counts are estimates at about 500 words of prose per page, the same measure Appendix G uses, and they count only the listed chapters, not the appendices. Code listings, figures, and tables are not counted, so a typeset copy will run to a different length. These figures, like Appendix G, are regenerated from the book source whenever the book is rebuilt. They are a planning aid for gauging reading load per course: on the same measure the 20 chapters come to about 868 pages, and the whole book, with its front matter and appendices, to about 934. Several courses now exceed a single term's reading if every listed chapter is covered in full, so the guidance under *Adapting the Reading Load* below on trimming the encyclopedic back sections of the longer chapters applies directly.
+The page counts are estimates at about 500 words of prose per page, the same measure Appendix G uses, and they count only the listed chapters, not the appendices. Code listings, figures, and tables are not counted, so a typeset copy will run to a different length. These figures, like Appendix G, are regenerated from the book source whenever the book is rebuilt. They are a planning aid for gauging reading load per course: on the same measure the 20 chapters come to about 869 pages, and the whole book, with its front matter and appendices, to about 936. Several courses now exceed a single term's reading if every listed chapter is covered in full, so the guidance under *Adapting the Reading Load* below on trimming the encyclopedic back sections of the longer chapters applies directly.
 
 <!-- END generated:page-basis -->
 
