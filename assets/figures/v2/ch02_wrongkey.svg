@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440" role="img" aria-labelledby="t d"><title id="t">Wrong-key decryption: garbage output versus a clean rejection</title><desc id="d">Ciphertext decrypted with the wrong key behaves three ways. Stream and counter modes such as CTR, CFB, and OFB give garbage with no error. CBC or ECB with padding gives a padding error about 255 times in 256 and garbage about once in 256. AEAD modes such as AES-GCM and ChaCha20-Poly1305 reject the input because authentication fails.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f2933" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f2933"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-document" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M26 8 H62 L76 22 V90 H26 Z" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.2"/>
+<path d="M62 8 V22 H76" fill="#d5dbe2" stroke="#6b7785" stroke-width="1.2"/>
+<g stroke="#9aa6b3" stroke-width="2.4" stroke-linecap="round"><line x1="34" y1="34" x2="68" y2="34"/><line x1="34" y1="44" x2="68" y2="44"/><line x1="34" y1="54" x2="60" y2="54"/><line x1="34" y1="64" x2="66" y2="64"/></g>
+</symbol>
+<symbol id="i-key" viewBox="0 0 100 100">
+<circle cx="32" cy="50" r="18" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+<circle cx="28" cy="50" r="6" fill="#fff8e1" stroke="#a5760e" stroke-width="1.5"/>
+<path d="M48 45 H90 V55 H84 V64 H76 V55 H70 V62 H62 V55 H48 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+</symbol>
+<symbol id="i-cross" viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="url(#g-red)" stroke="#7f0000" stroke-width="2"/>
+<path d="M35 35 L65 65 M65 35 L35 65" stroke="#fff" stroke-width="9" stroke-linecap="round"/></symbol>
+<symbol id="i-warning" viewBox="0 0 100 100">
+<path d="M50 10 L92 86 H8 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="3" stroke-linejoin="round"/>
+<rect x="46" y="36" width="8" height="28" rx="3" fill="#3e2a00"/><circle cx="50" cy="73" r="5" fill="#3e2a00"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+</defs>
+<rect width="1000" height="440" fill="#ffffff"/>
+<text x="500.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Wrong-key decryption: garbage output versus a clean rejection</text>
+<g class="st s1"><use href="#i-document" x="41.0" y="175.0" width="78" height="78"/><text x="80.0" y="268.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Ciphertext</text></g>
+<g class="st s1"><use href="#i-key" x="128.0" y="138.0" width="44" height="44"/></g>
+<g class="st s1"><use href="#i-cross" x="159.0" y="135.0" width="22" height="22"/></g>
+<g class="st s1"><text x="150.0" y="128.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">wrong key</text></g>
+<g class="st s2"><path d="M126.0 214.0 L300.0 120.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s2"><rect x="306.0" y="90.0" width="250" height="60" rx="6" fill="url(#g-box)" stroke="#4a6fa5" stroke-width="1.6" filter="url(#f-drop)"/><text x="431.0" y="124.9" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">Stream / CTR / CFB / OFB</text></g>
+<g class="st s2"><path d="M560.0 120.0 L640.0 120.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s2"><rect x="646" y="90" width="300" height="60" rx="8" fill="#fff4d6" stroke="#d9822b" stroke-width="1.8"/></g>
+<g class="st s2"><use href="#i-warning" x="660.0" y="100.0" width="40" height="40"/></g>
+<g class="st s2"><text x="710.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Garbage output</text></g>
+<g class="st s2"><text x="710.0" y="136.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="start">no error at all</text></g>
+<g class="st s2"><circle cx="306" cy="90" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="306.0" y="94.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s3"><path d="M126.0 214.0 L300.0 238.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s3"><rect x="306.0" y="208.0" width="250" height="60" rx="6" fill="url(#g-box)" stroke="#4a6fa5" stroke-width="1.6" filter="url(#f-drop)"/><text x="431.0" y="242.9" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">CBC / ECB + padding</text></g>
+<g class="st s3"><path d="M560.0 238.0 L640.0 238.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s3"><rect x="646" y="208" width="300" height="60" rx="8" fill="#ffe8cc" stroke="#d9822b" stroke-width="1.8"/></g>
+<g class="st s3"><use href="#i-warning" x="660.0" y="218.0" width="40" height="40"/></g>
+<g class="st s3"><text x="710.0" y="234.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Padding error ~255/256</text></g>
+<g class="st s3"><text x="710.0" y="254.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="start">garbage ~1/256</text></g>
+<g class="st s3"><circle cx="306" cy="208" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="306.0" y="212.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s4"><path d="M126.0 214.0 L300.0 356.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s4"><rect x="306.0" y="326.0" width="250" height="60" rx="6" fill="url(#g-box)" stroke="#4a6fa5" stroke-width="1.6" filter="url(#f-drop)"/><text x="431.0" y="352.4" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">AEAD: AES-GCM,</text><text x="431.0" y="369.4" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="normal" text-anchor="middle">ChaCha20-Poly1305</text></g>
+<g class="st s4"><path d="M560.0 356.0 L640.0 356.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s4"><rect x="646" y="326" width="300" height="60" rx="8" fill="#e6f4ea" stroke="#2e7d32" stroke-width="1.8"/></g>
+<g class="st s4"><use href="#i-shield" x="660.0" y="336.0" width="40" height="40"/></g>
+<g class="st s4"><text x="710.0" y="352.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Clean rejection</text></g>
+<g class="st s4"><text x="710.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="start">authentication fails</text></g>
+<g class="st s4"><circle cx="306" cy="326" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="306.0" y="330.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<text x="500.0" y="428.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">Only authenticated encryption tells you the key or ciphertext is wrong; the other modes fail silently or leak.</text>
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" width="1100" height="560" role="img" aria-labelledby="t d"><title id="t">Encapsulation down the TCP/IP stack</title><desc id="d">A laptop sends application data. The transport layer adds a TCP header to make a segment, the internet layer adds an IP header to make a packet, and the link layer adds an Ethernet header and trailer to make a frame. The frame crosses the network through a switch and router, and the server strips the headers in reverse order.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f2933" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f2933"/></marker><marker id="a-2e7d32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#2e7d32"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-laptop" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="20" y="22" width="60" height="42" rx="3" fill="#2f353d" stroke="#14181d" stroke-width="1.2"/>
+<rect x="24" y="26" width="52" height="34" rx="1" fill="url(#g-screen)"/>
+<path d="M24 26 h52 v12 Q50 31 24 41 Z" fill="#fff" opacity=".18"/>
+<path d="M12 70 L20 64 H80 L88 70 Z" fill="url(#g-silver)" stroke="#5b6570" stroke-width="1"/>
+<rect x="12" y="70" width="76" height="5" rx="2" fill="#9aa3ae" stroke="#5b6570" stroke-width=".8"/>
+<rect x="42" y="66" width="16" height="2.4" rx="1" fill="#8892a0"/>
+</symbol>
+<symbol id="i-server" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M28 16 L40 8 L72 8 L60 16 Z" fill="url(#g-steel-top)" stroke="#14181d" stroke-width="1"/>
+<path d="M60 16 L72 8 L72 82 L60 91 Z" fill="#1b1f25" stroke="#14181d" stroke-width="1"/>
+<rect x="28" y="16" width="32" height="75" rx="1.5" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<g fill="#59626f" stroke="#14181d" stroke-width=".6">
+<rect x="32" y="21" width="24" height="5" rx="1"/><rect x="32" y="28" width="24" height="5" rx="1"/>
+<rect x="32" y="35" width="24" height="5" rx="1"/><rect x="32" y="42" width="24" height="5" rx="1"/></g>
+<g fill="#8fd16a"><circle cx="53" cy="23.5" r="1"/><circle cx="53" cy="30.5" r="1"/><circle cx="53" cy="37.5" r="1"/></g>
+<g stroke="#3d4450" stroke-width="1"><line x1="32" y1="56" x2="56" y2="56"/><line x1="32" y1="60" x2="56" y2="60"/><line x1="32" y1="64" x2="56" y2="64"/></g>
+<circle cx="44" cy="80" r="3" fill="#2196f3" stroke="#0d47a1" stroke-width=".8"/>
+</symbol>
+<symbol id="i-switch" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M10 46 L24 36 H90 L76 46 Z" fill="url(#g-router-top)" stroke="#164b78" stroke-width="1.2"/>
+<path d="M10 46 H76 V66 H10 Z" fill="url(#g-router)" stroke="#164b78" stroke-width="1.2"/>
+<path d="M76 46 L90 36 V56 L76 66 Z" fill="#174f80" stroke="#164b78" stroke-width="1.2"/>
+<rect x="15.0" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="15.0" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="22.2" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="22.2" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="29.4" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="29.4" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="36.6" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="36.6" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="43.8" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="43.8" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="51.0" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="51.0" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="58.2" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="58.2" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="65.4" y="52" width="5" height="4" rx=".6" fill="#0d2f50"/><rect x="65.4" y="58" width="5" height="4" rx=".6" fill="#0d2f50"/>
+<g fill="#1565c0"><path d="M38 41 h12 v-2.4 l5 3.4 -5 3.4 v-2.4 h-12 Z"/><path d="M62 41 h-12" stroke="#1565c0"/></g>
+</symbol>
+<symbol id="i-router" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M14 44 v22 a36 12 0 0 0 72 0 v-22" fill="url(#g-router)" stroke="#164b78" stroke-width="1.2"/>
+<ellipse cx="50" cy="44" rx="36" ry="12" fill="url(#g-router-top)" stroke="#164b78" stroke-width="1.2"/>
+<g fill="#1565c0" stroke="#0d3c6e" stroke-width=".5">
+<path d="M50 34 l-5 4 h3 v4 h4 v-4 h3 Z"/><path d="M50 54 l-5 -4 h3 v-4 h4 v4 h3 Z" transform="translate(0,0)"/>
+<path d="M28 44 l4 -3.5 v2.3 h6 v2.4 h-6 v2.3 Z"/><path d="M72 44 l-4 -3.5 v2.3 h-6 v2.4 h6 v2.3 Z"/></g>
+<g fill="#cfe6f7"><circle cx="30" cy="70" r="1.5"/><circle cx="36" cy="72" r="1.5"/><circle cx="42" cy="73" r="1.5"/></g>
+</symbol>
+</defs>
+<rect width="1100" height="560" fill="#ffffff"/>
+<text x="550.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Encapsulation down the TCP/IP stack</text>
+<use href="#i-laptop" x="25.0" y="255.0" width="90" height="90"/><text x="70.0" y="360.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Sender</text>
+<use href="#i-server" x="995.0" y="255.0" width="90" height="90"/><text x="1040.0" y="360.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Receiver</text>
+<g class="st s1"><text x="150.0" y="106.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Application</text></g>
+<g class="st s1"><rect x="480.0" y="80.0" width="300.0" height="40.0" rx="3" fill="#d6eaf8" fill-opacity="1" stroke="#52606d" stroke-width="1.4"/></g>
+<g class="st s1"><text x="630.0" y="105.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">data</text></g>
+<g class="st s1"><text x="792.0" y="105.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f4e9c" font-weight="bold" text-anchor="start">DATA</text></g>
+<g class="st s1"><circle cx="132" cy="100" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="132.0" y="104.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><text x="150.0" y="192.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Transport</text></g>
+<g class="st s2"><rect x="435.0" y="166.0" width="90.0" height="40.0" rx="3" fill="#f9e79f" fill-opacity="1" stroke="#52606d" stroke-width="1.4"/></g>
+<g class="st s2"><text x="480.0" y="191.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">TCP hdr</text></g>
+<g class="st s2"><rect x="525.0" y="166.0" width="300.0" height="40.0" rx="3" fill="#d6eaf8" fill-opacity="1" stroke="#52606d" stroke-width="1.4"/></g>
+<g class="st s2"><text x="675.0" y="191.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">data</text></g>
+<g class="st s2"><text x="837.0" y="191.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f4e9c" font-weight="bold" text-anchor="start">SEGMENT</text></g>
+<g class="st s2"><circle cx="132" cy="186" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="132.0" y="190.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><text x="150.0" y="278.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Internet</text></g>
+<g class="st s3"><rect x="395.0" y="252.0" width="80.0" height="40.0" rx="3" fill="#f5cba7" fill-opacity="1" stroke="#52606d" stroke-width="1.4"/></g>
+<g class="st s3"><text x="435.0" y="277.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">IP hdr</text></g>
+<g class="st s3"><rect x="475.0" y="252.0" width="90.0" height="40.0" rx="3" fill="#f9e79f" fill-opacity="1" stroke="#52606d" stroke-width="1.4"/></g>
+<g class="st s3"><text x="520.0" y="277.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">TCP hdr</text></g>
+<g class="st s3"><rect x="565.0" y="252.0" width="300.0" height="40.0" rx="3" fill="#d6eaf8" fill-opacity="1" stroke="#52606d" stroke-width="1.4"/></g>
+<g class="st s3"><text x="715.0" y="277.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">data</text></g>
+<g class="st s3"><text x="877.0" y="277.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f4e9c" font-weight="bold" text-anchor="start">PACKET</text></g>
+<g class="st s3"><circle cx="132" cy="272" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="132.0" y="276.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><text x="150.0" y="364.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="start">Link</text></g>
+<g class="st s4"><rect x="330.0" y="338.0" width="80.0" height="40.0" rx="3" fill="#d2b4de" fill-opacity="1" stroke="#52606d" stroke-width="1.4"/></g>
+<g class="st s4"><text x="370.0" y="363.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">Eth hdr</text></g>
+<g class="st s4"><rect x="410.0" y="338.0" width="80.0" height="40.0" rx="3" fill="#f5cba7" fill-opacity="1" stroke="#52606d" stroke-width="1.4"/></g>
+<g class="st s4"><text x="450.0" y="363.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">IP hdr</text></g>
+<g class="st s4"><rect x="490.0" y="338.0" width="90.0" height="40.0" rx="3" fill="#f9e79f" fill-opacity="1" stroke="#52606d" stroke-width="1.4"/></g>
+<g class="st s4"><text x="535.0" y="363.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">TCP hdr</text></g>
+<g class="st s4"><rect x="580.0" y="338.0" width="300.0" height="40.0" rx="3" fill="#d6eaf8" fill-opacity="1" stroke="#52606d" stroke-width="1.4"/></g>
+<g class="st s4"><text x="730.0" y="363.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">data</text></g>
+<g class="st s4"><rect x="880.0" y="338.0" width="50.0" height="40.0" rx="3" fill="#d2b4de" fill-opacity="1" stroke="#52606d" stroke-width="1.4"/></g>
+<g class="st s4"><text x="905.0" y="363.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">FCS</text></g>
+<g class="st s4"><text x="942.0" y="363.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f4e9c" font-weight="bold" text-anchor="start">FRAME</text></g>
+<g class="st s4"><circle cx="132" cy="358" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="132.0" y="362.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><use href="#i-switch" x="435.0" y="435.0" width="70" height="70"/></g>
+<g class="st s5"><use href="#i-router" x="605.0" y="435.0" width="70" height="70"/></g>
+<g class="st s5"><path d="M110.0 360.0 L110.0 470.0 L430.0 470.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s5"><path d="M510.0 470.0 L600.0 470.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s6"><path d="M680.0 470.0 L1040.0 470.0 L1040.0 360.0" fill="none" stroke="#2e7d32" stroke-width="2.2" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/><text x="821.0" y="460.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="middle">server strips headers in reverse</text></g>
+<g class="st s5"><circle cx="300" cy="470" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="300.0" y="474.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><circle cx="960" cy="470" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="960.0" y="474.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<text x="550.0" y="548.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">Each layer adds its own header on the way down; the receiver removes them on the way up.</text>
+</svg>

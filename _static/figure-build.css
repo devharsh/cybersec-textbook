@@ -1,0 +1,9 @@
+/* Animated SVG figures: a small Replay button under each one (see figure-build.js). */
+img.anim-fig { max-width: 100%; height: auto; }
+.anim-replay {
+  display: block; margin: .3rem auto 1.1rem; padding: .15rem .75rem;
+  font-size: .8rem; color: #1f4e9c; background: #fff;
+  border: 1px solid #9aa5b1; border-radius: 999px; cursor: pointer;
+}
+.anim-replay:hover, .anim-replay:focus-visible { background: #eef5fc; border-color: #1f4e9c; }
+@media (prefers-reduced-motion: reduce) { .anim-replay { display: none; } }

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" role="img" aria-labelledby="t d"><title id="t">Effect of a security control on annualized loss expectancy</title><desc id="d">Bar chart in US dollars a year: ALE before the control is 60,000, ALE after the control is 9,000, and the control costs 20,000 a year. The control is worth buying because it cuts expected losses by 51,000 a year for 20,000.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-warning" viewBox="0 0 100 100">
+<path d="M50 10 L92 86 H8 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="3" stroke-linejoin="round"/>
+<rect x="46" y="36" width="8" height="28" rx="3" fill="#3e2a00"/><circle cx="50" cy="73" r="5" fill="#3e2a00"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="i-gear" viewBox="0 0 100 100">
+<path d="M50 10 l7 2 2 10 8 4 9 -5 5 5 -5 9 4 8 10 2 2 7 -2 7 -10 2 -4 8 5 9 -5 5 -9 -5 -8 4 -2 10 -7 2 -7 -2 -2 -10 -8 -4 -9 5 -5 -5 5 -9 -4 -8 -10 -2 -2 -7 2 -7 10 -2 4 -8 -5 -9 5 -5 9 5 8 -4 2 -10 Z"
+ fill="url(#g-steel-top)" stroke="#3d4450" stroke-width="1.4"/>
+<circle cx="50" cy="50" r="14" fill="#eef1f4" stroke="#3d4450" stroke-width="1.4"/>
+</symbol>
+</defs>
+<rect width="900" height="500" fill="#ffffff"/>
+<text x="450.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Effect of a security control on annualized loss expectancy</text>
+<line x1="130" y1="420" x2="840" y2="420" stroke="#52606d" stroke-width="2"/>
+<line x1="130" y1="420.0" x2="840" y2="420.0" stroke="#e4e7eb"/>
+<text x="120.0" y="424.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="end">0</text>
+<line x1="130" y1="381.4" x2="840" y2="381.4" stroke="#e4e7eb"/>
+<text x="120.0" y="385.4" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="end">10,000</text>
+<line x1="130" y1="342.9" x2="840" y2="342.9" stroke="#e4e7eb"/>
+<text x="120.0" y="346.9" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="end">20,000</text>
+<line x1="130" y1="304.3" x2="840" y2="304.3" stroke="#e4e7eb"/>
+<text x="120.0" y="308.3" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="end">30,000</text>
+<line x1="130" y1="265.7" x2="840" y2="265.7" stroke="#e4e7eb"/>
+<text x="120.0" y="269.7" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="end">40,000</text>
+<line x1="130" y1="227.1" x2="840" y2="227.1" stroke="#e4e7eb"/>
+<text x="120.0" y="231.1" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="end">50,000</text>
+<line x1="130" y1="188.6" x2="840" y2="188.6" stroke="#e4e7eb"/>
+<text x="120.0" y="192.6" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="end">60,000</text>
+<line x1="130" y1="150.0" x2="840" y2="150.0" stroke="#e4e7eb"/>
+<text x="120.0" y="154.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="end">70,000</text>
+<text x="36" y="285" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" text-anchor="middle" transform="rotate(-90 36 285)">US dollars per year</text>
+<g class="st s1"><rect x="190.0" y="188.6" width="120.0" height="231.4" rx="3" fill="#c0392b" fill-opacity="1" stroke="#c0392b" stroke-width="1"/></g>
+<g class="st s1"><use href="#i-warning" x="227.0" y="135.6" width="46" height="46"/></g>
+<g class="st s1"><text x="250.0" y="128.6" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">60,000</text></g>
+<g class="st s1"><text x="250.0" y="442.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">ALE before</text></g>
+<g class="st s2"><rect x="410.0" y="385.3" width="120.0" height="34.7" rx="3" fill="#27ae60" fill-opacity="1" stroke="#27ae60" stroke-width="1"/></g>
+<g class="st s2"><use href="#i-shield" x="447.0" y="332.3" width="46" height="46"/></g>
+<g class="st s2"><text x="470.0" y="325.3" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">9,000</text></g>
+<g class="st s2"><text x="470.0" y="442.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">ALE after</text></g>
+<g class="st s3"><rect x="630.0" y="342.9" width="120.0" height="77.1" rx="3" fill="#2f6fae" fill-opacity="1" stroke="#2f6fae" stroke-width="1"/></g>
+<g class="st s3"><use href="#i-gear" x="667.0" y="289.9" width="46" height="46"/></g>
+<g class="st s3"><text x="690.0" y="282.9" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">20,000</text></g>
+<g class="st s3"><text x="690.0" y="442.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">Control cost</text></g>
+<g class="st s3"><text x="470.0" y="484.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">Savings of 51,000 a year for a 20,000 control: worth buying.</text></g>
+</svg>

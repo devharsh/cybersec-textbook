@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-11-23.
+Last generated: 2026-11-24.
 
 ## Summary by Chapter
 
@@ -12,15 +12,15 @@ The table lists every part of the book with its prose word count, the words in i
 |---|---:|---:|---:|
 | Introduction | 2,047 | 0 | 4.1 |
 | Preface | 486 | 0 | 1.0 |
-| Chapter 1: Introduction to Cybersecurity | 19,102 | 679 | 38.2 |
-| Chapter 2: Cryptography | 51,512 | 4,728 | 103.0 |
-| Chapter 3: Networking and Network Attacks | 17,477 | 374 | 35.0 |
+| Chapter 1: Introduction to Cybersecurity | 19,416 | 679 | 38.8 |
+| Chapter 2: Cryptography | 51,906 | 4,728 | 103.8 |
+| Chapter 3: Networking and Network Attacks | 17,696 | 374 | 35.4 |
 | Chapter 4: Social Engineering and the Human Element | 12,257 | 1,000 | 24.5 |
 | Chapter 5: Risk Management | 18,208 | 696 | 36.4 |
 | Chapter 6: Penetration Testing Methodology | 9,989 | 265 | 20.0 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,806 | 464 | 15.6 |
 | Chapter 8: Scanning and Enumeration | 7,419 | 816 | 14.8 |
-| Chapter 9: Exploitation and Post-Exploitation | 27,699 | 1,134 | 55.4 |
+| Chapter 9: Exploitation and Post-Exploitation | 27,778 | 1,134 | 55.6 |
 | Chapter 10: Web Application Security | 10,212 | 516 | 20.4 |
 | Chapter 11: Network Defense and Hardening | 26,625 | 529 | 53.2 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 13,324 | 1,114 | 26.6 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **463,487** | **24,597** | **927** |
+| **TOTAL** | **464,493** | **24,597** | **929** |
 
 ## Detailed Word Count by Section
 
@@ -78,16 +78,16 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*19,102 markdown words (38.2 pages); 679 code words.*
+*19,416 markdown words (38.8 pages); 679 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 229 |
 | Key Terms | 547 |
 | 1.1 What Is Cybersecurity? | 636 |
-| 1.2 The CIA Triad and Its Extensions | 792 |
-|     The DIE Model: A Modern Complement to CIA | 254 |
-| 1.3 The Anatomy of an Attack | 594 |
+| 1.2 The CIA Triad and Its Extensions | 928 |
+|     The DIE Model: A Modern Complement to CIA | 294 |
+| 1.3 The Anatomy of an Attack | 645 |
 |     A Concept Map of the Core Terms | 130 |
 | 1.4 Threat Actors and the Adversary Model | 591 |
 | 1.5 Defense in Depth and Security Controls | 655 |
@@ -100,7 +100,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Trusted Execution Environments: Enclaves, Secure Worlds, and Confidential Virtual Machines | 978 |
 |     The Trusted Computing Base and the Reference Monitor | 170 |
 | 1.7 The NIST Cybersecurity Framework | 403 |
-| 1.8 Quantifying Risk in Monetary Terms | 534 |
+| 1.8 Quantifying Risk in Monetary Terms | 621 |
 | 1.9 The Saltzer and Schroeder Design Principles | 641 |
 |     The Principle of Least Privilege (PoLP) | 249 |
 | 1.10 The Security Mindset, Ethics, and the Law | 369 |
@@ -124,14 +124,14 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 2: Cryptography
 
-*51,512 markdown words (103.0 pages); 4,728 code words.*
+*51,906 markdown words (103.8 pages); 4,728 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 185 |
 | Key Terms | 1,071 |
 | 2.1 What Cryptography Is and What It Promises | 387 |
-|     Encoding versus Encryption versus Hashing | 877 |
+|     Encoding versus Encryption versus Hashing | 929 |
 |     Codes, Ciphers, Cryptology, and the Words Around Them | 302 |
 | 2.2 Classical Ciphers and Why They Fall | 730 |
 |     Classical versus Modern Ciphers | 295 |
@@ -145,11 +145,11 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Real-World Case: The ANC's One-Time Pad and Operation Vula | 441 |
 | 2.4 Randomness: True, Pseudo, and Cryptographically Secure | 570 |
 |     Insecure versus Cryptographically Secure Randomness in Code | 168 |
-|     Case Study: Private Keys Made from Numbers Under 256 (eMudhra, October 2026) | 751 |
-| 2.5 Symmetric Encryption: Stream and Block Ciphers | 1,007 |
+|     Case Study: Private Keys Made from Numbers Under 256 (eMudhra, October 2026) | 810 |
+| 2.5 Symmetric Encryption: Stream and Block Ciphers | 1,063 |
 |     The Feistel Network: A Blueprint for Block Ciphers | 224 |
 |     Legacy Symmetric Ciphers: DES, Triple DES, IDEA, RC4, and Skipjack | 406 |
-| 2.6 Block Cipher Modes of Operation | 688 |
+| 2.6 Block Cipher Modes of Operation | 734 |
 |     AES Modes in Code: ECB versus CTR | 328 |
 |     AES-CTR versus AES-GCM, and Which Modes Need Padding | 903 |
 |     The Complete Catalog: NIST-Approved Modes and the Modes Outside the List | 1,597 |
@@ -160,14 +160,14 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Error Detection versus Error Correction: CRC and Hamming Codes | 205 |
 | 2.8 Message Authentication Codes and Authenticated Encryption | 596 |
 |     Hash, MAC, and Digital Signature Compared | 729 |
-|     Wrong-Key Behavior: Garbage Output versus Null Rejection | 531 |
+|     Wrong-Key Behavior: Garbage Output versus Null Rejection | 586 |
 |     The Three-Behavior Hierarchy of Incorrect Decryption | 3,453 |
 |     Computing an HMAC in Code | 98 |
 |     HMAC and CMAC Are Not the Only MACs | 1,424 |
 |     Authenticated Encryption in Practice: Encrypt-then-MAC | 190 |
 | 2.9 Key Derivation and Password Storage | 655 |
 |     Where Windows Keeps Password Hashes: The SAM Database and SYSKEY | 410 |
-| 2.10 Public-Key Cryptography and RSA | 848 |
+| 2.10 Public-Key Cryptography and RSA | 974 |
 |     One-Way Functions, Trapdoor Functions, and the RSA Story | 819 |
 |     Digital Envelopes: How Public-Key Encryption Is Used in Practice | 250 |
 | 2.11 Diffie-Hellman Key Exchange | 798 |
@@ -221,7 +221,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 3: Networking and Network Attacks
 
-*17,477 markdown words (35.0 pages); 374 code words.*
+*17,696 markdown words (35.4 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
@@ -253,12 +253,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 3.9 Spoofing, Man-in-the-Middle, and Session Hijacking | 613 |
 |     Packet Capture, On-Path Attacks, and SSL Stripping | 315 |
 |     Hands-On: Capturing a Plaintext Password, Then Encrypting It | 501 |
-| 3.10 Denial-of-Service and Distributed Denial-of-Service Attacks | 1,210 |
+| 3.10 Denial-of-Service and Distributed Denial-of-Service Attacks | 1,368 |
 |     Access Control Lists, NACLs, and Security Groups | 515 |
 | 3.11 Securing the Network: A Preview | 173 |
 |     Secure Network Protocols | 203 |
 |     Going Deeper: Routing Security and BGP Hijacking | 229 |
-|     Network Access Control | 144 |
+|     Network Access Control | 205 |
 | 3.12 QUIC, HTTP/3, and Encrypted Client Hello | 223 |
 | 3.13 The Access Link: How a Network Connects to the Internet | 568 |
 |     Exercises | 116 |
@@ -461,7 +461,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*27,699 markdown words (55.4 pages); 1,134 code words.*
+*27,778 markdown words (55.6 pages); 1,134 code words.*
 
 | Section | Words |
 |---|---:|
@@ -558,7 +558,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Answer Key | 167 |
 | 9.38 How Kerberos Works, and Where Each Attack Breaks In | 45 |
 |     The problem single sign-on solves | 184 |
-|     The three exchanges | 310 |
+|     The three exchanges | 389 |
 |     Where each attack breaks in | 357 |
 | 9.39 Landmark Bugs, from the Morris Worm to the Year 2038 | 853 |
 |     Y2K and the Year 2038, Worked | 128 |

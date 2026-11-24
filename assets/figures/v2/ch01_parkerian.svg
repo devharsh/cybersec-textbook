@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 720" width="860" height="720" role="img" aria-labelledby="t d"><title id="t">Parkerian hexad: six attributes of information security</title><desc id="d">Six attributes arranged around a hexagon: confidentiality, possession or control, integrity, authenticity, availability, and utility. Donn Parker added possession, authenticity, and utility to the CIA triad.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-eye" viewBox="0 0 100 100">
+<path d="M8 50 C26 22 74 22 92 50 C74 78 26 78 8 50 Z" fill="url(#g-paper)" stroke="#2f6fae" stroke-width="3"/>
+<circle cx="50" cy="50" r="17" fill="url(#g-screen)" stroke="#0b4f9c" stroke-width="2"/>
+<circle cx="50" cy="50" r="7" fill="#0d1b2a"/><circle cx="44" cy="44" r="3.5" fill="#fff"/>
+</symbol>
+<symbol id="i-key" viewBox="0 0 100 100">
+<circle cx="32" cy="50" r="18" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+<circle cx="28" cy="50" r="6" fill="#fff8e1" stroke="#a5760e" stroke-width="1.5"/>
+<path d="M48 45 H90 V55 H84 V64 H76 V55 H70 V62 H62 V55 H48 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="i-certificate" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="12" y="16" width="76" height="56" rx="3" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.2"/>
+<rect x="17" y="21" width="66" height="46" rx="2" fill="none" stroke="#c9a227" stroke-width="1.4"/>
+<g stroke="#9aa6b3" stroke-width="2.2" stroke-linecap="round"><line x1="24" y1="32" x2="62" y2="32"/><line x1="24" y1="41" x2="56" y2="41"/><line x1="24" y1="50" x2="50" y2="50"/></g>
+<path d="M66 60 l-5 26 7 -5 7 5 -5 -26" fill="#c62828"/>
+<circle cx="70" cy="56" r="10" fill="url(#g-gold)" stroke="#a5760e" stroke-width="1.2"/>
+</symbol>
+<symbol id="i-clock" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<circle cx="50" cy="50" r="38" fill="url(#g-paper)" stroke="#2f6fae" stroke-width="5"/>
+<line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(0 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(30 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(60 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(90 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(120 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(150 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(180 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(210 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(240 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(270 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(300 50 50)"/><line x1="50" y1="17" x2="50" y2="23" stroke="#52606d" stroke-width="3" transform="rotate(330 50 50)"/>
+<line x1="50" y1="50" x2="50" y2="27" stroke="#1f2933" stroke-width="4" stroke-linecap="round"/>
+<line x1="50" y1="50" x2="68" y2="58" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/>
+<circle cx="50" cy="50" r="3.5" fill="#1f2933"/>
+</symbol>
+<symbol id="i-gear" viewBox="0 0 100 100">
+<path d="M50 10 l7 2 2 10 8 4 9 -5 5 5 -5 9 4 8 10 2 2 7 -2 7 -10 2 -4 8 5 9 -5 5 -9 -5 -8 4 -2 10 -7 2 -7 -2 -2 -10 -8 -4 -9 5 -5 -5 5 -9 -4 -8 -10 -2 -2 -7 2 -7 10 -2 4 -8 -5 -9 5 -5 9 5 8 -4 2 -10 Z"
+ fill="url(#g-steel-top)" stroke="#3d4450" stroke-width="1.4"/>
+<circle cx="50" cy="50" r="14" fill="#eef1f4" stroke="#3d4450" stroke-width="1.4"/>
+</symbol>
+</defs>
+<rect width="860" height="720" fill="#ffffff"/>
+<text x="430.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Parkerian hexad: six attributes of information security</text>
+<polygon points="600.0,360.0 515.0,507.2 345.0,507.2 260.0,360.0 345.0,212.8 515.0,212.8" fill="#dfe4ea" stroke="#aab4bf" stroke-width="2" fill-opacity="1"/>
+<text x="430.0" y="356.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">Parkerian</text>
+<text x="430.0" y="382.0" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#1f2933" font-weight="bold" text-anchor="middle">hexad</text>
+<g class="st s1"><circle cx="430.0" cy="145.0" r="58" fill="#ffffff" fill-opacity="1" stroke="#2f6fae" stroke-width="4"/></g>
+<g class="st s1"><use href="#i-eye" x="397.0" y="112.0" width="66" height="66"/></g>
+<g class="st s1"><text x="430.0" y="75.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2f6fae" font-weight="bold" text-anchor="middle">Confidentiality</text></g>
+<g class="st s2"><circle cx="243.80453818634567" cy="252.5" r="58" fill="#ffffff" fill-opacity="1" stroke="#8e44ad" stroke-width="4"/></g>
+<g class="st s2"><use href="#i-key" x="210.8" y="219.5" width="66" height="66"/></g>
+<g class="st s2"><text x="243.8" y="332.5" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#8e44ad" font-weight="bold" text-anchor="middle">Possession / control</text></g>
+<g class="st s3"><circle cx="243.80453818634567" cy="467.5" r="58" fill="#ffffff" fill-opacity="1" stroke="#27ae60" stroke-width="4"/></g>
+<g class="st s3"><use href="#i-shield" x="210.8" y="434.5" width="66" height="66"/></g>
+<g class="st s3"><text x="243.8" y="547.5" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#27ae60" font-weight="bold" text-anchor="middle">Integrity</text></g>
+<g class="st s4"><circle cx="430.0" cy="575.0" r="58" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="4"/></g>
+<g class="st s4"><use href="#i-certificate" x="397.0" y="542.0" width="66" height="66"/></g>
+<g class="st s4"><text x="430.0" y="655.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="middle">Authenticity</text></g>
+<g class="st s5"><circle cx="616.1954618136543" cy="467.5" r="58" fill="#ffffff" fill-opacity="1" stroke="#16a085" stroke-width="4"/></g>
+<g class="st s5"><use href="#i-clock" x="583.2" y="434.5" width="66" height="66"/></g>
+<g class="st s5"><text x="616.2" y="547.5" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#16a085" font-weight="bold" text-anchor="middle">Availability</text></g>
+<g class="st s6"><circle cx="616.1954618136543" cy="252.5" r="58" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="4"/></g>
+<g class="st s6"><use href="#i-gear" x="583.2" y="219.5" width="66" height="66"/></g>
+<g class="st s6"><text x="616.2" y="332.5" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">Utility</text></g>
+<g class="st s6"><text x="430.0" y="700.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">Possession, authenticity, and utility are Parker&#x27;s additions to confidentiality, integrity, and availability.</text></g>
+</svg>
