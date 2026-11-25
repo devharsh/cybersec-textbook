@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-11-24.
+Last generated: 2026-11-25.
 
 ## Summary by Chapter
 
@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,816 | 828 | 23.6 |
 | Chapter 15: Malware Analysis | 45,699 | 423 | 91.4 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,704 | 818 | 27.4 |
-| Chapter 17: Emerging Threats and Future Challenges | 87,073 | 8,027 | 174.1 |
+| Chapter 17: Emerging Threats and Future Challenges | 89,952 | 8,441 | 179.9 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,868 | 387 | 15.7 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,315 | 482 | 34.6 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,750 | 442 | 29.5 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **467,566** | **24,597** | **935** |
+| **TOTAL** | **470,445** | **25,011** | **941** |
 
 ## Detailed Word Count by Section
 
@@ -1154,12 +1154,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*87,073 markdown words (174.1 pages); 8,027 code words.*
+*89,952 markdown words (179.9 pages); 8,441 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 322 |
-| Key Terms | 4,501 |
+| Key Terms | 4,584 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 229 |
@@ -1187,10 +1187,11 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     A Specialized Case: Soliton Distributions in Fountain Codes | 182 |
 |     Exercises | 449 |
 |     Answer Key | 725 |
-| 17.8 Supply Chain Attacks | 56 |
+| 17.8 Supply Chain Attacks | 73 |
 |     Why Supply Chain Is a High-Value Target | 32 |
 |     Notable Supply Chain Attack Patterns | 157 |
 |     SBOM and Dependency Management | 55 |
+|     Build Provenance with in-toto and SLSA | 1,931 |
 |     Case Study: The LiteLLM 1.107.0 Release (October 2026) | 836 |
 | 17.9 Cloud Security | 64 |
 |     The Shared Responsibility Model | 185 |
@@ -1236,6 +1237,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Model Integrity and Provenance: Signing, AI Bills of Materials, and Watermarks | 1,439 |
 |     Lab: Verifying a Model File Before Loading It | 134 |
 |     Trusting Derived Models: Quantized, Converted, and Fine-Tuned Copies | 886 |
+|     Build Provenance for Model Files | 307 |
 |     Content Credentials: Showing Where Media Came From | 1,111 |
 |     Identity and Authorization for AI Agents | 1,915 |
 |     Separation of Duties for AI Agents: Who Initiates and Who Approves | 1,307 |
@@ -1259,9 +1261,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 288 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 4,601 |
+| Review Questions (MCQ) | 4,882 |
 | Lab Assignment | 364 |
-| References | 8,045 |
+| References | 8,305 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 

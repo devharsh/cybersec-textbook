@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 600" width="1180" height="600" role="img" aria-labelledby="t d"><title id="t">Build provenance: the platform records how the artifact was made, and the gate checks it</title><desc id="d">A source repository at tag v1.4 feeds a hardened build platform. The platform outputs the model file with its SHA-256 digest and an in-toto Statement whose SLSA provenance predicate names the subject digest, the builder, the source and ref, and the resolved dependencies. The platform signs the statement inside a DSSE envelope with a key that build steps cannot reach. The registry stores the artifact and the attestation together. A deployment gate admits the model only if a trusted builder signed, the digest matches a subject, and the source and parameters are the expected ones; a swapped file, an unknown builder, or a build from a fork is refused.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}.s7{animation-delay:5.40s}.s8{animation-delay:6.30s}.s9{animation-delay:7.20s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f2933" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f2933"/></marker><marker id="a-1f4e9c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f4e9c"/></marker><marker id="a-2e7d32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#2e7d32"/></marker><marker id="a-6a3d9a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#6a3d9a"/></marker><marker id="a-c0392b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-code" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="10" y="16" width="80" height="66" rx="4" fill="#1e2530" stroke="#0d1014" stroke-width="1.4"/>
+<rect x="10" y="16" width="80" height="11" rx="4" fill="#3b424d"/><circle cx="18" cy="21.5" r="2.2" fill="#ff5f56"/><circle cx="25" cy="21.5" r="2.2" fill="#ffbd2e"/><circle cx="32" cy="21.5" r="2.2" fill="#27c93f"/>
+<path d="M30 42 L20 52 L30 62 M70 42 L80 52 L70 62" fill="none" stroke="#4fc3f7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="56" y1="38" x2="44" y2="66" stroke="#8fd16a" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="i-server" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M28 16 L40 8 L72 8 L60 16 Z" fill="url(#g-steel-top)" stroke="#14181d" stroke-width="1"/>
+<path d="M60 16 L72 8 L72 82 L60 91 Z" fill="#1b1f25" stroke="#14181d" stroke-width="1"/>
+<rect x="28" y="16" width="32" height="75" rx="1.5" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<g fill="#59626f" stroke="#14181d" stroke-width=".6">
+<rect x="32" y="21" width="24" height="5" rx="1"/><rect x="32" y="28" width="24" height="5" rx="1"/>
+<rect x="32" y="35" width="24" height="5" rx="1"/><rect x="32" y="42" width="24" height="5" rx="1"/></g>
+<g fill="#8fd16a"><circle cx="53" cy="23.5" r="1"/><circle cx="53" cy="30.5" r="1"/><circle cx="53" cy="37.5" r="1"/></g>
+<g stroke="#3d4450" stroke-width="1"><line x1="32" y1="56" x2="56" y2="56"/><line x1="32" y1="60" x2="56" y2="60"/><line x1="32" y1="64" x2="56" y2="64"/></g>
+<circle cx="44" cy="80" r="3" fill="#2196f3" stroke="#0d47a1" stroke-width=".8"/>
+</symbol>
+<symbol id="i-document" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M26 8 H62 L76 22 V90 H26 Z" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.2"/>
+<path d="M62 8 V22 H76" fill="#d5dbe2" stroke="#6b7785" stroke-width="1.2"/>
+<g stroke="#9aa6b3" stroke-width="2.4" stroke-linecap="round"><line x1="34" y1="34" x2="68" y2="34"/><line x1="34" y1="44" x2="68" y2="44"/><line x1="34" y1="54" x2="60" y2="54"/><line x1="34" y1="64" x2="66" y2="64"/></g>
+</symbol>
+<symbol id="i-key" viewBox="0 0 100 100">
+<circle cx="32" cy="50" r="18" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+<circle cx="28" cy="50" r="6" fill="#fff8e1" stroke="#a5760e" stroke-width="1.5"/>
+<path d="M48 45 H90 V55 H84 V64 H76 V55 H70 V62 H62 V55 H48 Z" fill="url(#g-gold)" stroke="#a5760e" stroke-width="2"/>
+</symbol>
+<symbol id="i-database" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M24 22 v56 a26 9 0 0 0 52 0 v-56" fill="url(#g-db)" stroke="#4f5964" stroke-width="1.2"/>
+<path d="M24 41 a26 9 0 0 0 52 0 M24 60 a26 9 0 0 0 52 0" fill="none" stroke="#5f6a76" stroke-width="1.2"/>
+<ellipse cx="50" cy="22" rx="26" ry="9" fill="#f1f3f5" stroke="#4f5964" stroke-width="1.2"/>
+<ellipse cx="50" cy="22" rx="18" ry="5" fill="#dfe4e9"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="i-check" viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="url(#g-green)" stroke="#1b5e20" stroke-width="2"/>
+<path d="M32 51 L45 64 L69 38" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-cross" viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="url(#g-red)" stroke="#7f0000" stroke-width="2"/>
+<path d="M35 35 L65 65 M65 35 L35 65" stroke="#fff" stroke-width="9" stroke-linecap="round"/></symbol>
+</defs>
+<rect width="1180" height="600" fill="#ffffff"/>
+<text x="590.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Build provenance: the platform records how the artifact was made, and the gate checks it</text>
+<g class="st s1"><use href="#i-code" x="57.0" y="167.0" width="66" height="66"/><text x="90.0" y="248.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">Source repository</text><text x="90.0" y="264.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">tag v1.4, commit 3f1c9a7</text></g>
+<g class="st s1"><circle cx="46" cy="150" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="46.0" y="154.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><path d="M132.0 200.0 L252.0 200.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s2"><use href="#i-server" x="252.0" y="162.0" width="76" height="76"/><text x="290.0" y="253.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">Hardened build platform</text><text x="290.0" y="269.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">isolated runs</text></g>
+<g class="st s2"><circle cx="238" cy="146" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="238.0" y="150.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><path d="M332.0 176.0 L470.0 120.0" fill="none" stroke="#1f4e9c" stroke-width="2.2" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/><text x="401.0" y="140.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">artifact</text></g>
+<g class="st s3"><use href="#i-document" x="502.0" y="84.0" width="56" height="56"/><text x="530.0" y="155.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">model.safetensors</text><text x="530.0" y="171.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">sha256 9b2e...41</text></g>
+<g class="st s3"><circle cx="490" cy="78" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="490.0" y="82.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><path d="M300.0 290.0 L414.0 372.0" fill="none" stroke="#6a3d9a" stroke-width="2.2" marker-end="url(#a-6a3d9a)" stroke-linejoin="round"/></g>
+<g class="st s4"><text x="356.0" y="346.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#6a3d9a" font-weight="bold" text-anchor="end">evidence</text></g>
+<g class="st s4"><rect x="424.0" y="300.0" width="262.0" height="176.0" rx="10" fill="#f7f2fb" fill-opacity="1" stroke="#6a3d9a" stroke-width="1.8"/></g>
+<g class="st s4"><text x="555.0" y="324.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6a3d9a" font-weight="bold" text-anchor="middle">in-toto Statement</text></g>
+<g class="st s4"><text x="438.0" y="350.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">subject: model.safetensors + sha256</text></g>
+<g class="st s4"><text x="438.0" y="374.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">predicateType: SLSA provenance v1</text></g>
+<g class="st s4"><text x="438.0" y="398.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">builder.id: ci.example.com/hardened</text></g>
+<g class="st s4"><text x="438.0" y="422.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">source: models repo at v1.4</text></g>
+<g class="st s4"><text x="438.0" y="446.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">dependencies: base model, tools</text></g>
+<g class="st s4"><circle cx="424" cy="300" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="424.0" y="304.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><rect x="404.0" y="270.0" width="302.0" height="230.0" rx="14" fill="none" fill-opacity="1" stroke="#6a3d9a" stroke-width="2.2" stroke-dasharray="6 4"/></g>
+<g class="st s5"><use href="#i-key" x="670.0" y="264.0" width="40" height="40"/></g>
+<g class="st s5"><circle cx="414" cy="518" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="414.0" y="522.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s5"><text x="434.0" y="523.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#6a3d9a" font-weight="bold" text-anchor="start">DSSE envelope: signed over PAE(type, statement)</text></g>
+<g class="st s5"><text x="434.0" y="543.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">by a key the build steps cannot reach</text></g>
+<g class="st s6"><text x="772.0" y="168.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">Registry</text></g>
+<g class="st s6"><text x="772.0" y="186.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#52606d" font-weight="normal" text-anchor="middle">artifact + attestation</text></g>
+<g class="st s6"><use href="#i-database" x="741.0" y="201.0" width="62" height="62"/></g>
+<g class="st s6"><path d="M562.0 112.0 L730.0 214.0" fill="none" stroke="#1f4e9c" stroke-width="2.2" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s6"><path d="M706.0 400.0 L772.0 400.0 L772.0 272.0" fill="none" stroke="#6a3d9a" stroke-width="2.2" marker-end="url(#a-6a3d9a)" stroke-linejoin="round"/></g>
+<g class="st s6"><circle cx="734" cy="262" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="734.0" y="266.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s7"><path d="M808.0 232.0 L856.0 232.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s7"><use href="#i-shield" x="865.0" y="195.0" width="70" height="70"/><text x="900.0" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">Deployment gate</text></g>
+<g class="st s7"><use href="#i-check" x="967.0" y="190.0" width="18" height="18"/></g>
+<g class="st s7"><text x="990.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">trusted builder signed it</text></g>
+<g class="st s7"><use href="#i-check" x="967.0" y="216.0" width="18" height="18"/></g>
+<g class="st s7"><text x="990.0" y="230.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">digest matches a subject</text></g>
+<g class="st s7"><use href="#i-check" x="967.0" y="242.0" width="18" height="18"/></g>
+<g class="st s7"><text x="990.0" y="256.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">source and ref as expected</text></g>
+<g class="st s7"><circle cx="858" cy="186" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="858.0" y="190.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
+<g class="st s8"><path d="M935.0 196.0 L1072.0 112.0" fill="none" stroke="#2e7d32" stroke-width="2.2" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/></g>
+<g class="st s8"><text x="990.0" y="146.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="bold" text-anchor="end">admit</text></g>
+<g class="st s8"><use href="#i-server" x="1082.0" y="68.0" width="56" height="56"/><text x="1110.0" y="139.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="middle">Production</text></g>
+<g class="st s8"><circle cx="1074" cy="62" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="1074.0" y="66.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">8</text></g>
+<g class="st s9"><path d="M980.0 266.0 L1090.0 398.0" fill="none" stroke="#c0392b" stroke-width="2.2" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s9"><text x="1040.0" y="318.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="start">refuse</text></g>
+<g class="st s9"><use href="#i-cross" x="1088.0" y="398.0" width="44" height="44"/><text x="1110.0" y="457.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">Refused</text></g>
+<g class="st s9"><text x="1110.0" y="478.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">swapped file,</text></g>
+<g class="st s9"><text x="1110.0" y="494.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">unknown builder,</text></g>
+<g class="st s9"><text x="1110.0" y="510.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">or fork build</text></g>
+<g class="st s9"><circle cx="1150" cy="402" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="1150.0" y="406.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">9</text></g>
+</svg>
