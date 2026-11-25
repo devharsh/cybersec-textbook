@@ -77,9 +77,9 @@ p.rect(60, 336, 470, 26, "#fff8e1", "#d9a400", 1, rx=4)
 p.text(70, 354, "hover: http://login.micros0ft-support.co/verify?u=", 13, "#8a6d1a", anchor="start")
 p.icon("document", 90, 410, 50); p.text(124, 416, "Invoice_2026.pdf.exe", 14, INK, "bold", "start")
 p.text(60, 480, "Thank you, IT Support Team", 15, INK, anchor="start")
-tells = [(1, 520, 125, "Look-alike sender domain:\nmicros0ft with a zero"), (2, 560, 151, "Urgency and fear:\ndeleted in 1 hour"),
+tells = [(1, 410, 125, "Look-alike sender domain:\nmicros0ft with a zero"), (2, 464, 151, "Urgency and fear:\ndeleted in 1 hour"),
          (3, 218, 266, "Sloppy wording:\nyou're for your"), (4, 326, 304, "Asks for credentials, which\nreal IT never does by email"),
-         (5, 540, 349, "Link text and real\ndestination differ"), (6, 330, 410, "Unexpected attachment with\na double extension")]
+         (5, 540, 349, "Link text and real\ndestination differ"), (6, 264, 411, "Unexpected attachment with\na double extension")]
 pos = [(760, 110), (760, 180), (760, 250), (760, 330), (760, 400), (760, 470)]
 for (n, ax, ay, lab), (bx, by) in zip(tells, pos):
     p.arrow([(bx - 8, by + 6), (ax + 10, ay)], None, RED, step=n, width=1.8)

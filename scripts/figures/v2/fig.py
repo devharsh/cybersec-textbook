@@ -1,7 +1,7 @@
 """Compose book figures from icons, boxes, arrows, and numbered steps.
 Each element can carry a step number; the SVG builds in step order once,
 like a slide build, and shows everything at once when motion is reduced."""
-import html, math, subprocess
+import os, html, math, subprocess
 import icons
 
 FONT = "Helvetica, Arial, sans-serif"
@@ -32,8 +32,10 @@ class Fig:
         # Every build step carries a numbered badge. Steps the source leaves unnumbered get one
         # at save time, beside the step's first box, label, or icon (see _fill_badges).
         self.anchors, self.badged, self.steps, self.auto_badges = {}, set(), set(), True
+        self.elems, self.arrows = [], []   # every drawn element and arrow, for the arrow audit (ARROW_AUDIT)
 
     def _anchor(self, step, *a):
+        self.elems.append(a)
         if step: self.anchors.setdefault(step, []).append(a)
 
     def _add(self, svg, step):
@@ -49,10 +51,11 @@ class Fig:
         ty = y + size/2 + 15
         if label:
             s += self._text(x, ty, label, label_size, label_color, "bold")
+            self.elems.append(("text", x, ty, label_size, "middle", label, "bold", label_color))
             ty += label_size + 2
         if sub:
             for line in sub.split("\n"):
-                s += self._text(x, ty, line, 12, MUTED); ty += 14
+                s += self._text(x, ty, line, 12, MUTED); self.elems.append(("text", x, ty, 12, "middle", line, "normal", MUTED)); ty += 14
         self._add(s, step)
 
     def _text(self, x, y, t, size=13, color=INK, weight="normal", anchor="middle", italic=False):
@@ -87,6 +90,7 @@ class Fig:
     def arrow(self, pts, label=None, color=INK, step=None, dash=False, width=2.2, label_at=0.5, label_dy=-8,
               label_color=None, both=False, size=13, label_anchor="middle"):
         self.colors.add(color)
+        self.arrows.append({"pts": [list(p) for p in pts], "both": both, "label": label, "step": step})
         segs0 = list(zip(pts, pts[1:])); L0 = [math.dist(a, b) for a, b in segs0]; half, acc0 = sum(L0) / 2, 0
         for (a, b), L in zip(segs0, L0):
             if acc0 + L >= half:
@@ -121,7 +125,26 @@ class Fig:
              + self._text(x, y + 4.6, str(n), 13, "#fff", "bold"))
         self._add(s, step if step is not None else n)
 
-    def raw(self, svg, step=None): self._add(svg, step)
+    def raw(self, svg, step=None):
+        self._raw_shapes(svg)
+        self._add(svg, step)
+
+    def _raw_shapes(self, svg):
+        """Record the plain shapes inside hand-written SVG so the arrow audit can see them."""
+        import re
+        num = lambda tag, k: float(re.search(rf'\b{k}="(-?[\d.]+)"', tag).group(1)) if re.search(rf'\b{k}="(-?[\d.]+)"', tag) else None
+        for tag in re.findall(r'<(?:rect|image|use)\b[^>]*>', svg):
+            x, y, w, h = (num(tag, k) for k in ("x", "y", "width", "height"))
+            if None not in (x, y, w, h): self.elems.append(("rect", x, y, w, h))
+        for tag in re.findall(r'<line\b[^>]*>', svg):
+            v = [num(tag, k) for k in ("x1", "y1", "x2", "y2")]
+            if None not in v: self.elems.append(("line", [[v[0], v[1]], [v[2], v[3]]]))
+        for tag in re.findall(r'<circle\b[^>]*>', svg):
+            cx, cy, r = (num(tag, k) for k in ("cx", "cy", "r"))
+            if None not in (cx, cy, r): self.elems.append(("circ", cx, cy, r * 1.5))
+        for pts in re.findall(r'<poly(?:line|gon)\b[^>]*points="([^"]+)"', svg):
+            xy = [float(v) for v in re.split(r'[ ,]+', pts.strip()) if v]
+            self.elems.append(("line", [[xy[i], xy[i + 1]] for i in range(0, len(xy) - 1, 2)]))
 
     def svg(self):
         markers = "".join(
@@ -179,6 +202,13 @@ class Fig:
 
     def save(self, path_no_ext, png_width=None):
         if self.auto_badges: self._fill_badges()
+        if os.environ.get("ARROW_AUDIT"):
+            import json
+            el = [list(e[:3]) + [e[3], e[4] if len(e) > 4 else None, str(e[5]) if len(e) > 5 else None, e[6] if len(e) > 6 else None]
+                  if e[0] == "text" else list(e[:5]) if e[0] in ("box", "rect") else list(e[:4]) for e in self.elems]
+            with open(os.environ["ARROW_AUDIT"], "a") as fh:
+                fh.write(json.dumps({"fig": os.path.basename(path_no_ext), "w": self.w, "h": self.h,
+                                     "elems": el, "arrows": self.arrows}) + "\n")
         open(path_no_ext + ".svg", "w").write(self.svg())
         subprocess.run(["rsvg-convert", "-w", str(png_width or self.w * 2), path_no_ext + ".svg",
                         "-o", path_no_ext + ".png"], check=True)
@@ -203,6 +233,7 @@ def _card(self, x, y, w, h, icon, title, sub=None, color=BLUE, step=None, icon_s
 Fig.card = _card
 
 def _poly(self, pts, fill="none", stroke=INK, width=2, step=None, opacity=1, dash=False):
+    self.elems.append(("line", [list(p) for p in pts] + [list(pts[0])]))
     d = ' stroke-dasharray="7 5"' if dash else ""
     self._add(f'<polygon points="{" ".join(f"{a:.1f},{b:.1f}" for a, b in pts)}" fill="{fill}" stroke="{stroke}" '
               f'stroke-width="{width}" fill-opacity="{opacity}"{d}/>', step)

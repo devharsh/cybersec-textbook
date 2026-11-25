@@ -74,35 +74,35 @@
 <g class="st s2"><circle cx="686.0" cy="86.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="686.0" y="90.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
 <g class="st s2"><text x="778.0" y="80.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f4e9c" font-weight="bold" text-anchor="start">Scoping</text></g>
 <g class="st s2"><text x="778.0" y="98.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">what matters most</text></g>
-<g class="st s3"><path d="M772.6 127.9 L867.4 196.8" fill="none" stroke="#1f4e9c" stroke-width="3" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
-<g class="st s3"><circle cx="891.1901729331277" cy="244.37694101250946" r="44" fill="#ffffff" fill-opacity="1" stroke="#16a085" stroke-width="3"/></g>
-<g class="st s3"><use href="#i-search" x="866.2" y="217.4" width="50" height="50"/></g>
-<g class="st s3"><circle cx="857.1901729331277" cy="210.37694101250946" r="12" fill="#16a085" stroke="#fff" stroke-width="2"/><text x="857.2" y="215.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
-<g class="st s3"><text x="947.2" y="240.4" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#16a085" font-weight="bold" text-anchor="start">Discovery</text></g>
-<g class="st s3"><text x="947.2" y="258.4" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">assets and exposures</text></g>
-<g class="st s4"><path d="M900.0 296.9 L863.8 408.3" fill="none" stroke="#16a085" stroke-width="3" marker-end="url(#a-16a085)" stroke-linejoin="round"/></g>
-<g class="st s4"><circle cx="825.8013454126451" cy="445.62305898749054" r="44" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="3"/></g>
-<g class="st s4"><use href="#i-warning" x="800.8" y="418.6" width="50" height="50"/></g>
-<g class="st s4"><circle cx="791.8013454126451" cy="411.62305898749054" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="791.8" y="416.2" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
-<g class="st s4"><text x="881.8" y="441.6" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#d9822b" font-weight="bold" text-anchor="start">Prioritization</text></g>
-<g class="st s4"><text x="881.8" y="459.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">exploitability, impact</text></g>
-<g class="st s5"><path d="M778.6 470.2 L661.4 470.2" fill="none" stroke="#d9822b" stroke-width="3" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
-<g class="st s5"><circle cx="614.1986545873549" cy="445.62305898749054" r="44" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="3"/></g>
-<g class="st s5"><use href="#i-check" x="589.2" y="418.6" width="50" height="50"/></g>
-<g class="st s5"><circle cx="580.1986545873549" cy="411.62305898749054" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="580.2" y="416.2" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
-<g class="st s5"><text x="558.2" y="441.6" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#c0392b" font-weight="bold" text-anchor="end">Validation</text></g>
-<g class="st s5"><text x="558.2" y="459.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="end">really reachable?</text></g>
-<g class="st s6"><path d="M576.2 408.3 L540.0 296.9" fill="none" stroke="#c0392b" stroke-width="3" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
-<g class="st s6"><circle cx="548.8098270668723" cy="244.3769410125095" r="44" fill="#ffffff" fill-opacity="1" stroke="#6a3d9a" stroke-width="3"/></g>
-<g class="st s6"><use href="#i-gear" x="523.8" y="217.4" width="50" height="50"/></g>
-<g class="st s6"><circle cx="514.8098270668723" cy="210.3769410125095" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="514.8" y="215.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
-<g class="st s6"><text x="492.8" y="240.4" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#6a3d9a" font-weight="bold" text-anchor="end">Mobilization</text></g>
-<g class="st s6"><text x="492.8" y="258.4" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="end">fix and verify</text></g>
-<g class="st s7"><path d="M572.6 196.8 L667.4 127.9" fill="none" stroke="#6a3d9a" stroke-width="3" marker-end="url(#a-6a3d9a)" stroke-linejoin="round"/></g>
+<g class="st s3"><path d="M667.4 127.9 L572.6 196.8" fill="none" stroke="#1f4e9c" stroke-width="3" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s3"><circle cx="548.8098270668723" cy="244.37694101250946" r="44" fill="#ffffff" fill-opacity="1" stroke="#16a085" stroke-width="3"/></g>
+<g class="st s3"><use href="#i-search" x="523.8" y="217.4" width="50" height="50"/></g>
+<g class="st s3"><circle cx="514.8098270668723" cy="210.37694101250946" r="12" fill="#16a085" stroke="#fff" stroke-width="2"/><text x="514.8" y="215.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s3"><text x="498.8" y="164.4" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#16a085" font-weight="bold" text-anchor="end">Discovery</text></g>
+<g class="st s3"><text x="498.8" y="182.4" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="end">assets and exposures</text></g>
+<g class="st s4"><path d="M540.0 296.9 L576.2 408.3" fill="none" stroke="#16a085" stroke-width="3" marker-end="url(#a-16a085)" stroke-linejoin="round"/></g>
+<g class="st s4"><circle cx="614.1986545873548" cy="445.6230589874905" r="44" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="3"/></g>
+<g class="st s4"><use href="#i-warning" x="589.2" y="418.6" width="50" height="50"/></g>
+<g class="st s4"><circle cx="580.1986545873548" cy="411.6230589874905" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="580.2" y="416.2" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s4"><text x="558.2" y="441.6" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#d9822b" font-weight="bold" text-anchor="end">Prioritization</text></g>
+<g class="st s4"><text x="558.2" y="459.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="end">exploitability, impact</text></g>
+<g class="st s5"><path d="M661.4 470.2 L778.6 470.2" fill="none" stroke="#d9822b" stroke-width="3" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
+<g class="st s5"><circle cx="825.8013454126451" cy="445.6230589874906" r="44" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="3"/></g>
+<g class="st s5"><use href="#i-check" x="800.8" y="418.6" width="50" height="50"/></g>
+<g class="st s5"><circle cx="791.8013454126451" cy="411.6230589874906" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="791.8" y="416.2" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s5"><text x="881.8" y="441.6" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#c0392b" font-weight="bold" text-anchor="start">Validation</text></g>
+<g class="st s5"><text x="881.8" y="459.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">really reachable?</text></g>
+<g class="st s6"><path d="M863.8 408.3 L900.0 296.9" fill="none" stroke="#c0392b" stroke-width="3" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s6"><circle cx="891.1901729331277" cy="244.37694101250952" r="44" fill="#ffffff" fill-opacity="1" stroke="#6a3d9a" stroke-width="3"/></g>
+<g class="st s6"><use href="#i-gear" x="866.2" y="217.4" width="50" height="50"/></g>
+<g class="st s6"><circle cx="857.1901729331277" cy="210.37694101250952" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="857.2" y="215.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s6"><text x="947.2" y="240.4" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#6a3d9a" font-weight="bold" text-anchor="start">Mobilization</text></g>
+<g class="st s6"><text x="947.2" y="258.4" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">fix and verify</text></g>
+<g class="st s7"><path d="M867.4 196.8 L772.6 127.9" fill="none" stroke="#6a3d9a" stroke-width="3" marker-end="url(#a-6a3d9a)" stroke-linejoin="round"/></g>
 <g class="st s1"><rect x="30" y="90" width="220" height="160" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="30" y="90" width="220" height="8" rx="4" fill="#1f4e9c"/><use href="#i-attacker" x="112.0" y="104.0" width="56.0" height="56.0"/><text x="140.0" y="178.8" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f4e9c" font-weight="bold" text-anchor="middle">EASM</text><text x="140.0" y="200.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">outside-in: domains, IPs,</text><text x="140.0" y="216.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">certs, exposed services</text></g>
 <g class="st s1"><rect x="30" y="300" width="220" height="160" rx="10" fill="#ffffff" stroke="#1f4e9c" stroke-width="2.2" filter="url(#f-drop)"/><rect x="30" y="300" width="220" height="8" rx="4" fill="#1f4e9c"/><use href="#i-database" x="112.0" y="314.0" width="56.0" height="56.0"/><text x="140.0" y="388.8" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f4e9c" font-weight="bold" text-anchor="middle">CAASM</text><text x="140.0" y="410.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">inside-out: inventory from</text><text x="140.0" y="426.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="middle">your tools&#x27; APIs</text></g>
-<g class="st s1"><path d="M252.0 170.0 L330.0 240.0" fill="none" stroke="#1f4e9c" stroke-width="2.4" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
-<g class="st s1"><path d="M252.0 380.0 L330.0 330.0" fill="none" stroke="#1f4e9c" stroke-width="2.4" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s1"><path d="M252.0 170.0 L502.8 236.4" fill="none" stroke="#1f4e9c" stroke-width="2.4" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s1"><path d="M252.0 380.0 L508.8 266.4" fill="none" stroke="#1f4e9c" stroke-width="2.4" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
 <g class="st s1"><circle cx="30" cy="90" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="30.0" y="94.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
 <g class="st s7"><text x="640.0" y="540.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">From point-in-time scans to a continuous loop that keeps pace with a changing environment.</text></g>
 <g class="st s7"><circle cx="337.7" cy="535.0" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="337.7" y="539.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>

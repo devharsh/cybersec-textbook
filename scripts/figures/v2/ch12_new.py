@@ -37,7 +37,7 @@ s = Fig(1100, 560, "A SIEM: collect, normalize, store, correlate",
 src = [("firewall", "Firewalls"), ("desktop", "Endpoints"), ("server", "Servers"), ("code", "Applications"), ("cloud", "Cloud APIs"), ("idcard", "Authentication")]
 for k, (ic, lab) in enumerate(src):
     y = 70 + k * 62; s.icon(ic, 70, y, 44, step=1); s.text(100, y + 5, lab, 13, INK, "bold", "start", step=1)
-    s.arrow([(200, y), (290, 230)], None, "#9aa5b1", step=1, width=1.6)
+    s.arrow([(100 + text_width(lab, 13, True) + 12, y), (318, 190 + k * 16)], None, "#9aa5b1", step=1, width=1.6)
 s.badge(1, 20, 50, step=1)
 stg = [("Collect", "gear"), ("Normalize", "checklist"), ("Store", "database"), ("Correlate", "nodes")]
 for i, (lab, ic) in enumerate(stg):
@@ -97,7 +97,7 @@ o.rect(30, 394, 320, 130, "#1f2933", "#1f2933", 1, rx=8, step=5); o.badge(5, 30,
 for i, line in enumerate(["title: Encoded PowerShell", "detection:", "  CommandLine|contains: '-enc'", "tags: attack.t1059.001"]):
     o.text(46, 420 + i * 22, line, 12, "#8fd16a" if i == 0 else "#e4e7eb", anchor="start", step=5)
 o.text(190, 546, "detection engineering: Sigma rules as code", 13, GREEN, "bold", step=5)
-o.arrow([(190, 392), (190, 260), (395, 260)], "tuned, mapped to ATT&CK", GREEN, step=6, dash=True, size=12, width=2, label_at=.75, label_dy=-8)
+o.arrow([(190, 392), (190, 260), (395, 260)], "tuned, mapped to ATT&CK", GREEN, step=6, dash=True, size=12, width=2, label_at=.62, label_dy=-8)
 o.badge(6, 200, 330, step=6, color=GREEN)
 o.save(OUT + "ch12_soc_stack")
 

@@ -124,7 +124,7 @@
 <g class="st s2"><use href="#i-server" x="360.0" y="110.0" width="80" height="80"/><text x="400.0" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">File server</text></g>
 <g class="st s2"><use href="#i-lock" x="425.0" y="95.0" width="30" height="30"/></g>
 <g class="st s2"><use href="#i-bug" x="346.0" y="96.0" width="28" height="28"/></g>
-<g class="st s2"><path d="M268.0 150.0 L356.0 150.0" fill="none" stroke="#c0392b" stroke-width="2.6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/><text x="312.0" y="142.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="middle">Locky encrypts</text></g>
+<g class="st s2"><path d="M268.0 150.0 L356.0 150.0" fill="none" stroke="#c0392b" stroke-width="2.6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/><text x="312.0" y="135.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="middle">Locky encrypts</text></g>
 <g class="st s2"><circle cx="360" cy="70" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="360.0" y="74.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
 <g class="st s3"><text x="560.0" y="80.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#d9822b" font-weight="bold" text-anchor="start">During the attack</text></g>
 <g class="st s3"><use href="#i-search" x="567.0" y="117.0" width="46" height="46"/></g>

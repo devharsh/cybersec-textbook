@@ -55,10 +55,10 @@
 <use href="#i-document" x="65.0" y="385.0" width="50" height="50"/>
 <text x="124.0" y="416.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">Invoice_2026.pdf.exe</text>
 <text x="60.0" y="480.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="normal" text-anchor="start">Thank you, IT Support Team</text>
-<g class="st s1"><path d="M752.0 116.0 L530.0 125.0" fill="none" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s1"><path d="M752.0 116.0 L420.0 125.0" fill="none" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
 <g class="st s1"><circle cx="766" cy="116" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="766.0" y="120.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
 <g class="st s1"><text x="784.0" y="110.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">Look-alike sender domain:</text><text x="784.0" y="127.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">micros0ft with a zero</text></g>
-<g class="st s2"><path d="M752.0 186.0 L570.0 151.0" fill="none" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s2"><path d="M752.0 186.0 L474.0 151.0" fill="none" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
 <g class="st s2"><circle cx="766" cy="186" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="766.0" y="190.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
 <g class="st s2"><text x="784.0" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">Urgency and fear:</text><text x="784.0" y="197.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">deleted in 1 hour</text></g>
 <g class="st s3"><path d="M752.0 256.0 L228.0 266.0" fill="none" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
@@ -70,7 +70,7 @@
 <g class="st s5"><path d="M752.0 406.0 L550.0 349.0" fill="none" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
 <g class="st s5"><circle cx="766" cy="406" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="766.0" y="410.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 <g class="st s5"><text x="784.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">Link text and real</text><text x="784.0" y="417.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">destination differ</text></g>
-<g class="st s6"><path d="M752.0 476.0 L340.0 410.0" fill="none" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s6"><path d="M752.0 476.0 L274.0 411.0" fill="none" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
 <g class="st s6"><circle cx="766" cy="476" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="766.0" y="480.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 <g class="st s6"><text x="784.0" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">Unexpected attachment with</text><text x="784.0" y="487.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">a double extension</text></g>
 <g class="st s7"><use href="#i-shield" x="704.0" y="536.0" width="40" height="40"/></g>

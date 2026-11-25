@@ -71,7 +71,7 @@ t.text(960, 236, "3 probes per hop", 12, MUTED); t.text(960, 260, "Windows trace
 t.raw('<line x1="30" y1="420" x2="1070" y2="420" stroke="#d0d6dd" stroke-width="2" stroke-dasharray="6 6"/>')
 t.text(40, 448, "Firewalking", 16, INK, "bold", "start", step=7); t.badge(7, 24, 442, step=7)
 t.icon("laptop", 200, 490, 50, step=7); t.icon("firewall", 400, 490, 50, step=7); t.icon("router", 580, 490, 50, step=7)
-t.arrow([(228, 480), (552, 480)], "TCP 443, TTL = firewall hop + 1", BLUE, step=7, size=12)
+t.arrow([(228, 480), (552, 480)], "TCP 443, TTL = firewall hop + 1", BLUE, step=7, size=12, label_dy=-26)
 t.arrow([(552, 504), (228, 504)], None, GREEN, step=7, dash=True)
 t.text(640, 486, "time exceeded from the next hop", 13, GREEN, "bold", "start", step=7)
 t.text(640, 506, "= the firewall forwarded port 443", 13, GREEN, "bold", "start", step=7)
@@ -143,17 +143,19 @@ c.icon("shield", cx, cy - 6, 80, "CTEM")
 st = [("Scoping", "what matters most", "checklist", BLUE), ("Discovery", "assets and exposures", "search", "#16a085"),
       ("Prioritization", "exploitability, impact", "warning", ORANGE), ("Validation", "really reachable?", "check", RED), ("Mobilization", "fix and verify", "gear", PURPLE)]
 for i, (name, sub, ic, col) in enumerate(st):
-    ang = -90 + i * 72; a = math.radians(ang); x, y = cx + R * math.cos(a), cy + R * math.sin(a)
+    ang = -90 - i * 72; a = math.radians(ang); x, y = cx + R * math.cos(a), cy + R * math.sin(a)   # counterclockwise: Discovery faces the feeds
+    if i == 1: disc = (x, y)
     c.circle(x, y, 44, "#ffffff", col, 3, step=i + 2); c.icon(ic, x, y - 2, 50, step=i + 2); c.badge(i + 2, x - 34, y - 34, step=i + 2, color=col)
     if ang == -90: tx, ty, ta = x + 58, y - 40, "start"
+    elif i == 1: tx, ty, ta = x - 50, y - 80, "end"
     elif math.cos(a) > 0.1: tx, ty, ta = x + 56, y - 4, "start"
     else: tx, ty, ta = x - 56, y - 4, "end"
     c.text(tx, ty, name, 16, col, "bold", ta, step=i + 2); c.text(tx, ty + 18, sub, 13, INK, anchor=ta, step=i + 2)
-    a2, a3 = math.radians(ang + 17), math.radians(ang + 55)
+    a2, a3 = math.radians(ang - 17), math.radians(ang - 55)
     c.arrow([(cx + R * math.cos(a2), cy + R * math.sin(a2)), (cx + R * math.cos(a3), cy + R * math.sin(a3))], None, col, step=i + 3, width=3)
 c.card(30, 90, 220, 160, "attacker", "EASM", "outside-in: domains, IPs,\ncerts, exposed services", BLUE, step=1, icon_size=56, title_size=16)
 c.card(30, 300, 220, 160, "database", "CAASM", "inside-out: inventory from\nyour tools' APIs", BLUE, step=1, icon_size=56, title_size=16)
-c.arrow([(252, 170), (330, 240)], None, BLUE, step=1, width=2.4); c.arrow([(252, 380), (330, 330)], None, BLUE, step=1, width=2.4)
+c.arrow([(252, 170), (disc[0] - 46, disc[1] - 8)], None, BLUE, step=1, width=2.4); c.arrow([(252, 380), (disc[0] - 40, disc[1] + 22)], None, BLUE, step=1, width=2.4)
 c.badge(1, 30, 90, step=1)
 c.text(640, 540, "From point-in-time scans to a continuous loop that keeps pace with a changing environment.", 14, MUTED, italic=True, step=7)
 c.save(OUT + "ch08_ctem")

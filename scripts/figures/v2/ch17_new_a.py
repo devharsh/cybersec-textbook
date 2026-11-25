@@ -129,7 +129,7 @@ f = Fig(1100, 520, "Training without pooling the data: federated learning and sp
 f.zone(20, 60, 520, 400, "Federated learning", BLUE, "#eef5fc", step=1)
 for k, (lab, y) in enumerate([("Client A", 150), ("Client B", 330)]):
     f.icon("database", 90, y, 56, lab + " data", step=1, label_size=12); f.icon("chip", 210, y, 50, "local update", step=2, label_size=12)
-    f.arrow([(120, y), (184, y)], None, BLUE, step=2, width=2); f.arrow([(238, y), (352, 225 + (y - 240) * 0.1)], None, BLUE, step=3, width=2.2)
+    f.arrow([(120, y), (184, y)], None, BLUE, step=2, width=2); f.arrow([(238, y), (368, 222 + (y - 240) * 0.1)], None, BLUE, step=3, width=2.2)
 f.text(150, 248, "updates only,", 12, BLUE, "bold", step=3); f.text(150, 264, "no raw data", 12, BLUE, "bold", step=3)
 f.icon("lock", 400, 220, 56, "Secure aggregation", step=3); f.icon("nodes", 400, 350, 56, "Global model", step=4)
 f.arrow([(400, 268), (400, 318)], None, BLUE, step=4, width=2.4)

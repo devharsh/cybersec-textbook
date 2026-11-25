@@ -141,15 +141,16 @@ s = Fig(1100, 560, "Threat modeling a web app: a data-flow diagram, trust bounda
 s.icon("user-laptop", 90, 200, 90, "Customer", "external entity", step=1)
 s.zone(250, 60, 520, 330, "Company network (trust boundary)", RED, "#fdf7f6", step=2, dash=True)
 s.icon("server", 380, 200, 90, "Web app", "process", step=1)
-s.zone(540, 150, 210, 200, "Internal data zone", ORANGE, "#fef9f0", step=2, dash=True)
-s.icon("database", 645, 255, 90, "Customer DB", "data store", step=1)
-s.icon("cloud", 930, 200, 110, step=1); s.icon("bank", 930, 196, 40, step=1); s.text(930, 270, "Payment API", 15, INK, "bold", step=1)
-s.text(930, 288, "external service", 12, MUTED, step=1)
+s.zone(540, 226, 210, 156, "Internal data zone", ORANGE, "#fef9f0", step=2, dash=True)
+s.icon("database", 645, 296, 74, "Customer DB", "data store", step=1)
+s.icon("cloud", 930, 190, 110, step=1); s.icon("bank", 930, 186, 40, step=1); s.text(930, 260, "Payment API", 15, INK, "bold", step=1)
+s.text(930, 278, "external service", 12, MUTED, step=1)
 s.arrow([(140, 190), (330, 190)], "login, orders", BLUE, step=1, both=True, width=2.6, label_at=.25)
-s.arrow([(430, 215), (596, 250)], "SQL queries", BLUE, step=1, both=True, width=2.6, label_dy=-10, label_at=.28)
-s.arrow([(420, 150), (880, 120)], "charge card", BLUE, step=1, both=True, width=2.6, label_at=.6)
-s.badge(1, 50, 120, step=1); s.badge(2, 752, 76, step=2)
-for (bx, by), n in [((250, 190), "A"), ((540, 237), "B"), ((770, 127), "C")]:
+s.arrow([(432, 226), (600, 288)], None, BLUE, step=1, both=True, width=2.6)
+s.text(430, 282, "SQL queries", 13, BLUE, "bold", "start", step=1)
+s.arrow([(430, 190), (872, 190)], "charge card", BLUE, step=1, both=True, width=2.6, label_at=.6)
+s.badge(1, 52, 146, step=1); s.badge(2, 752, 76, step=2)
+for (bx, by), n in [((250, 190), "A"), ((540, 266), "B"), ((770, 190), "C")]:
     s.circle(bx, by, 13, "#ffffff", RED, 2.4, step=3); s.text(bx, by + 5, n, 13, RED, "bold", step=3)
 s.badge(3, 250, 222, step=3)
 rows = [("S", "Spoofing", "authentication, MFA"), ("T", "Tampering", "integrity checks, TLS"), ("R", "Repudiation", "logging, signatures"),
@@ -212,8 +213,8 @@ c.icon("bug", 420, 180, 32, step=3)
 for k in range(9):
     xx = 700 + (k % 3) * 120; yy = 110 + (k // 3) * 90
     c.icon("desktop", xx, yy, 56, step=4); c.icon("bug", xx + 20, yy - 20, 22, step=4)
-c.arrow([(548, 210), (640, 120)], None, RED, step=4, width=2.4); c.arrow([(548, 210), (640, 200)], None, RED, step=4, width=2.4)
-c.arrow([(548, 210), (640, 290)], None, RED, step=4, width=2.4)
+c.arrow([(548, 210), (666, 116)], None, RED, step=4, width=2.4); c.arrow([(548, 210), (666, 202)], None, RED, step=4, width=2.4)
+c.arrow([(548, 210), (666, 288)], None, RED, step=4, width=2.4)
 c.text(820, 370, "thousands of trusting customers", 15, RED, "bold", step=4)
 c.badge(1, 552, 80, step=1); c.badge(2, 456, 236, step=2); c.badge(3, 340, 340, step=3, color=RED); c.badge(4, 640, 80, step=4, color=RED)
 ctl = ["vendor assessment: SOC 2, ISO/IEC 27001", "contract: security terms, right to audit", "SBOM: know every component",

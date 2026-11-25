@@ -69,7 +69,7 @@ a.text(130, 78, "victim ARP cache", 13, RED, "bold", step=3); a.text(130, 100, "
 a.rect(740, 56, 220, 60, "#fdecea", RED, 1.6, rx=6, step=3)
 a.text(850, 78, "gateway ARP cache", 13, RED, "bold", step=3); a.text(850, 100, "192.168.1.10 -> EE:EE", 14, INK, step=3)
 a.badge(3, 20, 56, step=3); a.badge(3, 740, 56, step=3)
-a.arrow([(240, 380), (480, 470)], None, ORANGE, step=4, width=3); a.arrow([(620, 470), (860, 380)], None, ORANGE, step=4, width=3)
+a.arrow([(150, 302), (496, 448)], None, ORANGE, step=4, width=3); a.arrow([(604, 448), (906, 302)], None, ORANGE, step=4, width=3)
 a.text(320, 470, "traffic now flows through the attacker:", 13, ORANGE, "bold", step=4)
 a.text(320, 488, "read, record, or alter it", 13, ORANGE, "bold", step=4); a.badge(4, 180, 465, step=4)
 a.icon("shield", 640, 150, 40, step=5); a.text(664, 140, "Defense: dynamic ARP inspection,", 13, GREEN, "bold", "start", step=5)

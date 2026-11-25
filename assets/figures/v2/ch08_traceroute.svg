@@ -90,7 +90,7 @@
 <g class="st s7"><use href="#i-laptop" x="175.0" y="465.0" width="50" height="50"/></g>
 <g class="st s7"><use href="#i-firewall" x="375.0" y="465.0" width="50" height="50"/></g>
 <g class="st s7"><use href="#i-router" x="555.0" y="465.0" width="50" height="50"/></g>
-<g class="st s7"><path d="M228.0 480.0 L552.0 480.0" fill="none" stroke="#1f4e9c" stroke-width="2.2" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/><text x="390.0" y="472.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">TCP 443, TTL = firewall hop + 1</text></g>
+<g class="st s7"><path d="M228.0 480.0 L552.0 480.0" fill="none" stroke="#1f4e9c" stroke-width="2.2" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/><text x="390.0" y="454.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">TCP 443, TTL = firewall hop + 1</text></g>
 <g class="st s7"><path d="M552.0 504.0 L228.0 504.0" fill="none" stroke="#2e7d32" stroke-width="2.2" stroke-dasharray="7 6" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/></g>
 <g class="st s7"><text x="640.0" y="486.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">time exceeded from the next hop</text></g>
 <g class="st s7"><text x="640.0" y="506.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="start">= the firewall forwarded port 443</text></g>

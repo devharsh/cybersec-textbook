@@ -62,7 +62,7 @@ l = Fig(1100, 520, "The Locky case: one opened attachment, four steps during, fo
 l.icon("envelope", 90, 150, 60, "attachment", step=1); l.icon("user-laptop", 220, 150, 80, "one user", "with permissions", step=1)
 l.arrow([(122, 150), (172, 150)], None, RED, step=1, width=2.4); l.badge(1, 50, 100, step=1, color=RED)
 l.icon("server", 400, 150, 80, "File server", step=2); l.icon("lock", 440, 110, 30, step=2); l.icon("bug", 360, 110, 28, step=2)
-l.arrow([(268, 150), (356, 150)], "Locky encrypts", RED, step=2, size=12, width=2.6); l.badge(2, 360, 70, step=2, color=RED)
+l.arrow([(268, 150), (356, 150)], "Locky encrypts", RED, step=2, size=12, width=2.6, label_dy=-15); l.badge(2, 360, 70, step=2, color=RED)
 dur = [("search", "Examine logs", "network, server, access"), ("document", "Read-only", "stop more encryption"), ("firewall", "Isolate", "cut the host off the network"), ("gear", "Prepare", "to recover")]
 aft = [("logbook", "Document", ""), ("database", "Restore", "from backups"), ("group", "Educate", "spot the next lure"), ("envelope", "Communicate", "")]
 l.text(560, 80, "During the attack", 16, ORANGE, "bold", "start", step=3)
@@ -113,7 +113,7 @@ for i, (ic, lab) in enumerate(team):
     px = 120 + i * 0 if False else px
 for i, (ic, lab) in enumerate(team):
     px, py = 150, 80 + i * 90
-    k.icon(ic, px, py, 50, step=2); k.text(px + 40, py + 5, lab, 14, INK, "bold", "start", step=2); k.arrow([(345, py), (490, 250)], None, BLUE, step=2, width=1.6, both=True)
+    k.icon(ic, px, py, 50, step=2); k.text(px + 40, py + 5, lab, 14, INK, "bold", "start", step=2); k.arrow([(px + 40 + text_width(lab, 14, True) + 10, py), (490, 250)], None, BLUE, step=2, width=1.6, both=True)
 k.badge(2, 100, 50, step=2)
 ext = [("group", "Customers"), ("bank", "Regulators", "GDPR: 72 hours"), ("shield", "Law enforcement"), ("browser", "The public")]
 for i, e in enumerate(ext):

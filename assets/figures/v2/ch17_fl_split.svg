@@ -66,11 +66,11 @@
 <g class="st s1"><use href="#i-database" x="62.0" y="122.0" width="56" height="56"/><text x="90.0" y="193.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">Client A data</text></g>
 <g class="st s2"><use href="#i-chip" x="185.0" y="125.0" width="50" height="50"/><text x="210.0" y="190.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">local update</text></g>
 <g class="st s2"><path d="M120.0 150.0 L184.0 150.0" fill="none" stroke="#1f4e9c" stroke-width="2" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
-<g class="st s3"><path d="M238.0 150.0 L352.0 216.0" fill="none" stroke="#1f4e9c" stroke-width="2.2" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s3"><path d="M238.0 150.0 L368.0 213.0" fill="none" stroke="#1f4e9c" stroke-width="2.2" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
 <g class="st s1"><use href="#i-database" x="62.0" y="302.0" width="56" height="56"/><text x="90.0" y="373.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">Client B data</text></g>
 <g class="st s2"><use href="#i-chip" x="185.0" y="305.0" width="50" height="50"/><text x="210.0" y="370.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">local update</text></g>
 <g class="st s2"><path d="M120.0 330.0 L184.0 330.0" fill="none" stroke="#1f4e9c" stroke-width="2" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
-<g class="st s3"><path d="M238.0 330.0 L352.0 234.0" fill="none" stroke="#1f4e9c" stroke-width="2.2" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
+<g class="st s3"><path d="M238.0 330.0 L368.0 231.0" fill="none" stroke="#1f4e9c" stroke-width="2.2" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
 <g class="st s3"><text x="150.0" y="248.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">updates only,</text></g>
 <g class="st s3"><text x="150.0" y="264.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f4e9c" font-weight="bold" text-anchor="middle">no raw data</text></g>
 <g class="st s3"><use href="#i-lock" x="372.0" y="192.0" width="56" height="56"/><text x="400.0" y="263.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Secure aggregation</text></g>

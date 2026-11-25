@@ -73,7 +73,7 @@
 <g class="st s3"><use href="#i-warning" x="420.0" y="40.0" width="40" height="40"/></g>
 <g class="st s3"><text x="466.0" y="56.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="start">Vulnerability</text></g>
 <g class="st s3"><text x="466.0" y="74.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">a weakness: the crack</text></g>
-<g class="st s3"><path d="M512.0 272.0 L672.0 300.0" fill="none" stroke="#c0392b" stroke-width="2.2" stroke-dasharray="7 6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s3"><path d="M512.0 266.0 L676.0 248.0" fill="none" stroke="#c0392b" stroke-width="2.2" stroke-dasharray="7 6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
 <g class="st s3"><text x="780.0" y="330.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="middle">the threat reaches the assets: risk</text></g>
 <g class="st s4"><use href="#i-shield" x="464.0" y="198.0" width="76" height="76"/></g>
 <g class="st s4"><use href="#i-check" x="425.0" y="429.0" width="30" height="30"/></g>

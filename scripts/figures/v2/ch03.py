@@ -19,7 +19,7 @@ d.badge(1, 160, 200, step=1); d.badge(2, 520, 200, step=2)
 d.text(520, 176, "flood", 14, RED, "bold", step=2)
 d.icon("firewall", 690, 290, 100, "Scrubbing and", "rate limiting", step=4)
 d.badge(4, 690, 222, step=4)
-d.arrow([(744, 290), (880, 290)], "clean traffic", GREEN, step=4, label_dy=-10)
+d.arrow([(744, 290), (900, 290)], "clean traffic", GREEN, step=4, label_dy=-10)
 d.icon("rack", 960, 290, 110, "Victim server", step=2)
 d.icon("user-laptop", 960, 110, 90, "Legitimate user", step=3)
 d.arrow([(960, 166), (960, 222)], "may be denied service", MUTED, step=3, dash=True, label_dy=4, label_anchor="start", size=12)
@@ -45,14 +45,14 @@ s.icon("attacker", 600, 128, 90, "Attacker", "spoofed sources", label_color=RED,
 s.icon("server", 1000, 150, 80, "Server")
 for k in range(5):
     y = 236 + k * 34
-    s.arrow([(665, y), (958, y)], f"SYN (spoofed source {k + 1})", RED, step=4 + (k > 1), label_dy=-5, size=12, width=1.8)
+    s.arrow([(665, y), (900, y), (966, 244 + k * 20)], f"SYN (spoofed source {k + 1})", RED, step=4 + (k > 1), label_dy=-5, size=12, width=1.8, label_at=0.4)
 s.badge(4, 665, 236, step=4)
 # backlog slots
 s.text(1000, 228, "backlog", 12, MUTED, "bold", step=5)
 for k in range(6):
     s.rect(972, 236 + k * 20, 56, 16, "#e57373" if k < 5 else "#ffffff", RED, 1.2, rx=2, step=5)
 s.badge(5, 1046, 236, step=5)
-s.text(1000, 372, "half-open, no final ACK", 12, RED, "bold", step=5)
+s.text(1000, 392, "half-open,", 12, RED, "bold", step=5); s.text(1000, 407, "no final ACK", 12, RED, "bold", step=5)
 s.icon("user-laptop", 640, 440, 70, None, step=6)
 s.arrow([(680, 440), (958, 440)], "SYN from a real client", BLUE, step=6, label_dy=-8, size=12)
 s.icon("cross", 990, 440, 40, step=6); s.badge(6, 680, 470, step=6)
