@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 545" width="1180" height="545" role="img" aria-labelledby="t d"><title id="t">How Gandalf&#x27;s eight levels guard the password, and what beat each guard</title><desc id="d">A pipeline runs from the player&#x27;s prompt through an input guard, then the model, whose system prompt holds the password, then an output guard, and back to the player. Cards under each stage show the levels that add a defense there. Level 1 has no rule and is beaten by asking. Level 2 tells the model not to reveal the password and is beaten by claiming authority or offering a wrong guess. Level 3 blocks replies that contain the password and is beaten by asking for it spelled out or encoded. Level 4 has a second model read the transcript and is beaten by descriptions and one letter at a time. Level 5 blocks prompts with the words password or secret and is beaten by another language or an abbreviation. Level 6 has a second model judge whether the prompt asks for the password and is beaten by indirect questions or a request to repeat the instructions. Level 7 combines everything and is beaten by combining techniques, such as an acrostic poem. Level 8, Gandalf the White, is updated from real attacks.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}.s7{animation-delay:5.40s}.s8{animation-delay:6.30s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f2933" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f2933"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-user" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M18 94 C18 66 32 58 50 58 C68 58 82 66 82 94 Z" fill="url(#g-suit)" stroke="#11161c" stroke-width="1"/>
+<path d="M44 58 L50 70 L56 58 Z" fill="#fff"/><path d="M48.5 60 L51.5 60 L52.5 76 L50 80 L47.5 76 Z" fill="#c62828"/>
+<rect x="45" y="48" width="10" height="11" fill="url(#g-skin)"/>
+<ellipse cx="50" cy="34" rx="15" ry="17" fill="url(#g-skin)" stroke="#c89273" stroke-width=".8"/>
+<path d="M35 28 C34 14 66 12 66 28 C62 22 52 20 44 22 C40 23 37 25 35 28 Z" fill="#3b2a20"/></symbol>
+<symbol id="i-robot" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<line x1="50" y1="8" x2="50" y2="18" stroke="#5b6b7d" stroke-width="2.5"/><circle cx="50" cy="7" r="4" fill="#ff9800" stroke="#e65100"/>
+<rect x="24" y="18" width="52" height="40" rx="11" fill="url(#g-robot)" stroke="#4d5d70" stroke-width="1.4"/>
+<rect x="31" y="27" width="38" height="20" rx="7" fill="#183247"/>
+<circle cx="42" cy="37" r="4" fill="#4dd0e1"/><circle cx="58" cy="37" r="4" fill="#4dd0e1"/>
+<rect x="18" y="32" width="6" height="12" rx="2" fill="#7d8ea2"/><rect x="76" y="32" width="6" height="12" rx="2" fill="#7d8ea2"/>
+<path d="M30 92 V70 a8 8 0 0 1 8 -8 h24 a8 8 0 0 1 8 8 V92 Z" fill="url(#g-robot)" stroke="#4d5d70" stroke-width="1.4"/>
+<rect x="40" y="70" width="20" height="10" rx="2" fill="#183247"/><circle cx="45" cy="75" r="1.8" fill="#8fd16a"/><circle cx="55" cy="75" r="1.8" fill="#ff7043"/>
+</symbol>
+<symbol id="i-document" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M26 8 H62 L76 22 V90 H26 Z" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.2"/>
+<path d="M62 8 V22 H76" fill="#d5dbe2" stroke="#6b7785" stroke-width="1.2"/>
+<g stroke="#9aa6b3" stroke-width="2.4" stroke-linecap="round"><line x1="34" y1="34" x2="68" y2="34"/><line x1="34" y1="44" x2="68" y2="44"/><line x1="34" y1="54" x2="60" y2="54"/><line x1="34" y1="64" x2="66" y2="64"/></g>
+</symbol>
+</defs>
+<rect width="1180" height="545" fill="#ffffff"/>
+<text x="590.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">How Gandalf&#x27;s eight levels guard the password, and what beat each guard</text>
+<g class="st s1"><use href="#i-user" x="44.0" y="78.0" width="52" height="52"/><text x="70.0" y="145.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">Player</text><text x="70.0" y="160.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">prompt</text></g>
+<g class="st s1"><rect x="214.0" y="68.0" width="270.0" height="72.0" rx="10" fill="#fff8ee" fill-opacity="1" stroke="#d9822b" stroke-width="2"/></g>
+<g class="st s1"><text x="349.0" y="98.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#d9822b" font-weight="bold" text-anchor="middle">Input guard</text></g>
+<g class="st s1"><text x="349.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="middle">checks the prompt</text></g>
+<g class="st s1"><rect x="504.0" y="68.0" width="270.0" height="72.0" rx="10" fill="#eef5fc" fill-opacity="1" stroke="#1f4e9c" stroke-width="2"/></g>
+<g class="st s1"><use href="#i-robot" x="520.0" y="84.0" width="40" height="40"/></g>
+<g class="st s1"><text x="660.0" y="98.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Model</text></g>
+<g class="st s1"><text x="660.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="middle">system prompt holds it</text></g>
+<g class="st s1"><rect x="794.0" y="68.0" width="270.0" height="72.0" rx="10" fill="#f7f2fb" fill-opacity="1" stroke="#6a3d9a" stroke-width="2"/></g>
+<g class="st s1"><text x="929.0" y="98.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6a3d9a" font-weight="bold" text-anchor="middle">Output guard</text></g>
+<g class="st s1"><text x="929.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="middle">checks the reply</text></g>
+<g class="st s1"><path d="M100.0 104.0 L210.0 104.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s1"><path d="M484.0 104.0 L500.0 104.0" fill="none" stroke="#1f2933" stroke-width="1.8" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s1"><path d="M774.0 104.0 L790.0 104.0" fill="none" stroke="#1f2933" stroke-width="1.8" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s1"><path d="M1064.0 104.0 L1110.0 104.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s1"><use href="#i-document" x="1114.0" y="84.0" width="40" height="40"/><text x="1134.0" y="139.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="bold" text-anchor="middle">Reply</text></g>
+<g class="st s1"><rect x="504.0" y="168.0" width="270.0" height="84.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="2"/></g>
+<g class="st s1"><rect x="504.0" y="168.0" width="7.0" height="84.0" rx="3" fill="#1f4e9c" fill-opacity="1" stroke="#1f4e9c" stroke-width="1"/></g>
+<g class="st s1"><text x="544.0" y="192.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f4e9c" font-weight="bold" text-anchor="start">Level 1: no rule</text></g>
+<g class="st s1"><text x="522.0" y="216.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">the prompt just states the password</text></g>
+<g class="st s1"><text x="522.0" y="236.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#c0392b" font-weight="normal" text-anchor="start">beaten by: asking for it</text></g>
+<g class="st s1"><circle cx="526" cy="187" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="526.0" y="191.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><rect x="504.0" y="264.0" width="270.0" height="84.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="2"/></g>
+<g class="st s2"><rect x="504.0" y="264.0" width="7.0" height="84.0" rx="3" fill="#1f4e9c" fill-opacity="1" stroke="#1f4e9c" stroke-width="1"/></g>
+<g class="st s2"><text x="544.0" y="288.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f4e9c" font-weight="bold" text-anchor="start">Level 2: do not reveal it</text></g>
+<g class="st s2"><text x="522.0" y="312.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">a rule in the system prompt</text></g>
+<g class="st s2"><text x="522.0" y="332.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#c0392b" font-weight="normal" text-anchor="start">beaten by: claimed authority, a wrong guess</text></g>
+<g class="st s2"><circle cx="526" cy="283" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="526.0" y="287.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><rect x="794.0" y="168.0" width="270.0" height="84.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#6a3d9a" stroke-width="2"/></g>
+<g class="st s3"><rect x="794.0" y="168.0" width="7.0" height="84.0" rx="3" fill="#6a3d9a" fill-opacity="1" stroke="#6a3d9a" stroke-width="1"/></g>
+<g class="st s3"><text x="834.0" y="192.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6a3d9a" font-weight="bold" text-anchor="start">Level 3: string match</text></g>
+<g class="st s3"><text x="812.0" y="216.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">block replies that contain it</text></g>
+<g class="st s3"><text x="812.0" y="236.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#c0392b" font-weight="normal" text-anchor="start">beaten by: spell it, encode it</text></g>
+<g class="st s3"><circle cx="816" cy="187" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="816.0" y="191.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><rect x="794.0" y="264.0" width="270.0" height="84.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#6a3d9a" stroke-width="2"/></g>
+<g class="st s4"><rect x="794.0" y="264.0" width="7.0" height="84.0" rx="3" fill="#6a3d9a" fill-opacity="1" stroke="#6a3d9a" stroke-width="1"/></g>
+<g class="st s4"><text x="834.0" y="288.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6a3d9a" font-weight="bold" text-anchor="start">Level 4: LLM judge</text></g>
+<g class="st s4"><text x="812.0" y="312.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">a second model reads the transcript</text></g>
+<g class="st s4"><text x="812.0" y="332.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#c0392b" font-weight="normal" text-anchor="start">beaten by: describe it, one letter at a time</text></g>
+<g class="st s4"><circle cx="816" cy="283" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="816.0" y="287.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><rect x="214.0" y="168.0" width="270.0" height="84.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="2"/></g>
+<g class="st s5"><rect x="214.0" y="168.0" width="7.0" height="84.0" rx="3" fill="#d9822b" fill-opacity="1" stroke="#d9822b" stroke-width="1"/></g>
+<g class="st s5"><text x="254.0" y="192.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#d9822b" font-weight="bold" text-anchor="start">Level 5: word list</text></g>
+<g class="st s5"><text x="232.0" y="216.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">block password and secret</text></g>
+<g class="st s5"><text x="232.0" y="236.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#c0392b" font-weight="normal" text-anchor="start">beaten by: another language, pw</text></g>
+<g class="st s5"><circle cx="236" cy="187" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="236.0" y="191.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><rect x="214.0" y="264.0" width="270.0" height="84.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="2"/></g>
+<g class="st s6"><rect x="214.0" y="264.0" width="7.0" height="84.0" rx="3" fill="#d9822b" fill-opacity="1" stroke="#d9822b" stroke-width="1"/></g>
+<g class="st s6"><text x="254.0" y="288.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#d9822b" font-weight="bold" text-anchor="start">Level 6: LLM classifier</text></g>
+<g class="st s6"><text x="232.0" y="312.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">is the prompt asking for it?</text></g>
+<g class="st s6"><text x="232.0" y="332.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#c0392b" font-weight="normal" text-anchor="start">beaten by: indirect questions, repeat rules</text></g>
+<g class="st s6"><circle cx="236" cy="283" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="236.0" y="287.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s7"><rect x="214.0" y="372.0" width="560.0" height="84.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#2e7d32" stroke-width="2"/></g>
+<g class="st s7"><rect x="214.0" y="372.0" width="7.0" height="84.0" rx="3" fill="#2e7d32" fill-opacity="1" stroke="#2e7d32" stroke-width="1"/></g>
+<g class="st s7"><text x="254.0" y="396.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2e7d32" font-weight="bold" text-anchor="start">Level 7: everything at once</text></g>
+<g class="st s7"><text x="232.0" y="420.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">word lists and LLM checks on both the prompt and the reply</text></g>
+<g class="st s7"><text x="232.0" y="440.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#c0392b" font-weight="normal" text-anchor="start">beaten by: combined tricks, such as an acrostic poem</text></g>
+<g class="st s7"><circle cx="236" cy="391" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="236.0" y="395.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
+<g class="st s8"><rect x="794.0" y="372.0" width="270.0" height="84.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="2"/></g>
+<g class="st s8"><rect x="794.0" y="372.0" width="7.0" height="84.0" rx="3" fill="#c0392b" fill-opacity="1" stroke="#c0392b" stroke-width="1"/></g>
+<g class="st s8"><text x="834.0" y="396.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="start">Level 8: Gandalf the White</text></g>
+<g class="st s8"><text x="812.0" y="420.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#1f2933" font-weight="normal" text-anchor="start">updated from real attacks</text></g>
+<g class="st s8"><text x="812.0" y="440.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#c0392b" font-weight="normal" text-anchor="start">beaten by: rare; slow, indirect, multi-turn</text></g>
+<g class="st s8"><circle cx="816" cy="391" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="816.0" y="395.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">8</text></g>
+<g class="st s1"><line x1="349" y1="140" x2="349" y2="166" stroke="#b8c2cc" stroke-width="2" stroke-dasharray="4 4"/></g>
+<g class="st s1"><line x1="929" y1="140" x2="929" y2="166" stroke="#b8c2cc" stroke-width="2" stroke-dasharray="4 4"/></g>
+<g class="st s1"><line x1="639" y1="140" x2="639" y2="166" stroke="#b8c2cc" stroke-width="2" stroke-dasharray="4 4"/></g>
+<text x="590.0" y="500.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle">Each level adds one defense; the badge on each card is its level number.</text>
+<text x="590.0" y="520.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle">The techniques are families, not magic strings: the same idea works with many different wordings.</text>
+</svg>
