@@ -21,17 +21,17 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,950 | 464 | 15.9 |
 | Chapter 8: Scanning and Enumeration | 7,624 | 816 | 15.2 |
 | Chapter 9: Exploitation and Post-Exploitation | 27,919 | 1,134 | 55.8 |
-| Chapter 10: Web Application Security | 10,523 | 516 | 21.0 |
-| Chapter 11: Network Defense and Hardening | 26,753 | 529 | 53.5 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 13,488 | 1,114 | 27.0 |
+| Chapter 10: Web Application Security | 10,572 | 516 | 21.1 |
+| Chapter 11: Network Defense and Hardening | 26,752 | 529 | 53.5 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 13,550 | 1,114 | 27.1 |
 | Chapter 13: Digital Forensics | 11,708 | 875 | 23.4 |
 | Chapter 14: Incident Response | 11,816 | 828 | 23.6 |
 | Chapter 15: Malware Analysis | 45,732 | 423 | 91.5 |
-| Chapter 16: Capture the Flag and Competitive Security | 13,704 | 818 | 27.4 |
-| Chapter 17: Emerging Threats and Future Challenges | 94,099 | 8,728 | 188.2 |
-| Chapter 18: Privacy, Law, and Information Governance | 7,868 | 387 | 15.7 |
-| Chapter 19: Security Governance, Policy, and Culture | 17,315 | 482 | 34.6 |
-| Chapter 20: Industrial Control Systems and OT Security | 14,750 | 442 | 29.5 |
+| Chapter 16: Capture the Flag and Competitive Security | 13,723 | 818 | 27.4 |
+| Chapter 17: Emerging Threats and Future Challenges | 94,111 | 8,728 | 188.2 |
+| Chapter 18: Privacy, Law, and Information Governance | 7,875 | 387 | 15.8 |
+| Chapter 19: Security Governance, Policy, and Culture | 17,336 | 482 | 34.7 |
+| Chapter 20: Industrial Control Systems and OT Security | 14,756 | 442 | 29.5 |
 | Appendix A: Security Command Reference | 2,019 | 0 | 4.0 |
 | Appendix B: Glossary | 7,132 | 0 | 14.3 |
 | Appendix C: Certification Mapping | 3,723 | 0 | 7.4 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **474,625** | **25,298** | **949** |
+| **TOTAL** | **474,800** | **25,298** | **950** |
 
 ## Detailed Word Count by Section
 
@@ -571,12 +571,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 10: Web Application Security
 
-*10,523 markdown words (21.0 pages); 516 code words.*
+*10,572 markdown words (21.1 pages); 516 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 109 |
-| Key Terms | 216 |
+| Key Terms | 291 |
 | 10.1 How the Web Works: HTTP, Sessions, and the Same-Origin Policy | 286 |
 | 10.2 The OWASP Top 10 | 62 |
 |     Broken Access Control | 169 |
@@ -599,7 +599,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 10.9 The Web-Application Testing Toolkit | 355 |
 | 10.10 Application Security Testing: Static, Dynamic, Interactive, and DevSecOps | 433 |
 | 10.11 Web Application Firewalls and Their Limits | 40 |
-|     WAF Bypass Techniques | 123 |
+|     WAF Bypass Techniques | 97 |
 | 10.12 The OWASP API Security Top 10 | 332 |
 | 10.13 Database Systems in Depth: Engines, Replication, and Security | 41 |
 |     Relational Database Management Systems | 247 |
@@ -622,15 +622,15 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 11: Network Defense and Hardening
 
-*26,753 markdown words (53.5 pages); 529 code words.*
+*26,752 markdown words (53.5 pages); 529 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 204 |
-| Key Terms | 484 |
+| Key Terms | 532 |
 | 11.1 Firewalls | 161 |
 |     Firewall Types and Evolution | 188 |
-|     Writing Firewall Rules | 200 |
+|     Writing Firewall Rules | 151 |
 | 11.2 Firewall Types and Topologies | 408 |
 |     Physical and Virtual Firewalls | 174 |
 |     Stateless and Stateful Packet Filtering | 514 |
@@ -724,12 +724,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*13,488 markdown words (27.0 pages); 1,114 code words.*
+*13,550 markdown words (27.1 pages); 1,114 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 123 |
-| Key Terms | 211 |
+| Key Terms | 333 |
 | 12.1 Detection System Types | 127 |
 |     Network-Based IDS and IPS | 141 |
 |     Host-Based IDS | 49 |
@@ -746,7 +746,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     SIEM, SOAR, XDR, and EDR: The Detection Stack | 269 |
 | 12.4 UEBA and Threat Hunting | 54 |
 |     User and Entity Behavior Analytics | 58 |
-|     Threat Hunting | 228 |
+|     Threat Hunting | 168 |
 |     Detection Engineering, Threat Hunting, and Deception | 350 |
 | 12.5 The Cyber Kill Chain and MITRE ATT&CK | 617 |
 | 12.6 Modern SOC Operations: EDR, XDR, SOAR, and Detection Engineering | 268 |
@@ -1101,12 +1101,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*13,704 markdown words (27.4 pages); 818 code words.*
+*13,723 markdown words (27.4 pages); 818 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 140 |
-| Key Terms | 190 |
+| Key Terms | 264 |
 | 16.1 What Is a CTF? | 46 |
 |     Jeopardy Format | 152 |
 | 16.2 Category Deep Dives | 57 |
@@ -1115,7 +1115,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Cryptography Challenges | 198 |
 |     Binary Exploitation (Pwn) | 140 |
 |     Reverse Engineering | 118 |
-|     Tooling, Chapter Mapping, and Workflow | 238 |
+|     Tooling, Chapter Mapping, and Workflow | 183 |
 | 16.3 The National Cyber League (NCL) | 81 |
 |     Structure of a Season | 146 |
 |     Challenge Categories | 78 |
@@ -1154,15 +1154,15 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*94,099 markdown words (188.2 pages); 8,728 code words.*
+*94,111 markdown words (188.2 pages); 8,728 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 322 |
-| Key Terms | 4,689 |
+| Key Terms | 4,717 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
-|     NIST PQC Standardization | 229 |
+|     NIST PQC Standardization | 213 |
 |     Quantum Key Distribution and the Quantum Horizon | 383 |
 | 17.2 AI-Enabled Attacks and Defenses | 53 |
 |     Offensive AI | 161 |
@@ -1269,12 +1269,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
-*7,868 markdown words (15.7 pages); 387 code words.*
+*7,875 markdown words (15.8 pages); 387 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 129 |
-| Key Terms | 217 |
+| Key Terms | 333 |
 | 18.1 Foundational Privacy Principles | 53 |
 |     The 1973 HEW Report and Fair Information Practice Principles | 91 |
 |     The OECD Privacy Guidelines | 109 |
@@ -1292,7 +1292,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Scoping and Cardholder Data Environment | 110 |
 | 18.5 Privacy by Design | 51 |
 |     The Seven Foundational Principles | 60 |
-|     Data Protection Impact Assessments | 179 |
+|     Data Protection Impact Assessments | 70 |
 | 18.6 The Fourth Amendment and the Reasonable Expectation of Privacy | 54 |
 |     The Katz Reasonable-Expectation-of-Privacy Test | 197 |
 |     The Third-Party Doctrine and Its Erosion | 147 |
@@ -1317,12 +1317,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*17,315 markdown words (34.6 pages); 482 code words.*
+*17,336 markdown words (34.7 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 189 |
-| Key Terms | 313 |
+| Key Terms | 391 |
 | 19.1 What Security Governance Is | 48 |
 |     Why Governance Matters | 50 |
 | 19.2 The CISO Role | 61 |
@@ -1344,7 +1344,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     What Culture Is and Why It Matters | 89 |
 |     Tone at the Top | 66 |
 |     Building a Positive Security Culture | 183 |
-| 19.6 Common Compliance Frameworks | 277 |
+| 19.6 Common Compliance Frameworks | 220 |
 |     Frameworks, Methodologies, and Tools | 117 |
 |     NIST CSF, the Risk Management Framework (RMF), ISO/IEC 27001, and the RMF Compared | 195 |
 |     FISMA in Depth | 275 |
@@ -1406,12 +1406,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 20: Industrial Control Systems and OT Security
 
-*14,750 markdown words (29.5 pages); 442 code words.*
+*14,756 markdown words (29.5 pages); 442 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 173 |
-| Key Terms | 349 |
+| Key Terms | 428 |
 | 20.1 IT Versus OT: A Fundamental Difference in Priorities | 75 |
 |     Safety as the Overriding Priority | 57 |
 | 20.2 ICS Components | 58 |
@@ -1432,7 +1432,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 20.6 IEC 62443 and NIST SP 800-82 | 47 |
 |     IEC 62443 | 49 |
 |     NIST SP 800-82 | 41 |
-| 20.7 OT Defense-in-Depth | 350 |
+| 20.7 OT Defense-in-Depth | 277 |
 | 20.8 OT Incident Response, Safety, and Resilience | 557 |
 | 20.9 Why OT Networks Stay Flat | 97 |
 |     Four reasons the flatness is load bearing | 362 |
