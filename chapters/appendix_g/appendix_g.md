@@ -15,7 +15,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 1: Introduction to Cybersecurity | 19,338 | 679 | 38.7 |
 | Chapter 2: Cryptography | 52,007 | 4,728 | 104.0 |
 | Chapter 3: Networking and Network Attacks | 17,819 | 374 | 35.6 |
-| Chapter 4: Social Engineering and the Human Element | 12,479 | 1,000 | 25.0 |
+| Chapter 4: Social Engineering and the Human Element | 12,503 | 1,000 | 25.0 |
 | Chapter 5: Risk Management | 18,470 | 696 | 36.9 |
 | Chapter 6: Penetration Testing Methodology | 10,187 | 265 | 20.4 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,950 | 464 | 15.9 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **474,896** | **25,298** | **950** |
+| **TOTAL** | **474,920** | **25,298** | **950** |
 
 ## Detailed Word Count by Section
 
@@ -276,7 +276,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 4: Social Engineering and the Human Element
 
-*12,479 markdown words (25.0 pages); 1,000 code words.*
+*12,503 markdown words (25.0 pages); 1,000 code words.*
 
 | Section | Words |
 |---|---:|
@@ -304,7 +304,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Review Questions (MCQ) | 693 |
 |     Answer Key | 42 |
 | Lab Assignment | 275 |
-| References | 692 |
+| References | 716 |
 
 ### Chapter 5: Risk Management
 
