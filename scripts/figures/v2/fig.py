@@ -28,6 +28,7 @@ class Fig:
     def __init__(self, w, h, title=None, desc="", step_gap=0.9):
         self.w, self.h, self.title, self.desc = w, h, title, desc
         self.items, self.used, self.colors = [], [], set()
+        self.top_items = []  # number badges, painted after everything else so nothing covers them
         self.step_gap, self.max_step = step_gap, 0
         # Every build step carries a numbered badge. Steps the source leaves unnumbered get one
         # at save time, beside the step's first box, label, or icon (see _fill_badges).
@@ -38,11 +39,11 @@ class Fig:
         self.elems.append(a)
         if step: self.anchors.setdefault(step, []).append(a)
 
-    def _add(self, svg, step):
+    def _add(self, svg, step, top=False):
         if step:
             self.max_step = max(self.max_step, step); self.steps.add(step)
             svg = f'<g class="st s{step}">{svg}</g>'
-        self.items.append(svg)
+        (self.top_items if top else self.items).append(svg)
 
     def icon(self, name, x, y, size=70, label=None, sub=None, step=None, label_color=INK, label_size=15):
         if name not in self.used: self.used.append(name)
@@ -121,9 +122,10 @@ class Fig:
 
     def badge(self, n, x, y, step=None, color=BLUE):
         self.badged.add(step if step is not None else n)
+        x = min(max(x, 14), self.w - 14); y = min(max(y, 14), self.h - 14)  # keep the whole badge on the canvas
         s = (f'<circle cx="{x}" cy="{y}" r="12" fill="{color}" stroke="#fff" stroke-width="2"/>'
              + self._text(x, y + 4.6, str(n), 13, "#fff", "bold"))
-        self._add(s, step if step is not None else n)
+        self._add(s, step if step is not None else n, top=True)
 
     def raw(self, svg, step=None):
         self._raw_shapes(svg)
@@ -164,7 +166,7 @@ class Fig:
                 f'<rect width="{self.w}" height="{self.h}" fill="#ffffff"/>']
         if self.title:
             body.append(self._text(self.w/2, 30, self.title, 19, INK, "bold"))
-        body += self.items + ["</svg>"]
+        body += self.items + self.top_items + ["</svg>"]
         return "\n".join(body)
 
     def _fill_badges(self):

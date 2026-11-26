@@ -54,31 +54,31 @@
 <g class="st s1"><use href="#i-database" x="78.0" y="184.0" width="64" height="64"/></g>
 <g class="st s1"><text x="110.0" y="300.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f4e9c" font-weight="bold" text-anchor="middle">Corpus</text></g>
 <g class="st s1"><text x="110.0" y="318.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">seed and saved inputs</text></g>
-<g class="st s1"><circle cx="64" cy="174" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="64.0" y="178.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
 <g class="st s2"><circle cx="360" cy="100" r="58" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="3"/></g>
 <g class="st s2"><use href="#i-gear" x="328.0" y="64.0" width="64" height="64"/></g>
 <g class="st s2"><text x="360.0" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#d9822b" font-weight="bold" text-anchor="middle">Mutate</text></g>
 <g class="st s2"><text x="360.0" y="198.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">flip bits, splice, insert</text></g>
-<g class="st s2"><circle cx="314" cy="54" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="314.0" y="58.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
 <g class="st s3"><circle cx="640" cy="100" r="58" fill="#ffffff" fill-opacity="1" stroke="#6a3d9a" stroke-width="3"/></g>
 <g class="st s3"><use href="#i-chip" x="608.0" y="64.0" width="64" height="64"/></g>
 <g class="st s3"><text x="640.0" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#6a3d9a" font-weight="bold" text-anchor="middle">Run target</text></g>
 <g class="st s3"><text x="640.0" y="198.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">instrumented, with ASan</text><text x="640.0" y="213.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">and UBSan</text></g>
-<g class="st s3"><circle cx="594" cy="54" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="594.0" y="58.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
 <g class="st s4"><circle cx="880" cy="220" r="58" fill="#ffffff" fill-opacity="1" stroke="#2e7d32" stroke-width="3"/></g>
 <g class="st s4"><use href="#i-nodes" x="848.0" y="184.0" width="64" height="64"/></g>
 <g class="st s4"><text x="880.0" y="300.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2e7d32" font-weight="bold" text-anchor="middle">New coverage?</text></g>
 <g class="st s4"><text x="880.0" y="318.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">a path not seen before</text></g>
-<g class="st s4"><circle cx="834" cy="174" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="834.0" y="178.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
 <g class="st s2"><path d="M160.0 190.0 L304.0 118.0" fill="none" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
 <g class="st s3"><path d="M420.0 100.0 L580.0 100.0" fill="none" stroke="#d9822b" stroke-width="2.6" marker-end="url(#a-d9822b)" stroke-linejoin="round"/></g>
 <g class="st s4"><path d="M694.0 124.0 L836.0 190.0" fill="none" stroke="#6a3d9a" stroke-width="2.6" marker-end="url(#a-6a3d9a)" stroke-linejoin="round"/></g>
 <g class="st s5"><path d="M870.0 340.0 L870.0 380.0 L110.0 380.0 L110.0 346.0" fill="none" stroke="#2e7d32" stroke-width="2.6" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/><text x="493.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#2e7d32" font-weight="bold" text-anchor="middle">yes: add the input to the corpus</text></g>
-<g class="st s5"><circle cx="490" cy="380" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="490.0" y="384.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 <g class="st s6"><use href="#i-bug" x="613.0" y="273.0" width="54" height="54"/></g>
 <g class="st s6"><path d="M640.0 224.0 L640.0 268.0" fill="none" stroke="#c0392b" stroke-width="2.6" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
 <g class="st s6"><text x="632.0" y="252.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="end">crash</text></g>
 <g class="st s6"><text x="600.0" y="306.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="end">save the input for triage</text></g>
-<g class="st s6"><circle cx="690" cy="300" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="690.0" y="304.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 <g class="st s6"><text x="550.0" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="normal" text-anchor="middle" font-style="italic">Sanitizers turn silent memory corruption into an immediate, diagnosable crash.</text></g>
+<g class="st s1"><circle cx="64" cy="174" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="64.0" y="178.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="314" cy="54" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="314.0" y="58.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><circle cx="594" cy="54" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="594.0" y="58.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><circle cx="834" cy="174" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="834.0" y="178.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><circle cx="490" cy="380" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="490.0" y="384.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><circle cx="690" cy="300" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="690.0" y="304.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 </svg>

@@ -87,11 +87,11 @@ for i, (name, ic, fill, atk) in enumerate(layers):
     y = 60 + i * 72
     k.rect(40, y, 560, 62, fill, "#5b6570", 1.6, rx=8, step=1); k.icon(ic, 80, y + 31, 40, step=1); k.text(110, y + 37, name, 15, INK, "bold", "start", step=1)
     if atk:
-        k.icon("devil", 640, y + 31, 34, step=i + 1); k.text(668, y + 37, atk, 13, RED, "bold", "start", step=i + 1); k.badge(i + 1, 610, y + 31, step=i + 1, color=RED)
-        k.arrow([(600, y + 31), (622, y + 31)], None, RED, step=i + 1, width=2)
+        k.arrow([(600, y + 31), (628, y + 31)], None, RED, step=i + 1, width=2)
+        k.icon("devil", 646, y + 31, 34, step=i + 1); k.badge(i + 1, 680, y + 31, step=i + 1, color=RED); k.text(700, y + 37, atk, 13, RED, "bold", "start", step=i + 1)
 k.badge(1, 40, 60, step=1)
-k.arrow([(20, 476), (20, 76)], None, GREEN, step=6, width=4); k.text(30, 520, "Secure Boot and measured boot: each stage verified from the TPM up", 14, GREEN, "bold", "start", step=6)
-k.badge(6, 6, 470, step=6, color=GREEN)
+k.arrow([(20, 476), (20, 76)], None, GREEN, step=6, width=4); k.text(38, 520, "Secure Boot and measured boot: each stage verified from the TPM up", 14, GREEN, "bold", "start", step=6)
+k.badge(6, 18, 515, step=6, color=GREEN)
 k.text(830, 520, "Trust anchor: a monitor is trustworthy only below what it watches.", 13, INK, step=6, italic=True)
 k.save(OUT + "ch15_rootkit_layers")
 

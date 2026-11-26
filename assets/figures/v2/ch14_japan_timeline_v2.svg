@@ -76,41 +76,41 @@
 <g class="st s1"><rect x="23.0" y="184.0" width="300.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="1.8"/></g>
 <g class="st s1"><use href="#i-shield" x="30.0" y="204.0" width="36" height="36"/></g>
 <g class="st s1"><text x="195.0" y="214.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">Active Cyber Defense powers</text><text x="195.0" y="229.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">and reporting take effect</text></g>
-<g class="st s1"><circle cx="315" cy="184" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="315.0" y="188.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
 <g class="st s2"><line x1="359" y1="330" x2="359" y2="430" stroke="#9aa5b1" stroke-width="1.6"/></g>
 <g class="st s2"><circle cx="359" cy="330" r="8" fill="#c0392b" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
 <g class="st s2"><rect x="209.0" y="434.0" width="300.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="1.8"/></g>
 <g class="st s2"><use href="#i-bug" x="216.0" y="454.0" width="36" height="36"/></g>
 <g class="st s2"><text x="381.0" y="464.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">IDC Frontier ransomware reported;</text><text x="381.0" y="479.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">495 companies and local governments</text></g>
-<g class="st s2"><circle cx="501" cy="434" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="501.0" y="438.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
 <g class="st s3"><line x1="421" y1="330" x2="421" y2="150" stroke="#9aa5b1" stroke-width="1.6"/></g>
 <g class="st s3"><circle cx="421" cy="330" r="8" fill="#d9822b" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
 <g class="st s3"><rect x="271.0" y="74.0" width="300.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#d9822b" stroke-width="1.8"/></g>
 <g class="st s3"><use href="#i-warning" x="278.0" y="94.0" width="36" height="36"/></g>
 <g class="st s3"><text x="443.0" y="104.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">National Cybersecurity Office advisory;</text><text x="443.0" y="119.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">LDP official: an emergency in cyberspace</text></g>
-<g class="st s3"><circle cx="563" cy="74" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="563.0" y="78.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
 <g class="st s4"><line x1="762" y1="330" x2="732" y2="540" stroke="#9aa5b1" stroke-width="1.6"/></g>
 <g class="st s4"><circle cx="762" cy="330" r="8" fill="#1f4e9c" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
 <g class="st s4"><rect x="582.0" y="544.0" width="300.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="1.8"/></g>
 <g class="st s4"><use href="#i-bank" x="589.0" y="564.0" width="36" height="36"/></g>
 <g class="st s4"><text x="754.0" y="574.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">LDP emergency proposals:</text><text x="754.0" y="589.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">a headquarters under the PM&#x27;s office</text></g>
-<g class="st s4"><circle cx="874" cy="544" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="874.0" y="548.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
 <g class="st s5"><line x1="855" y1="330" x2="793" y2="260" stroke="#9aa5b1" stroke-width="1.6"/></g>
 <g class="st s5"><circle cx="855" cy="330" r="8" fill="#1f4e9c" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
 <g class="st s5"><rect x="643.0" y="184.0" width="300.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="1.8"/></g>
 <g class="st s5"><use href="#i-bank" x="650.0" y="204.0" width="36" height="36"/></g>
 <g class="st s5"><text x="815.0" y="214.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">PM: the National Cybersecurity</text><text x="815.0" y="229.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">Office is the command center</text></g>
-<g class="st s5"><circle cx="935" cy="184" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="935.0" y="188.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 <g class="st s6"><line x1="886" y1="330" x2="916" y2="430" stroke="#9aa5b1" stroke-width="1.6"/></g>
 <g class="st s6"><circle cx="886" cy="330" r="8" fill="#c0392b" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
 <g class="st s6"><rect x="766.0" y="434.0" width="300.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="1.8"/></g>
 <g class="st s6"><use href="#i-server" x="773.0" y="454.0" width="36" height="36"/></g>
 <g class="st s6"><text x="938.0" y="464.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">GMO asks for active cyber defense;</text><text x="938.0" y="479.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">up to 26,739 servers may be affected</text></g>
-<g class="st s6"><circle cx="1058" cy="434" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="1058.0" y="438.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
 <g class="st s7"><line x1="948" y1="330" x2="948" y2="150" stroke="#9aa5b1" stroke-width="1.6"/></g>
 <g class="st s7"><circle cx="948" cy="330" r="8" fill="#1f4e9c" fill-opacity="1" stroke="#ffffff" stroke-width="2"/></g>
 <g class="st s7"><rect x="798.0" y="74.0" width="300.0" height="76.0" rx="8" fill="#ffffff" fill-opacity="1" stroke="#1f4e9c" stroke-width="1.8"/></g>
 <g class="st s7"><use href="#i-checklist" x="805.0" y="94.0" width="36" height="36"/></g>
 <g class="st s7"><text x="970.0" y="104.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">PM orders emergency measures</text><text x="970.0" y="119.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="bold" text-anchor="middle">by the end of the next week</text></g>
-<g class="st s7"><circle cx="1090" cy="74" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="1090.0" y="78.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
+<g class="st s1"><circle cx="315" cy="184" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="315.0" y="188.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="501" cy="434" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="501.0" y="438.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><circle cx="563" cy="74" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="563.0" y="78.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><circle cx="874" cy="544" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="874.0" y="548.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><circle cx="935" cy="184" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="935.0" y="188.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><circle cx="1058" cy="434" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="1058.0" y="438.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s7"><circle cx="1086" cy="74" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="1086.0" y="78.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
 </svg>

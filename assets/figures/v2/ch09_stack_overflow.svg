@@ -44,7 +44,6 @@
 <g class="st s1"><rect x="60.0" y="380.0" width="180.0" height="50.0" rx="0" fill="#f4ecf7" fill-opacity="1" stroke="#5b6570" stroke-width="1.6"/></g>
 <g class="st s1"><text x="150.0" y="410.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">text (code)</text></g>
 <g class="st s1"><text x="150.0" y="450.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">low addresses</text></g>
-<g class="st s1"><circle cx="60" cy="80" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="60.0" y="84.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
 <g class="st s1"><path d="M270.0 100.0 L270.0 150.0" fill="none" stroke="#1f4e9c" stroke-width="2.4" marker-end="url(#a-1f4e9c)" stroke-linejoin="round"/></g>
 <g class="st s1"><path d="M270.0 330.0 L270.0 280.0" fill="none" stroke="#2e7d32" stroke-width="2.4" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/></g>
 <g class="st s2"><path d="M244.0 115.0 L420.0 150.0" fill="none" stroke="#9aa5b1" stroke-width="2.2" stroke-dasharray="7 6" marker-end="url(#a-9aa5b1)" stroke-linejoin="round"/></g>
@@ -57,11 +56,9 @@
 <g class="st s2"><rect x="430.0" y="290.0" width="260.0" height="120.0" rx="4" fill="#eef5fc" fill-opacity="1" stroke="#1f4e9c" stroke-width="2"/></g>
 <g class="st s2"><text x="560.0" y="356.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1f4e9c" font-weight="bold" text-anchor="middle">char buff[15]</text></g>
 <g class="st s2"><text x="560.0" y="98.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#52606d" font-weight="bold" text-anchor="middle">main&#x27;s stack frame</text></g>
-<g class="st s2"><circle cx="430" cy="110" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="430.0" y="114.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
 <g class="st s2"><text x="730.0" y="120.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">higher addresses</text></g>
 <g class="st s2"><path d="M720.0 410.0 L720.0 130.0" fill="none" stroke="#52606d" stroke-width="1.6" marker-end="url(#a-52606d)" stroke-linejoin="round"/></g>
 <g class="st s3"><use href="#i-user-laptop" x="998.0" y="418.0" width="64" height="64"/><text x="1030.0" y="497.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1f2933" font-weight="bold" text-anchor="middle">Input</text></g>
-<g class="st s3"><circle cx="790" cy="486" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="790.0" y="490.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
 <g class="st s3"><rect x="790.0" y="500.0" width="290.0" height="30.0" rx="4" fill="#1f2933" fill-opacity="1" stroke="#1f2933" stroke-width="1"/></g>
 <g class="st s3"><text x="935.0" y="520.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#8fd16a" font-weight="bold" text-anchor="middle">AAAAAAAAAAAAAAAAAAAAAAAA</text></g>
 <g class="st s3"><text x="935.0" y="556.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">gets(buff): no bounds check</text></g>
@@ -70,15 +67,18 @@
 <g class="st s4"><text x="560.0" y="350.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="middle">A A A A A A A A A A A A A A A</text></g>
 <g class="st s4"><text x="560.0" y="380.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="normal" text-anchor="middle">buff, full</text></g>
 <g class="st s4"><text x="560.0" y="266.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c0392b" font-weight="bold" text-anchor="middle">pass = 0x41414141 (non-zero)</text></g>
-<g class="st s4"><circle cx="690" cy="230" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="690.0" y="234.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
 <g class="st s4"><rect x="800.0" y="210.0" width="280.0" height="56.0" rx="6" fill="#fdecea" fill-opacity="1" stroke="#c0392b" stroke-width="1.6"/></g>
 <g class="st s4"><text x="940.0" y="234.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="middle">Root privileges given to the user</text></g>
 <g class="st s4"><text x="940.0" y="254.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f2933" font-weight="normal" text-anchor="middle">without the correct password</text></g>
 <g class="st s5"><rect x="431.0" y="111.0" width="258.0" height="119.0" rx="4" fill="#f5b7b1" fill-opacity="1" stroke="#c0392b" stroke-width="2"/></g>
 <g class="st s5"><text x="560.0" y="146.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="middle">return = 0x4141414141414141</text></g>
 <g class="st s5"><text x="560.0" y="206.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#c0392b" font-weight="bold" text-anchor="middle">saved rbp = AAAAAAAA</text></g>
-<g class="st s5"><circle cx="690" cy="112" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="690.0" y="116.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 <g class="st s5"><text x="800.0" y="150.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">With more bytes: saved rbp and the return</text></g>
 <g class="st s5"><text x="800.0" y="170.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">address are overwritten, so ret jumps where</text></g>
 <g class="st s5"><text x="800.0" y="190.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c0392b" font-weight="bold" text-anchor="start">the attacker chooses.</text></g>
+<g class="st s1"><circle cx="60" cy="80" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="60.0" y="84.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="430" cy="110" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="430.0" y="114.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><circle cx="790" cy="486" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="790.0" y="490.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><circle cx="690" cy="230" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="690.0" y="234.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><circle cx="690" cy="112" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="690.0" y="116.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
 </svg>
