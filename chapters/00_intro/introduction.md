@@ -19,23 +19,23 @@ mix and match chapters to match their exact syllabus.
 
 | Course | Recommended Chapters | Approx. Pages |
 |---|---|---|
-| Introduction to IT Security | 1, 2, 3, 4, 5, 19 | 275 |
+| Introduction to IT Security | 1, 2, 3, 4, 5, 19 | 280 |
 | Computer Security (survey) | 1, 4, 5, 9, 10, 11, 12, 15, 17 | 540 |
 | Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 | 195 |
 | Software Reverse Engineering | 9, 15 (+ 3) | 145 |
-| Computer and Network Security | 2, 3, 5, 11, 12, 17 | 445 |
+| Computer and Network Security | 2, 3, 5, 11, 12, 17 | 450 |
 | Advanced Network Security (Security+ aligned) | 1, 2, 3, 11, 12, 15, 19 | 385 |
-| Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 340 |
+| Advanced Systems Security | 5, 6, 8, 11, 12, 17 | 345 |
 | Fundamentals of Cryptography | 2, 3, 11, 17 | 380 |
 | Incident Response and Digital Forensics | 12, 13, 14, 15 | 165 |
-| Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 | 370 |
-| Capstone or Certification Prep | All chapters | 883 (about 950 with appendices) |
+| Cybersecurity and Society | 1, 4, 5, 17, 18, 19, 20 | 375 |
+| Capstone or Certification Prep | All chapters | 887 (about 954 with appendices) |
 
 <!-- END generated:course-pages -->
 
 <!-- BEGIN generated:page-basis. Written by scripts/gen_wordcounts.py; edit the wording in that script. -->
 
-The page counts are estimates at about 500 words of prose per page, the same measure Appendix G uses, and they count only the listed chapters, not the appendices. Code listings, figures, and tables are not counted, so a typeset copy will run to a different length. These figures, like Appendix G, are regenerated from the book source whenever the book is rebuilt. They are a planning aid for gauging reading load per course: on the same measure the 20 chapters come to about 883 pages, and the whole book, with its front matter and appendices, to about 950. Several courses now exceed a single term's reading if every listed chapter is covered in full, so the guidance under *Adapting the Reading Load* below on trimming the encyclopedic back sections of the longer chapters applies directly.
+The page counts are estimates at about 500 words of prose per page, the same measure Appendix G uses, and they count only the listed chapters, not the appendices. Code listings, figures, and tables are not counted, so a typeset copy will run to a different length. These figures, like Appendix G, are regenerated from the book source whenever the book is rebuilt. They are a planning aid for gauging reading load per course: on the same measure the 20 chapters come to about 887 pages, and the whole book, with its front matter and appendices, to about 954. Several courses now exceed a single term's reading if every listed chapter is covered in full, so the guidance under *Adapting the Reading Load* below on trimming the encyclopedic back sections of the longer chapters applies directly.
 
 <!-- END generated:page-basis -->
 

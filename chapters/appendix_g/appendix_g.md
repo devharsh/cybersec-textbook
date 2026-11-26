@@ -16,7 +16,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 2: Cryptography | 52,007 | 4,728 | 104.0 |
 | Chapter 3: Networking and Network Attacks | 17,819 | 374 | 35.6 |
 | Chapter 4: Social Engineering and the Human Element | 12,503 | 1,000 | 25.0 |
-| Chapter 5: Risk Management | 18,470 | 696 | 36.9 |
+| Chapter 5: Risk Management | 20,371 | 989 | 40.7 |
 | Chapter 6: Penetration Testing Methodology | 10,187 | 265 | 20.4 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,950 | 464 | 15.9 |
 | Chapter 8: Scanning and Enumeration | 7,611 | 816 | 15.2 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **474,920** | **25,298** | **950** |
+| **TOTAL** | **476,821** | **25,591** | **954** |
 
 ## Detailed Word Count by Section
 
@@ -308,12 +308,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 5: Risk Management
 
-*18,470 markdown words (36.9 pages); 696 code words.*
+*20,371 markdown words (40.7 pages); 989 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 214 |
-| Key Terms | 324 |
+| Key Terms | 406 |
 | 5.1 Risk as the Organizing Principle of Security | 395 |
 | 5.2 The Vocabulary of Risk | 607 |
 | 5.3 The Risk-Management Lifecycle | 394 |
@@ -322,6 +322,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     A Worked Risk Register | 286 |
 | 5.5 Qualitative Risk Assessment | 539 |
 | 5.6 Quantitative Risk Assessment | 722 |
+|     Random, Stochastic, Aleatoric, and Intermittent | 1,538 |
 | 5.7 Risk Treatment | 975 |
 |     A Worked Analogy: The Skateboard and the Scraped Knee | 2,911 |
 | 5.8 Threat Modeling | 821 |
@@ -348,10 +349,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 242 |
 | Why This Matters | 164 |
 | News in Focus: Repeat Breaches at Neiman Marcus | 573 |
-| Review Questions (MCQ) | 547 |
-|     Answer Key | 38 |
+| Review Questions (MCQ) | 680 |
+|     Answer Key | 44 |
 | Lab Assignment | 242 |
-| References | 446 |
+| References | 588 |
 
 ### Chapter 6: Penetration Testing Methodology
 

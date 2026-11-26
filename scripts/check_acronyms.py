@@ -398,6 +398,7 @@ BOOK_LITERAL = {
     "SYSKEY": "a Windows utility name",
     "KB": "the prefix of a Microsoft Knowledge Base article number",
     "McGrew": "a surname",
+    "McKay": "a surname",
     "ALTEN": "a company name",
     "EMC": "a company name",
     "ETH": "part of the university name ETH Zurich",
