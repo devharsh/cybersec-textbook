@@ -2,7 +2,7 @@
 
 This page reports the size of each chapter and of each section within it, measured in markdown words (the prose; code and figures are additional and reported separately per chapter). It is generated automatically from the book source. Approximate pages assume about 500 words per page.
 
-Last generated: 2026-11-25.
+Last generated: 2026-11-26.
 
 ## Summary by Chapter
 
@@ -26,7 +26,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 12: Intrusion Detection and Prevention Systems | 13,488 | 1,114 | 27.0 |
 | Chapter 13: Digital Forensics | 11,708 | 875 | 23.4 |
 | Chapter 14: Incident Response | 11,816 | 828 | 23.6 |
-| Chapter 15: Malware Analysis | 45,699 | 423 | 91.4 |
+| Chapter 15: Malware Analysis | 45,732 | 423 | 91.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,704 | 818 | 27.4 |
 | Chapter 17: Emerging Threats and Future Challenges | 94,099 | 8,728 | 188.2 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,868 | 387 | 15.7 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **474,592** | **25,298** | **949** |
+| **TOTAL** | **474,625** | **25,298** | **949** |
 
 ## Detailed Word Count by Section
 
@@ -939,12 +939,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 15: Malware Analysis
 
-*45,699 markdown words (91.4 pages); 423 code words.*
+*45,732 markdown words (91.5 pages); 423 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 127 |
-| Key Terms | 257 |
+| Key Terms | 347 |
 | 15.1 Malware Taxonomy | 52 |
 |     Viruses and Worms | 81 |
 |     Trojans and RATs | 53 |
@@ -966,7 +966,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     VM and Sandbox Detection | 201 |
 |     Packers and Obfuscators | 55 |
 |     Fileless Malware | 44 |
-| 15.6 Malware Analysis Report Structure | 130 |
+| 15.6 Malware Analysis Report Structure | 73 |
 | 15.7 Antivirus and Antimalware Defenses | 387 |
 |     The Anti-* Family: Beyond Antivirus | 326 |
 | 15.8 A Field Guide to Malware Types | 262 |

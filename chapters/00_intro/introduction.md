@@ -20,7 +20,7 @@ mix and match chapters to match their exact syllabus.
 | Course | Recommended Chapters | Approx. Pages |
 |---|---|---|
 | Introduction to IT Security | 1, 2, 3, 4, 5, 19 | 275 |
-| Computer Security (survey) | 1, 4, 5, 9, 10, 11, 12, 15, 17 | 535 |
+| Computer Security (survey) | 1, 4, 5, 9, 10, 11, 12, 15, 17 | 540 |
 | Ethical Hacking | 1, 6, 7, 8, 9, 10, 16 | 195 |
 | Software Reverse Engineering | 9, 15 (+ 3) | 145 |
 | Computer and Network Security | 2, 3, 5, 11, 12, 17 | 445 |
@@ -67,7 +67,7 @@ means a chapter can be truncated rather than dropped when a term runs short. Two
 
 For Chapter 2 in a certification-oriented or introductory course, Sections 2.1 through 2.14 (through the TLS handshake) plus 2.16 through 2.19b (key management, the attack taxonomy, applied systems, practical guidance, protecting data in its three states, and tamper-evident mechanisms) carry the examinable material. Sections 2.15 and 2.15a (advanced and emerging cryptography, including homomorphic encryption and lattices, and privacy-preserving constructions such as zero-knowledge proofs) and Section 2.20 (formal security analysis and provable security) are graduate-level and can be assigned as optional reading; Section 2.21 (post-quantum standards) repays a single lecture even in an introductory course, because the migration deadlines are now concrete. Appendix J likewise belongs to the advanced track.
 
-For Chapter 15, Sections 15.1 through 15.21 (about 22 pages) carry the malware-analysis material, including the reverse-engineering overview in Section 15.10. Sections 15.22 through 15.45 (about 63 pages) go deeper, mostly into reverse engineering: disassembly, Windows internals, obfuscation, analysis tooling, and the discipline itself. The *Software Reverse Engineering* course draws on them, and other courses can assign them as optional reading.
+For Chapter 15, Sections 15.1 through 15.21 (about 21 pages) carry the malware-analysis material, including the reverse-engineering overview in Section 15.10. Sections 15.22 through 15.45 (about 63 pages) go deeper, mostly into reverse engineering: disassembly, Windows internals, obfuscation, analysis tooling, and the discipline itself. The *Software Reverse Engineering* course draws on them, and other courses can assign them as optional reading.
 
 <!-- END generated:outliers -->
 
