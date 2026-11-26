@@ -15,7 +15,7 @@ A free, open-source textbook that bridges rigorous theory and hands-on practice 
 City University of New York\
 ORCID: https://orcid.org/0000-0001-6374-7249
 
-*Last updated on 11/26/2026 at 10:00:41 EST*
+*Last updated on 11/26/2026 at 10:24:51 EST*
 
 ---
 

@@ -25,7 +25,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 11: Network Defense and Hardening | 26,752 | 529 | 53.5 |
 | Chapter 12: Intrusion Detection and Prevention Systems | 13,550 | 1,114 | 27.1 |
 | Chapter 13: Digital Forensics | 11,708 | 875 | 23.4 |
-| Chapter 14: Incident Response | 11,816 | 828 | 23.6 |
+| Chapter 14: Incident Response | 11,839 | 828 | 23.7 |
 | Chapter 15: Malware Analysis | 45,732 | 423 | 91.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,723 | 818 | 27.4 |
 | Chapter 17: Emerging Threats and Future Challenges | 94,111 | 8,728 | 188.2 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **474,800** | **25,298** | **950** |
+| **TOTAL** | **474,823** | **25,298** | **950** |
 
 ## Detailed Word Count by Section
 
@@ -871,7 +871,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 14: Incident Response
 
-*11,816 markdown words (23.6 pages); 828 code words.*
+*11,839 markdown words (23.7 pages); 828 code words.*
 
 | Section | Words |
 |---|---:|
@@ -935,7 +935,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | News in Focus: Attacker Dwell Time in Major Ransomware Incidents | 88 |
 | Review Questions (MCQ) | 361 |
 | Lab Assignment | 258 |
-| References | 344 |
+| References | 367 |
 
 ### Chapter 15: Malware Analysis
 
