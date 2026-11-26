@@ -12,37 +12,37 @@ The table lists every part of the book with its prose word count, the words in i
 |---|---:|---:|---:|
 | Introduction | 2,047 | 0 | 4.1 |
 | Preface | 486 | 0 | 1.0 |
-| Chapter 1: Introduction to Cybersecurity | 19,308 | 679 | 38.6 |
+| Chapter 1: Introduction to Cybersecurity | 19,309 | 679 | 38.6 |
 | Chapter 2: Cryptography | 51,934 | 4,728 | 103.9 |
-| Chapter 3: Networking and Network Attacks | 17,809 | 374 | 35.6 |
-| Chapter 4: Social Engineering and the Human Element | 12,478 | 1,000 | 25.0 |
-| Chapter 5: Risk Management | 18,460 | 696 | 36.9 |
-| Chapter 6: Penetration Testing Methodology | 10,186 | 265 | 20.4 |
+| Chapter 3: Networking and Network Attacks | 17,810 | 374 | 35.6 |
+| Chapter 4: Social Engineering and the Human Element | 12,479 | 1,000 | 25.0 |
+| Chapter 5: Risk Management | 18,461 | 696 | 36.9 |
+| Chapter 6: Penetration Testing Methodology | 10,187 | 265 | 20.4 |
 | Chapter 7: Reconnaissance and Open-Source Intelligence | 7,950 | 464 | 15.9 |
-| Chapter 8: Scanning and Enumeration | 7,624 | 816 | 15.2 |
-| Chapter 9: Exploitation and Post-Exploitation | 27,919 | 1,134 | 55.8 |
-| Chapter 10: Web Application Security | 10,572 | 516 | 21.1 |
-| Chapter 11: Network Defense and Hardening | 26,752 | 529 | 53.5 |
-| Chapter 12: Intrusion Detection and Prevention Systems | 13,550 | 1,114 | 27.1 |
-| Chapter 13: Digital Forensics | 11,708 | 875 | 23.4 |
-| Chapter 14: Incident Response | 11,839 | 828 | 23.7 |
-| Chapter 15: Malware Analysis | 45,732 | 423 | 91.5 |
-| Chapter 16: Capture the Flag and Competitive Security | 13,723 | 818 | 27.4 |
-| Chapter 17: Emerging Threats and Future Challenges | 94,111 | 8,728 | 188.2 |
-| Chapter 18: Privacy, Law, and Information Governance | 7,875 | 387 | 15.8 |
-| Chapter 19: Security Governance, Policy, and Culture | 17,336 | 482 | 34.7 |
-| Chapter 20: Industrial Control Systems and OT Security | 14,756 | 442 | 29.5 |
+| Chapter 8: Scanning and Enumeration | 7,611 | 816 | 15.2 |
+| Chapter 9: Exploitation and Post-Exploitation | 27,915 | 1,134 | 55.8 |
+| Chapter 10: Web Application Security | 10,568 | 516 | 21.1 |
+| Chapter 11: Network Defense and Hardening | 26,748 | 529 | 53.5 |
+| Chapter 12: Intrusion Detection and Prevention Systems | 13,538 | 1,114 | 27.1 |
+| Chapter 13: Digital Forensics | 11,704 | 875 | 23.4 |
+| Chapter 14: Incident Response | 11,835 | 828 | 23.7 |
+| Chapter 15: Malware Analysis | 45,728 | 423 | 91.5 |
+| Chapter 16: Capture the Flag and Competitive Security | 13,719 | 818 | 27.4 |
+| Chapter 17: Emerging Threats and Future Challenges | 94,097 | 8,728 | 188.2 |
+| Chapter 18: Privacy, Law, and Information Governance | 7,871 | 387 | 15.7 |
+| Chapter 19: Security Governance, Policy, and Culture | 17,332 | 482 | 34.7 |
+| Chapter 20: Industrial Control Systems and OT Security | 14,749 | 442 | 29.5 |
 | Appendix A: Security Command Reference | 2,019 | 0 | 4.0 |
 | Appendix B: Glossary | 7,132 | 0 | 14.3 |
 | Appendix C: Certification Mapping | 3,723 | 0 | 7.4 |
 | Appendix D: ABET Outcomes and Bloom's Taxonomy Mapping | 856 | 0 | 1.7 |
 | Appendix E: Selected Works by the Author | 1,836 | 0 | 3.7 |
-| Appendix F: Companion Code and Repositories | 1,388 | 0 | 2.8 |
+| Appendix F: Companion Code and Repositories | 1,361 | 0 | 2.7 |
 | Appendix H: Capstone and Group Project Ideas | 2,765 | 0 | 5.5 |
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **474,823** | **25,298** | **950** |
+| **TOTAL** | **474,719** | **25,298** | **949** |
 
 ## Detailed Word Count by Section
 
@@ -78,7 +78,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 1: Introduction to Cybersecurity
 
-*19,308 markdown words (38.6 pages); 679 code words.*
+*19,309 markdown words (38.6 pages); 679 code words.*
 
 | Section | Words |
 |---|---:|
@@ -221,7 +221,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 3: Networking and Network Attacks
 
-*17,809 markdown words (35.6 pages); 374 code words.*
+*17,810 markdown words (35.6 pages); 374 code words.*
 
 | Section | Words |
 |---|---:|
@@ -276,7 +276,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 4: Social Engineering and the Human Element
 
-*12,478 markdown words (25.0 pages); 1,000 code words.*
+*12,479 markdown words (25.0 pages); 1,000 code words.*
 
 | Section | Words |
 |---|---:|
@@ -308,7 +308,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 5: Risk Management
 
-*18,460 markdown words (36.9 pages); 696 code words.*
+*18,461 markdown words (36.9 pages); 696 code words.*
 
 | Section | Words |
 |---|---:|
@@ -355,7 +355,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 6: Penetration Testing Methodology
 
-*10,186 markdown words (20.4 pages); 265 code words.*
+*10,187 markdown words (20.4 pages); 265 code words.*
 
 | Section | Words |
 |---|---:|
@@ -421,7 +421,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 8: Scanning and Enumeration
 
-*7,624 markdown words (15.2 pages); 816 code words.*
+*7,611 markdown words (15.2 pages); 816 code words.*
 
 | Section | Words |
 |---|---:|
@@ -455,13 +455,13 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Why This Matters | 125 |
 | News in Focus: Internet-Scale Scanning as an Early-Warning Signal | 253 |
 | Review Questions (MCQ) | 349 |
-|     Answer Key | 82 |
-| Lab Assignment | 315 |
+|     Answer Key | 73 |
+| Lab Assignment | 310 |
 | References | 218 |
 
 ### Chapter 9: Exploitation and Post-Exploitation
 
-*27,919 markdown words (55.8 pages); 1,134 code words.*
+*27,915 markdown words (55.8 pages); 1,134 code words.*
 
 | Section | Words |
 |---|---:|
@@ -566,12 +566,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Why This Matters | 62 |
 | News in Focus: The Ransomware Post-Exploitation Playbook | 78 |
 | Review Questions (MCQ) | 476 |
-| Lab Assignment | 230 |
+| Lab Assignment | 226 |
 | References | 648 |
 
 ### Chapter 10: Web Application Security
 
-*10,572 markdown words (21.1 pages); 516 code words.*
+*10,568 markdown words (21.1 pages); 516 code words.*
 
 | Section | Words |
 |---|---:|
@@ -617,12 +617,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Why This Matters | 79 |
 | News in Focus: SQL Injection Breaches That Persist | 78 |
 | Review Questions (MCQ) | 353 |
-| Lab Assignment | 191 |
+| Lab Assignment | 187 |
 | References | 299 |
 
 ### Chapter 11: Network Defense and Hardening
 
-*26,752 markdown words (53.5 pages); 529 code words.*
+*26,748 markdown words (53.5 pages); 529 code words.*
 
 | Section | Words |
 |---|---:|
@@ -719,12 +719,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Why This Matters | 72 |
 | News in Focus: Flat Networks and Nation-State Lateral Movement | 64 |
 | Review Questions (MCQ) | 512 |
-| Lab Assignment | 196 |
+| Lab Assignment | 192 |
 | References | 1,794 |
 
 ### Chapter 12: Intrusion Detection and Prevention Systems
 
-*13,550 markdown words (27.1 pages); 1,114 code words.*
+*13,538 markdown words (27.1 pages); 1,114 code words.*
 
 | Section | Words |
 |---|---:|
@@ -748,7 +748,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     User and Entity Behavior Analytics | 58 |
 |     Threat Hunting | 168 |
 |     Detection Engineering, Threat Hunting, and Deception | 350 |
-| 12.5 The Cyber Kill Chain and MITRE ATT&CK | 617 |
+| 12.5 The Cyber Kill Chain and MITRE ATT&CK | 610 |
 | 12.6 Modern SOC Operations: EDR, XDR, SOAR, and Detection Engineering | 268 |
 | 12.7 Writing Detection Rules: Snort, YARA, and Sigma | 341 |
 | 12.8 SIEM Correlation and Tuning | 190 |
@@ -794,12 +794,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Why This Matters | 85 |
 | News in Focus: Breaches That Were Detectable but Missed | 69 |
 | Review Questions (MCQ) | 345 |
-| Lab Assignment | 220 |
-| References | 206 |
+| Lab Assignment | 216 |
+| References | 205 |
 
 ### Chapter 13: Digital Forensics
 
-*11,708 markdown words (23.4 pages); 875 code words.*
+*11,704 markdown words (23.4 pages); 875 code words.*
 
 | Section | Words |
 |---|---:|
@@ -866,12 +866,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Why This Matters | 76 |
 | News in Focus: When Digital Forensic Evidence Decides a Case | 70 |
 | Review Questions (MCQ) | 341 |
-| Lab Assignment | 210 |
+| Lab Assignment | 206 |
 | References | 209 |
 
 ### Chapter 14: Incident Response
 
-*11,839 markdown words (23.7 pages); 828 code words.*
+*11,835 markdown words (23.7 pages); 828 code words.*
 
 | Section | Words |
 |---|---:|
@@ -934,12 +934,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Why This Matters | 75 |
 | News in Focus: Attacker Dwell Time in Major Ransomware Incidents | 88 |
 | Review Questions (MCQ) | 361 |
-| Lab Assignment | 258 |
+| Lab Assignment | 254 |
 | References | 367 |
 
 ### Chapter 15: Malware Analysis
 
-*45,732 markdown words (91.5 pages); 423 code words.*
+*45,728 markdown words (91.5 pages); 423 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1096,12 +1096,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | News in Focus: WannaCry and the Worm That Used a Leaked Exploit (2017) | 286 |
 | News in Focus: Fileless and Living-off-the-Land Attacks | 68 |
 | Review Questions (MCQ) | 377 |
-| Lab Assignment | 222 |
+| Lab Assignment | 218 |
 | References | 1,576 |
 
 ### Chapter 16: Capture the Flag and Competitive Security
 
-*13,723 markdown words (27.4 pages); 818 code words.*
+*13,719 markdown words (27.4 pages); 818 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1149,12 +1149,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Why This Matters | 62 |
 | News in Focus: Government-Sponsored CTF Competitions | 58 |
 | Review Questions (MCQ) | 354 |
-| Lab Assignment | 200 |
+| Lab Assignment | 196 |
 | References | 787 |
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*94,111 markdown words (188.2 pages); 8,728 code words.*
+*94,097 markdown words (188.2 pages); 8,728 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1167,7 +1167,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 17.2 AI-Enabled Attacks and Defenses | 53 |
 |     Offensive AI | 161 |
 |     Defensive AI | 77 |
-|     The OWASP Top 10 for LLM Applications (2026) | 392 |
+|     The OWASP Top 10 for LLM Applications (2026) | 382 |
 |     Privacy in LLM Chat and AI Agents | 384 |
 | 17.3 Pattern Matching, Machine Learning, and Deep Learning in Security | 63 |
 |     Pattern Matching: Rules and Signatures | 123 |
@@ -1264,12 +1264,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
 | Review Questions (MCQ) | 5,474 |
-| Lab Assignment | 364 |
+| Lab Assignment | 360 |
 | References | 8,596 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
-*7,875 markdown words (15.8 pages); 387 code words.*
+*7,871 markdown words (15.7 pages); 387 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1312,12 +1312,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Why This Matters | 50 |
 | News in Focus: Billion-Euro GDPR Enforcement | 76 |
 | Review Questions (MCQ) | 376 |
-| Lab Assignment | 253 |
+| Lab Assignment | 249 |
 | References | 101 |
 
 ### Chapter 19: Security Governance, Policy, and Culture
 
-*17,336 markdown words (34.7 pages); 482 code words.*
+*17,332 markdown words (34.7 pages); 482 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1401,12 +1401,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Why This Matters | 63 |
 | News in Focus: What the SolarWinds Case Did and Did Not Settle | 197 |
 | Review Questions (MCQ) | 738 |
-| Lab Assignment | 247 |
+| Lab Assignment | 243 |
 | References | 688 |
 
 ### Chapter 20: Industrial Control Systems and OT Security
 
-*14,756 markdown words (29.5 pages); 442 code words.*
+*14,749 markdown words (29.5 pages); 442 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1417,7 +1417,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | 20.2 ICS Components | 58 |
 |     Programmable Logic Controllers | 72 |
 |     SCADA Systems | 53 |
-|     Human-Machine Interfaces | 106 |
+|     Human-Machine Interfaces | 105 |
 | 20.3 The Purdue Model and Network Segmentation | 381 |
 |     The Industrial DMZ | 57 |
 |     Air Gaps and Their Limitations | 66 |
@@ -1475,10 +1475,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Exercises | 136 |
 |     Answer Key | 183 |
 | Chapter Summary | 176 |
-| Why This Matters | 81 |
+| Why This Matters | 79 |
 | News in Focus: Attacks on Water-Treatment Facilities | 314 |
 | Review Questions (MCQ) | 671 |
-| Lab Assignment | 240 |
+| Lab Assignment | 236 |
 | References | 310 |
 
 ### Appendix A: Security Command Reference
@@ -1497,23 +1497,23 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Cryptography | 111 |
 | Python One-Liners | 72 |
 | Security Tools Reference | 30 |
-|     Metasploit Framework (exploitation -- Chapter 9) | 39 |
-|     Wireshark / tshark (packet analysis -- Chapters 3, 8) | 36 |
-|     hping3 (packet crafting / testing -- Chapters 3, 8) | 40 |
-|     LOIC (Low Orbit Ion Cannon) (DoS demonstration -- Chapter 3) | 27 |
-|     Nmap (scanning and mapping -- Chapters 7, 8) | 36 |
-|     John the Ripper (password cracking -- Chapters 2 and 9) | 22 |
-|     Hashcat (GPU password cracking -- Chapters 2 and 9) | 31 |
-|     Aircrack-ng (wireless auditing -- Chapters 3, 16) | 40 |
-|     Snort (intrusion detection/prevention -- Chapters 12, 17) | 50 |
-|     Zeek (network security monitoring -- Chapters 12, 17) | 54 |
-|     pfSense (firewall / router -- Chapters 11, 17) | 103 |
+|     Metasploit Framework (exploitation, Chapter 9) | 39 |
+|     Wireshark / tshark (packet analysis, Chapters 3, 8) | 36 |
+|     hping3 (packet crafting / testing, Chapters 3, 8) | 40 |
+|     LOIC (Low Orbit Ion Cannon) (DoS demonstration, Chapter 3) | 27 |
+|     Nmap (scanning and mapping, Chapters 7, 8) | 36 |
+|     John the Ripper (password cracking, Chapters 2 and 9) | 22 |
+|     Hashcat (GPU password cracking, Chapters 2 and 9) | 31 |
+|     Aircrack-ng (wireless auditing, Chapters 3, 16) | 40 |
+|     Snort (intrusion detection/prevention, Chapters 12, 17) | 50 |
+|     Zeek (network security monitoring, Chapters 12, 17) | 54 |
+|     pfSense (firewall / router, Chapters 11, 17) | 103 |
 | OWASP Tools and Projects | 43 |
-|     ZAP (Zed Attack Proxy) (web app testing -- Chapter 10) | 74 |
-|     OWASP WebGoat (deliberately vulnerable app -- Chapters 6, 10) | 43 |
-|     OWASP Juice Shop (deliberately vulnerable app -- Chapter 10) | 27 |
-|     OWASP Amass (attack-surface discovery -- Chapter 7) | 33 |
-|     OWASP Dependency-Check (software composition analysis -- Chapters 5, 10) | 80 |
+|     ZAP (Zed Attack Proxy) (web app testing, Chapter 10) | 74 |
+|     OWASP WebGoat (deliberately vulnerable app, Chapters 6, 10) | 43 |
+|     OWASP Juice Shop (deliberately vulnerable app, Chapter 10) | 27 |
+|     OWASP Amass (attack-surface discovery, Chapter 7) | 33 |
+|     OWASP Dependency-Check (software composition analysis, Chapters 5, 10) | 80 |
 | Reverse Engineering with Ghidra | 388 |
 
 ### Appendix B: Glossary
@@ -1578,11 +1578,11 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Appendix F: Companion Code and Repositories
 
-*1,388 markdown words (2.8 pages); 0 code words.*
+*1,361 markdown words (2.7 pages); 0 code words.*
 
 | Section | Words |
 |---|---:|
-| Worked Code Examples in This Book | 477 |
+| Worked Code Examples in This Book | 450 |
 | Author Repositories (github.com/devharsh) | 246 |
 | Computer Tips Organization (github.com/com-puter-tips) | 241 |
 | Companion Blog Tutorials (com.puter.tips) | 350 |

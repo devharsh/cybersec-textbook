@@ -15,7 +15,7 @@ A free, open-source textbook that bridges rigorous theory and hands-on practice 
 City University of New York\
 ORCID: https://orcid.org/0000-0001-6374-7249
 
-*Last updated on 11/26/2026 at 10:30:28 EST*
+*Last updated on 11/26/2026 at 10:32:32 EST*
 
 ---
 
@@ -28,9 +28,9 @@ postdoctoral level and is mapped to the CISSP, Security+, CEH, CISA, and CGRC ce
 
 If you are new to the book, the links below give a short reading path: the introduction and preface explain how the material is organized and how to use it, and Part I is where the chapters begin.
 
-- {doc}`Introduction <chapters/00_intro/introduction>` -- course mapping, what every chapter contains, how
+- {doc}`Introduction <chapters/00_intro/introduction>`: course mapping, what every chapter contains, how
   to cite this book, and the license.
-- {doc}`Preface <chapters/00_preface/preface>` -- about this book and how to use it.
+- {doc}`Preface <chapters/00_preface/preface>`: about this book and how to use it.
 - Begin the material with **Part I: Foundations** (Chapter 1: Introduction to Cybersecurity).
 
 Use the sidebar to navigate the twenty chapters and the appendices (command reference, glossary,
