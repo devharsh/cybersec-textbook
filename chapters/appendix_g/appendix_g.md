@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,840 | 828 | 23.7 |
 | Chapter 15: Malware Analysis | 45,736 | 423 | 91.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,725 | 818 | 27.4 |
-| Chapter 17: Emerging Threats and Future Challenges | 104,032 | 9,822 | 208.1 |
+| Chapter 17: Emerging Threats and Future Challenges | 106,020 | 10,228 | 212.0 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,871 | 387 | 15.7 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,348 | 482 | 34.7 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,749 | 442 | 29.5 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **486,756** | **26,685** | **974** |
+| **TOTAL** | **488,744** | **27,091** | **977** |
 
 ## Detailed Word Count by Section
 
@@ -1155,12 +1155,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*104,032 markdown words (208.1 pages); 9,822 code words.*
+*106,020 markdown words (212.0 pages); 10,228 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 322 |
-| Key Terms | 5,175 |
+| Key Terms | 5,248 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 213 |
@@ -1264,16 +1264,17 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Testing AI Systems and Reporting Findings | 1,307 |
 | 17.14 Big Data Security and Access Control | 441 |
 | 17.15 Sandbox and Virtual-Machine Escape, and What "AI Escaped the Sandbox" Really Means | 1,139 |
-|     Exercises | 135 |
-|     Answer Key | 203 |
+|     Seccomp Profiles: Filtering System Calls | 1,544 |
+|     Exercises | 177 |
+|     Answer Key | 306 |
 |     Election Security and Electronic Voting | 500 |
 | 17.16 A Map of Open Research Problems | 452 |
 | Chapter Summary | 288 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 5,998 |
+| Review Questions (MCQ) | 6,026 |
 | Lab Assignment | 360 |
-| References | 9,754 |
+| References | 9,952 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 

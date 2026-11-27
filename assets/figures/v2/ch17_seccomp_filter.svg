@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 560" width="1180" height="560" role="img" aria-labelledby="t d"><title id="t">Seccomp: a system call filter in front of the kernel</title><desc id="d">Step 1, a process such as a model server makes system calls, some normal and some from injected attacker code. Step 2, the seccomp filter, a small BPF program, checks each call&#x27;s number and raw argument values but cannot follow pointers to read paths or buffers. Step 3, allowed calls run in the kernel. Step 4, denied calls fail with an error or kill the process. Step 5, a profile is built by recording a test run in log mode, then allowing only the recorded calls and denying the rest. Step 6, Kubernetes offers three profile types: RuntimeDefault, the runtime&#x27;s default; Localhost, a custom file on the node; and Unconfined, no filter, which is the Kubernetes default unless the kubelet&#x27;s seccomp-default setting is on. Step 7 shows the other layers that seccomp works with.</desc>
+<style>@media (prefers-reduced-motion: no-preference){.st{animation:fig-in .7s ease-out both}.s1{animation-delay:0.00s}.s2{animation-delay:0.90s}.s3{animation-delay:1.80s}.s4{animation-delay:2.70s}.s5{animation-delay:3.60s}.s6{animation-delay:4.50s}.s7{animation-delay:5.40s}}@keyframes fig-in{from{opacity:0}to{opacity:1}}</style>
+<defs><linearGradient id="g-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f8fe"/><stop offset="1" stop-color="#c9ddf4"/></linearGradient><filter id="f-drop" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".18"/></filter><marker id="a-1f2933" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1f2933"/></marker><marker id="a-2e7d32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#2e7d32"/></marker><marker id="a-c0392b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker>
+
+<linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5361"/><stop offset=".5" stop-color="#2b313a"/><stop offset="1" stop-color="#1c2027"/></linearGradient>
+<linearGradient id="g-steel-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8796"/><stop offset="1" stop-color="#4a5361"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c9"/></linearGradient>
+<linearGradient id="g-silver-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8dde3"/><stop offset="1" stop-color="#9aa3ae"/></linearGradient>
+<linearGradient id="g-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fc3ff"/><stop offset=".55" stop-color="#1e88e5"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+<linearGradient id="g-router" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb6e8"/><stop offset="1" stop-color="#1f5f99"/></linearGradient>
+<linearGradient id="g-router-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4fc"/><stop offset="1" stop-color="#a9cdea"/></linearGradient>
+<linearGradient id="g-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e99a6"/><stop offset=".45" stop-color="#e3e7eb"/><stop offset="1" stop-color="#7b8693"/></linearGradient>
+<linearGradient id="g-brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2774f"/><stop offset="1" stop-color="#b2472a"/></linearGradient>
+<linearGradient id="g-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8dcf5"/></linearGradient>
+<linearGradient id="g-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d7bf"/><stop offset="1" stop-color="#e2b394"/></linearGradient>
+<linearGradient id="g-suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2733"/></linearGradient>
+<linearGradient id="g-suit2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5ea7"/><stop offset="1" stop-color="#46336b"/></linearGradient>
+<linearGradient id="g-hood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#0f1216"/></linearGradient>
+<linearGradient id="g-robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#9fb0c3"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d49a1f"/></linearGradient>
+<linearGradient id="g-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4e9ef"/></linearGradient>
+<linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd38b"/><stop offset="1" stop-color="#2e8b45"/></linearGradient>
+<linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a80"/><stop offset="1" stop-color="#c62828"/></linearGradient>
+<radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-suit3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#1b4f72"/></linearGradient>
+<symbol id="i-robot" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<line x1="50" y1="8" x2="50" y2="18" stroke="#5b6b7d" stroke-width="2.5"/><circle cx="50" cy="7" r="4" fill="#ff9800" stroke="#e65100"/>
+<rect x="24" y="18" width="52" height="40" rx="11" fill="url(#g-robot)" stroke="#4d5d70" stroke-width="1.4"/>
+<rect x="31" y="27" width="38" height="20" rx="7" fill="#183247"/>
+<circle cx="42" cy="37" r="4" fill="#4dd0e1"/><circle cx="58" cy="37" r="4" fill="#4dd0e1"/>
+<rect x="18" y="32" width="6" height="12" rx="2" fill="#7d8ea2"/><rect x="76" y="32" width="6" height="12" rx="2" fill="#7d8ea2"/>
+<path d="M30 92 V70 a8 8 0 0 1 8 -8 h24 a8 8 0 0 1 8 8 V92 Z" fill="url(#g-robot)" stroke="#4d5d70" stroke-width="1.4"/>
+<rect x="40" y="70" width="20" height="10" rx="2" fill="#183247"/><circle cx="45" cy="75" r="1.8" fill="#8fd16a"/><circle cx="55" cy="75" r="1.8" fill="#ff7043"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M50 8 L84 20 V48 C84 70 68 84 50 92 C32 84 16 70 16 48 V20 Z" fill="url(#g-green)" stroke="#1b5e20" stroke-width="1.6"/>
+<path d="M36 50 L46 60 L66 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="i-server" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<path d="M28 16 L40 8 L72 8 L60 16 Z" fill="url(#g-steel-top)" stroke="#14181d" stroke-width="1"/>
+<path d="M60 16 L72 8 L72 82 L60 91 Z" fill="#1b1f25" stroke="#14181d" stroke-width="1"/>
+<rect x="28" y="16" width="32" height="75" rx="1.5" fill="url(#g-steel)" stroke="#14181d" stroke-width="1"/>
+<g fill="#59626f" stroke="#14181d" stroke-width=".6">
+<rect x="32" y="21" width="24" height="5" rx="1"/><rect x="32" y="28" width="24" height="5" rx="1"/>
+<rect x="32" y="35" width="24" height="5" rx="1"/><rect x="32" y="42" width="24" height="5" rx="1"/></g>
+<g fill="#8fd16a"><circle cx="53" cy="23.5" r="1"/><circle cx="53" cy="30.5" r="1"/><circle cx="53" cy="37.5" r="1"/></g>
+<g stroke="#3d4450" stroke-width="1"><line x1="32" y1="56" x2="56" y2="56"/><line x1="32" y1="60" x2="56" y2="60"/><line x1="32" y1="64" x2="56" y2="64"/></g>
+<circle cx="44" cy="80" r="3" fill="#2196f3" stroke="#0d47a1" stroke-width=".8"/>
+</symbol>
+<symbol id="i-cross" viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="url(#g-red)" stroke="#7f0000" stroke-width="2"/>
+<path d="M35 35 L65 65 M65 35 L35 65" stroke="#fff" stroke-width="9" stroke-linecap="round"/></symbol>
+<symbol id="i-checklist" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="22" y="14" width="56" height="76" rx="4" fill="url(#g-paper)" stroke="#6b7785" stroke-width="1.4"/>
+<rect x="38" y="9" width="24" height="10" rx="3" fill="#7d8796"/>
+<path d="M30 32 l4 4 8 -9" fill="none" stroke="#2e7d32" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><line x1="48" y1="33" x2="70" y2="33" stroke="#9aa6b3" stroke-width="3" stroke-linecap="round"/><path d="M30 48 l4 4 8 -9" fill="none" stroke="#2e7d32" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><line x1="48" y1="49" x2="70" y2="49" stroke="#9aa6b3" stroke-width="3" stroke-linecap="round"/><path d="M30 64 l4 4 8 -9" fill="none" stroke="#2e7d32" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><line x1="48" y1="65" x2="70" y2="65" stroke="#9aa6b3" stroke-width="3" stroke-linecap="round"/>
+<line x1="30" y1="81" x2="70" y2="81" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/>
+</symbol>
+<symbol id="i-check" viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="url(#g-green)" stroke="#1b5e20" stroke-width="2"/>
+<path d="M32 51 L45 64 L69 38" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-idcard" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="10" y="22" width="80" height="54" rx="5" fill="url(#g-paper)" stroke="#4a6fa5" stroke-width="1.6"/>
+<rect x="10" y="22" width="80" height="12" rx="5" fill="#4a6fa5"/><rect x="10" y="29" width="80" height="5" fill="#4a6fa5"/>
+<rect x="17" y="40" width="24" height="28" rx="2" fill="#dbe7f5"/>
+<circle cx="29" cy="50" r="6" fill="url(#g-skin)"/><path d="M19 68 C19 58 39 58 39 68 Z" fill="#4b5563"/>
+<g stroke="#9aa6b3" stroke-width="3" stroke-linecap="round"><line x1="48" y1="46" x2="82" y2="46"/><line x1="48" y1="55" x2="76" y2="55"/><line x1="48" y1="64" x2="70" y2="64"/></g>
+</symbol>
+<symbol id="i-firewall" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="14" y="26" width="72" height="62" rx="2" fill="url(#g-brick)" stroke="#7a2e18" stroke-width="1.2"/>
+<g stroke="#f6d3c4" stroke-width="2.2" fill="none">
+<path d="M14 41 H86 M14 57 H86 M14 73 H86"/>
+<path d="M38 26 V41 M62 26 V41 M26 41 V57 M50 41 V57 M74 41 V57 M38 57 V73 M62 57 V73 M26 73 V88 M50 73 V88 M74 73 V88"/></g>
+<path d="M50 4 C58 14 66 16 62 26 H38 C34 18 44 14 50 4 Z" fill="#ffb300" stroke="#e65100" stroke-width="1"/>
+<path d="M50 12 C55 18 57 21 55 26 H45 C43 21 47 18 50 12 Z" fill="#fff176"/>
+</symbol>
+<symbol id="i-rack" viewBox="0 0 100 100"><ellipse cx="50" cy="95" rx="38" ry="4.5" fill="url(#g-shadow)"/>
+<rect x="24" y="10" width="52" height="82" rx="3" fill="url(#g-steel)" stroke="#14181d" stroke-width="1.2"/>
+<rect x="29" y="15" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="18" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="20.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="20.5" r="1.4" fill="#4fc3f7"/><rect x="29" y="30" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="33" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="35.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="35.5" r="1.4" fill="#4fc3f7"/><rect x="29" y="45" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="48" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="50.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="50.5" r="1.4" fill="#4fc3f7"/><rect x="29" y="60" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="63" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="65.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="65.5" r="1.4" fill="#4fc3f7"/><rect x="29" y="75" width="42" height="11" rx="1.5" fill="#3b424d" stroke="#14181d" stroke-width=".7"/><rect x="32" y="78" width="20" height="5" rx="1" fill="#55606e"/><circle cx="64" cy="80.5" r="1.4" fill="#8fd16a"/><circle cx="68" cy="80.5" r="1.4" fill="#4fc3f7"/></symbol>
+</defs>
+<rect width="1180" height="560" fill="#ffffff"/>
+<text x="590.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1f2933" font-weight="bold" text-anchor="middle">Seccomp: a system call filter in front of the kernel</text>
+<g class="st s1"><rect x="18.0" y="52.0" width="236.0" height="236.0" rx="14" fill="#eef5fc" fill-opacity="1" stroke="#1f4e9c" stroke-width="2"/></g>
+<g class="st s1"><use href="#i-robot" x="108.0" y="82.0" width="56" height="56"/></g>
+<g class="st s1"><text x="136.0" y="176.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">Model server process</text></g>
+<g class="st s1"><text x="136.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2e7d32" font-weight="normal" text-anchor="middle">normal: read, futex, sendto</text></g>
+<g class="st s1"><text x="136.0" y="224.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="normal" text-anchor="middle">attacker: unshare, mount</text></g>
+<g class="st s1"><text x="136.0" y="256.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">every call goes through</text></g>
+<g class="st s1"><text x="136.0" y="272.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">the filter first</text></g>
+<g class="st s2"><path d="M256.0 170.0 L290.0 170.0" fill="none" stroke="#1f2933" stroke-width="2.2" marker-end="url(#a-1f2933)" stroke-linejoin="round"/></g>
+<g class="st s2"><rect x="292.0" y="52.0" width="270.0" height="236.0" rx="14" fill="#fff4e8" fill-opacity="1" stroke="#d9822b" stroke-width="2"/></g>
+<g class="st s2"><use href="#i-shield" x="399.0" y="82.0" width="56" height="56"/></g>
+<g class="st s2"><text x="427.0" y="176.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">seccomp filter (BPF)</text></g>
+<g class="st s2"><text x="427.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">checks the syscall number</text></g>
+<g class="st s2"><text x="427.0" y="222.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">and raw argument values</text></g>
+<g class="st s2"><text x="427.0" y="248.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#d9822b" font-weight="bold" text-anchor="middle">cannot follow pointers,</text></g>
+<g class="st s2"><text x="427.0" y="266.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#d9822b" font-weight="bold" text-anchor="middle">so it never sees a path</text></g>
+<g class="st s3"><path d="M564.0 122.0 L600.0 108.0" fill="none" stroke="#2e7d32" stroke-width="2.2" marker-end="url(#a-2e7d32)" stroke-linejoin="round"/></g>
+<g class="st s3"><rect x="602.0" y="52.0" width="300.0" height="108.0" rx="12" fill="#edf7ee" fill-opacity="1" stroke="#2e7d32" stroke-width="2"/></g>
+<g class="st s3"><use href="#i-server" x="623.0" y="83.0" width="46" height="46"/></g>
+<g class="st s3"><text x="680.0" y="96.0" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#1f2933" font-weight="bold" text-anchor="start">Allowed: runs in the kernel</text></g>
+<g class="st s3"><text x="680.0" y="118.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">read, futex, sendto, and</text></g>
+<g class="st s3"><text x="680.0" y="136.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">thread-only clone calls</text></g>
+<g class="st s4"><path d="M564.0 218.0 L600.0 232.0" fill="none" stroke="#c0392b" stroke-width="2.2" marker-end="url(#a-c0392b)" stroke-linejoin="round"/></g>
+<g class="st s4"><rect x="602.0" y="180.0" width="300.0" height="108.0" rx="12" fill="#fdeeee" fill-opacity="1" stroke="#c0392b" stroke-width="2"/></g>
+<g class="st s4"><use href="#i-cross" x="626.0" y="214.0" width="40" height="40"/></g>
+<g class="st s4"><text x="680.0" y="224.0" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#1f2933" font-weight="bold" text-anchor="start">Denied: error or kill</text></g>
+<g class="st s4"><text x="680.0" y="246.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">EPERM back to the caller,</text></g>
+<g class="st s4"><text x="680.0" y="264.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">or the process is killed</text></g>
+<g class="st s5"><rect x="924.0" y="52.0" width="238.0" height="236.0" rx="14" fill="#f3eef9" fill-opacity="1" stroke="#6a3d9a" stroke-width="2"/></g>
+<g class="st s5"><use href="#i-checklist" x="1017.0" y="84.0" width="52" height="52"/></g>
+<g class="st s5"><text x="1043.0" y="176.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="middle">Build the profile</text></g>
+<g class="st s5"><text x="1043.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">record a test run in log mode</text></g>
+<g class="st s5"><text x="1043.0" y="223.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">allow only the recorded calls</text></g>
+<g class="st s5"><text x="1043.0" y="242.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">deny everything else</text></g>
+<g class="st s5"><text x="1043.0" y="261.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="middle">rerun after every upgrade</text></g>
+<g class="st s6"><rect x="18" y="312" width="560" height="230" rx="14" fill="#f6f7f9" stroke="#1f2933" stroke-width="2"/><text x="32.0" y="334.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">Kubernetes seccompProfile types</text></g>
+<g class="st s6"><use href="#i-check" x="37.0" y="361.0" width="30" height="30"/></g>
+<g class="st s6"><text x="80.0" y="370.0" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#1f2933" font-weight="bold" text-anchor="start">RuntimeDefault</text></g>
+<g class="st s6"><text x="80.0" y="388.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">the container runtime&#x27;s default profile</text></g>
+<g class="st s6"><use href="#i-check" x="37.0" y="413.0" width="30" height="30"/></g>
+<g class="st s6"><text x="80.0" y="422.0" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#1f2933" font-weight="bold" text-anchor="start">Localhost</text></g>
+<g class="st s6"><text x="80.0" y="440.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">your JSON file under /var/lib/kubelet/seccomp</text></g>
+<g class="st s6"><use href="#i-cross" x="37.0" y="465.0" width="30" height="30"/></g>
+<g class="st s6"><text x="80.0" y="474.0" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#1f2933" font-weight="bold" text-anchor="start">Unconfined</text></g>
+<g class="st s6"><text x="80.0" y="492.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">no filter; the default unless the kubelet&#x27;s</text></g>
+<g class="st s6"><text x="80.0" y="508.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#52606d" font-weight="normal" text-anchor="start">seccomp-default setting is on</text></g>
+<g class="st s6"><text x="298.0" y="528.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#c0392b" font-weight="bold" text-anchor="middle">privileged containers always run Unconfined</text></g>
+<g class="st s7"><rect x="602" y="312" width="560" height="230" rx="14" fill="#f6f7f9" stroke="#1f2933" stroke-width="2"/><text x="616.0" y="334.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1f2933" font-weight="bold" text-anchor="start">A layer, not a sandbox</text></g>
+<g class="st s7"><use href="#i-idcard" x="625.0" y="361.0" width="30" height="30"/></g>
+<g class="st s7"><text x="668.0" y="381.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">Drop capabilities; set no_new_privs</text></g>
+<g class="st s7"><use href="#i-shield" x="625.0" y="403.0" width="30" height="30"/></g>
+<g class="st s7"><text x="668.0" y="423.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">AppArmor or SELinux for files</text></g>
+<g class="st s7"><use href="#i-firewall" x="625.0" y="445.0" width="30" height="30"/></g>
+<g class="st s7"><text x="668.0" y="465.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">Network policy for egress</text></g>
+<g class="st s7"><use href="#i-rack" x="625.0" y="487.0" width="30" height="30"/></g>
+<g class="st s7"><text x="668.0" y="507.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#1f2933" font-weight="normal" text-anchor="start">gVisor or a microVM for untrusted code</text></g>
+<g class="st s1"><circle cx="234" cy="72" r="12" fill="#1f4e9c" stroke="#fff" stroke-width="2"/><text x="234.0" y="76.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">1</text></g>
+<g class="st s2"><circle cx="542" cy="72" r="12" fill="#d9822b" stroke="#fff" stroke-width="2"/><text x="542.0" y="76.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">2</text></g>
+<g class="st s3"><circle cx="882" cy="72" r="12" fill="#2e7d32" stroke="#fff" stroke-width="2"/><text x="882.0" y="76.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">3</text></g>
+<g class="st s4"><circle cx="882" cy="200" r="12" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="882.0" y="204.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">4</text></g>
+<g class="st s5"><circle cx="1142" cy="72" r="12" fill="#6a3d9a" stroke="#fff" stroke-width="2"/><text x="1142.0" y="76.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">5</text></g>
+<g class="st s6"><circle cx="558" cy="332" r="12" fill="#1f2933" stroke="#fff" stroke-width="2"/><text x="558.0" y="336.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">6</text></g>
+<g class="st s7"><circle cx="1142" cy="332" r="12" fill="#1f2933" stroke="#fff" stroke-width="2"/><text x="1142.0" y="336.6" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">7</text></g>
+</svg>

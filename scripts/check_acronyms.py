@@ -549,6 +549,8 @@ CHAPTER_LITERAL = {
     ("17_emerging", "Q109"): "a review question number",
     ("17_emerging", "Q110"): "a review question number",
     ("17_emerging", "Q111"): "a review question number",
+    ("17_emerging", "Q112"): "a review question number",
+    ("17_emerging", "CRI"): "part of the product name CRI-O, a Kubernetes container runtime",
     ("17_emerging", "ASI03"): "an OWASP Top 10 for Agentic Applications risk identifier",
     ("17_emerging", "CxO"): "a cited article title; chief executive roles in general (CEO, CIO, CISO)",
     ("17_emerging", "NL"): "the country code inside a European Case Law Identifier",
