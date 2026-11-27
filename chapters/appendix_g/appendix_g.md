@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,840 | 828 | 23.7 |
 | Chapter 15: Malware Analysis | 45,736 | 423 | 91.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,725 | 818 | 27.4 |
-| Chapter 17: Emerging Threats and Future Challenges | 97,898 | 9,188 | 195.8 |
+| Chapter 17: Emerging Threats and Future Challenges | 98,729 | 9,188 | 197.5 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,871 | 387 | 15.7 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,348 | 482 | 34.7 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,749 | 442 | 29.5 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **480,622** | **26,051** | **961** |
+| **TOTAL** | **481,453** | **26,051** | **963** |
 
 ## Detailed Word Count by Section
 
@@ -1155,12 +1155,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*97,898 markdown words (195.8 pages); 9,188 code words.*
+*98,729 markdown words (197.5 pages); 9,188 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 322 |
-| Key Terms | 4,918 |
+| Key Terms | 4,953 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 213 |
@@ -1240,7 +1240,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Attacks on Models: Inversion, Extraction, Membership Inference, and Poisoning | 1,622 |
 |     Model Extraction Versus Model Inversion: Stealing the Model or Its Data | 2,249 |
 |     Model Integrity and Provenance: Signing, AI Bills of Materials, and Watermarks | 1,439 |
-|     Model Cards and System Cards: The Model Versus the Deployed System | 1,048 |
+|     Model Cards and System Cards: The Model Versus the Deployed System | 1,049 |
 |     Lab: Verifying a Model File Before Loading It | 134 |
 |     Trusting Derived Models: Quantized, Converted, and Fine-Tuned Copies | 886 |
 |     Build Provenance for Model Files | 307 |
@@ -1252,6 +1252,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Threat Modeling AI Systems, from STRIDE to MAESTRO | 1,200 |
 |     One System, Five Lenses: STRIDE, PASTA, MAESTRO, and the Two OWASP Lists | 1,409 |
 |     Building and Running AI Platforms Securely | 2,850 |
+|     NIST SP 800-218A: The SSDF Profile for Generative AI | 636 |
 |     The Output Channel as an Exfiltration Path | 1,811 |
 |     Monitoring and Responding to AI Incidents | 3,162 |
 |     Protecting AI Telemetry: Redact Before the SIEM | 908 |
@@ -1267,9 +1268,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 288 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 5,660 |
+| Review Questions (MCQ) | 5,709 |
 | Lab Assignment | 360 |
-| References | 8,915 |
+| References | 9,025 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
