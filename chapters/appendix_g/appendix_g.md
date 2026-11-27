@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,840 | 828 | 23.7 |
 | Chapter 15: Malware Analysis | 45,736 | 423 | 91.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,725 | 818 | 27.4 |
-| Chapter 17: Emerging Threats and Future Challenges | 101,925 | 9,437 | 203.8 |
+| Chapter 17: Emerging Threats and Future Challenges | 104,032 | 9,822 | 208.1 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,871 | 387 | 15.7 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,348 | 482 | 34.7 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,749 | 442 | 29.5 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **484,649** | **26,300** | **969** |
+| **TOTAL** | **486,756** | **26,685** | **974** |
 
 ## Detailed Word Count by Section
 
@@ -1155,12 +1155,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*101,925 markdown words (203.8 pages); 9,437 code words.*
+*104,032 markdown words (208.1 pages); 9,822 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 322 |
-| Key Terms | 5,094 |
+| Key Terms | 5,175 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 213 |
@@ -1247,8 +1247,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Trusting Derived Models: Quantized, Converted, and Fine-Tuned Copies | 886 |
 |     Build Provenance for Model Files | 307 |
 |     Content Credentials: Showing Where Media Came From | 1,111 |
-|     Identity and Authorization for AI Agents | 1,915 |
+|     Identity and Authorization for AI Agents | 1,928 |
 |     Separation of Duties for AI Agents: Who Initiates and Who Approves | 1,307 |
+|     Identity Security Posture Management: Watching Every Identity at Once | 1,584 |
 |     Designing Agents to Contain Prompt Injection | 857 |
 |     MCP Tool Poisoning: When Tool Metadata Is the Attack | 1,208 |
 |     Threat Modeling AI Systems, from STRIDE to MAESTRO | 1,200 |
@@ -1270,9 +1271,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 288 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 5,867 |
+| Review Questions (MCQ) | 5,998 |
 | Lab Assignment | 360 |
-| References | 9,456 |
+| References | 9,754 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
