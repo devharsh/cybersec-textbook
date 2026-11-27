@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,840 | 828 | 23.7 |
 | Chapter 15: Malware Analysis | 45,736 | 423 | 91.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,725 | 818 | 27.4 |
-| Chapter 17: Emerging Threats and Future Challenges | 95,548 | 8,866 | 191.1 |
+| Chapter 17: Emerging Threats and Future Challenges | 96,497 | 9,188 | 193.0 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,871 | 387 | 15.7 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,348 | 482 | 34.7 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,749 | 442 | 29.5 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **478,272** | **25,729** | **957** |
+| **TOTAL** | **479,221** | **26,051** | **958** |
 
 ## Detailed Word Count by Section
 
@@ -1155,12 +1155,12 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*95,548 markdown words (191.1 pages); 8,866 code words.*
+*96,497 markdown words (193.0 pages); 9,188 code words.*
 
 | Section | Words |
 |---|---:|
 | Learning Objectives | 322 |
-| Key Terms | 4,801 |
+| Key Terms | 4,841 |
 | 17.1 Post-Quantum Cryptography | 56 |
 |     The Quantum Threat to Current Cryptography | 60 |
 |     NIST PQC Standardization | 213 |
@@ -1185,9 +1185,10 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Four Distributions from Everyday Life | 3,356 |
 |     The Laplace Distribution: A Sharp Peak, Heavier Tails, and Privacy Noise | 1,311 |
 |     Other Symmetric Distributions: Peaks, Tails, and Kurtosis | 1,620 |
+|     Peak Density: How High a Distribution Rises | 776 |
 |     A Specialized Case: Soliton Distributions in Fountain Codes | 182 |
-|     Exercises | 449 |
-|     Answer Key | 725 |
+|     Exercises | 484 |
+|     Answer Key | 777 |
 | 17.8 Supply Chain Attacks | 73 |
 |     Why Supply Chain Is a High-Value Target | 32 |
 |     Notable Supply Chain Attack Patterns | 157 |
@@ -1265,9 +1266,9 @@ Each chapter below has its own table that breaks the prose word count down by se
 | Chapter Summary | 288 |
 | Why This Matters | 71 |
 | News in Focus: The Post-Quantum Migration Begins | 72 |
-| Review Questions (MCQ) | 5,549 |
+| Review Questions (MCQ) | 5,592 |
 | Lab Assignment | 360 |
-| References | 8,704 |
+| References | 8,707 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
