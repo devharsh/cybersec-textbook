@@ -28,7 +28,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Chapter 14: Incident Response | 11,840 | 828 | 23.7 |
 | Chapter 15: Malware Analysis | 45,736 | 423 | 91.5 |
 | Chapter 16: Capture the Flag and Competitive Security | 13,725 | 818 | 27.4 |
-| Chapter 17: Emerging Threats and Future Challenges | 101,909 | 9,437 | 203.8 |
+| Chapter 17: Emerging Threats and Future Challenges | 101,925 | 9,437 | 203.8 |
 | Chapter 18: Privacy, Law, and Information Governance | 7,871 | 387 | 15.7 |
 | Chapter 19: Security Governance, Policy, and Culture | 17,348 | 482 | 34.7 |
 | Chapter 20: Industrial Control Systems and OT Security | 14,749 | 442 | 29.5 |
@@ -42,7 +42,7 @@ The table lists every part of the book with its prose word count, the words in i
 | Appendix I: Protocol Security Reference | 4,630 | 0 | 9.3 |
 | Appendix J: Adversary Models | 3,911 | 0 | 7.8 |
 | Appendix K: Course Materials and Sample Assignments | 2,408 | 0 | 4.8 |
-| **TOTAL** | **484,633** | **26,300** | **969** |
+| **TOTAL** | **484,649** | **26,300** | **969** |
 
 ## Detailed Word Count by Section
 
@@ -1155,7 +1155,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 
 ### Chapter 17: Emerging Threats and Future Challenges
 
-*101,909 markdown words (203.8 pages); 9,437 code words.*
+*101,925 markdown words (203.8 pages); 9,437 code words.*
 
 | Section | Words |
 |---|---:|
@@ -1232,7 +1232,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 |     Choosing Between RAG and Fine-Tuning: Knowledge Versus Behavior | 1,826 |
 |     Governing AI: Laws, Standards, and Roles | 2,001 |
 |     Article 50 and Article 15: Transparency Versus Accuracy, Robustness, and Cybersecurity | 1,473 |
-|     Social Scoring: Where the EU AI Act Draws the Line | 1,258 |
+|     Social Scoring: Where the EU AI Act Draws the Line | 1,273 |
 |     Responsible AI, Risk Assessment, and Human Oversight | 3,030 |
 |     Concentration Risk: Many Processes, One Model | 1,184 |
 |     Human Oversight Models: In the Loop, On the Loop, and In Command | 1,856 |
@@ -1272,7 +1272,7 @@ Each chapter below has its own table that breaks the prose word count down by se
 | News in Focus: The Post-Quantum Migration Begins | 72 |
 | Review Questions (MCQ) | 5,867 |
 | Lab Assignment | 360 |
-| References | 9,455 |
+| References | 9,456 |
 
 ### Chapter 18: Privacy, Law, and Information Governance
 
