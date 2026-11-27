@@ -546,6 +546,8 @@ CHAPTER_LITERAL = {
     ("17_emerging", "Q106"): "a review question number",
     ("17_emerging", "Q107"): "a review question number",
     ("17_emerging", "Q108"): "a review question number",
+    ("17_emerging", "Q109"): "a review question number",
+    ("17_emerging", "NVM"): "part of the NVMe command name Format NVM, explained in the text",
     ("17_emerging", "UiPath"): "a company name (UiPath, an npm package namespace in the Mini Shai-Hulud case), not an acronym",
     ("17_emerging", "GGUF"): "the name of the llama.cpp model file format, whose expansion its sources give inconsistently",
     ("17_emerging", "GPTQ"): "the name of a quantization method (Frantar and colleagues, 2023)",
